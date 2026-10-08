@@ -22,7 +22,7 @@ Repository layout:
 - `api/index.py` and `vercel.json`: Vercel entry point/build; `scripts/dev.sh` and `scripts/deploy.py`: local launch/deployment.
 - `backend/tests/` and `website/tests/`: tests; `docs/architecture.md` and `README.md`: implementation and setup.
 - `demos/bearing-witness/`: separate local integration exercise, excluded from the Lexcia deployment. ArchiveLens is an external architectural reference; the Lexcia backend runs independently.
-- `bolt-project/`: imported Bolt landing-page project (Vite, React, TypeScript and Tailwind), separate from the deployed `website/`. From that directory, use `npm ci`, `npm run dev`; verify with `npm run lint`, `npm run typecheck` and `npm run build`.
+- `bolt-project/`: Nadav's website, made in Bolt (Vite, React, TypeScript and Tailwind), separate from the deployed `website/`. **Inspect, reference, reuse or modify its code only when Asaf or Nadav explicitly asks.** Do not use it as a default reference or integrate it into the main website without that request. When requested, use `npm ci`, `npm run dev` from that directory; verify with `npm run lint`, `npm run typecheck` and `npm run build`.
 
 ## Development conventions
 
