@@ -16,4 +16,5 @@ node_modules/
 output/
 artifacts/
 demos/bearing-witness/bridge/
+# Local Vercel token file; never commit.
 vercel.env
