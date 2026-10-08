@@ -1,0 +1,751 @@
+/*
+ * Custom BW Header
+ * Pixel-perfect match of the React homepage header.
+ * All rules use .bw-header scoping + explicit resets to override Neve/WP defaults.
+ */
+
+/* ── Hide Neve's default header (we render .bw-header instead) ── */
+.hfg_header,
+#header-grid {
+  display: none !important;
+}
+
+/* ── Screen-reader only utility ── */
+.bw-header .bw-skip-link,
+.bw-skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  z-index: 10000;
+}
+
+.bw-skip-link:focus {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  width: auto;
+  height: auto;
+  padding: 12px 24px;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: nowrap;
+  background: #8b2020;
+  color: #ffffff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  border-radius: 8px;
+  z-index: 10001;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Reset: neutralize every inherited WP/Neve style inside .bw-header ── */
+
+.bw-header,
+.bw-header *,
+.bw-header *::before,
+.bw-header *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bw-header a,
+.bw-header a:visited,
+.bw-header a:hover,
+.bw-header a:active {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  background: none;
+  box-shadow: none;
+}
+
+.bw-header a:focus-visible {
+  outline: 2px solid #8b2020;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.bw-header button {
+  appearance: none;
+  background: none !important;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+}
+
+.bw-header button:focus-visible {
+  outline: 2px solid #8b2020;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.bw-header p {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+.bw-header img {
+  max-width: none;
+  border: 0;
+}
+
+.bw-header svg {
+  display: block;
+}
+
+/* ── Outer wrapper: sticky white bar with bottom border ── */
+
+.bw-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3a3734;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bw-header__border {
+  border-bottom: 1px solid #e4e0dc;
+  padding: 16px 16px;
+}
+
+@media (min-width: 640px) {
+  .bw-header__border {
+    padding: 16px 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bw-header__border {
+    padding: 16px 72px;
+  }
+}
+
+/* ── Inner container: flex row, max-width centered ── */
+
+.bw-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  .bw-header__inner {
+    flex-wrap: nowrap;
+  }
+}
+
+/* ── Logo: 140×50, image fills via object-contain ── */
+
+.bw-header .bw-logo {
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 140px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.bw-header .bw-logo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* ── Hamburger: mobile only, 3 bars ── */
+
+.bw-header .bw-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.bw-header .bw-hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #3a3734;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1023px) {
+  .bw-header .bw-hamburger {
+    display: flex;
+  }
+  .bw-header .bw-nav,
+  .bw-header .bw-side-ctas {
+    display: none !important;
+  }
+}
+
+/* ── Desktop nav: row of items with 14px gap ── */
+
+.bw-header .bw-nav {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+/* ── Nav item: pill-shaped button/link, 14px IBM Plex Sans, capitalize ── */
+
+.bw-header .bw-nav__item {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #3a3734;
+  text-transform: capitalize;
+  white-space: nowrap;
+  background: transparent;
+  transition: background-color 0.2s;
+  letter-spacing: 0;
+}
+
+.bw-header .bw-nav__item:hover {
+  background-color: #f7f6f4;
+  color: #3a3734;
+}
+
+.bw-header .bw-nav__item:focus-visible {
+  outline: 2px solid #8b2020;
+  outline-offset: 2px;
+}
+
+.bw-header .bw-nav__item svg {
+  flex-shrink: 0;
+  width: 9px;
+  height: 4px;
+}
+
+/* Bordered variant (Language button) */
+.bw-header .bw-nav__item--bordered {
+  border: 1px solid #e4e0dc;
+  border-radius: 20px;
+}
+
+/* Primary variant (Contact Us)
+   background-color needs !important to beat the blanket
+   `background: none !important` on .bw-header button above. The :hover must
+   match it, or the base !important would win and the hover never darkens. */
+.bw-header .bw-nav__item--primary {
+  background-color: #8b2020 !important;
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 500;
+  gap: 10px;
+}
+
+.bw-header .bw-nav__item--primary:hover {
+  background-color: #6d1818 !important;
+  color: #ffffff;
+}
+
+.bw-header .bw-nav__item--primary svg path {
+  stroke: #ffffff;
+}
+
+/* ── Dropdowns ── */
+
+.bw-header .bw-dropdown {
+  position: relative;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.bw-header .bw-dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  margin-top: 4px;
+  background: #ffffff;
+  border: 1px solid #e4e0dc;
+  border-radius: 10px;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  z-index: 50;
+  overflow: hidden;
+  padding: 0;
+}
+
+.bw-header .bw-dropdown--right .bw-dropdown__menu {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+}
+
+.bw-header .bw-dropdown.is-open .bw-dropdown__menu {
+  display: block;
+}
+
+.bw-header .bw-dropdown__menu a {
+  display: block;
+  padding: 12px 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #3a3734;
+  background: transparent;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.bw-header .bw-dropdown__menu a:hover {
+  background-color: #f7f6f4;
+  color: #3a3734;
+}
+
+.bw-header .bw-dropdown__menu a:focus-visible {
+  outline: 2px solid #8b2020;
+  outline-offset: -2px;
+  background-color: #f7f6f4;
+}
+
+.bw-header .bw-dropdown__menu a:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.bw-header .bw-dropdown__menu a:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+/* ── Side CTAs: social + divider + language + contact ── */
+
+.bw-header .bw-side-ctas {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.bw-header .bw-social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 15px;
+}
+
+.bw-header .bw-social a {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.bw-header .bw-social a:hover {
+  opacity: 0.7;
+}
+
+.bw-header .bw-social a:focus-visible {
+  outline: 2px solid #8b2020;
+  outline-offset: 2px;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.bw-header .bw-social a svg {
+  width: auto;
+  height: auto;
+}
+
+.bw-header .bw-divider {
+  width: 1px;
+  height: 20px;
+  background: #e4e0dc;
+  flex-shrink: 0;
+}
+
+/* ── Hide Neve's own mobile nav / header sidebar ── */
+
+.bw-header ~ .header_menu_sidebar,
+.bw-header ~ .nv-nav-wrap,
+#header-menu-sidebar,
+.header_menu_sidebar,
+.menu-mobile-toggle {
+  display: none !important;
+}
+
+/* ══════════════════════════════════════════════════
+   Mobile overlay + slide-out panel
+   Both live INSIDE .bw-header. Inline styles on the
+   HTML guarantee hidden state even before CSS loads.
+   ══════════════════════════════════════════════════ */
+
+/* Overlay: hidden by default, shown via JS */
+.bw-header .bw-mobile-overlay {
+  display: none !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 1000 !important;
+}
+
+.bw-header .bw-mobile-overlay.is-open {
+  display: block !important;
+}
+
+/* Slide-out panel: off-screen left by default.
+   Uses left/right (not logical properties) because CSS transitions
+   on inset-inline-start are unreliable in Safari. RTL override below. */
+.bw-header .bw-mobile-menu {
+  position: fixed !important;
+  top: 0 !important;
+  left: -280px !important;
+  width: 280px !important;
+  height: 100% !important;
+  background: #ffffff !important;
+  z-index: 1001 !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow-y: auto !important;
+  transition: left 0.3s ease;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3a3734;
+}
+
+.bw-header .bw-mobile-menu.is-open {
+  left: 0 !important;
+}
+
+/* Desktop: force-hide both mobile elements */
+@media (min-width: 1024px) {
+  .bw-header .bw-mobile-overlay,
+  .bw-header .bw-mobile-overlay.is-open {
+    display: none !important;
+  }
+  .bw-header .bw-mobile-menu,
+  .bw-header .bw-mobile-menu.is-open {
+    left: -280px !important;
+    display: none !important;
+  }
+}
+
+/* Reset all elements inside mobile menu */
+.bw-header .bw-mobile-menu *,
+.bw-header .bw-mobile-menu *::before,
+.bw-header .bw-mobile-menu *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bw-header .bw-mobile-menu a,
+.bw-header .bw-mobile-menu a:visited,
+.bw-header .bw-mobile-menu a:hover,
+.bw-header .bw-mobile-menu a:active {
+  text-decoration: none !important;
+  outline: none;
+  background: none;
+  box-shadow: none;
+}
+
+.bw-header .bw-mobile-menu a:focus-visible {
+  outline: 2px solid #8b2020;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.bw-header .bw-mobile-menu button {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font: inherit;
+  color: inherit;
+}
+
+.bw-header .bw-mobile-menu button:focus-visible {
+  outline: 2px solid #8b2020;
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+.bw-header .bw-mobile-menu p {
+  margin: 0;
+  padding: 0;
+}
+
+/* h2 reset inside mobile menu (section titles) */
+.bw-header .bw-mobile-menu h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Close button: top-end, 32×32, circle */
+.bw-header .bw-mobile-menu .bw-mobile-close {
+  position: absolute;
+  top: 16px;
+  inset-inline-end: 16px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3a3734;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.bw-header .bw-mobile-menu .bw-mobile-close:hover {
+  background-color: #f7f6f4;
+}
+
+.bw-header .bw-mobile-menu .bw-mobile-close svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* Content wrapper: padding 24px, margin-top 32px */
+.bw-header .bw-mobile-menu .bw-mobile-menu__content {
+  padding: 24px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Section: flex column, 8px gap */
+.bw-header .bw-mobile-menu .bw-mobile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Section title: 14px, semibold, 8px bottom margin */
+.bw-header .bw-mobile-menu .bw-mobile-section__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #3a3734;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+/* Section title as link */
+.bw-header .bw-mobile-menu .bw-mobile-section__title--link {
+  color: #3a3734;
+  transition: color 0.2s;
+  display: block;
+  padding: 4px 0;
+}
+
+.bw-header .bw-mobile-menu .bw-mobile-section__title--link:hover {
+  color: #8b2020;
+}
+
+/* Section links: 14px, padding-start indent */
+.bw-header .bw-mobile-menu .bw-mobile-section a {
+  display: block;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #3a3734;
+  padding: 4px 0;
+  padding-inline-start: 16px;
+  transition: color 0.2s;
+}
+
+.bw-header .bw-mobile-menu .bw-mobile-section a:hover {
+  color: #8b2020;
+}
+
+/* Divider */
+.bw-header .bw-mobile-menu .bw-mobile-divider {
+  border-top: 1px solid #e4e0dc;
+  width: 100%;
+}
+
+/* Social icons row: 16px gap, 24×24 wrappers */
+.bw-header .bw-mobile-menu .bw-mobile-social {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 8px 0;
+  margin-top: 16px;
+}
+
+.bw-header .bw-mobile-menu .bw-mobile-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  opacity: 1;
+  transition: opacity 0.2s;
+  color: #6b6764;
+}
+
+.bw-header .bw-mobile-menu .bw-mobile-social a:hover {
+  opacity: 0.7;
+}
+
+.bw-header .bw-mobile-menu .bw-mobile-social a:focus-visible {
+  outline: 2px solid #8b2020;
+  outline-offset: 2px;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.bw-header .bw-mobile-menu .bw-mobile-social a svg {
+  display: block;
+}
+
+/* ══════════════════════════════════════════════════
+   RTL layout — Hebrew / Arabic
+   Applied when .bw-header--rtl is present.
+   Logical properties handle dropdowns, close button,
+   and link padding automatically. Flex reversal and
+   mobile menu slide direction need explicit overrides
+   because CSS transitions on logical properties are
+   unreliable in Safari.
+   ══════════════════════════════════════════════════ */
+
+.bw-header--rtl {
+  direction: rtl !important;
+}
+
+/* Force RTL direction on all flex containers so WordPress/Neve can't override */
+.bw-header--rtl .bw-header__inner,
+.bw-header--rtl .bw-nav,
+.bw-header--rtl .bw-side-ctas,
+.bw-header--rtl .bw-nav__item,
+.bw-header--rtl .bw-dropdown,
+.bw-header--rtl .bw-social {
+  direction: rtl !important;
+}
+
+/* Dropdown links: right-align text in RTL */
+.bw-header--rtl .bw-dropdown__menu a {
+  text-align: right;
+}
+
+/* Mobile panel slides from right in RTL */
+.bw-header--rtl .bw-mobile-menu {
+  left: auto !important;
+  right: -280px !important;
+  transition: right 0.3s ease;
+}
+
+.bw-header--rtl .bw-mobile-menu.is-open {
+  right: 0 !important;
+  left: auto !important;
+}
+
+@media (min-width: 1024px) {
+  .bw-header--rtl .bw-mobile-menu,
+  .bw-header--rtl .bw-mobile-menu.is-open {
+    right: -280px !important;
+    display: none !important;
+  }
+}
+
+.bw-header--rtl .bw-mobile-menu .bw-mobile-menu__content {
+  text-align: right;
+}
+
+/* ══════════════════════════════════════════════════
+   Language-specific fonts
+   Hebrew uses IBM Plex Sans Hebrew + Assistant;
+   Arabic uses IBM Plex Sans Arabic + Assistant;
+   English uses the default IBM Plex Sans + Figtree.
+   ══════════════════════════════════════════════════ */
+
+.bw-header[lang="he"],
+.bw-header[lang="he"] .bw-nav__item,
+.bw-header[lang="he"] .bw-dropdown__menu a,
+.bw-header[lang="he"] .bw-mobile-menu,
+.bw-header[lang="he"] .bw-mobile-menu .bw-mobile-section__title,
+.bw-header[lang="he"] .bw-mobile-menu .bw-mobile-section a {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+}
+
+.bw-header[lang="ar"],
+.bw-header[lang="ar"] .bw-nav__item,
+.bw-header[lang="ar"] .bw-dropdown__menu a,
+.bw-header[lang="ar"] .bw-mobile-menu,
+.bw-header[lang="ar"] .bw-mobile-menu .bw-mobile-section__title,
+.bw-header[lang="ar"] .bw-mobile-menu .bw-mobile-section a {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+/* ══════════════════════════════════════════════════
+   Reduced motion: disable transitions/animations
+   ══════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .bw-header *,
+  .bw-header *::before,
+  .bw-header *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}

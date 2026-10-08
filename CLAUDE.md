@@ -13,9 +13,9 @@ For Codex (Asaf) and Claude Code (Nadav). Verified 2026-10-08; update this file 
 
 The single shared repository is [DelmedigoA/lexcia](https://github.com/DelmedigoA/lexcia), under Asaf's personal account. **We are not using a GitHub organization.** Both developers collaborate in this repository.
 
-At verification, GitHub was empty; this initial commit adds only these two instruction files. The application below is currently local in Asaf's `/Users/delmedigo/Dev/rabota`, which is not a Git checkout. The documentation checkout is `/Users/delmedigo/Dev/lexcia`. Do not assume application code is on GitHub or upload the surrounding `Dev` directory.
+The application code, tests and source assets are tracked here. Asaf's shared-repository checkout is `/Users/delmedigo/Dev/lexcia`; `/Users/delmedigo/Dev/rabota` remains the original local application/deployment workspace and is not a Git checkout. Develop in a clone of this repository and do not upload the surrounding `Dev` directory. Credentials, generated output and local Drive readbacks are excluded.
 
-Current local application layout:
+Repository layout:
 
 - `website/`: Vite + React landing page and assistant; `backend/lexcia/`: Python 3.14+, Starlette/Uvicorn, Pydantic and LangGraph/LangChain/OpenAI.
 - `knowledge/lexcia.json` and `knowledge/instructions.md`: reviewed product facts, provenance and answer boundaries; `config/demo.yaml`: model/backend settings.
@@ -37,7 +37,7 @@ Before pushing relevant application changes, run `uv run pytest` and `(cd websit
 - Production: [lexcia.vercel.app](https://lexcia.vercel.app); retained alias: [rabota-drab.vercel.app](https://rabota-drab.vercel.app). Both domains are verified; no custom domain was listed.
 - Latest verified production deployment: [lexcia-gimkgjezk-rabota2.vercel.app](https://lexcia-gimkgjezk-rabota2.vercel.app), status `READY`, source `cli`. There is **no Git integration**; pushing GitHub does not currently deploy. Check live project metadata before relying on this dated deployment snapshot.
 - Deployment is manual via `uv run python scripts/deploy.py` from the application root; it targets production in `rabota2`. Do not deploy or change infrastructure without a developer request. Vercel serves the Vite build and Python API; the demo is excluded.
-- Asaf's local credentials are managed in the ignored application-root `.env`. `VERCEL_API_KEY` is read by `scripts/deploy.py` and passed as process environment variable `VERCEL_TOKEN`; never put it in command arguments or output. `.vercel/project.json` stores local project linkage, not the token.
+- Asaf's existing local credentials are managed in `/Users/delmedigo/Dev/rabota/.env`. Each clone needs its own ignored application-root `.env`; credentials and Vercel linkage are not copied with the source. `VERCEL_API_KEY` is read by `scripts/deploy.py` and passed as process environment variable `VERCEL_TOKEN`; never put it in command arguments or output. `.vercel/project.json` stores local project linkage, not the token. The existing Vercel link is in the original `rabota` workspace; do not deploy from an unlinked clone or create/change linkage without a developer request.
 - `OPENAI_API_KEY` is local in `.env` and managed as a sensitive server-side Vercel environment variable for Production, Preview and Development. Never expose it to the frontend. No shared credential vault or Nadav-specific credential location was verified; ask the developer for access rather than guessing.
 - Never print, document, commit or upload secret values or local `.env` files. Before staging, confirm secrets and generated files are ignored; stage explicit paths only. Only a value-free `.env.example` belongs in Git.
 

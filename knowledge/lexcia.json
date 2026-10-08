@@ -1,0 +1,68 @@
+[
+  {
+    "id": "overview",
+    "title": "What is Lexcia?",
+    "content": "Lexcia is a fully customizable AI-powered conversational layer for content-rich websites. Its tagline is “Websites know a lot. Finding it shouldn’t be work.” It makes information already contained in a website accessible through conversation, helping visitors find information and navigate while keeping the page in view. Lexcia adapts to the organization’s engine, interface, visual design, content, tone, answers, recommendations, navigation and integration.",
+    "provenance": "Target Market, Problem Definition, Pricing — Google Drive document, modified October 6, 2026; read October 7, 2026. https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit"
+  },
+  {
+    "id": "experience",
+    "title": "The Lexcia demo experience",
+    "content": "The current prototype has a minimal Lexcia landing page and a floating assistant on the left, with “powered by Lexcia” attribution. “Try Lexcia” opens the assistant. Visitors can close it with the close button or Escape, resize the window on desktop, pin it beside the page, expand it, and view saved conversations. Earlier saved conversations are read-only; the plus button starts a new conversation. The interface is restrained, without a bot avatar or a named assistant persona.",
+    "provenance": "Implemented local prototype; reviewed October 7, 2026."
+  },
+  {
+    "id": "answers",
+    "title": "How answers should work",
+    "content": "The intended experience provides clear answers grounded in the website’s supplied content and helps visitors reach relevant pages. The demo assistant is scoped to these Lexcia knowledge files. It should acknowledge missing information rather than invent facts. It streams text and supports stopping a response. The frontend can render charts, tables, and validated component-based answers; automatic backend generation of these layouts is not implemented in this new minimal backend.",
+    "provenance": "User instructions and implemented local prototype; reviewed October 7, 2026."
+  },
+  {
+    "id": "design",
+    "title": "Lexcia’s visual direction",
+    "content": "Lexcia’s brand is refined, contemporary and intelligent. Its name subtly evokes language, lexicons and knowledge. Embedded assistants are mostly presented as “powered by Lexcia” and adapt to the host website’s visual language and brand. The current demo retains the Nouva-inspired dark blue atmospheric background, Onest typography, translucent surfaces, subtle borders, rounded corners and generous spacing. The website header uses the original Lexcia serif wordmark embedded in the document’s Branding section, displayed in white on the dark surface. The chat UI has no brand logo: its launcher uses a robot icon, its welcome screen uses text, and its footer says “powered by Lexcia” in plain text.",
+    "provenance": "Target Market, Problem Definition, Pricing — Google Drive document, modified October 6, 2026; read October 7, 2026. https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit Visual implementation: local prototype."
+  },
+  {
+    "id": "status",
+    "title": "What is available or still unknown?",
+    "content": "Lexcia is a prototype/demo in this project. The reviewed product document establishes a planned setup plus recurring subscription pricing model, early-customer pricing ranges and later standard pricing ranges; see the pricing record. It does not establish a public launch date, company founding date, customer list, partnerships, supported enterprise integrations, performance statistics, certifications or service guarantees. Do not claim these exist. Clicking Try Lexcia opens the demo assistant; no account creation, purchase or billing flow is implemented. Organization-specific customization is the product offering, not proof that this prototype implements every integration or workflow.",
+    "provenance": "Target Market, Problem Definition, Pricing — Google Drive document, modified October 6, 2026; read October 7, 2026. https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit Implementation status: local prototype."
+  },
+  {
+    "id": "architecture",
+    "title": "The independent Lexcia project",
+    "content": "The new Lexcia project has its own website, Python backend, knowledge, configuration, and conversation sessions. ArchiveLens is an architectural reference only. Lexcia does not import ArchiveLens or call its server. The backend uses Python, Starlette/Uvicorn, LangGraph, LangChain’s OpenAI model integration, and Pydantic validation. It loads local website knowledge, ranks it using keyword retrieval, and streams source-grounded answers. The website uses Vite and its existing JavaScript/React assistant interface. No broad external-web search is provided in this demo.",
+    "provenance": "User instructions and implemented local prototype; reviewed October 7, 2026."
+  },
+  {
+    "id": "branding",
+    "title": "Lexcia branding and tagline — מיתוג",
+    "content": "The brand name is Lexcia, mostly presented as “powered by Lexcia” in embedded experiences. English tagline: “Websites know a lot. Finding it shouldn’t be work.” Hebrew tagline: “כל הידע כבר שם. Lexcia הופכת אותו לנגיש.” The brand idea is to make knowledge easier to reach, turning information buried in large, old or content-heavy websites into an accessible, responsive conversation.",
+    "provenance": "Target Market, Problem Definition, Pricing — Google Drive document, modified October 6, 2026; read October 7, 2026. https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit"
+  },
+  {
+    "id": "problem",
+    "title": "The problem Lexcia addresses — הכאב",
+    "content": "Organizations invest years of work, money and resources in creating valuable content and knowledge, yet much of it stays buried inside their websites. The information exists but visitors cannot always find and use it. Lexcia addresses the gap between the knowledge an organization holds and its accessibility to users. ארגונים משקיעים שנים של עבודה, כסף ומשאבים ביצירת תוכן, ידע ומאגרי מידע, אבל חלק גדול מהערך הזה נשאר קבור בתוך האתר. המידע קיים, אך לא תמיד נגיש.",
+    "provenance": "Target Market, Problem Definition, Pricing — Google Drive document, modified October 6, 2026; read October 7, 2026. https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit"
+  },
+  {
+    "id": "target-market",
+    "title": "Target websites and organizations — קהל יעד",
+    "content": "Lexcia targets content-rich, non-governmental websites with modern digital experiences and large knowledge bases, guides, FAQs, directories or resource libraries. Visitors need help finding the right information and navigating, and an assistant should integrate naturally into the existing experience. The current product focus is lower-risk navigation, discovery and information retrieval over existing content, where incorrect or incomplete answers are unlikely to cause significant harm.",
+    "provenance": "Target Market, Problem Definition, Pricing — Google Drive document, modified October 6, 2026; read October 7, 2026. https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit"
+  },
+  {
+    "id": "customization",
+    "title": "What Lexcia offers and customizes",
+    "content": "The product offering adapts the entire experience to an organization: engine (retrieval, knowledge structure, model behavior, tools and logic); interface (chat experience, interaction patterns, placement and flows); design (the website’s visual language and brand); content (existing pages, documents and knowledge); behavior (tone, answers, recommendations and navigation); integration (embedded directly into the existing website). Lexcia is a conversational layer tailored from the engine to how it looks, speaks and behaves. These are offering dimensions, not a claim that every capability is already implemented in this demo.",
+    "provenance": "Target Market, Problem Definition, Pricing — Google Drive document, modified October 6, 2026; read October 7, 2026. https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit"
+  },
+  {
+    "id": "pricing",
+    "title": "Lexcia pricing, setup and subscription — מחיר ותמחור",
+    "content": "The planned pricing model is a one-time setup fee plus a recurring monthly subscription, with API usage fees billed separately based on usage. For the first few early customers: setup ₪2,500–₪7,500 and subscription ₪250–₪750 per month, plus API fees. Early pricing is intentionally discounted to reduce adoption friction, validate the product and build case studies. Additional discounts may be offered for structured feedback, permission to use the implementation as a case study and close product-development collaboration. Later standard pricing, once several successful deployments and a proven implementation process exist: setup ₪10,000–₪25,000 and subscription ₪1,000–₪2,500 per month, plus API fees. Standard pricing is a future stage, not an assertion that it is currently in effect. The monthly subscription covers hosting, monitoring, maintenance, analytics and ongoing assistant improvements. Prices may increase for larger websites, custom integrations, higher traffic, complex workflows or large repositories of PDFs, videos, images and other media. No exact quote, fixed tier, VAT treatment or included API allowance is established. תמחור: הקמה חד־פעמית ומנוי חודשי, עם עלויות API בנפרד לפי שימוש. ללקוחות ראשונים: הקמה ₪2,500–₪7,500 ומנוי ₪250–₪750 בחודש. בהמשך: הקמה ₪10,000–₪25,000 ומנוי ₪1,000–₪2,500 בחודש.",
+    "provenance": "Target Market, Problem Definition, Pricing — Google Drive document, modified October 6, 2026; read October 7, 2026. https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit"
+  }
+]

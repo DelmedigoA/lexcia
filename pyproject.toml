@@ -1,0 +1,17 @@
+[project]
+name = "lexcia"
+version = "0.1.0"
+description = "Website and independently grounded Lexcia demo assistant"
+requires-python = ">=3.14"
+dependencies = ["langgraph>=1.2.11", "langchain-openai>=1.6.1", "pydantic>=2.13.5", "starlette>=1.6.0", "uvicorn>=0.52.4", "python-dotenv>=1.2.3", "pyyaml>=6.0.2", "fastapi>=0.135.0"]
+[dependency-groups]
+dev = ["pytest>=9.1.1", "httpx>=0.28.1"]
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["backend/tests"]
+
+[tool.vercel]
+entrypoint = "api.index:app"
+
+[tool.vercel.fastapi.static]
+exclude = true

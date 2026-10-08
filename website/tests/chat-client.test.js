@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {parseEvent,readEvents,askLexcia} from '../src/chat-client.js';
+test('parse named events and ignores heartbeat comments',()=>{assert.deepEqual(parseEvent('event:delta\ndata:{"text":"שלום"}'),{event:'delta',data:{text:'שלום'}});assert.equal(parseEvent(': ping'),null);});
+test('handles split UTF-8, CRLF boundaries and unterminated final event',async()=>{const bytes=new TextEncoder().encode('event: delta\r\ndata: {"text":"שלום"}\r\n\r\nevent: final\ndata: {"answer":"done"}');let offset=0;const body=new ReadableStream({pull(c){if(offset===bytes.length)c.close();else c.enqueue(bytes.slice(offset,++offset));}});const events=[];await readEvents(body,e=>events.push(e));assert.equal(events.length,2);assert.equal(events[0].data.text,'שלום');assert.equal(events[1].event,'final');});
+test('does not treat interrupted streams as complete',async()=>{const original=global.fetch;global.fetch=async()=>new Response('event: delta\ndata: {"text":"partial"}\n\n');try{await assert.rejects(()=>askLexcia('test',()=>{}),/before the answer was complete/);}finally{global.fetch=original;}});
+test('propagates server errors',async()=>{const original=global.fetch;global.fetch=async()=>new Response('event: error\ndata: {"message":"Chat failed"}\n\n');try{await assert.rejects(()=>askLexcia('test',()=>{}),/Chat failed/);}finally{global.fetch=original;}});
