@@ -160,3 +160,11 @@ async function startNewConversation(){if(busy)return;$('new').disabled=true;try{
 $('new').onclick=startNewConversation;
 $('continue-new').onclick=startNewConversation;
 renderConversation(currentConversation());
+
+// One-page site: sample questions ask the assistant directly; the header tracks scroll and the current section.
+document.querySelectorAll('[data-ask]').forEach(button=>button.addEventListener('click',async()=>{openPanel();if(busy)return;if(readOnly)await startNewConversation();$('prompt').value=button.dataset.ask;$('prompt').dispatchEvent(new Event('input'));$('composer').requestSubmit();}));
+const siteHeader=document.querySelector('.site-header');
+const updateHeader=()=>siteHeader?.classList.toggle('is-scrolled',scrollY>24);
+addEventListener('scroll',updateHeader,{passive:true});updateHeader();
+const navLinks=[...document.querySelectorAll('.site-nav a[href^="#"]')];
+if('IntersectionObserver' in window&&navLinks.length){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;for(const link of navLinks){if(link.hash===`#${entry.target.id}`)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');}}},{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('main>section[id]').forEach(section=>observer.observe(section));}
