@@ -4,7 +4,7 @@ For Codex (Asaf) and Claude Code (Nadav). Verified 2026-10-08; update this file 
 
 ## Decisions and shared documents
 
-- [Shared Lexcia Drive folder](https://drive.google.com/drive/folders/1V4Gqc3diM0SH8q8hzC20FMLtKb-OxOON), currently titled **Chatbots**.
+- [Shared Lexcia Drive folder](https://drive.google.com/drive/folders/1V4Gqc3diM0SH8q8hzC20FMLtKb-OxOON), currently titled **Lexcia**.
 - [Target Market, Problem Definition, Pricing](https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit?usp=drivesdk): product positioning, Lexcia branding, offering and pricing. Keep early-customer and future standard pricing distinct; API usage is separate.
 - [Meetings](https://drive.google.com/drive/folders/18oHx2GGFm-vUj4zwvNi1h_n8tRgWP-ry): dated decisions and action items. Read the latest relevant notes, including **2026-10-07 - Customer Outreach**, **2026-09-29 - Product Design.md**, and **2026-09-04 - Project Definition.md**. Record new shared product decisions here; ask the developer when sources conflict.
 - [Prospects](https://docs.google.com/spreadsheets/d/1tL1fJkNHJ4QJGseAcQFvREClAaHdLddW4KC6oDjrWOw/edit?usp=drivesdk): outreach tracking. [Outreach Emails](https://drive.google.com/drive/folders/1CnMzfuI7-whvkCkOF_-cnxi7T5j2-gM1): email drafts. These materials are shared working documents; do not copy private prospect data into Git.
