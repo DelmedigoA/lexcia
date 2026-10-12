@@ -58,3 +58,17 @@ main{display:flow-root}main>section{scroll-margin-top:86px}
 :is(.section-eyebrow,.about-index,.step-index){letter-spacing:.16em}.hero-subtitle,.site-nav a{letter-spacing:0}
 @media(max-width:700px){.hero h1{font-size:clamp(44px,12vw,64px)}:is(.section h2,.about h2){font-size:clamp(36px,10vw,48px)}}
 @media(max-width:390px){.hero h1{font-size:42px}}
+
+/* Why: one centered statement instead of the label/heading grid. */
+.why{text-align:center}.why .section-head{display:block;max-width:820px}.why .section-eyebrow{margin:0 0 22px}.why h2{font-size:clamp(40px,5vw,68px)}.why .section-head>p:last-child{max-width:620px;margin:26px auto 0}
+
+/* How it works: four standing columns in a muted dusk palette of blue, teal, moss and ochre. */
+.how{--tone-blue:#3d6a96;--tone-teal:#3f7a76;--tone-moss:#6c8460;--tone-ochre:#b39556;background:linear-gradient(180deg,#071321,#0a1a2e)}
+.how-head h2{max-width:780px}.how-head .section-eyebrow{margin:0 0 20px}
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:clamp(40px,6vw,64px);padding:0;list-style:none}
+.flow-col{--tone:var(--tone-blue);display:flex;flex-direction:column;justify-content:space-between;gap:48px;min-height:340px;padding:26px 24px;border:1px solid color-mix(in srgb,var(--tone) 30%,transparent);border-top:2px solid color-mix(in srgb,var(--tone) 75%,transparent);border-radius:4px 4px 12px 12px;background:linear-gradient(180deg,color-mix(in srgb,var(--tone) 22%,#071321),color-mix(in srgb,var(--tone) 8%,#071321))}
+.flow-col[data-tone=teal]{--tone:var(--tone-teal)}.flow-col[data-tone=moss]{--tone:var(--tone-moss)}.flow-col[data-tone=ochre]{--tone:var(--tone-ochre)}
+.flow-col h3{margin:0;color:#eef3f9;font:600 clamp(24px,2.2vw,30px)/1.1 var(--display);letter-spacing:-.01em;text-wrap:balance}
+.flow-col p{margin:0;color:#b4c0cf;font-size:15px;font-weight:300;line-height:1.65}
+@media(max-width:960px){.flow{grid-template-columns:repeat(2,minmax(0,1fr))}.flow-col{min-height:260px}}
+@media(max-width:700px){.flow{grid-template-columns:1fr;gap:8px}.flow-col{min-height:0;gap:18px;padding:22px 20px}}
