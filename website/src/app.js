@@ -1,8 +1,10 @@
 import {mountAnswer,clearAnswerRoots} from './answer-ui.jsx';
 import {renderAnswer,isHebrewDominant} from './formatting.js';
 import {askLexcia,resetLexcia} from './chat-client.js';
+import {makeLauncherDraggable} from './draggable-launcher.js';
 const $=id=>document.getElementById(id);
 const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('assistant-divider');
+makeLauncherDraggable(launcher);
 const items=new Map();
 let busy=false,controller=null;
 const PIN_WIDTH_KEY='lexcia:assistant-width';

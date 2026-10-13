@@ -8,8 +8,8 @@
   {
     "id": "experience",
     "title": "The Lexcia demo experience",
-    "content": "The current prototype has a minimal Lexcia landing page and a floating assistant on the left, with “powered by Lexcia” attribution. “Try Lexcia” opens the assistant. Visitors can close it with the close button or Escape, resize the window on desktop, pin it beside the page, expand it, and view saved conversations. Earlier saved conversations are read-only; the plus button starts a new conversation. The interface is restrained, without a bot avatar or a named assistant persona.",
-    "provenance": "Implemented local prototype; reviewed October 7, 2026."
+    "content": "The current prototype has a minimal Lexcia landing page and a floating assistant on the left, with “powered by Lexcia” attribution. “Try Lexcia” opens the assistant. Visitors can drag the launcher with a mouse or touch, or reposition it with arrow keys when focused. Visitors can close it with the close button or Escape, resize the window on desktop, pin it beside the page, expand it, and view saved conversations. Earlier saved conversations are read-only; the plus button starts a new conversation. The interface is restrained, without a bot avatar or a named assistant persona.",
+    "provenance": "Implemented local prototype; reviewed October 13, 2026."
   },
   {
     "id": "answers",
