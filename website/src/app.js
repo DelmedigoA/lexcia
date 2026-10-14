@@ -2,6 +2,7 @@ import {mountAnswer,clearAnswerRoots} from './answer-ui.jsx';
 import {renderAnswer,isHebrewDominant} from './formatting.js';
 import {askLexcia,resetLexcia} from './chat-client.js';
 import {makeLauncherDraggable} from './draggable-launcher.js';
+import {positionNearLauncher} from './panel-position.js';
 const $=id=>document.getElementById(id);
 const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('assistant-divider');
 makeLauncherDraggable(launcher);
@@ -24,6 +25,18 @@ if(!conversations.length)conversations=[{id:currentThreadId,title:'New inquiry',
 let selectedThreadId=currentThreadId;
 let renderedThreadId=null;
 let closingTimer;
+function positionFloatingPanel(){
+  if(!panel.open||pinned)return;
+  const position=positionNearLauncher(launcher.getBoundingClientRect(),{width:panel.offsetWidth,height:panel.offsetHeight},{width:window.innerWidth,height:window.innerHeight});
+  panel.style.setProperty('--panel-left',`${position.left}px`);
+  panel.style.setProperty('--panel-top',`${position.top}px`);
+  panel.style.setProperty('--panel-origin',`${position.originX}px ${position.originY}px`);
+}
+let positionFrame;
+function schedulePanelPosition(){cancelAnimationFrame(positionFrame);positionFrame=requestAnimationFrame(positionFloatingPanel);}
+const panelPositionObserver=new ResizeObserver(schedulePanelPosition);
+panelPositionObserver.observe(panel);panelPositionObserver.observe(launcher);
+addEventListener('resize',schedulePanelPosition);
 function currentConversation(){return conversations.find(thread=>thread.id===currentThreadId);}
 function storeConversations(){conversations=conversations.slice(0,20);try{localStorage.setItem(THREADS_KEY,JSON.stringify(conversations));}catch{}}
 function floatSize(){try{const value=JSON.parse(localStorage.getItem(FLOAT_SIZE_KEY)||'{}');return{width:Number(value.width)||420,height:Number(value.height)||620};}catch{return{width:420,height:620};}}
@@ -39,7 +52,7 @@ function setPinnedWidth(width){
   localStorage.setItem(PIN_WIDTH_KEY,String(next));
 }
 function setPinned(value){
-  pinned=value && !matchMedia('(max-width: 600px)').matches;
+  pinned=value && !matchMedia('(max-width: 700px)').matches;
   panel.classList.toggle('pinned',pinned);
   document.body.classList.toggle('assistant-pinned',pinned);
   divider.hidden=!pinned;
@@ -47,6 +60,7 @@ function setPinned(value){
   pin.setAttribute('aria-label',pinned?'Unpin assistant':'Pin assistant beside the page');
   pin.title=pinned?'Unpin assistant':'Pin beside the page';
   if(pinned)setPinnedWidth(pinnedWidth());
+  positionFloatingPanel();
 }
 function renderConversation(thread){
   if(thread&&thread.id===renderedThreadId)return;
@@ -76,14 +90,14 @@ function toggleThreadList(){
   if(show){renderThreadList();$('thread-list').hidden=false;$('thread').hidden=true;$('composer').parentElement.hidden=true;$('panel-title').textContent='Conversations';$('threads-toggle').setAttribute('aria-pressed','true');$('threads-toggle').setAttribute('aria-label','Return to inquiry');$('thread-list').querySelector('button')?.focus();}
   else{const thread=conversations.find(item=>item.id===currentThreadId);if(thread)setConversationView(thread);else setConversationView(conversations[0]);$('prompt').focus();}
 }
-function openPanel(){if(closing){clearTimeout(closingTimer);closing=false;}const thread=conversations.find(item=>item.id===selectedThreadId)||currentConversation();if(thread)setConversationView(thread);if(!panel.open)panel.showModal();panel.classList.remove('is-exiting');panel.classList.add('is-entering');launcher.setAttribute('aria-expanded','true');requestAnimationFrame(()=>readOnly?$('panel-title').focus():$('prompt').focus());setTimeout(()=>panel.classList.remove('is-entering'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);}
+function openPanel(){if(closing){clearTimeout(closingTimer);closing=false;}const thread=conversations.find(item=>item.id===selectedThreadId)||currentConversation();if(thread)setConversationView(thread);if(!panel.open)panel.showModal();positionFloatingPanel();panel.classList.remove('is-exiting');panel.classList.add('is-entering');launcher.setAttribute('aria-expanded','true');requestAnimationFrame(()=>readOnly?$('panel-title').focus():$('prompt').focus());setTimeout(()=>panel.classList.remove('is-entering'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);}
 function closePanel(){if(!panel.open||closing)return;closing=true;setPinned(false);panel.classList.remove('is-entering');panel.classList.add('is-exiting');launcher.setAttribute('aria-expanded','false');closingTimer=setTimeout(()=>{panel.close();panel.classList.remove('is-exiting');closing=false;launcher.focus();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);}
 launcher.onclick=()=>panel.open?closePanel():openPanel();$('close').onclick=closePanel;
 document.querySelectorAll('[data-open-assistant]').forEach(button=>button.addEventListener('click',openPanel));
 panel.addEventListener('cancel',event=>{event.preventDefault();closePanel();});
 panel.addEventListener('click',event=>{if(event.target===panel)closePanel();});
 $('threads-toggle').onclick=toggleThreadList;
-$('expand').onclick=()=>{const expanded=panel.classList.toggle('expanded');$('expand').setAttribute('aria-pressed',String(expanded));$('expand').setAttribute('aria-label',expanded?'Restore panel size':'Expand panel');$('expand').title=expanded?'Restore panel size':'Expand panel';};
+$('expand').onclick=()=>{const expanded=panel.classList.toggle('expanded');$('expand').setAttribute('aria-pressed',String(expanded));$('expand').setAttribute('aria-label',expanded?'Restore panel size':'Expand panel');$('expand').title=expanded?'Restore panel size':'Expand panel';positionFloatingPanel();};
 pin.onclick=()=>setPinned(!pinned);
 divider.addEventListener('pointerdown',event=>{
   if(!pinned)return;
@@ -100,17 +114,18 @@ divider.addEventListener('keydown',event=>{
   else if(event.key==='End')setPinnedWidth(720);
   else setPinnedWidth(current+(event.key==='ArrowRight'?24:-24));
 });
-addEventListener('resize',()=>{if(pinned)setPinnedWidth(pinnedWidth());});
+addEventListener('resize',()=>{if(pinned){if(matchMedia('(max-width: 700px)').matches)setPinned(false);else setPinnedWidth(pinnedWidth());}});
 const grip=$('resize-grip');
-function resetFloatSize(){setFloatSize(420,620);panel.classList.remove('expanded');$('expand').setAttribute('aria-pressed','false');$('expand').setAttribute('aria-label','Expand panel');$('expand').title='Expand panel';}
+function resetFloatSize(){setFloatSize(420,620);panel.classList.remove('expanded');$('expand').setAttribute('aria-pressed','false');$('expand').setAttribute('aria-label','Expand panel');$('expand').title='Expand panel';positionFloatingPanel();}
 grip.addEventListener('pointerdown',event=>{
   if(pinned)return;event.preventDefault();grip.setPointerCapture(event.pointerId);
-  const resize=move=>{panel.classList.remove('expanded');setFloatSize(move.clientX-24,window.innerHeight-move.clientY-88);};
+  const start={x:event.clientX,y:event.clientY,width:panel.offsetWidth,height:panel.offsetHeight};
+  const resize=move=>{panel.classList.remove('expanded');$('expand').setAttribute('aria-pressed','false');$('expand').setAttribute('aria-label','Expand panel');$('expand').title='Expand panel';setFloatSize(start.width+move.clientX-start.x,start.height-(move.clientY-start.y));positionFloatingPanel();};
   const finish=()=>{grip.removeEventListener('pointermove',resize);grip.removeEventListener('pointerup',finish);grip.removeEventListener('pointercancel',finish);};
   grip.addEventListener('pointermove',resize);grip.addEventListener('pointerup',finish);grip.addEventListener('pointercancel',finish);
 });
 grip.addEventListener('dblclick',resetFloatSize);
-grip.addEventListener('keydown',event=>{if(pinned)return;const size=floatSize();if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;event.preventDefault();if(event.key==='Home')resetFloatSize();else if(event.key==='End')setFloatSize(window.innerWidth-24,window.innerHeight-108);else setFloatSize(size.width+(event.key==='ArrowRight'?24:event.key==='ArrowLeft'?-24:0),size.height+(event.key==='ArrowUp'?24:event.key==='ArrowDown'?-24:0));});
+grip.addEventListener('keydown',event=>{if(pinned)return;const size=floatSize();if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;event.preventDefault();if(event.key==='Home')resetFloatSize();else if(event.key==='End')setFloatSize(window.innerWidth-24,window.innerHeight-108);else setFloatSize(size.width+(event.key==='ArrowRight'?24:event.key==='ArrowLeft'?-24:0),size.height+(event.key==='ArrowUp'?24:event.key==='ArrowDown'?-24:0));positionFloatingPanel();});
 function setBusy(value){busy=value;$('send').hidden=value;$('stop').hidden=!value;$('new').disabled=value;$('threads-toggle').disabled=value;$('send').disabled=!$('prompt').value.trim()||value;}
 $('prompt').oninput=()=>{$('send').disabled=busy||!$('prompt').value.trim();};
 $('prompt').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();if(!busy)$('composer').requestSubmit();}});
