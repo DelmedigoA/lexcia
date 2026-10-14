@@ -4,7 +4,8 @@ const clamp=(value,min,max)=>Math.max(min,Math.min(max,value));
 export function positionNearLauncher(launcher,size,viewport){
   const maxX=viewport.width-size.width-MARGIN,maxY=viewport.height-size.height-MARGIN;
   const centerX=(launcher.left+launcher.right)/2,centerY=(launcher.top+launcher.bottom)/2;
-  const x=clamp(centerX-size.width/2,MARGIN,maxX),y=clamp(centerY-size.height/2,MARGIN,maxY);
+  // Prefer the launcher below the panel's left corner; shift only to fit the viewport.
+  const x=clamp(launcher.left,MARGIN,maxX),y=clamp(centerY-size.height/2,MARGIN,maxY);
   const candidates=[
     {left:x,top:launcher.top-size.height-GAP},
     {left:x,top:launcher.bottom+GAP},

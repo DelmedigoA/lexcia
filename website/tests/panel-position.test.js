@@ -26,6 +26,18 @@ test('prefers above, flips below, then uses the right or left side',()=>{
   assert.equal(positionNearLauncher(button(10,425),size,desktop).left,70);
   assert.equal(positionNearLauncher(button(1140,425),size,desktop).left,710);
 });
+test('prefers the launcher below the bottom-left corner and shifts at the right edge',()=>{
+  for(const x of [26,300,575]){
+    const launcher=button(x,840),result=positionNearLauncher(launcher,size,desktop);
+    assert.equal(result.left,launcher.left);
+    assert.equal(result.top+size.height+10,launcher.top);
+    assert.equal(result.originX,25);
+    assert.equal(result.originY,size.height);
+  }
+  const shifted=positionNearLauncher(button(1140,840),size,desktop);
+  assert.equal(shifted.left,desktop.width-size.width-10);
+  assertInView(shifted,size,desktop);
+});
 test('mobile panel keeps its wide size and chooses above or below when possible',()=>{
   const viewport={width:390,height:844},mobileSize={width:370,height:640};
   for(const y of [10,400,784]){
