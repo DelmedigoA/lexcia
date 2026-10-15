@@ -226,3 +226,18 @@ for(const b of switches)b.setAttribute('aria-pressed',String(Number(b.dataset.jo
 for(const b of switches)b.addEventListener('click',()=>show(Number(b.dataset.journey),true));
 show(0,false);journey.classList.add('is-ready');
 if('IntersectionObserver' in window){new IntersectionObserver((entries,obs)=>{if(entries.some(e=>e.isIntersecting)){replay();obs.disconnect();}},{threshold:.45}).observe(journey);}else journey.classList.add('is-playing');}
+
+// Why Lexcia, option A: a question appears and the matching page lights up among many example pages.
+const SURFACE=[
+  {q:'Which course is right for a beginner?',page:7},
+  {q:'Which plan fits a small team?',page:13},
+  {q:'Where is last year’s annual report?',page:20},
+  {q:'Can I return an order?',page:15}
+];
+const surface=$('surface');
+if(surface){const sq=$('surface-q'),items=[...surface.querySelectorAll('[data-page]')];const still=matchMedia('(prefers-reduced-motion: reduce)').matches;let k=0,timer=null;
+const showMatch=i=>{const m=SURFACE[i];sq.classList.add('is-swapping');setTimeout(()=>{sq.textContent=`“${m.q}”`;sq.classList.remove('is-swapping');for(const li of items)li.classList.toggle('is-match',Number(li.dataset.page)===m.page);surface.classList.add('is-found');},still?0:350);};
+const start=()=>{if(timer||still)return;showMatch(k);timer=setInterval(()=>{k=(k+1)%SURFACE.length;showMatch(k);},3200);};
+const stop=()=>{clearInterval(timer);timer=null;};
+showMatch(0);
+if('IntersectionObserver' in window)new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))start();else stop();},{threshold:.3}).observe(surface);else start();}
