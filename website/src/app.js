@@ -200,12 +200,12 @@ const still=matchMedia('(prefers-reduced-motion: reduce)').matches;let timers=[]
 const later=(fn,ms)=>timers.push(setTimeout(fn,ms));const clear=()=>{timers.forEach(clearTimeout);timers=[];};
 const play=(i,animate)=>{clear();index=i;const item=LIVE[i];for(const t of topics)t.setAttribute('aria-pressed',String(Number(t.dataset.live)===i));
 ansText.textContent=item.a;src.textContent=item.src;
-if(!animate){q.classList.remove('is-typing');q.textContent=item.q;dots.hidden=true;ans.hidden=false;return;}
-q.textContent='';q.classList.add('is-typing');dots.hidden=true;ans.hidden=true;
+if(!animate){q.classList.remove('is-typing');q.textContent=item.q;dots.hidden=true;ans.classList.remove('is-off');return;}
+q.textContent='';q.classList.add('is-typing');dots.hidden=true;ans.classList.add('is-off');
 [...item.q].forEach((ch,n)=>later(()=>{q.textContent+=ch;},380+n*42));
 const typed=380+item.q.length*42;
 later(()=>{q.classList.remove('is-typing');dots.hidden=false;},typed+250);
-later(()=>{dots.hidden=true;ans.hidden=false;},typed+1350);
+later(()=>{dots.hidden=true;ans.classList.remove('is-off');},typed+1350);
 if(auto)later(()=>play((i+1)%LIVE.length,true),typed+6200);};
 for(const t of topics)t.addEventListener('click',()=>{auto=false;play(Number(t.dataset.live),!still);});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)clear();else if(auto)play(index,true);});
