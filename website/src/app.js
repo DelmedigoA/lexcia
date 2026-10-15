@@ -166,5 +166,21 @@ document.querySelectorAll('[data-ask]').forEach(button=>button.addEventListener(
 const siteHeader=document.querySelector('.site-header');
 const updateHeader=()=>siteHeader?.classList.toggle('is-scrolled',scrollY>24);
 addEventListener('scroll',updateHeader,{passive:true});updateHeader();
-const navLinks=[...document.querySelectorAll('.site-nav a[href^="#"]')];
-if('IntersectionObserver' in window&&navLinks.length){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;for(const link of navLinks){if(link.hash===`#${entry.target.id}`)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');}}},{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('main>section[id]').forEach(section=>observer.observe(section));}
+const navLinks=[...document.querySelectorAll('.site-nav a[href^="#"], .dots a[href^="#"]')];
+if('IntersectionObserver' in window&&navLinks.length){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;for(const link of navLinks){if(link.hash===`#${entry.target.id}`)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');}document.body.classList.toggle('on-dark',entry.target.id==='demo');}},{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('main>section[id]').forEach(section=>observer.observe(section));}
+
+// How it looks: accessible tabs (click, arrow keys, Home/End).
+const tabs=[...document.querySelectorAll('.tabs [role=tab]')];
+const selectTab=(tab,focus)=>{for(const t of tabs){const on=t===tab;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;$(t.getAttribute('aria-controls')).hidden=!on;}if(focus)tab.focus();};
+for(const tab of tabs){tab.addEventListener('click',()=>selectTab(tab));tab.addEventListener('keydown',e=>{const i=tabs.indexOf(tab);const next={ArrowRight:i+1,ArrowLeft:i-1,Home:0,End:tabs.length-1}[e.key];if(next===undefined)return;e.preventDefault();selectTab(tabs[(next+tabs.length)%tabs.length],true);});}
+
+// Free demo form: validates input only. Submissions are not sent anywhere until the email/Calendar workflow is decided.
+const demoForm=$('demo-form');
+if(demoForm){const email=$('demo-email'),site=$('demo-site'),status=$('demo-status');
+const validEmail=v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+const validSite=v=>{try{const u=new URL(/^https?:\/\//i.test(v)?v:`https://${v}`);return /\./.test(u.hostname);}catch{return false;}};
+demoForm.addEventListener('submit',event=>{event.preventDefault();const okEmail=validEmail(email.value.trim()),okSite=validSite(site.value.trim());
+email.setAttribute('aria-invalid',String(!okEmail));site.setAttribute('aria-invalid',String(!okSite));status.classList.toggle('is-error',!(okEmail&&okSite));
+if(!okEmail){status.textContent='Please enter a valid email address.';email.focus();return;}
+if(!okSite){status.textContent='Please enter your website address, for example www.yourwebsite.com.';site.focus();return;}
+status.textContent='Thank you. Demo requests open soon, so this form is not sending yet.';});}
