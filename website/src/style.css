@@ -68,6 +68,13 @@ body.on-dark .dots a{border-color:color-mix(in srgb,var(--paper) 70%,transparent
 .live--bot .live-credit{display:block;margin:9px 0 11px;color:var(--ink-3);font-size:10px;text-align:center}.live--bot .live-credit b{color:var(--ink);font-weight:400;font-family:var(--serif)}
 .live--bot .live-note{display:inline;margin-left:8px;color:var(--ink-3);font:italic 400 13px var(--serif)}
 .live-topics{flex-wrap:wrap;align-items:center}
+/* Option B layout: a tall, standing panel beside the text, like the real assistant. */
+.intro-grid:has(.live--bot){grid-template-columns:minmax(0,1fr) clamp(290px,29vw,370px);gap:48px 6%}
+.live--bot .live-card{height:min(560px,calc(100svh - 230px));min-height:440px}
+.live--bot .live-body{flex:1;min-height:0;overflow:hidden}.intro-grid:has(.live--bot) .next{display:none}
+.live--bot .live-topics{justify-content:center}.live--bot .live-note{display:block;width:100%;margin:8px 0 0;text-align:center}
+@media(max-width:960px) and (min-width:701px){.intro-grid:has(.live--bot){grid-template-columns:minmax(0,1fr) 280px;gap:28px}.intro-grid:has(.live--bot) h1{font-size:clamp(36px,5.4vw,52px)}.intro-grid:has(.live--bot) .intro-lede{font-size:17px}.live--bot .live-card{min-height:400px}}
+@media(max-width:700px){.live--bot .live-card{height:auto;min-height:0}}
 
 /* 2. Why Lexcia */
 .why{background:color-mix(in srgb,var(--sage) 7%,var(--paper))}
