@@ -28,11 +28,29 @@
     </nav>
 
     <!-- 1. Introduction. Draft wording: the final opening line has not been settled. -->
-    <section class="panel intro" id="home" aria-labelledby="hero-title"><div class="wrap">
-      <p class="entry-meta"><span class="word">Lex·ci·a<span class="dot" aria-hidden="true">.</span></span><i>noun</i><span>a chatbot for your website</span></p>
-      <h1 id="hero-title">Visitors expect to ask. Make sure your website can answer.</h1>
-      <p class="intro-lede">Lexcia is an AI chatbot built for your website. It knows your content, speaks in your organization’s voice and helps every visitor find what they came for. The way people use websites is changing. Don’t stay behind.</p>
-      <div class="intro-cta"><button class="btn" id="hero-cta" type="button" data-open-assistant>Try Lexcia<span aria-hidden="true">↗</span></button><a class="text-link" href="#demo">Request a free demo</a></div>
+    <section class="panel intro" id="home" aria-labelledby="hero-title"><div class="wrap intro-grid">
+      <div class="intro-copy">
+        <p class="entry-meta"><span class="word">Lex·ci·a<span class="dot" aria-hidden="true">.</span></span><i>noun</i><span>a chatbot for your website</span></p>
+        <h1 id="hero-title">Visitors expect to ask. Make sure your website can answer.</h1>
+        <p class="intro-lede">Lexcia is an AI chatbot built for your website. It knows your content, speaks in your organization’s voice and points every visitor to the right page. Don’t stay behind.</p>
+        <div class="intro-cta"><button class="btn" id="hero-cta" type="button" data-open-assistant>Try Lexcia<span aria-hidden="true">↗</span></button><a class="text-link" href="#demo">Request a free demo</a></div>
+      </div>
+      <figure class="live" id="live">
+        <div class="live-card" aria-hidden="true">
+          <div class="live-bar"><b>Lexcia</b><span>on an example website</span></div>
+          <div class="live-body">
+            <p class="live-q" id="live-q"></p>
+            <p class="live-typing" id="live-typing" hidden><i></i><i></i><i></i></p>
+            <div class="live-a" id="live-a" hidden><p id="live-a-text"></p><span class="live-src" id="live-src"></span></div>
+          </div>
+        </div>
+        <div class="live-topics" role="group" aria-label="Example conversations">
+          <button type="button" data-live="0" aria-pressed="true">Sales</button>
+          <button type="button" data-live="1" aria-pressed="false">Courses</button>
+          <button type="button" data-live="2" aria-pressed="false">Resources</button>
+        </div>
+        <figcaption class="sr-only" id="live-caption">Example conversation: a visitor asks a question and Lexcia answers with a link to the right page.</figcaption>
+      </figure>
       <a class="next" href="#why" aria-label="Next section: Why Lexcia"><span aria-hidden="true">↓</span></a>
     </div></section>
 
@@ -132,8 +150,7 @@
       <p class="look-note">Illustrative examples. Every Lexcia interface is designed around your brand and content.</p>
     </div></section>
 
-    <!-- 4. Request a free demo. The form is not connected yet (email/Calendar workflow not finalized).
-         TODO: add the general contact address once one is confirmed. -->
+    <!-- 4. Request a free demo. The form opens an email to lexcia.bots@gmail.com; Calendar scheduling is not set up yet. -->
     <section class="panel demo" id="demo" aria-labelledby="demo-title"><div class="wrap demo-grid">
       <div>
         <p class="label">Free demo</p>
@@ -147,6 +164,7 @@
         <input id="demo-site" name="website" type="text" inputmode="url" autocomplete="url" placeholder="www.yourwebsite.com" required>
         <button class="btn" type="submit">Request a free demo<span aria-hidden="true">↗</span></button>
         <p class="form-status" id="demo-status" role="status" aria-live="polite"></p>
+        <p class="contact-line">Prefer to write? <a href="mailto:lexcia.bots@gmail.com">lexcia.bots@gmail.com</a></p>
       </form>
       <footer class="site-footer"><span>Lexcia</span><span>Websites know a lot. Finding it shouldn’t be work.</span></footer>
     </div></section>

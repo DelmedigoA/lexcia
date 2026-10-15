@@ -174,7 +174,8 @@ const tabs=[...document.querySelectorAll('.tabs [role=tab]')];
 const selectTab=(tab,focus)=>{for(const t of tabs){const on=t===tab;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;$(t.getAttribute('aria-controls')).hidden=!on;}if(focus)tab.focus();};
 for(const tab of tabs){tab.addEventListener('click',()=>selectTab(tab));tab.addEventListener('keydown',e=>{const i=tabs.indexOf(tab);const next={ArrowRight:i+1,ArrowLeft:i-1,Home:0,End:tabs.length-1}[e.key];if(next===undefined)return;e.preventDefault();selectTab(tabs[(next+tabs.length)%tabs.length],true);});}
 
-// Free demo form: validates input only. Submissions are not sent anywhere until the email/Calendar workflow is decided.
+// Free demo form: validates input, then opens an email to Lexcia with the details filled in.
+const DEMO_EMAIL='lexcia.bots@gmail.com';
 const demoForm=$('demo-form');
 if(demoForm){const email=$('demo-email'),site=$('demo-site'),status=$('demo-status');
 const validEmail=v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
@@ -183,4 +184,29 @@ demoForm.addEventListener('submit',event=>{event.preventDefault();const okEmail=
 email.setAttribute('aria-invalid',String(!okEmail));site.setAttribute('aria-invalid',String(!okSite));status.classList.toggle('is-error',!(okEmail&&okSite));
 if(!okEmail){status.textContent='Please enter a valid email address.';email.focus();return;}
 if(!okSite){status.textContent='Please enter your website address, for example www.yourwebsite.com.';site.focus();return;}
-status.textContent='Thank you. Demo requests open soon, so this form is not sending yet.';});}
+const body=`Hello Lexcia,\n\nI'd like a free demo of Lexcia on my website.\n\nEmail: ${email.value.trim()}\nWebsite: ${site.value.trim()}\n`;
+location.href=`mailto:${DEMO_EMAIL}?subject=${encodeURIComponent('Free demo request')}&body=${encodeURIComponent(body)}`;
+status.textContent=`Your email app should open with the request ready to send. If it doesn't, write to ${DEMO_EMAIL}.`;});}
+
+// Introduction: an example conversation that plays itself, cycling through sales, courses and resources.
+const LIVE=[
+  {q:'Which plan fits a small team?',a:'The Team plan covers up to 10 people and includes shared history. You can compare every plan side by side on the pricing page.',src:'Pricing › Compare plans'},
+  {q:'Which course is right for a beginner?',a:'Start with Foundations. It runs every Monday evening, needs no experience and leads straight into the intermediate track.',src:'Courses › Foundations'},
+  {q:'Where can I find last year’s annual report?',a:'It’s in Resources under Reports, with a PDF download. Earlier years are listed just below it.',src:'Resources › Reports'}
+];
+const live=$('live');
+if(live){const q=$('live-q'),dots=$('live-typing'),ans=$('live-a'),ansText=$('live-a-text'),src=$('live-src'),topics=[...live.querySelectorAll('[data-live]')];
+const still=matchMedia('(prefers-reduced-motion: reduce)').matches;let timers=[],index=0,auto=!still;
+const later=(fn,ms)=>timers.push(setTimeout(fn,ms));const clear=()=>{timers.forEach(clearTimeout);timers=[];};
+const play=(i,animate)=>{clear();index=i;const item=LIVE[i];for(const t of topics)t.setAttribute('aria-pressed',String(Number(t.dataset.live)===i));
+ansText.textContent=item.a;src.textContent=item.src;
+if(!animate){q.classList.remove('is-typing');q.textContent=item.q;dots.hidden=true;ans.hidden=false;return;}
+q.textContent='';q.classList.add('is-typing');dots.hidden=true;ans.hidden=true;
+[...item.q].forEach((ch,n)=>later(()=>{q.textContent+=ch;},380+n*42));
+const typed=380+item.q.length*42;
+later(()=>{q.classList.remove('is-typing');dots.hidden=false;},typed+250);
+later(()=>{dots.hidden=true;ans.hidden=false;},typed+1350);
+if(auto)later(()=>play((i+1)%LIVE.length,true),typed+6200);};
+for(const t of topics)t.addEventListener('click',()=>{auto=false;play(Number(t.dataset.live),!still);});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)clear();else if(auto)play(index,true);});
+play(0,!still);}
