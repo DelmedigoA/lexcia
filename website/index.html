@@ -61,18 +61,32 @@
       <a class="next" href="#why" aria-label="Next section: Why Lexcia"><span aria-hidden="true">↓</span></a>
     </div></section>
 
-    <!-- 2. Why Lexcia -->
+    <!-- 2. Why Lexcia: an illustrative visitor journey without and with Lexcia. -->
     <section class="panel why" id="why" aria-labelledby="why-title"><div class="wrap why-grid">
       <div>
         <p class="label">Why Lexcia</p>
         <h2 id="why-title">Your most important information shouldn’t be hard to find.</h2>
-        <p class="why-lede">Most websites already hold the answers visitors need. Lexcia connects people with the pages that matter and makes the content you’ve built more useful.</p>
+        <p class="why-lede">Most websites already hold the answers visitors need, but finding them takes clicks, guesses and patience. Lexcia connects people with the pages that matter, for sales, courses and everything in between.</p>
+        <div class="journey-switch" role="group" aria-label="Example journey">
+          <button type="button" data-journey="0" aria-pressed="true">Courses</button>
+          <button type="button" data-journey="1" aria-pressed="false">Sales</button>
+        </div>
       </div>
-      <dl class="uses">
-        <div><dt>Sales</dt><dd>A visitor asks which option fits them. Lexcia explains the difference and points to the right product page.</dd></div>
-        <div><dt>Courses</dt><dd>A student asks where to start. Lexcia finds the matching course, its schedule and how to sign up.</dd></div>
-        <div><dt>Everything else</dt><dd>Guides, FAQs, policies and resources, answered in plain language with a link to the source page.</dd></div>
-      </dl>
+      <figure class="journey" id="journey">
+        <div class="journey-side journey-without">
+          <p class="journey-label">Without Lexcia</p>
+          <ol class="journey-path" id="journey-path"></ol>
+          <p class="journey-sum"><span id="journey-clicks"></span> clicks · no answer</p>
+        </div>
+        <div class="journey-side journey-with">
+          <p class="journey-label">With Lexcia</p>
+          <p class="journey-q" id="journey-q"></p>
+          <span class="journey-line" aria-hidden="true"></span>
+          <p class="journey-dest"><span id="journey-dest"></span><b aria-hidden="true">✓</b></p>
+          <p class="journey-sum">1 question · the right page</p>
+        </div>
+        <figcaption class="sr-only" id="journey-caption"></figcaption>
+      </figure>
     </div></section>
 
     <!-- 3. How it looks: illustrative examples, not live customer data. -->

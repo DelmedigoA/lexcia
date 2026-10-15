@@ -210,3 +210,19 @@ if(auto)later(()=>play((i+1)%LIVE.length,true),typed+6200);};
 for(const t of topics)t.addEventListener('click',()=>{auto=false;play(Number(t.dataset.live),!still);});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)clear();else if(auto)play(index,true);});
 play(0,!still);}
+
+// Why Lexcia: an example visitor journey without and with Lexcia, played when the section comes into view.
+const JOURNEYS=[
+  {path:['Home','About us','Programs','Archive','Events 2023','Gave up'],q:'Which course is right for a beginner?',dest:'Courses › Foundations'},
+  {path:['Home','Products','Compare','Pricing (PDF)','Contact sales','Gave up'],q:'Which plan fits a small team?',dest:'Pricing › Team plan'}
+];
+const journey=$('journey');
+if(journey){const path=$('journey-path'),clicks=$('journey-clicks'),jq=$('journey-q'),dest=$('journey-dest'),cap=$('journey-caption'),switches=[...document.querySelectorAll('[data-journey]')];
+const replay=()=>{journey.classList.remove('is-playing');void journey.offsetWidth;journey.classList.add('is-playing');};
+const show=(i,play)=>{const j=JOURNEYS[i];path.replaceChildren(...j.path.map((step,n)=>{const li=document.createElement('li');li.textContent=step;li.style.setProperty('--i',n);if(n===j.path.length-1)li.className='is-lost';return li;}));
+journey.style.setProperty('--n',j.path.length);clicks.textContent=j.path.length-1;jq.textContent=`“${j.q}”`;dest.textContent=j.dest;
+cap.textContent=`Example. Without Lexcia, a visitor clicks through ${j.path.slice(0,-1).join(', ')} and gives up. With Lexcia, they ask “${j.q}” and go straight to ${j.dest}.`;
+for(const b of switches)b.setAttribute('aria-pressed',String(Number(b.dataset.journey)===i));if(play)replay();};
+for(const b of switches)b.addEventListener('click',()=>show(Number(b.dataset.journey),true));
+show(0,false);journey.classList.add('is-ready');
+if('IntersectionObserver' in window){new IntersectionObserver((entries,obs)=>{if(entries.some(e=>e.isIntersecting)){replay();obs.disconnect();}},{threshold:.45}).observe(journey);}else journey.classList.add('is-playing');}

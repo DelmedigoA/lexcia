@@ -80,9 +80,30 @@ body.on-dark .dots a{border-color:color-mix(in srgb,var(--paper) 70%,transparent
 .why{background:color-mix(in srgb,var(--sage) 7%,var(--paper))}
 .why-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px 8%;align-items:center}
 .why-lede{max-width:46ch;margin:24px 0 0;color:var(--ink-2);font-size:19px}
-.uses{margin:0;border-top:1px solid var(--rule)}.uses div{display:grid;grid-template-columns:minmax(110px,.38fr) 1fr;gap:20px;padding:26px 0;border-bottom:1px solid var(--rule)}
-.uses dt{font:italic 400 28px/1.1 var(--serif)}.uses div:nth-child(1) dt{color:var(--slate)}.uses div:nth-child(2) dt{color:var(--sage)}.uses div:nth-child(3) dt{color:var(--ochre)}
-.uses dd{margin:0;color:var(--ink-2);font-size:17px}
+.journey-switch{display:flex;gap:6px;margin-top:28px}.journey-switch button{padding:7px 14px;border:1px solid var(--rule);border-radius:999px;background:transparent;color:var(--ink-2);font:500 12px var(--sans);transition:background .2s,color .2s,border-color .2s}.journey-switch button:hover{border-color:var(--ink);color:var(--ink)}.journey-switch button[aria-pressed=true]{border-color:var(--ink);background:var(--ink);color:var(--paper)}
+.journey{display:grid;grid-template-columns:1fr 1fr;margin:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.journey-side{display:flex;flex-direction:column;min-height:330px;padding:24px 26px 22px}.journey-with{border-left:1px solid var(--rule);background:color-mix(in srgb,var(--paper) 55%,#fff)}
+.journey-label{margin:0 0 20px;font:600 11px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.journey-path{display:flex;flex:1;flex-direction:column;gap:9px;margin:0;padding:0;list-style:none;font:400 14px var(--sans)}
+.journey-path li{position:relative;padding-left:calc(var(--i)*14px + 16px);color:var(--ink-2)}
+.journey-path li::before{position:absolute;top:.15em;left:calc(var(--i)*14px);content:"└";color:var(--ink-3)}.journey-path li:first-child::before{content:"•"}
+.journey-path li.is-lost{color:#9b3440;font-style:italic}.journey-path li.is-lost::before{content:"✕";color:#9b3440}
+.journey-q{align-self:flex-start;max-width:92%;margin:0;padding:10px 14px;border-radius:14px 14px 14px 3px;background:color-mix(in srgb,var(--sage) 16%,#fff);color:var(--ink);font:400 15px/1.45 var(--sans)}
+.journey-line{flex:1;width:1px;min-height:40px;margin:12px 0 12px 22px;background:linear-gradient(var(--ink-3),var(--ink-3)) top/1px 100% no-repeat}
+.journey-dest{display:inline-flex;align-self:flex-start;align-items:center;gap:10px;margin:0;padding:9px 14px;border:1px solid color-mix(in srgb,var(--sage) 45%,transparent);border-radius:999px;background:#fff;color:var(--ink);font:500 14px var(--sans)}.journey-dest b{color:var(--sage)}
+.journey-sum{margin:18px 0 0;color:var(--ink-3);font:italic 400 15px var(--serif)}.journey-with .journey-sum{color:var(--sage)}
+/* Animation: plays when the section is in view (class added by script). */
+.journey.is-ready .journey-path li,.journey.is-ready .journey-q,.journey.is-ready .journey-dest,.journey.is-ready .journey-sum{opacity:0;transform:translateY(6px)}
+.journey.is-ready .journey-line{background-size:1px 0}
+.journey.is-playing .journey-path li{animation:jin .4s ease forwards;animation-delay:calc(var(--i)*.55s + .2s)}
+.journey.is-playing .journey-without .journey-sum{animation:jin .4s ease forwards;animation-delay:calc(var(--n)*.55s + .5s)}
+.journey.is-playing .journey-q{animation:jin .4s ease .3s forwards}
+.journey.is-playing .journey-line{transition:background-size .7s ease 1s;background-size:1px 100%}
+.journey.is-playing .journey-dest{animation:jin .45s ease 1.75s forwards}
+.journey.is-playing .journey-with .journey-sum{animation:jin .4s ease 2.1s forwards}
+@keyframes jin{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.journey.is-ready *{opacity:1!important;transform:none!important;animation:none!important}.journey.is-ready .journey-line{background-size:1px 100%!important;transition:none!important}}
+@media(max-width:700px){.journey{grid-template-columns:1fr}.journey-side{min-height:0;padding:18px 4px}.journey-with{padding-inline:14px;border-left:0;border-top:1px solid var(--rule)}.journey-line{min-height:28px}}
 
 /* 3. How it looks */
 .look-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px}
@@ -127,7 +148,6 @@ figcaption{margin-top:14px;color:var(--ink-3);font-size:15px;line-height:1.5}fig
 @media(max-width:960px){.site-nav{gap:18px;font-size:12px}.site-header .btn{display:none}.why-grid,.demo-grid,.intro-grid{grid-template-columns:1fr}.intro-grid{gap:32px}}
 @media(max-width:700px){html{scroll-snap-type:y proximity}.panel{min-height:100svh;padding:88px 0 48px}body{font-size:17px}.dots{display:none}
 .site-header .wrap{flex-wrap:wrap;gap:6px 16px;height:auto;padding:10px 0}.brand-logo{width:78px}.site-nav{order:2;width:100%;justify-content:space-between;gap:12px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}.panel{padding-top:112px}.intro h1{font-size:clamp(40px,11vw,56px)}.next{display:none}
-.uses div{grid-template-columns:1fr;gap:6px;padding:18px 0}.uses dt{font-size:24px}
 .look-head{align-items:flex-start}.tabs{width:100%;overflow-x:auto}.tabs button{flex:1;padding:9px 10px;white-space:nowrap}
 .mocks,.launchers{display:flex;gap:14px;margin-inline:calc(-1*var(--gut));padding-inline:var(--gut);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.mocks figure,.launchers figure{flex:0 0 78%;scroll-snap-align:center}
 .map svg{max-height:none}.demo .site-footer{flex-direction:column}}
