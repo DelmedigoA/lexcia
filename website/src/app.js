@@ -3,7 +3,7 @@ import {renderAnswer,isHebrewDominant} from './formatting.js';
 import {askLexcia} from './chat-client.js';
 import {makeLauncherDraggable} from './draggable-launcher.js';
 import {positionNearLauncher} from './panel-position.js';
-import {addMessageActions,showPendingMessage,appendMessageTime,appendDaySeparator,appendStoppedNotice} from './message-ui.js';
+import {addMessageActions,showPendingMessage,appendStoppedNotice} from './message-ui.js';
 import {continuationQuestion,appendContinuation} from './conversation-state.js';
 import {mountWelcome} from './thread-welcome.jsx';
 const $=id=>document.getElementById(id);
@@ -72,10 +72,8 @@ function renderConversation(thread){
   syncWelcome();
   if(thread&&thread.id===renderedThreadId)return;
   clearAnswerRoots();$('messages').replaceChildren();items.clear();
-  let previousTime;
   for(const turn of thread?.turns||[]){
-    appendDaySeparator($('messages'),turn.createdAt,previousTime);previousTime=turn.createdAt;
-    message('user',turn.question||'',turn.createdAt);const answer=message('assistant');
+    message('user',turn.question||'');const answer=message('assistant');
     answer.dir=isHebrewDominant(turn.answer||'')?'rtl':'ltr';answer.innerHTML=renderAnswer(turn.answer||'',turn.items||[]);
     for(const item of turn.items||[])if(item.item_id)items.set(item.item_id,item);
     finishTurnView(answer,thread,turn);
@@ -143,7 +141,7 @@ let composerWidth=0;
 new ResizeObserver(([entry])=>{const width=entry.contentRect.width;if(width>0&&Math.abs(width-composerWidth)>.5){composerWidth=width;resizeComposer();}}).observe($('prompt'));
 $('prompt').oninput=()=>{$('send').disabled=busy||!$('prompt').value.trim();resizeComposer();};
 $('prompt').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();if(!busy)$('composer').requestSubmit();}});
-function message(role,text='',createdAt){const node=document.createElement('article');node.className=`message message--${role}`;node.dir='auto';node.setAttribute('aria-label',role==='user'?'You':'Lexcia');node.textContent=text;if(createdAt)appendMessageTime(node,createdAt);$('messages').append(node);$('welcome').hidden=true;return node;}
+function message(role,text=''){const node=document.createElement('article');node.className=`message message--${role}`;node.dir='auto';node.setAttribute('aria-label',role==='user'?'You':'Lexcia');node.textContent=text;$('messages').append(node);$('welcome').hidden=true;return node;}
 function bottom(){const thread=$('thread');thread.scrollTop=thread.scrollHeight;updateLatestButton();}
 function nearBottom(){const el=$('thread');return el.scrollHeight-el.scrollTop-el.clientHeight<90;}
 function updateLatestButton(){$('latest').hidden=!$('messages').children.length||$('thread').hidden||nearBottom();}
@@ -152,24 +150,8 @@ $('latest').onclick=bottom;
 $('thread').addEventListener('scroll',updateLatestButton,{passive:true});
 new ResizeObserver(updateLatestButton).observe($('messages'));
 new ResizeObserver(updateLatestButton).observe($('thread'));
-function safeURL(raw){if(!raw||typeof raw!=='string')return null;try{const url=new URL(raw,location.origin);return ['https:','http:'].includes(url.protocol)?url.href:null;}catch{return null;}}
-function addSources(node,readItems){
-  if(!readItems.length)return;
-  const sources=document.createElement('section');sources.className='answer-source-list';sources.setAttribute('aria-label','Sources');
-  const title=document.createElement('p');title.className='source-list-title';title.textContent='Sources';sources.append(title);
-  const seen=new Set();
-  for(const item of readItems){
-    // Saved conversations may carry website page links from the previous version.
-    const legacy=typeof item.url==='string'&&item.url.match(/^\/sources\/([a-z0-9-]+)\/?$/);
-    const href=safeURL(legacy?`/api/knowledge/${legacy[1]}`:item.url);if(!href||seen.has(href))continue;seen.add(href);
-    const link=document.createElement('a');link.href=href;link.target='_blank';link.rel='noopener noreferrer';link.textContent=item.title||'Open source';sources.append(link);
-  }
-  if(sources.children.length>1)node.append(sources);
-}
 function finishTurnView(answer,thread,turn){
-  addSources(answer,turn.items||[]);
   if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui);}
-  appendMessageTime(answer,turn.repliedAt);
   addMessageActions(answer,turn,{onFeedback:storeConversations,announce:announceMessageAction});
   if(turn.status==='stopped')appendStoppedNotice(answer,{
     canContinue:()=>!readOnly&&thread.id===currentThreadId&&thread.turns.at(-1)===turn,
@@ -214,9 +196,9 @@ async function runTurn(thread,turn,answer,resume=false){
 }
 function submitQuestion(question){
   question=question.trim();if(!question||busy||readOnly)return;
-  const thread=currentConversation(),previous=thread.turns.at(-1);
+  const thread=currentConversation();
   const turn={question,answer:'',items:[],ui:null,createdAt:Date.now(),status:'running'};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();storeConversations();
-  appendDaySeparator($('messages'),turn.createdAt,previous?.createdAt);message('user',question,turn.createdAt);$('prompt').value='';resizeComposer();const answer=message('assistant');return runTurn(thread,turn,answer);
+  message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');return runTurn(thread,turn,answer);
 }
 $('composer').onsubmit=event=>{event.preventDefault();submitQuestion($('prompt').value);};
 $('stop').onclick=()=>controller?.abort();
