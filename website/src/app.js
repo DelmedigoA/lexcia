@@ -26,7 +26,7 @@ for(const thread of conversations)for(const turn of thread.turns)if(turn.status=
 let currentThreadId=conversations[0]?.id||crypto.randomUUID();
 if(!conversations.length)conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
 let renderedThreadId=null;
-let closingTimer;
+let closingTimer,autoOpenTimer;
 const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question)});
 function syncWelcome(){const thread=currentConversation();welcomeThread.update({threadId:thread.id,turns:thread.turns,isRunning:busy,isDisabled:false});}
 function positionFloatingPanel(){
@@ -96,6 +96,7 @@ function setConversationView(thread){
   $('status').textContent='';updateLatestButton();
 }
 function openPanel(){
+  clearTimeout(autoOpenTimer);
   if(closing){clearTimeout(closingTimer);closing=false;}
   const thread=currentConversation();if(thread)setConversationView(thread);
   if(!panel.open)showPanelDialog();
@@ -218,3 +219,6 @@ const updateHeader=()=>siteHeader?.classList.toggle('is-scrolled',scrollY>24);
 addEventListener('scroll',updateHeader,{passive:true});updateHeader();
 const navLinks=[...document.querySelectorAll('.site-nav a[href^="#"]')];
 if('IntersectionObserver' in window&&navLinks.length){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;for(const link of navLinks){if(link.hash===`#${entry.target.id}`)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');}}},{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('main>section[id]').forEach(section=>observer.observe(section));}
+
+// Once per page load, follow the same floating opening path as a launcher click.
+autoOpenTimer=setTimeout(openPanel,1000);

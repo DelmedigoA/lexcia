@@ -1,5 +1,5 @@
 export function makeLauncherDraggable(launcher){
-  let drag=null,position=null,suppressClick=false,clickTimer;
+  let drag=null,position=null,movedByUser=false,suppressClick=false,clickTimer;
   function place(x,y){
     const rect=launcher.getBoundingClientRect();
     position={x:Math.max(8,Math.min(window.innerWidth-rect.width-8,x)),y:Math.max(8,Math.min(window.innerHeight-rect.height-8,y))};
@@ -15,7 +15,7 @@ export function makeLauncherDraggable(launcher){
     if(!drag||event.pointerId!==drag.id)return;
     const dx=event.clientX-drag.x,dy=event.clientY-drag.y;
     if(!drag.moved&&Math.hypot(dx,dy)<6)return;
-    drag.moved=true;launcher.classList.add('is-dragging');
+    movedByUser=true;drag.moved=true;launcher.classList.add('is-dragging');
     place(drag.left+dx,drag.top+dy);
   });
   function finish(event){
@@ -30,10 +30,11 @@ export function makeLauncherDraggable(launcher){
   },true);
   launcher.addEventListener('keydown',event=>{
     if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.key))return;
-    event.preventDefault();const rect=launcher.getBoundingClientRect(),step=event.shiftKey?40:10;
+    event.preventDefault();movedByUser=true;const rect=launcher.getBoundingClientRect(),step=event.shiftKey?40:10;
     place(rect.left+(event.key==='ArrowRight'?step:event.key==='ArrowLeft'?-step:0),rect.top+(event.key==='ArrowDown'?step:event.key==='ArrowUp'?-step:0));
   });
-  const keepInView=()=>{if(position&&!drag)place(position.x,position.y);};
+  const keepInView=()=>{if(!drag){if(movedByUser)place(position.x,position.y);else place(window.innerWidth*.694,window.innerHeight*.73);}};
+  keepInView();
   addEventListener('resize',keepInView);
   new ResizeObserver(keepInView).observe(launcher);
 }
