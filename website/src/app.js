@@ -2,7 +2,7 @@ import {mountAnswer,clearAnswerRoots} from './answer-ui.jsx';
 import {renderAnswer,isHebrewDominant} from './formatting.js';
 import {askLexcia} from './chat-client.js';
 import {makeLauncherDraggable} from './draggable-launcher.js';
-import {positionNearLauncher} from './panel-position.js';
+import {positionNearLauncher,heightNearLauncher} from './panel-position.js';
 import {addMessageActions,appendStoppedNotice} from './message-ui.js';
 import {continuationQuestion,appendContinuation} from './conversation-state.js';
 import {mountWelcome,mountThinking} from './thread-welcome.jsx';
@@ -31,7 +31,9 @@ const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(q
 function syncWelcome(){const thread=currentConversation();welcomeThread.update({threadId:thread.id,turns:thread.turns,isRunning:busy,isDisabled:false});}
 function positionFloatingPanel(){
   if(!panel.open||pinned)return;
-  const position=positionNearLauncher(launcher.getBoundingClientRect(),{width:panel.offsetWidth,height:panel.offsetHeight},{width:window.innerWidth,height:window.innerHeight});
+  const anchor=launcher.getBoundingClientRect(),viewport={width:window.innerWidth,height:window.innerHeight};
+  panel.style.setProperty('--floating-height',`${heightNearLauncher(anchor,floatSize().height,viewport)}px`);
+  const position=positionNearLauncher(anchor,{width:panel.offsetWidth,height:panel.offsetHeight},viewport);
   panel.style.setProperty('--panel-left',`${position.left}px`);
   panel.style.setProperty('--panel-top',`${position.top}px`);
   panel.style.setProperty('--panel-origin',`${position.originX}px ${position.originY}px`);
@@ -44,8 +46,8 @@ addEventListener('resize',schedulePanelPosition);
 function currentConversation(){return conversations.find(thread=>thread.id===currentThreadId);}
 function storeConversations(){conversations=conversations.slice(0,20);try{localStorage.setItem(THREADS_KEY,JSON.stringify(conversations));return true;}catch{return false;}}
 function floatSize(){try{const value=JSON.parse(localStorage.getItem(FLOAT_SIZE_KEY)||'{}');return{width:Number(value.width)||420,height:Number(value.height)||620};}catch{return{width:420,height:620};}}
-function setFloatSize(width,height){const size={width:Math.round(Math.max(340,Math.min(window.innerWidth-24,width))),height:Math.round(Math.max(360,Math.min(window.innerHeight-108,height)))};document.documentElement.style.setProperty('--floating-width',`${size.width}px`);document.documentElement.style.setProperty('--floating-height',`${size.height}px`);try{localStorage.setItem(FLOAT_SIZE_KEY,JSON.stringify(size));}catch{}}
-setFloatSize(floatSize().width,floatSize().height);
+function setFloatSize(width,height,{persist=true}={}){const size={width:Math.round(Math.max(340,Math.min(window.innerWidth-24,width))),height:Math.round(Math.max(360,Math.min(window.innerHeight-108,height)))};document.documentElement.style.setProperty('--floating-width',`${size.width}px`);document.documentElement.style.setProperty('--floating-height',`${size.height}px`);if(persist)try{localStorage.setItem(FLOAT_SIZE_KEY,JSON.stringify(size));}catch{}}
+setFloatSize(floatSize().width,floatSize().height,{persist:false});
 function clampPinnedWidth(width){return Math.round(Math.max(360,Math.min(720,document.documentElement.clientWidth-400,width)));}
 function pinnedWidth(){return clampPinnedWidth(Number(localStorage.getItem(PIN_WIDTH_KEY))||420);}
 function setPinnedWidth(width){

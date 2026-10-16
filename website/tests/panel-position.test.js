@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {positionNearLauncher} from '../src/panel-position.js';
+import {positionNearLauncher,heightNearLauncher} from '../src/panel-position.js';
 
 const button=(left,top)=>({left,top,right:left+50,bottom:top+50});
 const desktop={width:1200,height:900},size={width:420,height:620};
@@ -68,4 +68,22 @@ test('new launcher bounds and expanded dimensions produce fresh placement',()=>{
   assert.notEqual(first.top,moved.top);
   const expanded={width:720,height:790};
   assertInView(positionNearLauncher(button(1140,840),expanded,desktop),expanded,desktop);
+});
+
+test('right-side reference opening stays above its launcher across desktop heights',()=>{
+  for(const viewport of [{width:1280,height:720},{width:970,height:545},{width:1669,height:882}]){
+    const launcher=button(viewport.width*.694,viewport.height*.73);
+    const fitted={width:420,height:heightNearLauncher(launcher,620,viewport)};
+    const result=positionNearLauncher(launcher,fitted,viewport);
+    assertInView(result,fitted,viewport);
+    assert.ok(result.left>=viewport.width/2);
+    assert.ok(Math.abs(result.top+fitted.height+10-launcher.top)<.001);
+    assert.equal(overlap(result,launcher,fitted),0);
+  }
+});
+test('height fitting retains small preferences and mobile or top-edge fallback placement',()=>{
+  assert.equal(heightNearLauncher(button(900,650),400,desktop),400);
+  assert.equal(heightNearLauncher(button(900,200),620,desktop),620);
+  assert.equal(heightNearLauncher(button(10,650),620,desktop),620);
+  assert.equal(heightNearLauncher(button(270,650),640,{width:390,height:844}),640);
 });

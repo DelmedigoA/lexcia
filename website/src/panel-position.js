@@ -1,6 +1,13 @@
 const GAP=10,MARGIN=10;
 const clamp=(value,min,max)=>Math.max(min,Math.min(max,value));
 
+// Keep the right-side opening above its launcher on shorter desktop viewports.
+export function heightNearLauncher(launcher,preferredHeight,viewport){
+  const above=Math.floor(launcher.top-GAP-MARGIN);
+  return viewport.width>700&&launcher.left>=viewport.width/2&&above>=360
+    ?Math.min(preferredHeight,above):preferredHeight;
+}
+
 export function positionNearLauncher(launcher,size,viewport){
   const maxX=viewport.width-size.width-MARGIN,maxY=viewport.height-size.height-MARGIN;
   const centerX=(launcher.left+launcher.right)/2,centerY=(launcher.top+launcher.bottom)/2;
