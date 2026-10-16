@@ -221,4 +221,4 @@ const navLinks=[...document.querySelectorAll('.site-nav a[href^="#"]')];
 if('IntersectionObserver' in window&&navLinks.length){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;for(const link of navLinks){if(link.hash===`#${entry.target.id}`)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');}}},{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('main>section[id]').forEach(section=>observer.observe(section));}
 
 // Once per page load, follow the same floating opening path as a launcher click.
-autoOpenTimer=setTimeout(openPanel,1000);
+autoOpenTimer=setTimeout(openPanel,500);
