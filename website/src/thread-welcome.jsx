@@ -5,7 +5,7 @@ import React, {Fragment} from 'react';
 import {createRoot} from 'react-dom/client';
 import {AssistantRuntimeProvider, AuiIf, ThreadPrimitive, useExternalStoreRuntime} from '@assistant-ui/react';
 
-const GREETING_WORDS=['Explore','Lexcia.'];
+const GREETING_WORDS=['Ask','Lexcia'];
 // Opt into normalization of message-like records (including runtime metadata).
 const convertMessage=message=>message;
 const SUGGESTIONS=[
