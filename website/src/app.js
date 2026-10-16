@@ -11,20 +11,14 @@ const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('a
 makeLauncherDraggable(launcher);
 const items=new Map();
 let busy=false,controller=null;
-const PIN_WIDTH_KEY='lexcia:assistant-width';
-const FLOAT_SIZE_KEY='lexcia:assistant-size';
-const THREADS_KEY='lexcia:assistant-threads';
-// Carry existing browser transcripts and panel preferences into the new brand.
-for(const key of [PIN_WIDTH_KEY,FLOAT_SIZE_KEY,THREADS_KEY]){
-  try{if(localStorage.getItem(key)===null){const previous=localStorage.getItem(key.replace('lexcia:','rabota:'));if(previous!==null)localStorage.setItem(key,previous);}}catch{}
+// Clear the former persisted assistant state; visits now keep state only in memory.
+for(const prefix of ['lexcia:','rabota:'])for(const name of ['assistant-width','assistant-size','assistant-threads']){
+  try{localStorage.removeItem(prefix+name);}catch{}
 }
-let pinned=false;
-let closing=false;
-function loadConversations(){try{const value=JSON.parse(localStorage.getItem(THREADS_KEY)||'[]');return Array.isArray(value)?value.filter(thread=>thread&&typeof thread.id==='string'&&Array.isArray(thread.turns)).slice(0,20):[];}catch{return [];}}
-let conversations=loadConversations();
-for(const thread of conversations)for(const turn of thread.turns)if(turn.status==='running')turn.status='stopped';
-let currentThreadId=conversations[0]?.id||crypto.randomUUID();
-if(!conversations.length)conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
+let pinned=false,closing=false;
+let floatingSize={width:420,height:620},sidebarWidth=420;
+let currentThreadId=crypto.randomUUID();
+let conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
 let renderedThreadId=null;
 let closingTimer,autoOpenTimer,entranceTimer;
 const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question)});
@@ -44,19 +38,19 @@ const panelPositionObserver=new ResizeObserver(schedulePanelPosition);
 panelPositionObserver.observe(panel);panelPositionObserver.observe(launcher);
 addEventListener('resize',schedulePanelPosition);
 function currentConversation(){return conversations.find(thread=>thread.id===currentThreadId);}
-function storeConversations(){conversations=conversations.slice(0,20);try{localStorage.setItem(THREADS_KEY,JSON.stringify(conversations));return true;}catch{return false;}}
-function floatSize(){try{const value=JSON.parse(localStorage.getItem(FLOAT_SIZE_KEY)||'{}');return{width:Number(value.width)||420,height:Number(value.height)||620};}catch{return{width:420,height:620};}}
-function setFloatSize(width,height,{persist=true}={}){const size={width:Math.round(Math.max(340,Math.min(window.innerWidth-24,width))),height:Math.round(Math.max(360,Math.min(window.innerHeight-108,height)))};document.documentElement.style.setProperty('--floating-width',`${size.width}px`);document.documentElement.style.setProperty('--floating-height',`${size.height}px`);if(persist)try{localStorage.setItem(FLOAT_SIZE_KEY,JSON.stringify(size));}catch{}}
-setFloatSize(floatSize().width,floatSize().height,{persist:false});
+function updateConversations(){conversations=conversations.slice(0,20);}
+function floatSize(){return floatingSize;}
+function setFloatSize(width,height,{remember=true}={}){const size={width:Math.round(Math.max(340,Math.min(window.innerWidth-24,width))),height:Math.round(Math.max(360,Math.min(window.innerHeight-108,height)))};document.documentElement.style.setProperty('--floating-width',`${size.width}px`);document.documentElement.style.setProperty('--floating-height',`${size.height}px`);if(remember)floatingSize=size;}
+setFloatSize(floatSize().width,floatSize().height,{remember:false});
 function clampPinnedWidth(width){return Math.round(Math.max(360,Math.min(720,document.documentElement.clientWidth-400,width)));}
-function pinnedWidth(){return clampPinnedWidth(Number(localStorage.getItem(PIN_WIDTH_KEY))||420);}
+function pinnedWidth(){return clampPinnedWidth(sidebarWidth);}
 function setPinnedWidth(width){
   const next=clampPinnedWidth(width);
   document.documentElement.style.setProperty('--assistant-width',`${next}px`);
   document.documentElement.style.setProperty('--assistant-divider-right',`${next-4}px`);
   divider.setAttribute('aria-valuenow',String(next));
   divider.setAttribute('aria-valuemax',String(clampPinnedWidth(720)));
-  localStorage.setItem(PIN_WIDTH_KEY,String(next));
+  sidebarWidth=next;
 }
 function showPanelDialog(){
   if(pinned)panel.show();else panel.showModal();
@@ -168,7 +162,7 @@ new ResizeObserver(updateLatestButton).observe($('messages'));
 new ResizeObserver(updateLatestButton).observe($('thread'));
 function finishTurnView(answer,thread,turn){
   if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui);}
-  addMessageActions(answer,turn,{onFeedback:storeConversations,announce:announceMessageAction});
+  addMessageActions(answer,turn,{onFeedback:updateConversations,announce:announceMessageAction});
   if(turn.status==='stopped')appendStoppedNotice(answer,{
     canContinue:()=>thread.id===currentThreadId&&thread.turns.at(-1)===turn,
     onContinue:()=>{if(!busy&&thread.turns.at(-1)===turn)runTurn(thread,turn,answer,true);},
@@ -182,7 +176,7 @@ function finishTurnView(answer,thread,turn){
 async function runTurn(thread,turn,answer,resume=false){
   const requestQuestion=resume?continuationQuestion(turn):turn.question;
   const base=resume?turn.answer||'':'';
-  turn.status='running';delete turn.error;storeConversations();
+  turn.status='running';delete turn.error;updateConversations();
   setBusy(true);$('status').textContent='';controller=new AbortController();answer.setAttribute('aria-busy','true');
   answer.innerHTML=renderAnswer(base);const pending=document.createElement('div');answer.append(pending);const stopThinking=mountThinking(pending,resume?'continuing…':'thinking…');
   let text='',readItems=resume?[...(turn.items||[])]:[],finalReceived=false;
@@ -196,7 +190,7 @@ async function runTurn(thread,turn,answer,resume=false){
       if(event.event==='final'){
         finalReceived=true;const follow=nearBottom();
         text=event.data.answer||text;const finalItems=event.data.items||readItems;readItems=resume?[...new Map([...(turn.items||[]),...finalItems].map(item=>[item.item_id||item.url,item])).values()]:finalItems;for(const item of readItems)items.set(item.item_id,item);update();
-        turn.answer=fullText();turn.items=readItems;turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();storeConversations();finishTurnView(answer,thread,turn);
+        turn.answer=fullText();turn.items=readItems;turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();updateConversations();finishTurnView(answer,thread,turn);
         if(follow)bottom();else updateLatestButton();
       }
     },controller.signal,currentThreadId);
@@ -205,18 +199,18 @@ async function runTurn(thread,turn,answer,resume=false){
       const stopped=error.name==='AbortError';
       turn.answer=fullText();turn.items=readItems;turn.status=stopped||resume?'stopped':'error';turn.repliedAt??=Date.now();
       if(!stopped)turn.error=error.message;
-      thread.updatedAt=Date.now();storeConversations();update();finishTurnView(answer,thread,turn);
+      thread.updatedAt=Date.now();updateConversations();update();finishTurnView(answer,thread,turn);
     }
   }finally{stopThinking();answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus();updateLatestButton();}
 }
 function submitQuestion(question){
   question=question.trim();if(!question||busy)return;
   const thread=currentConversation();
-  const turn={question,answer:'',items:[],ui:null,createdAt:Date.now(),status:'running'};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();storeConversations();
+  const turn={question,answer:'',items:[],ui:null,createdAt:Date.now(),status:'running'};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();updateConversations();
   message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');return runTurn(thread,turn,answer);
 }
 $('composer').onsubmit=event=>{event.preventDefault();submitQuestion($('prompt').value);};
-async function startNewConversation(){if(busy)return;const thread={id:crypto.randomUUID(),title:'New inquiry',updatedAt:Date.now(),turns:[]};conversations.unshift(thread);currentThreadId=thread.id;storeConversations();setConversationView(thread);$('prompt').value='';resizeComposer();$('send').disabled=true;$('status').textContent='';$('prompt').focus();}
+async function startNewConversation(){if(busy)return;const thread={id:crypto.randomUUID(),title:'New inquiry',updatedAt:Date.now(),turns:[]};conversations.unshift(thread);currentThreadId=thread.id;updateConversations();setConversationView(thread);$('prompt').value='';resizeComposer();$('send').disabled=true;$('status').textContent='';$('prompt').focus();}
 $('new').onclick=startNewConversation;
 renderConversation(currentConversation());
 

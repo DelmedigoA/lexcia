@@ -35,8 +35,8 @@ export function addMessageActions(node,turn,{onFeedback,announce}){
   const feedbackButtons=[];
   const updateFeedback=()=>{
     for(const [value,control] of feedbackButtons)control.setAttribute('aria-pressed',String(turn.feedback===value));
-    const saved=onFeedback();
-    announce(saved===false?'Feedback updated for this session. Browser storage is unavailable.':turn.feedback?`Marked as ${turn.feedback==='positive'?'helpful':'unhelpful'}. Feedback saved on this device.`:'Feedback removed.');
+    onFeedback();
+    announce(turn.feedback?`Marked as ${turn.feedback==='positive'?'helpful':'unhelpful'}. Feedback kept for this visit.`:'Feedback removed.');
   };
   for(const [type,label] of [['positive','Helpful answer'],['negative','Unhelpful answer']]){
     const button=actionButton(label,type);button.setAttribute('aria-pressed',String(turn.feedback===type));

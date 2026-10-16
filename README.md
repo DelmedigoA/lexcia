@@ -62,9 +62,9 @@ The Vercel deployment serves the Vite site from its CDN and runs the Python ASGI
 
 Deployment is manual; GitHub is not connected to Vercel. Asaf and Nadav can deploy from their repository clone with `uv run python scripts/deploy.py`, using a private local `vercel.env` token file. The script verifies the existing `rabota2/lexcia` project, initializes local linkage when absent, and deploys the main website/API. See [docs/deployment.md](docs/deployment.md) for setup, checks and verification. The demo and Bolt website are excluded.
 
-The design references Nouva by Kadir Calik (https://nouva-template.framer.website/), assistant-ui (https://www.assistant-ui.com/examples/modal), and Sefaria's chatbot UI (https://github.com/Sefaria/ai-chatbot). The current public Framer hero asset and Google Fonts Onest remain remote design dependencies. Production chat session memory remains in function memory and can reset when Vercel starts a new instance; browser transcripts stay local.
+The design references Nouva by Kadir Calik (https://nouva-template.framer.website/), assistant-ui (https://www.assistant-ui.com/examples/modal), and Sefaria's chatbot UI (https://github.com/Sefaria/ai-chatbot). The current public Framer hero asset and Google Fonts Onest remain remote design dependencies. Production chat session memory remains in function memory and can reset when Vercel starts a new instance; browser transcripts and layout preferences last only until page reload.
 
-Environment overrides use `LEXCIA_MODEL` and `LEXCIA_API_URL`; legacy `RABOTA_MODEL` and `RABOTA_API_URL` remain supported. Existing browser conversation history and panel preferences migrate to `lexcia:` storage keys on first load.
+Environment overrides use `LEXCIA_MODEL` and `LEXCIA_API_URL`; legacy `RABOTA_MODEL` and `RABOTA_API_URL` remain supported. Each page load clears former `lexcia:` and `rabota:` assistant storage keys, creates a new chat session, and restores default layout settings. The website writes no cookies or persistent browser state.
 
 Chat answers hide internal citation markers and show source links directly below the answer. Sources open the raw reviewed records at `/api/knowledge/<record-id>`. Saved website source-page links are mapped back to these raw records; no separate source pages are published.
 
