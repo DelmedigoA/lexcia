@@ -142,7 +142,7 @@ grip.addEventListener('pointerdown',event=>{
 });
 grip.addEventListener('dblclick',resetFloatSize);
 grip.addEventListener('keydown',event=>{if(pinned)return;const size=floatSize();if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;event.preventDefault();if(event.key==='Home')resetFloatSize();else if(event.key==='End')setFloatSize(window.innerWidth-24,window.innerHeight-108);else setFloatSize(size.width+(event.key==='ArrowRight'?24:event.key==='ArrowLeft'?-24:0),size.height+(event.key==='ArrowUp'?24:event.key==='ArrowDown'?-24:0));positionFloatingPanel();});
-function setBusy(value){busy=value;syncWelcome();$('send').hidden=value;$('stop').hidden=!value;$('new').disabled=value;$('send').disabled=!$('prompt').value.trim()||value;for(const button of document.querySelectorAll('[data-continue-turn]'))button.disabled=value||!button.canContinue();}
+function setBusy(value){busy=value;syncWelcome();$('new').disabled=value;$('send').disabled=!$('prompt').value.trim()||value;for(const button of document.querySelectorAll('[data-continue-turn]'))button.disabled=value||!button.canContinue();}
 function resizeComposer(){const prompt=$('prompt');prompt.style.height='auto';prompt.style.height=`${Math.min(160,prompt.scrollHeight)}px`;}
 let composerWidth=0;
 new ResizeObserver(([entry])=>{const width=entry.contentRect.width;if(width>0&&Math.abs(width-composerWidth)>.5){composerWidth=width;resizeComposer();}}).observe($('prompt'));
@@ -207,7 +207,6 @@ function submitQuestion(question){
   message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');return runTurn(thread,turn,answer);
 }
 $('composer').onsubmit=event=>{event.preventDefault();submitQuestion($('prompt').value);};
-$('stop').onclick=()=>controller?.abort();
 async function startNewConversation(){if(busy)return;const thread={id:crypto.randomUUID(),title:'New inquiry',updatedAt:Date.now(),turns:[]};conversations.unshift(thread);currentThreadId=thread.id;storeConversations();setConversationView(thread);$('prompt').value='';resizeComposer();$('send').disabled=true;$('status').textContent='';$('prompt').focus();}
 $('new').onclick=startNewConversation;
 renderConversation(currentConversation());
