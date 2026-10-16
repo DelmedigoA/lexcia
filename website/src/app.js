@@ -26,7 +26,7 @@ for(const thread of conversations)for(const turn of thread.turns)if(turn.status=
 let currentThreadId=conversations[0]?.id||crypto.randomUUID();
 if(!conversations.length)conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
 let renderedThreadId=null;
-let closingTimer,autoOpenTimer;
+let closingTimer;
 const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question)});
 function syncWelcome(){const thread=currentConversation();welcomeThread.update({threadId:thread.id,turns:thread.turns,isRunning:busy,isDisabled:false});}
 function positionFloatingPanel(){
@@ -95,18 +95,16 @@ function setConversationView(thread){
   $('panel-title').textContent=thread.title==='New inquiry'?'Lexcia':thread.title||'Lexcia';
   $('status').textContent='';updateLatestButton();
 }
-function openPanel({focusComposer=true}={}){
-  clearTimeout(autoOpenTimer);
+function openPanel(){
   if(closing){clearTimeout(closingTimer);closing=false;}
-  const previousFocus=document.activeElement,thread=currentConversation();if(thread)setConversationView(thread);
+  const thread=currentConversation();if(thread)setConversationView(thread);
   if(!panel.open)showPanelDialog();
   positionFloatingPanel();panel.classList.remove('is-exiting');panel.classList.add('is-entering');launcher.setAttribute('aria-expanded','true');
-  if(!focusComposer){document.activeElement?.blur();previousFocus?.focus({preventScroll:true});}
-  requestAnimationFrame(()=>{resizeComposer();if(focusComposer)$('prompt').focus({preventScroll:true});});
+  requestAnimationFrame(()=>{resizeComposer();$('prompt').focus({preventScroll:true});});
   setTimeout(()=>panel.classList.remove('is-entering'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);
 }
 function closePanel(){
-  clearTimeout(autoOpenTimer);if(!panel.open||closing)return;
+  if(!panel.open||closing)return;
   closing=true;panel.classList.remove('is-entering');panel.classList.add('is-exiting');launcher.setAttribute('aria-expanded','false');
   closingTimer=setTimeout(()=>{panel.close();setPinned(false);panel.classList.remove('is-exiting');closing=false;launcher.focus({preventScroll:true});},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);
 }
@@ -221,11 +219,3 @@ const updateHeader=()=>siteHeader?.classList.toggle('is-scrolled',scrollY>24);
 addEventListener('scroll',updateHeader,{passive:true});updateHeader();
 const navLinks=[...document.querySelectorAll('.site-nav a[href^="#"]')];
 if('IntersectionObserver' in window&&navLinks.length){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;for(const link of navLinks){if(link.hash===`#${entry.target.id}`)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');}}},{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('main>section[id]').forEach(section=>observer.observe(section));}
-
-// Desktop arrival: open once, gently, without taking keyboard focus from the page.
-// Explicit opening/closing cancels this timer; mobile keeps the manual launcher.
-autoOpenTimer=setTimeout(()=>{
-  if(panel.open||closing||matchMedia('(max-width: 700px)').matches)return;
-  if(document.activeElement?.matches('input,textarea,select,[contenteditable="true"]'))return;
-  setPinned(true);openPanel({focusComposer:false});
-},1000);
