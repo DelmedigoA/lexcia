@@ -5,6 +5,7 @@ import {makeLauncherDraggable} from './draggable-launcher.js';
 import {positionNearLauncher} from './panel-position.js';
 import {addMessageActions,showPendingMessage,appendMessageTime,appendDaySeparator,appendStoppedNotice} from './message-ui.js';
 import {continuationQuestion,appendContinuation} from './conversation-state.js';
+import {mountWelcome} from './thread-welcome.jsx';
 const $=id=>document.getElementById(id);
 const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('assistant-divider');
 makeLauncherDraggable(launcher);
@@ -28,6 +29,8 @@ if(!conversations.length)conversations=[{id:currentThreadId,title:'New inquiry',
 let selectedThreadId=currentThreadId;
 let renderedThreadId=null;
 let closingTimer;
+const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question)});
+function syncWelcome(){const thread=conversations.find(item=>item.id===selectedThreadId)||currentConversation();welcomeThread.update({threadId:thread.id,turns:thread.turns,isRunning:busy,isDisabled:readOnly});}
 function positionFloatingPanel(){
   if(!panel.open||pinned)return;
   const position=positionNearLauncher(launcher.getBoundingClientRect(),{width:panel.offsetWidth,height:panel.offsetHeight},{width:window.innerWidth,height:window.innerHeight});
@@ -66,6 +69,7 @@ function setPinned(value){
   positionFloatingPanel();
 }
 function renderConversation(thread){
+  syncWelcome();
   if(thread&&thread.id===renderedThreadId)return;
   clearAnswerRoots();$('messages').replaceChildren();items.clear();
   let previousTime;
@@ -133,7 +137,7 @@ grip.addEventListener('pointerdown',event=>{
 });
 grip.addEventListener('dblclick',resetFloatSize);
 grip.addEventListener('keydown',event=>{if(pinned)return;const size=floatSize();if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;event.preventDefault();if(event.key==='Home')resetFloatSize();else if(event.key==='End')setFloatSize(window.innerWidth-24,window.innerHeight-108);else setFloatSize(size.width+(event.key==='ArrowRight'?24:event.key==='ArrowLeft'?-24:0),size.height+(event.key==='ArrowUp'?24:event.key==='ArrowDown'?-24:0));positionFloatingPanel();});
-function setBusy(value){busy=value;$('send').hidden=value;$('stop').hidden=!value;$('new').disabled=value;$('threads-toggle').disabled=value;$('send').disabled=!$('prompt').value.trim()||value;for(const button of document.querySelectorAll('[data-continue-turn]'))button.disabled=value||!button.canContinue();}
+function setBusy(value){busy=value;syncWelcome();$('send').hidden=value;$('stop').hidden=!value;$('new').disabled=value;$('threads-toggle').disabled=value;$('send').disabled=!$('prompt').value.trim()||value;for(const button of document.querySelectorAll('[data-continue-turn]'))button.disabled=value||!button.canContinue();}
 function resizeComposer(){const prompt=$('prompt');prompt.style.height='auto';prompt.style.height=`${Math.min(160,prompt.scrollHeight)}px`;}
 let composerWidth=0;
 new ResizeObserver(([entry])=>{const width=entry.contentRect.width;if(width>0&&Math.abs(width-composerWidth)>.5){composerWidth=width;resizeComposer();}}).observe($('prompt'));
@@ -208,12 +212,13 @@ async function runTurn(thread,turn,answer,resume=false){
     }
   }finally{answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus();updateLatestButton();}
 }
-$('composer').onsubmit=event=>{
-  event.preventDefault();const question=$('prompt').value.trim();if(!question||busy||readOnly)return;
+function submitQuestion(question){
+  question=question.trim();if(!question||busy||readOnly)return;
   const thread=currentConversation(),previous=thread.turns.at(-1);
   const turn={question,answer:'',items:[],ui:null,createdAt:Date.now(),status:'running'};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();storeConversations();
-  appendDaySeparator($('messages'),turn.createdAt,previous?.createdAt);message('user',question,turn.createdAt);$('prompt').value='';resizeComposer();const answer=message('assistant');runTurn(thread,turn,answer);
-};
+  appendDaySeparator($('messages'),turn.createdAt,previous?.createdAt);message('user',question,turn.createdAt);$('prompt').value='';resizeComposer();const answer=message('assistant');return runTurn(thread,turn,answer);
+}
+$('composer').onsubmit=event=>{event.preventDefault();submitQuestion($('prompt').value);};
 $('stop').onclick=()=>controller?.abort();
 async function startNewConversation(){if(busy)return;const thread={id:crypto.randomUUID(),title:'New inquiry',updatedAt:Date.now(),turns:[]};conversations.unshift(thread);currentThreadId=thread.id;selectedThreadId=thread.id;storeConversations();readOnly=false;setConversationView(thread);$('prompt').value='';resizeComposer();$('send').disabled=true;$('status').textContent='';$('prompt').focus();}
 $('new').onclick=startNewConversation;
