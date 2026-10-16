@@ -26,7 +26,7 @@ for(const thread of conversations)for(const turn of thread.turns)if(turn.status=
 let currentThreadId=conversations[0]?.id||crypto.randomUUID();
 if(!conversations.length)conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
 let renderedThreadId=null;
-let closingTimer,autoOpenTimer;
+let closingTimer,autoOpenTimer,entranceTimer;
 const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question)});
 function syncWelcome(){const thread=currentConversation();welcomeThread.update({threadId:thread.id,turns:thread.turns,isRunning:busy,isDisabled:false});}
 function positionFloatingPanel(){
@@ -95,14 +95,20 @@ function setConversationView(thread){
   $('panel-title').textContent=thread.title==='New inquiry'?'Lexcia':thread.title||'Lexcia';
   $('status').textContent='';updateLatestButton();
 }
+function animatePanelEntrance(){
+  clearTimeout(entranceTimer);
+  panel.classList.remove('is-exiting','is-entering');
+  void panel.offsetWidth; // Restart even when pinning during the previous entrance.
+  panel.classList.add('is-entering');
+  entranceTimer=setTimeout(()=>panel.classList.remove('is-entering'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);
+}
 function openPanel(){
   clearTimeout(autoOpenTimer);
   if(closing){clearTimeout(closingTimer);closing=false;}
   const thread=currentConversation();if(thread)setConversationView(thread);
   if(!panel.open)showPanelDialog();
-  positionFloatingPanel();panel.classList.remove('is-exiting');panel.classList.add('is-entering');launcher.setAttribute('aria-expanded','true');
+  positionFloatingPanel();animatePanelEntrance();launcher.setAttribute('aria-expanded','true');
   requestAnimationFrame(()=>{resizeComposer();$('prompt').focus({preventScroll:true});});
-  setTimeout(()=>panel.classList.remove('is-entering'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);
 }
 function closePanel(){
   if(!panel.open||closing)return;
@@ -115,7 +121,11 @@ panel.addEventListener('cancel',event=>{event.preventDefault();closePanel();});
 panel.addEventListener('click',event=>{if(!pinned&&event.target===panel)closePanel();});
 panel.addEventListener('keydown',event=>{if(pinned&&event.key==='Escape'&&!event.defaultPrevented){event.preventDefault();closePanel();}});
 $('expand').onclick=()=>{const expanded=panel.classList.toggle('expanded');$('expand').setAttribute('aria-pressed',String(expanded));$('expand').setAttribute('aria-label',expanded?'Restore panel size':'Expand panel');$('expand').title=expanded?'Restore panel size':'Expand panel';positionFloatingPanel();};
-pin.onclick=()=>setPinned(!pinned);
+pin.onclick=()=>{
+  if(busy)return;
+  setPinned(!pinned);
+  if(pinned){startNewConversation();animatePanelEntrance();}
+};
 divider.addEventListener('pointerdown',event=>{
   if(!pinned)return;
   event.preventDefault();divider.setPointerCapture(event.pointerId);
@@ -143,7 +153,7 @@ grip.addEventListener('pointerdown',event=>{
 });
 grip.addEventListener('dblclick',resetFloatSize);
 grip.addEventListener('keydown',event=>{if(pinned)return;const size=floatSize();if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;event.preventDefault();if(event.key==='Home')resetFloatSize();else if(event.key==='End')setFloatSize(window.innerWidth-24,window.innerHeight-108);else setFloatSize(size.width+(event.key==='ArrowRight'?24:event.key==='ArrowLeft'?-24:0),size.height+(event.key==='ArrowUp'?24:event.key==='ArrowDown'?-24:0));positionFloatingPanel();});
-function setBusy(value){busy=value;syncWelcome();$('new').disabled=value;$('send').disabled=!$('prompt').value.trim()||value;for(const button of document.querySelectorAll('[data-continue-turn]'))button.disabled=value||!button.canContinue();}
+function setBusy(value){busy=value;syncWelcome();$('new').disabled=value;pin.disabled=value;$('send').disabled=!$('prompt').value.trim()||value;for(const button of document.querySelectorAll('[data-continue-turn]'))button.disabled=value||!button.canContinue();}
 function resizeComposer(){const prompt=$('prompt');prompt.style.height='auto';prompt.style.height=`${Math.min(160,prompt.scrollHeight)}px`;}
 let composerWidth=0;
 new ResizeObserver(([entry])=>{const width=entry.contentRect.width;if(width>0&&Math.abs(width-composerWidth)>.5){composerWidth=width;resizeComposer();}}).observe($('prompt'));
