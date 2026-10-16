@@ -114,11 +114,3 @@ export function appendStoppedNotice(node,{canContinue,onContinue,error}){
   }
   node.append(notice);
 }
-
-export function showPendingMessage(node,label='Reading Lexcia information…'){
-  const pending=document.createElement('div');pending.className='message-pending';
-  const dots=document.createElement('span');dots.className='message-pending-dots';dots.setAttribute('aria-hidden','true');
-  for(let i=0;i<3;i++)dots.append(document.createElement('i'));
-  const text=document.createElement('span');text.className='message-pending-label';text.textContent=label;
-  pending.append(dots,text);node.replaceChildren(pending);
-}

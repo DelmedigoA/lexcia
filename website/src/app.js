@@ -3,9 +3,9 @@ import {renderAnswer,isHebrewDominant} from './formatting.js';
 import {askLexcia} from './chat-client.js';
 import {makeLauncherDraggable} from './draggable-launcher.js';
 import {positionNearLauncher} from './panel-position.js';
-import {addMessageActions,showPendingMessage,appendStoppedNotice} from './message-ui.js';
+import {addMessageActions,appendStoppedNotice} from './message-ui.js';
 import {continuationQuestion,appendContinuation} from './conversation-state.js';
-import {mountWelcome} from './thread-welcome.jsx';
+import {mountWelcome,mountThinking} from './thread-welcome.jsx';
 const $=id=>document.getElementById(id);
 const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('assistant-divider');
 makeLauncherDraggable(launcher);
@@ -177,14 +177,13 @@ async function runTurn(thread,turn,answer,resume=false){
   const base=resume?turn.answer||'':'';
   turn.status='running';delete turn.error;storeConversations();
   setBusy(true);$('status').textContent='';controller=new AbortController();answer.setAttribute('aria-busy','true');
-  answer.innerHTML=renderAnswer(base);const pending=document.createElement('div');answer.append(pending);showPendingMessage(pending,resume?'Continuing the answer…':'Reading Lexcia information…');
+  answer.innerHTML=renderAnswer(base);const pending=document.createElement('div');answer.append(pending);const stopThinking=mountThinking(pending,resume?'continuing…':'thinking…');
   let text='',readItems=resume?[...(turn.items||[])]:[],finalReceived=false;
   const fullText=()=>appendContinuation(base,text);
-  const update=()=>{const follow=nearBottom();answer.dir=isHebrewDominant(fullText())?'rtl':'ltr';answer.innerHTML=renderAnswer(fullText(),readItems);if(follow)bottom();else updateLatestButton();};
+  const update=()=>{stopThinking();const follow=nearBottom();answer.dir=isHebrewDominant(fullText())?'rtl':'ltr';answer.innerHTML=renderAnswer(fullText(),readItems);if(follow)bottom();else updateLatestButton();};
   bottom();
   try{
     await askLexcia(requestQuestion,event=>{
-      if(event.event==='status'&&!text)showPendingMessage(pending,event.data.message||'Reading Lexcia information…');
       if(event.event==='item'&&event.data.item){const item=event.data.item;items.set(item.item_id,item);if(!readItems.some(i=>i.item_id===item.item_id))readItems.push(item);}
       if(event.event==='delta'){if(!turn.repliedAt)turn.repliedAt=Date.now();text+=event.data.text||'';update();}
       if(event.event==='final'){
@@ -201,7 +200,7 @@ async function runTurn(thread,turn,answer,resume=false){
       if(!stopped)turn.error=error.message;
       thread.updatedAt=Date.now();storeConversations();update();finishTurnView(answer,thread,turn);
     }
-  }finally{answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus();updateLatestButton();}
+  }finally{stopThinking();answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus();updateLatestButton();}
 }
 function submitQuestion(question){
   question=question.trim();if(!question||busy)return;

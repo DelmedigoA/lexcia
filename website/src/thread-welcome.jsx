@@ -5,7 +5,7 @@ import React, {Fragment} from 'react';
 import {createRoot} from 'react-dom/client';
 import {AssistantRuntimeProvider, AuiIf, ThreadPrimitive, useExternalStoreRuntime} from '@assistant-ui/react';
 
-const GREETING_WORDS=['Ask','Lexcia'];
+const GREETING_WORDS=['Welcome','to','Lexcia!'];
 // Opt into normalization of message-like records (including runtime metadata).
 const convertMessage=message=>message;
 const SUGGESTIONS=[
@@ -21,7 +21,7 @@ function AssistantWelcome(){
       <h3>{GREETING_WORDS.map((word,index)=><Fragment key={word}>
         <span className="welcome-word" style={{animationDelay:`${index*90}ms`}}>{word}</span>{' '}
       </Fragment>)}<span className="welcome-caret" aria-hidden="true" /></h3>
-      <p className="welcome-rise" style={{animationDelay:'500ms'}}>Answers from Lexcia’s own knowledge.</p>
+      <p className="welcome-rise" style={{animationDelay:'500ms'}}>Ask Lexcia about the product, pricing, or your next idea.</p>
     </div>
     <nav className="welcome-suggestions" aria-label="Suggested questions">
       {SUGGESTIONS.map(([prompt,label],index)=><ThreadPrimitive.Suggestion
@@ -52,4 +52,18 @@ function WelcomeThread({turns,isRunning,isDisabled,onSend}){
 export function mountWelcome(container,{onSend}){
   const root=createRoot(container);
   return {update:({threadId,...state})=>root.render(<WelcomeThread key={threadId} {...state} onSend={onSend} />)};
+}
+
+// Adapted from the website's TraceLine and ShimmerLabel (same MIT notice above):
+// apps/docs/components/shared/trace-line.tsx
+// packages/ui/src/components/react/assistant-ui/elements/surfaces.tsx
+function ThinkingLine({label}){
+  return <div className="message-pending" role="status">
+    <span className="thinking-marker" aria-hidden="true">{'>'}</span>
+    <span className="thinking-shimmer">{label}</span>
+  </div>;
+}
+export function mountThinking(container,label='thinking…'){
+  let root=createRoot(container);root.render(<ThinkingLine label={label} />);
+  return ()=>{if(root){root.unmount();root=null;}};
 }
