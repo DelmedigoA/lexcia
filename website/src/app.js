@@ -16,7 +16,7 @@ for(const prefix of ['lexcia:','rabota:'])for(const name of ['assistant-width','
   try{localStorage.removeItem(prefix+name);}catch{}
 }
 let pinned=false,closing=false;
-let floatingSize={width:420,height:620},sidebarWidth=420;
+let floatingSize={width:420,height:526},sidebarWidth=420;
 let currentThreadId=crypto.randomUUID();
 let conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
 let renderedThreadId=null;
@@ -135,7 +135,7 @@ divider.addEventListener('keydown',event=>{
 });
 addEventListener('resize',()=>{if(pinned){if(matchMedia('(max-width: 700px)').matches)setPinned(false);else setPinnedWidth(pinnedWidth());}});
 const grip=$('resize-grip');
-function resetFloatSize(){setFloatSize(420,620);panel.classList.remove('expanded');$('expand').setAttribute('aria-pressed','false');$('expand').setAttribute('aria-label','Expand panel');$('expand').title='Expand panel';positionFloatingPanel();}
+function resetFloatSize(){setFloatSize(420,526);panel.classList.remove('expanded');$('expand').setAttribute('aria-pressed','false');$('expand').setAttribute('aria-label','Expand panel');$('expand').title='Expand panel';positionFloatingPanel();}
 grip.addEventListener('pointerdown',event=>{
   if(pinned)return;event.preventDefault();grip.setPointerCapture(event.pointerId);
   const start={x:event.clientX,y:event.clientY,width:panel.offsetWidth,height:panel.offsetHeight};
