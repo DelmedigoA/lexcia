@@ -34,6 +34,8 @@ Current assistant source behavior: the floating window opens near the draggable 
 
 Before pushing relevant application changes, run `uv run pytest` and `(cd website && npm test && npm run build)`; for demo changes also run its `npm test` and `npm run build`. For documentation-only changes, verify links/paths and run `git diff --check`. Run commands in the actual application checkout, not an unrelated parent repository.
 
+Conversation details follow assistant-ui's message/action-bar patterns while retaining the existing frame and SSE client: compact right-aligned user bubbles, unboxed Markdown answers, inline code and code-block copy controls, per-answer copying and helpful/unhelpful feedback, a waiting indicator, a growing composer, and a jump-to-latest control. Copying strips internal source markers. Feedback is stored only with the browser transcript; no feedback API or shared analytics is implemented. The existing `@assistant-ui/react-generative-ui` renderer remains available for structured answers; this UI pass does not migrate conversation state to assistant-ui's runtime.
+
 ## Vercel and credentials
 
 - Verified team: **Rabota**, slug `rabota2`; its sole project is **lexcia**, ID `prj_4QuZOx4QghpXfYPFoHLHgzwVrTkY`. A Vercel team is separate from a GitHub organization.

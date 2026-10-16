@@ -3,6 +3,7 @@ import {renderAnswer,isHebrewDominant} from './formatting.js';
 import {askLexcia,resetLexcia} from './chat-client.js';
 import {makeLauncherDraggable} from './draggable-launcher.js';
 import {positionNearLauncher} from './panel-position.js';
+import {addMessageActions,showPendingMessage} from './message-ui.js';
 const $=id=>document.getElementById(id);
 const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('assistant-divider');
 makeLauncherDraggable(launcher);
@@ -38,7 +39,7 @@ const panelPositionObserver=new ResizeObserver(schedulePanelPosition);
 panelPositionObserver.observe(panel);panelPositionObserver.observe(launcher);
 addEventListener('resize',schedulePanelPosition);
 function currentConversation(){return conversations.find(thread=>thread.id===currentThreadId);}
-function storeConversations(){conversations=conversations.slice(0,20);try{localStorage.setItem(THREADS_KEY,JSON.stringify(conversations));}catch{}}
+function storeConversations(){conversations=conversations.slice(0,20);try{localStorage.setItem(THREADS_KEY,JSON.stringify(conversations));return true;}catch{return false;}}
 function floatSize(){try{const value=JSON.parse(localStorage.getItem(FLOAT_SIZE_KEY)||'{}');return{width:Number(value.width)||420,height:Number(value.height)||620};}catch{return{width:420,height:620};}}
 function setFloatSize(width,height){const size={width:Math.round(Math.max(340,Math.min(window.innerWidth-24,width))),height:Math.round(Math.max(360,Math.min(window.innerHeight-108,height)))};document.documentElement.style.setProperty('--floating-width',`${size.width}px`);document.documentElement.style.setProperty('--floating-height',`${size.height}px`);try{localStorage.setItem(FLOAT_SIZE_KEY,JSON.stringify(size));}catch{}}
 setFloatSize(floatSize().width,floatSize().height);
@@ -70,6 +71,7 @@ function renderConversation(thread){
     answer.dir=isHebrewDominant(turn.answer||'')?'rtl':'ltr';answer.innerHTML=renderAnswer(turn.answer||'',turn.items||[]);addSources(answer,turn.items||[]);
     for(const item of turn.items||[])if(item.item_id)items.set(item.item_id,item);
     if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui);}
+    addMessageActions(answer,turn,{onFeedback:storeConversations,announce:announceMessageAction});
   }
   renderedThreadId=thread?.id||null;
   $('welcome').hidden=Boolean(thread?.turns?.length);bottom();
@@ -79,6 +81,7 @@ function setConversationView(thread){
   $('thread-list').hidden=true;$('thread').hidden=false;$('composer').parentElement.hidden=readOnly;$('history-note').hidden=!readOnly;
   $('panel-title').textContent=thread.id===currentThreadId&&thread.title==='New inquiry'?'Lexcia':thread.title||'Lexcia';$('threads-toggle').setAttribute('aria-pressed','false');
   $('threads-toggle').setAttribute('aria-label','Show earlier conversations');$('status').textContent=readOnly?'Saved conversation · read only':'';
+  updateLatestButton();
 }
 function renderThreadList(){
   const list=$('thread-list');list.replaceChildren();
@@ -89,8 +92,9 @@ function toggleThreadList(){
   const show=$('thread-list').hidden;readOnly=false;
   if(show){renderThreadList();$('thread-list').hidden=false;$('thread').hidden=true;$('composer').parentElement.hidden=true;$('panel-title').textContent='Conversations';$('threads-toggle').setAttribute('aria-pressed','true');$('threads-toggle').setAttribute('aria-label','Return to inquiry');$('thread-list').querySelector('button')?.focus();}
   else{const thread=conversations.find(item=>item.id===currentThreadId);if(thread)setConversationView(thread);else setConversationView(conversations[0]);$('prompt').focus();}
+  updateLatestButton();
 }
-function openPanel(){if(closing){clearTimeout(closingTimer);closing=false;}const thread=conversations.find(item=>item.id===selectedThreadId)||currentConversation();if(thread)setConversationView(thread);if(!panel.open)panel.showModal();positionFloatingPanel();panel.classList.remove('is-exiting');panel.classList.add('is-entering');launcher.setAttribute('aria-expanded','true');requestAnimationFrame(()=>readOnly?$('panel-title').focus():$('prompt').focus());setTimeout(()=>panel.classList.remove('is-entering'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);}
+function openPanel(){if(closing){clearTimeout(closingTimer);closing=false;}const thread=conversations.find(item=>item.id===selectedThreadId)||currentConversation();if(thread)setConversationView(thread);if(!panel.open)panel.showModal();positionFloatingPanel();panel.classList.remove('is-exiting');panel.classList.add('is-entering');launcher.setAttribute('aria-expanded','true');requestAnimationFrame(()=>{if(readOnly)$('panel-title').focus();else{resizeComposer();$('prompt').focus();}});setTimeout(()=>panel.classList.remove('is-entering'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);}
 function closePanel(){if(!panel.open||closing)return;closing=true;setPinned(false);panel.classList.remove('is-entering');panel.classList.add('is-exiting');launcher.setAttribute('aria-expanded','false');closingTimer=setTimeout(()=>{panel.close();panel.classList.remove('is-exiting');closing=false;launcher.focus();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);}
 launcher.onclick=()=>panel.open?closePanel():openPanel();$('close').onclick=closePanel;
 document.querySelectorAll('[data-open-assistant]').forEach(button=>button.addEventListener('click',openPanel));
@@ -127,11 +131,18 @@ grip.addEventListener('pointerdown',event=>{
 grip.addEventListener('dblclick',resetFloatSize);
 grip.addEventListener('keydown',event=>{if(pinned)return;const size=floatSize();if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;event.preventDefault();if(event.key==='Home')resetFloatSize();else if(event.key==='End')setFloatSize(window.innerWidth-24,window.innerHeight-108);else setFloatSize(size.width+(event.key==='ArrowRight'?24:event.key==='ArrowLeft'?-24:0),size.height+(event.key==='ArrowUp'?24:event.key==='ArrowDown'?-24:0));positionFloatingPanel();});
 function setBusy(value){busy=value;$('send').hidden=value;$('stop').hidden=!value;$('new').disabled=value;$('threads-toggle').disabled=value;$('send').disabled=!$('prompt').value.trim()||value;}
-$('prompt').oninput=()=>{$('send').disabled=busy||!$('prompt').value.trim();};
+function resizeComposer(){const prompt=$('prompt');prompt.style.height='auto';prompt.style.height=`${Math.min(160,prompt.scrollHeight)}px`;}
+$('prompt').oninput=()=>{$('send').disabled=busy||!$('prompt').value.trim();resizeComposer();};
 $('prompt').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();if(!busy)$('composer').requestSubmit();}});
-function message(role,text=''){const node=document.createElement('article');node.className=`message message--${role}`;node.dir='auto';node.textContent=text;$('messages').append(node);$('welcome').hidden=true;return node;}
-function bottom(){const thread=$('thread');thread.scrollTop=thread.scrollHeight;}
+function message(role,text=''){const node=document.createElement('article');node.className=`message message--${role}`;node.dir='auto';node.setAttribute('aria-label',role==='user'?'You':'Lexcia');node.textContent=text;$('messages').append(node);$('welcome').hidden=true;return node;}
+function bottom(){const thread=$('thread');thread.scrollTop=thread.scrollHeight;updateLatestButton();}
 function nearBottom(){const el=$('thread');return el.scrollHeight-el.scrollTop-el.clientHeight<90;}
+function updateLatestButton(){$('latest').hidden=!$('messages').children.length||$('thread').hidden||nearBottom();}
+function announceMessageAction(text){$('message-action-status').textContent=text;}
+$('latest').onclick=bottom;
+$('thread').addEventListener('scroll',updateLatestButton,{passive:true});
+new ResizeObserver(updateLatestButton).observe($('messages'));
+new ResizeObserver(updateLatestButton).observe($('thread'));
 function safeURL(raw){if(!raw||typeof raw!=='string')return null;try{const url=new URL(raw,location.origin);return ['https:','http:'].includes(url.protocol)?url.href:null;}catch{return null;}}
 function addSources(node,readItems){
   if(!readItems.length)return;
@@ -149,18 +160,21 @@ function addSources(node,readItems){
 $('composer').onsubmit=async event=>{
   event.preventDefault();const question=$('prompt').value.trim();if(!question||busy||readOnly)return;
   const thread=currentConversation();const turn={question,answer:'',items:[],ui:null};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();storeConversations();
-  message('user',question);$('prompt').value='';const answer=message('assistant');bottom();setBusy(true);$('status').textContent='Connecting…';controller=new AbortController();
+  message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');answer.setAttribute('aria-busy','true');showPendingMessage(answer);bottom();setBusy(true);$('status').textContent='Connecting…';controller=new AbortController();
   let text='',readItems=[];
-  const update=()=>{const follow=nearBottom();answer.dir=isHebrewDominant(text)?'rtl':'ltr';answer.innerHTML=renderAnswer(text,readItems);if(follow)bottom();};
+  const update=()=>{const follow=nearBottom();answer.dir=isHebrewDominant(text)?'rtl':'ltr';answer.innerHTML=renderAnswer(text,readItems);if(follow)bottom();else updateLatestButton();};
   try{
     await askLexcia(question,event=>{
-      if(event.event==='status')$('status').textContent=event.data.message||'Searching…';
+      if(event.event==='status'){$('status').textContent=event.data.message||'Searching…';if(!text)showPendingMessage(answer,event.data.message||'Searching…');}
       if(event.event==='item'&&event.data.item){const item=event.data.item;items.set(item.item_id,item);if(!readItems.some(i=>i.item_id===item.item_id))readItems.push(item);}
       if(event.event==='delta'){text+=event.data.text||'';update();}
       if(event.event==='final'){
+        const follow=nearBottom();
         text=event.data.answer||text;readItems=event.data.items||readItems;for(const item of readItems)items.set(item.item_id,item);update();addSources(answer,readItems);
         turn.answer=text;turn.items=readItems;turn.ui=event.data.ui||null;thread.updatedAt=Date.now();storeConversations();
         if(event.data.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,event.data.ui);}
+        addMessageActions(answer,turn,{onFeedback:storeConversations,announce:announceMessageAction});
+        if(follow)bottom();else updateLatestButton();
       }
     },controller.signal,currentThreadId);
     $('status').textContent='';
@@ -170,10 +184,10 @@ $('composer').onsubmit=async event=>{
     turn.answer=text;turn.items=readItems;thread.updatedAt=Date.now();storeConversations();
     if(!text){answer.textContent=notice;answer.classList.add('message--error');}else{const p=document.createElement('p');p.className='message--error';p.textContent=notice;answer.append(p);}
     $('status').textContent='';
-  }finally{setBusy(false);controller=null;$('prompt').focus();}
+  }finally{answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus();updateLatestButton();}
 };
 $('stop').onclick=()=>controller?.abort();
-async function startNewConversation(){if(busy)return;$('new').disabled=true;try{await resetLexcia(currentThreadId);const thread={id:crypto.randomUUID(),title:'New inquiry',updatedAt:Date.now(),turns:[]};conversations.unshift(thread);currentThreadId=thread.id;selectedThreadId=thread.id;storeConversations();readOnly=false;setConversationView(thread);$('prompt').value='';$('send').disabled=true;$('status').textContent='';$('prompt').focus();}catch(error){$('status').textContent=error.message;}finally{$('new').disabled=false;}}
+async function startNewConversation(){if(busy)return;$('new').disabled=true;try{await resetLexcia(currentThreadId);const thread={id:crypto.randomUUID(),title:'New inquiry',updatedAt:Date.now(),turns:[]};conversations.unshift(thread);currentThreadId=thread.id;selectedThreadId=thread.id;storeConversations();readOnly=false;setConversationView(thread);$('prompt').value='';resizeComposer();$('send').disabled=true;$('status').textContent='';$('prompt').focus();}catch(error){$('status').textContent=error.message;}finally{$('new').disabled=false;}}
 $('new').onclick=startNewConversation;
 $('continue-new').onclick=startNewConversation;
 renderConversation(currentConversation());

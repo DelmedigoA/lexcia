@@ -105,7 +105,9 @@
       <section id="welcome"><h3>What are you looking for?</h3><p>Ask a question to explore the site’s knowledge, find information, and get where you need to go.</p></section>
       <div id="messages" role="log" aria-label="Conversation" aria-live="polite"></div>
     </div>
-    <div class="composer-area"><form id="composer"><label class="sr-only" for="prompt">Your question</label><textarea id="prompt" placeholder="Ask about this website…" rows="2" maxlength="4000" dir="auto"></textarea><div class="composer-bottom"><span id="status" role="status" aria-live="polite"></span><button id="stop" type="button" aria-label="Stop response" hidden>Stop</button><button id="send" type="submit" aria-label="Send message" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button></div></form><p class="assistant-credit">powered by <a href="#home">Lexcia</a></p></div>
+    <div class="conversation-navigation"><button id="latest" class="latest-message" type="button" aria-label="Jump to latest message" title="Jump to latest" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6"/></svg></button></div>
+    <div id="message-action-status" class="sr-only" role="status" aria-live="polite"></div>
+    <div class="composer-area"><form id="composer"><label class="sr-only" for="prompt">Your question</label><textarea id="prompt" placeholder="Ask about this website…" rows="1" maxlength="4000" dir="auto" enterkeyhint="send"></textarea><div class="composer-bottom"><span id="status" role="status" aria-live="polite"></span><button id="stop" type="button" aria-label="Stop response" hidden>Stop</button><button id="send" type="submit" aria-label="Send message" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button></div></form><p class="assistant-credit">powered by <a href="#home">Lexcia</a></p></div>
   </dialog>
 </body>
 </html>
