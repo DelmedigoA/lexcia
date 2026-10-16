@@ -142,7 +142,7 @@ textarea{color:var(--ink);font-family:var(--sans)}textarea::placeholder{color:va
 #welcome{display:flex;min-height:100%;padding:8px 4px;text-align:start}
 .welcome-thread{display:flex;flex:1;min-width:0}
 .thread-welcome{display:flex;flex:1;min-width:0;flex-direction:column}
-.thread-welcome-greeting{display:flex;flex:1;flex-direction:column;justify-content:flex-end;gap:8px;padding-bottom:28px}
+.thread-welcome-greeting{display:flex;flex:1;flex-direction:column;justify-content:flex-end;gap:8px;padding-bottom:52px}
 #welcome p{width:auto;max-width:285px;margin:0}
 .welcome-suggestions{display:grid;flex-shrink:0;gap:0;margin-inline:-8px}
 .welcome-suggestions button{display:flex;align-items:baseline;gap:10px;width:100%;padding:8px;border:0;border-radius:0;background:transparent;color:var(--ink-3);font:13px/1.5 var(--sans);text-align:start;transition:background .15s,color .15s}
@@ -157,7 +157,7 @@ textarea{color:var(--ink);font-family:var(--sans)}textarea::placeholder{color:va
 @keyframes welcome-rise{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @keyframes welcome-caret{0%,45%{opacity:1}100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.welcome-caret{display:none}}
-@container conversation (max-height:360px){#welcome{padding-block:0}#welcome h3{font-size:24px}.thread-welcome-greeting{padding-bottom:16px}.welcome-suggestions button{padding-block:6px}}
+@container conversation (max-height:360px){#welcome{padding-block:0}#welcome h3{font-size:24px}.thread-welcome-greeting{padding-bottom:40px}.welcome-suggestions button{padding-block:6px}}
 .conversation-day{display:flex;align-items:center;gap:12px;margin:4px 0 20px;color:var(--ink-3);font:11px/1.4 var(--sans)}
 .conversation-day::before,.conversation-day::after{flex:1;height:1px;background:var(--rule);content:""}
 .message-time{display:block;width:fit-content;margin-top:5px;opacity:0;color:var(--ink-3);font:10px/1.4 var(--sans);transition:opacity .15s}
