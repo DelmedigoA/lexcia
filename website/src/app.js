@@ -1,9 +1,10 @@
 import {mountAnswer,clearAnswerRoots} from './answer-ui.jsx';
 import {renderAnswer,isHebrewDominant} from './formatting.js';
-import {askLexcia,resetLexcia} from './chat-client.js';
+import {askLexcia} from './chat-client.js';
 import {makeLauncherDraggable} from './draggable-launcher.js';
 import {positionNearLauncher} from './panel-position.js';
-import {addMessageActions,showPendingMessage} from './message-ui.js';
+import {addMessageActions,showPendingMessage,appendMessageTime,appendDaySeparator,appendStoppedNotice} from './message-ui.js';
+import {continuationQuestion,appendContinuation} from './conversation-state.js';
 const $=id=>document.getElementById(id);
 const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('assistant-divider');
 makeLauncherDraggable(launcher);
@@ -21,6 +22,7 @@ let closing=false;
 let readOnly=false;
 function loadConversations(){try{const value=JSON.parse(localStorage.getItem(THREADS_KEY)||'[]');return Array.isArray(value)?value.filter(thread=>thread&&typeof thread.id==='string'&&Array.isArray(thread.turns)).slice(0,20):[];}catch{return [];}}
 let conversations=loadConversations();
+for(const thread of conversations)for(const turn of thread.turns)if(turn.status==='running')turn.status='stopped';
 let currentThreadId=conversations[0]?.id||crypto.randomUUID();
 if(!conversations.length)conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
 let selectedThreadId=currentThreadId;
@@ -66,15 +68,16 @@ function setPinned(value){
 function renderConversation(thread){
   if(thread&&thread.id===renderedThreadId)return;
   clearAnswerRoots();$('messages').replaceChildren();items.clear();
+  let previousTime;
   for(const turn of thread?.turns||[]){
-    message('user',turn.question||'');const answer=message('assistant');
-    answer.dir=isHebrewDominant(turn.answer||'')?'rtl':'ltr';answer.innerHTML=renderAnswer(turn.answer||'',turn.items||[]);addSources(answer,turn.items||[]);
+    appendDaySeparator($('messages'),turn.createdAt,previousTime);previousTime=turn.createdAt;
+    message('user',turn.question||'',turn.createdAt);const answer=message('assistant');
+    answer.dir=isHebrewDominant(turn.answer||'')?'rtl':'ltr';answer.innerHTML=renderAnswer(turn.answer||'',turn.items||[]);
     for(const item of turn.items||[])if(item.item_id)items.set(item.item_id,item);
-    if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui);}
-    addMessageActions(answer,turn,{onFeedback:storeConversations,announce:announceMessageAction});
+    finishTurnView(answer,thread,turn);
   }
   renderedThreadId=thread?.id||null;
-  $('welcome').hidden=Boolean(thread?.turns?.length);bottom();
+  $('welcome').hidden=Boolean(thread?.turns?.length);if(thread?.turns?.length)bottom();else $('thread').scrollTop=0;
 }
 function setConversationView(thread){
   selectedThreadId=thread.id;readOnly=thread.id!==currentThreadId;renderConversation(thread);
@@ -130,11 +133,13 @@ grip.addEventListener('pointerdown',event=>{
 });
 grip.addEventListener('dblclick',resetFloatSize);
 grip.addEventListener('keydown',event=>{if(pinned)return;const size=floatSize();if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;event.preventDefault();if(event.key==='Home')resetFloatSize();else if(event.key==='End')setFloatSize(window.innerWidth-24,window.innerHeight-108);else setFloatSize(size.width+(event.key==='ArrowRight'?24:event.key==='ArrowLeft'?-24:0),size.height+(event.key==='ArrowUp'?24:event.key==='ArrowDown'?-24:0));positionFloatingPanel();});
-function setBusy(value){busy=value;$('send').hidden=value;$('stop').hidden=!value;$('new').disabled=value;$('threads-toggle').disabled=value;$('send').disabled=!$('prompt').value.trim()||value;}
+function setBusy(value){busy=value;$('send').hidden=value;$('stop').hidden=!value;$('new').disabled=value;$('threads-toggle').disabled=value;$('send').disabled=!$('prompt').value.trim()||value;for(const button of document.querySelectorAll('[data-continue-turn]'))button.disabled=value||!button.canContinue();}
 function resizeComposer(){const prompt=$('prompt');prompt.style.height='auto';prompt.style.height=`${Math.min(160,prompt.scrollHeight)}px`;}
+let composerWidth=0;
+new ResizeObserver(([entry])=>{const width=entry.contentRect.width;if(width>0&&Math.abs(width-composerWidth)>.5){composerWidth=width;resizeComposer();}}).observe($('prompt'));
 $('prompt').oninput=()=>{$('send').disabled=busy||!$('prompt').value.trim();resizeComposer();};
 $('prompt').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();if(!busy)$('composer').requestSubmit();}});
-function message(role,text=''){const node=document.createElement('article');node.className=`message message--${role}`;node.dir='auto';node.setAttribute('aria-label',role==='user'?'You':'Lexcia');node.textContent=text;$('messages').append(node);$('welcome').hidden=true;return node;}
+function message(role,text='',createdAt){const node=document.createElement('article');node.className=`message message--${role}`;node.dir='auto';node.setAttribute('aria-label',role==='user'?'You':'Lexcia');node.textContent=text;if(createdAt)appendMessageTime(node,createdAt);$('messages').append(node);$('welcome').hidden=true;return node;}
 function bottom(){const thread=$('thread');thread.scrollTop=thread.scrollHeight;updateLatestButton();}
 function nearBottom(){const el=$('thread');return el.scrollHeight-el.scrollTop-el.clientHeight<90;}
 function updateLatestButton(){$('latest').hidden=!$('messages').children.length||$('thread').hidden||nearBottom();}
@@ -157,37 +162,60 @@ function addSources(node,readItems){
   }
   if(sources.children.length>1)node.append(sources);
 }
-$('composer').onsubmit=async event=>{
-  event.preventDefault();const question=$('prompt').value.trim();if(!question||busy||readOnly)return;
-  const thread=currentConversation();const turn={question,answer:'',items:[],ui:null};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();storeConversations();
-  message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');answer.setAttribute('aria-busy','true');showPendingMessage(answer);bottom();setBusy(true);$('status').textContent='Connecting…';controller=new AbortController();
-  let text='',readItems=[];
-  const update=()=>{const follow=nearBottom();answer.dir=isHebrewDominant(text)?'rtl':'ltr';answer.innerHTML=renderAnswer(text,readItems);if(follow)bottom();else updateLatestButton();};
+function finishTurnView(answer,thread,turn){
+  addSources(answer,turn.items||[]);
+  if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui);}
+  appendMessageTime(answer,turn.repliedAt);
+  addMessageActions(answer,turn,{onFeedback:storeConversations,announce:announceMessageAction});
+  if(turn.status==='stopped')appendStoppedNotice(answer,{
+    canContinue:()=>!readOnly&&thread.id===currentThreadId&&thread.turns.at(-1)===turn,
+    onContinue:()=>{if(!busy&&!readOnly&&thread.turns.at(-1)===turn)runTurn(thread,turn,answer,true);},
+    error:turn.error,
+  });
+  else if(turn.status==='error'){
+    const error=document.createElement('p');error.className='message--error';error.setAttribute('role','alert');error.textContent=turn.error||'Lexcia could not complete the answer.';answer.append(error);
+  }
+  for(const button of answer.querySelectorAll('[data-continue-turn]'))button.disabled=busy||!button.canContinue();
+}
+async function runTurn(thread,turn,answer,resume=false){
+  const requestQuestion=resume?continuationQuestion(turn):turn.question;
+  const base=resume?turn.answer||'':'';
+  turn.status='running';delete turn.error;storeConversations();
+  setBusy(true);$('status').textContent='';controller=new AbortController();answer.setAttribute('aria-busy','true');
+  answer.innerHTML=renderAnswer(base);const pending=document.createElement('div');answer.append(pending);showPendingMessage(pending,resume?'Continuing the answer…':'Reading Lexcia information…');
+  let text='',readItems=resume?[...(turn.items||[])]:[],finalReceived=false;
+  const fullText=()=>appendContinuation(base,text);
+  const update=()=>{const follow=nearBottom();answer.dir=isHebrewDominant(fullText())?'rtl':'ltr';answer.innerHTML=renderAnswer(fullText(),readItems);if(follow)bottom();else updateLatestButton();};
+  bottom();
   try{
-    await askLexcia(question,event=>{
-      if(event.event==='status'){$('status').textContent=event.data.message||'Searching…';if(!text)showPendingMessage(answer,event.data.message||'Searching…');}
+    await askLexcia(requestQuestion,event=>{
+      if(event.event==='status'&&!text)showPendingMessage(pending,event.data.message||'Reading Lexcia information…');
       if(event.event==='item'&&event.data.item){const item=event.data.item;items.set(item.item_id,item);if(!readItems.some(i=>i.item_id===item.item_id))readItems.push(item);}
-      if(event.event==='delta'){text+=event.data.text||'';update();}
+      if(event.event==='delta'){if(!turn.repliedAt)turn.repliedAt=Date.now();text+=event.data.text||'';update();}
       if(event.event==='final'){
-        const follow=nearBottom();
-        text=event.data.answer||text;readItems=event.data.items||readItems;for(const item of readItems)items.set(item.item_id,item);update();addSources(answer,readItems);
-        turn.answer=text;turn.items=readItems;turn.ui=event.data.ui||null;thread.updatedAt=Date.now();storeConversations();
-        if(event.data.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,event.data.ui);}
-        addMessageActions(answer,turn,{onFeedback:storeConversations,announce:announceMessageAction});
+        finalReceived=true;const follow=nearBottom();
+        text=event.data.answer||text;const finalItems=event.data.items||readItems;readItems=resume?[...new Map([...(turn.items||[]),...finalItems].map(item=>[item.item_id||item.url,item])).values()]:finalItems;for(const item of readItems)items.set(item.item_id,item);update();
+        turn.answer=fullText();turn.items=readItems;turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();storeConversations();finishTurnView(answer,thread,turn);
         if(follow)bottom();else updateLatestButton();
       }
     },controller.signal,currentThreadId);
-    $('status').textContent='';
   }catch(error){
-    const stopped=error.name==='AbortError';
-    const notice=stopped?'Stopped.':error.message;
-    turn.answer=text;turn.items=readItems;thread.updatedAt=Date.now();storeConversations();
-    if(!text){answer.textContent=notice;answer.classList.add('message--error');}else{const p=document.createElement('p');p.className='message--error';p.textContent=notice;answer.append(p);}
-    $('status').textContent='';
+    if(!finalReceived){
+      const stopped=error.name==='AbortError';
+      turn.answer=fullText();turn.items=readItems;turn.status=stopped||resume?'stopped':'error';turn.repliedAt??=Date.now();
+      if(!stopped)turn.error=error.message;
+      thread.updatedAt=Date.now();storeConversations();update();finishTurnView(answer,thread,turn);
+    }
   }finally{answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus();updateLatestButton();}
+}
+$('composer').onsubmit=event=>{
+  event.preventDefault();const question=$('prompt').value.trim();if(!question||busy||readOnly)return;
+  const thread=currentConversation(),previous=thread.turns.at(-1);
+  const turn={question,answer:'',items:[],ui:null,createdAt:Date.now(),status:'running'};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();storeConversations();
+  appendDaySeparator($('messages'),turn.createdAt,previous?.createdAt);message('user',question,turn.createdAt);$('prompt').value='';resizeComposer();const answer=message('assistant');runTurn(thread,turn,answer);
 };
 $('stop').onclick=()=>controller?.abort();
-async function startNewConversation(){if(busy)return;$('new').disabled=true;try{await resetLexcia(currentThreadId);const thread={id:crypto.randomUUID(),title:'New inquiry',updatedAt:Date.now(),turns:[]};conversations.unshift(thread);currentThreadId=thread.id;selectedThreadId=thread.id;storeConversations();readOnly=false;setConversationView(thread);$('prompt').value='';resizeComposer();$('send').disabled=true;$('status').textContent='';$('prompt').focus();}catch(error){$('status').textContent=error.message;}finally{$('new').disabled=false;}}
+async function startNewConversation(){if(busy)return;const thread={id:crypto.randomUUID(),title:'New inquiry',updatedAt:Date.now(),turns:[]};conversations.unshift(thread);currentThreadId=thread.id;selectedThreadId=thread.id;storeConversations();readOnly=false;setConversationView(thread);$('prompt').value='';resizeComposer();$('send').disabled=true;$('status').textContent='';$('prompt').focus();}
 $('new').onclick=startNewConversation;
 $('continue-new').onclick=startNewConversation;
 renderConversation(currentConversation());
