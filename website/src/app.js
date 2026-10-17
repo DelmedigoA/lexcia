@@ -238,7 +238,7 @@ function submitQuestion(question){
   const turn={question,answer:'',items:[],ui:null,createdAt:Date.now(),status:'running'};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();updateConversations();
   message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');
   if(isDemoSchedulingQuestion(question)){
-    turn.answer='Choose your preferred details below, then click **Review demo**.';turn.status='complete';turn.scheduling={step:'form',name:'',email:'',website:'',date:'',time:'',attendees:'1 person',notes:''};
+    turn.answer='We’re excited to explore how Lexcia could work on your website!\n\nChoose your preferred details below, then click **Review demo**.';turn.status='complete';turn.scheduling={step:'form',name:'',email:'',website:'',date:'',time:'',attendees:'1 person',notes:''};
     answer.innerHTML=renderAnswer(turn.answer);finishTurnView(answer,thread,turn);syncWelcome();$('send').disabled=true;requestAnimationFrame(()=>{answer.scrollIntoView({block:'start'});answer.querySelector('h3')?.focus({preventScroll:true});});return;
   }
   return runTurn(thread,turn,answer);
