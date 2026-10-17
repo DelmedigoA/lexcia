@@ -43,11 +43,11 @@ def create_app(graph, knowledge):
         if store is None or store["lock"].locked(): return JSONResponse({"error":"Session is busy; try again"},status_code=409)
         await store["lock"].acquire()
         async def events():
-            answer=""; records=[]; suggestions=[]; visible_stream=AnswerStream()
+            answer=""; records=[]; suggestions=[]; guardrail=None; visible_stream=AnswerStream()
             try:
                 yield sse("status", {"message":"Reading Lexcia information…"})
                 async for event in graph.astream_events({"question":question,"history":list(store["history"])}, version="v2"):
-                    if event["event"] == "on_chat_model_stream":
+                    if event["event"] == "on_chat_model_stream" and event.get('metadata',{}).get('langgraph_node')=='answer':
                         chunk=event["data"]["chunk"].content
                         text=chunk if isinstance(chunk,str) else "".join(p.get("text","") for p in chunk if isinstance(p,dict))
                         visible=visible_stream.feed(text)
@@ -58,10 +58,15 @@ def create_app(graph, knowledge):
                     if event["event"] == "on_chain_end" and event["name"] == "answer":
                         answer=event["data"]["output"]["answer"]
                         suggestions=event["data"]["output"].get("suggestions",[])
+                    if event['event']=='on_chain_end' and event['name']=='guard':
+                        output=event['data']['output']
+                        guardrail=output.get('guardrail')
+                        if guardrail: answer=output['answer']
                 if not answer: raise RuntimeError("No completed answer")
-                store["history"].append({"question":question,"answer":answer}); store["history"][:]=store["history"][-10:]
+                if not guardrail:
+                    store["history"].append({"question":question,"answer":answer}); store["history"][:]=store["history"][-10:]
                 cited=set(re.findall(r"\[\[SOURCE id=([a-z0-9-]+)\]\]",answer))
-                yield sse("final", {"answer":answer,"suggestions":suggestions,"items":[knowledge.source(r) for r in records if r.id in cited]})
+                yield sse("final", {"answer":answer,"suggestions":suggestions,"guardrail":guardrail,"items":[knowledge.source(r) for r in records if r.id in cited]})
                 yield sse("done", {})
             except asyncio.CancelledError: raise
             except Exception:

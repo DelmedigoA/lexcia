@@ -17,6 +17,7 @@ load_dotenv(ROOT / ".env")
 from lexcia.agent import build_agent
 from lexcia.app import create_app
 from lexcia.knowledge import Knowledge
+from lexcia.guard import RelevanceGuard
 
 config = yaml.safe_load((ROOT / "config/demo.yaml").read_text())
 if not os.getenv("OPENAI_API_KEY"):
@@ -33,7 +34,8 @@ model = ChatOpenAI(
     max_retries=1,
 )
 starlette_api = create_app(
-    build_agent(knowledge, model, (ROOT / config["prompt"]).read_text(), (ROOT / config["system_prompt"]).read_text()), knowledge
+    build_agent(knowledge, model, (ROOT / config["prompt"]).read_text(), (ROOT / config["system_prompt"]).read_text(),
+                guard=RelevanceGuard(model.model_copy(update={'streaming':False,'timeout':20,'max_retries':0}),config['relevance_threshold'])), knowledge
 )
 
 

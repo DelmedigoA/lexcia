@@ -7,6 +7,7 @@ import {appendStoppedNotice} from './message-ui.js';
 import {continuationQuestion,appendContinuation} from './conversation-state.js';
 import {mountWelcome,mountThinking} from './thread-welcome.jsx';
 import {mountDemoScheduling,clearSchedulingRoots} from './demo-scheduling.jsx';
+import {mountGuardrailNotice,clearGuardrailRoots} from './guardrail-notice.jsx';
 import {isSchedulingRequest} from './followup-suggestions.js';
 import {clampSidebarWidth,defaultSidebarRatio} from './sidebar-layout.js';
 const $=id=>document.getElementById(id);
@@ -80,7 +81,7 @@ function setPinned(value){
 function renderConversation(thread){
   syncWelcome();
   if(thread&&thread.id===renderedThreadId)return;
-  clearAnswerRoots();clearSchedulingRoots();$('messages').replaceChildren();items.clear();
+  clearAnswerRoots();clearSchedulingRoots();clearGuardrailRoots();$('messages').replaceChildren();items.clear();
   for(const turn of thread?.turns||[]){
     message('user',turn.question||'');const answer=message('assistant');
     answer.dir=isHebrewDominant(turn.answer||'')?'rtl':'ltr';answer.innerHTML=renderAnswer(turn.answer||'',turn.items||[]);
@@ -190,6 +191,11 @@ new ResizeObserver(([entry])=>{
 }).observe($('followup-suggestions'));
 new ResizeObserver(updateLatestButton).observe($('thread'));
 function finishTurnView(answer,thread,turn){
+  if(turn.guardrail){
+    answer.replaceChildren();
+    mountGuardrailNotice(answer,turn.guardrail,question=>{if(!busy&&thread.id===currentThreadId)submitQuestion(question);},{question:turn.question,hebrew:isHebrewDominant(turn.question)});
+    return;
+  }
   if(turn.scheduling){const surface=document.createElement('div');answer.append(surface);mountDemoScheduling(surface,turn);}
   if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui);}
   if(turn.status==='stopped')appendStoppedNotice(answer,{
@@ -219,7 +225,7 @@ async function runTurn(thread,turn,answer,resume=false){
       if(event.event==='final'){
         finalReceived=true;const follow=nearBottom();
         text=event.data.answer||text;const finalItems=event.data.items||readItems;readItems=resume?[...new Map([...(turn.items||[]),...finalItems].map(item=>[item.item_id||item.url,item])).values()]:finalItems;for(const item of readItems)items.set(item.item_id,item);update();
-        turn.answer=fullText();turn.items=readItems;turn.suggestions=event.data.suggestions||[];turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();updateConversations();finishTurnView(answer,thread,turn);
+        turn.answer=fullText();turn.items=readItems;turn.suggestions=event.data.suggestions||[];turn.guardrail=event.data.guardrail||null;turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();updateConversations();finishTurnView(answer,thread,turn);
         if(follow)bottom();else updateLatestButton();
       }
     },controller.signal,currentThreadId);

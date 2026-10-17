@@ -255,3 +255,16 @@ body.assistant-pinned.navigating-section main{transition:none}
 .followup-suggestion{max-width:100%;padding:7px 12px;border:1px solid var(--rule);border-radius:999px;background:transparent;color:var(--ink-2);font:500 12px/1.5 var(--sans);text-align:start;overflow-wrap:anywhere;transition:background .15s,border-color .15s,color .15s;animation:followup-enter .2s ease both}
 .followup-suggestion:hover{border-color:color-mix(in srgb,var(--ink) 30%,transparent);background:color-mix(in srgb,var(--ink) 5%,transparent);color:var(--ink)}
 @keyframes followup-enter{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+/* assistant-ui GuardrailNotice, adapted to Lexcia's paper and ochre palette. */
+.guardrail-notice{display:flex;flex-direction:column;gap:12px;padding:16px;border:1px solid var(--rule);border-radius:16px;background:var(--paper);font:12px/1.6 var(--sans)}
+.guardrail-heading{display:flex;align-items:center;gap:9px}
+.guardrail-heading b{flex:1;min-width:0;font-size:13px;font-weight:500}
+.guardrail-icon{display:flex;align-items:center;justify-content:center;width:28px;height:28px;flex-shrink:0;border-radius:8px;background:color-mix(in srgb,var(--ochre) 12%,transparent);color:var(--ochre)}
+.guardrail-policy{font:10px/1.4 monospace;color:var(--ink-3)}
+.message--assistant .guardrail-notice p{margin:0;color:var(--ink-2);font:12px/1.6 var(--sans)}
+.guardrail-alternatives{display:flex;flex-direction:column;gap:6px}
+.guardrail-alternatives>span{color:var(--ink-3);font:10px/1.5 monospace}
+.guardrail-alternatives button{padding:6px;text-align:start;border:0;border-radius:7px;background:transparent;color:var(--ink-2);font:13px/1.5 var(--sans);cursor:pointer}
+.guardrail-alternatives button:hover{background:color-mix(in srgb,var(--ink) 5%,transparent);color:var(--ink)}
+.guardrail-alternatives button:focus-visible{outline:2px solid var(--ochre);outline-offset:2px}

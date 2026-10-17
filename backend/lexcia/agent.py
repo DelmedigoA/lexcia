@@ -3,14 +3,22 @@ from typing import TypedDict
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langgraph.graph import START, END, StateGraph
 from .followups import RESPONSE_FORMAT, split_reply
+from .guard import guard_notice
 class State(TypedDict, total=False):
     question: str
     history: list
     records: list
     answer: str
     suggestions: list
+    guardrail: dict | None
 
-def build_agent(knowledge, model, instructions, system=""):
+def build_agent(knowledge, model, instructions, system="", guard=None):
+    async def check_relevance(state):
+        decision,unavailable=await guard.check(state['question'],state.get('history',[]))
+        if decision.continue_:
+            return {'guardrail':None}
+        notice=guard_notice(state['question'],unavailable)
+        return {'guardrail':notice,'answer':notice['explanation'],'suggestions':[],'records':[]}
     def retrieve(state):
         return {"records": knowledge.search(state["question"])}
     async def answer(state):
@@ -23,5 +31,11 @@ def build_agent(knowledge, model, instructions, system=""):
         return split_reply(content)
     graph = StateGraph(State)
     graph.add_node("retrieve", retrieve); graph.add_node("answer", answer)
-    graph.add_edge(START, "retrieve"); graph.add_edge("retrieve", "answer"); graph.add_edge("answer", END)
+    if guard is not None:
+        graph.add_node('guard',check_relevance)
+        graph.add_edge(START,'guard')
+        graph.add_conditional_edges('guard',lambda state:'stop' if state.get('guardrail') else 'continue',{'stop':END,'continue':'retrieve'})
+    else:
+        graph.add_edge(START,'retrieve')
+    graph.add_edge("retrieve", "answer"); graph.add_edge("answer", END)
     return graph.compile()

@@ -7,8 +7,8 @@ test('follow-ups preserve model-written prompts and actions, with no fixed fallb
   assert.deepEqual(followupSuggestions([reply]),suggestions);
   assert.deepEqual(followupSuggestions([{...reply,suggestions:undefined}]),[]);
 });
-test('empty, running, failed and scheduling turns do not show follow-ups',()=>{
-  for(const turns of [[],[{...reply,status:'running'}],[{...reply,status:'error'}],[{...reply,scheduling:{step:'form'}}]])assert.deepEqual(followupSuggestions(turns),[]);
+test('empty, running, failed, guarded and scheduling turns do not show follow-ups',()=>{
+  for(const turns of [[],[{...reply,status:'running'}],[{...reply,status:'error'}],[{...reply,guardrail:{kind:'off_topic'}}],[{...reply,scheduling:{step:'form'}}]])assert.deepEqual(followupSuggestions(turns),[]);
 });
 test('an open draft or refusal suppresses only the model demo action',()=>{
   const draft={status:'complete',scheduling:{step:'review'},question:'Schedule a demo'};
