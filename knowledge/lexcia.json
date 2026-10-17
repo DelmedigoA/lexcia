@@ -2,26 +2,26 @@
   {
     "id": "overview",
     "title": "What is Lexcia?",
-    "content": "Lexcia is a conversational layer for content-rich websites. It helps visitors find and use the knowledge already on a website, through an assistant tailored to the organization.\n\n[About Lexcia](#about)",
-    "provenance": "Lexcia landing page, website/index.html, section #home; reviewed October 18, 2026."
+    "content": "Lexcia is a new project building a conversational layer for content-rich websites. It helps visitors find and use the valuable knowledge an organization already has, through an assistant tailored to its website, brand and visitors. The exciting idea is to make that existing investment in knowledge easier to discover and use, without asking visitors to work through the website alone.\n\n[About Lexcia](#about)",
+    "provenance": "Product positioning: https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit; project stage and value clarified by Asaf, October 18, 2026."
   },
   {
     "id": "problem",
     "title": "Why Lexcia?",
-    "content": "Organizations invest years in valuable content, but visitors can still struggle to find it. Lexcia makes that existing knowledge easier to reach through conversation while keeping the page in view.\n\n[About Lexcia](#about)",
-    "provenance": "Lexcia landing page, website/index.html, section #about; reviewed October 18, 2026."
+    "content": "Organizations invest heavily in creating valuable knowledge and content, but much of that information remains buried inside their websites and difficult for users to access. Lexcia helps bridge that gap: visitors can ask in their own words and reach relevant information and pages while keeping the website in view.\n\n[About Lexcia](#about)",
+    "provenance": "Target Market, Problem Definition, Pricing, reread October 18, 2026: https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit; wording confirmed by Asaf, October 18, 2026."
   },
   {
     "id": "customization",
     "title": "What can Lexcia customize?",
-    "content": "Lexcia tailors the engine, content, interface, behavior, design and integration to your organization and website.\n\n[What we offer](#offer)",
-    "provenance": "Lexcia landing page, website/index.html, section #offer; reviewed October 18, 2026."
+    "content": "Lexcia tailors the engine, content, interface, behavior, design and integration to each organization and website. The team works carefully and closely with customers to understand their needs, try the assistant together, and iteratively refine the design, answers and knowledge setup until they are happy with the agreed experience. Early customers help shape a new project around real needs.\n\n[What we offer](#offer)",
+    "provenance": "Customization dimensions: https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit; close collaboration and iterative refinement confirmed by Asaf, October 18, 2026."
   },
   {
     "id": "how",
     "title": "How does it work?",
-    "content": "We connect your existing content, tailor the assistant, and embed it in your website. The offering includes hosting, monitoring, maintenance, analytics and ongoing improvements.\n\n[How it works](#how)",
-    "provenance": "Lexcia landing page, website/index.html, section #how; reviewed October 18, 2026."
+    "content": "Lexcia is designed to fit into the website a customer already has. In the proposed onboarding approach, Lexcia handles website mapping, content preparation, the searchable knowledge base, interface setup, testing and ongoing operation. The client typically only adds a lightweight JavaScript embed snippet to the existing website. The proposal aims to combine the interface and site-specific connection into one copy-paste snippet, making the customer’s part straightforward while the Lexcia team handles the work behind it. Hosting, monitoring, maintenance, analytics and ongoing improvements are part of the offering.\n\n[How it works](#how)",
+    "provenance": "Website Integration & Client Onboarding, five-step deployment proposal dated October 13, 2026, reread October 18, 2026: https://docs.google.com/document/d/1NhgfU4uTeF1W7WlT6mng80LXYGMigmqtfHcLEAIx-o8/edit; subscription scope: https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit"
   },
   {
     "id": "target-market",
@@ -32,8 +32,8 @@
   {
     "id": "demo",
     "title": "Can I try Lexcia?",
-    "content": "The assistant on this page is the Lexcia demo. It answers brief questions about Lexcia and points visitors to the relevant sections of this landing page.\n\n[Live demo](#demo)",
-    "provenance": "Lexcia landing page, website/index.html, section #demo; reviewed October 18, 2026."
+    "content": "The main current goal of Lexcia’s website is to invite prospective customers to a demo. The offered customer demo is a real working demonstration of how a chatbot could look and behave on the prospect’s own website, with an appropriate initial design and basic integration with their knowledge base. It gives the customer something concrete to try and discuss, so the team can refine the experience around their needs. The demo is free. This tailored customer demo is different from the assistant already on this landing page, which answers about Lexcia itself. No tailored customer demo is automatically created by entering a website address here. Schedule a demo currently opens a local form for preferred details and an event-summary draft; it does not check availability, book a meeting or send a request.\n\n[Live demo](#demo)",
+    "provenance": "Tailored working demo, initial design, basic knowledge-base integration and primary website goal confirmed by Asaf, October 18, 2026. Website-specific demo invitation: https://docs.google.com/document/d/164u3mRai44eNLeKfAXeaTJQPw_d4-eTjx3cbz0wEFPI/edit; free demo decision: https://docs.google.com/document/d/1lr4Te2bF2R7GV4X6eyO91n7L7ajenKjxJQhRAav9tpI/edit"
   },
   {
     "id": "pricing",
