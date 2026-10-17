@@ -25,14 +25,14 @@ test('answer markdown supports code and lists without accepting HTML or javascri
   assert.doesNotMatch(html,/<img|<script|href="javascript:/);
 });
 
-test('landing section links use favicon source chips and retain same-page anchors',()=>{
-  const html=renderAnswer('Brief answer.\n\n[Who it’s **for**](#for) and [What we offer](#offer).');
-  assert.match(html,/<a href="#for" data-slot="source">/);
-  assert.match(html,/<img data-slot="source-icon" src="\/brand\/lexcia-monogram.svg" alt="" width="12" height="12">/);
-  assert.match(html,/<span data-slot="source-title">Who it’s <strong>for<\/strong><\/span><\/a>/);
-  assert.equal((html.match(/data-slot="source"/g)||[]).length,2);
-  assert.doesNotMatch(html,/target="_blank"|duckduckgo/);
+test('section links use exact section names without favicon chips',()=>{
+  const html=renderAnswer('To learn more, click [Meet Lexcia](#about).\n\n[Creative **label**](#for) and [Explore](#offer).');
+  assert.match(html,/<a href="#about" class="section-link">About Lexcia<\/a>/);
+  assert.match(html,/<a href="#for" class="section-link">Who it’s for<\/a>/);
+  assert.match(html,/<a href="#offer" class="section-link">What we offer<\/a>/);
+  assert.doesNotMatch(html,/<img|data-slot|Meet Lexcia|Creative|target="_blank"/);
+  assert.match(renderAnswer('[Book a call](#schedule-demo)'),/>Schedule a demo<\/a>/);
   const ordinary=renderAnswer('[Other](#unknown) [External](https://example.com)');
-  assert.doesNotMatch(ordinary,/data-slot="source"|<img/);
-  assert.match(renderAnswer('[Schedule a demo](#schedule-demo)'),/href="#schedule-demo" data-slot="source"/);
+  assert.doesNotMatch(ordinary,/class="section-link"/);
+  assert.match(ordinary,/>External<\/a>/);
 });

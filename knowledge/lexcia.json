@@ -2,7 +2,7 @@
   {
     "id": "overview",
     "title": "What is Lexcia?",
-    "content": "Lexcia is a conversational layer for content-rich websites. It helps visitors find and use the knowledge already on a website, through an assistant tailored to the organization.\n\n[Meet Lexcia](#home)",
+    "content": "Lexcia is a conversational layer for content-rich websites. It helps visitors find and use the knowledge already on a website, through an assistant tailored to the organization.\n\n[About Lexcia](#about)",
     "provenance": "Lexcia landing page, website/index.html, section #home; reviewed October 18, 2026."
   },
   {
@@ -32,13 +32,13 @@
   {
     "id": "demo",
     "title": "Can I try Lexcia?",
-    "content": "The assistant on this page is the Lexcia demo. It answers brief questions about Lexcia and points visitors to the relevant sections of this landing page.\n\n[Try the demo](#demo)",
+    "content": "The assistant on this page is the Lexcia demo. It answers brief questions about Lexcia and points visitors to the relevant sections of this landing page.\n\n[Live demo](#demo)",
     "provenance": "Lexcia landing page, website/index.html, section #demo; reviewed October 18, 2026."
   },
   {
     "id": "pricing",
     "title": "How does pricing work?",
-    "content": "The planned model is a one-time setup fee plus a monthly subscription, with API usage billed separately. Lexcia is working with an initial group of organizations on discounted terms. The landing page does not list prices. Schedule a demo opens a local scheduling preview for preferred details and an event-summary draft; it does not book a meeting or send a request.\n\n[Early organizations and demo](#contact)",
+    "content": "The planned model is a one-time setup fee plus a monthly subscription, with API usage billed separately. Lexcia is working with an initial group of organizations on discounted terms. The landing page does not list prices. Schedule a demo opens a local scheduling preview for preferred details and an event-summary draft; it does not book a meeting or send a request.\n\n[Schedule a demo](#contact)",
     "provenance": "Lexcia landing page, website/index.html, section #contact; reviewed October 18, 2026. Setup, subscription and separate API fees: Target Market, Problem Definition, Pricing, reviewed October 7, 2026: https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit"
   }
 ]

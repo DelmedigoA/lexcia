@@ -64,7 +64,7 @@ function setPinned(value){
   const next=value&&!matchMedia('(max-width: 700px)').matches;
   if(next===pinned)return;
   const wasOpen=panel.open,focused=panel.contains(document.activeElement)?document.activeElement:null;
-  pinned=next;
+  pinned=next;launcher.hidden=pinned;
   panel.classList.toggle('pinned',pinned);
   document.body.classList.toggle('assistant-pinned',pinned);
   divider.hidden=!pinned;
@@ -115,10 +115,6 @@ function closePanel(afterClose){
   closing=true;panel.classList.remove('is-entering');panel.classList.add('is-exiting');launcher.setAttribute('aria-expanded','false');
   closingTimer=setTimeout(()=>{panel.close();setPinned(false);panel.classList.remove('is-exiting');closing=false;launcher.focus({preventScroll:true});if(typeof afterClose==='function')afterClose();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);
 }
-// Match Sources' initial fallback if the local favicon cannot load.
-$('messages').addEventListener('error',event=>{
-  if(event.target.matches?.('img[data-slot="source-icon"]'))event.target.hidden=true;
-},true);
 // Reveal the landing-page box linked from an answer, preserving the conversation.
 $('messages').addEventListener('click',event=>{
   const link=event.target.closest('a[href^="#"]');
