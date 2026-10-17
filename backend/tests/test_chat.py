@@ -1,4 +1,4 @@
-import asyncio
+import asyncio, json
 from pathlib import Path
 from uuid import uuid4
 import httpx
@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parents[2]
 def test_sourced_stream_validation_and_session_isolation():
     async def scenario():
         knowledge=Knowledge(ROOT/'knowledge/lexcia.json')
-        model=FakeListChatModel(responses=['Lexcia helps visitors find content. [[SOURCE id=overview]]'])
+        model=FakeListChatModel(responses=['Lexcia helps visitors find content. [[SOURCE id=overview]]\n[[FOLLOWUPS]]'+json.dumps({'suggestions':[{'prompt':'How would this fit our museum?','action':'ask'},{'prompt':'Show a demo for my site','action':'schedule_demo'}]})])
         graph=build_agent(knowledge,model,(ROOT/'knowledge/instructions.md').read_text(),(ROOT/'knowledge/system.md').read_text())
         app=create_app(graph,knowledge)
         histories=[]
@@ -27,6 +27,11 @@ def test_sourced_stream_validation_and_session_isolation():
                 response=await client.post('/api/chat/stream',json={'question':'What is Lexcia?','session_id':session})
                 assert response.status_code==200
                 assert 'event: delta' in response.text and 'event: final' in response.text
+                assert '[[FOLLOWUPS]]' not in response.text
+                final=json.loads(response.text.split('event: final\ndata: ',1)[1].split('\n\n',1)[0])
+                assert final['suggestions'][0]['prompt']=='How would this fit our museum?'
+                assert final['suggestions'][1]['action']=='schedule_demo'
+                assert final['answer'].endswith('[[SOURCE id=overview]]')
                 assert '"item_id": "overview"' in response.text
                 assert '"url": "/api/knowledge/overview"' in response.text
             assert list(map(len,histories))==[0,1,0]
@@ -58,13 +63,16 @@ def test_scope_and_progression_instructions_reach_model_with_reviewed_knowledge(
         async def ainvoke(self,messages):
             from langchain_core.messages import AIMessage
             captured.extend(messages)
-            return AIMessage(content='Answer')
+            return AIMessage(content='Answer[[FOLLOWUPS]]'+json.dumps({'suggestions':[{'prompt':'What matters for our archive?','action':'ask'}]}))
     async def scenario():
         knowledge=Knowledge(ROOT/'knowledge/lexcia.json')
         system=(ROOT/'knowledge/system.md').read_text()
         instructions=(ROOT/'knowledge/instructions.md').read_text()
         graph=build_agent(knowledge,RecordingModel(),instructions,system)
-        await graph.ainvoke({'question':'What is Lexcia?','history':[]})
+        result=await graph.ainvoke({'question':'What is Lexcia?','history':[]})
+        assert result['answer']=='Answer'
+        assert result['suggestions']==[{'prompt':'What matters for our archive?','action':'ask'}]
+        assert len(captured)==2  # One model invocation, with system + current question.
         assert captured[0].type=='system'
         assert system in captured[0].content
         assert instructions in captured[0].content

@@ -1,20 +1,28 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {followupSuggestions} from '../src/followup-suggestions.js';
-const turn=(id,question='What is Lexcia?')=>({question,answer:'Answer',status:'complete',items:[{item_id:id}]});
-test('follow-ups advance past explored topics and offer scheduling',()=>{
-  assert.deepEqual(followupSuggestions([turn('overview')]).map(s=>s.prompt),['Which websites is it for?','Schedule a demo']);
-  assert.deepEqual(followupSuggestions([turn('overview'),turn('target-market','Which websites is it for?')]).map(s=>s.prompt),['What can Lexcia customize?','Schedule a demo']);
+import {followupSuggestions,isSchedulingRequest} from '../src/followup-suggestions.js';
+const suggestions=[{prompt:'How could Lexcia help our museum visitors?',action:'ask'},{prompt:'Explore a demo for my website',action:'schedule_demo'}];
+const reply={question:'We run a museum website',status:'complete',suggestions};
+test('follow-ups preserve model-written prompts and actions, with no fixed fallback',()=>{
+  assert.deepEqual(followupSuggestions([reply]),suggestions);
+  assert.deepEqual(followupSuggestions([{...reply,suggestions:undefined}]),[]);
 });
 test('empty, running, failed and scheduling turns do not show follow-ups',()=>{
-  for(const turns of [[],[{status:'running'}],[{status:'error'}],[{status:'complete',scheduling:{step:'form'}}]])assert.deepEqual(followupSuggestions(turns),[]);
+  for(const turns of [[],[{...reply,status:'running'}],[{...reply,status:'error'}],[{...reply,scheduling:{step:'form'}}]])assert.deepEqual(followupSuggestions(turns),[]);
 });
-test('an open demo draft or a declined demo leaves only a learning option',()=>{
+test('an open draft or refusal suppresses only the model demo action',()=>{
   const draft={status:'complete',scheduling:{step:'review'},question:'Schedule a demo'};
-  const replies=[draft,turn('overview')];
-  assert.equal(followupSuggestions(replies).length,1);
-  assert.ok(!followupSuggestions([turn('overview'),turn('target-market',"I don’t want to schedule a demo")]).some(s=>s.prompt==='Schedule a demo'));
+  assert.deepEqual(followupSuggestions([draft,reply]),[suggestions[0]]);
+  assert.deepEqual(followupSuggestions([{question:'I don’t want a demo'},reply]),[suggestions[0]]);
 });
-test('Hebrew questions receive Hebrew follow-up prompts',()=>{
-  assert.deepEqual(followupSuggestions([turn('overview','מה זה לקסיה ואיך זה עוזר לאתר שלי?')]).map(s=>s.prompt),['לאילו אתרים Lexcia מתאימה?','לתאם דמו']);
+test('model language is preserved, and malformed or duplicate suggestions are rejected',()=>{
+  const he={prompt:'איך זה יעזור למבקרי המוזיאון שלנו?',action:'ask'};
+  assert.deepEqual(followupSuggestions([{...reply,suggestions:[he,he,{prompt:'',action:'ask'},{prompt:'Bad',action:'execute'},null]}]),[he]);
+});
+
+test('model action routes differently worded demo buttons and preserves learning questions',()=>{
+  assert.equal(isSchedulingRequest([reply],'Explore a demo for my website'),true);
+  const learning={prompt:'What should I prepare before I book a demo?',action:'ask'};
+  assert.equal(isSchedulingRequest([{...reply,suggestions:[learning]}],learning.prompt),false);
+  assert.equal(isSchedulingRequest([],'Schedule a demo'),true);
 });

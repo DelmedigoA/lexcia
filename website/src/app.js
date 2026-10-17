@@ -7,7 +7,7 @@ import {appendStoppedNotice} from './message-ui.js';
 import {continuationQuestion,appendContinuation} from './conversation-state.js';
 import {mountWelcome,mountThinking} from './thread-welcome.jsx';
 import {mountDemoScheduling,clearSchedulingRoots} from './demo-scheduling.jsx';
-import {isDemoSchedulingQuestion} from './demo-scheduling.js';
+import {isSchedulingRequest} from './followup-suggestions.js';
 import {clampSidebarWidth,defaultSidebarRatio} from './sidebar-layout.js';
 const $=id=>document.getElementById(id);
 const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('assistant-divider');
@@ -219,7 +219,7 @@ async function runTurn(thread,turn,answer,resume=false){
       if(event.event==='final'){
         finalReceived=true;const follow=nearBottom();
         text=event.data.answer||text;const finalItems=event.data.items||readItems;readItems=resume?[...new Map([...(turn.items||[]),...finalItems].map(item=>[item.item_id||item.url,item])).values()]:finalItems;for(const item of readItems)items.set(item.item_id,item);update();
-        turn.answer=fullText();turn.items=readItems;turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();updateConversations();finishTurnView(answer,thread,turn);
+        turn.answer=fullText();turn.items=readItems;turn.suggestions=event.data.suggestions||[];turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();updateConversations();finishTurnView(answer,thread,turn);
         if(follow)bottom();else updateLatestButton();
       }
     },controller.signal,currentThreadId);
@@ -235,9 +235,10 @@ async function runTurn(thread,turn,answer,resume=false){
 function submitQuestion(question){
   question=question.trim();if(!question||busy)return;
   const thread=currentConversation();
+  const scheduleDemo=isSchedulingRequest(thread.turns,question);
   const turn={question,answer:'',items:[],ui:null,createdAt:Date.now(),status:'running'};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();updateConversations();
   message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');
-  if(isDemoSchedulingQuestion(question)){
+  if(scheduleDemo){
     if(!matchMedia('(max-width: 700px)').matches){sidebarRatio=Math.max(sidebarRatio,defaultSidebarRatio);setPinned(true);setPinnedWidth(pinnedWidth());}
     turn.answer='We’re excited to explore how Lexcia could work on your website!\n\nChoose your preferred details below, then click **Review demo**.';turn.status='complete';turn.scheduling={step:'form',name:'',email:'',website:'',date:'',time:'',attendees:'1 person',notes:''};
     answer.innerHTML=renderAnswer(turn.answer);finishTurnView(answer,thread,turn);syncWelcome();$('send').disabled=true;requestAnimationFrame(()=>{answer.scrollIntoView({block:'start'});answer.querySelector('h3')?.focus({preventScroll:true});});return;

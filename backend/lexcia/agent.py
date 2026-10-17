@@ -2,22 +2,25 @@ import json
 from typing import TypedDict
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langgraph.graph import START, END, StateGraph
+from .followups import RESPONSE_FORMAT, split_reply
 class State(TypedDict, total=False):
     question: str
     history: list
     records: list
     answer: str
+    suggestions: list
 
 def build_agent(knowledge, model, instructions, system=""):
     def retrieve(state):
         return {"records": knowledge.search(state["question"])}
     async def answer(state):
         context = json.dumps([r.model_dump() for r in state["records"]], ensure_ascii=False)
-        messages = [SystemMessage(content=system + "\n\nConversation instructions:\n" + instructions + "\n\nReviewed knowledge records:\n" + context)]
+        messages = [SystemMessage(content=system + "\n\nConversation instructions:\n" + instructions + "\n\nResponse format:\n" + RESPONSE_FORMAT + "\n\nReviewed knowledge records:\n" + context)]
         for turn in state.get("history", [])[-10:]:
             messages.extend([HumanMessage(content=turn["question"]), AIMessage(content=turn["answer"])])
         result = await model.ainvoke([*messages, HumanMessage(content=state["question"])])
-        return {"answer": result.content if isinstance(result.content,str) else "".join(part.get("text", "") for part in result.content if isinstance(part,dict))}
+        content=result.content if isinstance(result.content,str) else "".join(part.get("text", "") for part in result.content if isinstance(part,dict))
+        return split_reply(content)
     graph = StateGraph(State)
     graph.add_node("retrieve", retrieve); graph.add_node("answer", answer)
     graph.add_edge(START, "retrieve"); graph.add_edge("retrieve", "answer"); graph.add_edge("answer", END)
