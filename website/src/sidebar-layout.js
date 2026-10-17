@@ -3,4 +3,4 @@ export function clampSidebarWidth(width,viewportWidth){
   const maximum=Math.max(minimum,viewportWidth-400);
   return Math.max(minimum,Math.min(maximum,width));
 }
-export const defaultSidebarRatio=.25;
+export const defaultSidebarRatio=.30;
