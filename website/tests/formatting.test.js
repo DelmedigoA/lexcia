@@ -24,3 +24,14 @@ test('answer markdown supports code and lists without accepting HTML or javascri
   assert.match(html,/<code class="language-js">/);
   assert.doesNotMatch(html,/<img|<script|href="javascript:/);
 });
+
+test('landing section links use favicon source chips and retain same-page anchors',()=>{
+  const html=renderAnswer('Brief answer.\n\n[Who it’s **for**](#for) and [What we offer](#offer).');
+  assert.match(html,/<a href="#for" data-slot="source">/);
+  assert.match(html,/<img data-slot="source-icon" src="\/brand\/lexcia-monogram.svg" alt="" width="12" height="12">/);
+  assert.match(html,/<span data-slot="source-title">Who it’s <strong>for<\/strong><\/span><\/a>/);
+  assert.equal((html.match(/data-slot="source"/g)||[]).length,2);
+  assert.doesNotMatch(html,/target="_blank"|duckduckgo/);
+  const ordinary=renderAnswer('[Other](#unknown) [External](https://example.com)');
+  assert.doesNotMatch(ordinary,/data-slot="source"|<img/);
+});

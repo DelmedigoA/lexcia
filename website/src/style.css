@@ -193,3 +193,11 @@ body.assistant-pinned .entry{padding-block:clamp(48px,8cqw,110px)}
 body.assistant-pinned .sec h2{font-size:clamp(32px,4.6cqw,64px)}
 @container site (max-width:960px){.site-nav{display:none}.cols{grid-template-columns:repeat(2,minmax(0,1fr))}.terms{grid-template-columns:1fr}}
 @container site (max-width:700px){.defs,.lede,.ask{grid-template-columns:1fr}.cols{grid-template-columns:1fr;border-left:0}.cols li{gap:18px;padding:0 0 28px;border-top:1px solid var(--rule);border-right:0}.cols li::before{height:70px;margin:0}.cols h3{margin-top:-30px;padding-left:2px}.terms div{grid-template-columns:1fr;gap:6px}.kinds{font-size:clamp(28px,5cqw,60px)}.kinds span{white-space:normal}.site-footer .wrap{flex-direction:column}}
+
+/* assistant-ui Sources outline chip, using the local Lexcia favicon. */
+.message--assistant a[data-slot="source"]{display:inline-flex;max-width:100%;align-items:center;justify-content:center;gap:4px;padding:4px 8px;border:1px solid var(--rule);border-radius:6px;background:transparent;color:var(--ink-3);font:500 12px/16px var(--sans);text-decoration:none;vertical-align:middle;transition:background .15s,color .15s}
+.message--assistant a[data-slot="source"]:hover{background:color-mix(in srgb,var(--ink) 5%,transparent);color:var(--ink)}
+.message--assistant [data-slot="source-icon"]{width:12px;height:12px;flex-shrink:0;border-radius:2px}
+.message--assistant [data-slot="source-icon-fallback"]{display:none;width:12px;height:12px;flex-shrink:0;align-items:center;justify-content:center;border-radius:2px;background:color-mix(in srgb,var(--ink) 7%,transparent);font-size:10px}
+.message--assistant [data-slot="source-icon"][hidden]+[data-slot="source-icon-fallback"]{display:inline-flex}
+.message--assistant [data-slot="source-title"]{max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
