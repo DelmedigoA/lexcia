@@ -25,13 +25,14 @@ test('answer markdown supports code and lists without accepting HTML or javascri
   assert.doesNotMatch(html,/<img|<script|href="javascript:/);
 });
 
-test('section links use exact section names without favicon chips',()=>{
-  const html=renderAnswer('To learn more, click [Meet Lexcia](#about).\n\n[Creative **label**](#for) and [Explore](#offer).');
-  assert.match(html,/<a href="#about" class="section-link">About Lexcia<\/a>/);
-  assert.match(html,/<a href="#for" class="section-link">Who it’s for<\/a>/);
-  assert.match(html,/<a href="#offer" class="section-link">What we offer<\/a>/);
-  assert.doesNotMatch(html,/<img|data-slot|Meet Lexcia|Creative|target="_blank"/);
-  assert.match(renderAnswer('[Book a call](#schedule-demo)'),/>Schedule a demo<\/a>/);
+test('section links preserve natural inline wording and styling without favicon chips',()=>{
+  const html=renderAnswer('You can read more [about us](#about).\n\nSee [who it’s for](#for) and our [customization options](#offer).');
+  assert.match(html,/<a href="#about" class="section-link">about us<\/a>/);
+  assert.match(html,/<a href="#for" class="section-link">who it’s for<\/a>/);
+  assert.match(html,/<a href="#offer" class="section-link">customization options<\/a>/);
+  assert.doesNotMatch(html,/<img|data-slot|target="_blank"/);
+  assert.match(renderAnswer('[Book a call](#schedule-demo)'),/>Book a call<\/a>/);
+  assert.match(renderAnswer('[עלינו](#about)'),/class="section-link">עלינו<\/a>/);
   const ordinary=renderAnswer('[Other](#unknown) [External](https://example.com)');
   assert.doesNotMatch(ordinary,/class="section-link"/);
   assert.match(ordinary,/>External<\/a>/);
