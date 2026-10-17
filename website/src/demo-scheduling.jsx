@@ -23,7 +23,6 @@ function DemoScheduling({turn}){
   if(draft.step==='cancelled')return <section className="demo-scheduler"><p role="status">Demo draft discarded.</p><button ref={restart} type="button" onClick={()=>{update({step:'form'});requestAnimationFrame(()=>heading.current?.focus());}}>Start again</button></section>;
   return <section className="demo-scheduler" aria-labelledby={`${id}-title`}>
     <div className="demo-scheduler-heading"><h3 id={`${id}-title`} ref={heading} tabIndex={-1}>{reviewing?'Your demo draft':'Schedule a demo'}</h3><span className="demo-preview-badge">Preview</span></div>
-    <p className="demo-scheduler-note">Choose a preferred time. This preview stays in this page only; no meeting is booked or request sent.</p>
     {reviewing?<>
       <div className="demo-event-date"><strong>{start.getDate()}</strong><div><b>{new Intl.DateTimeFormat('en',{month:'long'}).format(start)}</b><span>{new Intl.DateTimeFormat('en',{weekday:'long',year:'numeric'}).format(start)}</span></div></div>
       <div className="demo-event-summary"><span className="demo-event-accent" aria-hidden="true"/><div><b>Lexcia demo</b><span>{draft.time} · {timezone}</span></div><span className="demo-event-tag">Preferred time</span></div>
