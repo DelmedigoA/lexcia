@@ -8,14 +8,14 @@ import {ThreadFollowupSuggestions} from './followup-suggestions.jsx';
 import {followupSuggestions} from './followup-suggestions.js';
 import {AssistantRuntimeProvider, AuiIf, ThreadPrimitive, useExternalStoreRuntime} from '@assistant-ui/react';
 
-const GREETING_WORDS=['Welcome','to','Lexcia!'];
+const GREETING_WORDS=['Your','website','knows','a','lot.'];
 // Opt into normalization of message-like records (including runtime metadata).
 const convertMessage=message=>message;
 const SUGGESTIONS=[
-  ['What is Lexcia?','What is Lexcia?'],
-  ['Which websites is it for?','Which websites is it for?'],
-  ['What can Lexcia customize?','What can Lexcia customize?'],
-  ['How does pricing work?','How does pricing work?'],
+  ['How could Lexcia help my website?','How could Lexcia help my website?'],
+  ['What can we customize?','What can we customize?'],
+  ['How easy is integration?','How easy is integration?'],
+  ['Schedule a demo','Schedule a demo'],
 ];
 
 function AssistantWelcome(){
@@ -24,7 +24,7 @@ function AssistantWelcome(){
       <h3>{GREETING_WORDS.map((word,index)=><Fragment key={word}>
         <span className="welcome-word" style={{animationDelay:`${index*90}ms`}}>{word}</span>{' '}
       </Fragment>)}<span className="welcome-caret" aria-hidden="true" /></h3>
-      <p className="welcome-rise" style={{animationDelay:'500ms'}}>Ask Lexcia about the product, pricing, or this website.</p>
+      <p className="welcome-rise" style={{animationDelay:'500ms'}}>Let’s help visitors find it. Explore what Lexcia could do with your content.</p>
     </div>
     <nav className="welcome-suggestions" aria-label="Suggested questions">
       {SUGGESTIONS.map(([prompt,label],index)=><ThreadPrimitive.Suggestion
