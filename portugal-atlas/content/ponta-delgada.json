@@ -1,0 +1,408 @@
+{
+  "title": "Ponta Delgada",
+  "slug": "ponta-delgada",
+  "displayTitle": "Ponta Delgada",
+  "region": "azores",
+  "kind": "destination",
+  "parent": "azores",
+  "intro": "Ponta Delgada is the largest city in the Azores archipelago. It is on the island of São Miguel, and was home to 67,000 people in 2021. It is an important administrative, industrial and agricultural centre, and the home of the University of the Azores.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><span></span>\n<b>Ponta Delgada</b> is the largest city in the <a href=\"/guides/azores/\" title=\"Azores\">Azores</a> archipelago. It is on the island of <a href=\"/guides/sao-miguel/\" title=\"São Miguel\">São Miguel</a>, and was home to 67,000 people in 2021. It is an important administrative, industrial and agricultural centre, and the home of the University of the Azores.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Ponta Delgada (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">POHN-tuh dehl-GAH-duh</a>, /ˈpõ.tɐ dɛɫ.ˈga.dɐ/), the city on São Miguel island, is not to be confused with Ponta Delgada, the rural civil parish on the north coast of Flores island.\n</p>"
+    },
+    {
+      "id": "Climate",
+      "title": "Climate",
+      "level": 3,
+      "html": "<p>Ponta Delgada has a mild maritime climate: warm summers, with moderate precipitation, and mild, wet winters. Much like the rest of the Azores, the city is shaped by the Gulf Stream, and consequently has a narrow temperature variation. Mean temperatures vary between 14.5 °C (58.1 °F) in the winter to around 22 °C (72 °F) in the summer and daytime highs vary between 17 °C (63 °F) in the winter to 25 °C (77 °F) in the summer. Temperatures above 30 °C (86 °F), or below 4 °C (39 °F) have never been registered.\n</p><p>The Gulf Stream also contributes to unstable weather that varies greatly during autumn and spring, making weather forecasting on a daily basis difficult. Winters are generally milder and summers are generally humid when compared to those of continental Portugal.\n</p>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Ponta_Delgada_Airport\"><a href=\"https://www.aeroportopontadelgada.pt/\">Ponta Delgada Airport</a></span> (<span><b>PDL </b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>, João Paulo II Airport</span>). <bdi>The main entry point to the Azores. There is unlimited free Wi-Fi throughout the terminal areas.</bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul><dl><dd>Major carriers serving Ponta Delgada Airport include:</dd></dl><ul><li><bdi> <span id=\"Azores_Airlines\"><a href=\"https://www.azoresairlines.pt/\">Azores Airlines</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296209720\">+351 296 209 720</a></span></span>, <abbr>toll-free: </abbr> <span><span><a href=\"tel:+1-800-762-9995\">+1-800-762-9995</a></span> (U.S.)</span>. <bdi>Connects mainland Europe and North America with the Azores. Cities served include <a href=\"https://en.wikivoyage.org/wiki/Boston\" title=\"Read on Wikivoyage (external source)\">Boston</a>, <a href=\"https://en.wikivoyage.org/wiki/Frankfurt\" title=\"Read on Wikivoyage (external source)\">Frankfurt</a>, <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>, <a href=\"https://en.wikivoyage.org/wiki/London\" title=\"Read on Wikivoyage (external source)\">London</a>, <a href=\"https://en.wikivoyage.org/wiki/Toronto\" title=\"Read on Wikivoyage (external source)\">Toronto</a>, <a href=\"https://en.wikivoyage.org/wiki/Paris\" title=\"Read on Wikivoyage (external source)\">Paris</a>, and <a href=\"/guides/porto/\" title=\"Porto\">Porto</a>.</bdi><span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li>\n<li><b><a href=\"https://www.azoresairlines.pt/\">SATA Air Açores</a></b> flies within the Azores archipelago and from Madeira.</li>\n<li><b><a href=\"http://www.flytap.com/\">TAP Air Portugal</a></b> Portugal's flag carrier, also has direct flights from <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a> to the islands of Terceira, Faial and Pico. The airline also flies between Porto and Terceira islands.</li>\n<li><b><a href=\"https://www.ryanair.com/\">Ryanair</a></b> flies from <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>, <a href=\"https://en.wikivoyage.org/wiki/Frankfurt\" title=\"Read on Wikivoyage (external source)\">Frankfurt</a>-Hahn (seasonal), <a href=\"https://en.wikivoyage.org/wiki/London\" title=\"Read on Wikivoyage (external source)\">London</a>-Stansted, and <a href=\"/guides/porto/\" title=\"Porto\">Porto</a>.</li></ul>"
+    },
+    {
+      "id": "From_the_airport_to_Ponta_Delgada",
+      "title": "From the airport to Ponta Delgada",
+      "level": 4,
+      "html": "<ul><li>There are taxi services at the airport. Fixed prices for rides depending on where on the island you want to go, there is a sign with the list at the taxi stop. For example: Ponta Delgada hotels €10, Sao Roque €13, luggage +€2 (Jun 2025).</li>\n<li>It's possible to walk into town from the airport 4 km (1 hour) but it's not fun if you have much luggage.</li>\n<li>Or you could walk 1.3 km (15 min) to the old terminal's <span><span></span> <span id=\"bus_stop_Antigo_Aerogare\">bus stop Antigo Aerogare</span></span> and take a <a href=\"http://www.visitpontadelgada.pt/getting-here/land/geo_artigo/mini-bus-67\">city bus</a> for €0.50 (Jan 2024) from there to Ponta Delgada. The serving city bus line A operates M-F 07:30-19:30. Alternatively from that bus stop, regional buses to the city for about €0.90 (Jan 2024) operate as well.</li>\n<li><bdi> <span id=\"ANC_Aerobus\">ANC Aerobus</span>. <bdi>Since November 2023 the shuttle to the city for €8 does not operate anymore.</bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "By_boat",
+      "title": "By boat",
+      "level": 3,
+      "html": "<p>Several cruise lines make Ponta Delgada a waypoint when journeying across the Atlantic. Some cruise ships spend a day at the port, often as they reposition themselves between cruising Europe and the Western Hemisphere.\n</p><ul><li>The <span><span></span> <span id=\"marina\">marina</span></span> has a cruise ships’ quay, a pavilion, and a hallway of shops. The marina also has pools, including a big natural pool.</li></ul>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<p><a href=\"http://www.visitpontadelgada.pt/getting-here/land/geo_artigo/mini-bus-67\"><b>PDL Minibuses</b></a> run the main avenue and are conveniently accessible from major sites in Ponta Delgada. In-town bus services are handled by smaller mini-buses with the larger touring buses handling community-to-community travel on the island. Both services are accessible along Avenida D. Infante Henriques and can confuse the unfamiliar traveler. Schedules are available at bus stops and the tourist office. One ride in the minibus going around Ponta Delgada is €0.50 (Jan 2024). The app of PDL Minibus shows the upcoming departures of a bus stop.\n</p>"
+    },
+    {
+      "id": "On_foot",
+      "title": "On foot",
+      "level": 3,
+      "html": "<p>Visitors can best experience the city on foot, as travel distances are relatively short. For day trips to other parts of the island, consider buses, taxis, or a rental car.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><b>City tours</b> are based along the Avenida where visitors can find several services to sightsee, including horse-drawn carriage, panoramic bus tours and the Lagarta Tourist Train that travels along the streets.</li>\n<li><bdi><span></span> <span id=\"Carlos_Machado_Museum\"><a href=\"https://museucarlosmachado.azores.gov.pt/en/\">Carlos Machado Museum</a></span>, <span>Rua do Dr.Guilherme Poças 65</span> (<span>in the Convento de Santo Andre</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351296202930\">+351 296 20 29 30</a></span></span>, <span><a href=\"mailto:museu.cmachado.info@azores.gov.pt\">museu.cmachado.info@azores.gov.pt</a></span>. <bdi>It portrays the scientific mentality of the 19th century. Most of the information is by naturalists of the second half of the 19th century after the publication of Darwin’s <i>Theory of Evolution</i> and the Oceanographic expeditions.</bdi><span> (<span><span>updated Sep 2017</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Town_Hall\">Town Hall</span> (<span>Paços do Concelho de Ponta Delgada</span>). <bdi>Built in the 17th century, rebuilt in the 20th century.</bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Forte_São_Bras\">Forte São Bras</span>, <span>R. Eng. Abel Ferin Coutinho 10</span>. <span>Mon-Fri 10:00-18:00</span>. <bdi>A 16th-century fort that was in use until World War II. You can walk on the ramparts, explore the tunnels, and view a variety of old military equipment in the military museum.</bdi> <span>Adult €3, senior €1</span>.<span> (<span><span>updated Feb 2024</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Parish_Church_of_São_Sebastiao\">Parish Church of São Sebastiao</span>. <bdi></bdi><span> (<span><span>updated Sep 2017</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Church_of_São_Jose\">Church of São Jose</span>. <bdi>Plain white and brown on the outside, but colorful on the inside.</bdi><span> (<span><span>updated Sep 2017</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li>There are <b>boat tours</b> from the marina for see the island's coastline, and for whale-watching, available from offices at the marina.</li>\n<li><bdi><span></span> <span id=\"Ponta_Delgada_Marina\">Ponta Delgada Marina</span>. <bdi>Visitors can go speedboat racing and big game fishing here.</bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li>\n<li>Organised whale- and dolphin-watching from small boats operating out of Ponta Delgada is increasingly popular. Also whale watching at Blue Talassa.</li>\n<li><b>Football:</b> <bdi><span></span> <span id=\"CD_Santa_Clara\"><a href=\"https://cdsantaclara.com/\">CD Santa Clara</a></span>. <bdi>They were promoted in 2024 and now play soccer in Primeira Liga, Portugal's top tier. Their home ground is Estádio de São Miguel (capacity 13,200), 3 km east of town.</bdi><span> (<span><span>updated May 2024</span></span>)</span></bdi></li></ul><ul><li><bdi> <span id=\"Festa_do_Senhor_Santo_Cristo_dos_Milagres\">Festa do Senhor Santo Cristo dos Milagres</span>. <span>yearly on the fifth Sun after Easter</span>. <bdi>One of the many religious festivities held in the Azores. The town of Ponta Delgada is transformed into a town of colour and lively celebration, decorated with colourful flowers and decorative bedspreads hung from balconies. The celebration starts with the blessing of the bread and meat, and the distribution of food among the needy. The festival then continues with a procession, music and fireworks.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"LS_Catamarans\"><a href=\"http://www.catazores.com/sobre.php?lang=en\">LS Catamarans</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351919103031\">+351 919 103 031</a></span></span>, <span><a href=\"mailto:info@catazores.com\">info@catazores.com</a></span>. <bdi>Small group catamaran cruises from the Ponta Delgada marina. Morning and afternoon trips as well as a sunset cruise with local cheese and wine are offered. Private tours.</bdi><span> (<span><span>updated Jul 2022</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": "<p>The islands produce surprisingly good wines and cheese.\n</p><p>Ponta Delgada's locals produce handmade crafts that are sold on the street and in small markets and boutiques along the main avenue. Visitors will find small ceramic bowls or plates, woven jewellery, and other one-of-a-kind items.  The most common souvenirs are scrimshaw, wicker products, lace, embroderies, liqueurs, and flags.\n</p><ul><li><bdi><span></span> <span id=\"Mercado_de_Graça\">Mercado de Graça</span>, <span>R. do Mercado 15</span>. <bdi>Two-storey farmers' market: produce, meat, fish, some souvenirs</bdi> <span>Open M-Th from 07:30, F Sa from  07:00, closing time varies but it's as early as  14:00</span>.<span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>Ponta Delgada is known for its <b>pineapple</b> harvest, so trying fresh pineapples from a local market is a must.\n</p>"
+    },
+    {
+      "id": "Budget",
+      "title": "Budget",
+      "level": 3,
+      "html": "<p>All these are in the city centre:\n</p><ul><li>The supermarket Pingo Doce offers fresh baked goods, sandwiches and main dishes.</li>\n<li><bdi><span></span> <span id=\"Casa_de_Pasto_Tavares\">Casa de Pasto Tavares</span>, <span>R. do Melo 74</span>. <bdi>Authentic Portuguese restaurant. Humble and tasty food. Great authentic location.</bdi><span> (<span><span>updated May 2022</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"O_Giro\">O Giro</span>, <span>R. Diário dos Açores 35</span>. <bdi>Cool atmosphere with great tasting food. The place looks really fancy. Well manniered waitress.</bdi><span> (<span><span>updated May 2022</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Lan's\">Lan's</span>, <span>R. Manuel da Ponte nº41</span>. <bdi>Very nice pizzeria. It doesn't look that inviting from outside, but surprisingly good food for such a modest, small restaurant.</bdi><span> (<span><span>updated May 2022</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"DONDUÉ\">DONDUÉ</span>, <span>Nº, R. do Melo 12</span>. <bdi>Small cute store that offers many great dishes and drinks. Also very good place for a great breakfast. Vegetarian option cooked with care and served with sympathie.</bdi><span> (<span><span>updated May 2022</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Apito_Dourado\">Apito Dourado</span>, <span>Rua do Peru 17 A</span>. <bdi>Authentic local restaurant. The dishes are a delight.</bdi><span> (<span><span>updated May 2022</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Açores_Grill\">Açores Grill</span>, <span>Rua do Calhau</span>. <bdi>Restaurant with a brilliant concept: You prepare the food yourself on your own grill. Cozy, chic and simple.</bdi><span> (<span><span>updated May 2022</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Azores_Forever\">Azores Forever</span>, <span>R. do Melo 10</span>. <bdi>Best fish and chips on the island. Also simple, yet delicious breakfast. Very LGBTQIA+ friendly.</bdi><span> (<span><span>updated May 2022</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Mid-range",
+      "title": "Mid-range",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Casa_Marisca\"><a href=\"https://www.facebook.com/restauranteCasaMarisca/\">Casa Marisca</a></span>, <span>Rua Engenheiro José Cordeiro 127</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296382780\">+351 296 382 780</a></span></span>, <span><a href=\"mailto:joaomsbotelho@hotmail.com\">joaomsbotelho@hotmail.com</a></span>. <span>Mon–Sat 11:00–23:00, closed Sun</span>. <bdi>A great small restaurant with good seafood, friendly service, and a nice atmosphere.</bdi><span> (<span><span>updated May 2022</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"O_Corisco\"><a href=\"https://www.facebook.com/restauranteocorisco\">O Corisco</a></span>, <span>Rua Manuel da Ponte 28</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296284444\">+351 296 284 444</a></span></span>, <span><a href=\"mailto:ocorisco@hotmail.com\">ocorisco@hotmail.com</a></span>. <span>Mon Wed–Fri Sun 12:00–15:00 &amp; 18:30–23:00, Sat 18:30:23:00, closed Tue</span>. <bdi>Known for scrumptious Continental cuisine.</bdi> <span><abbr>€7-15</abbr> (June 2021)</span>.<span> (<span><span>updated May 2022</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Mercado_do_Peixe\"><a href=\"https://www.facebook.com/restaurantemercadopeixe/\">Mercado do Peixe</a></span>, <span>Avenida Infante Dom Henrique 25</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296708839\">+351 296 708 839</a></span></span>, <span><a href=\"mailto:restaurantemercadodopeixe2015@gmail.com\">restaurantemercadodopeixe2015@gmail.com</a></span>. <span>Daily 12:00–15:00 &amp; 18:00–23:00; closed in January</span>. <bdi>Serves excellent local seafood. Despite its name, Mercado do Peixe is a restaurant, not a fish market.</bdi><span> (<span><span>updated Feb 2024</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"A_Tasca\"><a href=\"https://www.facebook.com/A-Tasca-354248658014325/\">A Tasca</a></span>, <span>Rua do Aljube 20</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296288880\">+351 296 288 880</a></span></span>, <span><a href=\"mailto:atasca2013@outlook.com\">atasca2013@outlook.com</a></span>. <bdi>Tapas bar and restaurant.</bdi><span> (<span><span>updated May 2022</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Restaurante_Atlântida\"><a href=\"https://www.bensaudehotels.com/saomiguelparkhotel/restaurante-e-bar\">Restaurante Atlântida</a></span> (<span>São Miguel Park Hotel</span>), <span>Rua Manuel Augusto Amaral</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296306000\">+351 296 306 000</a></span></span>, <span><a href=\"mailto:smph@bhc.pt\">smph@bhc.pt</a></span>. <bdi>Hotel has a restaurant that serves international, regional, and vegetarian dishes.</bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi> <span id=\"Ta_Gente\">Ta Gente</span>, <span>R. Manuel Inácio Correia 38</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351924126006\">+351924126006</a></span></span>. <bdi>Modern tapas restaurant, delicious food, wide wine selection with knowledgable sommelier.</bdi><span> (<span><span>updated Jun 2025</span></span>)</span></bdi></li>\n<li><bdi> <span id=\"Taberna_na_Boavista\">Taberna na Boavista</span>, <span>R. da Boavista 36</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351935314199\">+351935314199</a></span></span>. <bdi>Eclectic modern tapas restaurant.</bdi><span> (<span><span>updated Jun 2025</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Splurge",
+      "title": "Splurge",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Õtaka\"><a href=\"https://www.facebook.com/restauranteotaka\">Õtaka</a></span>, <span>Rua Hintze Ribeiro 5</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351919312080\">+351 919 312 080</a></span></span>, <span><a href=\"mailto:otaka.reservas@gmail.com\">otaka.reservas@gmail.com</a></span>. <span>Tue–Sat 19:00–22:30, closed Sun Mon</span>. <bdi>Great variety with generous portions of sushi.</bdi> <span><abbr>€25-85</abbr> (June 2021)</span>.<span> (<span><span>updated May 2022</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<ul><li>Ponta Delgada is known for its different types of liqueurs and alcohols, particularly <b>Passion Fruit Liqueur</b>.</li>\n<li>For unusual drinks, visit <b>Baia dos Anjos</b>, one of the more interesting bars that serves theme-based drinks and food based on local festivals and cultural events.</li>\n<li><b>Portas do Maris Marina</b> by the port has a number of bars with live bands almost every night.</li>\n<li>Another good place for mixed drinks and local wines is <b>San Miguel Park Hotel</b>.</li></ul>"
+    },
+    {
+      "id": "Nightlife",
+      "title": "Nightlife",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Bombom_Bilhares\">Bombom Bilhares</span>. <bdi>This nightclub is a great place to hang out, especially on rainy days.</bdi><span> (<span><span>updated Jun 2018</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Azores_Dream_Hostel\"><a href=\"https://www.azoresdreamhostel.com/\">Azores Dream Hostel</a></span>, <span>Rua Dr. Gil Mont'Alverne Sequeira 9</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351934317197\">+351 934 317 197</a></span></span>, <span><a href=\"mailto:booking@azoresdreamhostel.com\">booking@azoresdreamhostel.com</a></span>. <span>Check-in: <span>14:00</span>, check-out: <span>11:00</span></span>. <bdi>A more budget-friendly option and LGBTQ friendly. You can share a kitchen and maybe some breakfast.</bdi> <span><abbr>€26-54</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Azoris_Royal_Garden_-_Leisure_&amp;_Conference_Hotel\"><a href=\"https://www.azorishotels.com/royalgarden/\">Azoris Royal Garden - Leisure &amp; Conference Hotel</a></span>, <span>Rua de Lisboa</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296307300\">+351 296 307 300</a></span></span>, <span><a href=\"mailto:rececao.royal@azorishotels.com\">rececao.royal@azorishotels.com</a></span>. <span>Check-in: <span>16:00</span>, check-out: <span>12:00</span></span>. <bdi>Four-star, 193-room hotel with Turkish bath, outdoor pool, tennis court, fitness center.</bdi> <span><abbr>€62-134</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Casa_Vitoriana\"><a href=\"http://www.casavitoriana.com/\">Casa Vitoriana</a></span>, <span>Rua Dr. João Francisco de Sousa 34/38</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296285081\">+351 296 285 081</a></span></span>, <span><a href=\"mailto:info@casavitoriana.com\">info@casavitoriana.com</a></span>. <bdi>Furnished in original Victorian style but is fully modernised to create a cozy and clean feel.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Grand_Hotel_Açores_Atlântico\"><a href=\"https://www.bensaudehotels.com/en/grandhotelacoresatlantico/\">Grand Hotel Açores Atlântico</a></span>, <span>Avenida Infante Dom Henrique 113</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296302200\">+351 296 302 200</a></span></span>, <span><a href=\"mailto:ghaa@bhc.pt\">ghaa@bhc.pt</a></span>. <span>Check-in: <span>15:00–00:00</span>, check-out: <span>12:00</span></span>. <bdi>Five-star, 140-room hotel facing the marina. There's a heated indoor pool and conference rooms.</bdi> <span><abbr>€89-178</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"The_Lince_Azores\"><a href=\"http://www.thelince-azores.com\">The Lince Azores</a></span>, <span>Avenida Dom João 29</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296630000\">+351 296 630 000</a></span></span>. <bdi>Holidays, honeymoon, or business meetings in Azores. Outdoor swimming pool, garden, 24-hr front desk, luggage service, concierge service (newspapers, tours, rental), lobby, gift shop, free parking.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Marina_Atlântico\"><a href=\"https://www.bensaudehotels.com/hotelmarinaatlantico\">Hotel Marina Atlântico</a></span>, <span>Avenida João Bosco Mota Amaral 1</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296307900\">+351 296 307 900</a></span></span>, <span><a href=\"mailto:hma@bhc.pt\">hma@bhc.pt</a></span>. <span>Check-in: <span>15:00–00:00</span>, check-out: <span>07:00–12:00</span></span>. <bdi>Four-star, 184-room hotel in the centre of Ponta Delgada overlooking the harbor and marina. Sauna, indoor pool, steam bath, and spa.</bdi> <span><abbr>€73-157</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Neat_Hotel_Avenida\"><a href=\"https://www.bensaudehotels.com/neathotelavenida/\">Neat Hotel Avenida</a></span>, <span>Rua Dr. José Bruno Tavares Carreiro</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296209660\">+351 296 209 660</a></span></span>, <span><a href=\"mailto:neat@bhc.pt\">neat@bhc.pt</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi>Three-star, 120-room hotel right by the beaches, the main avenue, and shopping areas. Fitness centre, indoor pool, sauna, and spa.</bdi> <span><abbr>€48-92</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Ponta_Delgada\"><a href=\"https://www.hotelpdl.com/\">Hotel Ponta Delgada</a></span>, <span>Rua João Francisco Cabral 49</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296209480\">+351 296 209 480</a></span></span>, <span><a href=\"mailto:recepcao@hotelpdl.com\">recepcao@hotelpdl.com</a></span>. <span>Check-in: <span>15:00–00:00</span>, check-out: <span>05:00–11:00</span></span>. <bdi>Three-star, 98-room hotel in the heart of the city. Indoor pool set on an elevated terrace overlooking the town with a great view of Ponta Delgada.</bdi> <span><abbr>€50-159</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Quinta_das_Acácias\"><a href=\"http://www.quintadasacacias.net/\">Quinta das Acácias</a></span>, <span>Rua Lapinha 74, Livramento</span> (<span>on the West Coast of the island</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351966406127\">+351 966 406 127</a></span></span>, <span><a href=\"mailto:contact@quintadasacacias.net\">contact@quintadasacacias.net</a></span>. <bdi>It is right near the ocean and Populo beach. Quinta das Acacias offers cottage style living accommodations in the midst of a well-kept flourishing green garden. Each cottage averages an area of 50 m². There are 1- or 2-bedroom units available.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Talisman\"><a href=\"https://hoteltalisman.com/\">Hotel Talisman</a></span>, <span>Rua Marquês da Praia e Monforte 40</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296308500\">+351 296 308 500</a></span></span>, <span><a href=\"mailto:reservas@hoteltalisman.com\">reservas@hoteltalisman.com</a></span>. <bdi>In the middle of Ponta Delgata near all tourists attractions and nightlife. This hotel has 53 rooms, 5 suites and includes a restaurant, bar, and esplanade.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Vila_Nova_Hotel\"><a href=\"https://sites.google.com/view/vila-nova-hotel/inicio\">Vila Nova Hotel</a></span> (<span>My Story Hotel Vila Nova</span>), <span>Rua João Francisco Cabral 1</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296301600\">+351 296 301 600</a></span></span>. <span>Check-in: <span>14:00</span>, check-out: <span>12:00</span></span>. <bdi>Three-star, 102-room centrally located hotel. Indoor pool, air conditioned rooms, fitness centre. Complimentary breakfast every morning. The hotel bar serves exotic cocktails and snacks all day long.</bdi> <span><abbr>€48-117</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><a href=\"https://en.wikivoyage.org/wiki/Furnas\" title=\"Read on Wikivoyage (external source)\">Furnas</a>, <a href=\"/guides/sete-cidades/\" title=\"Sete Cidades\">Sete Cidades</a> and the other towns of <a href=\"/guides/sao-miguel/\" title=\"São Miguel\">São Miguel</a>.</li>\n<li>Visit <a href=\"/guides/terceira/\" title=\"Terceira\">Terceira</a> island/city of <a href=\"/guides/angra-do-heroismo/\" title=\"Angra do Heroísmo\">Angra</a>, a World heritage patrimony.</li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Ponta Delgada Airport",
+      "description": "The main entry point to the Azores. There is unlimited free Wi-Fi throughout the terminal areas."
+    },
+    {
+      "name": "Azores Airlines",
+      "phone": "+351 296 209 720",
+      "description": "Connects mainland Europe and North America with the Azores. Cities served include Boston , Frankfurt , Lisbon , London , Toronto , Paris , and Porto ."
+    },
+    {
+      "name": "bus stop Antigo Aerogare"
+    },
+    {
+      "name": "ANC Aerobus",
+      "description": "Since November 2023 the shuttle to the city for €8 does not operate anymore."
+    },
+    {
+      "name": "marina"
+    },
+    {
+      "name": "Carlos Machado Museum",
+      "address": "Rua do Dr.Guilherme Poças 65",
+      "phone": "+351 296 20 29 30",
+      "description": "It portrays the scientific mentality of the 19th century. Most of the information is by naturalists of the second half of the 19th century after the publication of Darwin’s Theory of Evolution and the Oceanographic expeditions."
+    },
+    {
+      "name": "Town Hall",
+      "description": "Built in the 17th century, rebuilt in the 20th century."
+    },
+    {
+      "name": "Forte São Bras",
+      "address": "R. Eng. Abel Ferin Coutinho 10",
+      "hours": "Mon-Fri 10:00-18:00",
+      "price": "Adult €3, senior €1",
+      "description": "A 16th-century fort that was in use until World War II. You can walk on the ramparts, explore the tunnels, and view a variety of old military equipment in the military museum."
+    },
+    {
+      "name": "Parish Church of São Sebastiao",
+      "description": ""
+    },
+    {
+      "name": "Church of São Jose",
+      "description": "Plain white and brown on the outside, but colorful on the inside."
+    },
+    {
+      "name": "Ponta Delgada Marina",
+      "description": "Visitors can go speedboat racing and big game fishing here."
+    },
+    {
+      "name": "CD Santa Clara",
+      "description": "They were promoted in 2024 and now play soccer in Primeira Liga, Portugal's top tier. Their home ground is Estádio de São Miguel (capacity 13,200), 3 km east of town."
+    },
+    {
+      "name": "Festa do Senhor Santo Cristo dos Milagres",
+      "hours": "yearly on the fifth Sun after Easter",
+      "description": "One of the many religious festivities held in the Azores. The town of Ponta Delgada is transformed into a town of colour and lively celebration, decorated with colourful flowers and decorative bedspreads hung from balconies. The celebration starts with the blessing of the bread and meat, and the distribution of food among the needy. The festival then continues with a procession, music and fireworks."
+    },
+    {
+      "name": "LS Catamarans",
+      "phone": "+351 919 103 031",
+      "description": "Small group catamaran cruises from the Ponta Delgada marina. Morning and afternoon trips as well as a sunset cruise with local cheese and wine are offered. Private tours."
+    },
+    {
+      "name": "Mercado de Graça",
+      "address": "R. do Mercado 15",
+      "price": "Open M-Th from 07:30, F Sa from  07:00, closing time varies but it's as early as  14:00",
+      "description": "Two-storey farmers' market: produce, meat, fish, some souvenirs"
+    },
+    {
+      "name": "Casa de Pasto Tavares",
+      "address": "R. do Melo 74",
+      "description": "Authentic Portuguese restaurant. Humble and tasty food. Great authentic location."
+    },
+    {
+      "name": "O Giro",
+      "address": "R. Diário dos Açores 35",
+      "description": "Cool atmosphere with great tasting food. The place looks really fancy. Well manniered waitress."
+    },
+    {
+      "name": "Lan's",
+      "address": "R. Manuel da Ponte nº41",
+      "description": "Very nice pizzeria. It doesn't look that inviting from outside, but surprisingly good food for such a modest, small restaurant."
+    },
+    {
+      "name": "DONDUÉ",
+      "address": "Nº, R. do Melo 12",
+      "description": "Small cute store that offers many great dishes and drinks. Also very good place for a great breakfast. Vegetarian option cooked with care and served with sympathie."
+    },
+    {
+      "name": "Apito Dourado",
+      "address": "Rua do Peru 17 A",
+      "description": "Authentic local restaurant. The dishes are a delight."
+    },
+    {
+      "name": "Açores Grill",
+      "address": "Rua do Calhau",
+      "description": "Restaurant with a brilliant concept: You prepare the food yourself on your own grill. Cozy, chic and simple."
+    },
+    {
+      "name": "Azores Forever",
+      "address": "R. do Melo 10",
+      "description": "Best fish and chips on the island. Also simple, yet delicious breakfast. Very LGBTQIA+ friendly."
+    },
+    {
+      "name": "Casa Marisca",
+      "address": "Rua Engenheiro José Cordeiro 127",
+      "phone": "+351 296 382 780",
+      "hours": "Mon–Sat 11:00–23:00, closed Sun",
+      "description": "A great small restaurant with good seafood, friendly service, and a nice atmosphere."
+    },
+    {
+      "name": "O Corisco",
+      "address": "Rua Manuel da Ponte 28",
+      "phone": "+351 296 284 444",
+      "hours": "Mon Wed–Fri Sun 12:00–15:00 & 18:30–23:00, Sat 18:30:23:00, closed Tue",
+      "price": "€7-15 (June 2021)",
+      "description": "Known for scrumptious Continental cuisine."
+    },
+    {
+      "name": "Mercado do Peixe",
+      "address": "Avenida Infante Dom Henrique 25",
+      "phone": "+351 296 708 839",
+      "hours": "Daily 12:00–15:00 & 18:00–23:00; closed in January",
+      "description": "Serves excellent local seafood. Despite its name, Mercado do Peixe is a restaurant, not a fish market."
+    },
+    {
+      "name": "A Tasca",
+      "address": "Rua do Aljube 20",
+      "phone": "+351 296 288 880",
+      "description": "Tapas bar and restaurant."
+    },
+    {
+      "name": "Restaurante Atlântida",
+      "address": "Rua Manuel Augusto Amaral",
+      "phone": "+351 296 306 000",
+      "description": "Hotel has a restaurant that serves international, regional, and vegetarian dishes."
+    },
+    {
+      "name": "Ta Gente",
+      "address": "R. Manuel Inácio Correia 38",
+      "phone": "+351924126006",
+      "description": "Modern tapas restaurant, delicious food, wide wine selection with knowledgable sommelier."
+    },
+    {
+      "name": "Taberna na Boavista",
+      "address": "R. da Boavista 36",
+      "phone": "+351935314199",
+      "description": "Eclectic modern tapas restaurant."
+    },
+    {
+      "name": "Õtaka",
+      "address": "Rua Hintze Ribeiro 5",
+      "phone": "+351 919 312 080",
+      "hours": "Tue–Sat 19:00–22:30, closed Sun Mon",
+      "price": "€25-85 (June 2021)",
+      "description": "Great variety with generous portions of sushi."
+    },
+    {
+      "name": "Bombom Bilhares",
+      "description": "This nightclub is a great place to hang out, especially on rainy days."
+    },
+    {
+      "name": "Azores Dream Hostel",
+      "address": "Rua Dr. Gil Mont'Alverne Sequeira 9",
+      "phone": "+351 934 317 197",
+      "price": "€26-54",
+      "description": "A more budget-friendly option and LGBTQ friendly. You can share a kitchen and maybe some breakfast."
+    },
+    {
+      "name": "Azoris Royal Garden - Leisure & Conference Hotel",
+      "address": "Rua de Lisboa",
+      "phone": "+351 296 307 300",
+      "price": "€62-134",
+      "description": "Four-star, 193-room hotel with Turkish bath, outdoor pool, tennis court, fitness center."
+    },
+    {
+      "name": "Casa Vitoriana",
+      "address": "Rua Dr. João Francisco de Sousa 34/38",
+      "phone": "+351 296 285 081",
+      "description": "Furnished in original Victorian style but is fully modernised to create a cozy and clean feel."
+    },
+    {
+      "name": "Grand Hotel Açores Atlântico",
+      "address": "Avenida Infante Dom Henrique 113",
+      "phone": "+351 296 302 200",
+      "price": "€89-178",
+      "description": "Five-star, 140-room hotel facing the marina. There's a heated indoor pool and conference rooms."
+    },
+    {
+      "name": "The Lince Azores",
+      "address": "Avenida Dom João 29",
+      "phone": "+351 296 630 000",
+      "description": "Holidays, honeymoon, or business meetings in Azores. Outdoor swimming pool, garden, 24-hr front desk, luggage service, concierge service (newspapers, tours, rental), lobby, gift shop, free parking."
+    },
+    {
+      "name": "Hotel Marina Atlântico",
+      "address": "Avenida João Bosco Mota Amaral 1",
+      "phone": "+351 296 307 900",
+      "price": "€73-157",
+      "description": "Four-star, 184-room hotel in the centre of Ponta Delgada overlooking the harbor and marina. Sauna, indoor pool, steam bath, and spa."
+    },
+    {
+      "name": "Neat Hotel Avenida",
+      "address": "Rua Dr. José Bruno Tavares Carreiro",
+      "phone": "+351 296 209 660",
+      "price": "€48-92",
+      "description": "Three-star, 120-room hotel right by the beaches, the main avenue, and shopping areas. Fitness centre, indoor pool, sauna, and spa."
+    },
+    {
+      "name": "Hotel Ponta Delgada",
+      "address": "Rua João Francisco Cabral 49",
+      "phone": "+351 296 209 480",
+      "price": "€50-159",
+      "description": "Three-star, 98-room hotel in the heart of the city. Indoor pool set on an elevated terrace overlooking the town with a great view of Ponta Delgada."
+    },
+    {
+      "name": "Quinta das Acácias",
+      "address": "Rua Lapinha 74, Livramento",
+      "phone": "+351 966 406 127",
+      "description": "It is right near the ocean and Populo beach. Quinta das Acacias offers cottage style living accommodations in the midst of a well-kept flourishing green garden. Each cottage averages an area of 50 m². There are 1- or 2-bedroom units available."
+    },
+    {
+      "name": "Hotel Talisman",
+      "address": "Rua Marquês da Praia e Monforte 40",
+      "phone": "+351 296 308 500",
+      "description": "In the middle of Ponta Delgata near all tourists attractions and nightlife. This hotel has 53 rooms, 5 suites and includes a restaurant, bar, and esplanade."
+    },
+    {
+      "name": "Vila Nova Hotel",
+      "address": "Rua João Francisco Cabral 1",
+      "phone": "+351 296 301 600",
+      "price": "€48-117",
+      "description": "Three-star, 102-room centrally located hotel. Indoor pool, air conditioned rooms, fitness centre. Complimentary breakfast every morning. The hotel bar serves exotic cocktails and snacks all day long."
+    }
+  ],
+  "words": 2396,
+  "searchText": "Ponta Delgada is the largest city in the Azores archipelago. It is on the island of São Miguel , and was home to 67,000 people in 2021. It is an important administrative, industrial and agricultural centre, and the home of the University of the Azores. Ponta Delgada ( POHN-tuh dehl-GAH-duh , /ˈpõ.tɐ dɛɫ.ˈga.dɐ/), the city on São Miguel island, is not to be confused with Ponta Delgada, the rural civil parish on the north coast of Flores island. Ponta Delgada has a mild maritime climate: warm summers, with moderate precipitation, and mild, wet winters. Much like the rest of the Azores, the city is shaped by the Gulf Stream, and consequently has a narrow temperature variation. Mean temperatures vary between 14.5 °C (58.1 °F) in the winter to around 22 °C (72 °F) in the summer and daytime highs vary between 17 °C (63 °F) in the winter to 25 °C (77 °F) in the summer. Temperatures above 30 °C (86 °F), or below 4 °C (39 °F) have never been registered. The Gulf Stream also contributes to unstable weather that varies greatly during autumn and spring, making weather forecasting on a daily basis difficult. Winters are generally milder and summers are generally humid when compared to those of continental Portugal.  Ponta Delgada Airport ( PDL IATA , João Paulo II Airport ). The main entry point to the Azores. There is unlimited free Wi-Fi throughout the terminal areas. ( updated Jun 2021 ) Major carriers serving Ponta Delgada Airport include: Azores Airlines , ☏ +351 296 209 720 , toll-free: +1-800-762-9995 (U.S.) . Connects mainland Europe and North America with the Azores. Cities served include Boston , Frankfurt , Lisbon , London , Toronto , Paris , and Porto . ( updated Jul 2021 ) SATA Air Açores flies within the Azores archipelago and from Madeira. TAP Air Portugal Portugal's flag carrier, also has direct flights from Lisbon to the islands of Terceira, Faial and Pico. The airline also flies between Porto and Terceira islands. Ryanair flies from Lisbon , Frankfurt -Hahn (seasonal), London -Stansted, and Porto . There are taxi services at the airport. Fixed prices for rides depending on where on the island you want to go, there is a sign with the list at the taxi stop. For example: Ponta Delgada hotels €10, Sao Roque €13, luggage +€2 (Jun 2025). It's possible to walk into town from the airport 4 km (1 hour) but it's not fun if you have much luggage. Or you could walk 1.3 km (15 min) to the old terminal's bus stop Antigo Aerogare and take a city bus for €0.50 (Jan 2024) from there to Ponta Delgada. The serving city bus line A operates M-F 07:30-19:30. Alternatively from that bus stop, regional buses to the city for about €0.90 (Jan 2024) operate as well. ANC Aerobus . Since November 2023 the shuttle to the city for €8 does not operate anymore. ( updated Jan 2024 ) Several cruise lines make Ponta Delgada a waypoint when journeying across the Atlantic. Some cruise ships spend a day at the port, often as they reposition themselves between cruising Europe and the Western Hemisphere. The marina has a cruise ships’ quay, a pavilion, and a hallway of shops. The marina also has pools, including a big natural pool.  PDL Minibuses run the main avenue and are conveniently accessible from major sites in Ponta Delgada. In-town bus services are handled by smaller mini-buses with the larger touring buses handling community-to-community travel on the island. Both services are accessible along Avenida D. Infante Henriques and can confuse the unfamiliar traveler. Schedules are available at bus stops and the tourist office. One ride in the minibus going around Ponta Delgada is €0.50 (Jan 2024). The app of PDL Minibus shows the upcoming departures of a bus stop. Visitors can best experience the city on foot, as travel distances are relatively short. For day trips to other parts of the island, consider buses, taxis, or a rental car. City tours are based along the Avenida where visitors can find several services to sightsee, including horse-drawn carriage, panoramic bus tours and the Lagarta Tourist Train that travels along the streets. Carlos Machado Museum , Rua do Dr.Guilherme Poças 65 ( in the Convento de Santo Andre ), ☏ +351 296 20 29 30 , museu.cmachado.info@azores.gov.pt . It portrays the scientific mentality of the 19th century. Most of the information is by naturalists of the second half of the 19th century after the publication of Darwin’s Theory of Evolution and the Oceanographic expeditions. ( updated Sep 2017 ) Town Hall ( Paços do Concelho de Ponta Delgada ). Built in the 17th century, rebuilt in the 20th century. ( updated Jan 2024 ) Forte São Bras , R. Eng. Abel Ferin Coutinho 10 . Mon-Fri 10:00-18:00 . A 16th-century fort that was in use until World War II. You can walk on the ramparts, explore the tunnels, and view a variety of old military equipment in the military museum. Adult €3, senior €1 . ( updated Feb 2024 ) Parish Church of São Sebastiao . ( updated Sep 2017 ) Church of São Jose . Plain white and brown on the outside, but colorful on the inside. ( updated Sep 2017 ) There are boat tours from the marina for see the island's coastline, and for whale-watching, available from offices at the marina. Ponta Delgada Marina . Visitors can go speedboat racing and big game fishing here. ( updated Mar 2021 ) Organised whale- and dolphin-watching from small boats operating out of Ponta Delgada is increasingly popular. Also whale watching at Blue Talassa. Football: CD Santa Clara . They were promoted in 2024 and now play soccer in Primeira Liga, Portugal's top tier. Their home ground is Estádio de São Miguel (capacity 13,200), 3 km east of town. ( updated May 2024 ) Festa do Senhor Santo Cristo dos Milagres . yearly on the fifth Sun after Easter . One of the many religious festivities held in the Azores. The town of Ponta Delgada is transformed into a town of colour and lively celebration, decorated with colourful flowers and decorative bedspreads hung from balconies. The celebration starts with the blessing of the bread and meat, and the distribution of food among the needy. The festival then continues with a procession, music and fireworks. LS Catamarans , ☏ +351 919 103 031 , info@catazores.com . Small group catamaran cruises from the Ponta Delgada marina. Morning and afternoon trips as well as a sunset cruise with local cheese and wine are offered. Private tours. ( updated Jul 2022 ) The islands produce surprisingly good wines and cheese. Ponta Delgada's locals produce handmade crafts that are sold on the street and in small markets and boutiques along the main avenue. Visitors will find small ceramic bowls or plates, woven jewellery, and other one-of-a-kind items.  The most common souvenirs are scrimshaw, wicker products, lace, embroderies, liqueurs, and flags. Mercado de Graça , R. do Mercado 15 . Two-storey farmers' market: produce, meat, fish, some souvenirs Open M-Th from 07:30, F Sa from  07:00, closing time varies but it's as early as  14:00 . ( updated Jan 2024 ) Ponta Delgada is known for its pineapple harvest, so trying fresh pineapples from a local market is a must. All these are in the city centre: The supermarket Pingo Doce offers fresh baked goods, sandwiches and main dishes. Casa de Pasto Tavares , R. do Melo 74 . Authentic Portuguese restaurant. Humble and tasty food. Great authentic location. ( updated May 2022 ) O Giro , R. Diário dos Açores 35 . Cool atmosphere with great tasting food. The place looks really fancy. Well manniered waitress. ( updated May 2022 ) Lan's , R. Manuel da Ponte nº41 . Very nice pizzeria. It doesn't look that inviting from outside, but surprisingly good food for such a modest, small restaurant. ( updated May 2022 ) DONDUÉ , Nº, R. do Melo 12 . Small cute store that offers many great dishes and drinks. Also very good place for a great breakfast. Vegetarian option cooked with care and served with sympathie. ( updated May 2022 ) Apito Dourado , Rua do Peru 17 A . Authentic local restaurant. The dishes are a delight. ( updated May 2022 ) Açores Grill , Rua do Calhau . Restaurant with a brilliant concept: You prepare the food yourself on your own grill. Cozy, chic and simple. ( updated May 2022 ) Azores Forever , R. do Melo 10 . Best fish and chips on the island. Also simple, yet delicious breakfast. Very LGBTQIA+ friendly. ( updated May 2022 ) Casa Marisca , Rua Engenheiro José Cordeiro 127 , ☏ +351 296 382 780 , joaomsbotelho@hotmail.com . Mon–Sat 11:00–23:00, closed Sun . A great small restaurant with good seafood, friendly service, and a nice atmosphere. ( updated May 2022 ) O Corisco , Rua Manuel da Ponte 28 , ☏ +351 296 284 444 , ocorisco@hotmail.com . Mon Wed–Fri Sun 12:00–15:00 & 18:30–23:00, Sat 18:30:23:00, closed Tue . Known for scrumptious Continental cuisine. €7-15 (June 2021) . ( updated May 2022 ) Mercado do Peixe , Avenida Infante Dom Henrique 25 , ☏ +351 296 708 839 , restaurantemercadodopeixe2015@gmail.com . Daily 12:00–15:00 & 18:00–23:00; closed in January . Serves excellent local seafood. Despite its name, Mercado do Peixe is a restaurant, not a fish market. ( updated Feb 2024 ) A Tasca , Rua do Aljube 20 , ☏ +351 296 288 880 , atasca2013@outlook.com . Tapas bar and restaurant. ( updated May 2022 ) Restaurante Atlântida ( São Miguel Park Hotel ), Rua Manuel Augusto Amaral , ☏ +351 296 306 000 , smph@bhc.pt . Hotel has a restaurant that serves international, regional, and vegetarian dishes. ( updated Jun 2021 ) Ta Gente , R. Manuel Inácio Correia 38 , ☏ +351924126006 . Modern tapas restaurant, delicious food, wide wine selection with knowledgable sommelier. ( updated Jun 2025 ) Taberna na Boavista , R. da Boavista 36 , ☏ +351935314199 . Eclectic modern tapas restaurant. ( updated Jun 2025 ) Õtaka , Rua Hintze Ribeiro 5 , ☏ +351 919 312 080 , otaka.reservas@gmail.com . Tue–Sat 19:00–22:30, closed Sun Mon . Great variety with generous portions of sushi. €25-85 (June 2021) . ( updated May 2022 ) Ponta Delgada is known for its different types of liqueurs and alcohols, particularly Passion Fruit Liqueur . For unusual drinks, visit Baia dos Anjos , one of the more interesting bars that serves theme-based drinks and food based on local festivals and cultural events. Portas do Maris Marina by the port has a number of bars with live bands almost every night. Another good place for mixed drinks and local wines is San Miguel Park Hotel . Bombom Bilhares . This nightclub is a great place to hang out, especially on rainy days. ( updated Jun 2018 ) Azores Dream Hostel , Rua Dr. Gil Mont'Alverne Sequeira 9 , ☏ +351 934 317 197 , booking@azoresdreamhostel.com . Check-in: 14:00 , check-out: 11:00 . A more budget-friendly option and LGBTQ friendly. You can share a kitchen and maybe some breakfast. €26-54 . ( updated Jun 2021 ) Azoris Royal Garden - Leisure & Conference Hotel , Rua de Lisboa , ☏ +351 296 307 300 , rececao.royal@azorishotels.com . Check-in: 16:00 , check-out: 12:00 . Four-star, 193-room hotel with Turkish bath, outdoor pool, tennis court, fitness center. €62-134 . ( updated Jun 2021 ) Casa Vitoriana , Rua Dr. João Francisco de Sousa 34/38 , ☏ +351 296 285 081 , info@casavitoriana.com . Furnished in original Victorian style but is fully modernised to create a cozy and clean feel. Grand Hotel Açores Atlântico , Avenida Infante Dom Henrique 113 , ☏ +351 296 302 200 , ghaa@bhc.pt . Check-in: 15:00–00:00 , check-out: 12:00 . Five-star, 140-room hotel facing the marina. There's a heated indoor pool and conference rooms. €89-178 . ( updated Jun 2021 ) The Lince Azores , Avenida Dom João 29 , ☏ +351 296 630 000 . Holidays, honeymoon, or business meetings in Azores. Outdoor swimming pool, garden, 24-hr front desk, luggage service, concierge service (newspapers, tours, rental), lobby, gift shop, free parking. Hotel Marina Atlântico , Avenida João Bosco Mota Amaral 1 , ☏ +351 296 307 900 , hma@bhc.pt . Check-in: 15:00–00:00 , check-out: 07:00–12:00 . Four-star, 184-room hotel in the centre of Ponta Delgada overlooking the harbor and marina. Sauna, indoor pool, steam bath, and spa. €73-157 . ( updated Jun 2021 ) Neat Hotel Avenida , Rua Dr. José Bruno Tavares Carreiro , ☏ +351 296 209 660 , neat@bhc.pt . Check-in: 15:00 , check-out: 12:00 . Three-star, 120-room hotel right by the beaches, the main avenue, and shopping areas. Fitness centre, indoor pool, sauna, and spa. €48-92 . ( updated Jun 2021 ) Hotel Ponta Delgada , Rua João Francisco Cabral 49 , ☏ +351 296 209 480 , recepcao@hotelpdl.com . Check-in: 15:00–00:00 , check-out: 05:00–11:00 . Three-star, 98-room hotel in the heart of the city. Indoor pool set on an elevated terrace overlooking the town with a great view of Ponta Delgada. €50-159 . ( updated Jun 2021 ) Quinta das Acácias , Rua Lapinha 74, Livramento ( on the West Coast of the island ), ☏ +351 966 406 127 , contact@quintadasacacias.net . It is right near the ocean and Populo beach. Quinta das Acacias offers cottage style living accommodations in the midst of a well-kept flourishing green garden. Each cottage averages an area of 50 m². There are 1- or 2-bedroom units available. Hotel Talisman , Rua Marquês da Praia e Monforte 40 , ☏ +351 296 308 500 , reservas@hoteltalisman.com . In the middle of Ponta Delgata near all tourists attractions and nightlife. This hotel has 53 rooms, 5 suites and includes a restaurant, bar, and esplanade. Vila Nova Hotel ( My Story Hotel Vila Nova ), Rua João Francisco Cabral 1 , ☏ +351 296 301 600 . Check-in: 14:00 , check-out: 12:00 . Three-star, 102-room centrally located hotel. Indoor pool, air conditioned rooms, fitness centre. Complimentary breakfast every morning. The hotel bar serves exotic cocktails and snacks all day long. €48-117 . ( updated Jun 2021 ) Furnas , Sete Cidades and the other towns of São Miguel . Visit Terceira island/city of Angra , a World heritage patrimony.",
+  "related": [
+    "azores",
+    "sao-miguel",
+    "lisbon",
+    "porto",
+    "sete-cidades",
+    "terceira",
+    "angra-do-heroismo"
+  ],
+  "image": {
+    "file": "/images/sao-miguel-ponta-delgada-marina.webp",
+    "title": "Sao Miguel - Ponta Delgada - Marina.jpg",
+    "artist": "Andree Stephan",
+    "credit": "Own work",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sao_Miguel_-_Ponta_Delgada_-_Marina.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/b/be/Sao_Miguel_-_Ponta_Delgada_-_Marina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Ponta_Delgada",
+    "revision": 5360470,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5360470",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Ponta_Delgada&action=history",
+    "retrieved": "2026-10-17T13:11:30.389752+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "São Miguel",
+  "excerpt": "Ponta Delgada is the largest city in the Azores archipelago. It is on the island of São Miguel, and was home to 67,000 people in 2021. It is an important administrative, industrial and agricultural centre, and the home of the University of the…"
+}

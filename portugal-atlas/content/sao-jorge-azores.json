@@ -1,0 +1,194 @@
+{
+  "title": "São Jorge (Azores)",
+  "slug": "sao-jorge-azores",
+  "displayTitle": "São Jorge",
+  "region": "azores",
+  "kind": "destination",
+  "parent": "azores",
+  "intro": "São Jorge is an island in Portugal's Azores ( Açores ) archipelago.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><b>São Jorge</b> is an island in <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>'s <a href=\"/guides/azores/\" title=\"Azores\">Azores</a> (<i>Açores</i>) archipelago.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>São Jorge (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">SUHNW ZHOHR-zh(ih)</a>, /ˈsɐ̃w ˈʒoɾ.ʒɨ/) has two main settlements:\n</p><ul><li><span><span></span> <span id=\"Calheta\">Calheta</span></span> – the eastern part of the island</li>\n<li><span><span></span> <span id=\"Velas\">Velas</span></span> – the western part of the island</li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Aérodromo_de_São_Jorge\"><a href=\"http://www.sata.pt/pt-pt/sata/sata-aerodromos\">Aérodromo de São Jorge</a></span> (<span><b>SJZ </b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup></span>). <bdi><a href=\"https://www.azoresairlines.pt/en\">SATA Air Açores</a> flies from <a href=\"/guides/ponta-delgada/\" title=\"Ponta Delgada\">Ponta Delgada</a> (<b><a href=\"/guides/ponta-delgada/\" title=\"Ponta Delgada\">PDL</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>) and <a href=\"/guides/terceira/\" title=\"Terceira\">Terceira</a> (<b><a href=\"/guides/terceira/\" title=\"Terceira\">TER</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>).</bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi> </li></ul>"
+    },
+    {
+      "id": "By_boat",
+      "title": "By boat",
+      "level": 3,
+      "html": "<ul><li><bdi> <span id=\"Atlânticoline\"><a href=\"https://www.atlanticoline.pt/\">Atlânticoline</a></span>. <bdi>Ferries from <a href=\"/guides/faial/\" title=\"Faial\">Faial</a>, <a href=\"/guides/pico/\" title=\"Pico\">Pico</a>, <a href=\"/guides/terceira/\" title=\"Terceira\">Terceira</a>, and <a href=\"/guides/graciosa-azores/\" title=\"Graciosa (Azores)\">Graciosa</a>.</bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Igreja_de_Santa_Bárbara\">Igreja de Santa Bárbara</span>, <span>Manadas, Velas</span>. <bdi>Church built in 1770 over the ruins of an earlier church from 1485.</bdi><span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"O_Branquinho\">O Branquinho</span>, <span>Ribeira do Belo 48, Rosais</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351919184024\">+351 919 184 024</a></span></span>. <span>Tue–Sun 11:00–14:00 &amp; 18:30–21:30, closed Mon</span>. <bdi></bdi> <span><abbr>€7-15</abbr></span>.<span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Restaurante_Castelinho\">Restaurante Castelinho</span>, <span>Caminho das Árvores, Urzelina</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351295010385\">+351 295 010 385</a></span></span>. <span>Wed–Mon 09:00–15:00 &amp; 18:00–22:00, closed Tue</span>. <bdi></bdi> <span><abbr>€4-21</abbr></span>.<span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Fornos_de_Lava\"><a href=\"https://www.facebook.com/restaurantefornosdelava/\">Fornos de Lava</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351917394977\">+351 917 394 977</a></span></span>, <span><a href=\"mailto:fornosdelava@hotmail.com\">fornosdelava@hotmail.com</a></span>. <span>Thu–Tue 19:00–23:00, closed Wed</span>. <bdi>Traditional cooking in a wood-burning oven using local ingredients. Views of Pico and Faial Islands.</bdi> <span><abbr>€15-40</abbr></span>.<span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Cantinho_das_Buganvilias_Resort\"><a href=\"https://www.cantinhodasbuganvilias.net/\">Cantinho das Buganvilias Resort</a></span>, <span>Rua Padre Augusto Teixeira, Queimada, Velas</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351918201535\">+351 918 201 535</a></span></span>, <span><a href=\"mailto:cantinhodasbuganvilias@gmail.com\">cantinhodasbuganvilias@gmail.com</a></span>. <bdi>Four-star, 19-room apartment-style hotel. Rooms have full kitchenettes, dining areas, patios with island views, and living rooms with flat-screen TVs.</bdi> <span><abbr>€69-100</abbr></span>.<span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Quinta_de_São_Pedro\">Quinta de São Pedro</span>, <span>Lugar de São Pedro, Velas</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351295432189\">+351 295 432 189</a></span></span>, <span><a href=\"mailto:quinta.saopedro@sapo.pt\">quinta.saopedro@sapo.pt</a></span>. <span>Check-out: <span>12:00</span></span>. <bdi>Rural accommodation with swimming pool, free breakfast, free Wi-Fi, and free parking.</bdi><span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_São_Jorge_Garden\"><a href=\"https://oceanohoteis.com/\">Hotel São Jorge Garden</a></span>, <span>Avenida dos Baleeiros, Velas</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351295430100\">+351 295 430 100</a></span></span>, <span><a href=\"mailto:central.reservas@hotelsaojorge.pt\">central.reservas@hotelsaojorge.pt</a></span>. <span>Check-in: <span>16:00</span>, check-out: <span>12:00</span></span>. <bdi>Three-star, 58-room hotel with outdoor swimming pool, free breakfast, free Wi-Fi, and free parking.</bdi> <span><abbr>€54-96</abbr></span>.<span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": ""
+    }
+  ],
+  "listings": [
+    {
+      "name": "Calheta"
+    },
+    {
+      "name": "Velas"
+    },
+    {
+      "name": "Aérodromo de São Jorge",
+      "description": "SATA Air Açores flies from Ponta Delgada ( PDL IATA ) and Terceira ( TER IATA )."
+    },
+    {
+      "name": "Atlânticoline",
+      "description": "Ferries from Faial , Pico , Terceira , and Graciosa ."
+    },
+    {
+      "name": "Igreja de Santa Bárbara",
+      "address": "Manadas, Velas",
+      "description": "Church built in 1770 over the ruins of an earlier church from 1485."
+    },
+    {
+      "name": "O Branquinho",
+      "address": "Ribeira do Belo 48, Rosais",
+      "phone": "+351 919 184 024",
+      "hours": "Tue–Sun 11:00–14:00 & 18:30–21:30, closed Mon",
+      "price": "€7-15",
+      "description": ""
+    },
+    {
+      "name": "Restaurante Castelinho",
+      "address": "Caminho das Árvores, Urzelina",
+      "phone": "+351 295 010 385",
+      "hours": "Wed–Mon 09:00–15:00 & 18:00–22:00, closed Tue",
+      "price": "€4-21",
+      "description": ""
+    },
+    {
+      "name": "Fornos de Lava",
+      "phone": "+351 917 394 977",
+      "hours": "Thu–Tue 19:00–23:00, closed Wed",
+      "price": "€15-40",
+      "description": "Traditional cooking in a wood-burning oven using local ingredients. Views of Pico and Faial Islands."
+    },
+    {
+      "name": "Cantinho das Buganvilias Resort",
+      "address": "Rua Padre Augusto Teixeira, Queimada, Velas",
+      "phone": "+351 918 201 535",
+      "price": "€69-100",
+      "description": "Four-star, 19-room apartment-style hotel. Rooms have full kitchenettes, dining areas, patios with island views, and living rooms with flat-screen TVs."
+    },
+    {
+      "name": "Quinta de São Pedro",
+      "address": "Lugar de São Pedro, Velas",
+      "phone": "+351 295 432 189",
+      "description": "Rural accommodation with swimming pool, free breakfast, free Wi-Fi, and free parking."
+    },
+    {
+      "name": "Hotel São Jorge Garden",
+      "address": "Avenida dos Baleeiros, Velas",
+      "phone": "+351 295 430 100",
+      "price": "€54-96",
+      "description": "Three-star, 58-room hotel with outdoor swimming pool, free breakfast, free Wi-Fi, and free parking."
+    }
+  ],
+  "words": 342,
+  "searchText": "São Jorge is an island in Portugal 's Azores ( Açores ) archipelago. São Jorge ( SUHNW ZHOHR-zh(ih) , /ˈsɐ̃w ˈʒoɾ.ʒɨ/) has two main settlements: Calheta – the eastern part of the island Velas – the western part of the island  Aérodromo de São Jorge ( SJZ IATA ). SATA Air Açores flies from Ponta Delgada ( PDL IATA ) and Terceira ( TER IATA ). ( updated Mar 2021 ) Atlânticoline . Ferries from Faial , Pico , Terceira , and Graciosa . ( updated Jun 2021 )  Igreja de Santa Bárbara , Manadas, Velas . Church built in 1770 over the ruins of an earlier church from 1485. ( updated Jul 2021 )   O Branquinho , Ribeira do Belo 48, Rosais , ☏ +351 919 184 024 . Tue–Sun 11:00–14:00 & 18:30–21:30, closed Mon . €7-15 . ( updated Jul 2021 ) Restaurante Castelinho , Caminho das Árvores, Urzelina , ☏ +351 295 010 385 . Wed–Mon 09:00–15:00 & 18:00–22:00, closed Tue . €4-21 . ( updated Jul 2021 ) Fornos de Lava , ☏ +351 917 394 977 , fornosdelava@hotmail.com . Thu–Tue 19:00–23:00, closed Wed . Traditional cooking in a wood-burning oven using local ingredients. Views of Pico and Faial Islands. €15-40 . ( updated Jul 2021 )  Cantinho das Buganvilias Resort , Rua Padre Augusto Teixeira, Queimada, Velas , ☏ +351 918 201 535 , cantinhodasbuganvilias@gmail.com . Four-star, 19-room apartment-style hotel. Rooms have full kitchenettes, dining areas, patios with island views, and living rooms with flat-screen TVs. €69-100 . ( updated Jul 2021 ) Quinta de São Pedro , Lugar de São Pedro, Velas , ☏ +351 295 432 189 , quinta.saopedro@sapo.pt . Check-out: 12:00 . Rural accommodation with swimming pool, free breakfast, free Wi-Fi, and free parking. ( updated Jul 2021 ) Hotel São Jorge Garden , Avenida dos Baleeiros, Velas , ☏ +351 295 430 100 , central.reservas@hotelsaojorge.pt . Check-in: 16:00 , check-out: 12:00 . Three-star, 58-room hotel with outdoor swimming pool, free breakfast, free Wi-Fi, and free parking. €54-96 . ( updated Jul 2021 )  ",
+  "related": [
+    "portugal",
+    "azores",
+    "ponta-delgada",
+    "terceira",
+    "faial",
+    "pico",
+    "graciosa-azores"
+  ],
+  "image": {
+    "file": "/images/sao-jorge-azores-wikivoyage-banner.webp",
+    "title": "São Jorge (Azores) Wikivoyage Banner.jpg",
+    "artist": "By JCNazza , CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=53709168",
+    "credit": "Cropped from: File:São Jorge - panoramio (20).jpg from https://web.archive.org/web/20161024013820/http://www.panoramio.com/photo/55584364",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:S%C3%A3o_Jorge_(Azores)_Wikivoyage_Banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/e/ee/S%C3%A3o_Jorge_%28Azores%29_Wikivoyage_Banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/S%C3%A3o_Jorge_%28Azores%29",
+    "revision": 5387277,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5387277",
+    "history": "https://en.wikivoyage.org/w/index.php?title=S%C3%A3o_Jorge_%28Azores%29&action=history",
+    "retrieved": "2026-10-17T13:11:29.181118+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Azores",
+  "excerpt": "São Jorge is an island in Portugal's Azores ( Açores ) archipelago."
+}

@@ -1,0 +1,160 @@
+{
+  "title": "Câmara de Lobos",
+  "slug": "camara-de-lobos",
+  "displayTitle": "Câmara de Lobos",
+  "region": "madeira",
+  "kind": "destination",
+  "parent": "madeira",
+  "intro": "Câmara de Lobos is a city on the Portuguese island of Madeira.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><b>Câmara de Lobos</b> is a city on the <a href=\"/guides/portugal/\" title=\"Portugal\">Portuguese</a> island of <a href=\"/guides/madeira/\" title=\"Madeira\">Madeira</a>.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>The city of Câmara de Lobos (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">KUH-muh-ruh d(ih) LOH-boosh</a>, /ˈkɐ.mɐ.ɾɐ dɨ ˈɫo.buʃ/) has 17,986 residents (2011), while the entire municipality has 35,666. It's a suburb of <a href=\"/guides/funchal/\" title=\"Funchal\">Funchal</a>, the island's capital. Its name translates as \"Sea Lion Chamber\".\n</p>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Posto_de_Turismo\">Posto de Turismo</span>, <span>Curral das Freiras</span>. <bdi></bdi><span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": "<ul><li><bdi> <span id=\"Rodoeste_–_Transportadora_Rodoviária_da_Madeira\"><a href=\"https://www.rodoeste.com.pt/\">Rodoeste – Transportadora Rodoviária da Madeira</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291220148\">+351 291 220 148</a></span></span>, <span><a href=\"mailto:rodoeste@rodoeste.pt\">rodoeste@rodoeste.pt</a></span>. <bdi>Provides a number of bus routes from <a href=\"/guides/funchal/\" title=\"Funchal\">Funchal</a> and elsewhere on the island.</bdi><span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Cabo_Girão\">Cabo Girão</span>. <bdi>One of the world's highest ocean cliffs, 590 m (1,940 ft) above sea level.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Curral_das_Freiras\">Curral das Freiras</span>. <bdi>An isolated town of 2,000 people surrounded by cliffs and peaks.</bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Adega_da_Quinta\"><a href=\"https://www.quintadoestreitomadeira.com/en/restaurants.html\">Adega da Quinta</a></span>, <span>Rua José Joaquim da Costa</span> (<span>Quinta do Estreito, Estreito de Câmara de Lobos</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291910530\">+351 291 910 530</a></span></span>. <bdi>Traditional restaurant where you can eat <i>espetada</i> in an old winery uphill from Câmara de Lobos.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Restaurante_Coral\"><a href=\"https://restaurante-coral.negocio.site\">Restaurante Coral</a></span>, <span>Praça da Autonomia (Largo de São Sebastião) 2</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291098284\">+351 291 098 284</a></span></span>. <span>11:00–22:00 daily</span>. <bdi>Fresh fish and shellfish.</bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Pestana_Churchill_Bay\"><a href=\"https://www.pousadas.pt/en/hotel/pestana-churchill-bay\">Pestana Churchill Bay</a></span>, <span>Rua da Nossa Senhora da Conceição 17</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351218442001\">+351 218 442 001</a></span></span>, <span><a href=\"mailto:guest@pestana.com\">guest@pestana.com</a></span>. <span>Check-in: <span>16:00</span>, check-out: <span>11:00</span></span>. <bdi>A four-star, 57-room <i>pousada</i> overlooking the bay, with outdoor swimming pool, restaurant, and room service.</bdi> <span><abbr>€90-165</abbr></span>.<span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Connect",
+      "title": "Connect",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": ""
+    }
+  ],
+  "listings": [
+    {
+      "name": "Posto de Turismo",
+      "address": "Curral das Freiras",
+      "description": ""
+    },
+    {
+      "name": "Rodoeste – Transportadora Rodoviária da Madeira",
+      "phone": "+351 291 220 148",
+      "description": "Provides a number of bus routes from Funchal and elsewhere on the island."
+    },
+    {
+      "name": "Cabo Girão",
+      "description": "One of the world's highest ocean cliffs, 590 m (1,940 ft) above sea level."
+    },
+    {
+      "name": "Curral das Freiras",
+      "description": "An isolated town of 2,000 people surrounded by cliffs and peaks."
+    },
+    {
+      "name": "Adega da Quinta",
+      "address": "Rua José Joaquim da Costa",
+      "phone": "+351 291 910 530",
+      "description": "Traditional restaurant where you can eat espetada in an old winery uphill from Câmara de Lobos."
+    },
+    {
+      "name": "Restaurante Coral",
+      "address": "Praça da Autonomia (Largo de São Sebastião) 2",
+      "phone": "+351 291 098 284",
+      "hours": "11:00–22:00 daily",
+      "description": "Fresh fish and shellfish."
+    },
+    {
+      "name": "Pestana Churchill Bay",
+      "address": "Rua da Nossa Senhora da Conceição 17",
+      "phone": "+351 218 442 001",
+      "price": "€90-165",
+      "description": "A four-star, 57-room pousada overlooking the bay, with outdoor swimming pool, restaurant, and room service."
+    }
+  ],
+  "words": 245,
+  "searchText": "Câmara de Lobos is a city on the Portuguese island of Madeira . The city of Câmara de Lobos ( KUH-muh-ruh d(ih) LOH-boosh , /ˈkɐ.mɐ.ɾɐ dɨ ˈɫo.buʃ/) has 17,986 residents (2011), while the entire municipality has 35,666. It's a suburb of Funchal , the island's capital. Its name translates as \"Sea Lion Chamber\". Posto de Turismo , Curral das Freiras . ( updated Jul 2021 ) Rodoeste – Transportadora Rodoviária da Madeira , ☏ +351 291 220 148 , rodoeste@rodoeste.pt . Provides a number of bus routes from Funchal and elsewhere on the island. ( updated Jul 2021 )  Cabo Girão . One of the world's highest ocean cliffs, 590 m (1,940 ft) above sea level. Curral das Freiras . An isolated town of 2,000 people surrounded by cliffs and peaks.   Adega da Quinta , Rua José Joaquim da Costa ( Quinta do Estreito, Estreito de Câmara de Lobos ), ☏ +351 291 910 530 . Traditional restaurant where you can eat espetada in an old winery uphill from Câmara de Lobos. Restaurante Coral , Praça da Autonomia (Largo de São Sebastião) 2 , ☏ +351 291 098 284 . 11:00–22:00 daily . Fresh fish and shellfish.  Pestana Churchill Bay , Rua da Nossa Senhora da Conceição 17 , ☏ +351 218 442 001 , guest@pestana.com . Check-in: 16:00 , check-out: 11:00 . A four-star, 57-room pousada overlooking the bay, with outdoor swimming pool, restaurant, and room service. €90-165 . ( updated Jul 2021 )  ",
+  "related": [
+    "portugal",
+    "madeira",
+    "funchal"
+  ],
+  "image": {
+    "file": "/images/camara-de-lobos-wikivoyage-banner.webp",
+    "title": "Câmara de Lobos Wikivoyage Banner.jpg",
+    "artist": "Holger Uwe Schmitt",
+    "credit": "Own work",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:C%C3%A2mara_de_Lobos_Wikivoyage_Banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c9/C%C3%A2mara_de_Lobos_Wikivoyage_Banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/C%C3%A2mara_de_Lobos",
+    "revision": 4964638,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=4964638",
+    "history": "https://en.wikivoyage.org/w/index.php?title=C%C3%A2mara_de_Lobos&action=history",
+    "retrieved": "2026-10-17T13:11:27.805627+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Madeira",
+  "excerpt": "Câmara de Lobos is a city on the Portuguese island of Madeira."
+}

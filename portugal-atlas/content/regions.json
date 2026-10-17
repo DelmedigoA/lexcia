@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Northern Portugal",
+    "sourceTitle": "Northern Portugal",
+    "id": "north",
+    "guide": "northern-portugal"
+  },
+  {
+    "title": "Central Portugal",
+    "sourceTitle": "Beiras",
+    "id": "central",
+    "guide": "beiras"
+  },
+  {
+    "title": "Lisbon & the Tagus",
+    "sourceTitle": "Tagus Valley",
+    "id": "lisbon-region",
+    "guide": "tagus-valley"
+  },
+  {
+    "title": "Alentejo",
+    "sourceTitle": "Alentejo",
+    "id": "alentejo",
+    "guide": "alentejo"
+  },
+  {
+    "title": "Algarve",
+    "sourceTitle": "Algarve",
+    "id": "algarve",
+    "guide": "algarve"
+  },
+  {
+    "title": "Madeira",
+    "sourceTitle": "Madeira",
+    "id": "madeira",
+    "guide": "madeira"
+  },
+  {
+    "title": "Azores",
+    "sourceTitle": "Azores",
+    "id": "azores",
+    "guide": "azores"
+  }
+]

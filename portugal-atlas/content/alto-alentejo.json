@@ -1,0 +1,169 @@
+{
+  "title": "Alto Alentejo",
+  "slug": "alto-alentejo",
+  "displayTitle": "Alto Alentejo",
+  "region": "alentejo",
+  "kind": "destination",
+  "parent": "alentejo",
+  "intro": "Alto Alentejo is the northern half of the Alentejo region of Portugal.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><b>Alto Alentejo</b> is the northern half of the <a href=\"/guides/alentejo/\" title=\"Alentejo\">Alentejo</a> region of <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>.\n</p>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Alandroal\"><a href=\"https://en.wikivoyage.org/wiki/Alandroal\" title=\"Read on Wikivoyage (external source)\">Alandroal</a></span></span> — a municipality that includes <b>Terena</b>, a beautiful  village with an imposing castle</li>\n<li><span><span></span> <span id=\"Arraiolos\"><a href=\"https://en.wikivoyage.org/wiki/Arraiolos\" title=\"Read on Wikivoyage (external source)\">Arraiolos</a></span></span> — famous for its castle and its embroidered wool rugs and carpets</li>\n<li><span><span></span> <span id=\"Avis\"><a href=\"https://en.wikivoyage.org/wiki/Avis\" title=\"Read on Wikivoyage (external source)\">Avis</a></span></span> — historical home of the Knights of the Order of Aviz, with a castle</li>\n<li><span><span></span> <span id=\"Campo_Maior\"><a href=\"https://en.wikivoyage.org/wiki/Campo_Maior\" title=\"Read on Wikivoyage (external source)\">Campo Maior</a></span></span> – border town with a castle and a bone chapel</li>\n<li><span><span></span> <span id=\"Castelo_de_Vide\"><a href=\"/guides/castelo-de-vide/\" title=\"Castelo de Vide\">Castelo de Vide</a></span></span> — a romantic village with beautiful gardens, an abundance of vegetation, a mild climate, known as \"Sintra do Alentejo\"</li>\n<li><span><span></span> <span id=\"Elvas\"><a href=\"/guides/elvas/\" title=\"Elvas\">Elvas</a></span></span> — a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a> because of its excellent star fort</li>\n<li><span><span></span> <span id=\"Estremoz\"><a href=\"/guides/estremoz/\" title=\"Estremoz\">Estremoz</a></span></span> — known for its fine to medium marble that occurs in several colours that has been used to build the town</li>\n<li><span><span></span> <span id=\"Évora\"><a href=\"/guides/evora/\" title=\"Évora\">Évora</a></span></span> — a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a> with a well-preserved old town centre, still partially enclosed by medieval walls, and many monuments including a Roman Temple</li>\n<li><span><span></span> <span id=\"Monforte\"><a href=\"https://en.wikivoyage.org/wiki/Monforte\" title=\"Read on Wikivoyage (external source)\">Monforte</a></span></span> — farming with a castle and a Roman bridge</li>\n<li><span><span></span> <span id=\"Marvão\"><a href=\"/guides/marvao/\" title=\"Marvão\">Marvão</a></span></span> — a mountain village perched on the Serra de São Mamede</li>\n<li><span><span></span> <span id=\"Nisa\"><a href=\"https://en.wikivoyage.org/wiki/Nisa_(Portugal)\" title=\"Read on Wikivoyage (external source)\">Nisa</a></span></span> – municipality that's home to several castles</li>\n<li><span><span></span> <span id=\"Portalegre\"><a href=\"https://en.wikivoyage.org/wiki/Portalegre\" title=\"Read on Wikivoyage (external source)\">Portalegre</a></span></span> – cathedral city noted for its tapestries</li>\n<li><span><span></span> <span id=\"Redondo\"><a href=\"https://en.wikivoyage.org/wiki/Redondo\" title=\"Read on Wikivoyage (external source)\">Redondo</a></span></span> — town with a castle and a wine museum</li>\n<li><span><span></span> <span id=\"Reguengos_de_Monsaraz\"><a href=\"https://en.wikivoyage.org/wiki/Reguengos_de_Monsaraz\" title=\"Read on Wikivoyage (external source)\">Reguengos de Monsaraz</a></span></span> — one of the oldest Portuguese settlements of southern Portugal, with hundreds of megalithic monuments</li>\n<li><span><span></span> <span id=\"Vendas_Novas\"><a href=\"https://en.wikivoyage.org/wiki/Vendas_Novas\" title=\"Read on Wikivoyage (external source)\">Vendas Novas</a></span></span> — is famous for its <i>bifanas</i> (thinly sliced pork either fried and served on a soft roll with mustard), considered the best <i>bifana</i>s in Portugal</li>\n<li><span><span></span> <span id=\"Vila_Viçosa\"><a href=\"https://en.wikivoyage.org/wiki/Vila_Vi%C3%A7osa\" title=\"Read on Wikivoyage (external source)\">Vila Viçosa</a></span></span> — a historic, monumental town with a historic palace</li></ul>"
+    },
+    {
+      "id": "Other_destinations",
+      "title": "Other destinations",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Alto Alentejo (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">AHL-too uh-lehn-TAY-zhoo</a>, /ˈaɫ.tu ɐ.ɫẽ.ˈtɐj.ʒu/)\n</p>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": "<ul><li><a href=\"https://www.cp.pt/\"><b>Comboios de Portugal</b></a> (CP) provides intercity rail service on the <a href=\"https://www.cp.pt/StaticFiles/timetables/lisbon-evora-beja-trains.pdf\"><i>Linha do Alentejo</i></a> line from <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a> to <a href=\"/guides/evora/\" title=\"Évora\">Évora</a>. Regional trains run once daily on the <a href=\"https://www.cp.pt/StaticFiles/timetables/leste-line-badajoz-regional-trains.pdf\"><i>Linha do Leste</i></a> line from <a href=\"https://en.wikivoyage.org/wiki/Entroncamento\" title=\"Read on Wikivoyage (external source)\">Entroncamento</a> and <a href=\"https://en.wikivoyage.org/wiki/Badajoz\" title=\"Read on Wikivoyage (external source)\">Badajoz</a> (Spain) to <a href=\"https://en.wikivoyage.org/wiki/Portalegre\" title=\"Read on Wikivoyage (external source)\">Portalegre</a> and <a href=\"/guides/elvas/\" title=\"Elvas\">Elvas</a>.</li>\n<li><a href=\"https://rede-expressos.pt/en\"><b>Rede Expressos</b></a> offers long-distance intercity bus service from throughout the country to <a href=\"/guides/evora/\" title=\"Évora\">Évora</a>, <a href=\"https://en.wikivoyage.org/wiki/Portalegre\" title=\"Read on Wikivoyage (external source)\">Portalegre</a>, and many other cities in the region.</li></ul>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": ""
+    }
+  ],
+  "listings": [
+    {
+      "name": "Alandroal"
+    },
+    {
+      "name": "Arraiolos"
+    },
+    {
+      "name": "Avis"
+    },
+    {
+      "name": "Campo Maior"
+    },
+    {
+      "name": "Castelo de Vide"
+    },
+    {
+      "name": "Elvas"
+    },
+    {
+      "name": "Estremoz"
+    },
+    {
+      "name": "Évora"
+    },
+    {
+      "name": "Monforte"
+    },
+    {
+      "name": "Marvão"
+    },
+    {
+      "name": "Nisa"
+    },
+    {
+      "name": "Portalegre"
+    },
+    {
+      "name": "Redondo"
+    },
+    {
+      "name": "Reguengos de Monsaraz"
+    },
+    {
+      "name": "Vendas Novas"
+    },
+    {
+      "name": "Vila Viçosa"
+    }
+  ],
+  "words": 327,
+  "searchText": "Alto Alentejo is the northern half of the Alentejo region of Portugal . Alandroal — a municipality that includes Terena , a beautiful  village with an imposing castle Arraiolos — famous for its castle and its embroidered wool rugs and carpets Avis — historical home of the Knights of the Order of Aviz, with a castle Campo Maior – border town with a castle and a bone chapel Castelo de Vide — a romantic village with beautiful gardens, an abundance of vegetation, a mild climate, known as \"Sintra do Alentejo\" Elvas — a UNESCO World Heritage Site because of its excellent star fort Estremoz — known for its fine to medium marble that occurs in several colours that has been used to build the town Évora — a UNESCO World Heritage Site with a well-preserved old town centre, still partially enclosed by medieval walls, and many monuments including a Roman Temple Monforte — farming with a castle and a Roman bridge Marvão — a mountain village perched on the Serra de São Mamede Nisa – municipality that's home to several castles Portalegre – cathedral city noted for its tapestries Redondo — town with a castle and a wine museum Reguengos de Monsaraz — one of the oldest Portuguese settlements of southern Portugal, with hundreds of megalithic monuments Vendas Novas — is famous for its bifanas (thinly sliced pork either fried and served on a soft roll with mustard), considered the best bifana s in Portugal Vila Viçosa — a historic, monumental town with a historic palace  Alto Alentejo ( AHL-too uh-lehn-TAY-zhoo , /ˈaɫ.tu ɐ.ɫẽ.ˈtɐj.ʒu/) Comboios de Portugal (CP) provides intercity rail service on the Linha do Alentejo line from Lisbon to Évora . Regional trains run once daily on the Linha do Leste line from Entroncamento and Badajoz (Spain) to Portalegre and Elvas . Rede Expressos offers long-distance intercity bus service from throughout the country to Évora , Portalegre , and many other cities in the region.       ",
+  "related": [
+    "alentejo",
+    "portugal",
+    "castelo-de-vide",
+    "elvas",
+    "estremoz",
+    "evora",
+    "marvao",
+    "lisbon"
+  ],
+  "image": {
+    "file": "/images/alto-alentejo-wv-banner.webp",
+    "title": "Alto Alentejo WV Banner.jpg",
+    "artist": "Missvain Original author: User:Alvesgaspar",
+    "credit": "This image has been extracted from another file",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Alto_Alentejo_WV_Banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Alto_Alentejo_WV_Banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Alto_Alentejo",
+    "revision": 5378678,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5378678",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Alto_Alentejo&action=history",
+    "retrieved": "2026-10-17T13:11:27.417317+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Alentejo",
+  "excerpt": "Alto Alentejo is the northern half of the Alentejo region of Portugal."
+}

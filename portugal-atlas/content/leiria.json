@@ -1,0 +1,230 @@
+{
+  "title": "Leiria",
+  "slug": "leiria",
+  "displayTitle": "Leiria",
+  "region": "central",
+  "kind": "destination",
+  "parent": "beiras",
+  "intro": "Leiria is a city of 127,000 people (2011) in Beira Litoral in central Portugal. It is home to a restored medieval castle.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><span></span>\n<b>Leiria</b> is a city of 127,000 people (2011) in <a href=\"/guides/beira-litoral/\" title=\"Beira Litoral\">Beira Litoral</a> in central <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>. It is home to a restored medieval castle.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Leiria (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">lay-REE-uh</a>, /ɫɐj.ˈɾi.ɐ/) municipality has 126,879 residents (2011).\n</p>"
+    },
+    {
+      "id": "History",
+      "title": "History",
+      "level": 3,
+      "html": "<p>The region around Leiria was inhabited by a Celtiberian tribe, who established a settlement called \"Collippo\" around 7 km away. This settlement was occupied by the Romans, who expanded it. The stones of the ancient Roman town were used in the Middle Ages to build much of Leiria.\n</p><p>The Moors occupied the area until it was re-captured by the first King of Portugal, Afonso Henriques in 1135, during the Reconquista. South of Leiria in that period was the so-called \"no-man's land\", until regions further south (like Santarém and Lisbon) were permanently taken and re-populated by the Christians. \n</p><p>Afonso I of Portugal and Sancho I rebuilt the walls and the Leiria Castle to avoid new enemy incursions. Most of the population lived inside the protective city walls. The oldest church of Leiria, the Church of Saint Peter (Igreja de São Pedro), built in romanesque style in the last quarter of the 12th century, served the parish located outside the walls.\n</p><p>During the Middle Ages the importance of the village increased, and it was the setting of several cortes (feudal parliaments). In the late 14th century, King John I built a royal palace within the walls of the castle of Leiria. This palace, with elegant Gothic galleries that offered wonderful views of the town and surrounding landscape, was totally in ruins but was partially rebuilt in the 20th century. John I also sponsored the rebuilding in late Gothic style of the old Church of Our Lady of the Rock (Igreja de Nossa Senhora da Pedra), located inside the castle. The Cathedral of Leiria was built in the second half of the 16th century in a mix of late manueline and mannerist styles.\n</p><p>Compared to the Middle Ages, the subsequent history of Leiria is of relative decay. The city was stormed by the Peninsular War, namely in 1808 (the killing of Portela, by the troops of Gen. Margaron) and the Great Fire of 1811, caused by the Napoleonic troops retreating from the Lines of Torres Vedras. In the 20th century, however, its strategic position in the Portuguese territory favoured the development of a diversified industry.\n</p>"
+    },
+    {
+      "id": "Climate",
+      "title": "Climate",
+      "level": 3,
+      "html": "<p>It has mild and wet <b>winters</b>, relying on average 45 days of rain (312 mm) versus 45 dry days and 5 hours of sun per day. The average temperatures range between 15 °C (59 °F) and 7 °C (45 °F) and can go below freezing (&lt; 0 °C (32 °F)) on exceptionally colder days, favouring the onset of light frost or ice. Snowfalls in the city of Leiria typically occur once every 20 to 30 years. \n</p><p><b>Springs</b> are pleasant, but very rainy during the month of April. This season has an average of 39 days of rain 273 mm (11 in) to 51 dry days and 7 hours of sunshine per day. The average temperatures range between 20 °C (68 °F) and 11 °C (52 °F). \n</p><p>The <b>summers</b> bring high temperatures and sunshine, counting on average 18 days of rain 77 mm (3 in) compared with 82 dry days and 9 hours of sunshine per day. Average temperatures range between 27 °C (81 °F) and 15 °C (59 °F), the maximum can reach 35 °C (95 °F) on the hottest days. \n</p><p>The <b>autumn</b>, although mild, sometimes plagues the city with rain and wind and has on average 36 days of rain 339 mm (13 in) compared to 54 dry days and 6 hours of sun per day. Average temperatures range between 21 °C (70 °F) and 12 °C (54 °F).\n</p>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Visite_Leiria\"><a href=\"https://www.visiteleiria.pt/\">Visite Leiria</a></span>, <span>Câmara Municipal de Leiria, Largo da República</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351244839500\">+351 244 839 500</a></span></span>, <span><a href=\"mailto:cmleiria@cm-leiria.pt\">cmleiria@cm-leiria.pt</a></span>. <bdi></bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<p>The nearest airports of Leiria are Portela airport (in Lisbon) and Francisco Sá Carneiro airport (in Oporto).\n</p>"
+    },
+    {
+      "id": "By_train",
+      "title": "By train",
+      "level": 3,
+      "html": "<p>There are daily connections between Paris and Lisbon (Sud-Express), entering by the Vilar Formoso border; between Lisbon and Madrid, by the Marvão border; and between Porto and Vigo (Spain), by the Valença border. Train lines: North (Pombal) or West (Leiria 4 km)\n</p>"
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<p>There are 3 bus companies linking Porto (Internorte), Lisbon (Intercentro) and Faro (Intersul) to several European cities.\n</p>"
+    },
+    {
+      "id": "By_car",
+      "title": "By car",
+      "level": 3,
+      "html": "<ul><li>National road: IC2 (Lisbon - Oporto)</li>\n<li>Motorway: A1 (Lisbon - Oporto) or A8 (Lisbon - Leiria)</li></ul>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Castle_(Castelo_de_Leiria)\"><a href=\"https://www.visiteleiria.pt/en/pontos-de-interesse/heritage/leiria-castle/\">Castle (Castelo de Leiria)</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351244839670\">+351 244 839 670</a></span></span>. <bdi>The castle of Leiria was built by D. Afonso Henriques in the 12th century to create a line of defence against the Arabs. The keep (Tower of Menagem) was begun in the 14th century. It was badly damaged during the French invasion, and restored in the early 20th century.</bdi><span> (<span><span>updated Nov 2023</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Museu_de_Leiria\"><a href=\"https://www.visiteleiria.pt/pontos-de-interesse/museus/museu-de-leiria/\">Museu de Leiria</a></span>, <span>Rua Tenente Valadim 41</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351244839677\">+351 244 839 677</a></span></span>. <span>Daily 09:30 – 17:30</span>. <bdi>Civic museum housed in the 16th-century Convent of St. Agostinho.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Museu_da_Imagem_em_Movimento_-_m|i|mo\"><a href=\"https://www.visiteleiria.pt/pontos-de-interesse/museus/mimo-museu-da-imagem-em-movimento/\">Museu da Imagem em Movimento - m|i|mo</a></span> (<span>Museum of the Moving Image</span>), <span>Largo de São Pedro 3</span> (<span>Leiria Castle area</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351244839675\">+351 244 839 675</a></span></span>. <span>Daily 09:30 – 17:30</span>. <bdi>Portugal's only Museum of the Moving Image.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Paper_museum\"><a href=\"https://www.visiteleiria.pt/pontos-de-interesse/museus/moinho-do-papel/\">Paper museum</a></span> (<span>Museu do moinho do papel</span>), <span>Rua Fábrica do Papel, n.º 13</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351244839672\">+351 244 839 672</a></span></span>. <span>Apr-Sep: Mon-Fri 09:30 – 12:00, 14:30-17:00; Sat Sun holidays 09:30 – 18:00; Oct-Mar: Mon-Fri 09:30 – 12:00, 14:30-17:00; Sat 14:30-17:00</span>. <bdi>At the site of Portugal's first paper mill.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Sanctuary_of_Our_Lady_of_the_Incarnation\"><a href=\"https://www.visiteleiria.pt/en/pontos-de-interesse/places-of-worship/shrine-of-our-lady-of-the-incarnation/\">Sanctuary of Our Lady of the Incarnation</a></span> (<span>Santuário de Nossa Senhora da Encarnação</span>), <span>Rua de Nossa Senhora da Encarnação – 2410-143 Leiria</span> (<span>Walk up the stairs, or park at the parking lot on top.</span>). <bdi>A small sanctuary on top of a long staircase, overlooking the city.</bdi><span> (<span><span>updated Nov 2023</span></span>)</span></bdi></li>\n<li>Rivers Lis &amp; Lena</li>\n<li>Pinhal (pinewood forest) de Leiria</li>\n<li>Beaches</li>\n<li>Viera de Leiria &amp; S.Pedro de Muel.</li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li>Camping, enjoy the beaches, Berlengas isles, off the coast of Peniche (summer only).</li>\n<li>Castle of Leiria: As well as being a site of historical interest, the Castle of Leiria provides a venue for cultural events . Situated close to the castle, the Church of Saint Peter (Igreja de São Pedro) is used as the venue of Leiria's annual festival of music.</li>\n<li>Theaters/Cinema: The Theatre Miguel Franco in the market Sant'Ana (Mercado de Sant'Ana) and The Theatre José Lúcio da Silva are venues for theatre, music and dance performances, as well as cinema.</li>\n<li>Day &amp; Night Life: The city is the birthplace of several leading Portuguese poets, such as Afonso Lopes Vieira and Francisco Rodrigues Lobo, after whom the central square (Praca Rodrigues Lobo) is named. Today the square is home to a thriving café culture, as well as being regularly used for cultural events. There's also many festivals in the region mostly in the summer.</li>\n<li>Football: UD Leiria were promoted in 2023 and play soccer in Liga Portugal 2, the second tier. Their home ground is Estádio Dr Magalhães Pessoa, capacity 23,900.</li></ul>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": "<p>The town hosts a monthly antiques market.\n</p>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>Leiria's gastronomy offers a good variety of Portuguese dishes including fresh fish dishes and the famous \"Leitao\" da Boavista (barbecued piglet).\n</p><p>The nearby village of Cortes is known for \"Migas\", a dish of corn bread with spinach, garlic and olive oil which is eaten as an accompaniment to fish or meat.\n</p><p>Local sweet pastry: Brisas do Liz and Lampreia d'Ovos which was originally made by the local convent.\n</p><ul><li><bdi><span></span> <span id=\"Casinha_Velha\"><a href=\"https://www.casinhavelha.com/\">Casinha Velha</a></span>, <span>Morada: Rua Professores Portelas 23, Marrazes</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351244855355\">+351 244 855 355</a></span></span>, <span><a href=\"mailto:geral@casinhavelha.com\">geral@casinhavelha.com</a></span>. <span>Mon–Sat 12:30–15:00 &amp; 19:30–22:00, Sun 12:30–15:00</span>. <bdi>Homey and rustic. A wine enthusiast's favourite. Michelin rated as Bib Gourmand for \"good quality, good value cooking\".</bdi> <span><abbr>€40-95</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Coconuts_Restaurante\"><a href=\"https://coconutsleiria.eatbu.com/\">Coconuts Restaurante</a></span>, <span>Centro Comercial Dom Dinis Loja 606, Avenida Combatentes da Grande Guerra 42</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351960064126\">+351 960 064 126</a></span></span>, <span><a href=\"mailto:cyrano_leiria@hotmail.com\">cyrano_leiria@hotmail.com</a></span>. <span>Tue–Sat 12:00–15:00 &amp; 19:00–22:00, closed Sun Mon</span>. <bdi>Vegan and vegetarian Indo-Portuguese cooking.</bdi> <span><abbr>€7-12</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Restaurante_Luna\"><a href=\"https://www.facebook.com/restaurantelunaleiria\">Restaurante Luna</a></span>, <span>Rua Glória Barata Rodrigues 20, Quinta de Santo António</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351244815977\">+351 244 815 977</a></span></span>. <span>Mon Wed–Fri 12:00–14:30 &amp; 19:30–22:30, Tue 12:00–14:30, Sat 19:30–22:30, closed Sun</span>. <bdi></bdi> <span><abbr>€10-50</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<p>Leiria, being a university town has a lively nightlife with many bars and cafes.\n</p><p>The central square of Rodriges Lobo has many cafes and bars with outdoor seating and views to the Castle. Not far from there is the \"Gato Preto\" cafe &amp; bar (the Black Cat) which is known for the unusual tiles on its exterior.\n</p>"
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Ibis_Leiria_Fátima_Hotel\"><a href=\"https://all.accor.com/hotel/3340/index.en.shtml\">Ibis Leiria Fátima Hotel</a></span>, <span>Quinta do Taborda 56</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351244816700\">+351 244 816 700</a></span></span>. <span>Check-in: <span>12:00</span>, check-out: <span>12:00</span></span>. <bdi>2-star hotel.</bdi><span> (<span><span>updated Oct 2019</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Lisotel\"><a href=\"https://www.lisotel.com/\">Lisotel</a></span>, <span>Estrada Nacional 109, km 161.4, Regueira de Pontes</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351244820460\">+351 244 820 460</a></span></span>, <span><a href=\"mailto:info@lisotel.com\">info@lisotel.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi>4-star hotel.</bdi><span> (<span><span>updated Oct 2019</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><a href=\"/guides/fatima/\" title=\"Fátima\">Fátima</a> (Sanctuary of Our Lady) – Place of the world-famous Marian apparitions.</li>\n<li><a href=\"/guides/batalha/\" title=\"Batalha\">Batalha</a> (Monastery)</li>\n<li><a href=\"/guides/alcobaca/\" title=\"Alcobaça\">Alcobaça</a> (Monastery)</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Tomar\" title=\"Read on Wikivoyage (external source)\">Tomar</a> (Castle and the Convent of Christ)</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Nazar%C3%A9\" title=\"Read on Wikivoyage (external source)\">Nazaré</a> (Beach of the Guinness Book Records big waves surfed)</li></ul><table>\n<tbody><tr>\n<td><b>Routes through Leiria</b>\n</td></tr>\n</tbody></table><table>\n<tbody><tr>\n<td><b><a href=\"/guides/porto/\" title=\"Porto\">Porto</a></b> ← <a href=\"/guides/coimbra/\" title=\"Coimbra\">Coimbra</a> ←\n</td>\n<td> <b>N</b> <span><span></span></span> <b>S</b> \n</td>\n<td>→ <a href=\"/guides/fatima/\" title=\"Fátima\">Fátima</a> → <b><a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a></b>\n</td></tr></tbody></table>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Visite Leiria",
+      "address": "Câmara Municipal de Leiria, Largo da República",
+      "phone": "+351 244 839 500",
+      "description": ""
+    },
+    {
+      "name": "Castle (Castelo de Leiria)",
+      "phone": "+351 244 839 670",
+      "description": "The castle of Leiria was built by D. Afonso Henriques in the 12th century to create a line of defence against the Arabs. The keep (Tower of Menagem) was begun in the 14th century. It was badly damaged during the French invasion, and restored in the early 20th century."
+    },
+    {
+      "name": "Museu de Leiria",
+      "address": "Rua Tenente Valadim 41",
+      "phone": "+351 244 839 677",
+      "hours": "Daily 09:30 – 17:30",
+      "description": "Civic museum housed in the 16th-century Convent of St. Agostinho."
+    },
+    {
+      "name": "Museu da Imagem em Movimento - m|i|mo",
+      "address": "Largo de São Pedro 3",
+      "phone": "+351 244 839 675",
+      "hours": "Daily 09:30 – 17:30",
+      "description": "Portugal's only Museum of the Moving Image."
+    },
+    {
+      "name": "Paper museum",
+      "address": "Rua Fábrica do Papel, n.º 13",
+      "phone": "+351 244 839 672",
+      "hours": "Apr-Sep: Mon-Fri 09:30 – 12:00, 14:30-17:00; Sat Sun holidays 09:30 – 18:00; Oct-Mar: Mon-Fri 09:30 – 12:00, 14:30-17:00; Sat 14:30-17:00",
+      "description": "At the site of Portugal's first paper mill."
+    },
+    {
+      "name": "Sanctuary of Our Lady of the Incarnation",
+      "address": "Rua de Nossa Senhora da Encarnação – 2410-143 Leiria",
+      "description": "A small sanctuary on top of a long staircase, overlooking the city."
+    },
+    {
+      "name": "Casinha Velha",
+      "address": "Morada: Rua Professores Portelas 23, Marrazes",
+      "phone": "+351 244 855 355",
+      "hours": "Mon–Sat 12:30–15:00 & 19:30–22:00, Sun 12:30–15:00",
+      "price": "€40-95",
+      "description": "Homey and rustic. A wine enthusiast's favourite. Michelin rated as Bib Gourmand for \"good quality, good value cooking\"."
+    },
+    {
+      "name": "Coconuts Restaurante",
+      "address": "Centro Comercial Dom Dinis Loja 606, Avenida Combatentes da Grande Guerra 42",
+      "phone": "+351 960 064 126",
+      "hours": "Tue–Sat 12:00–15:00 & 19:00–22:00, closed Sun Mon",
+      "price": "€7-12",
+      "description": "Vegan and vegetarian Indo-Portuguese cooking."
+    },
+    {
+      "name": "Restaurante Luna",
+      "address": "Rua Glória Barata Rodrigues 20, Quinta de Santo António",
+      "phone": "+351 244 815 977",
+      "hours": "Mon Wed–Fri 12:00–14:30 & 19:30–22:30, Tue 12:00–14:30, Sat 19:30–22:30, closed Sun",
+      "price": "€10-50",
+      "description": ""
+    },
+    {
+      "name": "Ibis Leiria Fátima Hotel",
+      "address": "Quinta do Taborda 56",
+      "phone": "+351 244 816 700",
+      "description": "2-star hotel."
+    },
+    {
+      "name": "Lisotel",
+      "address": "Estrada Nacional 109, km 161.4, Regueira de Pontes",
+      "phone": "+351 244 820 460",
+      "description": "4-star hotel."
+    }
+  ],
+  "words": 1561,
+  "searchText": "Leiria is a city of 127,000 people (2011) in Beira Litoral in central Portugal . It is home to a restored medieval castle. Leiria ( lay-REE-uh , /ɫɐj.ˈɾi.ɐ/) municipality has 126,879 residents (2011). The region around Leiria was inhabited by a Celtiberian tribe, who established a settlement called \"Collippo\" around 7 km away. This settlement was occupied by the Romans, who expanded it. The stones of the ancient Roman town were used in the Middle Ages to build much of Leiria. The Moors occupied the area until it was re-captured by the first King of Portugal, Afonso Henriques in 1135, during the Reconquista. South of Leiria in that period was the so-called \"no-man's land\", until regions further south (like Santarém and Lisbon) were permanently taken and re-populated by the Christians. Afonso I of Portugal and Sancho I rebuilt the walls and the Leiria Castle to avoid new enemy incursions. Most of the population lived inside the protective city walls. The oldest church of Leiria, the Church of Saint Peter (Igreja de São Pedro), built in romanesque style in the last quarter of the 12th century, served the parish located outside the walls. During the Middle Ages the importance of the village increased, and it was the setting of several cortes (feudal parliaments). In the late 14th century, King John I built a royal palace within the walls of the castle of Leiria. This palace, with elegant Gothic galleries that offered wonderful views of the town and surrounding landscape, was totally in ruins but was partially rebuilt in the 20th century. John I also sponsored the rebuilding in late Gothic style of the old Church of Our Lady of the Rock (Igreja de Nossa Senhora da Pedra), located inside the castle. The Cathedral of Leiria was built in the second half of the 16th century in a mix of late manueline and mannerist styles. Compared to the Middle Ages, the subsequent history of Leiria is of relative decay. The city was stormed by the Peninsular War, namely in 1808 (the killing of Portela, by the troops of Gen. Margaron) and the Great Fire of 1811, caused by the Napoleonic troops retreating from the Lines of Torres Vedras. In the 20th century, however, its strategic position in the Portuguese territory favoured the development of a diversified industry. It has mild and wet winters , relying on average 45 days of rain (312 mm) versus 45 dry days and 5 hours of sun per day. The average temperatures range between 15 °C (59 °F) and 7 °C (45 °F) and can go below freezing (< 0 °C (32 °F)) on exceptionally colder days, favouring the onset of light frost or ice. Snowfalls in the city of Leiria typically occur once every 20 to 30 years. Springs are pleasant, but very rainy during the month of April. This season has an average of 39 days of rain 273 mm (11 in) to 51 dry days and 7 hours of sunshine per day. The average temperatures range between 20 °C (68 °F) and 11 °C (52 °F). The summers bring high temperatures and sunshine, counting on average 18 days of rain 77 mm (3 in) compared with 82 dry days and 9 hours of sunshine per day. Average temperatures range between 27 °C (81 °F) and 15 °C (59 °F), the maximum can reach 35 °C (95 °F) on the hottest days. The autumn , although mild, sometimes plagues the city with rain and wind and has on average 36 days of rain 339 mm (13 in) compared to 54 dry days and 6 hours of sun per day. Average temperatures range between 21 °C (70 °F) and 12 °C (54 °F). Visite Leiria , Câmara Municipal de Leiria, Largo da República , ☏ +351 244 839 500 , cmleiria@cm-leiria.pt . ( updated Jun 2021 )  The nearest airports of Leiria are Portela airport (in Lisbon) and Francisco Sá Carneiro airport (in Oporto). There are daily connections between Paris and Lisbon (Sud-Express), entering by the Vilar Formoso border; between Lisbon and Madrid, by the Marvão border; and between Porto and Vigo (Spain), by the Valença border. Train lines: North (Pombal) or West (Leiria 4 km) There are 3 bus companies linking Porto (Internorte), Lisbon (Intercentro) and Faro (Intersul) to several European cities. National road: IC2 (Lisbon - Oporto) Motorway: A1 (Lisbon - Oporto) or A8 (Lisbon - Leiria)  Castle (Castelo de Leiria) , ☏ +351 244 839 670 . The castle of Leiria was built by D. Afonso Henriques in the 12th century to create a line of defence against the Arabs. The keep (Tower of Menagem) was begun in the 14th century. It was badly damaged during the French invasion, and restored in the early 20th century. ( updated Nov 2023 ) Museu de Leiria , Rua Tenente Valadim 41 , ☏ +351 244 839 677 . Daily 09:30 – 17:30 . Civic museum housed in the 16th-century Convent of St. Agostinho. ( updated Feb 2021 ) Museu da Imagem em Movimento - m|i|mo ( Museum of the Moving Image ), Largo de São Pedro 3 ( Leiria Castle area ), ☏ +351 244 839 675 . Daily 09:30 – 17:30 . Portugal's only Museum of the Moving Image. ( updated Feb 2021 ) Paper museum ( Museu do moinho do papel ), Rua Fábrica do Papel, n.º 13 , ☏ +351 244 839 672 . Apr-Sep: Mon-Fri 09:30 – 12:00, 14:30-17:00; Sat Sun holidays 09:30 – 18:00; Oct-Mar: Mon-Fri 09:30 – 12:00, 14:30-17:00; Sat 14:30-17:00 . At the site of Portugal's first paper mill. ( updated Feb 2021 ) Sanctuary of Our Lady of the Incarnation ( Santuário de Nossa Senhora da Encarnação ), Rua de Nossa Senhora da Encarnação – 2410-143 Leiria ( Walk up the stairs, or park at the parking lot on top. ). A small sanctuary on top of a long staircase, overlooking the city. ( updated Nov 2023 ) Rivers Lis & Lena Pinhal (pinewood forest) de Leiria Beaches Viera de Leiria & S.Pedro de Muel. Camping, enjoy the beaches, Berlengas isles, off the coast of Peniche (summer only). Castle of Leiria: As well as being a site of historical interest, the Castle of Leiria provides a venue for cultural events . Situated close to the castle, the Church of Saint Peter (Igreja de São Pedro) is used as the venue of Leiria's annual festival of music. Theaters/Cinema: The Theatre Miguel Franco in the market Sant'Ana (Mercado de Sant'Ana) and The Theatre José Lúcio da Silva are venues for theatre, music and dance performances, as well as cinema. Day & Night Life: The city is the birthplace of several leading Portuguese poets, such as Afonso Lopes Vieira and Francisco Rodrigues Lobo, after whom the central square (Praca Rodrigues Lobo) is named. Today the square is home to a thriving café culture, as well as being regularly used for cultural events. There's also many festivals in the region mostly in the summer. Football: UD Leiria were promoted in 2023 and play soccer in Liga Portugal 2, the second tier. Their home ground is Estádio Dr Magalhães Pessoa, capacity 23,900. The town hosts a monthly antiques market. Leiria's gastronomy offers a good variety of Portuguese dishes including fresh fish dishes and the famous \"Leitao\" da Boavista (barbecued piglet). The nearby village of Cortes is known for \"Migas\", a dish of corn bread with spinach, garlic and olive oil which is eaten as an accompaniment to fish or meat. Local sweet pastry: Brisas do Liz and Lampreia d'Ovos which was originally made by the local convent. Casinha Velha , Morada: Rua Professores Portelas 23, Marrazes , ☏ +351 244 855 355 , geral@casinhavelha.com . Mon–Sat 12:30–15:00 & 19:30–22:00, Sun 12:30–15:00 . Homey and rustic. A wine enthusiast's favourite. Michelin rated as Bib Gourmand for \"good quality, good value cooking\". €40-95 . ( updated Jun 2021 ) Coconuts Restaurante , Centro Comercial Dom Dinis Loja 606, Avenida Combatentes da Grande Guerra 42 , ☏ +351 960 064 126 , cyrano_leiria@hotmail.com . Tue–Sat 12:00–15:00 & 19:00–22:00, closed Sun Mon . Vegan and vegetarian Indo-Portuguese cooking. €7-12 . ( updated Jun 2021 ) Restaurante Luna , Rua Glória Barata Rodrigues 20, Quinta de Santo António , ☏ +351 244 815 977 . Mon Wed–Fri 12:00–14:30 & 19:30–22:30, Tue 12:00–14:30, Sat 19:30–22:30, closed Sun . €10-50 . ( updated Jun 2021 ) Leiria, being a university town has a lively nightlife with many bars and cafes. The central square of Rodriges Lobo has many cafes and bars with outdoor seating and views to the Castle. Not far from there is the \"Gato Preto\" cafe & bar (the Black Cat) which is known for the unusual tiles on its exterior. Ibis Leiria Fátima Hotel , Quinta do Taborda 56 , ☏ +351 244 816 700 . Check-in: 12:00 , check-out: 12:00 . 2-star hotel. ( updated Oct 2019 ) Lisotel , Estrada Nacional 109, km 161.4, Regueira de Pontes , ☏ +351 244 820 460 , info@lisotel.com . Check-in: 15:00 , check-out: 12:00 . 4-star hotel. ( updated Oct 2019 ) Fátima (Sanctuary of Our Lady) – Place of the world-famous Marian apparitions. Batalha (Monastery) Alcobaça (Monastery) Tomar (Castle and the Convent of Christ) Nazaré (Beach of the Guinness Book Records big waves surfed) Routes through Leiria Porto ← Coimbra ← N S → Fátima → Lisbon",
+  "related": [
+    "beira-litoral",
+    "portugal",
+    "fatima",
+    "batalha",
+    "alcobaca",
+    "porto",
+    "coimbra",
+    "lisbon"
+  ],
+  "image": {
+    "file": "/images/leiria-banner.webp",
+    "title": "Leiria banner.jpg",
+    "artist": "LEIRIA_PANORAMICA.jpg : JMFH4778 derivative work: Inkey",
+    "credit": "This file was derived from: LEIRIA PANORAMICA.jpg :",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Leiria_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Leiria_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Leiria",
+    "revision": 5352928,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5352928",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Leiria&action=history",
+    "retrieved": "2026-10-17T13:11:29.259153+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Beira Litoral",
+  "excerpt": "Leiria is a city of 127,000 people (2011) in Beira Litoral in central Portugal. It is home to a restored medieval castle."
+}

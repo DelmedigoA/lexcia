@@ -1,0 +1,580 @@
+{
+  "title": "Coimbra",
+  "slug": "coimbra",
+  "displayTitle": "Coimbra",
+  "region": "central",
+  "kind": "destination",
+  "parent": "beiras",
+  "intro": "Coimbra is the traditional capital city of Central Portugal's historic Beira Litoral region. With over 140,000 inhabitants (2021), it is the largest municipality there and one of Portugal's four largest metropolises. An important urban and administrative centre since the birth of the Portuguese nation, the city has amassed vast cultural and architectural heritage and is the seat of one of world's oldest universities, a UNESCO World Heritage Site.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><b>Coimbra</b> is the traditional capital city of Central <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>'s historic <a href=\"/guides/beira-litoral/\" title=\"Beira Litoral\">Beira Litoral</a> region. With over 140,000 inhabitants (2021), it is the largest municipality there and one of Portugal's four largest metropolises. An important urban and administrative centre since the birth of the Portuguese nation, the city has amassed vast cultural and architectural heritage and is the seat of one of world's oldest universities, a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a>.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Coimbra (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">koo-EEM-bruh</a>, <a href=\"https://en.wikipedia.org/wiki/International_Phonetic_Alphabet\" title=\"wikipedia:International Phonetic Alphabet\">IPA</a>: <span>/kuˈĩbɾɐ/</span>) was settled by the Romans as Aeminium in the 1st century CE.\n</p>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Posto_Municipal_de_Turismo\"><a href=\"https://visitecoimbra.pt/\">Posto Municipal de Turismo</a></span> (<span>Municipal Tourist Office</span>), <span>A Rua António Granjo Nº6</span> (<span>Antiga Estação Coimbra</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351239857500\">+351 239 857 500</a></span></span>, <span><a href=\"mailto:turismo@cm-coimbra.pt\">turismo@cm-coimbra.pt</a></span>. <span>Mon—Fri 9:30—13:00 &amp; 14:00—16:30</span>. <bdi></bdi><span> (<span><span>updated Aug 2026</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<p>The most convenient airports for Coimbra are (in order of distance):\n</p><ul><li><a href=\"http://www.porto-airport.com/\">Francisco Sa Carneiro Airport</a> (<b><a href=\"/guides/porto/\" title=\"Porto\">OPO</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>) - <a href=\"/guides/porto/\" title=\"Porto\">Porto</a></li>\n<li><a href=\"http://www.ana.pt\">Portela Airport</a> (<b><a href=\"https://en.wikivoyage.org/wiki/Lisbon_Airport#By_plane\" title=\"Read on Wikivoyage (external source)\">LIS</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>) - <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a></li></ul>"
+    },
+    {
+      "id": "By_train",
+      "title": "By train",
+      "level": 3,
+      "html": "<p>Coimbra has two main train stations:\n</p><ul><li><bdi><span></span> <span id=\"Estação_Ferroviária_de_Coimbra\">Estação Ferroviária de Coimbra</span> (<span>Coimbra-A Railway Station</span>), <span>Rua António Granjo CP</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351707210220\">+351 707 210 220</a></span></span>. <bdi>Coimbra-A is a historic train station built near the riverbank close to the medieval city centre. Although long-distance train services to the station were discontinued in January 2025, the station is still in use, now primarily serving local trains.</bdi><span> (<span><span>updated Aug 2026</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Estação_Ferroviária_de_Coimbra-B\"><a href=\"https://www.cp.pt/pt/pesquisa-estacao-detalhe/94-36004\">Estação Ferroviária de Coimbra-B</a></span> (<span>Coimbra-B railway station</span>), <span>Rua do Padrão, Eiras, S. Bartolomeu</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351707210220\">+351 707 210 220</a></span></span>. <bdi>Coimbra-B is a through station on the Lisbon-Porto line, served by high-speed long-distance <i>Alfa Pendular</i> trains. It is quite remotely located, and the best you can do when arriving on an <i>Alfa</i> is to change to a local train to Coimbra-A, as all local trains serve both stations and your long-distance ticket will cover this stretch as well. Travel time to Coimbra-B is about 1 hr from <a href=\"/guides/porto/\" title=\"Porto\">Porto</a> and about 1 hr 45 min from <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>. Train times (from any location) can be found on the <a href=\"https://www.cp.pt\">CP National Rail site</a>.</bdi><span> (<span><span>updated Aug 2026</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "By_car",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>The principal motorway serving Coimbra is the <b>A1</b> (<i>Autoestrada do Norte</i>), with several exits that will be put you about 10 min away from the city centre. Driving from <a href=\"/guides/porto/\" title=\"Porto\">Porto</a> takes about 1 hr, and <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a> is about 2 hr away.\n</p><p>The <b>A13</b> motorway (<i>Autoestrada do Pinhal Interior</i>) provides a link from <a href=\"https://en.wikivoyage.org/wiki/Entroncamento\" title=\"Read on Wikivoyage (external source)\">Entroncamento</a> and <a href=\"https://en.wikivoyage.org/wiki/Tomar\" title=\"Read on Wikivoyage (external source)\">Tomar</a>.\n</p><p>The <b>A14</b> motorway (<i>Autoestrada do Baixo Mondego</i>) provides access from the coastal city of <a href=\"https://en.wikivoyage.org/wiki/Figueira_da_Foz\" title=\"Read on Wikivoyage (external source)\">Figueira da Foz</a>.\n</p><p>The <b>IP3</b> road serves <a href=\"https://en.wikivoyage.org/wiki/Chaves\" title=\"Read on Wikivoyage (external source)\">Chaves</a> and <a href=\"/guides/viseu/\" title=\"Viseu\">Viseu</a>.\n</p>"
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Terminal_Rodoviário_de_Coimbra\">Terminal Rodoviário de Coimbra</span> (<span>Coimbra Bus Station</span>), <span>Avenida Fernão de Magalhães</span>. <bdi>The bus station is easily reached by local bus or on foot (a 10-min walk from the city centre). It has destinations for the whole of Portugal (with changes for some far away destinations), and it's faster and fares are normally cheaper than the train.</bdi><span> (<span><span>updated Aug 2021</span></span>)</span></bdi></li></ul><p>Some buses (e.g. Flixbus) don't use the bus station, but leave from a parking lot further up the same road, underneath the flyover, opposite the Audi car showroom by the roundabout. Halfway between the bus station and Coimbra-B railway station. No ticket office. No benches. There is a bar just across the road and a 24 hour hamburger place 2 minutes away towards the town centre.\n</p>"
+    },
+    {
+      "id": "By_shared_shuttle",
+      "title": "By shared shuttle",
+      "level": 3,
+      "html": "<p>There are a few companies providing door-to-door shared shuttle service to Coimbra from either Lisbon or Porto. It is a budget option with more personal service than the bus. You can get to Coimbra from your hotel in Lisbon or Porto with shared shuttle, and get off by the square Largo da Portagem, which is the area visitors ususally start their touring. If you are coming from airports, you can go with <a href=\"https://www.airportshuttle.pt/\">Coimbra <b>airport shuttle</b></a>. It is recommended to book ticket in advance to guarantee a seat.\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_foot",
+      "title": "By foot",
+      "level": 3,
+      "html": "<p>Most of the things to see and do in Coimbra and most of the places to eat, drink, and sleep are within reasonable walking distance of each other and of the rail station in Baixa. There are several hotels, restaurants, cafés, pastry shops, and nightclubs.\n</p><p>Most monuments are in Baixa and Santa Clara (across the Mondego river). Smaller shops, restaurants, and hotels are mostly in Baixa and Santa Clara. Major shopping malls are in Alta, by Solum, and near the municipal stadium/pool.\n</p>"
+    },
+    {
+      "id": "By_bus_2",
+      "title": "By bus",
+      "level": 3,
+      "html": "<p>The <a href=\"http://www.smtuc.pt/\">SMTUC</a> (<i>Serviços Municipalizados de Transportes Urbanos de Coimbra</i>) operates several <a href=\"https://www.smtuc.pt/rede-de-transportes/\">bus routes</a> in and around Coimbra.\n</p><p>The <a href=\"https://www.smtuc.pt/servicos/linha-azul/\">\"Pantufinhas\"</a> or <i>Linha Azul</i> (Blue Line) provides transport in the historical city centre, and a link between the lower and upper town.\n</p>"
+    },
+    {
+      "id": "By_elevator",
+      "title": "By elevator",
+      "level": 3,
+      "html": "<p>There's an elevator (<a href=\"https://www.smtuc.pt/servicos/elevador-do-mercado/\"><i>Elevador do Mercado</i></a>) that connects Rua Padre António Vieira with Rua Olímpio Nicolau Rui Fernandes (next to Mercado Municipal D Pedro V). A valid SMTUC ticket is necessary to gain access.\n</p>"
+    },
+    {
+      "id": "By_car_2",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>Coimbra is a hard city to drive in as it was built around medieval structures. Also, finding a parking spot can be difficult. The best option for visiting Coimbra is to find a hotel with parking or to park near the city centre and then walk around. The main attractions are in the city centre and within walking distance of each other.\n</p><p>Coimbra Baixa is the lower city (downtown). Alta is the highest part of the city, which is also difficult to drive around.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Secular_monuments",
+      "title": "Secular monuments",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"University_of_Coimbra\"><a href=\"https://www.uc.pt/\">University of Coimbra</a></span>. <bdi>Founded in <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a> in 1290, the second oldest university on the Iberian peninsula eventually found a permanent home in Coimbra in 1537. Among the beautiful buildings on the campus is the <i>Biblioteca Joanina</i> library. The university enrolls over 20,000 students, and famous alumni include national poet Luís de Camões and Portuguese dictator António de Oliveira Salazar. It's been a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a> since 2013.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Medieval_Downtown\">Medieval Downtown</span> (<span>Sao Tiago, Sao Bartolomeu</span>). <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Quinta_das_Lagrimas\">Quinta das Lagrimas</span> (<span>Estate of Tears</span>). <bdi>It has a tragic story of love.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Estádio_Cidade_de_Coimbra\">Estádio Cidade de Coimbra</span> (<span>Eurostadium Cidade de Coimbra</span>). <bdi>One of the Euro 2004 sites.</bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "Religious_monuments",
+      "title": "Religious monuments",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Old_Cathedral_of_Coimbra\">Old Cathedral of Coimbra</span> (<span>Sé Velha de Coimbra</span>). <bdi>A 12th-century Romanesque cathedral. In the 16th century, many Renaissance features were added.</bdi><span> (<span><span>updated Aug 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"New_Cathedral_of_Coimbra_de_Coimbra\">New Cathedral of Coimbra de Coimbra</span> (<span>Sé Nova</span>). <bdi>A late-16th- and 17th-century Mannerist and Baroque cathedral.</bdi><span> (<span><span>updated Aug 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Monastery_of_the_Holy_Cross\"><a href=\"https://igrejascruz.webnode.pt/\">Monastery of the Holy Cross</a></span> (<span>Mosteiro de Santa Cruz</span>), <span>Rua Martins de Carvalho 3</span> (<span>Praça 8 de Maio</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351239822941\">+351 239 822 941</a></span></span>, <span><a href=\"mailto:igrejasantacruz@gmail.com\">igrejasantacruz@gmail.com</a></span>. <span>Mon–Sat 11:30–16:30, Sun 14:00–17:00</span>. <bdi>Founded in 1131, this church is a national monument where Portugal's first two kings, Afonso Henriques and Sancho I, are buried. It was built in Romanesque style, and became Manueline over the centuries through renovations.</bdi> <span><abbr>€3</abbr></span>.<span> (<span><span>updated Aug 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Old_Monastery_of_Saint_Clare\">Old Monastery of Saint Clare</span> (<span>Mosteiro de Santa Clara-a-Velha</span>). <bdi>13th-century Gothic monastery/convent on the bank of the River Mondego. It's a national monument.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Memorial_da_Irmã_Lúcia\"><a href=\"https://lucia.pt/memorial/\">Memorial da Irmã Lúcia</a></span> (<span>Sister Lúcia's Memorial</span>), <span>Carmelo de Santa Teresa, Rua de Santa Teresa 16</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239781638\">+351 239 781 638</a></span></span>, <span><a href=\"mailto:memorialirmalucia@carmelitas.pt\">memorialirmalucia@carmelitas.pt</a></span>. <span>Tue-Sun 15:00–18:00, Mon closed</span>. <bdi>Dedicated to Sister Lúcia, one of three shepherd children who the Blessed Virgin Mary appeared to at <a href=\"/guides/fatima/\" title=\"Fátima\">Fátima</a> in 1917. She later became a Carmelite sister.</bdi> <span><abbr>€1.50</abbr>, children under 12 free</span>.<span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Parks_and_gardens",
+      "title": "Parks and gardens",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Botanical_Garden\">Botanical Garden</span> (<span>Jardim Botânico da Universidade de Coimbra</span>). <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Parque_Dr._Manuel_Braga\"><a href=\"https://www.cm-coimbra.pt/en/areas/visit/ver-e-fazer/parques-e-jardins/parque-dr-manuel-braga\">Parque Dr. Manuel Braga</a></span> (<span>Parque da Cidade, Dr. Manuel Braga Park</span>). <bdi>City park on the Mondego River. Formerly property of the Benedictine monks. The park includes the Water Museum and several monuments.</bdi><span> (<span><span>updated Aug 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Parque_Verde_do_Mondego\">Parque Verde do Mondego</span>. <bdi>City park by the Mondego River.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Jardim_da_Sereia\">Jardim da Sereia</span> (<span>Mermaid's Garden aka Jardim de Santa Cruz</span>). <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Penedo_da_Saudade\">Penedo da Saudade</span>. <bdi>A beautiful garden.</bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "Museums",
+      "title": "Museums",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Machado_de_Castro_National_Museum\"><a href=\"http://www.museumachadocastro.gov.pt/en-GB/default.aspx\">Machado de Castro National Museum</a></span> (<span>Museu Nacional de Machado de Castro</span>), <span>Largo Dr José Rodrigues, Alta de Coimbra</span> (<span><span><span></span></span> 28, 34, 103</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351239853070\">+351 239 853 070</a></span></span>, <span><a href=\"mailto:mnmc@imc-ip.pt\">mnmc@imc-ip.pt</a></span>. <span>Tue–Sun 10:00–18:00, closed Mon</span>. <bdi>Museum housing the sculpture of Joaquim Machado de Castro (1731–1822), among numerous other artworks. Collections include archaeology, sculpture, precious metals, jewellery, paintings, textiles, ceramics, furniture, and drawings. From the 12th century to 1910, the building served as the palace of the bishop of Coimbra.</bdi> <span>Adults <abbr>€6</abbr>, students &amp; seniors 65+ <abbr>€3</abbr>, kids 0–12 free</span>.<span> (<span><span>updated Aug 2021</span></span>)</span></bdi> </li>\n<li><bdi><span></span> <span id=\"Science_Museum_of_the_University_of_Coimbra\"><a href=\"http://museudaciencia.org/\">Science Museum of the University of Coimbra</a></span> (<span>Museu da Ciência da Universidade de Coimbra</span>), <span>Largo Marquês de Pombal</span> (<span>next to Igreja da Sé Nova</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351239854350\">+351 239 854 350</a></span></span>, <span><a href=\"mailto:geral@museudaciencia.org\">geral@museudaciencia.org</a></span>. <span>Mar–Oct: chemistry 10:00–19:00 daily, physics &amp; natural history 10:30–13:00 &amp; 14:00–19:30 daily, academic gallery Mon–Fri 10:00–15:00 by appt; Nov–Feb: chemistry 10:00–18:00 daily, physics &amp; natural history 10:00–13:00 &amp; 14:00–18:00 daily, academic gallery 10:00–15:00 daily by appt</span>. <bdi>Scientific collections from the fields of botany, zoology, anthropology, mineralogy, astronomy, geophysics, physic, chemistry, and natural history. Some items date back to 1772 when reforms by the Marquis of Pombal lent importance to the study of sciences.</bdi> <span>Adults <abbr>€5</abbr>, students 18–26 &amp; seniors 65+ <abbr>€3.50</abbr>, kids 13–18 <abbr>€2.50</abbr>, kids 0-12 free</span>.<span> (<span><span>updated Aug 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<p>Have a walk up to the top of University Hill from the Mondego river (one of the three great rivers of Portugal), a gorgeous view.\n</p><ul><li><bdi><span></span> <span id=\"Portugal_dos_Pequenitos\"><a href=\"https://www.fbb.pt/pp/\">Portugal dos Pequenitos</a></span> (<span>Portugal for the Little Ones</span>), <span>Rossio de Santa Clara</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239801170\">+351 239 801 170</a></span></span>, <span><a href=\"mailto:portugalpequenitos@fbb.pt\">portugalpequenitos@fbb.pt</a></span>. <span>1 Mar–15 Oct: 10:00–19:00 daily; 16 Oct–28/29 Feb 10:00–17:00 daily; closed 25 Dec</span>. <bdi>A theme park containing child-sized recreations of Portuguese monuments and villages, including pieces from the islands and from Coimbra itself, as well as models of sights from former colonies. There's also a museum showing 300 scaled-down recreations of historical clothing.</bdi> <span>Adults 14–64 <abbr>€12</abbr>, kids 3–13 <abbr>€7</abbr>, seniors 65+ <abbr>€9</abbr>, kids 0–2 free, <a href=\"https://www.fbb.pt/pp/wp-content/uploads/sites/11/2022/01/2022_PREC%CC%A7A%CC%81RIO-PP.pdf\">full pricing details</a></span>.<span> (<span><span>updated Feb 2022</span></span>)</span></bdi></li>\n<li><b>Football:</b> <a href=\"https://www.academica-oaf.pt/\">Académica de Coimbra</a> were promoted in 2026 and now play soccer in Liga 2, the second tier. Their home ground Estádio Cidade de Coimbra (capacity 29,600) is central in New Town.</li></ul>"
+    },
+    {
+      "id": "Fado",
+      "title": "Fado",
+      "level": 3,
+      "html": "<p>There are two kinds of <i>fado</i> in Portugal: <i>fado</i> from Lisbon and <i>fado</i> from Coimbra, neither should be missed (<i>fados</i> are nostalgic songs accompanied by Portuguese guitar).\n</p><ul><li><a href=\"http://www.verdesanos.com/home.htm\">Coimbra Fado group Verdes Anos</a></li></ul>"
+    },
+    {
+      "id": "Student_life",
+      "title": "Student life",
+      "level": 3,
+      "html": "<p>There is always a lot going on in the student community, go and find out what's up.\nThere are two student festivals held every year:\n</p><ul><li>Festa das Latas</li>\n<li>Queima das Fitas</li></ul>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": "<p>The mediaeval centre of Coimbra is unusual in retaining a number of independent bookshops, boutiques, toy shops, galleries, antique and food shops. There are several bookstores, cafes, restaurants, esplanadas.\n</p><ul><li><bdi><span></span> <span id=\"Alma_Shopping\"><a href=\"https://almashopping.pt\">Alma Shopping</a></span>, <span>Rua General Humberto Delgado 207</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239798090\">+351 239 798 090</a></span></span>, <span><a href=\"mailto:almashopping@cbre.com\">almashopping@cbre.com</a></span>. <span>Sun–Thu 08:30–23:00, Fri Sat &amp; holiday eves 08:30–00:00</span>. <bdi></bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Coimbra_Shopping\"><a href=\"https://www.coimbrashopping.pt\">Coimbra Shopping</a></span>, <span>Avenida Mendes Silva</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239708758\">+351 239 708 758</a></span></span>, <span><a href=\"mailto:info@adm.coimbrashopping.pt\">info@adm.coimbrashopping.pt</a></span>. <span>Mon–Fri 08:00–20:00, Sat Sun 08:00–17:00</span>. <bdi></bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Forum_Coimbra\"><a href=\"http://www.forum-coimbra.com\">Forum Coimbra</a></span>, <span>Avenida José Bonifácio de Andrade e Silva 1</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239801700\">+351 239 801 700</a></span></span>, <span><a href=\"mailto:forumcoimbra@multi.eu\">forumcoimbra@multi.eu</a></span>. <span>Sun–Thu &amp; holidays 10:00–23:00, Fri Sat &amp; before holidays 10:00–00:00</span>. <bdi></bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li></ul><p>If you are even just a bit into pottery, the traditional pottery is a must.\n</p>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>Having a meal is not really a problem in Coimbra, since the city has a lot of restaurants, some featuring regional cuisine, in the old city (Baixa). Rua de Azeiteiras, a street in Baixa, has lots of nice traditional restaurants.\n</p>"
+    },
+    {
+      "id": "Budget",
+      "title": "Budget",
+      "level": 3,
+      "html": "<p>Three reasonably big shopping centres serve the standard fast food meals you can find everywhere. They are located in key places in the city, but not necessarily close to the tourist attractions of the city.\n</p>"
+    },
+    {
+      "id": "Mid-range",
+      "title": "Mid-range",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Molho_de_Brocolos\"><a href=\"http://www.myspace.com/molhodebrocolos\">Molho de Brocolos</a></span>, <span>Avenida Sa da Bandeira 33/35</span> (<span>around to the right and at the back of the 2nd floor of Galerias Avenida</span>). <bdi>Organic vegan food. Location isn't great tucked away at the back of the 2nd floor of a slightly run-down shopping centre, but the food and the staff totally make up for it.</bdi> <span>€5-8 mains</span>.<span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Fangas_Mercearia_Bar\"><a href=\"https://www.facebook.com/FangasMerceariaBar\">Fangas Mercearia Bar</a></span>, <span>Rua Fernandes Tomas 45–49</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351934093636\">+351 934 093 636</a></span></span>, <span><a href=\"mailto:fangasmbar@gmail.com\">fangasmbar@gmail.com</a></span>. <span>Mon–Wed 19:00–23:00, Thu Fri 19:00–23:30, Sat 12:30–15:30 &amp; 19:00–23:30, Sun 12:30–15:30 &amp; 19:00–23:00</span>. <bdi>Small but tasty dishes, rich in flavour mainly because they use local products, good vegetarian even vegan choice, nice selection of Portuguese wines, surprising(ly good) desserts.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Itália\"><a href=\"https://italia-italianrestaurant.negocio.site\">Itália</a></span>, <span>Parque Doutor Manuel Braga s/n</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239838863\">+351 239 838 863</a></span></span>. <span>Tue–Sun 11:30–23:30, Mon closed</span>. <bdi>The Italian restaurant in the city park and over the river, very close to the Santa Clara bridge (very popular with tourists). You have a lot of outside tables, if the weather permits, and the food is prepared by Italian cooks. It's not very expensive either.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Zé_Manel_dos_Ossos\"><a href=\"https://www.facebook.com/Zé-Manel-Dos-Ossos-351677638352812/\">Zé Manel dos Ossos</a></span>, <span>Beco do Forno 12</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239823790\">+351 239 823 790</a></span></span>. <span>Mon–Sat 12:30–15:00 &amp; 19:30–22:00, Sun closed</span>. <bdi>A unique atmosphere inside the restaurant is responsible for this fame, but the food is good too. The walls of the restaurant are filled with small pieces of paper, with writings from clients. Be aware that it is quite a small space, so there's a big probability that you won't find a table. Generous portions and a charcoal grill that makes a big difference compared with the electric ones. Try the bone marrow stew (from which the restaurant takes its name) or the grilled seabass or a great dish of stewed octopus and potatoes.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Restaurante_Vitória\">Restaurante Vitória</span>, <span>Rua da Sota 9</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239824049\">+351 239 824 049</a></span></span>. <bdi>Restaurante Vitória is in the city centre and has traditional dishes suchs as \"cozido à portuguesa\", \"bacalhau assado na brasa\", \"chafana\". Nice and quiet restaurant.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Salão_Brasil\"><a href=\"https://www.facebook.com/Salaobrazil\">Salão Brasil</a></span>, <span>Largo do Poço 3, 1st floor (up one flight)</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239837078\">+351 239 837 078</a></span></span>, <span><a href=\"mailto:salaobrazil@gmail.com\">salaobrazil@gmail.com</a></span>. <span>Tue–Sat 18:00–02:00, Sun Mon closed</span>. <bdi>In the \"baixinha\" (downtown) centre. A unique room, with huge windows and very spacious, invites for a relaxed meal. The food is great with some unique dishes from around the country - like \"Vitela Maronesa\" and \"Secretos de Porco preto\". Vegetarian meals. During the weekends there is jazz, folk and fado concerts - most of them for free. It's great to finish your meal - you have plenty of time, Portuguese are always late - and get a concert right there. Sometimes they get very crowded.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"A_Taberna\"><a href=\"http://www.restauranteataberna.com\">A Taberna</a></span>, <span>Rua dos Combatentes da Grande Guerra 86</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239716265\">+351 239 716 265</a></span></span>, <span><a href=\"mailto:geral@restauranteataberna.com\">geral@restauranteataberna.com</a></span>. <span>12:30–15:00 &amp; 19:30–22:30, closed Sun dinner &amp; Mon lunch</span>. <bdi>If you want to try <i>chanfana</i>, one of the most famous dishes of the region, you should definitely go to this restaurant, close to the football stadium. This restaurant is specialized in a limited amount of dishes, but the quality of the food is just amazing. Go there at night, and try the <i>chanfana</i>, even though you may not have a clue about what this is. This is the place for those who really appreciate good food. Don't go too late at night, because it can be a little crowded. The restaurant is very good, and it's located in the most densely populated area of the city.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Toscana\"><a href=\"https://www.rest-toscana.com\">Toscana</a></span>, <span>Avenida Urbano Duarte 6</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239405792\">+351 239 405 792</a></span></span>, <span><a href=\"mailto:geral@rest-toscana.com\">geral@rest-toscana.com</a></span>. <span>Mon 19:00–22:30, Tue–Sat 12:00–15:00 &amp; 19:00–22:30, Sun closed</span>. <bdi>Another very popular Italian restaurant, close to the new bridge. The decoration is great, with a lot of pictures from Florence, Venice, Rome. The quality of the food is quite high. It's definitely not your standard pizza.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"O_Telheiro\"><a href=\"https://www.otelheiro.pt\">O Telheiro</a></span>, <span>Rua do Padrão 262</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351968590671\">+351 968 590 671</a></span></span>, <span><a href=\"mailto:geral@otelheiro.pt\">geral@otelheiro.pt</a></span>. <span>Tue-Sat 12:00–15:00 &amp; 19:00–23:00, Sun Mon closed</span>. <bdi>On the downside, it is very hard to get a table (but you will get one if you wait) and it is out of the centre of Coimbra (approx. 5 min from Coimbra B train station).</bdi> <span><abbr>€10</abbr>–<abbr>€25</abbr></span>.<span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"João_dos_Leitões\"><a href=\"https://www.joaodosleitoes.pt\">João dos Leitões</a></span>, <span>Rua da Gala 45</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239821001\">+351 239 821 001</a></span></span>. <span>Mon–Fri 09:00–19:00, Sat 09:00–15:00, Sun closed</span>. <bdi>One of the most typical restaurants of the city. Its main dish is a roasted piglet served whole with potatoes and salad.</bdi> <span><abbr>€5</abbr>–<abbr>€18</abbr></span>.<span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Splurge",
+      "title": "Splurge",
+      "level": 3,
+      "html": ""
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<ul><li>There is a lot of quality wine production in the regions surrounding Coimbra, try some Bairrada wine.</li>\n<li>Don't miss the <i>licor beirão</i>, a national sweet liquor drink created and made in the region.</li>\n<li>Try the different varieties of <i>aguardente</i> (firewater). One is made only from grapes while the other is made from mixed fruit.  Each have a unique and different after taste.</li></ul>"
+    },
+    {
+      "id": "Cafés",
+      "title": "Cafés",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Café_Santa_Cruz\"><a href=\"http://www.cafesantacruz.com/\">Café Santa Cruz</a></span>, <span>Praça 8 de Maio</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239833617\">+351 239 833 617</a></span></span>, <span><a href=\"mailto:geral@cafesantacruz.com\">geral@cafesantacruz.com</a></span>. <span>Mon–Wed Fri 07:00–00:00, Thu Sat Sun 08:00–00:00</span>. <bdi>A historical cafe next to the \"Igreja de Santa Cruz\" (Holy Cross Church).</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li>The bars in the City Park are open all day long.</li></ul>"
+    },
+    {
+      "id": "Night_out",
+      "title": "Night out",
+      "level": 3,
+      "html": "<p>The bars in the <b>Parque Verde do Mondego</b> are a good place to go for a drink during spring and summer. The bars around the <b>Praça da República</b> are full of the spirit of the students of the University, mainly during weekdays in autumn, winter and spring.\n</p><p>A warning: the students in this town seem to prefer Tuesday or Thursday night to go out. On weekends, this city is sleepy as many students go home to their families.\n</p><ul><li><bdi><span></span> <span id=\"àCapella\"><a href=\"http://acapella.com.pt/\">àCapella</a></span>, <span>Rua Corpo de Deus–Largo da Vitória, Capela Nossa Srª da Victória</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239833985\">+351 239 833 985</a></span></span>, <span><a href=\"mailto:mail.acapella@gmail.com\">mail.acapella@gmail.com</a></span>. <span>Daily 19:00–02:00</span>. <bdi>A bar where you can find yourself surrounded by Portuguese guitar tunes and <i>Fado de Coimbra</i>. Get a grip of this so traditional local culture.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Bar_Diligência\">Bar Diligência</span>, <span>Rua Nova 30</span>. <span>Mon–Sat 20:00–02:00, Sun closed</span>. <bdi>The oldest Fado House in Coimbra. Typical night bar where you'll find Fado de Coimbra and all kinds of Portuguese traditional music.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Salão_Brazil\">Salão Brazil</span>, <span>Largo do Poço 3, 1st floor (1 flight up)</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239837078\">+351 239 837 078</a></span></span>. <bdi>A restaurant but also a bar, most worthy during weekends, with - mostly - free jazz, folk and fado concerts.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Bar_AAC\"><a href=\"https://www.facebook.com/baraac\">Bar AAC</a></span> (<span>Bar Associação Académica de Coimbra</span>), <span>Rua Padre António Vieira 1</span>, <span><a href=\"mailto:baraac@noitebiba.pt\">baraac@noitebiba.pt</a></span>. <span>Mon–Fri 10:00–04:00, Sat Sun 15:00–04:00</span>. <bdi>Coimbra University academic association bar. Entrance sometimes limited to University students.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Quebra\"><a href=\"https://www.facebook.com/barquebracostas/\">Quebra</a></span> (<span>Bar Quebra Costas</span>), <span>Rua Quebra Costas 45</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239841174\">+351 239 841 174</a></span></span>, <span><a href=\"mailto:quebracostas@gmail.com\">quebracostas@gmail.com</a></span>. <bdi>Nice location on the stairs leading to Se Velha. Open air concerts.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Clubs",
+      "title": "Clubs",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"NB_Club_Coimbra\"><a href=\"https://www.facebook.com/nbclubcoimbra\">NB Club Coimbra</a></span>, <span>Rua Venâncio Rodrigues 9</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351912951378\">+351 912 951 378</a></span></span>, <span><a href=\"mailto:rogersousa@noitebiba.pt\">rogersousa@noitebiba.pt</a></span>. <span>Tue–Sat 00:00–06:00, Sun Mon closed</span>. <bdi>Disco near Praça da República.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Noites_Longas\"><a href=\"https://www.facebook.com/NLCoimbra/\">Noites Longas</a></span>, <span>Rua Almeida Garrett 11</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351965076429\">+351 965 076 429</a></span></span>, <span><a href=\"mailto:noiteslongas.coimbra@gmail.com\">noiteslongas.coimbra@gmail.com</a></span>. <span>Tue Thu–Sat 19:00–07:00, Mon Wed Sun closed</span>. <bdi>Disco near Praça da República, alternative sounding (metal, rock).</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Budget_2",
+      "title": "Budget",
+      "level": 3,
+      "html": "<p>There are several cheap hostels around the city centre.\n</p><ul><li><bdi><span></span> <span id=\"HI-Coimbra_Pousada_de_Juventude\"><a href=\"https://pousadasjuventude.pt/pt/pousadas/coimbra/\">HI-Coimbra Pousada de Juventude</a></span>, <span>Rua Dr. Henriques Seco 14</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239829228\">+351 239 829 228</a></span></span>, <span><a href=\"mailto:coimbra@movijovem.pt\">coimbra@movijovem.pt</a></span>. <span>Check-in: <span>18:00–00:00</span>, check-out: <span>08:00–12:00</span></span>. <bdi>Youth hostel.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Residencial_Gouveia\"><a href=\"http://www.residencialgouveia.com\">Residencial Gouveia</a></span>, <span>Rua João de Ruão 21, 1st floor (one flight up)</span> (<span>in the heart of downtown Coimbra</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351239829793\">+351 239 829 793</a></span></span>, <span><a href=\"mailto:residencialgouveia@gmail.com\">residencialgouveia@gmail.com</a></span>. <span>Check-in: <span>14:30–21:00</span>, check-out: <span>08:00–11:00</span></span>. <bdi>It is an excellent compromise between comfortable and economical price. It offers rooms with free Wi-Fi and air conditioning (optional) and allows you to make reservations at the official site. It does not include meals.</bdi> <span><abbr>€22</abbr>–<abbr>€32</abbr></span>.<span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Domus\"><a href=\"https://hoteldomus.pt\">Hotel Domus</a></span>, <span>Rua Adelino Veiga 62</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239828584\">+351 239 828 584</a></span></span>, <span><a href=\"mailto:hoteldomus@sapo.pt\">hoteldomus@sapo.pt</a></span>. <span>Check-in: <span>14:00</span>, check-out: <span>12:00</span></span>. <bdi>They have cheaper rooms in another building just opposite.</bdi> <span><abbr>€39</abbr>–<abbr>€50</abbr></span>.<span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Residencia_Aeminium_Coimbra\">Residencia Aeminium Coimbra</span>, <span>Av. Fernão de Magalhães 17</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239829426\">+351 239 829 426</a></span></span>. <bdi>Great location near transportations and all main attractions. Good alternative to hotels or hostels with a good quality-price ratio.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Mid-range_2",
+      "title": "Mid-range",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Hotel_Ibis_Coimbra\"><a href=\"https://all.accor.com/hotel/1672/index.en.shtml\">Hotel Ibis Coimbra</a></span>, <span>Avenida Emidio Navarro n°70 Edificio Topazio</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239852130\">+351 239 852 130</a></span></span>. <bdi>It's a modern looking hotel with amazing features.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Tryp_Coimbra\"><a href=\"https://www.trypcoimbra.com/en\">Tryp Coimbra</a></span>, <span>Alameda Armando Gonsalves 20</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239480800\">+351 239 480 800</a></span></span>, <span><a href=\"mailto:tryp.coimbra@melia.com\">tryp.coimbra@melia.com</a></span>. <span>Check-in: <span>14:00</span>, check-out: <span>12:00</span></span>. <bdi></bdi> <span><abbr>€53</abbr>–<abbr>€66</abbr></span>.<span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Oslo_Hotel_Coimbra\"><a href=\"https://www.hoteloslo-coimbra.pt/en/\">Oslo Hotel Coimbra</a></span>, <span>Avenida Fernão de Magalhães 25</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239829071\">+351 239 829 071</a></span></span>, <span><a href=\"mailto:mail@hoteloslo-coimbra.pt\">mail@hoteloslo-coimbra.pt</a></span>. <span>Check-in: <span>14:00</span>, check-out: <span>12:00</span></span>. <bdi>Near the train station and all main attractions. The staff are helpful and the view is nice.</bdi> <span><abbr>€67</abbr>–<abbr>€123</abbr></span>.<span> <span></span></span></bdi></li>\n<li><bdi> <span id=\"Solar_Antigo_Luxury_Coimbra\"><a href=\"https://www.solarantigo.com/\">Solar Antigo Luxury Coimbra</a></span>, <span>R. da, Couraça dos Apóstolos 13-15-17, 66, 3000-431/2</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351969374875\">+351 969374875</a></span></span>. <span>Check-in: <span>15:00</span>, check-out: <span>11:00</span></span>. <bdi>Hotel rooms, spread out across various buildings on a narrow street, incorporate original stone foundations.</bdi><span> (<span><span>updated Jun 2022</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Splurge_2",
+      "title": "Splurge",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Quinta_das_Lágrimas\"><a href=\"http://www.quintadaslagrimas.pt\">Quinta das Lágrimas</a></span>, <span>Quinta das Lágrimas</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351239802380\">+351 239 802 380</a></span></span>, <span><a href=\"mailto:reservas@quintadaslagrimas.pt\">reservas@quintadaslagrimas.pt</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi>The best and most expensive hotel in Coimbra. The hotel itself is a historical site. The hotel's restaurant may be the best restaurant in the city. It's the most expensive place in the city though... Be sure to wear your best clothes if you go there. It's a very fancy place.</bdi> <span><abbr>€104</abbr>–<abbr>€245</abbr></span>.<span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><b><a href=\"/guides/aveiro/\" title=\"Aveiro\">Aveiro</a></b> — city with canals, often compared with <a href=\"https://en.wikivoyage.org/wiki/Venice\" title=\"Read on Wikivoyage (external source)\">Venice</a></li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Condeixa-a-Nova\" title=\"Read on Wikivoyage (external source)\">Condeixa-a-Nova</a></b> — ruins of the ancient Roman settlement of Conímbriga</li>\n<li><b><a href=\"/guides/fatima/\" title=\"Fátima\">Fátima</a></b> — major pilgrimage destination where the Virgin Mary is said to have appeared to three children in 1917</li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Figueira_da_Foz\" title=\"Read on Wikivoyage (external source)\">Figueira da Foz</a></b> — beaches and a casino about 40 km (25 mi) away</li>\n<li><b><a href=\"/guides/leiria/\" title=\"Leiria\">Leiria</a></b> — city settled since ancient times, with a Medieval castle</li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Lous%C3%A3\" title=\"Read on Wikivoyage (external source)\">Lousã</a></b> — a mountain town</li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Mealhada\" title=\"Read on Wikivoyage (external source)\">Mealhada</a></b> — famous for its <i>Leitão</i>, roast suckling pig</li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Pombal\" title=\"Read on Wikivoyage (external source)\">Pombal</a></b> — city with a 12th-century Romanesque castle</li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Tomar\" title=\"Read on Wikivoyage (external source)\">Tomar</a></b> — city with several Knights Templar sights</li>\n<li><b><a href=\"/guides/viseu/\" title=\"Viseu\">Viseu</a></b> — important <a href=\"/guides/beira-alta/\" title=\"Beira Alta\">Beira Alta</a> city, a good base from which to explore that region</li></ul><table>\n<tbody><tr>\n<td><b>Routes through Coimbra</b>\n</td></tr>\n</tbody></table><table>\n<tbody><tr>\n<td><b><a href=\"/guides/porto/\" title=\"Porto\">Porto</a></b> ← <a href=\"https://en.wikivoyage.org/wiki/Mealhada\" title=\"Read on Wikivoyage (external source)\">Mealhada</a> ←\n</td>\n<td> <b>N</b> <span><span></span></span> <b>S</b> \n</td>\n<td>→ <a href=\"/guides/leiria/\" title=\"Leiria\">Leiria</a> → <b><a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a></b>\n</td></tr></tbody></table>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Posto Municipal de Turismo",
+      "address": "A Rua António Granjo Nº6",
+      "phone": "+351 239 857 500",
+      "hours": "Mon—Fri 9:30—13:00 & 14:00—16:30",
+      "description": ""
+    },
+    {
+      "name": "Estação Ferroviária de Coimbra",
+      "address": "Rua António Granjo CP",
+      "phone": "+351 707 210 220",
+      "description": "Coimbra-A is a historic train station built near the riverbank close to the medieval city centre. Although long-distance train services to the station were discontinued in January 2025, the station is still in use, now primarily serving local trains."
+    },
+    {
+      "name": "Estação Ferroviária de Coimbra-B",
+      "address": "Rua do Padrão, Eiras, S. Bartolomeu",
+      "phone": "+351 707 210 220",
+      "description": "Coimbra-B is a through station on the Lisbon-Porto line, served by high-speed long-distance Alfa Pendular trains. It is quite remotely located, and the best you can do when arriving on an Alfa is to change to a local train to Coimbra-A, as all local trains serve both stations and your long-distance ticket will cover this stretch as well. Travel time to Coimbra-B is about 1 hr from Porto and about 1 hr 45 min from Lisbon . Train times (from any location) can be found on the CP National Rail site ."
+    },
+    {
+      "name": "Terminal Rodoviário de Coimbra",
+      "address": "Avenida Fernão de Magalhães",
+      "description": "The bus station is easily reached by local bus or on foot (a 10-min walk from the city centre). It has destinations for the whole of Portugal (with changes for some far away destinations), and it's faster and fares are normally cheaper than the train."
+    },
+    {
+      "name": "University of Coimbra",
+      "description": "Founded in Lisbon in 1290, the second oldest university on the Iberian peninsula eventually found a permanent home in Coimbra in 1537. Among the beautiful buildings on the campus is the Biblioteca Joanina library. The university enrolls over 20,000 students, and famous alumni include national poet Luís de Camões and Portuguese dictator António de Oliveira Salazar. It's been a UNESCO World Heritage Site since 2013."
+    },
+    {
+      "name": "Medieval Downtown",
+      "description": ""
+    },
+    {
+      "name": "Quinta das Lagrimas",
+      "description": "It has a tragic story of love."
+    },
+    {
+      "name": "Estádio Cidade de Coimbra",
+      "description": "One of the Euro 2004 sites."
+    },
+    {
+      "name": "Old Cathedral of Coimbra",
+      "description": "A 12th-century Romanesque cathedral. In the 16th century, many Renaissance features were added."
+    },
+    {
+      "name": "New Cathedral of Coimbra de Coimbra",
+      "description": "A late-16th- and 17th-century Mannerist and Baroque cathedral."
+    },
+    {
+      "name": "Monastery of the Holy Cross",
+      "address": "Rua Martins de Carvalho 3",
+      "phone": "+351 239 822 941",
+      "hours": "Mon–Sat 11:30–16:30, Sun 14:00–17:00",
+      "price": "€3",
+      "description": "Founded in 1131, this church is a national monument where Portugal's first two kings, Afonso Henriques and Sancho I, are buried. It was built in Romanesque style, and became Manueline over the centuries through renovations."
+    },
+    {
+      "name": "Old Monastery of Saint Clare",
+      "description": "13th-century Gothic monastery/convent on the bank of the River Mondego. It's a national monument."
+    },
+    {
+      "name": "Memorial da Irmã Lúcia",
+      "address": "Carmelo de Santa Teresa, Rua de Santa Teresa 16",
+      "phone": "+351 239 781 638",
+      "hours": "Tue-Sun 15:00–18:00, Mon closed",
+      "price": "€1.50 , children under 12 free",
+      "description": "Dedicated to Sister Lúcia, one of three shepherd children who the Blessed Virgin Mary appeared to at Fátima in 1917. She later became a Carmelite sister."
+    },
+    {
+      "name": "Botanical Garden",
+      "description": ""
+    },
+    {
+      "name": "Parque Dr. Manuel Braga",
+      "description": "City park on the Mondego River. Formerly property of the Benedictine monks. The park includes the Water Museum and several monuments."
+    },
+    {
+      "name": "Parque Verde do Mondego",
+      "description": "City park by the Mondego River."
+    },
+    {
+      "name": "Jardim da Sereia",
+      "description": ""
+    },
+    {
+      "name": "Penedo da Saudade",
+      "description": "A beautiful garden."
+    },
+    {
+      "name": "Machado de Castro National Museum",
+      "address": "Largo Dr José Rodrigues, Alta de Coimbra",
+      "phone": "+351 239 853 070",
+      "hours": "Tue–Sun 10:00–18:00, closed Mon",
+      "price": "Adults €6 , students & seniors 65+ €3 , kids 0–12 free",
+      "description": "Museum housing the sculpture of Joaquim Machado de Castro (1731–1822), among numerous other artworks. Collections include archaeology, sculpture, precious metals, jewellery, paintings, textiles, ceramics, furniture, and drawings. From the 12th century to 1910, the building served as the palace of the bishop of Coimbra."
+    },
+    {
+      "name": "Science Museum of the University of Coimbra",
+      "address": "Largo Marquês de Pombal",
+      "phone": "+351 239 854 350",
+      "hours": "Mar–Oct: chemistry 10:00–19:00 daily, physics & natural history 10:30–13:00 & 14:00–19:30 daily, academic gallery Mon–Fri 10:00–15:00 by appt; Nov–Feb: chemistry 10:00–18:00 daily, physics & natural history 10:00–13:00 & 14:00–18:00 daily, academic gallery 10:00–15:00 daily by appt",
+      "price": "Adults €5 , students 18–26 & seniors 65+ €3.50 , kids 13–18 €2.50 , kids 0-12 free",
+      "description": "Scientific collections from the fields of botany, zoology, anthropology, mineralogy, astronomy, geophysics, physic, chemistry, and natural history. Some items date back to 1772 when reforms by the Marquis of Pombal lent importance to the study of sciences."
+    },
+    {
+      "name": "Portugal dos Pequenitos",
+      "address": "Rossio de Santa Clara",
+      "phone": "+351 239 801 170",
+      "hours": "1 Mar–15 Oct: 10:00–19:00 daily; 16 Oct–28/29 Feb 10:00–17:00 daily; closed 25 Dec",
+      "price": "Adults 14–64 €12 , kids 3–13 €7 , seniors 65+ €9 , kids 0–2 free, full pricing details",
+      "description": "A theme park containing child-sized recreations of Portuguese monuments and villages, including pieces from the islands and from Coimbra itself, as well as models of sights from former colonies. There's also a museum showing 300 scaled-down recreations of historical clothing."
+    },
+    {
+      "name": "Alma Shopping",
+      "address": "Rua General Humberto Delgado 207",
+      "phone": "+351 239 798 090",
+      "hours": "Sun–Thu 08:30–23:00, Fri Sat & holiday eves 08:30–00:00",
+      "description": ""
+    },
+    {
+      "name": "Coimbra Shopping",
+      "address": "Avenida Mendes Silva",
+      "phone": "+351 239 708 758",
+      "hours": "Mon–Fri 08:00–20:00, Sat Sun 08:00–17:00",
+      "description": ""
+    },
+    {
+      "name": "Forum Coimbra",
+      "address": "Avenida José Bonifácio de Andrade e Silva 1",
+      "phone": "+351 239 801 700",
+      "hours": "Sun–Thu & holidays 10:00–23:00, Fri Sat & before holidays 10:00–00:00",
+      "description": ""
+    },
+    {
+      "name": "Molho de Brocolos",
+      "address": "Avenida Sa da Bandeira 33/35",
+      "price": "€5-8 mains",
+      "description": "Organic vegan food. Location isn't great tucked away at the back of the 2nd floor of a slightly run-down shopping centre, but the food and the staff totally make up for it."
+    },
+    {
+      "name": "Fangas Mercearia Bar",
+      "address": "Rua Fernandes Tomas 45–49",
+      "phone": "+351 934 093 636",
+      "hours": "Mon–Wed 19:00–23:00, Thu Fri 19:00–23:30, Sat 12:30–15:30 & 19:00–23:30, Sun 12:30–15:30 & 19:00–23:00",
+      "description": "Small but tasty dishes, rich in flavour mainly because they use local products, good vegetarian even vegan choice, nice selection of Portuguese wines, surprising(ly good) desserts."
+    },
+    {
+      "name": "Itália",
+      "address": "Parque Doutor Manuel Braga s/n",
+      "phone": "+351 239 838 863",
+      "hours": "Tue–Sun 11:30–23:30, Mon closed",
+      "description": "The Italian restaurant in the city park and over the river, very close to the Santa Clara bridge (very popular with tourists). You have a lot of outside tables, if the weather permits, and the food is prepared by Italian cooks. It's not very expensive either."
+    },
+    {
+      "name": "Zé Manel dos Ossos",
+      "address": "Beco do Forno 12",
+      "phone": "+351 239 823 790",
+      "hours": "Mon–Sat 12:30–15:00 & 19:30–22:00, Sun closed",
+      "description": "A unique atmosphere inside the restaurant is responsible for this fame, but the food is good too. The walls of the restaurant are filled with small pieces of paper, with writings from clients. Be aware that it is quite a small space, so there's a big probability that you won't find a table. Generous portions and a charcoal grill that makes a big difference compared with the electric ones. Try the bone marrow stew (from which the restaurant takes its name) or the grilled seabass or a great dish of stewed octopus and potatoes."
+    },
+    {
+      "name": "Restaurante Vitória",
+      "address": "Rua da Sota 9",
+      "phone": "+351 239 824 049",
+      "description": "Restaurante Vitória is in the city centre and has traditional dishes suchs as \"cozido à portuguesa\", \"bacalhau assado na brasa\", \"chafana\". Nice and quiet restaurant."
+    },
+    {
+      "name": "Salão Brasil",
+      "address": "Largo do Poço 3, 1st floor (up one flight)",
+      "phone": "+351 239 837 078",
+      "hours": "Tue–Sat 18:00–02:00, Sun Mon closed",
+      "description": "In the \"baixinha\" (downtown) centre. A unique room, with huge windows and very spacious, invites for a relaxed meal. The food is great with some unique dishes from around the country - like \"Vitela Maronesa\" and \"Secretos de Porco preto\". Vegetarian meals. During the weekends there is jazz, folk and fado concerts - most of them for free. It's great to finish your meal - you have plenty of time, Portuguese are always late - and get a concert right there. Sometimes they get very crowded."
+    },
+    {
+      "name": "A Taberna",
+      "address": "Rua dos Combatentes da Grande Guerra 86",
+      "phone": "+351 239 716 265",
+      "hours": "12:30–15:00 & 19:30–22:30, closed Sun dinner & Mon lunch",
+      "description": "If you want to try chanfana , one of the most famous dishes of the region, you should definitely go to this restaurant, close to the football stadium. This restaurant is specialized in a limited amount of dishes, but the quality of the food is just amazing. Go there at night, and try the chanfana , even though you may not have a clue about what this is. This is the place for those who really appreciate good food. Don't go too late at night, because it can be a little crowded. The restaurant is very good, and it's located in the most densely populated area of the city."
+    },
+    {
+      "name": "Toscana",
+      "address": "Avenida Urbano Duarte 6",
+      "phone": "+351 239 405 792",
+      "hours": "Mon 19:00–22:30, Tue–Sat 12:00–15:00 & 19:00–22:30, Sun closed",
+      "description": "Another very popular Italian restaurant, close to the new bridge. The decoration is great, with a lot of pictures from Florence, Venice, Rome. The quality of the food is quite high. It's definitely not your standard pizza."
+    },
+    {
+      "name": "O Telheiro",
+      "address": "Rua do Padrão 262",
+      "phone": "+351 968 590 671",
+      "hours": "Tue-Sat 12:00–15:00 & 19:00–23:00, Sun Mon closed",
+      "price": "€10 – €25",
+      "description": "On the downside, it is very hard to get a table (but you will get one if you wait) and it is out of the centre of Coimbra (approx. 5 min from Coimbra B train station)."
+    },
+    {
+      "name": "João dos Leitões",
+      "address": "Rua da Gala 45",
+      "phone": "+351 239 821 001",
+      "hours": "Mon–Fri 09:00–19:00, Sat 09:00–15:00, Sun closed",
+      "price": "€5 – €18",
+      "description": "One of the most typical restaurants of the city. Its main dish is a roasted piglet served whole with potatoes and salad."
+    },
+    {
+      "name": "Café Santa Cruz",
+      "address": "Praça 8 de Maio",
+      "phone": "+351 239 833 617",
+      "hours": "Mon–Wed Fri 07:00–00:00, Thu Sat Sun 08:00–00:00",
+      "description": "A historical cafe next to the \"Igreja de Santa Cruz\" (Holy Cross Church)."
+    },
+    {
+      "name": "àCapella",
+      "address": "Rua Corpo de Deus–Largo da Vitória, Capela Nossa Srª da Victória",
+      "phone": "+351 239 833 985",
+      "hours": "Daily 19:00–02:00",
+      "description": "A bar where you can find yourself surrounded by Portuguese guitar tunes and Fado de Coimbra . Get a grip of this so traditional local culture."
+    },
+    {
+      "name": "Bar Diligência",
+      "address": "Rua Nova 30",
+      "hours": "Mon–Sat 20:00–02:00, Sun closed",
+      "description": "The oldest Fado House in Coimbra. Typical night bar where you'll find Fado de Coimbra and all kinds of Portuguese traditional music."
+    },
+    {
+      "name": "Salão Brazil",
+      "address": "Largo do Poço 3, 1st floor (1 flight up)",
+      "phone": "+351 239 837 078",
+      "description": "A restaurant but also a bar, most worthy during weekends, with - mostly - free jazz, folk and fado concerts."
+    },
+    {
+      "name": "Bar AAC",
+      "address": "Rua Padre António Vieira 1",
+      "hours": "Mon–Fri 10:00–04:00, Sat Sun 15:00–04:00",
+      "description": "Coimbra University academic association bar. Entrance sometimes limited to University students."
+    },
+    {
+      "name": "Quebra",
+      "address": "Rua Quebra Costas 45",
+      "phone": "+351 239 841 174",
+      "description": "Nice location on the stairs leading to Se Velha. Open air concerts."
+    },
+    {
+      "name": "NB Club Coimbra",
+      "address": "Rua Venâncio Rodrigues 9",
+      "phone": "+351 912 951 378",
+      "hours": "Tue–Sat 00:00–06:00, Sun Mon closed",
+      "description": "Disco near Praça da República."
+    },
+    {
+      "name": "Noites Longas",
+      "address": "Rua Almeida Garrett 11",
+      "phone": "+351 965 076 429",
+      "hours": "Tue Thu–Sat 19:00–07:00, Mon Wed Sun closed",
+      "description": "Disco near Praça da República, alternative sounding (metal, rock)."
+    },
+    {
+      "name": "HI-Coimbra Pousada de Juventude",
+      "address": "Rua Dr. Henriques Seco 14",
+      "phone": "+351 239 829 228",
+      "description": "Youth hostel."
+    },
+    {
+      "name": "Residencial Gouveia",
+      "address": "Rua João de Ruão 21, 1st floor (one flight up)",
+      "phone": "+351 239 829 793",
+      "price": "€22 – €32",
+      "description": "It is an excellent compromise between comfortable and economical price. It offers rooms with free Wi-Fi and air conditioning (optional) and allows you to make reservations at the official site. It does not include meals."
+    },
+    {
+      "name": "Hotel Domus",
+      "address": "Rua Adelino Veiga 62",
+      "phone": "+351 239 828 584",
+      "price": "€39 – €50",
+      "description": "They have cheaper rooms in another building just opposite."
+    },
+    {
+      "name": "Residencia Aeminium Coimbra",
+      "address": "Av. Fernão de Magalhães 17",
+      "phone": "+351 239 829 426",
+      "description": "Great location near transportations and all main attractions. Good alternative to hotels or hostels with a good quality-price ratio."
+    },
+    {
+      "name": "Hotel Ibis Coimbra",
+      "address": "Avenida Emidio Navarro n°70 Edificio Topazio",
+      "phone": "+351 239 852 130",
+      "description": "It's a modern looking hotel with amazing features."
+    },
+    {
+      "name": "Tryp Coimbra",
+      "address": "Alameda Armando Gonsalves 20",
+      "phone": "+351 239 480 800",
+      "price": "€53 – €66",
+      "description": ""
+    },
+    {
+      "name": "Oslo Hotel Coimbra",
+      "address": "Avenida Fernão de Magalhães 25",
+      "phone": "+351 239 829 071",
+      "price": "€67 – €123",
+      "description": "Near the train station and all main attractions. The staff are helpful and the view is nice."
+    },
+    {
+      "name": "Solar Antigo Luxury Coimbra",
+      "address": "R. da, Couraça dos Apóstolos 13-15-17, 66, 3000-431/2",
+      "phone": "+351 969374875",
+      "description": "Hotel rooms, spread out across various buildings on a narrow street, incorporate original stone foundations."
+    },
+    {
+      "name": "Quinta das Lágrimas",
+      "address": "Quinta das Lágrimas",
+      "phone": "+351 239 802 380",
+      "price": "€104 – €245",
+      "description": "The best and most expensive hotel in Coimbra. The hotel itself is a historical site. The hotel's restaurant may be the best restaurant in the city. It's the most expensive place in the city though... Be sure to wear your best clothes if you go there. It's a very fancy place."
+    }
+  ],
+  "words": 3804,
+  "searchText": "Coimbra is the traditional capital city of Central Portugal 's historic Beira Litoral region. With over 140,000 inhabitants (2021), it is the largest municipality there and one of Portugal's four largest metropolises. An important urban and administrative centre since the birth of the Portuguese nation, the city has amassed vast cultural and architectural heritage and is the seat of one of world's oldest universities, a UNESCO World Heritage Site . Coimbra ( koo-EEM-bruh , IPA : /kuˈĩbɾɐ/ ) was settled by the Romans as Aeminium in the 1st century CE. Posto Municipal de Turismo ( Municipal Tourist Office ), A Rua António Granjo Nº6 ( Antiga Estação Coimbra ), ☏ +351 239 857 500 , turismo@cm-coimbra.pt . Mon—Fri 9:30—13:00 & 14:00—16:30 . ( updated Aug 2026 )  The most convenient airports for Coimbra are (in order of distance): Francisco Sa Carneiro Airport ( OPO IATA ) - Porto Portela Airport ( LIS IATA ) - Lisbon Coimbra has two main train stations: Estação Ferroviária de Coimbra ( Coimbra-A Railway Station ), Rua António Granjo CP , ☏ +351 707 210 220 . Coimbra-A is a historic train station built near the riverbank close to the medieval city centre. Although long-distance train services to the station were discontinued in January 2025, the station is still in use, now primarily serving local trains. ( updated Aug 2026 ) Estação Ferroviária de Coimbra-B ( Coimbra-B railway station ), Rua do Padrão, Eiras, S. Bartolomeu , ☏ +351 707 210 220 . Coimbra-B is a through station on the Lisbon-Porto line, served by high-speed long-distance Alfa Pendular trains. It is quite remotely located, and the best you can do when arriving on an Alfa is to change to a local train to Coimbra-A, as all local trains serve both stations and your long-distance ticket will cover this stretch as well. Travel time to Coimbra-B is about 1 hr from Porto and about 1 hr 45 min from Lisbon . Train times (from any location) can be found on the CP National Rail site . ( updated Aug 2026 ) The principal motorway serving Coimbra is the A1 ( Autoestrada do Norte ), with several exits that will be put you about 10 min away from the city centre. Driving from Porto takes about 1 hr, and Lisbon is about 2 hr away. The A13 motorway ( Autoestrada do Pinhal Interior ) provides a link from Entroncamento and Tomar . The A14 motorway ( Autoestrada do Baixo Mondego ) provides access from the coastal city of Figueira da Foz . The IP3 road serves Chaves and Viseu . Terminal Rodoviário de Coimbra ( Coimbra Bus Station ), Avenida Fernão de Magalhães . The bus station is easily reached by local bus or on foot (a 10-min walk from the city centre). It has destinations for the whole of Portugal (with changes for some far away destinations), and it's faster and fares are normally cheaper than the train. ( updated Aug 2021 ) Some buses (e.g. Flixbus) don't use the bus station, but leave from a parking lot further up the same road, underneath the flyover, opposite the Audi car showroom by the roundabout. Halfway between the bus station and Coimbra-B railway station. No ticket office. No benches. There is a bar just across the road and a 24 hour hamburger place 2 minutes away towards the town centre. There are a few companies providing door-to-door shared shuttle service to Coimbra from either Lisbon or Porto. It is a budget option with more personal service than the bus. You can get to Coimbra from your hotel in Lisbon or Porto with shared shuttle, and get off by the square Largo da Portagem, which is the area visitors ususally start their touring. If you are coming from airports, you can go with Coimbra airport shuttle . It is recommended to book ticket in advance to guarantee a seat.  Most of the things to see and do in Coimbra and most of the places to eat, drink, and sleep are within reasonable walking distance of each other and of the rail station in Baixa. There are several hotels, restaurants, cafés, pastry shops, and nightclubs. Most monuments are in Baixa and Santa Clara (across the Mondego river). Smaller shops, restaurants, and hotels are mostly in Baixa and Santa Clara. Major shopping malls are in Alta, by Solum, and near the municipal stadium/pool. The SMTUC ( Serviços Municipalizados de Transportes Urbanos de Coimbra ) operates several bus routes in and around Coimbra. The \"Pantufinhas\" or Linha Azul (Blue Line) provides transport in the historical city centre, and a link between the lower and upper town. There's an elevator ( Elevador do Mercado ) that connects Rua Padre António Vieira with Rua Olímpio Nicolau Rui Fernandes (next to Mercado Municipal D Pedro V). A valid SMTUC ticket is necessary to gain access. Coimbra is a hard city to drive in as it was built around medieval structures. Also, finding a parking spot can be difficult. The best option for visiting Coimbra is to find a hotel with parking or to park near the city centre and then walk around. The main attractions are in the city centre and within walking distance of each other. Coimbra Baixa is the lower city (downtown). Alta is the highest part of the city, which is also difficult to drive around.  University of Coimbra . Founded in Lisbon in 1290, the second oldest university on the Iberian peninsula eventually found a permanent home in Coimbra in 1537. Among the beautiful buildings on the campus is the Biblioteca Joanina library. The university enrolls over 20,000 students, and famous alumni include national poet Luís de Camões and Portuguese dictator António de Oliveira Salazar. It's been a UNESCO World Heritage Site since 2013. Medieval Downtown ( Sao Tiago, Sao Bartolomeu ). Quinta das Lagrimas ( Estate of Tears ). It has a tragic story of love. Estádio Cidade de Coimbra ( Eurostadium Cidade de Coimbra ). One of the Euro 2004 sites. Old Cathedral of Coimbra ( Sé Velha de Coimbra ). A 12th-century Romanesque cathedral. In the 16th century, many Renaissance features were added. ( updated Aug 2021 ) New Cathedral of Coimbra de Coimbra ( Sé Nova ). A late-16th- and 17th-century Mannerist and Baroque cathedral. ( updated Aug 2021 ) Monastery of the Holy Cross ( Mosteiro de Santa Cruz ), Rua Martins de Carvalho 3 ( Praça 8 de Maio ), ☏ +351 239 822 941 , igrejasantacruz@gmail.com . Mon–Sat 11:30–16:30, Sun 14:00–17:00 . Founded in 1131, this church is a national monument where Portugal's first two kings, Afonso Henriques and Sancho I, are buried. It was built in Romanesque style, and became Manueline over the centuries through renovations. €3 . ( updated Aug 2021 ) Old Monastery of Saint Clare ( Mosteiro de Santa Clara-a-Velha ). 13th-century Gothic monastery/convent on the bank of the River Mondego. It's a national monument. Memorial da Irmã Lúcia ( Sister Lúcia's Memorial ), Carmelo de Santa Teresa, Rua de Santa Teresa 16 , ☏ +351 239 781 638 , memorialirmalucia@carmelitas.pt . Tue-Sun 15:00–18:00, Mon closed . Dedicated to Sister Lúcia, one of three shepherd children who the Blessed Virgin Mary appeared to at Fátima in 1917. She later became a Carmelite sister. €1.50 , children under 12 free . ( updated Feb 2021 ) Botanical Garden ( Jardim Botânico da Universidade de Coimbra ). Parque Dr. Manuel Braga ( Parque da Cidade, Dr. Manuel Braga Park ). City park on the Mondego River. Formerly property of the Benedictine monks. The park includes the Water Museum and several monuments. ( updated Aug 2021 ) Parque Verde do Mondego . City park by the Mondego River. Jardim da Sereia ( Mermaid's Garden aka Jardim de Santa Cruz ). Penedo da Saudade . A beautiful garden. Machado de Castro National Museum ( Museu Nacional de Machado de Castro ), Largo Dr José Rodrigues, Alta de Coimbra ( 28, 34, 103 ), ☏ +351 239 853 070 , mnmc@imc-ip.pt . Tue–Sun 10:00–18:00, closed Mon . Museum housing the sculpture of Joaquim Machado de Castro (1731–1822), among numerous other artworks. Collections include archaeology, sculpture, precious metals, jewellery, paintings, textiles, ceramics, furniture, and drawings. From the 12th century to 1910, the building served as the palace of the bishop of Coimbra. Adults €6 , students & seniors 65+ €3 , kids 0–12 free . ( updated Aug 2021 ) Science Museum of the University of Coimbra ( Museu da Ciência da Universidade de Coimbra ), Largo Marquês de Pombal ( next to Igreja da Sé Nova ), ☏ +351 239 854 350 , geral@museudaciencia.org . Mar–Oct: chemistry 10:00–19:00 daily, physics & natural history 10:30–13:00 & 14:00–19:30 daily, academic gallery Mon–Fri 10:00–15:00 by appt; Nov–Feb: chemistry 10:00–18:00 daily, physics & natural history 10:00–13:00 & 14:00–18:00 daily, academic gallery 10:00–15:00 daily by appt . Scientific collections from the fields of botany, zoology, anthropology, mineralogy, astronomy, geophysics, physic, chemistry, and natural history. Some items date back to 1772 when reforms by the Marquis of Pombal lent importance to the study of sciences. Adults €5 , students 18–26 & seniors 65+ €3.50 , kids 13–18 €2.50 , kids 0-12 free . ( updated Aug 2021 ) Have a walk up to the top of University Hill from the Mondego river (one of the three great rivers of Portugal), a gorgeous view. Portugal dos Pequenitos ( Portugal for the Little Ones ), Rossio de Santa Clara , ☏ +351 239 801 170 , portugalpequenitos@fbb.pt . 1 Mar–15 Oct: 10:00–19:00 daily; 16 Oct–28/29 Feb 10:00–17:00 daily; closed 25 Dec . A theme park containing child-sized recreations of Portuguese monuments and villages, including pieces from the islands and from Coimbra itself, as well as models of sights from former colonies. There's also a museum showing 300 scaled-down recreations of historical clothing. Adults 14–64 €12 , kids 3–13 €7 , seniors 65+ €9 , kids 0–2 free, full pricing details . ( updated Feb 2022 ) Football: Académica de Coimbra were promoted in 2026 and now play soccer in Liga 2, the second tier. Their home ground Estádio Cidade de Coimbra (capacity 29,600) is central in New Town. There are two kinds of fado in Portugal: fado from Lisbon and fado from Coimbra, neither should be missed ( fados are nostalgic songs accompanied by Portuguese guitar). Coimbra Fado group Verdes Anos There is always a lot going on in the student community, go and find out what's up.\nThere are two student festivals held every year: Festa das Latas Queima das Fitas The mediaeval centre of Coimbra is unusual in retaining a number of independent bookshops, boutiques, toy shops, galleries, antique and food shops. There are several bookstores, cafes, restaurants, esplanadas. Alma Shopping , Rua General Humberto Delgado 207 , ☏ +351 239 798 090 , almashopping@cbre.com . Sun–Thu 08:30–23:00, Fri Sat & holiday eves 08:30–00:00 . ( updated Feb 2021 ) Coimbra Shopping , Avenida Mendes Silva , ☏ +351 239 708 758 , info@adm.coimbrashopping.pt . Mon–Fri 08:00–20:00, Sat Sun 08:00–17:00 . ( updated Feb 2021 ) Forum Coimbra , Avenida José Bonifácio de Andrade e Silva 1 , ☏ +351 239 801 700 , forumcoimbra@multi.eu . Sun–Thu & holidays 10:00–23:00, Fri Sat & before holidays 10:00–00:00 . ( updated Feb 2021 ) If you are even just a bit into pottery, the traditional pottery is a must. Having a meal is not really a problem in Coimbra, since the city has a lot of restaurants, some featuring regional cuisine, in the old city (Baixa). Rua de Azeiteiras, a street in Baixa, has lots of nice traditional restaurants. Three reasonably big shopping centres serve the standard fast food meals you can find everywhere. They are located in key places in the city, but not necessarily close to the tourist attractions of the city. Molho de Brocolos , Avenida Sa da Bandeira 33/35 ( around to the right and at the back of the 2nd floor of Galerias Avenida ). Organic vegan food. Location isn't great tucked away at the back of the 2nd floor of a slightly run-down shopping centre, but the food and the staff totally make up for it. €5-8 mains . Fangas Mercearia Bar , Rua Fernandes Tomas 45–49 , ☏ +351 934 093 636 , fangasmbar@gmail.com . Mon–Wed 19:00–23:00, Thu Fri 19:00–23:30, Sat 12:30–15:30 & 19:00–23:30, Sun 12:30–15:30 & 19:00–23:00 . Small but tasty dishes, rich in flavour mainly because they use local products, good vegetarian even vegan choice, nice selection of Portuguese wines, surprising(ly good) desserts. ( updated Feb 2021 ) Itália , Parque Doutor Manuel Braga s/n , ☏ +351 239 838 863 . Tue–Sun 11:30–23:30, Mon closed . The Italian restaurant in the city park and over the river, very close to the Santa Clara bridge (very popular with tourists). You have a lot of outside tables, if the weather permits, and the food is prepared by Italian cooks. It's not very expensive either. ( updated Feb 2021 ) Zé Manel dos Ossos , Beco do Forno 12 , ☏ +351 239 823 790 . Mon–Sat 12:30–15:00 & 19:30–22:00, Sun closed . A unique atmosphere inside the restaurant is responsible for this fame, but the food is good too. The walls of the restaurant are filled with small pieces of paper, with writings from clients. Be aware that it is quite a small space, so there's a big probability that you won't find a table. Generous portions and a charcoal grill that makes a big difference compared with the electric ones. Try the bone marrow stew (from which the restaurant takes its name) or the grilled seabass or a great dish of stewed octopus and potatoes. ( updated Feb 2021 ) Restaurante Vitória , Rua da Sota 9 , ☏ +351 239 824 049 . Restaurante Vitória is in the city centre and has traditional dishes suchs as \"cozido à portuguesa\", \"bacalhau assado na brasa\", \"chafana\". Nice and quiet restaurant. ( updated Feb 2021 ) Salão Brasil , Largo do Poço 3, 1st floor (up one flight) , ☏ +351 239 837 078 , salaobrazil@gmail.com . Tue–Sat 18:00–02:00, Sun Mon closed . In the \"baixinha\" (downtown) centre. A unique room, with huge windows and very spacious, invites for a relaxed meal. The food is great with some unique dishes from around the country - like \"Vitela Maronesa\" and \"Secretos de Porco preto\". Vegetarian meals. During the weekends there is jazz, folk and fado concerts - most of them for free. It's great to finish your meal - you have plenty of time, Portuguese are always late - and get a concert right there. Sometimes they get very crowded. ( updated Feb 2021 ) A Taberna , Rua dos Combatentes da Grande Guerra 86 , ☏ +351 239 716 265 , geral@restauranteataberna.com . 12:30–15:00 & 19:30–22:30, closed Sun dinner & Mon lunch . If you want to try chanfana , one of the most famous dishes of the region, you should definitely go to this restaurant, close to the football stadium. This restaurant is specialized in a limited amount of dishes, but the quality of the food is just amazing. Go there at night, and try the chanfana , even though you may not have a clue about what this is. This is the place for those who really appreciate good food. Don't go too late at night, because it can be a little crowded. The restaurant is very good, and it's located in the most densely populated area of the city. ( updated Feb 2021 ) Toscana , Avenida Urbano Duarte 6 , ☏ +351 239 405 792 , geral@rest-toscana.com . Mon 19:00–22:30, Tue–Sat 12:00–15:00 & 19:00–22:30, Sun closed . Another very popular Italian restaurant, close to the new bridge. The decoration is great, with a lot of pictures from Florence, Venice, Rome. The quality of the food is quite high. It's definitely not your standard pizza. ( updated Feb 2021 ) O Telheiro , Rua do Padrão 262 , ☏ +351 968 590 671 , geral@otelheiro.pt . Tue-Sat 12:00–15:00 & 19:00–23:00, Sun Mon closed . On the downside, it is very hard to get a table (but you will get one if you wait) and it is out of the centre of Coimbra (approx. 5 min from Coimbra B train station). €10 – €25 . ( updated Feb 2021 ) João dos Leitões , Rua da Gala 45 , ☏ +351 239 821 001 . Mon–Fri 09:00–19:00, Sat 09:00–15:00, Sun closed . One of the most typical restaurants of the city. Its main dish is a roasted piglet served whole with potatoes and salad. €5 – €18 . ( updated Feb 2021 )  There is a lot of quality wine production in the regions surrounding Coimbra, try some Bairrada wine. Don't miss the licor beirão , a national sweet liquor drink created and made in the region. Try the different varieties of aguardente (firewater). One is made only from grapes while the other is made from mixed fruit.  Each have a unique and different after taste. Café Santa Cruz , Praça 8 de Maio , ☏ +351 239 833 617 , geral@cafesantacruz.com . Mon–Wed Fri 07:00–00:00, Thu Sat Sun 08:00–00:00 . A historical cafe next to the \"Igreja de Santa Cruz\" (Holy Cross Church). ( updated Feb 2021 ) The bars in the City Park are open all day long. The bars in the Parque Verde do Mondego are a good place to go for a drink during spring and summer. The bars around the Praça da República are full of the spirit of the students of the University, mainly during weekdays in autumn, winter and spring. A warning: the students in this town seem to prefer Tuesday or Thursday night to go out. On weekends, this city is sleepy as many students go home to their families. àCapella , Rua Corpo de Deus–Largo da Vitória, Capela Nossa Srª da Victória , ☏ +351 239 833 985 , mail.acapella@gmail.com . Daily 19:00–02:00 . A bar where you can find yourself surrounded by Portuguese guitar tunes and Fado de Coimbra . Get a grip of this so traditional local culture. ( updated Feb 2021 ) Bar Diligência , Rua Nova 30 . Mon–Sat 20:00–02:00, Sun closed . The oldest Fado House in Coimbra. Typical night bar where you'll find Fado de Coimbra and all kinds of Portuguese traditional music. ( updated Feb 2021 ) Salão Brazil , Largo do Poço 3, 1st floor (1 flight up) , ☏ +351 239 837 078 . A restaurant but also a bar, most worthy during weekends, with - mostly - free jazz, folk and fado concerts. ( updated Feb 2021 ) Bar AAC ( Bar Associação Académica de Coimbra ), Rua Padre António Vieira 1 , baraac@noitebiba.pt . Mon–Fri 10:00–04:00, Sat Sun 15:00–04:00 . Coimbra University academic association bar. Entrance sometimes limited to University students. ( updated Feb 2021 ) Quebra ( Bar Quebra Costas ), Rua Quebra Costas 45 , ☏ +351 239 841 174 , quebracostas@gmail.com . Nice location on the stairs leading to Se Velha. Open air concerts. ( updated Feb 2021 ) NB Club Coimbra , Rua Venâncio Rodrigues 9 , ☏ +351 912 951 378 , rogersousa@noitebiba.pt . Tue–Sat 00:00–06:00, Sun Mon closed . Disco near Praça da República. ( updated Feb 2021 ) Noites Longas , Rua Almeida Garrett 11 , ☏ +351 965 076 429 , noiteslongas.coimbra@gmail.com . Tue Thu–Sat 19:00–07:00, Mon Wed Sun closed . Disco near Praça da República, alternative sounding (metal, rock). ( updated Feb 2021 )  There are several cheap hostels around the city centre. HI-Coimbra Pousada de Juventude , Rua Dr. Henriques Seco 14 , ☏ +351 239 829 228 , coimbra@movijovem.pt . Check-in: 18:00–00:00 , check-out: 08:00–12:00 . Youth hostel. Residencial Gouveia , Rua João de Ruão 21, 1st floor (one flight up) ( in the heart of downtown Coimbra ), ☏ +351 239 829 793 , residencialgouveia@gmail.com . Check-in: 14:30–21:00 , check-out: 08:00–11:00 . It is an excellent compromise between comfortable and economical price. It offers rooms with free Wi-Fi and air conditioning (optional) and allows you to make reservations at the official site. It does not include meals. €22 – €32 . ( updated Feb 2021 ) Hotel Domus , Rua Adelino Veiga 62 , ☏ +351 239 828 584 , hoteldomus@sapo.pt . Check-in: 14:00 , check-out: 12:00 . They have cheaper rooms in another building just opposite. €39 – €50 . ( updated Feb 2021 ) Residencia Aeminium Coimbra , Av. Fernão de Magalhães 17 , ☏ +351 239 829 426 . Great location near transportations and all main attractions. Good alternative to hotels or hostels with a good quality-price ratio. ( updated Feb 2021 ) Hotel Ibis Coimbra , Avenida Emidio Navarro n°70 Edificio Topazio , ☏ +351 239 852 130 . It's a modern looking hotel with amazing features. Tryp Coimbra , Alameda Armando Gonsalves 20 , ☏ +351 239 480 800 , tryp.coimbra@melia.com . Check-in: 14:00 , check-out: 12:00 . €53 – €66 . ( updated Feb 2021 ) Oslo Hotel Coimbra , Avenida Fernão de Magalhães 25 , ☏ +351 239 829 071 , mail@hoteloslo-coimbra.pt . Check-in: 14:00 , check-out: 12:00 . Near the train station and all main attractions. The staff are helpful and the view is nice. €67 – €123 . Solar Antigo Luxury Coimbra , R. da, Couraça dos Apóstolos 13-15-17, 66, 3000-431/2 , ☏ +351 969374875 . Check-in: 15:00 , check-out: 11:00 . Hotel rooms, spread out across various buildings on a narrow street, incorporate original stone foundations. ( updated Jun 2022 ) Quinta das Lágrimas , Quinta das Lágrimas , ☏ +351 239 802 380 , reservas@quintadaslagrimas.pt . Check-in: 15:00 , check-out: 12:00 . The best and most expensive hotel in Coimbra. The hotel itself is a historical site. The hotel's restaurant may be the best restaurant in the city. It's the most expensive place in the city though... Be sure to wear your best clothes if you go there. It's a very fancy place. €104 – €245 . ( updated Feb 2021 ) Aveiro — city with canals, often compared with Venice Condeixa-a-Nova — ruins of the ancient Roman settlement of Conímbriga Fátima — major pilgrimage destination where the Virgin Mary is said to have appeared to three children in 1917 Figueira da Foz — beaches and a casino about 40 km (25 mi) away Leiria — city settled since ancient times, with a Medieval castle Lousã — a mountain town Mealhada — famous for its Leitão , roast suckling pig Pombal — city with a 12th-century Romanesque castle Tomar — city with several Knights Templar sights Viseu — important Beira Alta city, a good base from which to explore that region Routes through Coimbra Porto ← Mealhada ← N S → Leiria → Lisbon",
+  "related": [
+    "portugal",
+    "beira-litoral",
+    "porto",
+    "lisbon",
+    "viseu",
+    "fatima",
+    "aveiro",
+    "leiria",
+    "beira-alta"
+  ],
+  "image": {
+    "file": "/images/coimbra-banner.webp",
+    "title": "Coimbra banner.jpg",
+    "artist": "Coimbra_November_2012-1.jpg : Alvesgaspar derivative work: Jjtkk",
+    "credit": "This file was derived from: Coimbra November 2012-1.jpg :",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Coimbra_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/2/27/Coimbra_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Coimbra",
+    "revision": 5383020,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5383020",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Coimbra&action=history",
+    "retrieved": "2026-10-17T13:11:26.045723+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Beira Litoral",
+  "excerpt": "Coimbra is the traditional capital city of Central Portugal's historic Beira Litoral region. With over 140,000 inhabitants (2021), it is the largest municipality there and one of Portugal's four largest metropolises. An important urban and…"
+}

@@ -1,0 +1,165 @@
+{
+  "title": "Terceira",
+  "slug": "terceira",
+  "displayTitle": "Terceira",
+  "region": "azores",
+  "kind": "destination",
+  "parent": "azores",
+  "intro": "Terceira is in the Azores archipelago, an autonomous region of Portugal, in the Atlantic Ocean. Right off the airplane, all that can be seen are luscious green scenery, white houses, and hilltop after hilltop of true Portuguese culture.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><span></span>\n<b>Terceira</b> is in the <a href=\"/guides/azores/\" title=\"Azores\">Azores</a> archipelago, an autonomous region of Portugal, in the Atlantic Ocean. Right off the airplane, all that can be seen are luscious green scenery, white houses, and hilltop after hilltop of true Portuguese culture. \n</p>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Angra_do_Heroísmo\"><a href=\"/guides/angra-do-heroismo/\" title=\"Angra do Heroísmo\">Angra do Heroísmo</a></span></span> – a historic city and seat of diocesis, listed as a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a>.</li>\n<li><span><span></span> <span id=\"Praia_da_Vitória\"><a href=\"https://en.wikivoyage.org/wiki/Praia_da_Vit%C3%B3ria\" title=\"Read on Wikivoyage (external source)\">Praia da Vitória</a></span></span> – a port city with Lages/Terceira airport (<b>TER </b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>) within its municipality.</li></ul>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Terceira (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">tihr-SAY-ruh</a>, /tɨɾ.ˈsɐj.ɾɐ/) is the third largest island in the Azores.\n</p><p>The people who inhabit the island rely on agriculture for income and there are very few restaurants on the island.\n</p>"
+    },
+    {
+      "id": "Talk",
+      "title": "Talk",
+      "level": 2,
+      "html": "<p>Most of the locals speak some English, at least the young or professionals in the city speak it. <a href=\"https://en.wikivoyage.org/wiki/Portuguese\" title=\"Read on Wikivoyage (external source)\">Portuguese</a> is the main language. If you're fluent in <a href=\"https://en.wikivoyage.org/wiki/Spanish\" title=\"Read on Wikivoyage (external source)\">Spanish</a>, you can get by alright.\n</p>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Lajes_Airport\"><a href=\"https://aerogarelajes.azores.gov.pt/\">Lajes Airport</a></span> (<span><b>TER </b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup></span>), <span>Pedreiras, Lajes, Praia da Vitória</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351295545454\">+351 295 545 454</a></span></span>, <span><a href=\"mailto:acl.geral@azores.gov.pt\">acl.geral@azores.gov.pt</a></span>. <bdi>Inter-island flights within the Azores, as well as to mainland Portugal and North America. Main airlines are Ryanair, TAP, SATA and Azores Airlines.</bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "By_boat",
+      "title": "By boat",
+      "level": 3,
+      "html": "<ul><li><bdi> <span id=\"Atlânticoline\"><a href=\"https://atlanticoline.pt/\">Atlânticoline</a></span>. <bdi>Ferries from <a href=\"/guides/faial/\" title=\"Faial\">Faial</a>, <a href=\"/guides/pico/\" title=\"Pico\">Pico</a>, <a href=\"/guides/sao-jorge-azores/\" title=\"São Jorge (Azores)\">São Jorge</a>, and <a href=\"/guides/graciosa-azores/\" title=\"Graciosa (Azores)\">Graciosa</a>.</bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": "<ul><li><bdi> <span id=\"Empresa_de_Viação_Terceirence\">Empresa de Viação Terceirence</span> (<span>EVT</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351295217001\">+351 295 217 001</a></span></span>, <span><a href=\"mailto:evt@mail.telepac.pt\">evt@mail.telepac.pt</a></span>. <bdi>EVT offers numerous bus routes around the island, including service between Praia do Vitoria and Angra Velha, which takes 55 min, M-F hourly, less frequently on Sa Su.</bdi><span> (<span><span>updated Dec 2023</span></span>)</span></bdi></li></ul><p>There are many car rental services around the airport in Praia De Vitoria.\n</p><p>Be very careful when driving. Local drivers are careless. Livestock has right of way, only seen in the interior rural areas of the island. There is one highway (Via Rapida) which connects Praia de Vitoria to Angra De Heroísmo, a 15- to 20-minute drive, with a speed limit of 100 km/h (62 mph).\n</p><p>There are numerous taxis on the island, unmistakable with their eggshell white/cream colour and two broad blue hashlines behind the passenger door. They are generally very well-maintained vehicles. Most drivers speak English, or one can be requested.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<p><b>Algar do Carvão</b> and <b>Gruta do Natal</b> are volcanic caves in the interior of the island. These caves are formed when a volcano's lava supply is suddenly interrupted, leaving an open space (a cave) with a vertical opening.\n</p><p>See the <b>fumaroles</b> in pristine condition, a local natural monument in a protected area. You may appreciate it exactly as Charles Darwin saw it in 1830.\n</p><p><b>Angra do Heroísmo</b>, a UNESCO World Heritage Site, has three castles. One castle is the largest in the world built by Spaniards, with over 3.5 km of perimeter walls, over twice the size of many famous castles.\n</p>"
+    },
+    {
+      "id": "Itineraries",
+      "title": "Itineraries",
+      "level": 3,
+      "html": "<p>In the summer time, street bullfights take place in towns. A bull is tethered and held by a group of men to keep it from running off, while bystanders are given the opportunity to participate as rodeo clowns. It is safer to watch from a distance and behind a barrier of at least 6 ft.  Bullfighting arenas also exist on the island.  \n</p><p>The summer months are when most of the feasts on the island take place. This is a time when families and communities gather to celebrate, dance, and eat in the streets and throughout the island.\n</p>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<p>One main beach is at <b>Praia de Vitoria</b>. It is man-made and small, about 1 mile at best, usually a summer hangout for the locals. There are numerous man made \"pools\" around the island, which are connected to the ocean. There are also many natural rock pools near the beaches in the coastal towns. In <b>Biscoitos</b>, enjoy swimming between lava rocks.\n</p><p>In Praia da Vitória is a diving center with a professional PADI and SSI team, and activities like scuba diving courses, scuba experiences, or snorkelling tours. The email address is geral@octopusportugal.com and the contact is +351 965431985.\n</p>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>There are many restaurants that offer local dishes and other international cuisine. Seafood is the main specialty as is locally cultured cheese and bread, great with local wines.\n</p><ul><li><bdi><span></span> <span id=\"Restaurant_Mercatto_di_Osteria\"><a href=\"https://mercatto.pt\">Restaurant Mercatto di Osteria</a></span>, <span>rua dos canos verdes, 129, Angra do Heroísmo</span> (<span>next to Sé Cathedral</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351295628375\">+351 295 628 375</a></span></span>, <span><a href=\"mailto:geral@mercatto.pt\">geral@mercatto.pt</a></span>. <span>Wed-Mon 12:00-15:00 and 19:00-23:00</span>. <span>€20-25, executive lunch for €10</span>.<span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<p>Vinho Verdelho (green wine) from Biscoitos and other locally made and very fine wines.\n</p>"
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": "<p>Like most of the world, it is not uncommon for petty thievery to occur. Unlocked cars with visible possessions will look like an invitation for thieves. It is advisable the cars doors be locked, valuables be with you at all times or at least concealed. Maintain visual contact with your belongings. There isn't a rash of thievery on the island, but is a common precaution anywhere in the world as tourists are always less informed making them easier prey for opportunists.\n</p>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": ""
+    }
+  ],
+  "listings": [
+    {
+      "name": "Angra do Heroísmo"
+    },
+    {
+      "name": "Praia da Vitória"
+    },
+    {
+      "name": "Lajes Airport",
+      "address": "Pedreiras, Lajes, Praia da Vitória",
+      "phone": "+351 295 545 454",
+      "description": "Inter-island flights within the Azores, as well as to mainland Portugal and North America. Main airlines are Ryanair, TAP, SATA and Azores Airlines."
+    },
+    {
+      "name": "Atlânticoline",
+      "description": "Ferries from Faial , Pico , São Jorge , and Graciosa ."
+    },
+    {
+      "name": "Empresa de Viação Terceirence",
+      "phone": "+351 295 217 001",
+      "description": "EVT offers numerous bus routes around the island, including service between Praia do Vitoria and Angra Velha, which takes 55 min, M-F hourly, less frequently on Sa Su."
+    },
+    {
+      "name": "Restaurant Mercatto di Osteria",
+      "address": "rua dos canos verdes, 129, Angra do Heroísmo",
+      "phone": "+351 295 628 375",
+      "hours": "Wed-Mon 12:00-15:00 and 19:00-23:00",
+      "price": "€20-25, executive lunch for €10"
+    }
+  ],
+  "words": 824,
+  "searchText": "Terceira is in the Azores archipelago, an autonomous region of Portugal, in the Atlantic Ocean. Right off the airplane, all that can be seen are luscious green scenery, white houses, and hilltop after hilltop of true Portuguese culture. Angra do Heroísmo – a historic city and seat of diocesis, listed as a UNESCO World Heritage Site . Praia da Vitória – a port city with Lages/Terceira airport ( TER IATA ) within its municipality. Terceira ( tihr-SAY-ruh , /tɨɾ.ˈsɐj.ɾɐ/) is the third largest island in the Azores. The people who inhabit the island rely on agriculture for income and there are very few restaurants on the island. Most of the locals speak some English, at least the young or professionals in the city speak it. Portuguese is the main language. If you're fluent in Spanish , you can get by alright.  Lajes Airport ( TER IATA ), Pedreiras, Lajes, Praia da Vitória , ☏ +351 295 545 454 , acl.geral@azores.gov.pt . Inter-island flights within the Azores, as well as to mainland Portugal and North America. Main airlines are Ryanair, TAP, SATA and Azores Airlines. ( updated Jun 2021 ) Atlânticoline . Ferries from Faial , Pico , São Jorge , and Graciosa . ( updated Jun 2021 ) Empresa de Viação Terceirence ( EVT ), ☏ +351 295 217 001 , evt@mail.telepac.pt . EVT offers numerous bus routes around the island, including service between Praia do Vitoria and Angra Velha, which takes 55 min, M-F hourly, less frequently on Sa Su. ( updated Dec 2023 ) There are many car rental services around the airport in Praia De Vitoria. Be very careful when driving. Local drivers are careless. Livestock has right of way, only seen in the interior rural areas of the island. There is one highway (Via Rapida) which connects Praia de Vitoria to Angra De Heroísmo, a 15- to 20-minute drive, with a speed limit of 100 km/h (62 mph). There are numerous taxis on the island, unmistakable with their eggshell white/cream colour and two broad blue hashlines behind the passenger door. They are generally very well-maintained vehicles. Most drivers speak English, or one can be requested. Algar do Carvão and Gruta do Natal are volcanic caves in the interior of the island. These caves are formed when a volcano's lava supply is suddenly interrupted, leaving an open space (a cave) with a vertical opening. See the fumaroles in pristine condition, a local natural monument in a protected area. You may appreciate it exactly as Charles Darwin saw it in 1830. Angra do Heroísmo , a UNESCO World Heritage Site, has three castles. One castle is the largest in the world built by Spaniards, with over 3.5 km of perimeter walls, over twice the size of many famous castles. In the summer time, street bullfights take place in towns. A bull is tethered and held by a group of men to keep it from running off, while bystanders are given the opportunity to participate as rodeo clowns. It is safer to watch from a distance and behind a barrier of at least 6 ft.  Bullfighting arenas also exist on the island. The summer months are when most of the feasts on the island take place. This is a time when families and communities gather to celebrate, dance, and eat in the streets and throughout the island. One main beach is at Praia de Vitoria . It is man-made and small, about 1 mile at best, usually a summer hangout for the locals. There are numerous man made \"pools\" around the island, which are connected to the ocean. There are also many natural rock pools near the beaches in the coastal towns. In Biscoitos , enjoy swimming between lava rocks. In Praia da Vitória is a diving center with a professional PADI and SSI team, and activities like scuba diving courses, scuba experiences, or snorkelling tours. The email address is geral@octopusportugal.com and the contact is +351 965431985. There are many restaurants that offer local dishes and other international cuisine. Seafood is the main specialty as is locally cultured cheese and bread, great with local wines. Restaurant Mercatto di Osteria , rua dos canos verdes, 129, Angra do Heroísmo ( next to Sé Cathedral ), ☏ +351 295 628 375 , geral@mercatto.pt . Wed-Mon 12:00-15:00 and 19:00-23:00 . €20-25, executive lunch for €10 . ( updated Jan 2024 ) Vinho Verdelho (green wine) from Biscoitos and other locally made and very fine wines. Like most of the world, it is not uncommon for petty thievery to occur. Unlocked cars with visible possessions will look like an invitation for thieves. It is advisable the cars doors be locked, valuables be with you at all times or at least concealed. Maintain visual contact with your belongings. There isn't a rash of thievery on the island, but is a common precaution anywhere in the world as tourists are always less informed making them easier prey for opportunists. ",
+  "related": [
+    "azores",
+    "angra-do-heroismo",
+    "faial",
+    "pico",
+    "sao-jorge-azores",
+    "graciosa-azores"
+  ],
+  "image": {
+    "file": "/images/terceira-banner.webp",
+    "title": "Terceira banner.jpg",
+    "artist": "Es2004_terceira.jpg : Eschock derivative work: Jjtkk",
+    "credit": "This file was derived from: Es2004 terceira.jpg :",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Terceira_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/7/71/Terceira_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Terceira",
+    "revision": 5357165,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5357165",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Terceira&action=history",
+    "retrieved": "2026-10-17T13:11:27.831913+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Azores",
+  "excerpt": "Terceira is in the Azores archipelago, an autonomous region of Portugal, in the Atlantic Ocean. Right off the airplane, all that can be seen are luscious green scenery, white houses, and hilltop after hilltop of true Portuguese culture."
+}

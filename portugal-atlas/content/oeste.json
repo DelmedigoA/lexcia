@@ -1,0 +1,284 @@
+{
+  "title": "Oeste",
+  "slug": "oeste",
+  "displayTitle": "Oeste",
+  "region": "lisbon-region",
+  "kind": "destination",
+  "parent": "tagus-valley",
+  "intro": "The Oeste (\"West\") is a region of Estremadura, along the Atlantic coast. Among Oeste's numerous sights are several sandy beaches, many known for their great surfing waves.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p>The <b>Oeste</b> (\"West\") is a region of <a href=\"/guides/estremadura/\" title=\"Estremadura\">Estremadura</a>, along the Atlantic coast. Among Oeste's numerous sights are several sandy beaches, many known for their great surfing waves.\n</p>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Alcobaça\"><a href=\"/guides/alcobaca/\" title=\"Alcobaça\">Alcobaça</a></span></span> — noted for its monastery, a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a></li>\n<li><span><span></span> <span id=\"Alenquer\"><a href=\"https://en.wikivoyage.org/wiki/Alenquer\" title=\"Read on Wikivoyage (external source)\">Alenquer</a></span></span> — it has a very rich heritage of prehistoric sites, castles, convents, churches, chapels, farms and stately homes</li>\n<li><span><span></span> <span id=\"Arruda_dos_Vinhos\"><a href=\"https://en.wikivoyage.org/wiki/Arruda_dos_Vinhos\" title=\"Read on Wikivoyage (external source)\">Arruda dos Vinhos</a></span></span> — home to hilltop forts built during the Napoleonic wars</li>\n<li><span><span></span> <span id=\"Bombarral\"><a href=\"https://en.wikivoyage.org/wiki/Bombarral\" title=\"Read on Wikivoyage (external source)\">Bombarral</a></span></span> — home to Bacalhôa Buddha Eden, Europe's largest Oriental garden</li>\n<li><span><span></span> <span id=\"Cadaval\"><a href=\"https://en.wikivoyage.org/wiki/Cadaval\" title=\"Read on Wikivoyage (external source)\">Cadaval</a></span></span> — small rural town</li>\n<li><span><span></span> <span id=\"Caldas_da_Rainha\"><a href=\"/guides/caldas-da-rainha/\" title=\"Caldas da Rainha\">Caldas da Rainha</a></span></span> — a city known for its curative waters and its arts</li>\n<li><span><span></span> <span id=\"Lourinhã\"><a href=\"https://en.wikivoyage.org/wiki/Lourinh%C3%A3\" title=\"Read on Wikivoyage (external source)\">Lourinhã</a></span></span> — noted for its dinosaur-related attractions</li>\n<li><span><span></span> <span id=\"Marinha_Grande\"><a href=\"https://en.wikivoyage.org/wiki/Marinha_Grande\" title=\"Read on Wikivoyage (external source)\">Marinha Grande</a></span></span> — popular ocean beach and the country's only museum devoted to glasswork</li>\n<li><span><span></span> <span id=\"Nazaré\"><a href=\"https://en.wikivoyage.org/wiki/Nazar%C3%A9\" title=\"Read on Wikivoyage (external source)\">Nazaré</a></span></span> — a picturesque beach popular with sunbathers, swimmers, and surfers</li>\n<li><span><span></span> <span id=\"Óbidos\"><a href=\"/guides/obidos/\" title=\"Óbidos\">Óbidos</a></span></span> — hilltop town surrounded by medieval castle walls</li>\n<li><span><span></span> <span id=\"Peniche\"><a href=\"/guides/peniche/\" title=\"Peniche\">Peniche</a></span></span> — lovely, family-friendly beaches with a surf scene</li>\n<li><span><span></span> <span id=\"Porto_de_Mós\"><a href=\"https://en.wikivoyage.org/wiki/Porto_de_M%C3%B3s\" title=\"Read on Wikivoyage (external source)\">Porto de Mós</a></span></span> —</li>\n<li><span><span></span> <span id=\"Sobral_de_Monte_Agraço\"><a href=\"https://en.wikivoyage.org/wiki/Sobral_de_Monte_Agra%C3%A7o\" title=\"Read on Wikivoyage (external source)\">Sobral de Monte Agraço</a></span></span> — a largely rural area with well-preserved natural spaces of remarkable landscape beauty</li>\n<li><span><span></span> <span id=\"Torres_Vedras\"><a href=\"https://en.wikivoyage.org/wiki/Torres_Vedras\" title=\"Read on Wikivoyage (external source)\">Torres Vedras</a></span></span> — the Lines of Torres Vedras defended the Lisbon peninsula against Napoleon's army</li></ul>"
+    },
+    {
+      "id": "Other_destinations",
+      "title": "Other destinations",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Arquipélago_das_Berlengas\">Arquipélago das Berlengas</span></span> (Berlengas archipelago) — uninhabited island chain 10–17 km (6.2–10.6 mi) from <a href=\"/guides/peniche/\" title=\"Peniche\">Peniche</a> containing a nature reserve</li>\n<li><span><span></span> <span id=\"Paisagem_Protegida_da_Serra_de_Montejunto\">Paisagem Protegida da Serra de Montejunto</span></span> (Serra de Montejunto Protected Landscape) — in <a href=\"https://en.wikivoyage.org/wiki/Alenquer\" title=\"Read on Wikivoyage (external source)\">Alenquer</a> and <a href=\"https://en.wikivoyage.org/wiki/Cadaval\" title=\"Read on Wikivoyage (external source)\">Cadaval</a> with Estremadura's highest viewpoint at 666 m (2,185 ft)</li>\n<li><span><span></span> <span id=\"Parque_Natural_das_Serras_de_Aire_e_Candeeiros\">Parque Natural das Serras de Aire e Candeeiros</span></span> (Serras de Aire e Candeeiros Natural Park) — partially in <a href=\"/guides/alcobaca/\" title=\"Alcobaça\">Alcobaça</a>, but spreads beyond the Oeste region</li></ul>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>The Oeste (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">oh-EHSH-t(ih)</a>, /o.ˈɛʃ.tɨ/) region's character varies from the leisurely Atlantic beaches to medium-sized cities and towns centered on commerce and services with a suburban-like pace to rural country villages and hamlets where agriculture—both plant- and animal-based—dominate the local economy.\n</p><p>The Oeste region is in the former Estremadura province, split between the districts of Leiria and Lisbon. The region's twelve municipalities are home to 362,311 people (2011) in an area of 2,220 km<sup>2</sup> (860 sq mi).\n</p><p><a href=\"https://en.wikivoyage.org/wiki/Marinha_Grande\" title=\"Read on Wikivoyage (external source)\">Marinha Grande</a> and <a href=\"https://en.wikivoyage.org/wiki/Porto_de_M%C3%B3s\" title=\"Read on Wikivoyage (external source)\">Porto de Mós</a> are included in this Wikivoyage travel region, but are not part of the administrative and statistical Oeste region. They are part of the historical Estremadura province, but nowadays belong to the <i>Comunidade Intermunicipal da Região de Leiria</i> (Leiria region intermunicipal community), which is not a Wikivoyage travel region.\n</p>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi> <span id=\"Turismo_Centro_de_Portugal\"><a href=\"https://turismodocentro.pt/regiao/oeste/\">Turismo Centro de Portugal</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351234420760\">+351 234 420 760</a></span></span>, <span><a href=\"mailto:geral@turismodocentro.pt\">geral@turismodocentro.pt</a></span>. <bdi>Oeste is one of the regions overseen by Turismo Centro de Portugal.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<p>The nearest airport is <a href=\"/guides/lisbon/\" title=\"Lisbon\">Humberto Delgado Airport</a> (<b><a href=\"https://en.wikivoyage.org/wiki/Lisbon_Airport#By_plane\" title=\"Read on Wikivoyage (external source)\">LIS</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>) (also known as Portela Airport) in <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>.\n</p><p>Although farther away, <a href=\"/guides/porto/\" title=\"Porto\">Francisco de Sá Carneiro Airport</a> (<b><a href=\"/guides/porto/\" title=\"Porto\">OPO</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>) in <a href=\"/guides/porto/\" title=\"Porto\">Porto</a> is a viable alternative.\n</p>"
+    },
+    {
+      "id": "By_train",
+      "title": "By train",
+      "level": 3,
+      "html": "<ul><li><bdi> <span id=\"Comboios_de_Portugal\"><a href=\"https://www.cp.pt/passageiros/en\">Comboios de Portugal</a></span> (<span>Trains of Portugal</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351707210220\">+351 707 210 220</a></span></span>. <span><a href=\"https://www.cp.pt/StaticFiles/timetables/lisbon-figueira-foz-oeste-regional-trains.pdf\">PDF timetable</a></span>. <bdi>Comboios de Portugal's Linha do Oeste (West Line) runs through the region north to south, connecting with several stations in Lisbon, Leiria, Coimbra, Figueira da Foz, and other stops in between. Trains on this windy line are old, and buses are often faster.</bdi><span> (<span><span>updated Jun 2020</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<ul><li><bdi> <span id=\"Rede_Expressos\"><a href=\"https://www.rede-expressos.pt/en\">Rede Expressos</a></span>, <span>Terminal Rodoviário de Sete Rios, Praça Marechal Humberto Delgado, Estrada das Laranjeiras</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351217524524\">+351 217 524 524</a></span></span>, <span><a href=\"mailto:geral@rne.pt\">geral@rne.pt</a></span>. <bdi>Rede Expressos is the main nationwide coach bus provider. You can use them from the Sete Rios or the Oriente terminals in Lisbon to reach many destinations in the Oeste region.</bdi><span> (<span><span>updated Jun 2020</span></span>)</span></bdi> </li>\n<li><bdi> <span id=\"Barraqueiro_Transportes\"><a href=\"https://www.barraqueirotransportes.pt\">Barraqueiro Transportes</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351217511600\">+351 217 511 600</a></span></span>, <span><a href=\"mailto:rodest@rodest.pt\">rodest@rodest.pt</a></span>. <bdi>Barraqueiro and its subsidiaries—<a href=\"https://www.barraqueiro-oeste.pt/\">Barraqueiro Oeste</a>, <a href=\"https://www.boa-viagem.pt/\">Boa Viagem</a>, and <a href=\"https://www.mafrense.pt/\">Mafrense</a>—serve the southern areas of the region: Alenquer, Arruda dos Vinhos, Cadaval, Lourinhã, Sobral de Monte Agraço, and Torres Vedras. Various routes connect Lisbon to cities in the region.</bdi><span> (<span><span>updated Jun 2020</span></span>)</span></bdi></li>\n<li><bdi> <span id=\"Rodoviária_do_Oeste\"><a href=\"http://rodoviariadooeste.pt/\">Rodoviária do Oeste</a></span> (<span>RDO</span>), <span>+351 262 767 676</span>, <span><a href=\"mailto:rdo@rodoviariadooeste.pt\">rdo@rodoviariadooeste.pt</a></span>. <bdi>Rodoviária do Oeste is the main regional coach bus company serving the northerly areas of region: Alcobaça, Bombarral, Cadaval, Caldas da Rainha, Lourinhã, Nazaré, Óbidos, and Peniche. It offers two <i>Rápida</i> (rapid) services from Lisbon to cities in Oeste.</bdi><span> (<span><span>updated Feb 2021</span></span>)</span></bdi>\n<ul><li><bdi> <span id=\"Rápida_Azul\"><a href=\"http://rodoviariadooeste.pt/wp-content/uploads/rapida_linha_azul.pdf\">Rápida Azul</a></span>. <bdi>RDO's <i>Rápida Azul</i> line provides bus service from Lisbon (Campo Grande) to Lourinhã (55 min), Praia da Areia Branca (~1 hr), Peniche (1 hr 25 min), and points in between.</bdi> <span>Lourinhã &amp; Praia da Areia Branca €7.80, Peniche €8.70 (see linked timetable for full pricing details)</span>.<span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li>\n<li><bdi> <span id=\"Rápida_Verde\"><a href=\"http://www.rodoviariadooeste.pt/wp-content/uploads/rapida_linha_verde.pdf\">Rápida Verde</a></span>. <bdi>RDO's <i>Rápida Verde</i> line provides frequent bus service between Lisbon (Campo Grande) and Bombarral (45 min), Óbidos (1 hr), and Caldas da Rainha (1hr 20 min).</bdi> <span>Bombarral €7.35, Óbidos €8.00, Caldas da Rainha €8.10 (see linked timetable for full pricing details)</span>.<span> (<span><span>updated Feb 2021</span></span>)</span></bdi></li></ul></li></ul>"
+    },
+    {
+      "id": "By_car",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>The main motorway in the Oeste region is <b>A8 (Autoestrada do Oeste)</b> which provides access to Lisbon in the south and Leiria in the north. There are direct exits to Torres Vedras, Bombarral, Óbidos, and Caldas da Rainha. Connecting roads lead to Peniche, Nazaré, and Alcobaça.\n</p><p>The <b>A10</b> motorway serves the southeast part of the region: Arruda dos Vinhos and offers connecting roads to Sobral de Monte Agraço and Alenquer.\n</p><p>The <b>A15</b> motorway (part of route IP6) connects directly to Óbidos from A1 in Santarém. Connecting roads go to Peniche and to Caldas da Rainha.\n</p><p>The <b>EN1</b> (or N1) road (Estrada Lisboa-Porto) was the nation's principal roadway until Portugal started using European Union community funds to build its motorway network. It serves Alenquer directly.\n</p><p>The older <b>EN8</b> (or N8) road (Estrada da Estremdura), runs largely parallel to A8. It is narrower and slower, but offers a route that allows greater closeness with the communities it passes through.\n</p><p><b>EN115</b> (or N115) offers a scenic route between Lisbon's suburb of Loures and Caldas da Rainha, serving Cadaval and Sobral de Monte Agraço.\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": "<p>The methods listed in the <a href=\"#Get_in\">Get in</a> section—train, bus, and car—can also be used to get around within the region.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><a href=\"/guides/caldas-da-rainha/\" title=\"Caldas da Rainha\">Caldas da Rainha</a> has several <b>museums</b>, mostly dedicated art.</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Lourinh%C3%A3\" title=\"Read on Wikivoyage (external source)\">Lourinhã</a> has a few sights dealing with <b>dinosaurs</b> and paleontology.</li>\n<li><a href=\"/guides/obidos/\" title=\"Óbidos\">Óbidos</a>, perhaps the Oeste's most popular destination, has a <b>medieval castle</b> and is surrounded by stone walls protecting the hilltop town.</li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li>The Oeste region has some excellent <b>beaches</b>.</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Nazar%C3%A9\" title=\"Read on Wikivoyage (external source)\">Nazaré</a> and <a href=\"/guides/peniche/\" title=\"Peniche\">Peniche</a> are especially noted for their great <b>surfing</b> waves.</li>\n<li><a href=\"/guides/obidos/\" title=\"Óbidos\">Óbidos</a> offers no fewer than four <b>golf</b> course resorts.</li></ul>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>With its coastal location, the Oeste is an excellent region to savour fresh fish and seafood.\n</p>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<p>The Oeste is home to several demarcated wine regions, including Alenquer DOC, Torres Vedras DOC, Arruda DOC, Óbidos DOC, Lourinhã DOC, and Encostas d'Aire DOC. <a href=\"/guides/obidos/\" title=\"Óbidos\">Óbidos</a> is known for its <i>ginja</i> or <i>ginjinha</i>, a cherry liqueur. <a href=\"https://en.wikivoyage.org/wiki/Lourinh%C3%A3\" title=\"Read on Wikivoyage (external source)\">Lourinhã</a> produces <i>aguardente</i>, a distilled spirit.\n</p>"
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Emergency_services",
+      "title": "Emergency services",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Centro_Hospitalar_do_Oeste–Hospital_Distrital_Caldas_da_Rainha\"><a href=\"http://www.choeste.min-saude.pt/\">Centro Hospitalar do Oeste–Hospital Distrital Caldas da Rainha</a></span> (<span>Hospital Centre of the West–Caldas da Rainha District Hospital</span>), <span>Rua Diário de Notícias</span> (<span><span><span></span></span><span> <span>Azul</span> </span><span> <span>Laranja</span> </span><span> <span>Verde</span> </span> Hospital</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351262830300\">+351 262 830 300</a></span></span>, <span><span>fax</span>: <span><span>+351 262 880 579</span></span></span>, <span><a href=\"mailto:secretariado.ca@choeste.min-saude.pt\">secretariado.ca@choeste.min-saude.pt</a></span>. <span>24 hours daily</span>. <bdi>The only public hospital in Caldas da Rainha, also serving surrounding municipalities. If you experience a medical emergency in town, you'll likely end up here.</bdi><span> (<span><span>updated Dec 2020</span></span>)</span></bdi> </li>\n<li><bdi><span></span> <span id=\"Polícia_de_Segurança_Pública\"><a href=\"https://www.psp.pt/Pages/onde-estamos.aspx?f=Caldas+da+Rainha\">Polícia de Segurança Pública</a></span> (<span>PSP, Public Security Police</span>), <span>Rua 31 de Janeiro 32</span> (<span><span><span></span></span><span> <span>Azul</span> </span> PSP</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351262870360\">+351 262 870 360</a></span></span>, <span><a href=\"mailto:caldasdarainha.leiria@psp.pt\">caldasdarainha.leiria@psp.pt</a></span>. <bdi>The Polícia de Segurança Pública patrol urban areas, such as the city of Caldas.</bdi><span> (<span><span>updated Apr 2020</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Pharmacies",
+      "title": "Pharmacies",
+      "level": 3,
+      "html": "<p>There are seven pharmacies in the city proper. They take turns being open 24 hours. You can find the current <i>farmácia de serviço</i> online, on the door of each pharmacy, on electronic signs in the city centre, and in local newspapers. Several rural communities have pharmacies. They can help you via telephone during off hours. You can call the nationwide hotline <b>1400</b> for pharmacy assistance 24/7.\n</p>"
+    },
+    {
+      "id": "Medical_Clinics",
+      "title": "Medical Clinics",
+      "level": 3,
+      "html": "<p><bdi> <span id=\"Clínica_Terrace\"><a href=\"https://clinicaterrace.pt\">Clínica Terrace</a></span>, <span>Avenida Mestre António Duarte 1C loja D</span> (<span><span><span></span></span><span> <span>Verde</span> </span></span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351928100076\">+351 928100076</a></span></span>, <span><a href=\"mailto:geral@clinicaterrace.pt\">geral@clinicaterrace.pt</a></span>. <span>Work days 07:30-19:00; Sat 08:00-13:00; Sun Closed</span>. <bdi></bdi><span> (<span><span>updated Dec 2024</span></span>)</span></bdi>\n</p>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><b><a href=\"/guides/ribatejo/\" title=\"Ribatejo\">Ribatejo</a></b> — this region to the east includes fascinating locales such as:\n<ul><li><b><a href=\"https://en.wikivoyage.org/wiki/Santar%C3%A9m_(Portugal)\" title=\"Read on Wikivoyage (external source)\">Santarém</a></b> — cathedral city full of Gothic churches</li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Tomar\" title=\"Read on Wikivoyage (external source)\">Tomar</a></b> – a city with a Knights Templar castle, a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a></li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Vila_Franca_de_Xira\" title=\"Read on Wikivoyage (external source)\">Vila Franca de Xira</a></b> — home to the Tagus Estuary Natural Reserve and its bird-watching area</li></ul></li>\n<li><b><a href=\"/guides/beira-litoral/\" title=\"Beira Litoral\">Beira Litoral</a></b> — the region to the north includes many popular destinations:\n<ul><li><b><a href=\"/guides/batalha/\" title=\"Batalha\">Batalha</a></b> — known for its medieval monastery, a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a></li>\n<li><b><a href=\"/guides/coimbra/\" title=\"Coimbra\">Coimbra</a></b> — Portugal's fourth largest urban centre, its 13th-Century university is a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a></li>\n<li><b><a href=\"/guides/fatima/\" title=\"Fátima\">Fátima</a></b> — Portugal's most famous pilgrimage site, where it's said the Blessed Virgin Mary appeared to three shepherd children in 1917</li></ul></li>\n<li><b><a href=\"/guides/greater-lisbon/\" title=\"Greater Lisbon\">Greater Lisbon</a></b> — in this region to the south, you'll find the nation's capital and other fascinating destinations:\n<ul><li><b><a href=\"/guides/cascais/\" title=\"Cascais\">Cascais</a></b> — beach town at the mouth of the Tagus (<i>Tejo</i>) River, known for the casino and high living at Estoril</li>\n<li><b><a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a></b> (<i>Lisboa</i>) – the nation's capital and most popular destination, with several <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Sites</a></li>\n<li><b><a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a></b> — this <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a> in a hilly area is known for its many palaces</li></ul></li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Alcobaça"
+    },
+    {
+      "name": "Alenquer"
+    },
+    {
+      "name": "Arruda dos Vinhos"
+    },
+    {
+      "name": "Bombarral"
+    },
+    {
+      "name": "Cadaval"
+    },
+    {
+      "name": "Caldas da Rainha"
+    },
+    {
+      "name": "Lourinhã"
+    },
+    {
+      "name": "Marinha Grande"
+    },
+    {
+      "name": "Nazaré"
+    },
+    {
+      "name": "Óbidos"
+    },
+    {
+      "name": "Peniche"
+    },
+    {
+      "name": "Porto de Mós"
+    },
+    {
+      "name": "Sobral de Monte Agraço"
+    },
+    {
+      "name": "Torres Vedras"
+    },
+    {
+      "name": "Arquipélago das Berlengas"
+    },
+    {
+      "name": "Paisagem Protegida da Serra de Montejunto"
+    },
+    {
+      "name": "Parque Natural das Serras de Aire e Candeeiros"
+    },
+    {
+      "name": "Turismo Centro de Portugal",
+      "phone": "+351 234 420 760",
+      "description": "Oeste is one of the regions overseen by Turismo Centro de Portugal."
+    },
+    {
+      "name": "Comboios de Portugal",
+      "phone": "+351 707 210 220",
+      "hours": "PDF timetable",
+      "description": "Comboios de Portugal's Linha do Oeste (West Line) runs through the region north to south, connecting with several stations in Lisbon, Leiria, Coimbra, Figueira da Foz, and other stops in between. Trains on this windy line are old, and buses are often faster."
+    },
+    {
+      "name": "Rede Expressos",
+      "address": "Terminal Rodoviário de Sete Rios, Praça Marechal Humberto Delgado, Estrada das Laranjeiras",
+      "phone": "+351 217 524 524",
+      "description": "Rede Expressos is the main nationwide coach bus provider. You can use them from the Sete Rios or the Oriente terminals in Lisbon to reach many destinations in the Oeste region."
+    },
+    {
+      "name": "Barraqueiro Transportes",
+      "phone": "+351 217 511 600",
+      "description": "Barraqueiro and its subsidiaries— Barraqueiro Oeste , Boa Viagem , and Mafrense —serve the southern areas of the region: Alenquer, Arruda dos Vinhos, Cadaval, Lourinhã, Sobral de Monte Agraço, and Torres Vedras. Various routes connect Lisbon to cities in the region."
+    },
+    {
+      "name": "Rodoviária do Oeste",
+      "address": "+351 262 767 676",
+      "description": "Rodoviária do Oeste is the main regional coach bus company serving the northerly areas of region: Alcobaça, Bombarral, Cadaval, Caldas da Rainha, Lourinhã, Nazaré, Óbidos, and Peniche. It offers two Rápida (rapid) services from Lisbon to cities in Oeste."
+    },
+    {
+      "name": "Rápida Azul",
+      "price": "Lourinhã & Praia da Areia Branca €7.80, Peniche €8.70 (see linked timetable for full pricing details)",
+      "description": "RDO's Rápida Azul line provides bus service from Lisbon (Campo Grande) to Lourinhã (55 min), Praia da Areia Branca (~1 hr), Peniche (1 hr 25 min), and points in between."
+    },
+    {
+      "name": "Rápida Verde",
+      "price": "Bombarral €7.35, Óbidos €8.00, Caldas da Rainha €8.10 (see linked timetable for full pricing details)",
+      "description": "RDO's Rápida Verde line provides frequent bus service between Lisbon (Campo Grande) and Bombarral (45 min), Óbidos (1 hr), and Caldas da Rainha (1hr 20 min)."
+    },
+    {
+      "name": "Centro Hospitalar do Oeste–Hospital Distrital Caldas da Rainha",
+      "address": "Rua Diário de Notícias",
+      "phone": "+351 262 830 300",
+      "hours": "24 hours daily",
+      "description": "The only public hospital in Caldas da Rainha, also serving surrounding municipalities. If you experience a medical emergency in town, you'll likely end up here."
+    },
+    {
+      "name": "Polícia de Segurança Pública",
+      "address": "Rua 31 de Janeiro 32",
+      "phone": "+351 262 870 360",
+      "description": "The Polícia de Segurança Pública patrol urban areas, such as the city of Caldas."
+    },
+    {
+      "name": "Clínica Terrace",
+      "address": "Avenida Mestre António Duarte 1C loja D",
+      "phone": "+351 928100076",
+      "hours": "Work days 07:30-19:00; Sat 08:00-13:00; Sun Closed",
+      "description": ""
+    }
+  ],
+  "words": 1540,
+  "searchText": "The Oeste (\"West\") is a region of Estremadura , along the Atlantic coast. Among Oeste's numerous sights are several sandy beaches, many known for their great surfing waves. Alcobaça — noted for its monastery, a UNESCO World Heritage Site Alenquer — it has a very rich heritage of prehistoric sites, castles, convents, churches, chapels, farms and stately homes Arruda dos Vinhos — home to hilltop forts built during the Napoleonic wars Bombarral — home to Bacalhôa Buddha Eden, Europe's largest Oriental garden Cadaval — small rural town Caldas da Rainha — a city known for its curative waters and its arts Lourinhã — noted for its dinosaur-related attractions Marinha Grande — popular ocean beach and the country's only museum devoted to glasswork Nazaré — a picturesque beach popular with sunbathers, swimmers, and surfers Óbidos — hilltop town surrounded by medieval castle walls Peniche — lovely, family-friendly beaches with a surf scene Porto de Mós — Sobral de Monte Agraço — a largely rural area with well-preserved natural spaces of remarkable landscape beauty Torres Vedras — the Lines of Torres Vedras defended the Lisbon peninsula against Napoleon's army Arquipélago das Berlengas (Berlengas archipelago) — uninhabited island chain 10–17 km (6.2–10.6 mi) from Peniche containing a nature reserve Paisagem Protegida da Serra de Montejunto (Serra de Montejunto Protected Landscape) — in Alenquer and Cadaval with Estremadura's highest viewpoint at 666 m (2,185 ft) Parque Natural das Serras de Aire e Candeeiros (Serras de Aire e Candeeiros Natural Park) — partially in Alcobaça , but spreads beyond the Oeste region The Oeste ( oh-EHSH-t(ih) , /o.ˈɛʃ.tɨ/) region's character varies from the leisurely Atlantic beaches to medium-sized cities and towns centered on commerce and services with a suburban-like pace to rural country villages and hamlets where agriculture—both plant- and animal-based—dominate the local economy. The Oeste region is in the former Estremadura province, split between the districts of Leiria and Lisbon. The region's twelve municipalities are home to 362,311 people (2011) in an area of 2,220 km 2 (860 sq mi). Marinha Grande and Porto de Mós are included in this Wikivoyage travel region, but are not part of the administrative and statistical Oeste region. They are part of the historical Estremadura province, but nowadays belong to the Comunidade Intermunicipal da Região de Leiria (Leiria region intermunicipal community), which is not a Wikivoyage travel region. Turismo Centro de Portugal , ☏ +351 234 420 760 , geral@turismodocentro.pt . Oeste is one of the regions overseen by Turismo Centro de Portugal. ( updated Jan 2021 )  The nearest airport is Humberto Delgado Airport ( LIS IATA ) (also known as Portela Airport) in Lisbon . Although farther away, Francisco de Sá Carneiro Airport ( OPO IATA ) in Porto is a viable alternative. Comboios de Portugal ( Trains of Portugal ), ☏ +351 707 210 220 . PDF timetable . Comboios de Portugal's Linha do Oeste (West Line) runs through the region north to south, connecting with several stations in Lisbon, Leiria, Coimbra, Figueira da Foz, and other stops in between. Trains on this windy line are old, and buses are often faster. ( updated Jun 2020 ) Rede Expressos , Terminal Rodoviário de Sete Rios, Praça Marechal Humberto Delgado, Estrada das Laranjeiras , ☏ +351 217 524 524 , geral@rne.pt . Rede Expressos is the main nationwide coach bus provider. You can use them from the Sete Rios or the Oriente terminals in Lisbon to reach many destinations in the Oeste region. ( updated Jun 2020 ) Barraqueiro Transportes , ☏ +351 217 511 600 , rodest@rodest.pt . Barraqueiro and its subsidiaries— Barraqueiro Oeste , Boa Viagem , and Mafrense —serve the southern areas of the region: Alenquer, Arruda dos Vinhos, Cadaval, Lourinhã, Sobral de Monte Agraço, and Torres Vedras. Various routes connect Lisbon to cities in the region. ( updated Jun 2020 ) Rodoviária do Oeste ( RDO ), +351 262 767 676 , rdo@rodoviariadooeste.pt . Rodoviária do Oeste is the main regional coach bus company serving the northerly areas of region: Alcobaça, Bombarral, Cadaval, Caldas da Rainha, Lourinhã, Nazaré, Óbidos, and Peniche. It offers two Rápida (rapid) services from Lisbon to cities in Oeste. ( updated Feb 2021 ) Rápida Azul . RDO's Rápida Azul line provides bus service from Lisbon (Campo Grande) to Lourinhã (55 min), Praia da Areia Branca (~1 hr), Peniche (1 hr 25 min), and points in between. Lourinhã & Praia da Areia Branca €7.80, Peniche €8.70 (see linked timetable for full pricing details) . ( updated Feb 2021 ) Rápida Verde . RDO's Rápida Verde line provides frequent bus service between Lisbon (Campo Grande) and Bombarral (45 min), Óbidos (1 hr), and Caldas da Rainha (1hr 20 min). Bombarral €7.35, Óbidos €8.00, Caldas da Rainha €8.10 (see linked timetable for full pricing details) . ( updated Feb 2021 ) The main motorway in the Oeste region is A8 (Autoestrada do Oeste) which provides access to Lisbon in the south and Leiria in the north. There are direct exits to Torres Vedras, Bombarral, Óbidos, and Caldas da Rainha. Connecting roads lead to Peniche, Nazaré, and Alcobaça. The A10 motorway serves the southeast part of the region: Arruda dos Vinhos and offers connecting roads to Sobral de Monte Agraço and Alenquer. The A15 motorway (part of route IP6) connects directly to Óbidos from A1 in Santarém. Connecting roads go to Peniche and to Caldas da Rainha. The EN1 (or N1) road (Estrada Lisboa-Porto) was the nation's principal roadway until Portugal started using European Union community funds to build its motorway network. It serves Alenquer directly. The older EN8 (or N8) road (Estrada da Estremdura), runs largely parallel to A8. It is narrower and slower, but offers a route that allows greater closeness with the communities it passes through. EN115 (or N115) offers a scenic route between Lisbon's suburb of Loures and Caldas da Rainha, serving Cadaval and Sobral de Monte Agraço. The methods listed in the Get in section—train, bus, and car—can also be used to get around within the region. Caldas da Rainha has several museums , mostly dedicated art. Lourinhã has a few sights dealing with dinosaurs and paleontology. Óbidos , perhaps the Oeste's most popular destination, has a medieval castle and is surrounded by stone walls protecting the hilltop town. The Oeste region has some excellent beaches . Nazaré and Peniche are especially noted for their great surfing waves. Óbidos offers no fewer than four golf course resorts. With its coastal location, the Oeste is an excellent region to savour fresh fish and seafood. The Oeste is home to several demarcated wine regions, including Alenquer DOC, Torres Vedras DOC, Arruda DOC, Óbidos DOC, Lourinhã DOC, and Encostas d'Aire DOC. Óbidos is known for its ginja or ginjinha , a cherry liqueur. Lourinhã produces aguardente , a distilled spirit.  Centro Hospitalar do Oeste–Hospital Distrital Caldas da Rainha ( Hospital Centre of the West–Caldas da Rainha District Hospital ), Rua Diário de Notícias ( Azul Laranja Verde Hospital ), ☏ +351 262 830 300 , fax : +351 262 880 579 , secretariado.ca@choeste.min-saude.pt . 24 hours daily . The only public hospital in Caldas da Rainha, also serving surrounding municipalities. If you experience a medical emergency in town, you'll likely end up here. ( updated Dec 2020 ) Polícia de Segurança Pública ( PSP, Public Security Police ), Rua 31 de Janeiro 32 ( Azul PSP ), ☏ +351 262 870 360 , caldasdarainha.leiria@psp.pt . The Polícia de Segurança Pública patrol urban areas, such as the city of Caldas. ( updated Apr 2020 ) There are seven pharmacies in the city proper. They take turns being open 24 hours. You can find the current farmácia de serviço online, on the door of each pharmacy, on electronic signs in the city centre, and in local newspapers. Several rural communities have pharmacies. They can help you via telephone during off hours. You can call the nationwide hotline 1400 for pharmacy assistance 24/7. Clínica Terrace , Avenida Mestre António Duarte 1C loja D ( Verde ), ☏ +351 928100076 , geral@clinicaterrace.pt . Work days 07:30-19:00; Sat 08:00-13:00; Sun Closed . ( updated Dec 2024 ) Ribatejo — this region to the east includes fascinating locales such as: Santarém — cathedral city full of Gothic churches Tomar – a city with a Knights Templar castle, a UNESCO World Heritage Site Vila Franca de Xira — home to the Tagus Estuary Natural Reserve and its bird-watching area Beira Litoral — the region to the north includes many popular destinations: Batalha — known for its medieval monastery, a UNESCO World Heritage Site Coimbra — Portugal's fourth largest urban centre, its 13th-Century university is a UNESCO World Heritage Site Fátima — Portugal's most famous pilgrimage site, where it's said the Blessed Virgin Mary appeared to three shepherd children in 1917 Greater Lisbon — in this region to the south, you'll find the nation's capital and other fascinating destinations: Cascais — beach town at the mouth of the Tagus ( Tejo ) River, known for the casino and high living at Estoril Lisbon ( Lisboa ) – the nation's capital and most popular destination, with several UNESCO World Heritage Sites Sintra — this UNESCO World Heritage Site in a hilly area is known for its many palaces",
+  "related": [
+    "estremadura",
+    "alcobaca",
+    "caldas-da-rainha",
+    "obidos",
+    "peniche",
+    "lisbon",
+    "porto",
+    "ribatejo",
+    "beira-litoral",
+    "batalha",
+    "coimbra",
+    "fatima",
+    "greater-lisbon",
+    "cascais",
+    "sintra"
+  ],
+  "image": {
+    "file": "/images/oeste-wikivoyage-banner.webp",
+    "title": "Oeste Wikivoyage Banner.jpg",
+    "artist": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+    "credit": "This image has been extracted from another file",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Oeste_Wikivoyage_Banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Oeste_Wikivoyage_Banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Oeste",
+    "revision": 5385791,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5385791",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Oeste&action=history",
+    "retrieved": "2026-10-17T13:11:28.443109+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Estremadura",
+  "excerpt": "The Oeste (\"West\") is a region of Estremadura, along the Atlantic coast. Among Oeste's numerous sights are several sandy beaches, many known for their great surfing waves."
+}

@@ -1,0 +1,307 @@
+{
+  "title": "Óbidos",
+  "slug": "obidos",
+  "displayTitle": "Óbidos",
+  "region": "lisbon-region",
+  "kind": "destination",
+  "parent": "tagus-valley",
+  "intro": "Óbidos is a town of 12,000 people (2015) in the Oeste region of Portugal. It's a popular destination due to its walled hilltop medieval centre. Óbidos has a large concentration of bookshops and golf resorts.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><b>Óbidos</b> is a town of 12,000 people (2015) in the <a href=\"/guides/oeste/\" title=\"Oeste\">Oeste</a> region of <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>. It's a popular destination due to its walled hilltop medieval centre. Óbidos has a large concentration of bookshops and golf resorts.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Óbidos (/ˈɔ.bi.duʃ/, <a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">AW-bee-doozh</a>) was added to the <a href=\"https://en.wikivoyage.org/wiki/UNESCO_Creative_Cities\" title=\"Read on Wikivoyage (external source)\">UNESCO Creative Cities Network</a> in 2015 in recognition of its literary connections.\n</p><p>The municipality of Óbidos is divided into seven <i>freguesias</i> (civil parishes):\n</p><ul><li><span><span></span> <span id=\"A_dos_Negros\">A dos Negros</span></span></li>\n<li><span><span></span> <span id=\"Amoreira\">Amoreira</span></span></li>\n<li><span><span></span> <span id=\"Gaeiras\">Gaeiras</span></span></li>\n<li><span><span></span> <span id=\"Olho_Marinho\">Olho Marinho</span></span></li>\n<li><span><span></span> <span id=\"Santa_Maria,_São_Pedro_e_Sobral_da_Lagoa\">Santa Maria, São Pedro e Sobral da Lagoa</span></span> — containing the town of Óbidos itself</li>\n<li><span><span></span> <span id=\"Usseira\">Usseira</span></span></li>\n<li><span><span></span> <span id=\"Vau\">Vau</span></span></li></ul>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Posto_de_Turismo_de_Óbidos\"><a href=\"https://turismo.obidos.pt\">Posto de Turismo de Óbidos</a></span> (<span>Óbidos Tourism Post</span>), <span>Rua da Porta da Vila</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262959231\">+351 262 959 231</a></span></span>, <span><a href=\"mailto:posto.turismo@cm-obidos.pt\">posto.turismo@cm-obidos.pt</a></span>. <span>09:30–13:00 &amp; 14:00–17:30 daily</span>. <bdi></bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Rodoviária_do_Oeste\"><a href=\"https://www.rodoviariadooeste.pt\">Rodoviária do Oeste</a></span>, <span>Rua da Praça</span>. <span><a href=\"http://www.rodoviariadooeste.pt/wp-content/uploads/rapida_linha_verde.pdf\">PDF timetable</a></span>. <bdi>Rodoviária do Oeste's <i>Rápida Verde</i> coach bus service provides frequent connections from <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>, <a href=\"https://en.wikivoyage.org/wiki/Bombarral\" title=\"Read on Wikivoyage (external source)\">Bombarral</a>, and <a href=\"/guides/caldas-da-rainha/\" title=\"Caldas da Rainha\">Caldas da Rainha</a>.  This is the fastest way from Lisbon, with services from Campo Grande station taking exactly 1 hour and departing at least hourly.</bdi> <span><abbr>€9.25</abbr> (<abbr>€7.40</abbr> for over 65s) from Lisbon</span>.<span> (<span><span>updated Apr 2025</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "By_train",
+      "title": "By train",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Óbidos_railway_station\"><a href=\"https://www.cp.pt/\">Óbidos railway station</a></span>. <span><a href=\"https://www.cp.pt/StaticFiles/horarios/regional/comboios-regionais-lisboa-figueira-da-foz-oeste.pdf\">PDF timetable</a></span>. <bdi>Óbidos is served by <a href=\"https://www.cp.pt/\">Comboios de Portugal</a>'s (Trains of Portugal) <i>Linha do Oeste</i> (Western Line).  However, from Lisbon, the train is much slower and less frequent than the bus, taking two to three hours.</bdi><span> (<span><span>updated Apr 2025</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "By_car",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>Óbidos town lies on both the A8 and A15 motorways. The N8 national road passes right by the castle walls and entryway. Paid parking is available outside the walls.\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": "<p>Most sights in Óbidos are within or near the castle walls, so walking should suffice for most travellers. \n</p><ul><li><bdi> <span id=\"OBI–Transporte_do_Concelho_de_Óbidos\"><a href=\"https://www.cm-obidos.pt/obi\">OBI–Transporte do Concelho de Óbidos</a></span>. <bdi>Bus service from Óbidos town to the surrounding villages. Each route operates once per week.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Castelo_de_Óbidos\"><a href=\"https://turismo.obidos.pt/2020/07/30/castelo/\">Castelo de Óbidos</a></span> (<span>Óbidos Castle</span>), <span>Rua Josefa de Óbidos</span>. <bdi>The village is dominated by an old medieval castle with a portion of the village located within the fortress walls.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Eburobrittium\"><a href=\"http://www.igespar.pt/pt/patrimonio/pesquisa/geral/patrimonioimovel/detail/70506/\">Eburobrittium</a></span>. <bdi>Eburobrittium was a Roman town in Lusitania, near the present town of Óbidos. The city was mentioned by Pliny the Elder as located between Collipo and Olisipo.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Igreja_de_Santa_Maria\"><a href=\"https://turismo.obidos.pt/2020/07/30/igreja-de-santa-maria/\">Igreja de Santa Maria</a></span> (<span>Church of St. Mary</span>), <span>Praça de Santa Maria</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262959633\">+351 262 959 633</a></span></span>. <bdi>The mother church/main church of Óbidos. In Moorish times, this was a mosque. After the Christian reconquest in 1148, it was dedicated as a Catholic church. Much renovation occurred in the 16th century, when the bell tower was added.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Museu_Municipal_de_Óbidos\"><a href=\"https://turismo.obidos.pt/2020/07/30/museu-municipal-de-obidos/\">Museu Municipal de Óbidos</a></span> (<span>Municipal Museum</span>), <span>Rua Direita 97</span> (<span>in the old Council Chamber House</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351262955557\">+351 262 955 557</a></span></span>, <span><a href=\"mailto:museu.municipal@cm-obidos.pt\">museu.municipal@cm-obidos.pt</a></span>. <span>Tue–Sun 10:00–13:00 &amp; 14:00–17:00, closed Mon</span>. <bdi>The museum covers the town's art and religious devotion. It features paintings from the 16th and 17th centuries, particularly by André Reinoso and Josefa d’Óbidos.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Óbidos_Aqueduct\">Óbidos Aqueduct</span> (<span>Aqueduto de Óbidos</span>). <bdi>The Óbidos Aqueduct is a 16th-century aqueduct that spans the municipality.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Porta_da_Vila\"><a href=\"https://turismo.obidos.pt/2020/07/30/porta-da-vila/\">Porta da Vila</a></span> (<span>Porta da Senhora da Piedade</span>), <span>Rua Josefa de Óbidos 2</span>. <bdi>The entryway into the town's medieval walls takes you through a tiled portico. On a balcony above, here's a baroque chapel-oratory dedicated to Our Lady of Mercy, the town's patron saint (a.k.a. Mary, the mother of Jesus).</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Santuário_do_Senhor_Jesus_da_Pedra\"><a href=\"https://turismo.obidos.pt/2020/07/30/santuario-do-senhor-jesus-da-pedra/\">Santuário do Senhor Jesus da Pedra</a></span>, <span>Largo do Santuário</span> (<span>N8 road NE of Óbidos town</span>). <bdi>This sanctuary, inaugurated in 1747, is one of Portugal's main baroque monuments. Its unusual hexagonal shape is surprising.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li><b>Walk</b> along the 1.5 km (0.93 mi) walls of the fortress.</li>\n<li>Óbidos offers a number of <b>golf</b> courses and resorts:\n<ul><li><a href=\"#Bom_Sucesso_Resort\">Bom Sucesso Resort</a></li>\n<li><a href=\"#Praia_D'El_Rey_Marriott_Golf_&amp;_Beach_Resort\">Praia D'El Rey Marriott Golf &amp; Beach Resort</a></li>\n<li><a href=\"#Evolutee_Hotel_at_Royal_Obidos_Spa_&amp;_Golf_Resort\">Royal Obidos Spa &amp; Golf Resort</a></li>\n<li><a href=\"#West_Cliffs\">West Cliffs</a></li></ul></li></ul>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": "<ul><li><b>Ginja de Óbidos</b> (or Ginjinha de Óbidos), a typical cherry liquor with a strong taste. You can buy small or medium bottles to drink or take home.</li></ul>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"A_Nova_Casa_de_Ramiro\"><a href=\"https://www.facebook.com/NovaCasaDeRamiro/\">A Nova Casa de Ramiro</a></span>, <span>Rua Porta do Vale 12</span>, <span><a href=\"mailto:novacasaramiro@gmail.com\">novacasaramiro@gmail.com</a></span>. <span>Mon 19:00–23:00, Tue-Fri 12:00–15:00 &amp; 19:00–23:00, Sat 12:00–16:00 &amp; 19:00–23:00, closed Sun</span>. <bdi>Specializes in fish, particularly cod.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Pontinha\"><a href=\"https://www.instagram.com/pontinha_obidos/\">Pontinha</a></span>, <span>Capela, s/n, Rua Dom João de Ornelas</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351969475187\">+351 969 475 187</a></span></span>. <span>Wed Thu Sun 19:00–22:00, Fri Sat 19:00–02:00, closed Mon Tue</span>. <bdi></bdi> <span><abbr>€30-55</abbr></span>.<span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Vila_Infanta\"><a href=\"https://www.facebook.com/Vila-Infanta-1876232309266634/\">Vila Infanta</a></span>, <span>Largo do Santuário do Senhor da Pedra 21A</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262959757\">+351 262 959 757</a></span></span>. <span>Thu–Mon 12:00–15:00 &amp; 19:00–22:00, Tue 12:00–15:00, Wed closed</span>. <bdi>Family-style Portuguese comfort food.</bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Albergaria_Rainha_Santa_Isabel\"><a href=\"http://www.hotel-rainha-santa-isabel-obidos.vivehotels.com/en/\">Albergaria Rainha Santa Isabel</a></span> (<span>Queen Saint Elizabeth Inn</span>), <span>Rua Direita 63</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262959323\">+351 262 959 323</a></span></span>. <span>Check-in: <span>15:30–22:30</span>, check-out: <span>08:00–12:00</span></span>. <bdi>Three-star hotel within the castle walls.</bdi> <span><abbr>€47-63</abbr></span>.<span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Bom_Sucesso_Resort\"><a href=\"http://www.bomsucesso.net/\">Bom Sucesso Resort</a></span>, <span>Bom Sucesso, Vau</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262965300\">+351 262 965 300</a></span></span>, <span><a href=\"mailto:reservations@bomsucesso.net\">reservations@bomsucesso.net</a></span>. <span>Check-in: <span>17:00</span>, check-out: <span>12:00</span></span>. <bdi>Four-star hotel resort with golf course. Contemporary-style townhouse villas with shared pool. They are fully equipped and offer garden and golf course views.</bdi> <span><abbr>€95-203</abbr></span>.<span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Casa_das_Senhoras_Rainhas\"><a href=\"https://www.senhorasrainhas.com/en\">Casa das Senhoras Rainhas</a></span>, <span>Rua do Padre Nunes Tavares 6</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262955360\">+351 262 955 360</a></span></span>, <span><a href=\"mailto:reservas@senhorasrainhas.com\">reservas@senhorasrainhas.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi>This four-star, 9-room hotel is within the castle walls.</bdi> <span><abbr>€76-127</abbr></span>.<span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Evolutee_Hotel_at_Royal_Obidos_Spa_&amp;_Golf_Resort\"><a href=\"https://www.royalobidos.com/resort/evolutee-hotel.html\">Evolutee Hotel at Royal Obidos Spa &amp; Golf Resort</a></span>, <span>Cabeço da Serra - Vau</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262240220\">+351 262 240 220</a></span></span>. <span>Check-in: <span>15:00–00:00</span>, check-out: <span>06:00–11:00</span></span>. <bdi>Five-star, 39-room \"boutique\" hotel with ocean views. Amenities include room service, minibar, spa, sauna, pool, fitness centre, golf course, business centre, and meeting rooms.</bdi> <span><abbr>€98-144</abbr></span>.<span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"The_Literary_Man_Óbidos_Hotel\"><a href=\"http://www.theliteraryman.pt/en/\">The Literary Man Óbidos Hotel</a></span>, <span>Rua Dom João de Ornelas</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262959217\">+351 262 959 217</a></span></span>. <span>Check-in: <span>15:00–20:00</span>, check-out: <span>08:00–12:00</span></span>. <bdi>This four-star, 30-room hotel in a converted convent is a reader's delight, with bookshelves stacked wall-to-wall and floor-to-ceiling. It's both a bookshop and a library. A/C, free Wi-Fi, free breakfast. There's a gin bar.</bdi> <span><abbr>€75-109</abbr></span>.<span> (<span><span>updated May 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Pousada_Castelo_Óbidos\"><a href=\"https://www.pousadas.pt/en/hotel/pousada-obidos\">Pousada Castelo Óbidos</a></span>, <span>Paço Real</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351210407630\">+351 210 407 630</a></span></span>, <span><a href=\"mailto:recepcao.castelo@pestana.com\">recepcao.castelo@pestana.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi>Travellers can stay at a <i>pousada</i> (inn) inside the medieval castle. The structure may be centuries old, but the amenities are modern and include room service, a restaurant, and free Wi-Fi.</bdi> <span><abbr>€131-357</abbr></span>.<span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Praia_D'El_Rey_Marriott_Golf_&amp;_Beach_Resort\"><a href=\"https://www.marriott.com/hotels/travel/lisdr-praia-del-rey-marriott-golf-and-beach-resort/\">Praia D'El Rey Marriott Golf &amp; Beach Resort</a></span>, <span>Avenida D. Inês de Castro, Vale de Janelas</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262905100\">+351 262 905 100</a></span></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi>At this five-star hotel, all 177 rooms have private terraces or balconies facing either the ocean or the 18-hole golf course and gardens. The resort features two restaurants, two bars, fitness center, indoor heated pool, outdoor pool, Jacuzzi, Turkish bath, spa, and meeting facilities. A kids club provides indoor and outdoor activities.</bdi> <span><abbr>€119-204</abbr></span>.<span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"West_Cliffs\"><a href=\"https://westcliffs.com/en/accommodation\">West Cliffs</a></span>, <span>Estrada do Rio Cortiço 4, Vau</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262249880\">+ 351 262 249 880</a></span></span>, <span><a href=\"mailto:emailgeral@westcliffs.com\">emailgeral@westcliffs.com</a></span>. <span>Check-in: <span>16:00–22:00</span>, check-out: <span>08:00–10:00</span></span>. <bdi>West Cliffs golf resort includes a restaurant, free parking, and an outdoor swimming pool. The rooms have a patio with garden views and free WiFi.</bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Pousada_Vila_Óbidos\"><a href=\"https://www.pousadas.pt/en/hotel/pousada-vila-obidos\">Pousada Vila Óbidos</a></span>, <span>Largo Dr. João Lourenço</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351210407635\">+351 210 407 635</a></span></span>, <span><a href=\"mailto:fo.vilaobidos@pestana.com\">fo.vilaobidos@pestana.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi></bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Connect",
+      "title": "Connect",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><a href=\"/guides/alcobaca/\" title=\"Alcobaça\">Alcobaça</a> — monastery and excellent conventual sweets and pastries</li>\n<li><a href=\"/guides/batalha/\" title=\"Batalha\">Batalha</a> — near Fátima is located the beautiful Monastery of Saint Mary of the Victory of the Battle</li>\n<li><a href=\"/guides/caldas-da-rainha/\" title=\"Caldas da Rainha\">Caldas da Rainha</a> – charming, unassuming city to experience authentic daily Portuguese life</li>\n<li><a href=\"/guides/fatima/\" title=\"Fátima\">Fátima</a> — the city and the Marian shrine of the worldwide famous apparitions of the Virgin Mary</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Nazar%C3%A9\" title=\"Read on Wikivoyage (external source)\">Nazaré</a> — a lovely village that became an international surf spot and entered into the Guinness World Records for its gigantic sea waves</li>\n<li><a href=\"/guides/peniche/\" title=\"Peniche\">Peniche</a> and the Berlengas islands</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Tomar\" title=\"Read on Wikivoyage (external source)\">Tomar</a> — the city of the Knights Templar: it is highly recommended to visit the medieval castle and the Convent of Christ</li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "A dos Negros"
+    },
+    {
+      "name": "Amoreira"
+    },
+    {
+      "name": "Gaeiras"
+    },
+    {
+      "name": "Olho Marinho"
+    },
+    {
+      "name": "Santa Maria, São Pedro e Sobral da Lagoa"
+    },
+    {
+      "name": "Usseira"
+    },
+    {
+      "name": "Vau"
+    },
+    {
+      "name": "Posto de Turismo de Óbidos",
+      "address": "Rua da Porta da Vila",
+      "phone": "+351 262 959 231",
+      "hours": "09:30–13:00 & 14:00–17:30 daily",
+      "description": ""
+    },
+    {
+      "name": "Rodoviária do Oeste",
+      "address": "Rua da Praça",
+      "hours": "PDF timetable",
+      "price": "€9.25 ( €7.40 for over 65s) from Lisbon",
+      "description": "Rodoviária do Oeste's Rápida Verde coach bus service provides frequent connections from Lisbon , Bombarral , and Caldas da Rainha .  This is the fastest way from Lisbon, with services from Campo Grande station taking exactly 1 hour and departing at least hourly."
+    },
+    {
+      "name": "Óbidos railway station",
+      "hours": "PDF timetable",
+      "description": "Óbidos is served by Comboios de Portugal 's (Trains of Portugal) Linha do Oeste (Western Line).  However, from Lisbon, the train is much slower and less frequent than the bus, taking two to three hours."
+    },
+    {
+      "name": "OBI–Transporte do Concelho de Óbidos",
+      "description": "Bus service from Óbidos town to the surrounding villages. Each route operates once per week."
+    },
+    {
+      "name": "Castelo de Óbidos",
+      "address": "Rua Josefa de Óbidos",
+      "description": "The village is dominated by an old medieval castle with a portion of the village located within the fortress walls."
+    },
+    {
+      "name": "Eburobrittium",
+      "description": "Eburobrittium was a Roman town in Lusitania, near the present town of Óbidos. The city was mentioned by Pliny the Elder as located between Collipo and Olisipo."
+    },
+    {
+      "name": "Igreja de Santa Maria",
+      "address": "Praça de Santa Maria",
+      "phone": "+351 262 959 633",
+      "description": "The mother church/main church of Óbidos. In Moorish times, this was a mosque. After the Christian reconquest in 1148, it was dedicated as a Catholic church. Much renovation occurred in the 16th century, when the bell tower was added."
+    },
+    {
+      "name": "Museu Municipal de Óbidos",
+      "address": "Rua Direita 97",
+      "phone": "+351 262 955 557",
+      "hours": "Tue–Sun 10:00–13:00 & 14:00–17:00, closed Mon",
+      "description": "The museum covers the town's art and religious devotion. It features paintings from the 16th and 17th centuries, particularly by André Reinoso and Josefa d’Óbidos."
+    },
+    {
+      "name": "Óbidos Aqueduct",
+      "description": "The Óbidos Aqueduct is a 16th-century aqueduct that spans the municipality."
+    },
+    {
+      "name": "Porta da Vila",
+      "address": "Rua Josefa de Óbidos 2",
+      "description": "The entryway into the town's medieval walls takes you through a tiled portico. On a balcony above, here's a baroque chapel-oratory dedicated to Our Lady of Mercy, the town's patron saint (a.k.a. Mary, the mother of Jesus)."
+    },
+    {
+      "name": "Santuário do Senhor Jesus da Pedra",
+      "address": "Largo do Santuário",
+      "description": "This sanctuary, inaugurated in 1747, is one of Portugal's main baroque monuments. Its unusual hexagonal shape is surprising."
+    },
+    {
+      "name": "A Nova Casa de Ramiro",
+      "address": "Rua Porta do Vale 12",
+      "hours": "Mon 19:00–23:00, Tue-Fri 12:00–15:00 & 19:00–23:00, Sat 12:00–16:00 & 19:00–23:00, closed Sun",
+      "description": "Specializes in fish, particularly cod."
+    },
+    {
+      "name": "Pontinha",
+      "address": "Capela, s/n, Rua Dom João de Ornelas",
+      "phone": "+351 969 475 187",
+      "hours": "Wed Thu Sun 19:00–22:00, Fri Sat 19:00–02:00, closed Mon Tue",
+      "price": "€30-55",
+      "description": ""
+    },
+    {
+      "name": "Vila Infanta",
+      "address": "Largo do Santuário do Senhor da Pedra 21A",
+      "phone": "+351 262 959 757",
+      "hours": "Thu–Mon 12:00–15:00 & 19:00–22:00, Tue 12:00–15:00, Wed closed",
+      "description": "Family-style Portuguese comfort food."
+    },
+    {
+      "name": "Albergaria Rainha Santa Isabel",
+      "address": "Rua Direita 63",
+      "phone": "+351 262 959 323",
+      "price": "€47-63",
+      "description": "Three-star hotel within the castle walls."
+    },
+    {
+      "name": "Bom Sucesso Resort",
+      "address": "Bom Sucesso, Vau",
+      "phone": "+351 262 965 300",
+      "price": "€95-203",
+      "description": "Four-star hotel resort with golf course. Contemporary-style townhouse villas with shared pool. They are fully equipped and offer garden and golf course views."
+    },
+    {
+      "name": "Casa das Senhoras Rainhas",
+      "address": "Rua do Padre Nunes Tavares 6",
+      "phone": "+351 262 955 360",
+      "price": "€76-127",
+      "description": "This four-star, 9-room hotel is within the castle walls."
+    },
+    {
+      "name": "Evolutee Hotel at Royal Obidos Spa & Golf Resort",
+      "address": "Cabeço da Serra - Vau",
+      "phone": "+351 262 240 220",
+      "price": "€98-144",
+      "description": "Five-star, 39-room \"boutique\" hotel with ocean views. Amenities include room service, minibar, spa, sauna, pool, fitness centre, golf course, business centre, and meeting rooms."
+    },
+    {
+      "name": "The Literary Man Óbidos Hotel",
+      "address": "Rua Dom João de Ornelas",
+      "phone": "+351 262 959 217",
+      "price": "€75-109",
+      "description": "This four-star, 30-room hotel in a converted convent is a reader's delight, with bookshelves stacked wall-to-wall and floor-to-ceiling. It's both a bookshop and a library. A/C, free Wi-Fi, free breakfast. There's a gin bar."
+    },
+    {
+      "name": "Pousada Castelo Óbidos",
+      "address": "Paço Real",
+      "phone": "+351 210 407 630",
+      "price": "€131-357",
+      "description": "Travellers can stay at a pousada (inn) inside the medieval castle. The structure may be centuries old, but the amenities are modern and include room service, a restaurant, and free Wi-Fi."
+    },
+    {
+      "name": "Praia D'El Rey Marriott Golf & Beach Resort",
+      "address": "Avenida D. Inês de Castro, Vale de Janelas",
+      "phone": "+351 262 905 100",
+      "price": "€119-204",
+      "description": "At this five-star hotel, all 177 rooms have private terraces or balconies facing either the ocean or the 18-hole golf course and gardens. The resort features two restaurants, two bars, fitness center, indoor heated pool, outdoor pool, Jacuzzi, Turkish bath, spa, and meeting facilities. A kids club provides indoor and outdoor activities."
+    },
+    {
+      "name": "West Cliffs",
+      "address": "Estrada do Rio Cortiço 4, Vau",
+      "phone": "+ 351 262 249 880",
+      "description": "West Cliffs golf resort includes a restaurant, free parking, and an outdoor swimming pool. The rooms have a patio with garden views and free WiFi."
+    },
+    {
+      "name": "Pousada Vila Óbidos",
+      "address": "Largo Dr. João Lourenço",
+      "phone": "+351 210 407 635",
+      "description": ""
+    }
+  ],
+  "words": 1403,
+  "searchText": "Óbidos is a town of 12,000 people (2015) in the Oeste region of Portugal . It's a popular destination due to its walled hilltop medieval centre. Óbidos has a large concentration of bookshops and golf resorts. Óbidos (/ˈɔ.bi.duʃ/, AW-bee-doozh ) was added to the UNESCO Creative Cities Network in 2015 in recognition of its literary connections. The municipality of Óbidos is divided into seven freguesias (civil parishes): A dos Negros Amoreira Gaeiras Olho Marinho Santa Maria, São Pedro e Sobral da Lagoa — containing the town of Óbidos itself Usseira Vau Posto de Turismo de Óbidos ( Óbidos Tourism Post ), Rua da Porta da Vila , ☏ +351 262 959 231 , posto.turismo@cm-obidos.pt . 09:30–13:00 & 14:00–17:30 daily . ( updated Jan 2021 )  Rodoviária do Oeste , Rua da Praça . PDF timetable . Rodoviária do Oeste's Rápida Verde coach bus service provides frequent connections from Lisbon , Bombarral , and Caldas da Rainha .  This is the fastest way from Lisbon, with services from Campo Grande station taking exactly 1 hour and departing at least hourly. €9.25 ( €7.40 for over 65s) from Lisbon . ( updated Apr 2025 ) Óbidos railway station . PDF timetable . Óbidos is served by Comboios de Portugal 's (Trains of Portugal) Linha do Oeste (Western Line).  However, from Lisbon, the train is much slower and less frequent than the bus, taking two to three hours. ( updated Apr 2025 ) Óbidos town lies on both the A8 and A15 motorways. The N8 national road passes right by the castle walls and entryway. Paid parking is available outside the walls. Most sights in Óbidos are within or near the castle walls, so walking should suffice for most travellers. OBI–Transporte do Concelho de Óbidos . Bus service from Óbidos town to the surrounding villages. Each route operates once per week. ( updated Jan 2021 ) Castelo de Óbidos ( Óbidos Castle ), Rua Josefa de Óbidos . The village is dominated by an old medieval castle with a portion of the village located within the fortress walls. ( updated Jan 2021 ) Eburobrittium . Eburobrittium was a Roman town in Lusitania, near the present town of Óbidos. The city was mentioned by Pliny the Elder as located between Collipo and Olisipo. ( updated Jan 2021 ) Igreja de Santa Maria ( Church of St. Mary ), Praça de Santa Maria , ☏ +351 262 959 633 . The mother church/main church of Óbidos. In Moorish times, this was a mosque. After the Christian reconquest in 1148, it was dedicated as a Catholic church. Much renovation occurred in the 16th century, when the bell tower was added. ( updated Jan 2021 ) Museu Municipal de Óbidos ( Municipal Museum ), Rua Direita 97 ( in the old Council Chamber House ), ☏ +351 262 955 557 , museu.municipal@cm-obidos.pt . Tue–Sun 10:00–13:00 & 14:00–17:00, closed Mon . The museum covers the town's art and religious devotion. It features paintings from the 16th and 17th centuries, particularly by André Reinoso and Josefa d’Óbidos. ( updated Jan 2021 ) Óbidos Aqueduct ( Aqueduto de Óbidos ). The Óbidos Aqueduct is a 16th-century aqueduct that spans the municipality. ( updated Jan 2021 ) Porta da Vila ( Porta da Senhora da Piedade ), Rua Josefa de Óbidos 2 . The entryway into the town's medieval walls takes you through a tiled portico. On a balcony above, here's a baroque chapel-oratory dedicated to Our Lady of Mercy, the town's patron saint (a.k.a. Mary, the mother of Jesus). ( updated Jan 2021 ) Santuário do Senhor Jesus da Pedra , Largo do Santuário ( N8 road NE of Óbidos town ). This sanctuary, inaugurated in 1747, is one of Portugal's main baroque monuments. Its unusual hexagonal shape is surprising. ( updated Jan 2021 ) Walk along the 1.5 km (0.93 mi) walls of the fortress. Óbidos offers a number of golf courses and resorts: Bom Sucesso Resort Praia D'El Rey Marriott Golf & Beach Resort Royal Obidos Spa & Golf Resort West Cliffs Ginja de Óbidos (or Ginjinha de Óbidos), a typical cherry liquor with a strong taste. You can buy small or medium bottles to drink or take home. A Nova Casa de Ramiro , Rua Porta do Vale 12 , novacasaramiro@gmail.com . Mon 19:00–23:00, Tue-Fri 12:00–15:00 & 19:00–23:00, Sat 12:00–16:00 & 19:00–23:00, closed Sun . Specializes in fish, particularly cod. ( updated Jan 2021 ) Pontinha , Capela, s/n, Rua Dom João de Ornelas , ☏ +351 969 475 187 . Wed Thu Sun 19:00–22:00, Fri Sat 19:00–02:00, closed Mon Tue . €30-55 . ( updated Jan 2021 ) Vila Infanta , Largo do Santuário do Senhor da Pedra 21A , ☏ +351 262 959 757 . Thu–Mon 12:00–15:00 & 19:00–22:00, Tue 12:00–15:00, Wed closed . Family-style Portuguese comfort food. ( updated Mar 2021 )  Albergaria Rainha Santa Isabel ( Queen Saint Elizabeth Inn ), Rua Direita 63 , ☏ +351 262 959 323 . Check-in: 15:30–22:30 , check-out: 08:00–12:00 . Three-star hotel within the castle walls. €47-63 . ( updated Jan 2021 ) Bom Sucesso Resort , Bom Sucesso, Vau , ☏ +351 262 965 300 , reservations@bomsucesso.net . Check-in: 17:00 , check-out: 12:00 . Four-star hotel resort with golf course. Contemporary-style townhouse villas with shared pool. They are fully equipped and offer garden and golf course views. €95-203 . ( updated Mar 2021 ) Casa das Senhoras Rainhas , Rua do Padre Nunes Tavares 6 , ☏ +351 262 955 360 , reservas@senhorasrainhas.com . Check-in: 15:00 , check-out: 12:00 . This four-star, 9-room hotel is within the castle walls. €76-127 . ( updated Jan 2021 ) Evolutee Hotel at Royal Obidos Spa & Golf Resort , Cabeço da Serra - Vau , ☏ +351 262 240 220 . Check-in: 15:00–00:00 , check-out: 06:00–11:00 . Five-star, 39-room \"boutique\" hotel with ocean views. Amenities include room service, minibar, spa, sauna, pool, fitness centre, golf course, business centre, and meeting rooms. €98-144 . ( updated Mar 2021 ) The Literary Man Óbidos Hotel , Rua Dom João de Ornelas , ☏ +351 262 959 217 . Check-in: 15:00–20:00 , check-out: 08:00–12:00 . This four-star, 30-room hotel in a converted convent is a reader's delight, with bookshelves stacked wall-to-wall and floor-to-ceiling. It's both a bookshop and a library. A/C, free Wi-Fi, free breakfast. There's a gin bar. €75-109 . ( updated May 2021 ) Pousada Castelo Óbidos , Paço Real , ☏ +351 210 407 630 , recepcao.castelo@pestana.com . Check-in: 15:00 , check-out: 12:00 . Travellers can stay at a pousada (inn) inside the medieval castle. The structure may be centuries old, but the amenities are modern and include room service, a restaurant, and free Wi-Fi. €131-357 . ( updated Mar 2021 ) Praia D'El Rey Marriott Golf & Beach Resort , Avenida D. Inês de Castro, Vale de Janelas , ☏ +351 262 905 100 . Check-in: 15:00 , check-out: 12:00 . At this five-star hotel, all 177 rooms have private terraces or balconies facing either the ocean or the 18-hole golf course and gardens. The resort features two restaurants, two bars, fitness center, indoor heated pool, outdoor pool, Jacuzzi, Turkish bath, spa, and meeting facilities. A kids club provides indoor and outdoor activities. €119-204 . ( updated Jan 2021 ) West Cliffs , Estrada do Rio Cortiço 4, Vau , ☏ + 351 262 249 880 , emailgeral@westcliffs.com . Check-in: 16:00–22:00 , check-out: 08:00–10:00 . West Cliffs golf resort includes a restaurant, free parking, and an outdoor swimming pool. The rooms have a patio with garden views and free WiFi. ( updated Mar 2021 ) Pousada Vila Óbidos , Largo Dr. João Lourenço , ☏ +351 210 407 635 , fo.vilaobidos@pestana.com . Check-in: 15:00 , check-out: 12:00 . ( updated Mar 2021 )  Alcobaça — monastery and excellent conventual sweets and pastries Batalha — near Fátima is located the beautiful Monastery of Saint Mary of the Victory of the Battle Caldas da Rainha – charming, unassuming city to experience authentic daily Portuguese life Fátima — the city and the Marian shrine of the worldwide famous apparitions of the Virgin Mary Nazaré — a lovely village that became an international surf spot and entered into the Guinness World Records for its gigantic sea waves Peniche and the Berlengas islands Tomar — the city of the Knights Templar: it is highly recommended to visit the medieval castle and the Convent of Christ",
+  "related": [
+    "oeste",
+    "portugal",
+    "lisbon",
+    "caldas-da-rainha",
+    "alcobaca",
+    "batalha",
+    "fatima",
+    "peniche"
+  ],
+  "image": {
+    "file": "/images/obidos-banner-castle-walls.webp",
+    "title": "Obidos banner Castle walls.jpg",
+    "artist": "Obidos_April_2009-4b.jpg : Alvesgaspar derivative work: Jjtkk",
+    "credit": "This file was derived from: Obidos April 2009-4b.jpg :",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Obidos_banner_Castle_walls.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Obidos_banner_Castle_walls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/%C3%93bidos",
+    "revision": 5358493,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5358493",
+    "history": "https://en.wikivoyage.org/w/index.php?title=%C3%93bidos&action=history",
+    "retrieved": "2026-10-17T13:11:27.709391+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Oeste",
+  "excerpt": "Óbidos is a town of 12,000 people (2015) in the Oeste region of Portugal. It's a popular destination due to its walled hilltop medieval centre. Óbidos has a large concentration of bookshops and golf resorts."
+}

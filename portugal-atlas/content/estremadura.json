@@ -1,0 +1,202 @@
+{
+  "title": "Estremadura",
+  "slug": "estremadura",
+  "displayTitle": "Estremadura",
+  "region": "lisbon-region",
+  "kind": "destination",
+  "parent": "tagus-valley",
+  "intro": "Estremadura is a region in Portugal, north of Greater Lisbon, along the Atlantic coast.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><b>Estremadura</b> is a region in <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>, north of <a href=\"/guides/greater-lisbon/\" title=\"Greater Lisbon\">Greater Lisbon</a>, along the Atlantic coast.\n</p>"
+    },
+    {
+      "id": "Regions",
+      "title": "Regions",
+      "level": 2,
+      "html": "<table>\n<tbody><tr>\n<td> \n</td>\n<td><b><a href=\"/guides/greater-lisbon/\" title=\"Greater Lisbon\">Greater Lisbon</a></b> <br/><a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>, Portugal's capital, and its suburbs\n</td></tr></tbody></table><table>\n<tbody><tr>\n<td> \n</td>\n<td><b><a href=\"/guides/oeste/\" title=\"Oeste\">Oeste</a></b> <br/>North of Greater Lisbon, along the Atlantic coast\n</td></tr></tbody></table><table>\n<tbody><tr>\n<td> \n</td>\n<td><b><a href=\"/guides/setubal-peninsula/\" title=\"Setúbal Peninsula\">Setúbal Peninsula</a></b> <br/>South of the River Tagus, across from Greater Lisbon\n</td></tr></tbody></table>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Lisbon\"><a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a></span></span> — the country's capital enchants travellers with its bleached limestone buildings, intimate alleyways, and an easy going charm, includes a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a></li>\n<li><span><span></span> <span id=\"Alcobaça\"><a href=\"/guides/alcobaca/\" title=\"Alcobaça\">Alcobaça</a></span></span> — noted for its monastery, a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a></li>\n<li><span><span></span> <span id=\"Almada\"><a href=\"https://en.wikivoyage.org/wiki/Almada\" title=\"Read on Wikivoyage (external source)\">Almada</a></span></span> — facing Lisbon over the river Tagus, with an imposing hilltop statue of Cristo Rei</li>\n<li><span><span></span> <span id=\"Cascais\"><a href=\"/guides/cascais/\" title=\"Cascais\">Cascais</a></span></span> — one of Europe's oldest holiday resorts with as much sunshine as heritage</li>\n<li><span><span></span> <span id=\"Nazaré\"><a href=\"https://en.wikivoyage.org/wiki/Nazar%C3%A9\" title=\"Read on Wikivoyage (external source)\">Nazaré</a></span></span> —  a picturesque beach popular with sunbathers, swimmers, and surfers</li>\n<li><span><span></span> <span id=\"Óbidos\"><a href=\"/guides/obidos/\" title=\"Óbidos\">Óbidos</a></span></span> —  hilltop town surrounded by medieval castle walls</li>\n<li><span><span></span> <span id=\"Peniche\"><a href=\"/guides/peniche/\" title=\"Peniche\">Peniche</a></span></span> —  lovely, family-friendly beaches with a surf scene</li>\n<li><span><span></span> <span id=\"Setúbal\"><a href=\"https://en.wikivoyage.org/wiki/Set%C3%BAbal\" title=\"Read on Wikivoyage (external source)\">Setúbal</a></span></span> — the Tróia peninsula has vast white/golden sand beaches and several luxury hotels and resorts</li>\n<li><span><span></span> <span id=\"Sintra\"><a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a></span></span> — famous for a number of palaces spread over its green hills, <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a></li></ul>"
+    },
+    {
+      "id": "Other_destinations",
+      "title": "Other destinations",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Berlengas\">Berlengas</span></span> — uninhabited island chain 10–17 km (6.2–10.6 mi) from <a href=\"/guides/peniche/\" title=\"Peniche\">Peniche</a> containing a nature reserve</li>\n<li><span><span></span> <span id=\"Cabo_da_Roca\"><a href=\"https://en.wikivoyage.org/wiki/Cabo_da_Roca\" title=\"Read on Wikivoyage (external source)\">Cabo da Roca</a></span></span> – Europe's westernmost point, which can be accessed from <a href=\"/guides/cascais/\" title=\"Cascais\">Cascais</a> or <a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a></li>\n<li><span><span></span> <span id=\"Natural_Park_of_Arrábida\">Natural Park of Arrábida</span></span> — a 108-km² park between the sea and the hills near Setúbal, with three beautiful beaches</li>\n<li><span><span></span> <span id=\"Paisagem_Protegida_da_Serra_de_Montejunto\">Paisagem Protegida da Serra de Montejunto</span></span> (Serra de Montejunto Protected Landscape) — in <a href=\"https://en.wikivoyage.org/wiki/Alenquer\" title=\"Read on Wikivoyage (external source)\">Alenquer</a> and <a href=\"https://en.wikivoyage.org/wiki/Cadaval\" title=\"Read on Wikivoyage (external source)\">Cadaval</a> with Estremadura's highest viewpoint at 666 m (2,185 ft)</li>\n<li><span><span></span> <span id=\"Parque_Natural_das_Serras_de_Aire_e_Candeeiros\">Parque Natural das Serras de Aire e Candeeiros</span></span> (Serras de Aire e Candeeiros Natural Park) — partially in <a href=\"/guides/alcobaca/\" title=\"Alcobaça\">Alcobaça</a>, but spreads beyond the Oeste region</li>\n<li><span><span></span><span>MISSING WIKILINK</span> <span id=\"Praia_das_Maçãs\">Praia das Maçãs</span></span> — a seaside resort 13 km (8.1 mi) from <a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a></li></ul>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Estremadura (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">sh-trih-muh-DOO-ruh</a>, /ʃ.tɾɨ.mɐ.ˈdu.ɾɐ/) is a historical province of Portugal. Nowadays, it's mostly covered by the modern-day administrative regions of <i>Área Metropolitana de Lisboa</i> (Lisbon Metropolitan Area) and <i>Oeste</i> (West).\n</p>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<p>There are two airports within the Lisbon Region: <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon Portela Airport</a>, which handles scheduled and charter passenger flights, and <i>Aeródromo Municipal de Cascais</i>, which is a small airport for general aviation (private planes) in <a href=\"/guides/cascais/\" title=\"Cascais\">Cascais</a>.\n</p><p>One alternative is to fly to the <i>Francisco Sa Carneiro</i> airport in <a href=\"/guides/porto/\" title=\"Porto\">Porto</a> and then take the Porto Metro to the Campanha station and further take a long-distance train to Lisbon from there. The train alone takes 3 hours in each direction, but you can take advantage of the oftentimes cheaper connections to the Porto airport and include Porto in your trip this way.\n</p>"
+    },
+    {
+      "id": "By_train",
+      "title": "By train",
+      "level": 3,
+      "html": "<p>In general, long-distance trains calling in the Lisbon Region will stop in <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a> only. There are trains from the north and south of Portugal, as well as international trains from Spain calling there. You will probably need to change stations from where your long-distance train arrives to your bus or train connection to your destination outside of Lisbon - please refer to our <a href=\"/guides/lisbon/\" title=\"Lisbon\">guide to Lisbon</a> for more detailed information.\n</p><p><a href=\"https://www.cp.pt/\">Comboios de Portugal</a>'s <i><a href=\"https://www.cp.pt/StaticFiles/timetables/lisbon-figueira-foz-oeste-regional-trains.pdf\">Linha do Oeste</a></i> (West Line) runs through the Oeste region north to south, connecting with several stations in Lisbon, Leiria, Coimbra, Figueira da Foz, and other stops in between. Trains on this windy line are old, and buses are often faster.\n</p>"
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<p><a href=\"https://www.rede-expressos.pt/\">Rede Expressos</a> provides intercity bus service throughout the country, providing routes to Estremadura from most major cities. Lisbon is the country's main hub.\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": "<p>There is an efficient, if a bit complicated, transportation system within the Lisbon Region. At its backbone are the local railways, supported by the light rail systems and the ferries across the Tagus, complemented by bus connections, all of which have several operators.\n</p><p>The railway system consists of four separate suburban railway lines managed by the state-owned Portuguese railway operator, under the name of <i><a href=\"https://www.cp.pt/cp/displayPage.do?vgnextoid=65bdd5abe2a74010VgnVCM1000007b01a8c0RCRD&amp;lang=en\">Serviços Urbanos da CP</a></i>. The four lines start from different stations around Lisbon and connect to different destinations:\n</p><ul><li>the <b>Cascais line</b> (yellow) starts at <i>Cais do Sodre</i> station in Lisbon and goes to <a href=\"/guides/cascais/\" title=\"Cascais\">Cascais</a>, <a href=\"https://en.wikivoyage.org/wiki/Estoril\" title=\"Read on Wikivoyage (external source)\">Estoril</a> and <a href=\"https://en.wikivoyage.org/wiki/Oeiras\" title=\"Read on Wikivoyage (external source)\">Oeiras</a>.</li>\n<li>the <b>Sintra line</b> (green) has stops at <i>Rossio</i> in the historic centre of Lisbon and terminates in <a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a>, with locations in the hills northwest of Lisbon, such as <a href=\"https://en.wikivoyage.org/wiki/Amadora\" title=\"Read on Wikivoyage (external source)\">Amadora</a>, on its way. Some trains on the green line go as far as the <i>Oriente</i> station in Lisbon, which is close to the <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon Airport</a></li>\n<li>the <b>Azambuja line</b> (red) starts at <i>Santa Apolonia</i> station and goes through <i>Oriente</i> in Lisbon, taking you northeast along the Tagus to <a href=\"https://en.wikivoyage.org/w/index.php?title=Azambuja&amp;action=edit&amp;redlink=1\" title=\"Azambuja (page does not exist)\">Azambuja</a> and all the municipalities along the way, which are of minor touristic interest</li>\n<li>the <b>Sado line</b> (blue) is not named after perversely pleasurable acts of violence, but rather the estuary of the Sado River, which the line serves. The line starts in <a href=\"https://en.wikivoyage.org/w/index.php?title=Barreiros&amp;action=edit&amp;redlink=1\" title=\"Barreiros (page does not exist)\">Barreiros</a> on the south bank of the Tagus, where you can get by a ferry from the very heart of Lisbon. Various municipalities are on the line's route, including <a href=\"https://en.wikivoyage.org/wiki/Setubal\" title=\"Read on Wikivoyage (external source)\">Setubal</a>.</li></ul><p>In addition to the normal course of those lines, the red and green line also have trains traversing the railway arc through the north of Lisbon, which includes the <i>Campolide</i>, <i>Sete Rios</i>, <i>Entrecampos</i> and <i>Oriente</i> stations.\n</p><p>The only railway line crossing the Tagus, by means of the Bridge of April 25 in Lisbon, is operated by an entirely separate company called <i>Fertagus</i>, using navy in its corporate identity and commonly identified as such in schematic maps. The Fertagus trains start at <a href=\"https://en.wikivoyage.org/wiki/Setubal\" title=\"Read on Wikivoyage (external source)\">Setubal</a> and take a wide arch through the Setubal peninsula, while on the north side of Tagus they follow the above-mentioned railway arc of <i>Campolide</i>, <i>Sete Rios</i> and <i>Entrecampos</i> stations, not going to <i>Oriente</i> though.\n</p><p>Complementing and binding together those railway connections are the underground rail systems - the Lisbon Metro, which connects the various Lisbon railway stations (as do the buses and trams operated by Carris, Lisbon's municipal transit company) and the Metro de Sul tramway system in Almada and surrounding municipalities. To close the gap the Tagus poses, a company called <i>Transtejo</i> operates a number of regular ferry connections between various quays in Lisbon and municipalities on the southern side of the river.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<p>There is an obvious wealth of historic monuments, museums, galleries and other attractions in the grand old city of <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>, which is probably where more tourists will start their visit anyway. Do not miss the UNESCO World Heritage site of <a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a>, with numerous royal palaces of fairytale qualities scattered across the lush green hills and magnificent gardens. Head for the beaches of <a href=\"/guides/cascais/\" title=\"Cascais\">Cascais</a> and <a href=\"https://en.wikivoyage.org/wiki/Estoril\" title=\"Read on Wikivoyage (external source)\">Estoril</a> to experience the Atlantic Ocean and some high life of the famous resorts.\n</p><p>Across the Tagus, visit <a href=\"https://en.wikivoyage.org/wiki/Almada\" title=\"Read on Wikivoyage (external source)\">Almada</a> for the magnificent views from the statue of Cristo Rei towering over Lisbon and the region. For a glimpse into the workings of the port and fishing industries that propel the region, visit <a href=\"https://en.wikivoyage.org/wiki/Setubal\" title=\"Read on Wikivoyage (external source)\">Setubal</a> and <a href=\"https://en.wikivoyage.org/wiki/Sesimbra\" title=\"Read on Wikivoyage (external source)\">Sesimbra</a>, which also offer a number of more relaxed beaches than those north of the Tagus.\n</p><ul><li><a href=\"/guides/caldas-da-rainha/\" title=\"Caldas da Rainha\">Caldas da Rainha</a> has several <b>museums</b>, mostly dedicated art.</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Lourinh%C3%A3\" title=\"Read on Wikivoyage (external source)\">Lourinhã</a> has a few sights dealing with <b>dinosaurs</b> and paleontology.</li>\n<li><a href=\"/guides/obidos/\" title=\"Óbidos\">Óbidos</a>, perhaps the Oeste's most popular destination, has a <b>medieval castle</b> and is surrounded by stone walls protecting the hilltop town.</li></ul>"
+    },
+    {
+      "id": "Itineraries",
+      "title": "Itineraries",
+      "level": 3,
+      "html": "<ul><li><a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a> and <a href=\"/guides/cascais/\" title=\"Cascais\">Cascais</a></li></ul><dl><dd>Go from Rossio Station in <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a> to <a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a> by train</dd>\n<dd>Buy the rover ticket for the Greyhound bus that lets you travel in and beyond <a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a> (<i>there is a cheaper one for <a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a> only</i>)</dd>\n<dd>Use the local bus to see the town and the National Palace, the Castelo dos Mouros and the extraordinary Pena Palace.</dd>\n<dd>Take a bus from the station at <a href=\"/guides/sintra/\" title=\"Sintra\">Sintra</a> to <a href=\"https://en.wikivoyage.org/wiki/Cabo_da_Roca\" title=\"Read on Wikivoyage (external source)\">Cabo da Roca</a>, the westernmost point of mainland Europe</dd>\n<dd>Take a bus to <a href=\"/guides/cascais/\" title=\"Cascais\">Cascais</a> (and very possibly eat there)</dd>\n<dd>Return by train to the Cais do Sodre station in <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>.</dd></dl><p>You will need to check bus timetables carefully but both train lines are frequent and cheap. if you return from <a href=\"/guides/cascais/\" title=\"Cascais\">Cascais</a> after dark (avoid the late-night train, for safety reasons), you will get wonderful views in <a href=\"https://en.wikivoyage.org/wiki/Belem\" title=\"Read on Wikivoyage (external source)\">Belem</a> of the floodlit buildings.\n</p><ul><li>South of the River</li></ul><dl><dd>Ferry from <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a> to <a href=\"https://en.wikivoyage.org/wiki/Montijo\" title=\"Read on Wikivoyage (external source)\">Montijo</a></dd>\n<dd>Bus to <a href=\"https://en.wikivoyage.org/wiki/Setubal\" title=\"Read on Wikivoyage (external source)\">Setubal</a></dd>\n<dd>Bus to <a href=\"https://en.wikivoyage.org/wiki/Sesimbra\" title=\"Read on Wikivoyage (external source)\">Sesimbra</a></dd>\n<dd>Local bus or walk to fishing port (and return)</dd>\n<dd>Bus to <a href=\"https://en.wikivoyage.org/w/index.php?title=Cacilhas&amp;action=edit&amp;redlink=1\" title=\"Cacilhas (page does not exist)\">Cacilhas</a>, Almada.</dd>\n<dd>Ferry to <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a></dd></dl>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<p>Given the natural conditions, it is obvious that Estremadura is a great place to practice many sports activities, especially those related to the seaside.\n</p><ul><li>Estremadura has many excellent <b>beaches</b>.</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Nazar%C3%A9\" title=\"Read on Wikivoyage (external source)\">Nazaré</a> and <a href=\"/guides/peniche/\" title=\"Peniche\">Peniche</a> are especially noted for their great <b>surfing</b> waves.</li>\n<li><a href=\"/guides/obidos/\" title=\"Óbidos\">Óbidos</a> offers no fewer than four <b>golf</b> course resorts.</li></ul>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>The Portuguese cuisine is both simple and extremely rich, and there is quite a lot to enjoy year-round. That said, being at one of the largest ports of the Atlantic Ocean, you absolutely need to make sure you experience the fresh fish and other seafood, which come in ample supply.\n</p>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<p>The Portuguese way of life and typical organisation of the day places a big emphasis on the nightlife, so you will never be out of opportunities to enjoy yourself in the evenings (and oftentimes also well into the night - or morning!) <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a> is obviously bustling with those, but it does not mean you will not find bustling nightlife in other towns as well.\n</p><p>The Oeste is home to several demarcated wine regions, including Alenquer DOC, Torres Vedras DOC, Arruda DOC, Óbidos DOC, Lourinhã DOC, and Encostas d'Aire DOC. <a href=\"/guides/obidos/\" title=\"Óbidos\">Óbidos</a> is known for its <i>ginja</i> or <i>ginjinha</i>, a cherry liqueur. <a href=\"https://en.wikivoyage.org/wiki/Lourinh%C3%A3\" title=\"Read on Wikivoyage (external source)\">Lourinhã</a> produces <i>aguardente</i>, a distilled spirit.\n</p>"
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><a href=\"/guides/alentejo/\" title=\"Alentejo\">Alentejo</a></li>\n<li><a href=\"/guides/beiras/\" title=\"Beiras\">Beiras</a></li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Lisbon"
+    },
+    {
+      "name": "Alcobaça"
+    },
+    {
+      "name": "Almada"
+    },
+    {
+      "name": "Cascais"
+    },
+    {
+      "name": "Nazaré"
+    },
+    {
+      "name": "Óbidos"
+    },
+    {
+      "name": "Peniche"
+    },
+    {
+      "name": "Setúbal"
+    },
+    {
+      "name": "Sintra"
+    },
+    {
+      "name": "Berlengas"
+    },
+    {
+      "name": "Cabo da Roca"
+    },
+    {
+      "name": "Natural Park of Arrábida"
+    },
+    {
+      "name": "Paisagem Protegida da Serra de Montejunto"
+    },
+    {
+      "name": "Parque Natural das Serras de Aire e Candeeiros"
+    },
+    {
+      "name": "Praia das Maçãs"
+    }
+  ],
+  "words": 1579,
+  "searchText": "Estremadura is a region in Portugal , north of Greater Lisbon , along the Atlantic coast. Greater Lisbon Lisbon , Portugal's capital, and its suburbs Oeste North of Greater Lisbon, along the Atlantic coast Setúbal Peninsula South of the River Tagus, across from Greater Lisbon Lisbon — the country's capital enchants travellers with its bleached limestone buildings, intimate alleyways, and an easy going charm, includes a UNESCO World Heritage Site Alcobaça — noted for its monastery, a UNESCO World Heritage Site Almada — facing Lisbon over the river Tagus, with an imposing hilltop statue of Cristo Rei Cascais — one of Europe's oldest holiday resorts with as much sunshine as heritage Nazaré —  a picturesque beach popular with sunbathers, swimmers, and surfers Óbidos —  hilltop town surrounded by medieval castle walls Peniche —  lovely, family-friendly beaches with a surf scene Setúbal — the Tróia peninsula has vast white/golden sand beaches and several luxury hotels and resorts Sintra — famous for a number of palaces spread over its green hills, UNESCO World Heritage Site Berlengas — uninhabited island chain 10–17 km (6.2–10.6 mi) from Peniche containing a nature reserve Cabo da Roca – Europe's westernmost point, which can be accessed from Cascais or Sintra Natural Park of Arrábida — a 108-km² park between the sea and the hills near Setúbal, with three beautiful beaches Paisagem Protegida da Serra de Montejunto (Serra de Montejunto Protected Landscape) — in Alenquer and Cadaval with Estremadura's highest viewpoint at 666 m (2,185 ft) Parque Natural das Serras de Aire e Candeeiros (Serras de Aire e Candeeiros Natural Park) — partially in Alcobaça , but spreads beyond the Oeste region MISSING WIKILINK Praia das Maçãs — a seaside resort 13 km (8.1 mi) from Sintra Estremadura ( sh-trih-muh-DOO-ruh , /ʃ.tɾɨ.mɐ.ˈdu.ɾɐ/) is a historical province of Portugal. Nowadays, it's mostly covered by the modern-day administrative regions of Área Metropolitana de Lisboa (Lisbon Metropolitan Area) and Oeste (West).  There are two airports within the Lisbon Region: Lisbon Portela Airport , which handles scheduled and charter passenger flights, and Aeródromo Municipal de Cascais , which is a small airport for general aviation (private planes) in Cascais . One alternative is to fly to the Francisco Sa Carneiro airport in Porto and then take the Porto Metro to the Campanha station and further take a long-distance train to Lisbon from there. The train alone takes 3 hours in each direction, but you can take advantage of the oftentimes cheaper connections to the Porto airport and include Porto in your trip this way. In general, long-distance trains calling in the Lisbon Region will stop in Lisbon only. There are trains from the north and south of Portugal, as well as international trains from Spain calling there. You will probably need to change stations from where your long-distance train arrives to your bus or train connection to your destination outside of Lisbon - please refer to our guide to Lisbon for more detailed information. Comboios de Portugal 's Linha do Oeste (West Line) runs through the Oeste region north to south, connecting with several stations in Lisbon, Leiria, Coimbra, Figueira da Foz, and other stops in between. Trains on this windy line are old, and buses are often faster. Rede Expressos provides intercity bus service throughout the country, providing routes to Estremadura from most major cities. Lisbon is the country's main hub. There is an efficient, if a bit complicated, transportation system within the Lisbon Region. At its backbone are the local railways, supported by the light rail systems and the ferries across the Tagus, complemented by bus connections, all of which have several operators. The railway system consists of four separate suburban railway lines managed by the state-owned Portuguese railway operator, under the name of Serviços Urbanos da CP . The four lines start from different stations around Lisbon and connect to different destinations: the Cascais line (yellow) starts at Cais do Sodre station in Lisbon and goes to Cascais , Estoril and Oeiras . the Sintra line (green) has stops at Rossio in the historic centre of Lisbon and terminates in Sintra , with locations in the hills northwest of Lisbon, such as Amadora , on its way. Some trains on the green line go as far as the Oriente station in Lisbon, which is close to the Lisbon Airport the Azambuja line (red) starts at Santa Apolonia station and goes through Oriente in Lisbon, taking you northeast along the Tagus to Azambuja and all the municipalities along the way, which are of minor touristic interest the Sado line (blue) is not named after perversely pleasurable acts of violence, but rather the estuary of the Sado River, which the line serves. The line starts in Barreiros on the south bank of the Tagus, where you can get by a ferry from the very heart of Lisbon. Various municipalities are on the line's route, including Setubal . In addition to the normal course of those lines, the red and green line also have trains traversing the railway arc through the north of Lisbon, which includes the Campolide , Sete Rios , Entrecampos and Oriente stations. The only railway line crossing the Tagus, by means of the Bridge of April 25 in Lisbon, is operated by an entirely separate company called Fertagus , using navy in its corporate identity and commonly identified as such in schematic maps. The Fertagus trains start at Setubal and take a wide arch through the Setubal peninsula, while on the north side of Tagus they follow the above-mentioned railway arc of Campolide , Sete Rios and Entrecampos stations, not going to Oriente though. Complementing and binding together those railway connections are the underground rail systems - the Lisbon Metro, which connects the various Lisbon railway stations (as do the buses and trams operated by Carris, Lisbon's municipal transit company) and the Metro de Sul tramway system in Almada and surrounding municipalities. To close the gap the Tagus poses, a company called Transtejo operates a number of regular ferry connections between various quays in Lisbon and municipalities on the southern side of the river. There is an obvious wealth of historic monuments, museums, galleries and other attractions in the grand old city of Lisbon , which is probably where more tourists will start their visit anyway. Do not miss the UNESCO World Heritage site of Sintra , with numerous royal palaces of fairytale qualities scattered across the lush green hills and magnificent gardens. Head for the beaches of Cascais and Estoril to experience the Atlantic Ocean and some high life of the famous resorts. Across the Tagus, visit Almada for the magnificent views from the statue of Cristo Rei towering over Lisbon and the region. For a glimpse into the workings of the port and fishing industries that propel the region, visit Setubal and Sesimbra , which also offer a number of more relaxed beaches than those north of the Tagus. Caldas da Rainha has several museums , mostly dedicated art. Lourinhã has a few sights dealing with dinosaurs and paleontology. Óbidos , perhaps the Oeste's most popular destination, has a medieval castle and is surrounded by stone walls protecting the hilltop town. Sintra and Cascais Go from Rossio Station in Lisbon to Sintra by train Buy the rover ticket for the Greyhound bus that lets you travel in and beyond Sintra ( there is a cheaper one for Sintra only ) Use the local bus to see the town and the National Palace, the Castelo dos Mouros and the extraordinary Pena Palace. Take a bus from the station at Sintra to Cabo da Roca , the westernmost point of mainland Europe Take a bus to Cascais (and very possibly eat there) Return by train to the Cais do Sodre station in Lisbon . You will need to check bus timetables carefully but both train lines are frequent and cheap. if you return from Cascais after dark (avoid the late-night train, for safety reasons), you will get wonderful views in Belem of the floodlit buildings. South of the River Ferry from Lisbon to Montijo Bus to Setubal Bus to Sesimbra Local bus or walk to fishing port (and return) Bus to Cacilhas , Almada. Ferry to Lisbon Given the natural conditions, it is obvious that Estremadura is a great place to practice many sports activities, especially those related to the seaside. Estremadura has many excellent beaches . Nazaré and Peniche are especially noted for their great surfing waves. Óbidos offers no fewer than four golf course resorts. The Portuguese cuisine is both simple and extremely rich, and there is quite a lot to enjoy year-round. That said, being at one of the largest ports of the Atlantic Ocean, you absolutely need to make sure you experience the fresh fish and other seafood, which come in ample supply. The Portuguese way of life and typical organisation of the day places a big emphasis on the nightlife, so you will never be out of opportunities to enjoy yourself in the evenings (and oftentimes also well into the night - or morning!) Lisbon is obviously bustling with those, but it does not mean you will not find bustling nightlife in other towns as well. The Oeste is home to several demarcated wine regions, including Alenquer DOC, Torres Vedras DOC, Arruda DOC, Óbidos DOC, Lourinhã DOC, and Encostas d'Aire DOC. Óbidos is known for its ginja or ginjinha , a cherry liqueur. Lourinhã produces aguardente , a distilled spirit.  Alentejo Beiras",
+  "related": [
+    "portugal",
+    "greater-lisbon",
+    "lisbon",
+    "oeste",
+    "setubal-peninsula",
+    "alcobaca",
+    "cascais",
+    "obidos",
+    "peniche",
+    "sintra",
+    "porto",
+    "caldas-da-rainha",
+    "alentejo",
+    "beiras"
+  ],
+  "image": {
+    "file": "/images/estremadura-banner.webp",
+    "title": "Estremadura banner.jpg",
+    "artist": "Tola Akindipe",
+    "credit": "Own work",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Estremadura_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Estremadura_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Estremadura",
+    "revision": 5252443,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5252443",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Estremadura&action=history",
+    "retrieved": "2026-10-17T13:11:27.936688+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Tagus Valley",
+  "excerpt": "Estremadura is a region in Portugal, north of Greater Lisbon, along the Atlantic coast."
+}

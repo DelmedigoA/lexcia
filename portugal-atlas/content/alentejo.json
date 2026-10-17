@@ -1,0 +1,162 @@
+{
+  "title": "Alentejo",
+  "slug": "alentejo",
+  "displayTitle": "Alentejo",
+  "region": "alentejo",
+  "kind": "region",
+  "parent": "portugal",
+  "intro": "The Alentejo is a beautiful, mostly agricultural, region remarkable for its wide horizons, filled with soft hills that change color along the year, from deep brown to green with white, red and purple, to golden. Sunsets and the light play are stunning. As the warmest region in Portugal, its inhabitants are known for their slow-paced, easy-going lifestyle and song-like accent, that are in great harmony with the Alentejo's calm-inducing topography. So, if you are there, do like the Alentejanos, and do it slowly. No stress, please. The main city is Évora, in Alto Alentejo, with historic monuments, churches and museums. It was one of the development centers of early European megalithism (standing stones).",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p>The <b>Alentejo</b> is a beautiful, mostly agricultural, region remarkable for its wide horizons, filled with soft hills that change color along the year, from deep brown to green with white, red and purple, to golden. Sunsets and the light play are stunning. As the warmest region in <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>, its inhabitants are known for their slow-paced, easy-going lifestyle and song-like accent, that are in great harmony with the Alentejo's calm-inducing topography. So, if you are there, do like the <i>Alentejanos</i>, and do it slowly. No stress, please.\n</p><p>The main city is <a href=\"/guides/evora/\" title=\"Évora\">Évora</a>, in <a href=\"/guides/alto-alentejo/\" title=\"Alto Alentejo\">Alto Alentejo</a>, with historic monuments, churches and museums. It was one of the development centers of early European megalithism (standing stones).\n</p>"
+    },
+    {
+      "id": "Regions",
+      "title": "Regions",
+      "level": 2,
+      "html": "<table>\n<tbody><tr>\n<td> \n</td>\n<td><b><a href=\"/guides/alto-alentejo/\" title=\"Alto Alentejo\">Alto Alentejo</a></b> <br/>the northern portion\n</td></tr></tbody></table><table>\n<tbody><tr>\n<td> \n</td>\n<td><b><a href=\"/guides/baixo-alentejo/\" title=\"Baixo Alentejo\">Baixo Alentejo</a></b> <br/>the southern portion\n</td></tr></tbody></table>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Évora\"><a href=\"/guides/evora/\" title=\"Évora\">Évora</a></span></span> — <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a>, regional capital, district capital, university city with several museums and Roman temple ruins at the top of a commanding hill</li>\n<li><span><span></span> <span id=\"Alcácer_do_Sal\"><a href=\"/guides/alcacer-do-sal/\" title=\"Alcácer do Sal\">Alcácer do Sal</a></span></span> — a very old town on top of a hill, by the Sado river. The municipality includes the seaside village of <b>Comporta</b>, gateway to wildlife reserves and white sandy beaches.</li>\n<li><span><span></span> <span id=\"Beja\"><a href=\"/guides/beja/\" title=\"Beja\">Beja</a></span></span> — historic city, district capital</li>\n<li><span><span></span> <span id=\"Castelo_de_Vide\"><a href=\"/guides/castelo-de-vide/\" title=\"Castelo de Vide\">Castelo de Vide</a></span></span> — a beautiful fortified castle town on an adorable mount</li>\n<li><span><span></span> <span id=\"Elvas\"><a href=\"/guides/elvas/\" title=\"Elvas\">Elvas</a></span></span> — <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a>, a very historic city near Guadiana river, across from <a href=\"https://en.wikivoyage.org/wiki/Badajoz\" title=\"Read on Wikivoyage (external source)\">Badajoz</a></li>\n<li><span><span></span> <span id=\"Estremoz\"><a href=\"/guides/estremoz/\" title=\"Estremoz\">Estremoz</a></span></span> — one of the \"three marble towns\" of Alentejo, with a marble castle</li>\n<li><span><span></span> <span id=\"Marvão\"><a href=\"/guides/marvao/\" title=\"Marvão\">Marvão</a></span></span> — another beautiful castle town, perched on a craig</li>\n<li><span><span></span> <span id=\"Odemira\"><a href=\"/guides/odemira/\" title=\"Odemira\">Odemira</a></span></span> — the largest municipality in Portugal by area. It includes the fishing village of <b>Zambujeira do Mar</b> with fine sandy beaches and traditional architecture; it is part of the Nature Park of the Southwest Alentejo.</li>\n<li><span><span></span> <span id=\"Santiago_do_Cacém\"><a href=\"https://en.wikivoyage.org/wiki/Santiago_do_Cac%C3%A9m\" title=\"Read on Wikivoyage (external source)\">Santiago do Cacém</a></span></span> — it has Roman ruins, a Moorish castle, and a 13th-century church</li></ul>"
+    },
+    {
+      "id": "Other_destinations",
+      "title": "Other destinations",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>The Alentejo (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">uh-lehn-TAY-zhoo</a>, /ɐ.ɫẽ.ˈtɐj.ʒu/, meaning \"beyond the Tagus River\") is mostly rural, with some urban areas. It's generally hotter than other parts of Portugal.\n</p>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": "<p>Most places may be reached by bus from Evora but for some of the mountain areas including <a href=\"/guides/marvao/\" title=\"Marvão\">Marvão</a> and Castelo de Vide you will need to get first to Portalegre. For more information, check <a href=\"https://www.rodalentejo.pt\">Rodoviária do Alentejo</a> and <a href=\"http://www.trimbal.pt/\">Transportes Intermunicipal do Baixo Alentejo</a>.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><b><a href=\"/guides/elvas/\" title=\"Elvas\">Elvas</a></b> fortress system</li>\n<li><b>Alqueva Dam</b> on the Guadiana near <a href=\"https://en.wikivoyage.org/w/index.php?title=Portel&amp;action=edit&amp;redlink=1\" title=\"Portel (page does not exist)\">Portel</a>.</li>\n<li><b>Marble structures</b> in the three \"marble towns\" of <a href=\"/guides/estremoz/\" title=\"Estremoz\">Estremoz</a>, <a href=\"https://en.wikivoyage.org/w/index.php?title=Borba&amp;action=edit&amp;redlink=1\" title=\"Borba (page does not exist)\">Borba</a> and <a href=\"https://en.wikivoyage.org/wiki/Vila_Vi%C3%A7osa\" title=\"Read on Wikivoyage (external source)\">Vila Viçosa</a>.</li>\n<li><b>Megalithic monuments </b> — More than 1000 are found in Alentejo, of which the most important can be visited.</li>\n<li><b>Neolithic ruins</b> — Cave paintings and Stonehenge-era structures are scattered across the countryside near <a href=\"/guides/evora/\" title=\"Évora\">Évora</a>.</li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li>The west coast is one of the most <b>beautiful beach zones</b>, that has (so far) survived without the extensive tourism industry that affected the <a href=\"/guides/algarve/\" title=\"Algarve\">Algarve</a>. Be sure to visit <a href=\"https://en.wikivoyage.org/w/index.php?title=Vila_Nova_de_Mil-Fontes&amp;action=edit&amp;redlink=1\" title=\"Vila Nova de Mil-Fontes (page does not exist)\">Vila Nova de Mil-Fontes</a> or one of the little towns around.</li>\n<li>In the summer (august), if you are a rock fan, try to catch the <b>Sudoeste Rock Festival</b>, near <a href=\"https://en.wikivoyage.org/wiki/Zambujeira\" title=\"Read on Wikivoyage (external source)\">Zambujeira</a>.</li>\n<li>Don't miss the beautiful village of <b><a href=\"/guides/marvao/\" title=\"Marvão\">Marvão</a></b>, with its wonderful castle and fantastic museum.</li>\n<li><b><a href=\"/guides/evora/\" title=\"Évora\">Évora</a></b> is a world Heritage place. Don't miss it!</li></ul>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<p>Wines from the Alentejo region are very popular among the Portuguese people, so take the chance to know them!\n</p><p>The local drink, the production of which used to be illegal, is a form of liqueur called medronho, made from the small, round, red fruit of the same name. It is very strong and should be sipped, rather than gulped.\n</p><p>Among all the Alentejo region you will find a lot of wonderful places to stay.\n</p>"
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": "<p>Avoid extreme heat in Summer.\n</p>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><a href=\"/guides/algarve/\" title=\"Algarve\">Algarve</a> — popular beach and resort region to the south</li>\n<li><a href=\"/guides/beiras/\" title=\"Beiras\">Beiras</a> — Portugal's central region to the north</li>\n<li><a href=\"/guides/castelo-branco/\" title=\"Castelo Branco\">Castelo Branco</a> — cathedral city with a Templar castle</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Extremadura\" title=\"Read on Wikivoyage (external source)\">Estremadura</a> – one of the 6 provinces of Portugal, located along the Atlantic coast.</li>\n<li><a href=\"/guides/faro/\" title=\"Faro\">Faro</a> — capital of the Algarve</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Lisboa\" title=\"Read on Wikivoyage (external source)\">Lisboa</a> — Portugal's capital city</li>\n<li><a href=\"/guides/tagus-valley/\" title=\"Tagus Valley\">Tagus Valley</a> — region to the northwest</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Tomar\" title=\"Read on Wikivoyage (external source)\">Tomar</a> — city famous for its connections with the Knights Templar</li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Évora"
+    },
+    {
+      "name": "Alcácer do Sal"
+    },
+    {
+      "name": "Beja"
+    },
+    {
+      "name": "Castelo de Vide"
+    },
+    {
+      "name": "Elvas"
+    },
+    {
+      "name": "Estremoz"
+    },
+    {
+      "name": "Marvão"
+    },
+    {
+      "name": "Odemira"
+    },
+    {
+      "name": "Santiago do Cacém"
+    }
+  ],
+  "words": 665,
+  "searchText": "The Alentejo is a beautiful, mostly agricultural, region remarkable for its wide horizons, filled with soft hills that change color along the year, from deep brown to green with white, red and purple, to golden. Sunsets and the light play are stunning. As the warmest region in Portugal , its inhabitants are known for their slow-paced, easy-going lifestyle and song-like accent, that are in great harmony with the Alentejo's calm-inducing topography. So, if you are there, do like the Alentejanos , and do it slowly. No stress, please. The main city is Évora , in Alto Alentejo , with historic monuments, churches and museums. It was one of the development centers of early European megalithism (standing stones). Alto Alentejo the northern portion Baixo Alentejo the southern portion Évora — UNESCO World Heritage Site , regional capital, district capital, university city with several museums and Roman temple ruins at the top of a commanding hill Alcácer do Sal — a very old town on top of a hill, by the Sado river. The municipality includes the seaside village of Comporta , gateway to wildlife reserves and white sandy beaches. Beja — historic city, district capital Castelo de Vide — a beautiful fortified castle town on an adorable mount Elvas — UNESCO World Heritage Site , a very historic city near Guadiana river, across from Badajoz Estremoz — one of the \"three marble towns\" of Alentejo, with a marble castle Marvão — another beautiful castle town, perched on a craig Odemira — the largest municipality in Portugal by area. It includes the fishing village of Zambujeira do Mar with fine sandy beaches and traditional architecture; it is part of the Nature Park of the Southwest Alentejo. Santiago do Cacém — it has Roman ruins, a Moorish castle, and a 13th-century church  The Alentejo ( uh-lehn-TAY-zhoo , /ɐ.ɫẽ.ˈtɐj.ʒu/, meaning \"beyond the Tagus River\") is mostly rural, with some urban areas. It's generally hotter than other parts of Portugal.  Most places may be reached by bus from Evora but for some of the mountain areas including Marvão and Castelo de Vide you will need to get first to Portalegre. For more information, check Rodoviária do Alentejo and Transportes Intermunicipal do Baixo Alentejo . Elvas fortress system Alqueva Dam on the Guadiana near Portel . Marble structures in the three \"marble towns\" of Estremoz , Borba and Vila Viçosa . Megalithic monuments — More than 1000 are found in Alentejo, of which the most important can be visited. Neolithic ruins — Cave paintings and Stonehenge-era structures are scattered across the countryside near Évora . The west coast is one of the most beautiful beach zones , that has (so far) survived without the extensive tourism industry that affected the Algarve . Be sure to visit Vila Nova de Mil-Fontes or one of the little towns around. In the summer (august), if you are a rock fan, try to catch the Sudoeste Rock Festival , near Zambujeira . Don't miss the beautiful village of Marvão , with its wonderful castle and fantastic museum. Évora is a world Heritage place. Don't miss it!  Wines from the Alentejo region are very popular among the Portuguese people, so take the chance to know them! The local drink, the production of which used to be illegal, is a form of liqueur called medronho, made from the small, round, red fruit of the same name. It is very strong and should be sipped, rather than gulped. Among all the Alentejo region you will find a lot of wonderful places to stay. Avoid extreme heat in Summer. Algarve — popular beach and resort region to the south Beiras — Portugal's central region to the north Castelo Branco — cathedral city with a Templar castle Estremadura – one of the 6 provinces of Portugal, located along the Atlantic coast. Faro — capital of the Algarve Lisboa — Portugal's capital city Tagus Valley — region to the northwest Tomar — city famous for its connections with the Knights Templar",
+  "related": [
+    "portugal",
+    "evora",
+    "alto-alentejo",
+    "baixo-alentejo",
+    "alcacer-do-sal",
+    "beja",
+    "castelo-de-vide",
+    "elvas",
+    "estremoz",
+    "marvao",
+    "odemira",
+    "algarve",
+    "beiras",
+    "castelo-branco",
+    "faro",
+    "tagus-valley"
+  ],
+  "image": {
+    "file": "/images/porto-covo-banner.webp",
+    "title": "Porto Covo banner.jpg",
+    "artist": "Porto_Covo_pano_April_2009-5b.jpg : Alvesgaspar derivative work: Jjtkk",
+    "credit": "This file was derived from: Porto Covo pano April 2009-5b.jpg :",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Porto_Covo_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Porto_Covo_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Alentejo",
+    "revision": 4725499,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=4725499",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Alentejo&action=history",
+    "retrieved": "2026-10-17T13:11:25.454834+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": null,
+  "excerpt": "The Alentejo is a beautiful, mostly agricultural, region remarkable for its wide horizons, filled with soft hills that change color along the year, from deep brown to green with white, red and purple, to golden. Sunsets and the light play are…"
+}

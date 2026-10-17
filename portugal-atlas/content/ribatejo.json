@@ -1,0 +1,167 @@
+{
+  "title": "Ribatejo",
+  "slug": "ribatejo",
+  "displayTitle": "Ribatejo",
+  "region": "lisbon-region",
+  "kind": "destination",
+  "parent": "tagus-valley",
+  "intro": "Ribatejo is a region of Portugal. It is the country's most central province, with neither an Atlantic coast nor a border with Spain. Ribatejo lies along the River Tagus ( Rio Tejo ) Valley.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><b>Ribatejo</b> is a region of <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>. It is the country's most central province, with neither an Atlantic coast nor a border with Spain. Ribatejo lies along the River Tagus (<i>Rio Tejo</i>) Valley.\n</p>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Abrantes\"><a href=\"https://en.wikivoyage.org/wiki/Abrantes\" title=\"Read on Wikivoyage (external source)\">Abrantes</a></span></span> — City on the River Tagus with a medieval castle</li>\n<li><span><span></span> <span id=\"Almeirim\">Almeirim</span></span> — an ancient city known for its cuisine</li>\n<li><span><span></span> <span id=\"Alpiarça\">Alpiarça</span></span> — a town  in the heart of the Tagus surrounded by fertile and generous lands</li>\n<li><span><span></span> <span id=\"Benavente\">Benavente</span></span> — with an historic centre, most of the town's houses were rebuilt after the 1909 earthquake</li>\n<li><span><span></span> <span id=\"Cartaxo\"><a href=\"https://en.wikivoyage.org/wiki/Cartaxo\" title=\"Read on Wikivoyage (external source)\">Cartaxo</a></span></span> — a centre of production of the typical wine of the Valley of the Tejo</li>\n<li><span><span></span> <span id=\"Coruche\"><a href=\"https://en.wikivoyage.org/wiki/Coruche\" title=\"Read on Wikivoyage (external source)\">Coruche</a></span></span> — town on the River Sorraia</li>\n<li><span><span></span> <span id=\"Entroncamento\"><a href=\"https://en.wikivoyage.org/wiki/Entroncamento\" title=\"Read on Wikivoyage (external source)\">Entroncamento</a></span></span> — city with an important railway junction</li>\n<li><span><span></span> <span id=\"Golegã\">Golegã</span></span> — \"the capital of the horse\", two horse fairs take place every November</li>\n<li><span><span></span> <span id=\"Rio_Maior\"><a href=\"https://en.wikivoyage.org/wiki/Rio_Maior\" title=\"Read on Wikivoyage (external source)\">Rio Maior</a></span></span> — a base for visiting the natural salt flats of Rio Maior, which are 3 km away</li>\n<li><span><span></span> <span id=\"Salvaterra_de_Magos\">Salvaterra de Magos</span></span> — traditionally linked to bullfighting and animal husbandry</li>\n<li><span><span></span> <span id=\"Santarém\"><a href=\"https://en.wikivoyage.org/wiki/Santar%C3%A9m_(Portugal)\" title=\"Read on Wikivoyage (external source)\">Santarém</a></span></span> — it has the largest and most varied ensemble of Gothic churches in Portugal</li>\n<li><span><span></span> <span id=\"Tomar\"><a href=\"https://en.wikivoyage.org/wiki/Tomar\" title=\"Read on Wikivoyage (external source)\">Tomar</a></span></span> — one of Portugal's historical jewels, it was the last Templar town to be commissioned for construction, its convent is a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a></li>\n<li><span><span></span> <span id=\"Torres_Novas\"><a href=\"https://en.wikivoyage.org/wiki/Torres_Novas\" title=\"Read on Wikivoyage (external source)\">Torres Novas</a></span></span> — city with medieval castle and nearby Roman ruins</li>\n<li><span><span></span> <span id=\"Vila_Franca_de_Xira\"><a href=\"https://en.wikivoyage.org/wiki/Vila_Franca_de_Xira\" title=\"Read on Wikivoyage (external source)\">Vila Franca de Xira</a></span></span> — Lisbon suburb along the River Tagus, known for its bull running</li></ul>"
+    },
+    {
+      "id": "Other_destinations",
+      "title": "Other destinations",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Ribatejo (/ʁi.bɐ.ˈtɐj.ʒu/, <a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">rree-buh-TAY-zhoo</a>)\n</p>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi> <span id=\"Visit_Ribatejo\"><a href=\"https://www.visitribatejo.pt/en/\">Visit Ribatejo</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351284313540\">+351 284 313 540</a></span></span>, <span><a href=\"mailto:geral@turismodoalentejo-ert.pt\">geral@turismodoalentejo-ert.pt</a></span>. <bdi></bdi><span> (<span><span>updated Aug 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": ""
+    }
+  ],
+  "listings": [
+    {
+      "name": "Abrantes"
+    },
+    {
+      "name": "Almeirim"
+    },
+    {
+      "name": "Alpiarça"
+    },
+    {
+      "name": "Benavente"
+    },
+    {
+      "name": "Cartaxo"
+    },
+    {
+      "name": "Coruche"
+    },
+    {
+      "name": "Entroncamento"
+    },
+    {
+      "name": "Golegã"
+    },
+    {
+      "name": "Rio Maior"
+    },
+    {
+      "name": "Salvaterra de Magos"
+    },
+    {
+      "name": "Santarém"
+    },
+    {
+      "name": "Tomar"
+    },
+    {
+      "name": "Torres Novas"
+    },
+    {
+      "name": "Vila Franca de Xira"
+    },
+    {
+      "name": "Visit Ribatejo",
+      "phone": "+351 284 313 540",
+      "description": ""
+    }
+  ],
+  "words": 251,
+  "searchText": "Ribatejo is a region of Portugal . It is the country's most central province, with neither an Atlantic coast nor a border with Spain. Ribatejo lies along the River Tagus ( Rio Tejo ) Valley. Abrantes — City on the River Tagus with a medieval castle Almeirim — an ancient city known for its cuisine Alpiarça — a town  in the heart of the Tagus surrounded by fertile and generous lands Benavente — with an historic centre, most of the town's houses were rebuilt after the 1909 earthquake Cartaxo — a centre of production of the typical wine of the Valley of the Tejo Coruche — town on the River Sorraia Entroncamento — city with an important railway junction Golegã — \"the capital of the horse\", two horse fairs take place every November Rio Maior — a base for visiting the natural salt flats of Rio Maior, which are 3 km away Salvaterra de Magos — traditionally linked to bullfighting and animal husbandry Santarém — it has the largest and most varied ensemble of Gothic churches in Portugal Tomar — one of Portugal's historical jewels, it was the last Templar town to be commissioned for construction, its convent is a UNESCO World Heritage Site Torres Novas — city with medieval castle and nearby Roman ruins Vila Franca de Xira — Lisbon suburb along the River Tagus, known for its bull running  Ribatejo (/ʁi.bɐ.ˈtɐj.ʒu/, rree-buh-TAY-zhoo ) Visit Ribatejo , ☏ +351 284 313 540 , geral@turismodoalentejo-ert.pt . ( updated Aug 2021 )        ",
+  "related": [
+    "portugal"
+  ],
+  "image": {
+    "file": "/images/wv-banner-leziria-do-tejo-santarem-tejo.webp",
+    "title": "WV banner Lezíria do Tejo Santarem Tejo.jpg",
+    "artist": "Fulviusbsas",
+    "credit": "https://commons.wikimedia.org/wiki/File%3ASantaremTejo.jpg",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:WV_banner_Lez%C3%ADria_do_Tejo_Santarem_Tejo.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/e/ef/WV_banner_Lez%C3%ADria_do_Tejo_Santarem_Tejo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Ribatejo",
+    "revision": 5252444,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5252444",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Ribatejo&action=history",
+    "retrieved": "2026-10-17T13:11:29.073890+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Tagus Valley",
+  "excerpt": "Ribatejo is a region of Portugal. It is the country's most central province, with neither an Atlantic coast nor a border with Spain. Ribatejo lies along the River Tagus ( Rio Tejo ) Valley."
+}

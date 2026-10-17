@@ -1,0 +1,277 @@
+{
+  "title": "São Miguel",
+  "slug": "sao-miguel",
+  "displayTitle": "São Miguel",
+  "region": "azores",
+  "kind": "destination",
+  "parent": "azores",
+  "intro": "São Miguel is the largest and most populous island of the Azores archipelago. Portuguese for Saint Michael, the island is also known by locals as \"The Green Island\" (Portuguese: Ilha Verde ). Most visitors arriving in the Azores will pass through São Miguel.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><span></span>\n<b>São Miguel</b> is the largest and most populous island of the <a href=\"/guides/azores/\" title=\"Azores\">Azores</a> archipelago. Portuguese for Saint Michael, the island is also known by locals as \"The Green Island\" (Portuguese: <i>Ilha Verde</i>). Most visitors arriving in the Azores will pass through São Miguel.\n</p>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Ponta_Delgada\"><a href=\"/guides/ponta-delgada/\" title=\"Ponta Delgada\">Ponta Delgada</a></span></span> is the capital city of São Miguel, the economic heart of the island, and the administrative capital of the Azores region. Containing the island chain's major airport and the only major cruise ship terminal, many visitors to the region pass through Ponta Delgada before continuing to other destinations in the archipelago. The historic centre and most tourist attractions are located along the coastal Avenida Infante D. Henrique, which extends from the fort of São Brás in the southwest of the city to Clube Naval and the southeast Marina, and includes Campo de São Francisco, the Igreja Matriz (main church), the \"Portas da Cidade\" (City Gates) and the new \"Portas do Mar\" development.</li>\n<li><span><span></span> <span id=\"Sete_Cidades\"><a href=\"/guides/sete-cidades/\" title=\"Sete Cidades\">Sete Cidades</a></span></span> is a parish covering the western part of the island, including the famous twin crater lakes, Lagoa Azul (Blue Lake) and Lagoa Verde (Green Lake).</li>\n<li><span><span></span> <span id=\"Lagoa\">Lagoa</span></span></li>\n<li><span><span></span> <span id=\"Nordeste\">Nordeste</span></span>, the northeastern section of São Miguel, contains many beautiful landscapes. Peppered with mountain peaks, forests, and river valleys, it is a popular spot for canyoning and other outdoor adventures.</li>\n<li><span><span></span> <span id=\"Povoação\">Povoação</span></span></li>\n<li><span><span></span> <span id=\"Furnas\"><a href=\"https://en.wikivoyage.org/wiki/Furnas\" title=\"Read on Wikivoyage (external source)\">Furnas</a></span></span>, the largest parish on the island, is famous for its geothermal activity. Hot springs and geysers are prevalent, and traditional meals are cooked via thermal energy in pots buried in the ground.</li>\n<li><span><span></span> <span id=\"Ribeira_Grande\">Ribeira Grande</span></span>, the second largest city (pop. 32,112 in 2011), is the gateway to the north and 20 minutes away from Ponta Delgada. It is known for its beautiful historic centre, its northern beaches for windsurfing, as well as being one of the better access points to Lagoa do Fogo crater lake.</li>\n<li><span><span></span> <span id=\"Vila_Franca_de_Campo\">Vila Franca de Campo</span></span> is located on the southern coast of the island, further east than Ponta Delgada. Vila Franca was the original capital city of the Azores before a violent earthquake and subsequent landslide in 1522 destroyed much of the city and forced the capital to relocate to Ponta Delgada. A volcanic crater off the coast created a perfectly circular islet which is a protected nature sanctuary and a popular place for snorkeling. An hourly ferry carries snorkelers to and from the islet.</li></ul>"
+    },
+    {
+      "id": "Other_destinations",
+      "title": "Other destinations",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>The most common entry point to the island is at Ponta Delgada, the island's capital, which is accessible by boat and plane.\n</p><p>Although São Miguel (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">SUHNW mee-GEHL</a>, /ˈsɐ̃w mi.ˈgɛɫ/) is the largest of the Azores Islands in area, the vast majority of the island's 138,000 inhabitants live in the capital city of <a href=\"/guides/ponta-delgada/\" title=\"Ponta Delgada\">Ponta Delgada</a>, which as of 2011 had a population of just under 69,000, with the rest of the population clustered in a handful of cities and towns. Cities are a quaint mix of modern and traditional architecture, with beautiful old churches, windmills, and cobblestone streets existing beside more contemporary development.\n</p><p>The rest of the island is a showcase to its spectacular natural landscape, with rolling hills, green forests, picturesque waterfalls and beautiful ocean views. Like most of the Azores, São Miguel has volcanic origins, and the remnants of several dormant volcanic cones create much of the island's scenic attractions, including the twin lakes of the Sete Cidades, Lagoa de Fogo (Fire Lake), and the popular snorkeling islet off the coast of Villa Franca de Campo. The island is geothermically active, especially in the Furnas area; bathing in natural hot springs is a popular activity and traditional meals are cooked in pots inside active vents.\n</p><p>Those who enjoy outdoors adventure will love the island's numerous hiking trails and opportunities for kayaking, cycling, canyoning, surfing, and diving. Whale watching is also a popular activity in the summer months, as a diverse range of whale species can be found near the island. Although there are beaches of the black, volcanic, sand variety, most of the coastline is rocky and the surf and currents dangerous so it is not the ideal location for a traditional laid-back island beach vacation. However, for those who love the outdoors and a bit of adventure, São Miguel has a lot to offer.\n</p>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"João_Paulo_II_Airport\"><a href=\"https://www.aeroportopontadelgada.pt/\">João Paulo II Airport</a></span> (<span><b><a href=\"/guides/ponta-delgada/\" title=\"Ponta Delgada\">PDL</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup></span>). <bdi>The main airport for the Azores, named after Pope John Paul II, is 1.9 km from the centre of Ponta Delgada. It has scheduled domestic flights to all islands of the Azores and handles international flights originating in Europe and North America. João Paulo is the hub for the inter-island carrier <b>SATA Air Açores</b> and its international affiliate, <b><a href=\"https://www.azoresairlines.pt/en\">Azores Airlines</a></b>.</bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "By_boat",
+      "title": "By boat",
+      "level": 3,
+      "html": "<p>The marina at Ponta Delgada also welcomes many yachts and private boats from around the world that make São Miguel a port of call along their transatlantic travels.Visitors arriving by cruise ship will most likely be docked at <b>Terminal Maritimo</b> which is only a five minute walk into downtown Ponta Delgada. Some cruise ships dock further out by the breakwater, in which case it is a longer, 20-minute walk. There is seasonal (summer only) inter-island ferry service to São Miguel from Santa Maria in the east and <a href=\"/guides/terceira/\" title=\"Terceira\">Terceira</a> via the ferry service <b><a href=\"https://www.atlanticoline.pt/\">Atlanticoline</a></b>.\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_car",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>Renting a car is one of the best ways to explore the island. There are many areas that can only be accessed by car. While São Miguel is small enough to drive in a day, three days would allow you to see the island well at a leisurely pace. \n</p><p>Rental cars are available at Ponta Delgada Airport, and there are also rental companies which will pick you up at the airport and allow the car to be returned there. Plan ahead and reserve a vehicle with a rental company prior to your trip to avoid long waits at the agency or having to pick a less-than-ideal car.\n</p><p>The island is small. Your car hire company may offer to sell you a full tank of petrol at a discount so you can return the car empty. This is convenient, but it is unlikely you will use a full tank for ordinary sightseeing. Petrol costs about €1.45/L in Jan 2024.\n</p>"
+    },
+    {
+      "id": "By_taxi",
+      "title": "By taxi",
+      "level": 3,
+      "html": "<p>There are taxi services at the airport. As of July 2019, from the airport to Ponta Delgada city centre, 3 adults pay €10.\n</p>"
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<p>Bus routes that cover the entire island are probably the quickest, cheapest, and most eco friendly way to get around. There are three lines operated by three different companies. The buses are fairly old, but since distances are short, rides are rarely longer than 90 minutes. They're usually not too crowded and are very clean.\n</p><p>Buses run the main avenue and are conveniently accessible from major sites in Ponta Delgada. In-town bus services are handled by smaller mini-buses with the larger touring buses handling community-to-community travel on the island. Both services are accessible along Avenida Infante Dom Henriques and can confuse the unfamiliar traveller. Schedules are available at bus stops and the tourist office.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<p>Some of the best sights can be found on foot, and hiking is a popular activity on the island. Trail maps can be found at <b><a href=\"https://trails.visitazores.com/en\">Trails Azores</a></b> and the phone app, <b><a href=\"https://itunes.apple.com/us/app/walkme-portugal-trails/id599980706?mt=8\">HikeMe Portugal</a></b> is useful for on-the-go navigation.\n</p>"
+    },
+    {
+      "id": "Crater_lakes_and_calderas",
+      "title": "Crater lakes and calderas",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Caldeira_Velha\">Caldeira Velha</span> (<span>between Lagoa do Fogo and Ribeira Grande</span>). <bdi>The caldera has rich tropical vegetation and hot springs which flow into bathing pools.</bdi> <span>Entry to area and interpretive centre €3, entry + bathing €5</span>.<span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Lagoa_da_Fogo\">Lagoa da Fogo</span>. <bdi>This is a caldera lake high up in the mountain near <a href=\"https://en.wikivoyage.org/wiki/Furnas#See\" title=\"Read on Wikivoyage (external source)\">Furnas</a>, part of a nature reserve, known for its dramatic views and white sand beach.</bdi><span> (<span><span>updated Jul 2026</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Lagoa_das_Furnas\">Lagoa das Furnas</span> (<span>near <a href=\"https://en.wikivoyage.org/wiki/Furnas#See\" title=\"Read on Wikivoyage (external source)\">Furnas</a></span>). <bdi>This is an active caldera with steam vents, mud pots, geysers, and hot springs. Locals cook food in earth ovens available in picnic areas. There is a café that sells stew cooked in the fumeroles.</bdi><span> (<span><span>updated Jul 2026</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Lagoa_das_Sete_Cidades\">Lagoa das Sete Cidades</span>. <bdi>A set of lakes in a caldera northwest of <a href=\"/guides/ponta-delgada/\" title=\"Ponta Delgada\">Ponta Delgada</a>. Steep mountain walls surround the twin lakes, Lagoa Verde and Lagoa Azul. The colour of the lakes is explained in a [local myth](<a href=\"https://pt.wikipedia.org/wiki/Lenda_da_princesa_e_do_pastor_no_reino_das_Sete_Cidades\">https://pt.wikipedia.org/wiki/Lenda_da_princesa_e_do_pastor_no_reino_das_Sete_Cidades</a>). There is an abandoned hotel nearby (Monte Palace) with nice views of the twin lakes, but the hotel is officially closed and tourists enter at their own risk. The area is often very foggy, so it's worth checking the weather forecast and looking for a live webcam to see local conditions before driving up.</bdi><span> (<span><span>updated Jun 2026</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Ponta_da_Ferraria\">Ponta da Ferraria</span>. <bdi>Geologically the youngest part of the island, with therapeutic hot springs that have been used since the 15th century. The best time to visit is at low tide. The water starts warming up approximately two hours before low tide and cools down two hours after. The water reaches temperatures up to 62ºC (144°F) but when mixed with ocean water, it reaches temperatures above 30ºC (86°F), depending on the tide. The waves also get very rough at high tide. The pool has a hot side (near the geothermal vent) and a cool side (near the ocean), so if you navigate the crowds, you can regulate your temperature and find a comfortable spot at low tide. As of May 2026, the road down to the pool has reopened using a one-way traffic signal.</bdi> <span>Free</span>.<span> (<span><span>updated Jun 2026</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Historic_buildings_and_museums",
+      "title": "Historic buildings and museums",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Farol_da_Ponta_do_Arnel\">Farol da Ponta do Arnel</span>. <bdi>Historic and uniquely shaped lighthouse on a cliff in Nordeste. Amazing views but a steep walk.</bdi><span> <span></span></span></bdi></li>\n<li><b>Forte de São Brás</b> in <a href=\"/guides/ponta-delgada/\" title=\"Ponta Delgada\">Ponta Delgada</a> is a coastal Renaissance fortress dating to 1552, now home to a military history museum.</li>\n<li><bdi><span></span> <span id=\"Nossa_Senhora_da_Paz_(Hermitage_of_Our_Lady_of_Peace)\">Nossa Senhora da Paz (Hermitage of Our Lady of Peace)</span>. <bdi>Beautiful 18th-century chapel on the hill looking over Vila Franca de Campo.</bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Farm_and_food_tours",
+      "title": "Farm and food tours",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"A_Arruda_Pineapple_Plantation\"><a href=\"https://www.ananasesarruda.com/\">A Arruda Pineapple Plantation</a></span>. <bdi>Tour a working pineapple plantation, one of the few open to the public on the island.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"A_Mulher_de_Capote_Liquor_Factory\"><a href=\"http://www.mulherdecapote.pt/en/site/\">A Mulher de Capote Liquor Factory</a></span>. <bdi>A factory producing local fruit liquors and brandy. Take a tour and taste samples, also purchase locally made liquors.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Gorreana_Tea_Factory\"><a href=\"https://gorreana.pt/en/\">Gorreana Tea Factory</a></span> (<span>In <i>Porto Formoso</i></span>). <bdi>Europe's oldest and only operating tea factory. Take a self-guided tour of the plantation grounds through well-marked paths and a small museum featuring 19th-century machinery.</bdi><span> (<span><span>updated Sep 2017</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Quinta_Das_Raidas_Farm\"><a href=\"http://www.quintadasraiadas.com/en.html\">Quinta Das Raidas Farm</a></span>. <bdi>Farm with horseback riding tours of Sete Cidades.</bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "Natural_hot_springs",
+      "title": "Natural hot springs",
+      "level": 3,
+      "html": "<ul><li><b>Centro de Interpretação Ambiental da Caldeira Velha</b> at <a href=\"https://en.wikivoyage.org/wiki/Furnas#Do\" title=\"Read on Wikivoyage (external source)\">Furnas</a> is a nature preserve near Lagoa da Fogo including hot springs and shower facilities.</li>\n<li><b>Poça da Dona Beija</b> at <a href=\"https://en.wikivoyage.org/wiki/Furnas#Do\" title=\"Read on Wikivoyage (external source)\">Furnas</a> is a hot springs facility featuring thermal pools, tropical landscaping, showers &amp; a gift shop.</li>\n<li><b>Terra Nosta Botanical Garden</b> at <a href=\"https://en.wikivoyage.org/wiki/Furnas#Do\" title=\"Read on Wikivoyage (external source)\">Furnas</a> is a 200-year-old park featuring local flora and fauna, as well as outdoor mineral baths.</li></ul>"
+    },
+    {
+      "id": "Outdoor_sport",
+      "title": "Outdoor sport",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Azorean_Active_Blueberry\"><a href=\"http://www.azoreanactiveblueberry.com/\">Azorean Active Blueberry</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351914822682\">+351 914 822 682</a></span></span>, <span><a href=\"mailto:info@azoreanactiveblueberry.com\">info@azoreanactiveblueberry.com</a></span>. <bdi>Offers canyoning, climbing, and coasteering tours along different stretches of the island. Activities involve repelling, waterfall sliding, snorkeling, cliff jumping and climbing.</bdi><span> (<span><span>updated Jul 2022</span></span>)</span></bdi></li>\n<li><b>LS Catamarans</b> offers small group catamaran cruises from the <a href=\"/guides/ponta-delgada/\" title=\"Ponta Delgada\">Ponta Delgada</a> marina. Morning and afternoon trips as well as a sunset cruise with local cheese and wine are offered. Private tours.</li>\n<li><bdi><span></span> <span id=\"Azores_Whale_Watching_Terra_Azul\"><a href=\"https://www.azoreswhalewatch.com/\">Azores Whale Watching Terra Azul</a></span>, <span>Marina Vila Franca do Campo 4</span> (<span>from Ponta Delgada city centre by auto, head east along the coast and follow directions to Vila Franca do Campo; once in Vila Franca do Campo, descend towards sea level and the marina where their base and yellow boats are stationed - and free parking can be found</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351296581361\">+351 296 581 361</a></span></span>, <span><a href=\"mailto:info@azoreswhalewatch.com\">info@azoreswhalewatch.com</a></span>. <bdi>Offers wildlife tours such as whale watching, bird watching, swimming with dolphins tours, and snorkelling trips to the Islet of Vila Franca de Campo, and other volcanic and natural marvels in the island.</bdi><span> (<span><span>updated Oct 2020</span></span>)</span></bdi></li>\n<li>Extreme sports are also popular, such as biking, boating, motor sports, water skiing, surfing, four wheeling, hanggliding, kayaking, whitewater rafting, yachting, ziplining, scuba diving, wind surfing, rock climbing.</li></ul>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Casa_Maria_de_Deus\"><a href=\"http://www.casamariadedeus.com/\">Casa Maria de Deus</a></span>, <span>Rua III Visconde Botelho 4, Nossa Senhora dos Remédios, <a href=\"https://en.wikivoyage.org/w/index.php?title=Povoa%C3%A7%C3%A3o&amp;action=edit&amp;redlink=1\" title=\"Povoação (page does not exist)\">Povoação</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351296559076\">+351 296 559 076</a></span></span>, <span><a href=\"mailto:maria@casamariadedeus.com\">maria@casamariadedeus.com</a></span>. <bdi>Casa Maria de Deus has been a home for many people travelling to the area for 25 years. A comfortable place to stay in a small village and experience village life of times past.</bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": "<p>There is very little crime on the island. Most crimes are drug-related and are generally localized to Ponta Delgada and Ribeira Grande. However, petty theft from vehicles does occur, so it is prudent to lock your car and not leave any valuables in sight, especially when parking at trail heads for an extended hike. \n</p><p>Exercise caution driving as roads are often narrow, with blind curves and steep inclines. Wandering livestock and poor lighting are also potential hazards. Pay close attention to any warning signs regarding inclines and avoid dirt or poorly designated roads that are unfamiliar as their conditions may deteriorate at a point in which it is too late to turn back and can cause serious damage to your vehicle. Some deteriorated roads are populated by thieves looking to pilfer from broken-down vehicles. \n</p><p>On the beaches, watch out for large waves and strong undertow currents and obey any lifeguards or warning flags which may be present.  Unsurprisingly, the Azores, including São Miguel, contain one of the world's largest populations of the venomous Portuguese Man 'o War. The largest concentration of the jellyfish-like creatures appear in the spring, and they can be windswept into sheltered areas. Swimmers should be vigilant for plastic-bottle looking \"floats\" which may be tinged purple or blue, and be very wary of what lies below the ocean's surface as their tentacles extend an average of 8 feet away from the float, but can be as long as 46 m (156 feet). Their tentacles cause an extremely painful sting, even if the Man 'o War is dead. Never touch a Portuguese Man 'o War, even if it is washed up on the shore, and beware of tentacles hidden beneath the sand. If you are stung, do not touch the tentacles but apply ocean water to remove them from the skin. Do not apply fresh cold water and do not urinate on the stung area, as this will cause the sting to worsen. Also do not use an EpiPen as this can cause a dangerous reaction. Soaking the affected area in hot water mixed with Epsom salts is recommended, and if a severe envenomation is observed, such as difficulty breathing, disorientation, dizziness, or extreme pain, seek medical attention immediately.\n</p>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<p><b>Santa Maria</b>, nicknamed \"The Sun Island,\" is the southeasternmost island in the Azores. With white sand beaches and protected natural tidal pools, Santa Maria is one of the more popular islands for swimming. The small island is a thirty-minute flight or a three-hour boat ride from Ponta Delgada. Interisland flights can be booked on <b>SATA Air Açores</b>.  <b><a href=\"https://www.atlanticoline.pt/p/p/\">Atlanticoline</a></b> runs seasonal ferry service between Ponta Delgada and Vila do Porto, Santa Maria's marina, during the summer months.\n</p><p><b><a href=\"/guides/terceira/\" title=\"Terceira\">Terceira</a></b>, nicknamed \"The Lilac Island,\" is a six-hour boat ride or 45-minute flight from Ponta Delgada. Unlike Santa Maria and São Miguel, which are rather spread out, Terceira is part of the Central Group of islands in the archipelago, along with <a href=\"/guides/pico/\" title=\"Pico\">Pico</a>, <a href=\"/guides/faial/\" title=\"Faial\">Faial</a>, <a href=\"/guides/sao-jorge-azores/\" title=\"São Jorge (Azores)\">São Jorge</a> and Graciosa, which are closer together and easier to travel between. \n</p>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Ponta Delgada"
+    },
+    {
+      "name": "Sete Cidades"
+    },
+    {
+      "name": "Lagoa"
+    },
+    {
+      "name": "Nordeste"
+    },
+    {
+      "name": "Povoação"
+    },
+    {
+      "name": "Furnas"
+    },
+    {
+      "name": "Ribeira Grande"
+    },
+    {
+      "name": "Vila Franca de Campo"
+    },
+    {
+      "name": "João Paulo II Airport",
+      "description": "The main airport for the Azores, named after Pope John Paul II, is 1.9 km from the centre of Ponta Delgada. It has scheduled domestic flights to all islands of the Azores and handles international flights originating in Europe and North America. João Paulo is the hub for the inter-island carrier SATA Air Açores and its international affiliate, Azores Airlines ."
+    },
+    {
+      "name": "Caldeira Velha",
+      "price": "Entry to area and interpretive centre €3, entry + bathing €5",
+      "description": "The caldera has rich tropical vegetation and hot springs which flow into bathing pools."
+    },
+    {
+      "name": "Lagoa da Fogo",
+      "description": "This is a caldera lake high up in the mountain near Furnas , part of a nature reserve, known for its dramatic views and white sand beach."
+    },
+    {
+      "name": "Lagoa das Furnas",
+      "description": "This is an active caldera with steam vents, mud pots, geysers, and hot springs. Locals cook food in earth ovens available in picnic areas. There is a café that sells stew cooked in the fumeroles."
+    },
+    {
+      "name": "Lagoa das Sete Cidades",
+      "description": "A set of lakes in a caldera northwest of Ponta Delgada . Steep mountain walls surround the twin lakes, Lagoa Verde and Lagoa Azul. The colour of the lakes is explained in a [local myth]( https://pt.wikipedia.org/wiki/Lenda_da_princesa_e_do_pastor_no_reino_das_Sete_Cidades ). There is an abandoned hotel nearby (Monte Palace) with nice views of the twin lakes, but the hotel is officially closed and tourists enter at their own risk. The area is often very foggy, so it's worth checking the weather forecast and looking for a live webcam to see local conditions before driving up."
+    },
+    {
+      "name": "Ponta da Ferraria",
+      "price": "Free",
+      "description": "Geologically the youngest part of the island, with therapeutic hot springs that have been used since the 15th century. The best time to visit is at low tide. The water starts warming up approximately two hours before low tide and cools down two hours after. The water reaches temperatures up to 62ºC (144°F) but when mixed with ocean water, it reaches temperatures above 30ºC (86°F), depending on the tide. The waves also get very rough at high tide. The pool has a hot side (near the geothermal vent) and a cool side (near the ocean), so if you navigate the crowds, you can regulate your temperature and find a comfortable spot at low tide. As of May 2026, the road down to the pool has reopened using a one-way traffic signal."
+    },
+    {
+      "name": "Farol da Ponta do Arnel",
+      "description": "Historic and uniquely shaped lighthouse on a cliff in Nordeste. Amazing views but a steep walk."
+    },
+    {
+      "name": "Nossa Senhora da Paz (Hermitage of Our Lady of Peace)",
+      "description": "Beautiful 18th-century chapel on the hill looking over Vila Franca de Campo."
+    },
+    {
+      "name": "A Arruda Pineapple Plantation",
+      "description": "Tour a working pineapple plantation, one of the few open to the public on the island."
+    },
+    {
+      "name": "A Mulher de Capote Liquor Factory",
+      "description": "A factory producing local fruit liquors and brandy. Take a tour and taste samples, also purchase locally made liquors."
+    },
+    {
+      "name": "Gorreana Tea Factory",
+      "description": "Europe's oldest and only operating tea factory. Take a self-guided tour of the plantation grounds through well-marked paths and a small museum featuring 19th-century machinery."
+    },
+    {
+      "name": "Quinta Das Raidas Farm",
+      "description": "Farm with horseback riding tours of Sete Cidades."
+    },
+    {
+      "name": "Azorean Active Blueberry",
+      "phone": "+351 914 822 682",
+      "description": "Offers canyoning, climbing, and coasteering tours along different stretches of the island. Activities involve repelling, waterfall sliding, snorkeling, cliff jumping and climbing."
+    },
+    {
+      "name": "Azores Whale Watching Terra Azul",
+      "address": "Marina Vila Franca do Campo 4",
+      "phone": "+351 296 581 361",
+      "description": "Offers wildlife tours such as whale watching, bird watching, swimming with dolphins tours, and snorkelling trips to the Islet of Vila Franca de Campo, and other volcanic and natural marvels in the island."
+    },
+    {
+      "name": "Casa Maria de Deus",
+      "address": "Rua III Visconde Botelho 4, Nossa Senhora dos Remédios, Povoação",
+      "phone": "+351 296 559 076",
+      "description": "Casa Maria de Deus has been a home for many people travelling to the area for 25 years. A comfortable place to stay in a small village and experience village life of times past."
+    }
+  ],
+  "words": 2563,
+  "searchText": "São Miguel is the largest and most populous island of the Azores archipelago. Portuguese for Saint Michael, the island is also known by locals as \"The Green Island\" (Portuguese: Ilha Verde ). Most visitors arriving in the Azores will pass through São Miguel. Ponta Delgada is the capital city of São Miguel, the economic heart of the island, and the administrative capital of the Azores region. Containing the island chain's major airport and the only major cruise ship terminal, many visitors to the region pass through Ponta Delgada before continuing to other destinations in the archipelago. The historic centre and most tourist attractions are located along the coastal Avenida Infante D. Henrique, which extends from the fort of São Brás in the southwest of the city to Clube Naval and the southeast Marina, and includes Campo de São Francisco, the Igreja Matriz (main church), the \"Portas da Cidade\" (City Gates) and the new \"Portas do Mar\" development. Sete Cidades is a parish covering the western part of the island, including the famous twin crater lakes, Lagoa Azul (Blue Lake) and Lagoa Verde (Green Lake). Lagoa Nordeste , the northeastern section of São Miguel, contains many beautiful landscapes. Peppered with mountain peaks, forests, and river valleys, it is a popular spot for canyoning and other outdoor adventures. Povoação Furnas , the largest parish on the island, is famous for its geothermal activity. Hot springs and geysers are prevalent, and traditional meals are cooked via thermal energy in pots buried in the ground. Ribeira Grande , the second largest city (pop. 32,112 in 2011), is the gateway to the north and 20 minutes away from Ponta Delgada. It is known for its beautiful historic centre, its northern beaches for windsurfing, as well as being one of the better access points to Lagoa do Fogo crater lake. Vila Franca de Campo is located on the southern coast of the island, further east than Ponta Delgada. Vila Franca was the original capital city of the Azores before a violent earthquake and subsequent landslide in 1522 destroyed much of the city and forced the capital to relocate to Ponta Delgada. A volcanic crater off the coast created a perfectly circular islet which is a protected nature sanctuary and a popular place for snorkeling. An hourly ferry carries snorkelers to and from the islet.  The most common entry point to the island is at Ponta Delgada, the island's capital, which is accessible by boat and plane. Although São Miguel ( SUHNW mee-GEHL , /ˈsɐ̃w mi.ˈgɛɫ/) is the largest of the Azores Islands in area, the vast majority of the island's 138,000 inhabitants live in the capital city of Ponta Delgada , which as of 2011 had a population of just under 69,000, with the rest of the population clustered in a handful of cities and towns. Cities are a quaint mix of modern and traditional architecture, with beautiful old churches, windmills, and cobblestone streets existing beside more contemporary development. The rest of the island is a showcase to its spectacular natural landscape, with rolling hills, green forests, picturesque waterfalls and beautiful ocean views. Like most of the Azores, São Miguel has volcanic origins, and the remnants of several dormant volcanic cones create much of the island's scenic attractions, including the twin lakes of the Sete Cidades, Lagoa de Fogo (Fire Lake), and the popular snorkeling islet off the coast of Villa Franca de Campo. The island is geothermically active, especially in the Furnas area; bathing in natural hot springs is a popular activity and traditional meals are cooked in pots inside active vents. Those who enjoy outdoors adventure will love the island's numerous hiking trails and opportunities for kayaking, cycling, canyoning, surfing, and diving. Whale watching is also a popular activity in the summer months, as a diverse range of whale species can be found near the island. Although there are beaches of the black, volcanic, sand variety, most of the coastline is rocky and the surf and currents dangerous so it is not the ideal location for a traditional laid-back island beach vacation. However, for those who love the outdoors and a bit of adventure, São Miguel has a lot to offer.  João Paulo II Airport ( PDL IATA ). The main airport for the Azores, named after Pope John Paul II, is 1.9 km from the centre of Ponta Delgada. It has scheduled domestic flights to all islands of the Azores and handles international flights originating in Europe and North America. João Paulo is the hub for the inter-island carrier SATA Air Açores and its international affiliate, Azores Airlines . The marina at Ponta Delgada also welcomes many yachts and private boats from around the world that make São Miguel a port of call along their transatlantic travels.Visitors arriving by cruise ship will most likely be docked at Terminal Maritimo which is only a five minute walk into downtown Ponta Delgada. Some cruise ships dock further out by the breakwater, in which case it is a longer, 20-minute walk. There is seasonal (summer only) inter-island ferry service to São Miguel from Santa Maria in the east and Terceira via the ferry service Atlanticoline .  Renting a car is one of the best ways to explore the island. There are many areas that can only be accessed by car. While São Miguel is small enough to drive in a day, three days would allow you to see the island well at a leisurely pace. Rental cars are available at Ponta Delgada Airport, and there are also rental companies which will pick you up at the airport and allow the car to be returned there. Plan ahead and reserve a vehicle with a rental company prior to your trip to avoid long waits at the agency or having to pick a less-than-ideal car. The island is small. Your car hire company may offer to sell you a full tank of petrol at a discount so you can return the car empty. This is convenient, but it is unlikely you will use a full tank for ordinary sightseeing. Petrol costs about €1.45/L in Jan 2024. There are taxi services at the airport. As of July 2019, from the airport to Ponta Delgada city centre, 3 adults pay €10. Bus routes that cover the entire island are probably the quickest, cheapest, and most eco friendly way to get around. There are three lines operated by three different companies. The buses are fairly old, but since distances are short, rides are rarely longer than 90 minutes. They're usually not too crowded and are very clean. Buses run the main avenue and are conveniently accessible from major sites in Ponta Delgada. In-town bus services are handled by smaller mini-buses with the larger touring buses handling community-to-community travel on the island. Both services are accessible along Avenida Infante Dom Henriques and can confuse the unfamiliar traveller. Schedules are available at bus stops and the tourist office. Some of the best sights can be found on foot, and hiking is a popular activity on the island. Trail maps can be found at Trails Azores and the phone app, HikeMe Portugal is useful for on-the-go navigation. Caldeira Velha ( between Lagoa do Fogo and Ribeira Grande ). The caldera has rich tropical vegetation and hot springs which flow into bathing pools. Entry to area and interpretive centre €3, entry + bathing €5 . ( updated Jan 2024 ) Lagoa da Fogo . This is a caldera lake high up in the mountain near Furnas , part of a nature reserve, known for its dramatic views and white sand beach. ( updated Jul 2026 ) Lagoa das Furnas ( near Furnas ). This is an active caldera with steam vents, mud pots, geysers, and hot springs. Locals cook food in earth ovens available in picnic areas. There is a café that sells stew cooked in the fumeroles. ( updated Jul 2026 ) Lagoa das Sete Cidades . A set of lakes in a caldera northwest of Ponta Delgada . Steep mountain walls surround the twin lakes, Lagoa Verde and Lagoa Azul. The colour of the lakes is explained in a [local myth]( https://pt.wikipedia.org/wiki/Lenda_da_princesa_e_do_pastor_no_reino_das_Sete_Cidades ). There is an abandoned hotel nearby (Monte Palace) with nice views of the twin lakes, but the hotel is officially closed and tourists enter at their own risk. The area is often very foggy, so it's worth checking the weather forecast and looking for a live webcam to see local conditions before driving up. ( updated Jun 2026 ) Ponta da Ferraria . Geologically the youngest part of the island, with therapeutic hot springs that have been used since the 15th century. The best time to visit is at low tide. The water starts warming up approximately two hours before low tide and cools down two hours after. The water reaches temperatures up to 62ºC (144°F) but when mixed with ocean water, it reaches temperatures above 30ºC (86°F), depending on the tide. The waves also get very rough at high tide. The pool has a hot side (near the geothermal vent) and a cool side (near the ocean), so if you navigate the crowds, you can regulate your temperature and find a comfortable spot at low tide. As of May 2026, the road down to the pool has reopened using a one-way traffic signal. Free . ( updated Jun 2026 ) Farol da Ponta do Arnel . Historic and uniquely shaped lighthouse on a cliff in Nordeste. Amazing views but a steep walk. Forte de São Brás in Ponta Delgada is a coastal Renaissance fortress dating to 1552, now home to a military history museum. Nossa Senhora da Paz (Hermitage of Our Lady of Peace) . Beautiful 18th-century chapel on the hill looking over Vila Franca de Campo.  A Arruda Pineapple Plantation . Tour a working pineapple plantation, one of the few open to the public on the island. A Mulher de Capote Liquor Factory . A factory producing local fruit liquors and brandy. Take a tour and taste samples, also purchase locally made liquors. Gorreana Tea Factory ( In Porto Formoso ). Europe's oldest and only operating tea factory. Take a self-guided tour of the plantation grounds through well-marked paths and a small museum featuring 19th-century machinery. ( updated Sep 2017 ) Quinta Das Raidas Farm . Farm with horseback riding tours of Sete Cidades. Centro de Interpretação Ambiental da Caldeira Velha at Furnas is a nature preserve near Lagoa da Fogo including hot springs and shower facilities. Poça da Dona Beija at Furnas is a hot springs facility featuring thermal pools, tropical landscaping, showers & a gift shop. Terra Nosta Botanical Garden at Furnas is a 200-year-old park featuring local flora and fauna, as well as outdoor mineral baths. Azorean Active Blueberry , ☏ +351 914 822 682 , info@azoreanactiveblueberry.com . Offers canyoning, climbing, and coasteering tours along different stretches of the island. Activities involve repelling, waterfall sliding, snorkeling, cliff jumping and climbing. ( updated Jul 2022 ) LS Catamarans offers small group catamaran cruises from the Ponta Delgada marina. Morning and afternoon trips as well as a sunset cruise with local cheese and wine are offered. Private tours. Azores Whale Watching Terra Azul , Marina Vila Franca do Campo 4 ( from Ponta Delgada city centre by auto, head east along the coast and follow directions to Vila Franca do Campo; once in Vila Franca do Campo, descend towards sea level and the marina where their base and yellow boats are stationed - and free parking can be found ), ☏ +351 296 581 361 , info@azoreswhalewatch.com . Offers wildlife tours such as whale watching, bird watching, swimming with dolphins tours, and snorkelling trips to the Islet of Vila Franca de Campo, and other volcanic and natural marvels in the island. ( updated Oct 2020 ) Extreme sports are also popular, such as biking, boating, motor sports, water skiing, surfing, four wheeling, hanggliding, kayaking, whitewater rafting, yachting, ziplining, scuba diving, wind surfing, rock climbing.   Casa Maria de Deus , Rua III Visconde Botelho 4, Nossa Senhora dos Remédios, Povoação , ☏ +351 296 559 076 , maria@casamariadedeus.com . Casa Maria de Deus has been a home for many people travelling to the area for 25 years. A comfortable place to stay in a small village and experience village life of times past. There is very little crime on the island. Most crimes are drug-related and are generally localized to Ponta Delgada and Ribeira Grande. However, petty theft from vehicles does occur, so it is prudent to lock your car and not leave any valuables in sight, especially when parking at trail heads for an extended hike. Exercise caution driving as roads are often narrow, with blind curves and steep inclines. Wandering livestock and poor lighting are also potential hazards. Pay close attention to any warning signs regarding inclines and avoid dirt or poorly designated roads that are unfamiliar as their conditions may deteriorate at a point in which it is too late to turn back and can cause serious damage to your vehicle. Some deteriorated roads are populated by thieves looking to pilfer from broken-down vehicles. On the beaches, watch out for large waves and strong undertow currents and obey any lifeguards or warning flags which may be present.  Unsurprisingly, the Azores, including São Miguel, contain one of the world's largest populations of the venomous Portuguese Man 'o War. The largest concentration of the jellyfish-like creatures appear in the spring, and they can be windswept into sheltered areas. Swimmers should be vigilant for plastic-bottle looking \"floats\" which may be tinged purple or blue, and be very wary of what lies below the ocean's surface as their tentacles extend an average of 8 feet away from the float, but can be as long as 46 m (156 feet). Their tentacles cause an extremely painful sting, even if the Man 'o War is dead. Never touch a Portuguese Man 'o War, even if it is washed up on the shore, and beware of tentacles hidden beneath the sand. If you are stung, do not touch the tentacles but apply ocean water to remove them from the skin. Do not apply fresh cold water and do not urinate on the stung area, as this will cause the sting to worsen. Also do not use an EpiPen as this can cause a dangerous reaction. Soaking the affected area in hot water mixed with Epsom salts is recommended, and if a severe envenomation is observed, such as difficulty breathing, disorientation, dizziness, or extreme pain, seek medical attention immediately. Santa Maria , nicknamed \"The Sun Island,\" is the southeasternmost island in the Azores. With white sand beaches and protected natural tidal pools, Santa Maria is one of the more popular islands for swimming. The small island is a thirty-minute flight or a three-hour boat ride from Ponta Delgada. Interisland flights can be booked on SATA Air Açores . Atlanticoline runs seasonal ferry service between Ponta Delgada and Vila do Porto, Santa Maria's marina, during the summer months. Terceira , nicknamed \"The Lilac Island,\" is a six-hour boat ride or 45-minute flight from Ponta Delgada. Unlike Santa Maria and São Miguel, which are rather spread out, Terceira is part of the Central Group of islands in the archipelago, along with Pico , Faial , São Jorge and Graciosa, which are closer together and easier to travel between.",
+  "related": [
+    "azores",
+    "ponta-delgada",
+    "sete-cidades",
+    "terceira",
+    "pico",
+    "faial",
+    "sao-jorge-azores"
+  ],
+  "image": {
+    "file": "/images/sao-miguel-banner.webp",
+    "title": "Sao Miguel banner.jpg",
+    "artist": "Sao_Miguel_-_Lagoa_do_Fogo.jpg : Andree Stephan derivative work: Jjtkk",
+    "credit": "This file was derived from: Sao Miguel - Lagoa do Fogo.jpg :",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sao_Miguel_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/4/43/Sao_Miguel_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/S%C3%A3o_Miguel",
+    "revision": 5341408,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5341408",
+    "history": "https://en.wikivoyage.org/w/index.php?title=S%C3%A3o_Miguel&action=history",
+    "retrieved": "2026-10-17T13:11:27.587333+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Azores",
+  "excerpt": "São Miguel is the largest and most populous island of the Azores archipelago. Portuguese for Saint Michael, the island is also known by locals as \"The Green Island\" (Portuguese: Ilha Verde ). Most visitors arriving in the Azores will pass through…"
+}

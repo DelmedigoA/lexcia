@@ -1,0 +1,150 @@
+{
+  "title": "Baixo Alentejo",
+  "slug": "baixo-alentejo",
+  "displayTitle": "Baixo Alentejo",
+  "region": "alentejo",
+  "kind": "destination",
+  "parent": "alentejo",
+  "intro": "Baixo Alentejo is a region in southern Portugal.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><span></span>\n<b>Baixo Alentejo</b> is a region in southern <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>.\n</p>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Alcácer_do_Sal\"><a href=\"/guides/alcacer-do-sal/\" title=\"Alcácer do Sal\">Alcácer do Sal</a></span></span> — a very old town on top of a hill, by the Sado River. The municipality includes the seaside village of <b>Comporta</b>.</li>\n<li><span><span></span> <span id=\"Alvito\"><a href=\"https://en.wikivoyage.org/wiki/Alvito\" title=\"Read on Wikivoyage (external source)\">Alvito</a></span></span> — town with castle and palace</li>\n<li><span><span></span> <span id=\"Beja\"><a href=\"/guides/beja/\" title=\"Beja\">Beja</a></span></span> — sits on a high hill overlooking beautiful and fertile valleys that produce cereals, olive oil, and wine</li>\n<li><span><span></span> <span id=\"Grândola\"><a href=\"https://en.wikivoyage.org/wiki/Gr%C3%A2ndola\" title=\"Read on Wikivoyage (external source)\">Grândola</a></span></span> — a town known for singer Zeca Afonso as \"Vila Morena\" (tawny town), with a mountain of the same name</li>\n<li><span><span></span> <span id=\"Odemira\"><a href=\"/guides/odemira/\" title=\"Odemira\">Odemira</a></span></span> — the largest municipality in Portugal by area. It includes the seaside village of <b>Zambujeira do Mar</b> with fine sandy beaches and traditional architecture; it is part of the Nature Park of the Southwest Alentejo</li>\n<li><span><span></span> <span id=\"Sines\"><a href=\"https://en.wikivoyage.org/wiki/Sines\" title=\"Read on Wikivoyage (external source)\">Sines</a></span></span> — port and castle city where Vasco da Gama was born</li>\n<li><span><span></span> <span id=\"Santiago_do_Cacém\"><a href=\"https://en.wikivoyage.org/wiki/Santiago_do_Cac%C3%A9m\" title=\"Read on Wikivoyage (external source)\">Santiago do Cacém</a></span></span> — it has Roman ruins, a Moorish castle, and a 13th-century church</li></ul>"
+    },
+    {
+      "id": "Other_destinations",
+      "title": "Other destinations",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Badoca_Safari_Park\">Badoca Safari Park</span></span></li>\n<li><span><span></span> <span id=\"Guadiana_Valley_Natural_Park\">Guadiana Valley Natural Park</span></span> — includes the Pulo do Lobo, a where the waters of the Guadiana fall about 20 m through a rocky gorge</li>\n<li><span><span></span> <span id=\"Natural_Reserve_of_the_Lagoons_of_Santo_André_and_Santa_Sancha\">Natural Reserve of the Lagoons of Santo André and Santa Sancha</span></span></li>\n<li><span><span></span> <span id=\"Sado_Estuary_Natural_Reserve\">Sado Estuary Natural Reserve</span></span> — a nesting, resting or wintering spot for many of the 221 species of birds that have been recorded here</li></ul>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Baixo Alentejo (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">BIGH-shoo uh-lehn-TAY-zhoo</a>, /ˈbaj.ʃu ɐ.ɫẽ.ˈtɐj.ʒu/)\n</p>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": ""
+    }
+  ],
+  "listings": [
+    {
+      "name": "Alcácer do Sal"
+    },
+    {
+      "name": "Alvito"
+    },
+    {
+      "name": "Beja"
+    },
+    {
+      "name": "Grândola"
+    },
+    {
+      "name": "Odemira"
+    },
+    {
+      "name": "Sines"
+    },
+    {
+      "name": "Santiago do Cacém"
+    },
+    {
+      "name": "Badoca Safari Park"
+    },
+    {
+      "name": "Guadiana Valley Natural Park"
+    },
+    {
+      "name": "Natural Reserve of the Lagoons of Santo André and Santa Sancha"
+    },
+    {
+      "name": "Sado Estuary Natural Reserve"
+    }
+  ],
+  "words": 216,
+  "searchText": "Baixo Alentejo is a region in southern Portugal . Alcácer do Sal — a very old town on top of a hill, by the Sado River. The municipality includes the seaside village of Comporta . Alvito — town with castle and palace Beja — sits on a high hill overlooking beautiful and fertile valleys that produce cereals, olive oil, and wine Grândola — a town known for singer Zeca Afonso as \"Vila Morena\" (tawny town), with a mountain of the same name Odemira — the largest municipality in Portugal by area. It includes the seaside village of Zambujeira do Mar with fine sandy beaches and traditional architecture; it is part of the Nature Park of the Southwest Alentejo Sines — port and castle city where Vasco da Gama was born Santiago do Cacém — it has Roman ruins, a Moorish castle, and a 13th-century church Badoca Safari Park Guadiana Valley Natural Park — includes the Pulo do Lobo, a where the waters of the Guadiana fall about 20 m through a rocky gorge Natural Reserve of the Lagoons of Santo André and Santa Sancha Sado Estuary Natural Reserve — a nesting, resting or wintering spot for many of the 221 species of birds that have been recorded here Baixo Alentejo ( BIGH-shoo uh-lehn-TAY-zhoo , /ˈbaj.ʃu ɐ.ɫẽ.ˈtɐj.ʒu/)        ",
+  "related": [
+    "portugal",
+    "alcacer-do-sal",
+    "beja",
+    "odemira"
+  ],
+  "image": {
+    "file": "/images/wv-banner-baixo-alentejo-serpa-old-town.webp",
+    "title": "WV banner Baixo Alentejo Serpa Old town.jpg",
+    "artist": "Tagido",
+    "credit": "https://commons.wikimedia.org/wiki/File%3ASerpa_-_Casario.jpg",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:WV_banner_Baixo_Alentejo_Serpa_Old_town.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/1/16/WV_banner_Baixo_Alentejo_Serpa_Old_town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Baixo_Alentejo",
+    "revision": 5270093,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5270093",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Baixo_Alentejo&action=history",
+    "retrieved": "2026-10-17T13:11:27.735500+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Alentejo",
+  "excerpt": "Baixo Alentejo is a region in southern Portugal."
+}

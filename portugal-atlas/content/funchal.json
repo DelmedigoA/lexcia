@@ -1,0 +1,515 @@
+{
+  "title": "Funchal",
+  "slug": "funchal",
+  "displayTitle": "Funchal",
+  "region": "madeira",
+  "kind": "destination",
+  "parent": "madeira",
+  "intro": "Funchal is the capital and main city of the autonomous region of Madeira, on the island of Madeira, in its south between Santa Cruz and Câmara de Lobos. In 2021, it was home 106,000 people.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><b>Funchal</b> is the capital and main city of the autonomous region of Madeira, on the island of <a href=\"/guides/madeira/\" title=\"Madeira\">Madeira</a>, in its south between Santa Cruz and Câmara de Lobos. In 2021, it was home 106,000 people.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>The name Funchal (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">foon-SHAHL</a>, /fũ.ˈʃaɫ/) comes from the abundance of fennel (<i>funcho</i>) found on the island. It was an important shipping centre during the 15th–17th centuries. It is one of the most beautiful cities in Portugal.\n</p><ul><li><a href=\"https://visit.funchal.pt/\">Visit Funchal</a> website</li></ul><table>\n<tbody><tr><th>Funchal\n</th></tr>\n<tr><th>Climate chart (<a href=\"https://en.wikivoyage.org/wiki/Template:Climate_chart/How_to_read_a_climate_chart\" title=\"Read on Wikivoyage (external source)\">explanation</a>)</th></tr>\n<tr><td><table>\n<tbody><tr><td>J</td><td>F</td><td>M</td><td>A</td><td>M</td><td>J</td><td>J</td><td>A</td><td>S</td><td>O</td><td>N</td><td>D</td></tr>\n<tr>\n<td>\n\n\n\n \n\n \n\n \n\n<span>99</span>\n\n \n\n \n\n<span>20</span>\n<span>15</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>95</span>\n\n \n\n \n\n<span>20</span>\n<span>14</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>83</span>\n\n \n\n \n\n<span>20</span>\n<span>15</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>62</span>\n\n \n\n \n\n<span>21</span>\n<span>15</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>45</span>\n\n \n\n \n\n<span>22</span>\n<span>16</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>17</span>\n\n \n\n \n\n<span>24</span>\n<span>18</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>3.7</span>\n\n \n\n \n\n<span>26</span>\n<span>20</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>4</span>\n\n \n\n \n\n<span>27</span>\n<span>21</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>45</span>\n\n \n\n \n\n<span>27</span>\n<span>21</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>118</span>\n\n \n\n \n\n<span>25</span>\n<span>19</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>112</span>\n\n \n\n \n\n<span>23</span>\n<span>17</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>135</span>\n\n \n\n \n\n<span>21</span>\n<span>16</span>\n</td>\n</tr>\n<tr><td>Average max. and min. temperatures in °C</td></tr>\n<tr><td><span>Precipitation</span>+<span>Snow</span> totals in mm</td></tr><tr><td>Source: <a href=\"https://en.wikipedia.org/wiki/Funchal#Climate\" title=\"w:Funchal\">Wikipedia</a></td></tr>\n</tbody></table></td></tr>\n<tr><td>\n<table>\n<tbody><tr><th>Imperial conversion</th></tr>\n<tr><td>J</td><td>F</td><td>M</td><td>A</td><td>M</td><td>J</td><td>J</td><td>A</td><td>S</td><td>O</td><td>N</td><td>D</td></tr>\n<tr>\n<td>\n\n\n\n \n\n \n\n \n\n<span>3.9</span>\n\n \n\n \n\n<span>68</span>\n<span>58</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>3.7</span>\n\n \n\n \n\n<span>68</span>\n<span>57</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>3.3</span>\n\n \n\n \n\n<span>69</span>\n<span>58</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>2.4</span>\n\n \n\n \n\n<span>70</span>\n<span>59</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>1.8</span>\n\n \n\n \n\n<span>72</span>\n<span>61</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>0.7</span>\n\n \n\n \n\n<span>75</span>\n<span>65</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>0.1</span>\n\n \n\n \n\n<span>78</span>\n<span>68</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>0.2</span>\n\n \n\n \n\n<span>80</span>\n<span>70</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>1.8</span>\n\n \n\n \n\n<span>80</span>\n<span>69</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>4.6</span>\n\n \n\n \n\n<span>77</span>\n<span>67</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>4.4</span>\n\n \n\n \n\n<span>73</span>\n<span>63</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>5.3</span>\n\n \n\n \n\n<span>69</span>\n<span>60</span>\n</td>\n</tr>\n<tr><td>Average max. and min. temperatures in °F</td></tr>\n<tr><td><span>Precipitation</span>+<span>Snow</span> totals in inches</td></tr>\n</tbody></table>\n</td></tr></tbody></table>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Cristiano_Ronaldo_Madeira_International_Airport\"><a href=\"https://www.aeroportomadeira.pt/en/fnc/home\">Cristiano Ronaldo Madeira International Airport</a></span> (<span><b>FNC </b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup> Funchal Airport, formerly known as Santa Catarina Airport</span>) (<span>about 30 min NE of Funchal, in Santa Cruz municipality</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291520700\">+351 291 520 700</a></span></span>, <span><a href=\"mailto:madeira.airports@ana.pt\">madeira.airports@ana.pt</a></span>. <bdi>Once famous for its hair-raisingly short runway ending at a cliff over the Atlantic Ocean, the airport has been expanded to handle all sizes of aircraft. The following airlines fly regularly to Madeira International Airport: TAP Air Portugal, Azores Airlines, British Airways, Lufthansa, Austrian Airlines, Air France, easyJet, Finnair, Condor, SAS, Transavia, Binter Canarias, and Jet2.com. Most flights are from mainland Portugal and northern Europe.</bdi><span> <span></span></span></bdi></li></ul><p>There are several daily flights from most major cities in <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a> (<a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>, <a href=\"/guides/porto/\" title=\"Porto\">Porto</a>). Flight time from Lisbon is 1½ hours.\n</p><p>Also, there are good connections from <a href=\"https://en.wikivoyage.org/wiki/London\" title=\"Read on Wikivoyage (external source)\">London</a> (mostly <a href=\"https://en.wikivoyage.org/wiki/Gatwick\" title=\"Read on Wikivoyage (external source)\">Gatwick</a>, but also <a href=\"https://en.wikivoyage.org/wiki/Heathrow\" title=\"Read on Wikivoyage (external source)\">Heathrow</a>) with TAP/Air Portugal and British Airways; its flying time is estimated at 3½ hours.\n</p>"
+    },
+    {
+      "id": "By_car",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>Funchal is served by highway ER101 which runs along the coast. An easy way to get to the city centre by car is to take exit 11 and head downhill towards Funchal. Continue on this road (ER103) until you pass under an overpass. Immediately on your right is a large parking garage (closed on Sundays). From here it is only a few minutes walk to Mercado Dos Lavradores / Sé Cathedral.\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": "<p>The city centre is small enough to explore on foot. Orange city buses can take you around and up to Monte (lines 20, 21). Giro cards can be bought from the office for €2.20, which are pre-loaded with two journeys, and can be topped up with additional journeys for €1.50 each. A single ride costs €1.90 when bought from the bus driver. Most city buses start from the waterfront area. If you are lucky, you can acquire a bus timetable for the local and regional buses starting in Funchal at the tourist information office. <a href=\"http://www.horariosdofunchal.pt/\">Timetables and a map are also available</a>.\n</p>"
+    },
+    {
+      "id": "By_motorcycle_and_moped",
+      "title": "By motorcycle and moped",
+      "level": 3,
+      "html": "<p>Madeira as a small island is very convenient for exploring by riding motorcycles. Funchal is well connected with the rest of the island and there are a lot of hidden gems that could be discovered along the coast roads. Using a moped is a common practice around the island as it’s a lot more convenient. Finding a place to rent a scooter or motorcycle is not difficult and there are several companies, most of them are located within the town centre.\n</p><ul><li><bdi> <span id=\"Rent_a_Scooter_Madeira\"><a href=\"https://www.rentascootermadeira.com/\">Rent a Scooter Madeira</a></span>. <bdi>Mostly smaller mopeds and motorcycles. They have a good variety of models and basic equipment is provided with each rental. Helmet provided for the main driver.</bdi><span> <span></span></span></bdi></li>\n<li><bdi> <span id=\"Riderly\"><a href=\"https://riderly.com/rental-locations/portugal/funchal/\">Riderly</a></span>. <bdi>Provide motorcycles for longer and shorter trips with all the driving equipment necessary, such as helmets and gloves.</bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Quinta_do_Palheiro_Ferreiro_Park\"><a href=\"http://www.palheiroestate.com\">Quinta do Palheiro Ferreiro Park</a></span> (<span>Jardins do Palheiro</span>), <span>São Gonçalo, Palheiro</span> (<span>about 5 km from downtown</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291793044\">+351 291 793 044</a></span></span>. <span>Mon-Fri 09:00 - 16:30</span>. <bdi>The Quinta do Palheiro Ferreiro Park is a typical example of a manor in British colonial style. While the manor is private and can't be visited, you can enjoy the public park. On first sight it looks like an English park, with old Platanes forming a long alley from the main gate to the gardens. But when you look closer you see all the tropical plants that build the basis, completed by hundreds of plants from all over the world, so all year round there are plants blooming. The main part of the park is formed by several gardens: a French Garden, a Sunken Garden, the Ladies Garden, a Rose Garden and some more. Opposite the main gate is a Tea House, which is connected to the golf course. They serve some good tea, cakes, pastries, snacks and small lunches. The way back to the main gate is formed by the Camellia Avenue, a flourish firework between end October and March.<br/>The park is at 500 m altitude. 09:00-11:30 the park is often crowded by bus tourists, so choose the afternoon for a more laid-back visit. Entrance fee €10.50. Public buses frequently connect Funchal with the park: line 36 or, if you have strong nerves, line 37 for a more <i>spectacular</i> ride.</bdi><span> (<span><span>updated Dec 2019</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Madeira_Botanical_Garden\">Madeira Botanical Garden</span> (<span>Jardim Botânico da Madeira</span>), <span>Caminho Meio Quinta do Bom Sucesso</span> (<span>about 3 km from downtown</span>). <bdi>The more than 2000 plants of these hillside gardens, plus the view of Funchal make this one of the major attractions of the whole island. The gardens also feature a collection of parakeets and parrots.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Mercado_Dos_Lavradores\">Mercado Dos Lavradores</span> (<span>Peasants' Market</span>), <span>Rua Brigadeiro Oudinot, Down Town (Zona Velha)</span>. <span>Mon-Thu 07:00-16:00, Fri 07:00-20:00, Sat 07:00-15:00, closed on Sundays and holidays</span>. <bdi>This historic building, with an open patio, offers, on two levels, fresh fruits and vegetables from all over the island. On the lower level is a separate hall where fish vendors sell fresh-caught fish. Eat and buy local fruits like the small Madeiran mangos, bananas, philodendres and plenty of kinds of maracujas. Taste the offers from vendors. But be careful, as some may try to rip you off and sell you over-ripe fruit, or some heavy mangos for the (expensive) price of light maracujas. There are also some nice pastelarias and coffee bars in and around the building. These are often crowded when it's raining, and when large cruise ships are on the pier.</bdi><span> (<span><span>updated Dec 2019</span></span>)</span></bdi></li></ul><ul><li><bdi><span></span> <span id=\"Monte_Palace_Hotel_Gardens\">Monte Palace Hotel Gardens</span> (<span>Jardim do Monte Palace</span>). <bdi>The gardens of this defunct hotel include a Chinese garden, artwork, a small lake, and a variety of flora and fauna.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Santa_Clara_Convent\">Santa Clara Convent</span> (<span>Convento de Santa Clara</span>), <span>Calçada de Santa Clara 15</span>. <bdi>Dating from the end of the 15th century, this convent, now a national monument, was founded by João Gonçalves da Câmara. The <i>azulejo</i> tiles are especially notable.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"São_Lourenço_Palace\">São Lourenço Palace</span> (<span>Palácio de São Lourenço</span>), <span>Avenida Zarco</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291202530\">+351 291 202 530</a></span></span>. <bdi>Half fortress and half palace, this construction is a good example of mannerist architecture. Highlights include the Noble Salon (Salão Nobre), the Green Room (Sala Verde), the Audience Hall (Sala de Audiências), and the gardens.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Sé_Cathedral\">Sé Cathedral</span>. <bdi>The central point in Funchal, and its most-visited monument. Commissioned by the king Dom Manuel I through Portuguese explorer Gil Eanes, the cathedral was built between 1493 and 1517. The ceiling is made from local wood.</bdi><span> <span></span></span></bdi></li></ul><ul><li><bdi><span></span> <span id=\"Colegio_Church\"><a href=\"http://www.diocesedofunchal.com/\">Colegio Church</a></span> (<span>Igreja de São João Evangelista</span>), <span>Rua dos Ferreiros, 105</span>. <bdi>This Jesuit temple, completed in 1647, is a striking building with a stunning interior. Today it is part of Madeira University.</bdi><span> <span></span></span></bdi></li></ul><ul><li><bdi><span></span> <span id=\"IBTAM_Museum\">IBTAM Museum</span> (<span>Núcleo Museológico do IBTAM</span>), <span>Rua do Visconde de Anadia</span>. <bdi>Museum of the Institute of Embroidery, Tapestry and Craftsmanship of Madeira. The exhibits give some idea of the tradition of embroidery in the island in the past centuries</bdi><span> (<span><span>updated Jun 2016</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"São_Tiago_Fort\">São Tiago Fort</span>. <bdi>Built in 1614 to defend the city from pirate attack, the fort today houses a small contemporary art museum.</bdi><span> (<span><span>updated Jun 2016</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Museu_CR7\">Museu CR7</span>. <bdi>Museum dedicated to Portuguese footballer Cristiano Ronaldo's trophies, with a bronze statue of him in the front.</bdi><span> (<span><span>updated Feb 2026</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Madeira_Casino\"><a href=\"http://www.casinodamadeira.com\">Madeira Casino</a></span> (<span>Casino da Madeira</span>), <span>Avenida do Infante</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291140424\">+351 291 140 424</a></span></span>. <span>Sun-Thu 15:00-03:00, Mon-Fri 16:00-04:00</span>. <bdi>The only casino on the island. The building's unusual shape was designed by Brazilian architect Oscar Niemeyer, and indeed looks a bit like <a href=\"https://en.wikivoyage.org/wiki/Brasilia\" title=\"Read on Wikivoyage (external source)\">Brasilia</a> Cathedral with a haircut. Casino da Madeira offers table games such as Texas Hold 'em, blackjack, baccarat and American roulette (with 0 and 00) and slots. Outside of gambling there is the Palm bar, the Rio casual restaurant, the formal Bahlia restaurant and the Copacabana nightclub that hosts live musical performances (just like the Barry Manilow song). Note that the premises have dress code that forbids sandals, flip-flops and sports wear. Free parking and Wi-Fi for patrons.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Palheiro_Golf_Course\"><a href=\"http://www.palheirogolf.com/\">Palheiro Golf Course</a></span>, <span>Rua do Balacal 29</span>. <bdi></bdi><span> <span></span></span></bdi> </li>\n<li><bdi><span></span> <span id=\"Funchal_Cable_Car\"><a href=\"http://www.madeiracablecar.com/#\">Funchal Cable Car</a></span> (<span>Teleférico do Funchal</span>), <span>Almirante Reis</span>. <span>09:30-17:45</span>. <bdi>View the city from above in a gondola. The upper station is at Monte, where you can visit the Monte Palace gardens and the church at Monte. Another cable car goes down from this point to the Botanical Gardens. Combination tickets for the ride and attractions are available.</bdi><span> <span></span></span></bdi></li>\n<li><b>Football:</b> Funchal has two pro soccer teams:\n<ul><li><bdi><span></span> <span id=\"CS_Marítimo\"><a href=\"https://www.csmaritimo.org.pt/\">CS Marítimo</a></span> (<span>2 km west of the old town</span>). <bdi>They were promoted in 2026 and play in Primeira Liga, the game's top tier. Their home ground Estádio do Marítimo has capacity 11,000. The women's team also play in their top tier.</bdi><span> (<span><span>updated Jun 2026</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"CD_Nacional\"><a href=\"https://www.cdnacional.pt\">CD Nacional</a></span> (<span>4 km northeast</span>). <bdi>They too play in Primeira Liga. Their home ground Estádio da Madeira has a capacity of 5500..</bdi><span> (<span><span>updated May 2024</span></span>)</span></bdi></li></ul></li>\n<li><bdi> <span id=\"Madeira_Paragliding\"><a href=\"http://www.madeira-paragliding.com/\">Madeira Paragliding</a></span> (<span>0 - 4200 Ft</span>), <span>Madeira Mountains</span>. <span>10:00-20:00</span>. <bdi>Tandem Paragliding flights.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Monte_Toboggan\"><a href=\"https://www.carreirosdomonte.com/v2/en/index.php\">Monte Toboggan</a></span>, <span>Caminho do Monte, Entrada 151, Porta 4</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291783919\">+351 291 783 919</a></span></span>. <span>Mon-Sat 09:00-18:00</span>. <bdi>Ride wooden toboggan down the mountain on a 2km roadway while being steered by men.</bdi> <span>€25 for 1 person, €30 for 2 people, €45 for 3 people</span>.<span> (<span><span>updated Nov 2022</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": "<p>Flowers &amp; fruit (check with the airline/ship if they can be brought abroad).\n</p><p>The island is world-famous for its wines.  Several stores offer varying selections.\n</p>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>Funchal has an abundance of good, if not necessarily cheap, eating places. Most places serve traditional Madeiran and Portuguese food, which is well-prepared and tasty, but not terribly exciting. One of the most typical dishes and served almost everywhere, is <i>espada com banana</i> (scabbard fish with banana). It is usually served with fresh salad and potatoes. A bit more expensive is bacalhau (dried, salted codfish), which is also served in many restaurants. One of the more common and best varieties is \"bacalhau com natas\" (codfish in cream sauce).\n</p>"
+    },
+    {
+      "id": "Budget",
+      "title": "Budget",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Restaurante_Beer_Garden\"><a href=\"https://www.facebook.com/picados.beergarden/\">Restaurante Beer Garden</a></span>, <span>Estrada Monumental 462</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291764377\">+351 291 764 377</a></span></span>, <span><a href=\"mailto:beergardenfunchal@gmail.com\">beergardenfunchal@gmail.com</a></span>. <span>Mon–Fri 11:00–18:00, Sat Sun 11:00–17:00</span>. <bdi>Recommended dish is Picado (beef steak served with chips). The normal size (€10) should be enough for 2 persons. The bigger size (€13) could serve 3 - 4 persons.</bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Castelo_dos_Hambúrgueres\"><a href=\"https://www.facebook.com/CastelodosHamburguers\">Castelo dos Hambúrgueres</a></span>, <span>Rua da Carreira, 306</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291756616\">+351 291 756 616</a></span></span>. <bdi>This place sells only 3 types of hamburgers: normal, special, and super. Also try their smoothies.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Barreirinha_Bar_Cafe\"><a href=\"http://www.madeira-restaurants.com/funchal/barreirinha-bar-cafe\">Barreirinha Bar Cafe</a></span>, <span>Largo do Socorro, 1</span> (<span>just east of the Fortaleza de Santiago, on the water, where R. de Santa Maria meets Largo do Socorro.</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291627418\">+351 291 627 418</a></span></span>. <span>07:00–00:00</span>. <bdi>While many affordable cafes in Funchal have similar prices on burgers and tostas, Barreirinha also offers plenty of outdoor tables overlooking the ocean. Relaxing yet hip atmosphere. Occasional live bands or DJs.</bdi> <span>€2.60 <i>tostas</i>, €5.50 burgers, €2 poncha</span>.<span> (<span><span>updated Apr 2016</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Mid-range",
+      "title": "Mid-range",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Il_Basilico\"><a href=\"http://www.portobay.com/hotelArea.aspx?areaId=281\">Il Basilico</a></span>, <span>Rua de Leichlingen, 7, Promenade</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291708700\">+351 291 708700</a></span></span>. <span>Daily 12:30-15:00 and 19:30-22.00</span>. <bdi>Italian restaurant. À la carte lunch and dinner served inside and on the terrace. Children's menu. Reservation recommended.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Doca_do_Cavacas\"><a href=\"https://www.facebook.com/rdocadocavacas/\">Doca do Cavacas</a></span>, <span>Rua da Ponta da Cruz 66</span> (<span>off Estrada Monumental, Ponta de Cruz</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291762057\">+351 291 762 057</a></span></span>, <span><a href=\"mailto:rest.docadocavacas@hotmail.com\">rest.docadocavacas@hotmail.com</a></span>. <span>Tue-Sun 12:30–00:00, closed Mon</span>. <bdi>Seaside fish restaurant.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Olives\"><a href=\"https://facebook.com/olivesfunchal\">Olives</a></span>, <span>Rua Brigadeiro Oudinot, nº 2 - 3rd floor (level)</span> (<span>a few meters from the left of the city market</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291223165\">+351 291 223 165</a></span></span>, <span><a href=\"mailto:barestaurant.olives@gmail.com\">barestaurant.olives@gmail.com</a></span>. <span>Mon-Sat 12:00-24:00</span>. <bdi>This small restaurant is close to city market, in an iconic building (Edifício Oudinot), with a terrace overlooking the port. It has a small menu of contemporary, author's cuisine, Portuguese (Mediterranean)-influenced dishes. There are ten fish dishes, ten meat dishes and a side vegetarian/vegan menu. Serves an excellent house wine and other good wines (from €12.50 house bottle). It has a pleasant interior, with an Art Deco-influenced staircase. The staff are also friendly.</bdi> <span>plates from €9 to €16.50 (mains).</span>.<span> (<span><span>updated Dec 2019</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Splurge",
+      "title": "Splurge",
+      "level": 3,
+      "html": "<ul><li><span id=\"Eat-GalloDOro\"></span><bdi><span></span> <span id=\"Il_Gallo_d'Oro\"><a href=\"https://www.portobay.com/en/restaurants/restaurants-madeira/il-gallo-doro\">Il Gallo d'Oro</a></span>, <span>Estrada Monumental 147</span> (<span><a href=\"#Sleep-CliffBay\">The Cliff Bay Hotel</a></span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291707700\">+351 291 707 700</a></span></span>, <span><a href=\"mailto:restaurant.tcb@portobay.pt\">restaurant.tcb@portobay.pt</a></span>. <span>Tue–Sat 19:00–22:00, closed Sun Mon</span>. <bdi>Modern aromatic Iberian cuisine in classic-yet-contemporary surroundings. Two Michelin stars.</bdi> <span><abbr>€110-245</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><span id=\"Eat-William\"></span><bdi><span></span> <span id=\"William_Restaurant\"><a href=\"https://www.belmond.com/hotels/europe/portugal/madeira/belmond-reids-palace/william-restaurant\">William Restaurant</a></span>, <span>Estrada Monumental 139</span> (<span><a href=\"#Sleep-ReidsPalace\">Reid's Palace Hotel</a></span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291717171\">+351 291 717 171</a></span></span>. <span>Tue–Sat 19:30–22:00</span>. <bdi>Michelin-starred contemporary cuisine using local ingredients from the island. The elegant setting offers coastal views.</bdi> <span><abbr>€95-170</abbr></span>.<span> (<span><span>updated Jul 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<p>Not the party capital of the world: most bars are very quiet, except during a football match.\n</p><ul><li><bdi><span></span> <span id=\"Bar_Amazónia\">Bar Amazónia</span>, <span>Rua de São Filipe 19</span>. <bdi>A pleasant little bar.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Café_do_Teatro\"><a href=\"https://www.facebook.com/cafedoteatro\">Café do Teatro</a></span>, <span>Avenida Arriaga</span> (<span>Ed. Teatro Municipal Baltazar Dias</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351924437951\">+351 924 437 951</a></span></span>, <span><a href=\"mailto:grupocafedoteatro@gmail.com\">grupocafedoteatro@gmail.com</a></span>. <span>Mon–Thu 08:00–23:00, Fri 08:00–00:00, Sat 09:00–00:00, Sun 09:00–23:00</span>. <bdi></bdi><span> (<span><span>updated Apr 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"FX_Restaurant_&amp;_Sports_Bar\"><a href=\"https://www.fxrestaurantandsportsbar.com/\">FX Restaurant &amp; Sports Bar</a></span>, <span>Rua das Fontes 1–9, Avenida do Mar</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291618358\">+351 291 618 358</a></span></span>. <span>Sun–Thu 10:00–01:00, Fri Sat &amp; holiday eves 10:00–02:00</span>. <bdi></bdi><span> (<span><span>updated Apr 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Palm_Bar\"><a href=\"https://casinodamadeira.com/en/bars-restaurants/#palm\">Palm Bar</a></span>, <span>Casino da Madiera, Avenida do Infante</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291140424\">+351 291 140 424</a></span></span>, <span><a href=\"mailto:casino.madeira@pestana.com\">casino.madeira@pestana.com</a></span>. <span>Sun–Thu 15:00–03:00, Fri Sat &amp; holiday eves 16:00–04:00</span>. <bdi>A casual bar that's part of the Casino da Madeira.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Vespas\"><a href=\"http://www.vespas.pt/\">Vespas</a></span>, <span>Avenida Sá Carneiro 60</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291234800\">+351 291 234 800</a></span></span>, <span><a href=\"mailto:vespasclube@gmail.com\">vespasclube@gmail.com</a></span>. <span>Fri Sat 23:00–08:00</span>. <bdi>Dance club very popular with young people.</bdi><span> (<span><span>updated Apr 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Hole_in_One_Madeira\"><a href=\"http://holeinonemadeira.com/\">Hole in One Madeira</a></span>, <span>Estrada Monumental 238A</span> (<span>in the hotel district</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291765443\">+351 291 765 443</a></span></span>. <span>daily 11:00–02:00</span>. <bdi>If you require an Irish pub.</bdi><span> (<span><span>updated Apr 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Budget_2",
+      "title": "Budget",
+      "level": 3,
+      "html": "<p>During low season (winter) prices may drop significantly, e.g., from €50 to 35. Time around Christmas is high-season.\n</p><ul><li><bdi><span></span> <span id=\"Residencial_Monaco\"><a href=\"http://www.residencialmonaco.com/\">Residencial Monaco</a></span>, <span>Rua das Hortas 14</span> (<span>5-minute walk from the bus stop \"Anadia Shopping Centre\" for buses entering Funchal: Walk toward the sea and turn right onto R. Fernão de Ornelas. At the end of the street, at the taxi station, turn right onto R. do Carmo. After the Carmo church, R. das Hortas will be on your left.</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291241031\">+351 291 241 031</a></span></span>, <span><a href=\"mailto:residencialmonaco2@gmail.com\">residencialmonaco2@gmail.com</a></span>. <bdi>Simple and somewhat cramped rooms but very clean and with a low price. Double rooms with private ensuite bathroom around €18–25/night depending on season. Located in the historical center, so ideal if you don't have a car.</bdi><span> (<span><span>updated Apr 2016</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Residencial_Melba\"><a href=\"https://www.facebook.com/ResidencialMelba1/\">Residencial Melba</a></span> (<span>Melba Pension</span>), <span>Azinhaga da Casa Branca 8</span> (<span>Lies in Western Funchal</span>), <span><a href=\"mailto:melba951@hotmail.com\">melba951@hotmail.com</a></span>. <bdi>12 rooms.</bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Mid-range_2",
+      "title": "Mid-range",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Quinta_Da_Casa_Branca\"><a href=\"http://www.quintacasabranca.pt/\">Quinta Da Casa Branca</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291700770\">+351 291 700 770</a></span></span>, <span><a href=\"mailto:info@quintacasabranca.pt\">info@quintacasabranca.pt</a></span>. <bdi>An old quinta converted into a boutique design hotel, set in the heart of Funchal, among colourful gardens.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Monte_Carlo\"><a href=\"https://hotelnamadeira.top\">Hotel Monte Carlo</a></span>, <span>Calçada da Saúde 10</span>. <bdi>Beautiful, old hotel with a great view over the city of Funchal. Directly near the Convent St. Clara. Reasonable priced and not directly in a desiganted tourist district. Lots of good and affordable restaurants nearby.</bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Porto_Santa_Maria\"><a href=\"https://www.portobay.com/en/hotels/madeira-hotels/porto-santa-maria/\">Hotel Porto Santa Maria</a></span> (<span>PortoBay Hotels &amp; Resorts</span>), <span>Avenida do Mar e das Comunidades Madeirenses 50</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291206700\">+351 291 206 700</a></span></span>, <span><a href=\"mailto:portosantamaria@portobay.pt\">portosantamaria@portobay.pt</a></span>. <bdi>Just in front of the sea and the city harbour, in Funchal's Old Town, near Cable Car, Forte de São Tiago and Mercado Lavradores.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Porto_Mare\"><a href=\"https://www.portobay.com/en/hotels/madeira-hotels/porto-mare/\">Hotel Porto Mare</a></span> (<span>PortoBay Hotels &amp; Resorts</span>), <span>Rua Simplício dos Passos Gouveia 21</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291703700\">+351 291 703 700</a></span></span>, <span><a href=\"mailto:portomare@portobay.pt\">portomare@portobay.pt</a></span>. <bdi>One of the three hotels in the resort Vila Porto Mare, near Lido´s promenade, tropical gardens with more than 400 specimens, five pools, four restaurants, sports and spa.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"The_Residence\"><a href=\"https://www.portobay.com/en/hotels/madeira-hotels/the-residence/\">The Residence</a></span> (<span>PortoBay Hotels &amp; Resorts</span>), <span>Rua de Leichlingen 7</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291708700\">+351 291 708 700</a></span></span>, <span><a href=\"mailto:recep.residence@portobay.pt\">recep.residence@portobay.pt</a></span>. <bdi>One of the three hotels in the resort Vila Porto Mare, near Lido´s promenade offers a wide selection of carefully furnished and fully equipped apartments. The Residence apartments combine views over the ocean with tropical gardens.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Suite_Hotel_Eden_Mar\"><a href=\"https://www.portobay.com/en/hotels/madeira-hotels/suite-hotel-eden-mar/\">Suite Hotel Eden Mar</a></span> (<span>PortoBay Hotels &amp; Resorts</span>), <span>Rua do Gorgulho 2</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291700700\">+351 291 700 700</a></span></span>, <span><a href=\"mailto:edenmar@portobay.pt\">edenmar@portobay.pt</a></span>. <bdi>One of the three hotels in the resort Vila Porto Mare, near Lido's promenade, kitchenette, tropical gardens with more than 400 specimens, five pools, four restaurants, sports and spa.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Madeira_Remote_Casa_do_Pico\"><a href=\"https://madeiraremote.com/pt/\">Madeira Remote Casa do Pico</a></span> (<span>Casa do Pico</span>), <span>Calçada do Pico 42, Funchal, Madeira, 9000-206, Portugal</span> (<span><a href=\"https://www.google.com/maps/place//data=!4m2!3m1!1s0xc60616a8e38465f:0xbf5aea15fc6f3d1a?sa=X&amp;ved=1t:8290&amp;ictx=111\">https://www.google.com/maps/place//data=!4m2!3m1!1s0xc60616a8e38465f:0xbf5aea15fc6f3d1a?sa=X&amp;ved=1t:8290&amp;ictx=111</a></span>), <abbr>☏</abbr> <span><span><a href=\"tel:+353861856510\">+353 86 185 6510</a></span></span>, <span><a href=\"mailto:remote@madeirafriends.org\">remote@madeirafriends.org</a></span>. <bdi>Casa do Pico is a dedicated coliving house in central Funchal featuring five private, fully furnished rooms with ergonomic workstations and high-speed fiber WiFi. The property centers around shared social spaces, including two living rooms, a fully equipped kitchen, and a large communal dining table, all designed to foster interaction among remote workers. Its highlight is an expansive rooftop terrace offering panoramic ocean and city views, a jacuzzi, and space for yoga and community gatherings, providing a seamless blend of productivity and social life just minutes from Funchal’s Old Town.</bdi><span> (<span><span>updated Jun 2026</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Splurge_2",
+      "title": "Splurge",
+      "level": 3,
+      "html": "<ul><li><span id=\"Sleep-CliffBay\"></span><bdi><span></span> <span id=\"The_Cliff_Bay\"><a href=\"http://www.portobay.com/\">The Cliff Bay</a></span>, <span>Estrada Monumental, 147</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291707700\">+351 29 1707700</a></span></span>, <span><a href=\"mailto:cliffbay@portobay.pt\">cliffbay@portobay.pt</a></span>. <bdi>Access to the sea, stunning views over the Atlantic and Funchal Bay. Michelin one-star restaurant, <b><a href=\"#Eat-GalloDOro\">Il Gallo d'Oro</a></b>.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Pestana_Ocean_Bay\"><a href=\"https://www.pestana.com/en/hotel/pestana-ocean-bay\">Pestana Ocean Bay</a></span>, <span>Praia Formosa</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291701900\">+351 291 701 900</a></span></span>, <span><a href=\"mailto:fo.bay@pestana.com\">fo.bay@pestana.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Pestana_Carlton_Madeira\"><a href=\"https://www.pestana.com/en/hotel/pestana-carlton-madeira\">Pestana Carlton Madeira</a></span>, <span>Largo António Nobre 1</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291239500\">+351 291 239 500</a></span></span>, <span><a href=\"mailto:fo.carlton@pestana.com\">fo.carlton@pestana.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Pestana_Casino_Park\"><a href=\"https://www.pestana.com/en/hotel/pestana-casino-park\">Pestana Casino Park</a></span>, <span>Rua Imperatriz D. Amélia</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291209100\">+351 291 209 100</a></span></span>, <span><a href=\"mailto:fo.casino@pestana.com\">fo.casino@pestana.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Pestana_Grand\"><a href=\"https://www.pestana.com/en/hotel/pestana-grand\">Pestana Grand</a></span>, <span>Rua Ponta da Cruz 23, São Martinho</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291707400\">+351 291 707 400</a></span></span>, <span><a href=\"mailto:fo.grand@pestana.com\">fo.grand@pestana.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Pestana_Miramar\"><a href=\"https://www.pestana.com/en/hotel/pestana-miramar-madeira\">Pestana Miramar</a></span>, <span>Estrada Monumental 182-194</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291706100\">+351 291 706 100</a></span></span>, <span><a href=\"mailto:fo.miramar@pestana.com\">fo.miramar@pestana.com</a></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Pestana_Palms\"><a href=\"https://www.pestana.com/en/hotel/pestana-palms\">Pestana Palms</a></span>, <span>Rua do Gorgulho 15-17</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291709200\">+351 291 709 200</a></span></span>, <span><a href=\"mailto:fo.palms@pestana.com\">fo.palms@pestana.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Pestana_Promenade\"><a href=\"https://www.pestana.com/en/hotel/pestana-promenade\">Pestana Promenade</a></span>, <span>Rua Simplício dos Passos Gouveia 31</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291141400\">+351 291 141 400</a></span></span>, <span><a href=\"mailto:fo.promenade@pestana.com\">fo.promenade@pestana.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Pestana_Village\"><a href=\"https://www.pestana.com/en/hotel/pestana-village\">Pestana Village</a></span>, <span>Estrada Monumental 194</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291701600\">+351 291 701 600</a></span></span>, <span><a href=\"mailto:fo.village@pestana.com\">fo.village@pestana.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><span id=\"Sleep-ReidsPalace\"></span><bdi><span></span> <span id=\"Reid's_Palace\"><a href=\"http://www.reidspalace.com/\">Reid's Palace</a></span>, <span>Estrada Monumental 139</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291717171\">+351 291 717 171</a></span></span>. <bdi>Has been the standard bearer for luxury hotel excellence on Madeira for over a century. Offering superb views of Madeira and the ocean, a luxury hotel spa, and gourmet restaurants. Famous for its afternoon tea. Including a Kids and Teens Club. Lovely hotel where Winston Churchill was a guest. There is an on-site, Michelin-starred restaurant, <b><a href=\"#Eat-William\">William</a></b>.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Savoy_&amp;_Royal_Savoy\"><a href=\"http://www.madeiraroyalsavoy.com\">Savoy &amp; Royal Savoy</a></span>, <span>7 R. Carvalho Araùjo</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351291213500\">+351 291 213 500</a></span></span>. <bdi>Reid's rival hotel. Boasting a beachfront location, this luxurious resort is set in the Bay of Funchal and combines quality facilities with a central setting. Surrounded by tropical gardens, the Royal Savoy has 174 elegant suites, each with private balcony.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"The_Vine_Hotel\"><a href=\"https://www.hotelthevine.com/en/\">The Vine Hotel</a></span>, <span>Rua das Aranhas No 27A</span> (<span>In La Vie shopping mall</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351291009000\">+351 291 009 000</a></span></span>. <span>Check-in: <span>14:00</span></span>. <bdi>Located in downtown area, this hotel includes a panoramic suite that overlooks the entire Funchal.</bdi><span> (<span><span>updated Nov 2022</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Connect",
+      "title": "Connect",
+      "level": 2,
+      "html": "<ul><li><b>Internet Access</b> - There exist various free public Wi-Fi hotspots sponsored by the Madeiran government. One can find such locations by looking for blue and white boards with the Wi-Fi logo on them. A lot of bars and cafes offer Wi-Fi which is usually sponsored by an ISP called \"Zon\". These are usually password restricted but the owners are usually very friendly in providing them. One of the larger public squares called \"Praca do Municipio\", for instance, has free Wi-Fi. Other locations include Avenida Arriaga (2 x around the <i>Golden Gate Café</i> and the Cathedrale) and Praca de Colombo.</li>\n<li><b>Post Office</b> - Stamps are rarely available at vendors selling postcards. There is a post office <i>(CTT Correios)</i> near the cathedral in the Avenida Zarco and the Rua Calouste Gulbekian, near the Casino. Postcards to EU countries are €0.72 (June 2015).</li></ul>"
+    },
+    {
+      "id": "Cope",
+      "title": "Cope",
+      "level": 2,
+      "html": "<ul><li><bdi> <span id=\"Nivarte_Barber/Hairdresser\">Nivarte Barber/Hairdresser</span>, <span>Rua das Hortas 1, Unit 102 (Piso 1)</span> (<span>a very short walk from the center of Funchal, near the Carmo church; enter the nondescript building at the beginning of the street and go up one flight of steps</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351958747709\">+351 958 747 709</a></span></span>. <bdi>Quality and inexpensive haircuts for both men and women. One of the barbers, Paolo Silva speaks English, and gives the best hot towel shave on the island.</bdi> <span>under €14 for men's haircut</span>.<span> (<span><span>updated Apr 2016</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><a href=\"/guides/porto-santo/\" title=\"Porto Santo\">Porto Santo</a> — A wonderful quiet beach community, Porto Santo is a small island on the North-East of Madeira can be reached by either boat or plane. It is well worth a visit for its nice small restaurants, its long beach, and the Christopher Columbus house.</li>\n<li>Anywhere else on the island of <a href=\"/guides/madeira/\" title=\"Madeira\">Madeira</a> — Numerous guided day-tours around the island offer pick-up from Funchal hotels. In addition, Rodoeste buses connect Funchal to points westward, and S.A.M. buses connect to points eastward.</li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Cristiano Ronaldo Madeira International Airport",
+      "phone": "+351 291 520 700",
+      "description": "Once famous for its hair-raisingly short runway ending at a cliff over the Atlantic Ocean, the airport has been expanded to handle all sizes of aircraft. The following airlines fly regularly to Madeira International Airport: TAP Air Portugal, Azores Airlines, British Airways, Lufthansa, Austrian Airlines, Air France, easyJet, Finnair, Condor, SAS, Transavia, Binter Canarias, and Jet2.com. Most flights are from mainland Portugal and northern Europe."
+    },
+    {
+      "name": "Rent a Scooter Madeira",
+      "description": "Mostly smaller mopeds and motorcycles. They have a good variety of models and basic equipment is provided with each rental. Helmet provided for the main driver."
+    },
+    {
+      "name": "Riderly",
+      "description": "Provide motorcycles for longer and shorter trips with all the driving equipment necessary, such as helmets and gloves."
+    },
+    {
+      "name": "Quinta do Palheiro Ferreiro Park",
+      "address": "São Gonçalo, Palheiro",
+      "phone": "+351 291 793 044",
+      "hours": "Mon-Fri 09:00 - 16:30",
+      "description": "The Quinta do Palheiro Ferreiro Park is a typical example of a manor in British colonial style. While the manor is private and can't be visited, you can enjoy the public park. On first sight it looks like an English park, with old Platanes forming a long alley from the main gate to the gardens. But when you look closer you see all the tropical plants that build the basis, completed by hundreds of plants from all over the world, so all year round there are plants blooming. The main part of the park is formed by several gardens: a French Garden, a Sunken Garden, the Ladies Garden, a Rose Garden and some more. Opposite the main gate is a Tea House, which is connected to the golf course. They serve some good tea, cakes, pastries, snacks and small lunches. The way back to the main gate is formed by the Camellia Avenue, a flourish firework between end October and March. The park is at 500 m altitude. 09:00-11:30 the park is often crowded by bus tourists, so choose the afternoon for a more laid-back visit. Entrance fee €10.50. Public buses frequently connect Funchal with the park: line 36 or, if you have strong nerves, line 37 for a more spectacular ride."
+    },
+    {
+      "name": "Madeira Botanical Garden",
+      "address": "Caminho Meio Quinta do Bom Sucesso",
+      "description": "The more than 2000 plants of these hillside gardens, plus the view of Funchal make this one of the major attractions of the whole island. The gardens also feature a collection of parakeets and parrots."
+    },
+    {
+      "name": "Mercado Dos Lavradores",
+      "address": "Rua Brigadeiro Oudinot, Down Town (Zona Velha)",
+      "hours": "Mon-Thu 07:00-16:00, Fri 07:00-20:00, Sat 07:00-15:00, closed on Sundays and holidays",
+      "description": "This historic building, with an open patio, offers, on two levels, fresh fruits and vegetables from all over the island. On the lower level is a separate hall where fish vendors sell fresh-caught fish. Eat and buy local fruits like the small Madeiran mangos, bananas, philodendres and plenty of kinds of maracujas. Taste the offers from vendors. But be careful, as some may try to rip you off and sell you over-ripe fruit, or some heavy mangos for the (expensive) price of light maracujas. There are also some nice pastelarias and coffee bars in and around the building. These are often crowded when it's raining, and when large cruise ships are on the pier."
+    },
+    {
+      "name": "Monte Palace Hotel Gardens",
+      "description": "The gardens of this defunct hotel include a Chinese garden, artwork, a small lake, and a variety of flora and fauna."
+    },
+    {
+      "name": "Santa Clara Convent",
+      "address": "Calçada de Santa Clara 15",
+      "description": "Dating from the end of the 15th century, this convent, now a national monument, was founded by João Gonçalves da Câmara. The azulejo tiles are especially notable."
+    },
+    {
+      "name": "São Lourenço Palace",
+      "address": "Avenida Zarco",
+      "phone": "+351 291 202 530",
+      "description": "Half fortress and half palace, this construction is a good example of mannerist architecture. Highlights include the Noble Salon (Salão Nobre), the Green Room (Sala Verde), the Audience Hall (Sala de Audiências), and the gardens."
+    },
+    {
+      "name": "Sé Cathedral",
+      "description": "The central point in Funchal, and its most-visited monument. Commissioned by the king Dom Manuel I through Portuguese explorer Gil Eanes, the cathedral was built between 1493 and 1517. The ceiling is made from local wood."
+    },
+    {
+      "name": "Colegio Church",
+      "address": "Rua dos Ferreiros, 105",
+      "description": "This Jesuit temple, completed in 1647, is a striking building with a stunning interior. Today it is part of Madeira University."
+    },
+    {
+      "name": "IBTAM Museum",
+      "address": "Rua do Visconde de Anadia",
+      "description": "Museum of the Institute of Embroidery, Tapestry and Craftsmanship of Madeira. The exhibits give some idea of the tradition of embroidery in the island in the past centuries"
+    },
+    {
+      "name": "São Tiago Fort",
+      "description": "Built in 1614 to defend the city from pirate attack, the fort today houses a small contemporary art museum."
+    },
+    {
+      "name": "Museu CR7",
+      "description": "Museum dedicated to Portuguese footballer Cristiano Ronaldo's trophies, with a bronze statue of him in the front."
+    },
+    {
+      "name": "Madeira Casino",
+      "address": "Avenida do Infante",
+      "phone": "+351 291 140 424",
+      "hours": "Sun-Thu 15:00-03:00, Mon-Fri 16:00-04:00",
+      "description": "The only casino on the island. The building's unusual shape was designed by Brazilian architect Oscar Niemeyer, and indeed looks a bit like Brasilia Cathedral with a haircut. Casino da Madeira offers table games such as Texas Hold 'em, blackjack, baccarat and American roulette (with 0 and 00) and slots. Outside of gambling there is the Palm bar, the Rio casual restaurant, the formal Bahlia restaurant and the Copacabana nightclub that hosts live musical performances (just like the Barry Manilow song). Note that the premises have dress code that forbids sandals, flip-flops and sports wear. Free parking and Wi-Fi for patrons."
+    },
+    {
+      "name": "Palheiro Golf Course",
+      "address": "Rua do Balacal 29",
+      "description": ""
+    },
+    {
+      "name": "Funchal Cable Car",
+      "address": "Almirante Reis",
+      "hours": "09:30-17:45",
+      "description": "View the city from above in a gondola. The upper station is at Monte, where you can visit the Monte Palace gardens and the church at Monte. Another cable car goes down from this point to the Botanical Gardens. Combination tickets for the ride and attractions are available."
+    },
+    {
+      "name": "CS Marítimo",
+      "description": "They were promoted in 2026 and play in Primeira Liga, the game's top tier. Their home ground Estádio do Marítimo has capacity 11,000. The women's team also play in their top tier."
+    },
+    {
+      "name": "CD Nacional",
+      "description": "They too play in Primeira Liga. Their home ground Estádio da Madeira has a capacity of 5500.."
+    },
+    {
+      "name": "Madeira Paragliding",
+      "address": "Madeira Mountains",
+      "hours": "10:00-20:00",
+      "description": "Tandem Paragliding flights."
+    },
+    {
+      "name": "Monte Toboggan",
+      "address": "Caminho do Monte, Entrada 151, Porta 4",
+      "phone": "+351 291 783 919",
+      "hours": "Mon-Sat 09:00-18:00",
+      "price": "€25 for 1 person, €30 for 2 people, €45 for 3 people",
+      "description": "Ride wooden toboggan down the mountain on a 2km roadway while being steered by men."
+    },
+    {
+      "name": "Restaurante Beer Garden",
+      "address": "Estrada Monumental 462",
+      "phone": "+351 291 764 377",
+      "hours": "Mon–Fri 11:00–18:00, Sat Sun 11:00–17:00",
+      "description": "Recommended dish is Picado (beef steak served with chips). The normal size (€10) should be enough for 2 persons. The bigger size (€13) could serve 3 - 4 persons."
+    },
+    {
+      "name": "Castelo dos Hambúrgueres",
+      "address": "Rua da Carreira, 306",
+      "phone": "+351 291 756 616",
+      "description": "This place sells only 3 types of hamburgers: normal, special, and super. Also try their smoothies."
+    },
+    {
+      "name": "Barreirinha Bar Cafe",
+      "address": "Largo do Socorro, 1",
+      "phone": "+351 291 627 418",
+      "hours": "07:00–00:00",
+      "price": "€2.60 tostas , €5.50 burgers, €2 poncha",
+      "description": "While many affordable cafes in Funchal have similar prices on burgers and tostas, Barreirinha also offers plenty of outdoor tables overlooking the ocean. Relaxing yet hip atmosphere. Occasional live bands or DJs."
+    },
+    {
+      "name": "Il Basilico",
+      "address": "Rua de Leichlingen, 7, Promenade",
+      "phone": "+351 291 708700",
+      "hours": "Daily 12:30-15:00 and 19:30-22.00",
+      "description": "Italian restaurant. À la carte lunch and dinner served inside and on the terrace. Children's menu. Reservation recommended."
+    },
+    {
+      "name": "Doca do Cavacas",
+      "address": "Rua da Ponta da Cruz 66",
+      "phone": "+351 291 762 057",
+      "hours": "Tue-Sun 12:30–00:00, closed Mon",
+      "description": "Seaside fish restaurant."
+    },
+    {
+      "name": "Olives",
+      "address": "Rua Brigadeiro Oudinot, nº 2 - 3rd floor (level)",
+      "phone": "+351 291 223 165",
+      "hours": "Mon-Sat 12:00-24:00",
+      "price": "plates from €9 to €16.50 (mains).",
+      "description": "This small restaurant is close to city market, in an iconic building (Edifício Oudinot), with a terrace overlooking the port. It has a small menu of contemporary, author's cuisine, Portuguese (Mediterranean)-influenced dishes. There are ten fish dishes, ten meat dishes and a side vegetarian/vegan menu. Serves an excellent house wine and other good wines (from €12.50 house bottle). It has a pleasant interior, with an Art Deco-influenced staircase. The staff are also friendly."
+    },
+    {
+      "name": "Il Gallo d'Oro",
+      "address": "Estrada Monumental 147",
+      "phone": "+351 291 707 700",
+      "hours": "Tue–Sat 19:00–22:00, closed Sun Mon",
+      "price": "€110-245",
+      "description": "Modern aromatic Iberian cuisine in classic-yet-contemporary surroundings. Two Michelin stars."
+    },
+    {
+      "name": "William Restaurant",
+      "address": "Estrada Monumental 139",
+      "phone": "+351 291 717 171",
+      "hours": "Tue–Sat 19:30–22:00",
+      "price": "€95-170",
+      "description": "Michelin-starred contemporary cuisine using local ingredients from the island. The elegant setting offers coastal views."
+    },
+    {
+      "name": "Bar Amazónia",
+      "address": "Rua de São Filipe 19",
+      "description": "A pleasant little bar."
+    },
+    {
+      "name": "Café do Teatro",
+      "address": "Avenida Arriaga",
+      "phone": "+351 924 437 951",
+      "hours": "Mon–Thu 08:00–23:00, Fri 08:00–00:00, Sat 09:00–00:00, Sun 09:00–23:00",
+      "description": ""
+    },
+    {
+      "name": "FX Restaurant & Sports Bar",
+      "address": "Rua das Fontes 1–9, Avenida do Mar",
+      "phone": "+351 291 618 358",
+      "hours": "Sun–Thu 10:00–01:00, Fri Sat & holiday eves 10:00–02:00",
+      "description": ""
+    },
+    {
+      "name": "Palm Bar",
+      "address": "Casino da Madiera, Avenida do Infante",
+      "phone": "+351 291 140 424",
+      "hours": "Sun–Thu 15:00–03:00, Fri Sat & holiday eves 16:00–04:00",
+      "description": "A casual bar that's part of the Casino da Madeira."
+    },
+    {
+      "name": "Vespas",
+      "address": "Avenida Sá Carneiro 60",
+      "phone": "+351 291 234 800",
+      "hours": "Fri Sat 23:00–08:00",
+      "description": "Dance club very popular with young people."
+    },
+    {
+      "name": "Hole in One Madeira",
+      "address": "Estrada Monumental 238A",
+      "phone": "+351 291 765 443",
+      "hours": "daily 11:00–02:00",
+      "description": "If you require an Irish pub."
+    },
+    {
+      "name": "Residencial Monaco",
+      "address": "Rua das Hortas 14",
+      "phone": "+351 291 241 031",
+      "description": "Simple and somewhat cramped rooms but very clean and with a low price. Double rooms with private ensuite bathroom around €18–25/night depending on season. Located in the historical center, so ideal if you don't have a car."
+    },
+    {
+      "name": "Residencial Melba",
+      "address": "Azinhaga da Casa Branca 8",
+      "description": "12 rooms."
+    },
+    {
+      "name": "Quinta Da Casa Branca",
+      "phone": "+351 291 700 770",
+      "description": "An old quinta converted into a boutique design hotel, set in the heart of Funchal, among colourful gardens."
+    },
+    {
+      "name": "Hotel Monte Carlo",
+      "address": "Calçada da Saúde 10",
+      "description": "Beautiful, old hotel with a great view over the city of Funchal. Directly near the Convent St. Clara. Reasonable priced and not directly in a desiganted tourist district. Lots of good and affordable restaurants nearby."
+    },
+    {
+      "name": "Hotel Porto Santa Maria",
+      "address": "Avenida do Mar e das Comunidades Madeirenses 50",
+      "phone": "+351 291 206 700",
+      "description": "Just in front of the sea and the city harbour, in Funchal's Old Town, near Cable Car, Forte de São Tiago and Mercado Lavradores."
+    },
+    {
+      "name": "Hotel Porto Mare",
+      "address": "Rua Simplício dos Passos Gouveia 21",
+      "phone": "+351 291 703 700",
+      "description": "One of the three hotels in the resort Vila Porto Mare, near Lido´s promenade, tropical gardens with more than 400 specimens, five pools, four restaurants, sports and spa."
+    },
+    {
+      "name": "The Residence",
+      "address": "Rua de Leichlingen 7",
+      "phone": "+351 291 708 700",
+      "description": "One of the three hotels in the resort Vila Porto Mare, near Lido´s promenade offers a wide selection of carefully furnished and fully equipped apartments. The Residence apartments combine views over the ocean with tropical gardens."
+    },
+    {
+      "name": "Suite Hotel Eden Mar",
+      "address": "Rua do Gorgulho 2",
+      "phone": "+351 291 700 700",
+      "description": "One of the three hotels in the resort Vila Porto Mare, near Lido's promenade, kitchenette, tropical gardens with more than 400 specimens, five pools, four restaurants, sports and spa."
+    },
+    {
+      "name": "Madeira Remote Casa do Pico",
+      "address": "Calçada do Pico 42, Funchal, Madeira, 9000-206, Portugal",
+      "phone": "+353 86 185 6510",
+      "description": "Casa do Pico is a dedicated coliving house in central Funchal featuring five private, fully furnished rooms with ergonomic workstations and high-speed fiber WiFi. The property centers around shared social spaces, including two living rooms, a fully equipped kitchen, and a large communal dining table, all designed to foster interaction among remote workers. Its highlight is an expansive rooftop terrace offering panoramic ocean and city views, a jacuzzi, and space for yoga and community gatherings, providing a seamless blend of productivity and social life just minutes from Funchal’s Old Town."
+    },
+    {
+      "name": "The Cliff Bay",
+      "address": "Estrada Monumental, 147",
+      "phone": "+351 29 1707700",
+      "description": "Access to the sea, stunning views over the Atlantic and Funchal Bay. Michelin one-star restaurant, Il Gallo d'Oro ."
+    },
+    {
+      "name": "Pestana Ocean Bay",
+      "address": "Praia Formosa",
+      "phone": "+351 291 701 900",
+      "description": ""
+    },
+    {
+      "name": "Pestana Carlton Madeira",
+      "address": "Largo António Nobre 1",
+      "phone": "+351 291 239 500",
+      "description": ""
+    },
+    {
+      "name": "Pestana Casino Park",
+      "address": "Rua Imperatriz D. Amélia",
+      "phone": "+351 291 209 100",
+      "description": ""
+    },
+    {
+      "name": "Pestana Grand",
+      "address": "Rua Ponta da Cruz 23, São Martinho",
+      "phone": "+351 291 707 400",
+      "description": ""
+    },
+    {
+      "name": "Pestana Miramar",
+      "address": "Estrada Monumental 182-194",
+      "phone": "+351 291 706 100",
+      "description": ""
+    },
+    {
+      "name": "Pestana Palms",
+      "address": "Rua do Gorgulho 15-17",
+      "phone": "+351 291 709 200",
+      "description": ""
+    },
+    {
+      "name": "Pestana Promenade",
+      "address": "Rua Simplício dos Passos Gouveia 31",
+      "phone": "+351 291 141 400",
+      "description": ""
+    },
+    {
+      "name": "Pestana Village",
+      "address": "Estrada Monumental 194",
+      "phone": "+351 291 701 600",
+      "description": ""
+    },
+    {
+      "name": "Reid's Palace",
+      "address": "Estrada Monumental 139",
+      "phone": "+351 291 717 171",
+      "description": "Has been the standard bearer for luxury hotel excellence on Madeira for over a century. Offering superb views of Madeira and the ocean, a luxury hotel spa, and gourmet restaurants. Famous for its afternoon tea. Including a Kids and Teens Club. Lovely hotel where Winston Churchill was a guest. There is an on-site, Michelin-starred restaurant, William ."
+    },
+    {
+      "name": "Savoy & Royal Savoy",
+      "address": "7 R. Carvalho Araùjo",
+      "phone": "+351 291 213 500",
+      "description": "Reid's rival hotel. Boasting a beachfront location, this luxurious resort is set in the Bay of Funchal and combines quality facilities with a central setting. Surrounded by tropical gardens, the Royal Savoy has 174 elegant suites, each with private balcony."
+    },
+    {
+      "name": "The Vine Hotel",
+      "address": "Rua das Aranhas No 27A",
+      "phone": "+351 291 009 000",
+      "description": "Located in downtown area, this hotel includes a panoramic suite that overlooks the entire Funchal."
+    },
+    {
+      "name": "Nivarte Barber/Hairdresser",
+      "address": "Rua das Hortas 1, Unit 102 (Piso 1)",
+      "phone": "+351 958 747 709",
+      "price": "under €14 for men's haircut",
+      "description": "Quality and inexpensive haircuts for both men and women. One of the barbers, Paolo Silva speaks English, and gives the best hot towel shave on the island."
+    }
+  ],
+  "words": 3784,
+  "searchText": "Funchal is the capital and main city of the autonomous region of Madeira, on the island of Madeira , in its south between Santa Cruz and Câmara de Lobos. In 2021, it was home 106,000 people. The name Funchal ( foon-SHAHL , /fũ.ˈʃaɫ/) comes from the abundance of fennel ( funcho ) found on the island. It was an important shipping centre during the 15th–17th centuries. It is one of the most beautiful cities in Portugal. Visit Funchal website Funchal Climate chart ( explanation ) J F M A M J J A S O N D 99 20 15 95 20 14 83 20 15 62 21 15 45 22 16 17 24 18 3.7 26 20 4 27 21 45 27 21 118 25 19 112 23 17 135 21 16 Average max. and min. temperatures in °C Precipitation + Snow totals in mm Source: Wikipedia Imperial conversion J F M A M J J A S O N D 3.9 68 58 3.7 68 57 3.3 69 58 2.4 70 59 1.8 72 61 0.7 75 65 0.1 78 68 0.2 80 70 1.8 80 69 4.6 77 67 4.4 73 63 5.3 69 60 Average max. and min. temperatures in °F Precipitation + Snow totals in inches  Cristiano Ronaldo Madeira International Airport ( FNC IATA Funchal Airport, formerly known as Santa Catarina Airport ) ( about 30 min NE of Funchal, in Santa Cruz municipality ), ☏ +351 291 520 700 , madeira.airports@ana.pt . Once famous for its hair-raisingly short runway ending at a cliff over the Atlantic Ocean, the airport has been expanded to handle all sizes of aircraft. The following airlines fly regularly to Madeira International Airport: TAP Air Portugal, Azores Airlines, British Airways, Lufthansa, Austrian Airlines, Air France, easyJet, Finnair, Condor, SAS, Transavia, Binter Canarias, and Jet2.com. Most flights are from mainland Portugal and northern Europe. There are several daily flights from most major cities in Portugal ( Lisbon , Porto ). Flight time from Lisbon is 1½ hours. Also, there are good connections from London (mostly Gatwick , but also Heathrow ) with TAP/Air Portugal and British Airways; its flying time is estimated at 3½ hours. Funchal is served by highway ER101 which runs along the coast. An easy way to get to the city centre by car is to take exit 11 and head downhill towards Funchal. Continue on this road (ER103) until you pass under an overpass. Immediately on your right is a large parking garage (closed on Sundays). From here it is only a few minutes walk to Mercado Dos Lavradores / Sé Cathedral. The city centre is small enough to explore on foot. Orange city buses can take you around and up to Monte (lines 20, 21). Giro cards can be bought from the office for €2.20, which are pre-loaded with two journeys, and can be topped up with additional journeys for €1.50 each. A single ride costs €1.90 when bought from the bus driver. Most city buses start from the waterfront area. If you are lucky, you can acquire a bus timetable for the local and regional buses starting in Funchal at the tourist information office. Timetables and a map are also available . Madeira as a small island is very convenient for exploring by riding motorcycles. Funchal is well connected with the rest of the island and there are a lot of hidden gems that could be discovered along the coast roads. Using a moped is a common practice around the island as it’s a lot more convenient. Finding a place to rent a scooter or motorcycle is not difficult and there are several companies, most of them are located within the town centre. Rent a Scooter Madeira . Mostly smaller mopeds and motorcycles. They have a good variety of models and basic equipment is provided with each rental. Helmet provided for the main driver. Riderly . Provide motorcycles for longer and shorter trips with all the driving equipment necessary, such as helmets and gloves. Quinta do Palheiro Ferreiro Park ( Jardins do Palheiro ), São Gonçalo, Palheiro ( about 5 km from downtown ), ☏ +351 291 793 044 . Mon-Fri 09:00 - 16:30 . The Quinta do Palheiro Ferreiro Park is a typical example of a manor in British colonial style. While the manor is private and can't be visited, you can enjoy the public park. On first sight it looks like an English park, with old Platanes forming a long alley from the main gate to the gardens. But when you look closer you see all the tropical plants that build the basis, completed by hundreds of plants from all over the world, so all year round there are plants blooming. The main part of the park is formed by several gardens: a French Garden, a Sunken Garden, the Ladies Garden, a Rose Garden and some more. Opposite the main gate is a Tea House, which is connected to the golf course. They serve some good tea, cakes, pastries, snacks and small lunches. The way back to the main gate is formed by the Camellia Avenue, a flourish firework between end October and March. The park is at 500 m altitude. 09:00-11:30 the park is often crowded by bus tourists, so choose the afternoon for a more laid-back visit. Entrance fee €10.50. Public buses frequently connect Funchal with the park: line 36 or, if you have strong nerves, line 37 for a more spectacular ride. ( updated Dec 2019 ) Madeira Botanical Garden ( Jardim Botânico da Madeira ), Caminho Meio Quinta do Bom Sucesso ( about 3 km from downtown ). The more than 2000 plants of these hillside gardens, plus the view of Funchal make this one of the major attractions of the whole island. The gardens also feature a collection of parakeets and parrots. Mercado Dos Lavradores ( Peasants' Market ), Rua Brigadeiro Oudinot, Down Town (Zona Velha) . Mon-Thu 07:00-16:00, Fri 07:00-20:00, Sat 07:00-15:00, closed on Sundays and holidays . This historic building, with an open patio, offers, on two levels, fresh fruits and vegetables from all over the island. On the lower level is a separate hall where fish vendors sell fresh-caught fish. Eat and buy local fruits like the small Madeiran mangos, bananas, philodendres and plenty of kinds of maracujas. Taste the offers from vendors. But be careful, as some may try to rip you off and sell you over-ripe fruit, or some heavy mangos for the (expensive) price of light maracujas. There are also some nice pastelarias and coffee bars in and around the building. These are often crowded when it's raining, and when large cruise ships are on the pier. ( updated Dec 2019 ) Monte Palace Hotel Gardens ( Jardim do Monte Palace ). The gardens of this defunct hotel include a Chinese garden, artwork, a small lake, and a variety of flora and fauna. Santa Clara Convent ( Convento de Santa Clara ), Calçada de Santa Clara 15 . Dating from the end of the 15th century, this convent, now a national monument, was founded by João Gonçalves da Câmara. The azulejo tiles are especially notable. São Lourenço Palace ( Palácio de São Lourenço ), Avenida Zarco , ☏ +351 291 202 530 . Half fortress and half palace, this construction is a good example of mannerist architecture. Highlights include the Noble Salon (Salão Nobre), the Green Room (Sala Verde), the Audience Hall (Sala de Audiências), and the gardens. Sé Cathedral . The central point in Funchal, and its most-visited monument. Commissioned by the king Dom Manuel I through Portuguese explorer Gil Eanes, the cathedral was built between 1493 and 1517. The ceiling is made from local wood. Colegio Church ( Igreja de São João Evangelista ), Rua dos Ferreiros, 105 . This Jesuit temple, completed in 1647, is a striking building with a stunning interior. Today it is part of Madeira University. IBTAM Museum ( Núcleo Museológico do IBTAM ), Rua do Visconde de Anadia . Museum of the Institute of Embroidery, Tapestry and Craftsmanship of Madeira. The exhibits give some idea of the tradition of embroidery in the island in the past centuries ( updated Jun 2016 ) São Tiago Fort . Built in 1614 to defend the city from pirate attack, the fort today houses a small contemporary art museum. ( updated Jun 2016 ) Museu CR7 . Museum dedicated to Portuguese footballer Cristiano Ronaldo's trophies, with a bronze statue of him in the front. ( updated Feb 2026 ) Madeira Casino ( Casino da Madeira ), Avenida do Infante , ☏ +351 291 140 424 . Sun-Thu 15:00-03:00, Mon-Fri 16:00-04:00 . The only casino on the island. The building's unusual shape was designed by Brazilian architect Oscar Niemeyer, and indeed looks a bit like Brasilia Cathedral with a haircut. Casino da Madeira offers table games such as Texas Hold 'em, blackjack, baccarat and American roulette (with 0 and 00) and slots. Outside of gambling there is the Palm bar, the Rio casual restaurant, the formal Bahlia restaurant and the Copacabana nightclub that hosts live musical performances (just like the Barry Manilow song). Note that the premises have dress code that forbids sandals, flip-flops and sports wear. Free parking and Wi-Fi for patrons. Palheiro Golf Course , Rua do Balacal 29 . Funchal Cable Car ( Teleférico do Funchal ), Almirante Reis . 09:30-17:45 . View the city from above in a gondola. The upper station is at Monte, where you can visit the Monte Palace gardens and the church at Monte. Another cable car goes down from this point to the Botanical Gardens. Combination tickets for the ride and attractions are available. Football: Funchal has two pro soccer teams: CS Marítimo ( 2 km west of the old town ). They were promoted in 2026 and play in Primeira Liga, the game's top tier. Their home ground Estádio do Marítimo has capacity 11,000. The women's team also play in their top tier. ( updated Jun 2026 ) CD Nacional ( 4 km northeast ). They too play in Primeira Liga. Their home ground Estádio da Madeira has a capacity of 5500.. ( updated May 2024 ) Madeira Paragliding ( 0 - 4200 Ft ), Madeira Mountains . 10:00-20:00 . Tandem Paragliding flights. Monte Toboggan , Caminho do Monte, Entrada 151, Porta 4 , ☏ +351 291 783 919 . Mon-Sat 09:00-18:00 . Ride wooden toboggan down the mountain on a 2km roadway while being steered by men. €25 for 1 person, €30 for 2 people, €45 for 3 people . ( updated Nov 2022 ) Flowers & fruit (check with the airline/ship if they can be brought abroad). The island is world-famous for its wines.  Several stores offer varying selections. Funchal has an abundance of good, if not necessarily cheap, eating places. Most places serve traditional Madeiran and Portuguese food, which is well-prepared and tasty, but not terribly exciting. One of the most typical dishes and served almost everywhere, is espada com banana (scabbard fish with banana). It is usually served with fresh salad and potatoes. A bit more expensive is bacalhau (dried, salted codfish), which is also served in many restaurants. One of the more common and best varieties is \"bacalhau com natas\" (codfish in cream sauce). Restaurante Beer Garden , Estrada Monumental 462 , ☏ +351 291 764 377 , beergardenfunchal@gmail.com . Mon–Fri 11:00–18:00, Sat Sun 11:00–17:00 . Recommended dish is Picado (beef steak served with chips). The normal size (€10) should be enough for 2 persons. The bigger size (€13) could serve 3 - 4 persons. ( updated Mar 2021 ) Castelo dos Hambúrgueres , Rua da Carreira, 306 , ☏ +351 291 756 616 . This place sells only 3 types of hamburgers: normal, special, and super. Also try their smoothies. Barreirinha Bar Cafe , Largo do Socorro, 1 ( just east of the Fortaleza de Santiago, on the water, where R. de Santa Maria meets Largo do Socorro. ), ☏ +351 291 627 418 . 07:00–00:00 . While many affordable cafes in Funchal have similar prices on burgers and tostas, Barreirinha also offers plenty of outdoor tables overlooking the ocean. Relaxing yet hip atmosphere. Occasional live bands or DJs. €2.60 tostas , €5.50 burgers, €2 poncha . ( updated Apr 2016 ) Il Basilico , Rua de Leichlingen, 7, Promenade , ☏ +351 291 708700 . Daily 12:30-15:00 and 19:30-22.00 . Italian restaurant. À la carte lunch and dinner served inside and on the terrace. Children's menu. Reservation recommended. Doca do Cavacas , Rua da Ponta da Cruz 66 ( off Estrada Monumental, Ponta de Cruz ), ☏ +351 291 762 057 , rest.docadocavacas@hotmail.com . Tue-Sun 12:30–00:00, closed Mon . Seaside fish restaurant. Olives , Rua Brigadeiro Oudinot, nº 2 - 3rd floor (level) ( a few meters from the left of the city market ), ☏ +351 291 223 165 , barestaurant.olives@gmail.com . Mon-Sat 12:00-24:00 . This small restaurant is close to city market, in an iconic building (Edifício Oudinot), with a terrace overlooking the port. It has a small menu of contemporary, author's cuisine, Portuguese (Mediterranean)-influenced dishes. There are ten fish dishes, ten meat dishes and a side vegetarian/vegan menu. Serves an excellent house wine and other good wines (from €12.50 house bottle). It has a pleasant interior, with an Art Deco-influenced staircase. The staff are also friendly. plates from €9 to €16.50 (mains). . ( updated Dec 2019 ) Il Gallo d'Oro , Estrada Monumental 147 ( The Cliff Bay Hotel ), ☏ +351 291 707 700 , restaurant.tcb@portobay.pt . Tue–Sat 19:00–22:00, closed Sun Mon . Modern aromatic Iberian cuisine in classic-yet-contemporary surroundings. Two Michelin stars. €110-245 . ( updated Jun 2021 ) William Restaurant , Estrada Monumental 139 ( Reid's Palace Hotel ), ☏ +351 291 717 171 . Tue–Sat 19:30–22:00 . Michelin-starred contemporary cuisine using local ingredients from the island. The elegant setting offers coastal views. €95-170 . ( updated Jul 2021 ) Not the party capital of the world: most bars are very quiet, except during a football match. Bar Amazónia , Rua de São Filipe 19 . A pleasant little bar. Café do Teatro , Avenida Arriaga ( Ed. Teatro Municipal Baltazar Dias ), ☏ +351 924 437 951 , grupocafedoteatro@gmail.com . Mon–Thu 08:00–23:00, Fri 08:00–00:00, Sat 09:00–00:00, Sun 09:00–23:00 . ( updated Apr 2021 ) FX Restaurant & Sports Bar , Rua das Fontes 1–9, Avenida do Mar , ☏ +351 291 618 358 . Sun–Thu 10:00–01:00, Fri Sat & holiday eves 10:00–02:00 . ( updated Apr 2021 ) Palm Bar , Casino da Madiera, Avenida do Infante , ☏ +351 291 140 424 , casino.madeira@pestana.com . Sun–Thu 15:00–03:00, Fri Sat & holiday eves 16:00–04:00 . A casual bar that's part of the Casino da Madeira. Vespas , Avenida Sá Carneiro 60 , ☏ +351 291 234 800 , vespasclube@gmail.com . Fri Sat 23:00–08:00 . Dance club very popular with young people. ( updated Apr 2021 ) Hole in One Madeira , Estrada Monumental 238A ( in the hotel district ), ☏ +351 291 765 443 . daily 11:00–02:00 . If you require an Irish pub. ( updated Apr 2021 )  During low season (winter) prices may drop significantly, e.g., from €50 to 35. Time around Christmas is high-season. Residencial Monaco , Rua das Hortas 14 ( 5-minute walk from the bus stop \"Anadia Shopping Centre\" for buses entering Funchal: Walk toward the sea and turn right onto R. Fernão de Ornelas. At the end of the street, at the taxi station, turn right onto R. do Carmo. After the Carmo church, R. das Hortas will be on your left. ), ☏ +351 291 241 031 , residencialmonaco2@gmail.com . Simple and somewhat cramped rooms but very clean and with a low price. Double rooms with private ensuite bathroom around €18–25/night depending on season. Located in the historical center, so ideal if you don't have a car. ( updated Apr 2016 ) Residencial Melba ( Melba Pension ), Azinhaga da Casa Branca 8 ( Lies in Western Funchal ), melba951@hotmail.com . 12 rooms. ( updated Mar 2021 ) Quinta Da Casa Branca , ☏ +351 291 700 770 , info@quintacasabranca.pt . An old quinta converted into a boutique design hotel, set in the heart of Funchal, among colourful gardens. Hotel Monte Carlo , Calçada da Saúde 10 . Beautiful, old hotel with a great view over the city of Funchal. Directly near the Convent St. Clara. Reasonable priced and not directly in a desiganted tourist district. Lots of good and affordable restaurants nearby. ( updated Mar 2021 ) Hotel Porto Santa Maria ( PortoBay Hotels & Resorts ), Avenida do Mar e das Comunidades Madeirenses 50 , ☏ +351 291 206 700 , portosantamaria@portobay.pt . Just in front of the sea and the city harbour, in Funchal's Old Town, near Cable Car, Forte de São Tiago and Mercado Lavradores. Hotel Porto Mare ( PortoBay Hotels & Resorts ), Rua Simplício dos Passos Gouveia 21 , ☏ +351 291 703 700 , portomare@portobay.pt . One of the three hotels in the resort Vila Porto Mare, near Lido´s promenade, tropical gardens with more than 400 specimens, five pools, four restaurants, sports and spa. The Residence ( PortoBay Hotels & Resorts ), Rua de Leichlingen 7 , ☏ +351 291 708 700 , recep.residence@portobay.pt . One of the three hotels in the resort Vila Porto Mare, near Lido´s promenade offers a wide selection of carefully furnished and fully equipped apartments. The Residence apartments combine views over the ocean with tropical gardens. Suite Hotel Eden Mar ( PortoBay Hotels & Resorts ), Rua do Gorgulho 2 , ☏ +351 291 700 700 , edenmar@portobay.pt . One of the three hotels in the resort Vila Porto Mare, near Lido's promenade, kitchenette, tropical gardens with more than 400 specimens, five pools, four restaurants, sports and spa. Madeira Remote Casa do Pico ( Casa do Pico ), Calçada do Pico 42, Funchal, Madeira, 9000-206, Portugal ( https://www.google.com/maps/place//data=!4m2!3m1!1s0xc60616a8e38465f:0xbf5aea15fc6f3d1a?sa=X&ved=1t:8290&ictx=111 ), ☏ +353 86 185 6510 , remote@madeirafriends.org . Casa do Pico is a dedicated coliving house in central Funchal featuring five private, fully furnished rooms with ergonomic workstations and high-speed fiber WiFi. The property centers around shared social spaces, including two living rooms, a fully equipped kitchen, and a large communal dining table, all designed to foster interaction among remote workers. Its highlight is an expansive rooftop terrace offering panoramic ocean and city views, a jacuzzi, and space for yoga and community gatherings, providing a seamless blend of productivity and social life just minutes from Funchal’s Old Town. ( updated Jun 2026 ) The Cliff Bay , Estrada Monumental, 147 , ☏ +351 29 1707700 , cliffbay@portobay.pt . Access to the sea, stunning views over the Atlantic and Funchal Bay. Michelin one-star restaurant, Il Gallo d'Oro . Pestana Ocean Bay , Praia Formosa , ☏ +351 291 701 900 , fo.bay@pestana.com . Check-in: 15:00 , check-out: 12:00 . Pestana Carlton Madeira , Largo António Nobre 1 , ☏ +351 291 239 500 , fo.carlton@pestana.com . Check-in: 15:00 , check-out: 12:00 . Pestana Casino Park , Rua Imperatriz D. Amélia , ☏ +351 291 209 100 , fo.casino@pestana.com . Check-in: 15:00 , check-out: 12:00 . Pestana Grand , Rua Ponta da Cruz 23, São Martinho , ☏ +351 291 707 400 , fo.grand@pestana.com . Check-in: 15:00 , check-out: 12:00 . Pestana Miramar , Estrada Monumental 182-194 , ☏ +351 291 706 100 , fo.miramar@pestana.com . Pestana Palms , Rua do Gorgulho 15-17 , ☏ +351 291 709 200 , fo.palms@pestana.com . Check-in: 15:00 , check-out: 12:00 . Pestana Promenade , Rua Simplício dos Passos Gouveia 31 , ☏ +351 291 141 400 , fo.promenade@pestana.com . Check-in: 15:00 , check-out: 12:00 . Pestana Village , Estrada Monumental 194 , ☏ +351 291 701 600 , fo.village@pestana.com . Check-in: 15:00 , check-out: 12:00 . Reid's Palace , Estrada Monumental 139 , ☏ +351 291 717 171 . Has been the standard bearer for luxury hotel excellence on Madeira for over a century. Offering superb views of Madeira and the ocean, a luxury hotel spa, and gourmet restaurants. Famous for its afternoon tea. Including a Kids and Teens Club. Lovely hotel where Winston Churchill was a guest. There is an on-site, Michelin-starred restaurant, William . Savoy & Royal Savoy , 7 R. Carvalho Araùjo , ☏ +351 291 213 500 . Reid's rival hotel. Boasting a beachfront location, this luxurious resort is set in the Bay of Funchal and combines quality facilities with a central setting. Surrounded by tropical gardens, the Royal Savoy has 174 elegant suites, each with private balcony. The Vine Hotel , Rua das Aranhas No 27A ( In La Vie shopping mall ), ☏ +351 291 009 000 . Check-in: 14:00 . Located in downtown area, this hotel includes a panoramic suite that overlooks the entire Funchal. ( updated Nov 2022 ) Internet Access - There exist various free public Wi-Fi hotspots sponsored by the Madeiran government. One can find such locations by looking for blue and white boards with the Wi-Fi logo on them. A lot of bars and cafes offer Wi-Fi which is usually sponsored by an ISP called \"Zon\". These are usually password restricted but the owners are usually very friendly in providing them. One of the larger public squares called \"Praca do Municipio\", for instance, has free Wi-Fi. Other locations include Avenida Arriaga (2 x around the Golden Gate Café and the Cathedrale) and Praca de Colombo. Post Office - Stamps are rarely available at vendors selling postcards. There is a post office (CTT Correios) near the cathedral in the Avenida Zarco and the Rua Calouste Gulbekian, near the Casino. Postcards to EU countries are €0.72 (June 2015). Nivarte Barber/Hairdresser , Rua das Hortas 1, Unit 102 (Piso 1) ( a very short walk from the center of Funchal, near the Carmo church; enter the nondescript building at the beginning of the street and go up one flight of steps ), ☏ +351 958 747 709 . Quality and inexpensive haircuts for both men and women. One of the barbers, Paolo Silva speaks English, and gives the best hot towel shave on the island. under €14 for men's haircut . ( updated Apr 2016 ) Porto Santo — A wonderful quiet beach community, Porto Santo is a small island on the North-East of Madeira can be reached by either boat or plane. It is well worth a visit for its nice small restaurants, its long beach, and the Christopher Columbus house. Anywhere else on the island of Madeira — Numerous guided day-tours around the island offer pick-up from Funchal hotels. In addition, Rodoeste buses connect Funchal to points westward, and S.A.M. buses connect to points eastward.",
+  "related": [
+    "madeira",
+    "portugal",
+    "lisbon",
+    "porto",
+    "porto-santo"
+  ],
+  "image": {
+    "file": "/images/funchal-banner.webp",
+    "title": "Funchal banner.jpg",
+    "artist": "Funchal_at_Sunset.jpg : Julian Ilcheff Borissoff derivative work: Jjtkk",
+    "credit": "This file was derived from: Funchal at Sunset.jpg :",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Funchal_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Funchal_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Funchal",
+    "revision": 5383686,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5383686",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Funchal&action=history",
+    "retrieved": "2026-10-17T13:11:26.697731+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Madeira",
+  "excerpt": "Funchal is the capital and main city of the autonomous region of Madeira, on the island of Madeira, in its south between Santa Cruz and Câmara de Lobos. In 2021, it was home 106,000 people."
+}

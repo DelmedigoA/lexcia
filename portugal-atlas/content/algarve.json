@@ -1,0 +1,288 @@
+{
+  "title": "Algarve",
+  "slug": "algarve",
+  "displayTitle": "Algarve",
+  "region": "algarve",
+  "kind": "region",
+  "parent": "portugal",
+  "intro": "The Algarve is the southernmost region of Portugal, on the coast of the Atlantic Ocean. It is Portugal's most popular holiday destination due to the approximately 200 km (120 mi) of clean beaches, the cool, unpolluted water, and the fact that it is relatively cheap, very safe, and overall welcoming.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p>The <b>Algarve</b> is the southernmost region of <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>, on the coast of the <b>Atlantic Ocean</b>. It is Portugal's most popular holiday destination due to the approximately 200 km (120 mi) of clean beaches, the cool, unpolluted water, and the fact that it is relatively cheap, very safe, and overall welcoming.\n</p>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<p>The cities of the Algarve are traditionally grouped into <b>Barlavento</b> (Windward) and <b>Sotavento</b> (Leeward), the western and eastern halves, respectively.\n</p>"
+    },
+    {
+      "id": "Barlavento",
+      "title": "Barlavento",
+      "level": 3,
+      "html": "<ul><li><span><span></span> <span id=\"Monchique\"><a href=\"/guides/monchique/\" title=\"Monchique\">Monchique</a></span></span> — the inland Algarve, superb food, nature and views</li>\n<li><span><span></span> <span id=\"Aljezur\"><a href=\"/guides/aljezur/\" title=\"Aljezur\">Aljezur</a></span></span> — close to famous surf spots</li>\n<li><span><span></span> <span id=\"Vila_do_Bispo\"><a href=\"/guides/vila-do-bispo/\" title=\"Vila do Bispo\">Vila do Bispo</a></span></span> — town and municipality containing other destinations:\n<ul><li><span><span></span> <span id=\"Sagres\"><a href=\"/guides/sagres/\" title=\"Sagres\">Sagres</a></span></span> — near Europe's southwesternmost point</li></ul></li>\n<li><span><span></span> <span id=\"Lagos\"><a href=\"/guides/lagos-portugal/\" title=\"Lagos (Portugal)\">Lagos</a></span></span> — narrow, winding streets, quaint shops and wonderful restaurants, with an old inner city inside the remnants of a protective wall.</li>\n<li><span><span></span> <span id=\"Portimão\"><a href=\"/guides/portimao/\" title=\"Portimão\">Portimão</a></span></span> — famous for its fresh fish restaurants and its many beaches. The municipality includes:\n<ul><li><span><span></span> <span id=\"Alvor\"><a href=\"/guides/alvor/\" title=\"Alvor\">Alvor</a></span></span> — a base for visiting the Ria de Alvor Nature Reserve, with a nice beach</li></ul></li>\n<li><span><span></span> <span id=\"Lagoa\"><a href=\"/guides/lagoa/\" title=\"Lagoa\">Lagoa</a></span></span> — popular for its beautiful beaches, modern tourist accommodation, golf courses and cultural heritage. The municipality includes:\n<ul><li><span><span></span> <span id=\"Carvoeiro\"><a href=\"/guides/carvoeiro/\" title=\"Carvoeiro\">Carvoeiro</a></span></span> — picturesque fishing village</li></ul></li>\n<li><span><span></span> <span id=\"Silves\"><a href=\"https://en.wikivoyage.org/wiki/Silves\" title=\"Read on Wikivoyage (external source)\">Silves</a></span></span> — first capital of the Algarve which has a Moorish red stone castle</li>\n<li><span><span></span> <span id=\"Albufeira\"><a href=\"/guides/albufeira/\" title=\"Albufeira\">Albufeira</a></span></span> — one of the most popular holiday destinations in the Algarve: lovely beaches, very good climate, with many restaurants, bars and pubs</li></ul>"
+    },
+    {
+      "id": "Sotavento",
+      "title": "Sotavento",
+      "level": 3,
+      "html": "<ul><li><span><span></span> <span id=\"Loulé\"><a href=\"https://en.wikivoyage.org/wiki/Loul%C3%A9\" title=\"Read on Wikivoyage (external source)\">Loulé</a></span></span> — the capital of the Golden Triangle. The municipality includes:\n<ul><li><span><span></span> <span id=\"Quarteira\"><a href=\"https://en.wikivoyage.org/wiki/Quarteira\" title=\"Read on Wikivoyage (external source)\">Quarteira</a></span></span> — a wide, clean beach with clean water and a nice promenade</li></ul></li>\n<li><span><span></span> <span id=\"Faro\"><a href=\"/guides/faro/\" title=\"Faro\">Faro</a></span></span> — the regional capital, a popular sun destination in the summer, and a base for exploring the surrounding area</li>\n<li><span><span></span> <span id=\"São_Brás_de_Alportel\"><a href=\"https://en.wikivoyage.org/wiki/S%C3%A3o_Br%C3%A1s_de_Alportel\" title=\"Read on Wikivoyage (external source)\">São Brás de Alportel</a></span></span> — inland town with several sights and numerous bed and breakfasts</li>\n<li><span><span></span> <span id=\"Olhão\"><a href=\"https://en.wikivoyage.org/wiki/Olh%C3%A3o\" title=\"Read on Wikivoyage (external source)\">Olhão</a></span></span> — a city near the Ria Formosa and Faro, the largest fishing port in the Algarve; full of character with Moorish-style houses</li>\n<li><span><span></span> <span id=\"Tavira\"><a href=\"/guides/tavira/\" title=\"Tavira\">Tavira</a></span></span> — a city near the Ria Formosa lagoon, one of the most monumental cities in Portugal, with its 37 churches</li>\n<li><span><span></span> <span id=\"Castro_Marim\"><a href=\"https://en.wikivoyage.org/wiki/Castro_Marim\" title=\"Read on Wikivoyage (external source)\">Castro Marim</a></span></span> — it has a medieval castle, and a popular medieval festival in August</li>\n<li><span><span></span> <span id=\"Vila_Real_de_Santo_António\"><a href=\"https://en.wikivoyage.org/wiki/Vila_Real_de_Santo_Ant%C3%B3nio\" title=\"Read on Wikivoyage (external source)\">Vila Real de Santo António</a></span></span> — on the eastern bank of the Guadiana river which forms the border to Spain</li>\n<li><span><span></span> <span id=\"Alcoutim\"><a href=\"https://en.wikivoyage.org/wiki/Alcoutim\" title=\"Read on Wikivoyage (external source)\">Alcoutim</a></span></span> — landlocked town across from Spain on the Guadiana River</li></ul>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>The Algarve (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">ahl-GAHR-v(ih)</a>, /aɫ.ˈgaɾ.vɨ/) is rich in culture and diversity. If you are looking for fast paced resorts or a calm tranquil setting either is attainable. The entire region is around 5,400 km<sup>2</sup> (2,100 sq mi). Although the number of permanent residents is under 500,000 the area receives more than tenfold that in tourism each year. The busiest times of year tend to be July and August.\n</p>"
+    },
+    {
+      "id": "History",
+      "title": "History",
+      "level": 3,
+      "html": "<p>Following the neolithic period of the regions history, approximately 1000 BC, settlements and trading ports were established by the Phoenicians who were attracted by deposits of copper, manganese and iron. They came from the coastal regions of the eastern Mediterranean of modern-day Syria, Israel and Lebanon. Circa 550 BC Portimão was one of the ports founded by the Carthaginians who came from North Africa. In the 2nd century BC the region came under the control of the Romans as they spread throughout the Iberian Peninsular. Many Roman ruins still remain today throughout the Algarve and can be seen in many areas, but the best to visit are probably at the Milreu ruins, 7 km (4.3 mi) from Faro, where buildings that started construction as a Roman villa later became a Christian Church.\n</p><p>Following the collapse of the Roman Empire, the Visigoths took control of the Algarve until the invasion of the Moors from North Africa in 711 AD. At this time, the Visigoths who came from central Europe, were defeated in the Battle of Guadalete by a force of invading Arabs and Berbers.\n</p><p>There followed a period of five centuries of Arab rule in Iberia. The Moors conquered the Algarve in 716. Faro, which had been called Santa Maria, was renamed Faraon, meaning 'the settlement of the Knights'. Even the name of the region owes its origin to the Moors who knew the region as 'al-gharb' meaning 'the west'. There is evidence of the moors throughout the Algarve  and Southern Spain, illustrated by chimney stacks, pottery and the Moorish style of architecture, and particularly, the Arabic castle at Silves. The castle was built by Almoravid Arabs in the 11th century out of red sandstone and dried mud and is the best preserved Moorish castle in the country. In the 12th century, King Afonso III, with a little help from English mercenaries, finally evicted the Moors and once again the Portuguese dominated the region, although the area was not fully secure from Moorish attacks until the middle of the 13th century.\n</p><p>Born in Porto in 1394, Prince Henry the Navigator based himself somewhere around Lagos/Sagres, and is considered to be responsible for many of the 'discoveries' made by the Portuguese in the middle ages sending out expeditions to Africa, the islands of Madeira and the Azores. In 1419 he was appointed governor of the province of the Algarve.\n</p><p>Disaster struck on 1st November 1755, with a huge earthquake whose epicentre was reported to have been 200km South-West of the country and registering 9 on the Richter Scale. The coastal areas of the Algarve were devastated by the earthquake and subsequent tsunami. The devastation was not only limited to the Algarve, British naval reports from the period indicate the arrival of a huge wave in the port of Lisbon. The damage to Lisbon was almost total, and following huge political turmoil the person responsible for the reconstruction of the city was the Marquis of Pombal, the then Prime Minister.\n</p>"
+    },
+    {
+      "id": "Climate",
+      "title": "Climate",
+      "level": 3,
+      "html": "<table>\n<tbody><tr><th>Faro\n</th></tr>\n<tr><th>Climate chart (<a href=\"https://en.wikivoyage.org/wiki/Template:Climate_chart/How_to_read_a_climate_chart\" title=\"Read on Wikivoyage (external source)\">explanation</a>)</th></tr>\n<tr><td><table>\n<tbody><tr><td>J</td><td>F</td><td>M</td><td>A</td><td>M</td><td>J</td><td>J</td><td>A</td><td>S</td><td>O</td><td>N</td><td>D</td></tr>\n<tr>\n<td>\n\n\n\n \n\n \n\n \n\n<span>59</span>\n\n \n\n \n\n<span>16</span>\n<span>8</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>52</span>\n\n \n\n \n\n<span>17</span>\n<span>9</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>39</span>\n\n \n\n \n\n<span>19</span>\n<span>11</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>39</span>\n\n \n\n \n\n<span>20</span>\n<span>12</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>22</span>\n\n \n\n \n\n<span>23</span>\n<span>14</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>4.3</span>\n\n \n\n \n\n<span>26</span>\n<span>17</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>1.8</span>\n\n \n\n \n\n<span>29</span>\n<span>19</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>3.9</span>\n\n \n\n \n\n<span>29</span>\n<span>19</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>23</span>\n\n \n\n \n\n<span>27</span>\n<span>18</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>60</span>\n\n \n\n \n\n<span>23</span>\n<span>15</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>90</span>\n\n \n\n \n\n<span>20</span>\n<span>12</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>114</span>\n\n \n\n \n\n<span>17</span>\n<span>10</span>\n</td>\n</tr>\n<tr><td>Average max. and min. temperatures in °C</td></tr>\n<tr><td><span>Precipitation</span>+<span>Snow</span> totals in mm</td></tr>\n</tbody></table></td></tr>\n<tr><td>\n<table>\n<tbody><tr><th>Imperial conversion</th></tr>\n<tr><td>J</td><td>F</td><td>M</td><td>A</td><td>M</td><td>J</td><td>J</td><td>A</td><td>S</td><td>O</td><td>N</td><td>D</td></tr>\n<tr>\n<td>\n\n\n\n \n\n \n\n \n\n<span>2.3</span>\n\n \n\n \n\n<span>61</span>\n<span>46</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>2</span>\n\n \n\n \n\n<span>62</span>\n<span>48</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>1.6</span>\n\n \n\n \n\n<span>66</span>\n<span>51</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>1.5</span>\n\n \n\n \n\n<span>69</span>\n<span>53</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>0.9</span>\n\n \n\n \n\n<span>73</span>\n<span>57</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>0.2</span>\n\n \n\n \n\n<span>80</span>\n<span>63</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>0.1</span>\n\n \n\n \n\n<span>85</span>\n<span>66</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>0.2</span>\n\n \n\n \n\n<span>84</span>\n<span>67</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>0.9</span>\n\n \n\n \n\n<span>80</span>\n<span>64</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>2.4</span>\n\n \n\n \n\n<span>74</span>\n<span>60</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>3.6</span>\n\n \n\n \n\n<span>67</span>\n<span>53</span>\n</td>\n<td>\n\n\n\n \n\n \n\n \n\n<span>4.5</span>\n\n \n\n \n\n<span>63</span>\n<span>49</span>\n</td>\n</tr>\n<tr><td>Average max. and min. temperatures in °F</td></tr>\n<tr><td><span>Precipitation</span>+<span>Snow</span> totals in inches</td></tr>\n</tbody></table>\n</td></tr></tbody></table><p>The Algarve's geographical position on Europe’s south-western tip in the south of Portugal gives it some special bioclimatic features. Although situated by the Atlantic Ocean, it has a temperate climate with Mediterranean characteristics, more than 3,000 hours of sunshine per year and a low annual average rainfall, mainly during the winter months. Even in the hottest days in July and August a mild breeze from the Atlantic provides relief.\n</p><p>The Serra in the northern half of the Algarve has a considerable influence on the climate of the region. It forms a physical barrier against the cold winds blowing from the north and the lows from the Northwest,  thus giving the Algarve coast an almost Mediterranean climate, with low annual rainfall and mild temperatures in winter. Furthermore, it is also a barrier for the misty winds that come from the South.\n</p>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi> <span id=\"Visit_Algarve\"><a href=\"https://www.visitalgarve.pt/\">Visit Algarve</a></span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351289800400\">+351 289 800 400</a></span></span>, <span><a href=\"mailto:turismodoalgarve@turismodoalgarve.pt\">turismodoalgarve@turismodoalgarve.pt</a></span>. <bdi>There are numerous <a href=\"https://www.visitalgarve.pt/en/menu/213/tourist-offices.aspx\">tourist offices</a> throughout the Algarve, including Faro airport.</bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Talk",
+      "title": "Talk",
+      "level": 2,
+      "html": "<p>English is in general used as a business language and is spoken in the tourist areas, where restaurant menus are multilingual. If you are travelling in the interior, then you would do well to carry a pocket dictionary with you, and have Wikivoyage's <a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook\" title=\"Read on Wikivoyage (external source)\">Portuguese phrasebook</a> at hand. Also in case you unexpectedly have to deal with the police, English may not always be understood. You should be careful with any impolite comments – many Portuguese people have spent some time abroad and may understand you better than you think.\n</p>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": "<p>International flights into <a href=\"https://www.ana.pt/en/fao/home\"><b>Faro Airport</b></a> (<b><a href=\"https://en.wikivoyage.org/wiki/FAO#By_plane\" title=\"Read on Wikivoyage (external source)\">FAO</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>) then (1) by bus: national buses run from outside the airport to the bus terminal regularly throughout the day time on weekdays or (2) by taxi: will be under <abbr>€10</abbr> from the airport to the train station.\n</p>"
+    },
+    {
+      "id": "By_car",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>The toll motorway A2 leads to the Algarve from the north. You will need to allow approximately 2 hours for the 240 km drive from Lisbon to the A22 north of Albufeira.\n</p><p>From Spain the toll free A49 joins the A22 near Castro Marim in the Algarve after 145 km and about one and a half hours driving.\n</p><p>In the Algarve the toll motorway A22 <i>Rua do Infante de Sagres</i> goes from <a href=\"/guides/lagos-portugal/\" title=\"Lagos (Portugal)\">Lagos</a> in the west to <a href=\"https://en.wikivoyage.org/wiki/Castro_Marim\" title=\"Read on Wikivoyage (external source)\">Castro Marim</a> in the east at the Spanish border. Toll tariffs on the A22 depend on the distance and are recorded electronically only. Since the toll was introduced at the end of 2011 the parallel route of the national road EN125 is quite busy during rush hours, because many locals shy away from using the A22 for cost reasons. Cars with a foreign number plate have several options to pay the toll collected by an electronic system on the A22 motorway:\n</p><ul><li><b>Toll Card</b>: this card, valid for one year, can be charged with <abbr>€5-40</abbr> and needs to be activated by SMS, entering the license number.</li>\n<li><b>Toll Service</b>: you can have unlimited use of the A22 for 3 days after activation, for a one off fee of <abbr>€20</abbr>.</li>\n<li><b>Easy Toll</b>: Payment by credit card (Visa or Master Card), with the toll directly deducted from your bank account</li>\n<li><b>Via Verde Visitors</b>: renting a so called on board unit (OBU), a device that can be used both on roads with electronic or manual toll collection.</li></ul>"
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<p><span><span></span> <span id=\"Faro_Airport\"><a href=\"http://www.faro-airport.com/\">Faro Airport</a></span></span>, the third largest in Portugal, is the main airport for the region. On arrival there is a wide selection of car hire options both at static desks in the airport and also within the terminal at a meeting point.\nFrom Faro airport the train station and bus terminals can be reached by taxi.\n</p><p>Outside the summer season some airlines reduce their direct flights to Faro, so that <a href=\"http://www.lisbon-airport.com\">Lisbon Airport</a> should be considered as alternative.\n</p>"
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<p>There are daily bus connections between Lagos, Olhao, Faro (and many other cities) and Spanish cities such as <a href=\"https://en.wikivoyage.org/wiki/Seville\" title=\"Read on Wikivoyage (external source)\">Seville</a> and <a href=\"https://en.wikivoyage.org/wiki/Huelva\" title=\"Read on Wikivoyage (external source)\">Huelva</a>. A single ticket Seville-Faro costs <abbr>€13</abbr> with <a href=\"https://www.alsa.com/en\">ALSA</a> and the journey takes 2 hr. Flixbus also has a few connections per day for slightly higher prices.\n</p>"
+    },
+    {
+      "id": "By_train",
+      "title": "By train",
+      "level": 3,
+      "html": "<p>There are several daily train connections to Algarve operated by <a href=\"https://www.Cp.pt\">CP</a>. <i>Alfa Pendular</i> (<i>AP</i>) trains connect <a href=\"/guides/porto/\" title=\"Porto\">Porto</a> and <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a> with <a href=\"/guides/faro/\" title=\"Faro\">Faro</a> twice (sometimes three times) a day, making several stops on the way, journey time is 5½ hr or 3 hr, respectively. <i>Intercidades</i> (<i>IC</i>) trains connect Lisbon with Faro as well, they stop at more places and are a bit slower than <i>AP</i>. They run three times a day, journey time is 3½ hr. There is also one seasonal <i>InterRegional</i> (<i>IR)</i> train.\n</p><p>In Tunes it is possible to change for <i>Regional</i> (<i>R)</i> train to <a href=\"/guides/lagos-portugal/\" title=\"Lagos (Portugal)\">Lagos</a>, in Faro to <a href=\"https://en.wikivoyage.org/wiki/Vila_Real_de_Santo_Ant%C3%B3nio\" title=\"Read on Wikivoyage (external source)\">Vila Real de Santo António</a>.\n</p>"
+    },
+    {
+      "id": "By_boat",
+      "title": "By boat",
+      "level": 3,
+      "html": "<p>There is a ferry service between <a href=\"https://en.wikivoyage.org/wiki/Vila_Real_de_Santo_Ant%C3%B3nio\" title=\"Read on Wikivoyage (external source)\">Vila Real de Santo António</a> and <a href=\"https://en.wikivoyage.org/w/index.php?title=Ayamonte&amp;action=edit&amp;redlink=1\" title=\"Ayamonte (page does not exist)\">Ayamonte</a> (Spain). The ferry was once a main mean of transportation although after the construction of the Guadiana International Bridge it is nowadays mostly used by tourists. <a href=\"http://www.navieraarmas.com/\">Naviera Armas</a> operates a ferry to <a href=\"/guides/portimao/\" title=\"Portimão\">Portimão</a> from <a href=\"/guides/madeira/\" title=\"Madeira\">Madeira</a> (connecting with <a href=\"https://en.wikivoyage.org/wiki/Gran_Canaria\" title=\"Read on Wikivoyage (external source)\">Gran Canaria</a>) with a couple of departures per month.\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_train_2",
+      "title": "By train",
+      "level": 3,
+      "html": "<p>The Algarve Railway (<i>Linha do Algarve</i>) is a convenient possibility to get around Algarve. It connects <a href=\"/guides/lagos-portugal/\" title=\"Lagos (Portugal)\">Lagos</a> in the west with <a href=\"https://en.wikivoyage.org/wiki/Vila_Real_de_Santo_Ant%C3%B3nio\" title=\"Read on Wikivoyage (external source)\">Vila Real de Santo António</a> on the border with <a href=\"https://en.wikivoyage.org/wiki/Spain\" title=\"Read on Wikivoyage (external source)\">Spain</a>, calling at most towns and cities along the way (<a href=\"/guides/portimao/\" title=\"Portimão\">Portimão</a>, <a href=\"https://en.wikivoyage.org/wiki/Silves\" title=\"Read on Wikivoyage (external source)\">Silves</a>, Tunes, <a href=\"https://en.wikivoyage.org/wiki/Loul%C3%A9\" title=\"Read on Wikivoyage (external source)\">Loulé</a>, <a href=\"/guides/faro/\" title=\"Faro\">Faro</a>, Tavira, etc.). There is no direct train between Lagos and Vila Real d/S/A. Operated are usually <i>Regional</i> trains, between Faro and Tunes also <i>Alfa Pendular</i>, <i>Intercidades</i> and <i>InterRegional</i> trains. Journey from Faro to Lagos takes from 1h30min to 1h45min.\n</p><p>There is also one part of The Southern Railway (<i>Linha do Sul</i>; Lisbon - Tunes), although in Algarve are situated only two stops of this line - Messines-Alte and Tunes. These stations are served by <i>Intercidades</i> and <i>InterRegional</i> trains.\n</p><p>All trains are operated by <a href=\"https://cp.pt\">CP</a>.\n</p>"
+    },
+    {
+      "id": "By_bus_2",
+      "title": "By bus",
+      "level": 3,
+      "html": "<p>Regional bus companies include <a href=\"http://eva-bus.com/index.php?lang=uk\"><b>Eva Transportes</b></a> and <a href=\"http://www.frotazul-algarve.pt/\"><b>Frota Azul Algarve</b></a>. <a href=\"http://www.algarvebus.info\">Algarve Bus</a> website has a collection of bus information for Algarve region.\n</p>"
+    },
+    {
+      "id": "By_car_2",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>A car is often the best way of seeing the Algarve, owing to the limited public transport services. Cars can be hired at Faro Airport and in other towns and cities in the Algarve. Most car rental companies will stipulate a minimum age of 21. Prices start from about <abbr>€10</abbr> a day for a small car and there is often a wide range of cars to choose from.\n</p><p>The Algarve has a good network of roads, but be aware that some country roads are little more than dirt tracks. Roads are however generally well maintained, however, road markings may randomly disappear (in this case stick to the right as far as possible - a favourite Portuguese habit is to overtake, still they are mindful). After many years, the A22 (IP 1) motorway was finally completed in 2007, which goes from Bensafrim in the west all the way to Monte Francisco on the Portuguese/Spanish border. The Algarve, like the rest of Portugal and mainland Europe, drives on the right.\n</p><p>Petrol stations are found all over the Algarve. All stations will sell standard unleaded (95 RON) and super (97 RON) and diesel. Some stations sell LPG (<i>GPL</i>) as well. Unleaded petrol is known as <i>gasolina sem chumbo</i> and diesel <i>gasoleo</i>. Petrol prices in Portugal are high in comparison to other European countries; as of August 2009 a litre of 95 RON unleaded costs around <abbr>€1.33</abbr> a litre, 97 RON super <abbr>€1.47</abbr> a litre and diesel <abbr>€1.06</abbr> a litre.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><b>Benagil Cave</b>, in <a href=\"/guides/lagoa/\" title=\"Lagoa\">Lagoa</a>, is one of the most visited tourist attractions in the Algarve region.</li>\n<li><b>Sagres Cape</b> and <b>St. Vincent Cape</b> in <a href=\"/guides/sagres/\" title=\"Sagres\">Sagres</a></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li><b>Beaches</b> — over 100 different beaches, each unique in its own way. Marinha Beach (in <a href=\"/guides/lagoa/\" title=\"Lagoa\">Lagoa</a>) is one of the most emblematic and was considered by the Michelin Guide as one of the 10 most beautiful beaches in Europe and as one of the 100 most beautiful beaches in the world</li>\n<li><b>Golf</b> — If you are a golf lover then you have come to the right place, with over 30 courses dotted throughout the region.</li>\n<li><b>Hike</b> —  there are over 30 hiking trails crisscrossing the region</li>\n<li><bdi> <span id=\"Via_Algarviana\">Via Algarviana</span>. <bdi>A 300-km-long hiking path through the region.</bdi><span> <span></span></span></bdi></li>\n<li><b>Ria Formosa Natural Park</b> in <a href=\"/guides/faro/\" title=\"Faro\">Faro</a></li>\n<li><b>Southwest Alentejo and Vicentine Coast Natural Park</b> in <a href=\"/guides/aljezur/\" title=\"Aljezur\">Aljezur</a></li>\n<li><b>Monchique Mountains</b> near the town of <a href=\"/guides/monchique/\" title=\"Monchique\">Monchique</a></li>\n<li><b>Zoomarine</b> near <a href=\"/guides/albufeira/\" title=\"Albufeira\">Albufeira</a> is an 8-hectare amusement park, zoo, and aquarium. Presentations with dolphins, seals and sea lions, with tropical birds and birds of prey.</li></ul>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": "<ul><li><b>Ceramics</b> - the area is known for its hand-painted pottery and <i>azulejos</i> or tiles</li></ul>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>The Algarve is famous for its hot and spicy <b>Piri Piri Chicken</b>, which can be found all over. Since it has a big and rich coast, it has a very interesting array of wonderful fish and seafood, from sardines to <i>cataplanas</i>, and many dry fruit sweets that will make your mouth water for more.\n</p>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<p><b>Medronho</b> is a traditional fruit brandy, traditionally produced and drunk in The Algarve. Medronho can be fiercely potent and is available in variations ranging from unlabelled local homebrew bottles, moonshine style, to connoisseur tipples at more of a premium price range.\n</p>"
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><b>Youth hostels</b> (<i>Pousadas de Juventude)</i> can be found in the following places: Arrifana near <a href=\"/guides/aljezur/\" title=\"Aljezur\">Aljezur</a> on the western coast, <a href=\"https://en.wikivoyage.org/wiki/Alcoutim\" title=\"Read on Wikivoyage (external source)\">Alcoutim</a> on the Guadiana river, <a href=\"/guides/faro/\" title=\"Faro\">Faro</a>, <a href=\"/guides/lagos-portugal/\" title=\"Lagos (Portugal)\">Lagos</a>, <a href=\"/guides/portimao/\" title=\"Portimão\">Portimão</a> and <a href=\"/guides/tavira/\" title=\"Tavira\">Tavira</a>.</li>\n<li><b>Camping grounds</b>: The Algarve disposes of more than 20 official camping grounds, mostly located on or near the coast.</li>\n<li><b>Caravaning</b>: To improve the service quality and security for auto caravaning, a new route for motor homers (<i>Network for Motor-Caravanning in the Algarve Region/RAARA</i>) was launched end of 2015, comprising 22 infrastructures in total.</li></ul>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><b><a href=\"/guides/alentejo/\" title=\"Alentejo\">Alentejo</a></b> — rural plains region to the north</li>\n<li><b><a href=\"/guides/evora/\" title=\"Évora\">Évora</a></b> — city full of historic sights</li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Huelva_(province)\" title=\"Read on Wikivoyage (external source)\">Huelva</a></b> — province of Spain's <a href=\"https://en.wikivoyage.org/wiki/Andalusia\" title=\"Read on Wikivoyage (external source)\">Andalusia</a> region</li>\n<li><b><a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a></b> — the nation's capital</li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Seville\" title=\"Read on Wikivoyage (external source)\">Seville</a></b> — closest major Spanish city</li>\n<li><b><a href=\"/guides/fatima/\" title=\"Fátima\">Fátima</a></b> – city of the worldwide famous Marian apparitions with an international catholic shrine</li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Monchique"
+    },
+    {
+      "name": "Aljezur"
+    },
+    {
+      "name": "Vila do Bispo"
+    },
+    {
+      "name": "Sagres"
+    },
+    {
+      "name": "Lagos"
+    },
+    {
+      "name": "Portimão"
+    },
+    {
+      "name": "Alvor"
+    },
+    {
+      "name": "Lagoa"
+    },
+    {
+      "name": "Carvoeiro"
+    },
+    {
+      "name": "Silves"
+    },
+    {
+      "name": "Albufeira"
+    },
+    {
+      "name": "Loulé"
+    },
+    {
+      "name": "Quarteira"
+    },
+    {
+      "name": "Faro"
+    },
+    {
+      "name": "São Brás de Alportel"
+    },
+    {
+      "name": "Olhão"
+    },
+    {
+      "name": "Tavira"
+    },
+    {
+      "name": "Castro Marim"
+    },
+    {
+      "name": "Vila Real de Santo António"
+    },
+    {
+      "name": "Alcoutim"
+    },
+    {
+      "name": "Visit Algarve",
+      "phone": "+351 289 800 400",
+      "description": "There are numerous tourist offices throughout the Algarve, including Faro airport."
+    },
+    {
+      "name": "Faro Airport"
+    },
+    {
+      "name": "Via Algarviana",
+      "description": "A 300-km-long hiking path through the region."
+    }
+  ],
+  "words": 2749,
+  "searchText": "The Algarve is the southernmost region of Portugal , on the coast of the Atlantic Ocean . It is Portugal's most popular holiday destination due to the approximately 200 km (120 mi) of clean beaches, the cool, unpolluted water, and the fact that it is relatively cheap, very safe, and overall welcoming. The cities of the Algarve are traditionally grouped into Barlavento (Windward) and Sotavento (Leeward), the western and eastern halves, respectively. Monchique — the inland Algarve, superb food, nature and views Aljezur — close to famous surf spots Vila do Bispo — town and municipality containing other destinations: Sagres — near Europe's southwesternmost point Lagos — narrow, winding streets, quaint shops and wonderful restaurants, with an old inner city inside the remnants of a protective wall. Portimão — famous for its fresh fish restaurants and its many beaches. The municipality includes: Alvor — a base for visiting the Ria de Alvor Nature Reserve, with a nice beach Lagoa — popular for its beautiful beaches, modern tourist accommodation, golf courses and cultural heritage. The municipality includes: Carvoeiro — picturesque fishing village Silves — first capital of the Algarve which has a Moorish red stone castle Albufeira — one of the most popular holiday destinations in the Algarve: lovely beaches, very good climate, with many restaurants, bars and pubs Loulé — the capital of the Golden Triangle. The municipality includes: Quarteira — a wide, clean beach with clean water and a nice promenade Faro — the regional capital, a popular sun destination in the summer, and a base for exploring the surrounding area São Brás de Alportel — inland town with several sights and numerous bed and breakfasts Olhão — a city near the Ria Formosa and Faro, the largest fishing port in the Algarve; full of character with Moorish-style houses Tavira — a city near the Ria Formosa lagoon, one of the most monumental cities in Portugal, with its 37 churches Castro Marim — it has a medieval castle, and a popular medieval festival in August Vila Real de Santo António — on the eastern bank of the Guadiana river which forms the border to Spain Alcoutim — landlocked town across from Spain on the Guadiana River The Algarve ( ahl-GAHR-v(ih) , /aɫ.ˈgaɾ.vɨ/) is rich in culture and diversity. If you are looking for fast paced resorts or a calm tranquil setting either is attainable. The entire region is around 5,400 km 2 (2,100 sq mi). Although the number of permanent residents is under 500,000 the area receives more than tenfold that in tourism each year. The busiest times of year tend to be July and August. Following the neolithic period of the regions history, approximately 1000 BC, settlements and trading ports were established by the Phoenicians who were attracted by deposits of copper, manganese and iron. They came from the coastal regions of the eastern Mediterranean of modern-day Syria, Israel and Lebanon. Circa 550 BC Portimão was one of the ports founded by the Carthaginians who came from North Africa. In the 2nd century BC the region came under the control of the Romans as they spread throughout the Iberian Peninsular. Many Roman ruins still remain today throughout the Algarve and can be seen in many areas, but the best to visit are probably at the Milreu ruins, 7 km (4.3 mi) from Faro, where buildings that started construction as a Roman villa later became a Christian Church. Following the collapse of the Roman Empire, the Visigoths took control of the Algarve until the invasion of the Moors from North Africa in 711 AD. At this time, the Visigoths who came from central Europe, were defeated in the Battle of Guadalete by a force of invading Arabs and Berbers. There followed a period of five centuries of Arab rule in Iberia. The Moors conquered the Algarve in 716. Faro, which had been called Santa Maria, was renamed Faraon, meaning 'the settlement of the Knights'. Even the name of the region owes its origin to the Moors who knew the region as 'al-gharb' meaning 'the west'. There is evidence of the moors throughout the Algarve  and Southern Spain, illustrated by chimney stacks, pottery and the Moorish style of architecture, and particularly, the Arabic castle at Silves. The castle was built by Almoravid Arabs in the 11th century out of red sandstone and dried mud and is the best preserved Moorish castle in the country. In the 12th century, King Afonso III, with a little help from English mercenaries, finally evicted the Moors and once again the Portuguese dominated the region, although the area was not fully secure from Moorish attacks until the middle of the 13th century. Born in Porto in 1394, Prince Henry the Navigator based himself somewhere around Lagos/Sagres, and is considered to be responsible for many of the 'discoveries' made by the Portuguese in the middle ages sending out expeditions to Africa, the islands of Madeira and the Azores. In 1419 he was appointed governor of the province of the Algarve. Disaster struck on 1st November 1755, with a huge earthquake whose epicentre was reported to have been 200km South-West of the country and registering 9 on the Richter Scale. The coastal areas of the Algarve were devastated by the earthquake and subsequent tsunami. The devastation was not only limited to the Algarve, British naval reports from the period indicate the arrival of a huge wave in the port of Lisbon. The damage to Lisbon was almost total, and following huge political turmoil the person responsible for the reconstruction of the city was the Marquis of Pombal, the then Prime Minister. Faro Climate chart ( explanation ) J F M A M J J A S O N D 59 16 8 52 17 9 39 19 11 39 20 12 22 23 14 4.3 26 17 1.8 29 19 3.9 29 19 23 27 18 60 23 15 90 20 12 114 17 10 Average max. and min. temperatures in °C Precipitation + Snow totals in mm Imperial conversion J F M A M J J A S O N D 2.3 61 46 2 62 48 1.6 66 51 1.5 69 53 0.9 73 57 0.2 80 63 0.1 85 66 0.2 84 67 0.9 80 64 2.4 74 60 3.6 67 53 4.5 63 49 Average max. and min. temperatures in °F Precipitation + Snow totals in inches The Algarve's geographical position on Europe’s south-western tip in the south of Portugal gives it some special bioclimatic features. Although situated by the Atlantic Ocean, it has a temperate climate with Mediterranean characteristics, more than 3,000 hours of sunshine per year and a low annual average rainfall, mainly during the winter months. Even in the hottest days in July and August a mild breeze from the Atlantic provides relief. The Serra in the northern half of the Algarve has a considerable influence on the climate of the region. It forms a physical barrier against the cold winds blowing from the north and the lows from the Northwest,  thus giving the Algarve coast an almost Mediterranean climate, with low annual rainfall and mild temperatures in winter. Furthermore, it is also a barrier for the misty winds that come from the South. Visit Algarve , ☏ +351 289 800 400 , turismodoalgarve@turismodoalgarve.pt . There are numerous tourist offices throughout the Algarve, including Faro airport. ( updated Jun 2021 ) English is in general used as a business language and is spoken in the tourist areas, where restaurant menus are multilingual. If you are travelling in the interior, then you would do well to carry a pocket dictionary with you, and have Wikivoyage's Portuguese phrasebook at hand. Also in case you unexpectedly have to deal with the police, English may not always be understood. You should be careful with any impolite comments – many Portuguese people have spent some time abroad and may understand you better than you think. International flights into Faro Airport ( FAO IATA ) then (1) by bus: national buses run from outside the airport to the bus terminal regularly throughout the day time on weekdays or (2) by taxi: will be under €10 from the airport to the train station. The toll motorway A2 leads to the Algarve from the north. You will need to allow approximately 2 hours for the 240 km drive from Lisbon to the A22 north of Albufeira. From Spain the toll free A49 joins the A22 near Castro Marim in the Algarve after 145 km and about one and a half hours driving. In the Algarve the toll motorway A22 Rua do Infante de Sagres goes from Lagos in the west to Castro Marim in the east at the Spanish border. Toll tariffs on the A22 depend on the distance and are recorded electronically only. Since the toll was introduced at the end of 2011 the parallel route of the national road EN125 is quite busy during rush hours, because many locals shy away from using the A22 for cost reasons. Cars with a foreign number plate have several options to pay the toll collected by an electronic system on the A22 motorway: Toll Card : this card, valid for one year, can be charged with €5-40 and needs to be activated by SMS, entering the license number. Toll Service : you can have unlimited use of the A22 for 3 days after activation, for a one off fee of €20 . Easy Toll : Payment by credit card (Visa or Master Card), with the toll directly deducted from your bank account Via Verde Visitors : renting a so called on board unit (OBU), a device that can be used both on roads with electronic or manual toll collection. Faro Airport , the third largest in Portugal, is the main airport for the region. On arrival there is a wide selection of car hire options both at static desks in the airport and also within the terminal at a meeting point.\nFrom Faro airport the train station and bus terminals can be reached by taxi. Outside the summer season some airlines reduce their direct flights to Faro, so that Lisbon Airport should be considered as alternative. There are daily bus connections between Lagos, Olhao, Faro (and many other cities) and Spanish cities such as Seville and Huelva . A single ticket Seville-Faro costs €13 with ALSA and the journey takes 2 hr. Flixbus also has a few connections per day for slightly higher prices. There are several daily train connections to Algarve operated by CP . Alfa Pendular ( AP ) trains connect Porto and Lisbon with Faro twice (sometimes three times) a day, making several stops on the way, journey time is 5½ hr or 3 hr, respectively. Intercidades ( IC ) trains connect Lisbon with Faro as well, they stop at more places and are a bit slower than AP . They run three times a day, journey time is 3½ hr. There is also one seasonal InterRegional ( IR) train. In Tunes it is possible to change for Regional ( R) train to Lagos , in Faro to Vila Real de Santo António . There is a ferry service between Vila Real de Santo António and Ayamonte (Spain). The ferry was once a main mean of transportation although after the construction of the Guadiana International Bridge it is nowadays mostly used by tourists. Naviera Armas operates a ferry to Portimão from Madeira (connecting with Gran Canaria ) with a couple of departures per month.  The Algarve Railway ( Linha do Algarve ) is a convenient possibility to get around Algarve. It connects Lagos in the west with Vila Real de Santo António on the border with Spain , calling at most towns and cities along the way ( Portimão , Silves , Tunes, Loulé , Faro , Tavira, etc.). There is no direct train between Lagos and Vila Real d/S/A. Operated are usually Regional trains, between Faro and Tunes also Alfa Pendular , Intercidades and InterRegional trains. Journey from Faro to Lagos takes from 1h30min to 1h45min. There is also one part of The Southern Railway ( Linha do Sul ; Lisbon - Tunes), although in Algarve are situated only two stops of this line - Messines-Alte and Tunes. These stations are served by Intercidades and InterRegional trains. All trains are operated by CP . Regional bus companies include Eva Transportes and Frota Azul Algarve . Algarve Bus website has a collection of bus information for Algarve region. A car is often the best way of seeing the Algarve, owing to the limited public transport services. Cars can be hired at Faro Airport and in other towns and cities in the Algarve. Most car rental companies will stipulate a minimum age of 21. Prices start from about €10 a day for a small car and there is often a wide range of cars to choose from. The Algarve has a good network of roads, but be aware that some country roads are little more than dirt tracks. Roads are however generally well maintained, however, road markings may randomly disappear (in this case stick to the right as far as possible - a favourite Portuguese habit is to overtake, still they are mindful). After many years, the A22 (IP 1) motorway was finally completed in 2007, which goes from Bensafrim in the west all the way to Monte Francisco on the Portuguese/Spanish border. The Algarve, like the rest of Portugal and mainland Europe, drives on the right. Petrol stations are found all over the Algarve. All stations will sell standard unleaded (95 RON) and super (97 RON) and diesel. Some stations sell LPG ( GPL ) as well. Unleaded petrol is known as gasolina sem chumbo and diesel gasoleo . Petrol prices in Portugal are high in comparison to other European countries; as of August 2009 a litre of 95 RON unleaded costs around €1.33 a litre, 97 RON super €1.47 a litre and diesel €1.06 a litre. Benagil Cave , in Lagoa , is one of the most visited tourist attractions in the Algarve region. Sagres Cape and St. Vincent Cape in Sagres Beaches — over 100 different beaches, each unique in its own way. Marinha Beach (in Lagoa ) is one of the most emblematic and was considered by the Michelin Guide as one of the 10 most beautiful beaches in Europe and as one of the 100 most beautiful beaches in the world Golf — If you are a golf lover then you have come to the right place, with over 30 courses dotted throughout the region. Hike —  there are over 30 hiking trails crisscrossing the region Via Algarviana . A 300-km-long hiking path through the region. Ria Formosa Natural Park in Faro Southwest Alentejo and Vicentine Coast Natural Park in Aljezur Monchique Mountains near the town of Monchique Zoomarine near Albufeira is an 8-hectare amusement park, zoo, and aquarium. Presentations with dolphins, seals and sea lions, with tropical birds and birds of prey. Ceramics - the area is known for its hand-painted pottery and azulejos or tiles The Algarve is famous for its hot and spicy Piri Piri Chicken , which can be found all over. Since it has a big and rich coast, it has a very interesting array of wonderful fish and seafood, from sardines to cataplanas , and many dry fruit sweets that will make your mouth water for more. Medronho is a traditional fruit brandy, traditionally produced and drunk in The Algarve. Medronho can be fiercely potent and is available in variations ranging from unlabelled local homebrew bottles, moonshine style, to connoisseur tipples at more of a premium price range. Youth hostels ( Pousadas de Juventude) can be found in the following places: Arrifana near Aljezur on the western coast, Alcoutim on the Guadiana river, Faro , Lagos , Portimão and Tavira . Camping grounds : The Algarve disposes of more than 20 official camping grounds, mostly located on or near the coast. Caravaning : To improve the service quality and security for auto caravaning, a new route for motor homers ( Network for Motor-Caravanning in the Algarve Region/RAARA ) was launched end of 2015, comprising 22 infrastructures in total. Alentejo — rural plains region to the north Évora — city full of historic sights Huelva — province of Spain's Andalusia region Lisbon — the nation's capital Seville — closest major Spanish city Fátima – city of the worldwide famous Marian apparitions with an international catholic shrine",
+  "related": [
+    "portugal",
+    "monchique",
+    "aljezur",
+    "vila-do-bispo",
+    "sagres",
+    "lagos-portugal",
+    "portimao",
+    "alvor",
+    "lagoa",
+    "carvoeiro",
+    "albufeira",
+    "faro",
+    "tavira",
+    "porto",
+    "lisbon",
+    "madeira",
+    "alentejo",
+    "evora",
+    "fatima"
+  ],
+  "image": {
+    "file": "/images/praia-da-marinha-banner.webp",
+    "title": "Praia da Marinha Banner.JPG",
+    "artist": "Praia_da_Marinha_(2012-09-27),_by_Klugschnacker_in_Wikipedia_(71).JPG : Klugschnacker derivative work: inkey",
+    "credit": "This file was derived from: Praia da Marinha (2012-09-27), by Klugschnacker in Wikipedia (71).JPG :",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Praia_da_Marinha_Banner.JPG",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/7/74/Praia_da_Marinha_Banner.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Algarve",
+    "revision": 5252981,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5252981",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Algarve&action=history",
+    "retrieved": "2026-10-17T13:11:25.528579+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": null,
+  "excerpt": "The Algarve is the southernmost region of Portugal, on the coast of the Atlantic Ocean. It is Portugal's most popular holiday destination due to the approximately 200 km (120 mi) of clean beaches, the cool, unpolluted water, and the fact that it is…"
+}

@@ -1,0 +1,268 @@
+{
+  "title": "Alcobaça",
+  "slug": "alcobaca",
+  "displayTitle": "Alcobaça",
+  "region": "lisbon-region",
+  "kind": "destination",
+  "parent": "tagus-valley",
+  "intro": "Alcobaça is a small city in Portugal's Oeste region. The popular bayside beach town of São Martinho do Porto is located in the municipality.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><b>Alcobaça</b> is a small city in <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>'s <a href=\"/guides/oeste/\" title=\"Oeste\">Oeste</a> region. The popular bayside beach town of São Martinho do Porto is located in the municipality.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Alcobaça (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">ahl-koo-BAH-suh</a>, /aɫ.ku.ˈba.sɐ/), on the banks of the rivers Alcoa and Baça, dates back to the 12th century. The municipality has 54,981 residents (2021 preliminary), with about 7,000 living in the city. The municipality includes seven towns: <b>Alfeizerão</b>, <b>Aljubarrota</b>, <b>Benedita</b>, <b>Cela</b>, <b>Pataias</b>, <b>São Martinho do Porto</b>, and <b>Turquel</b>.\n</p>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Posto_de_Turismo\"><a href=\"https://www.cm-alcobaca.pt/pt/menu/937/turismo.aspx\">Posto de Turismo</a></span>, <span>Rua 16 de Outubro 39-5</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262580810\">+351 262 580 810</a></span></span>, <span><a href=\"mailto:cultura@cm-alcobaca.pt\">cultura@cm-alcobaca.pt</a></span>. <bdi></bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_car",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>The main <a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a>–<a href=\"/guides/porto/\" title=\"Porto\">Porto</a> route is the <b>A1</b> motorway, but the <b>A8</b> comes closer to Alcobaça.\n</p>"
+    },
+    {
+      "id": "By_train",
+      "title": "By train",
+      "level": 3,
+      "html": "<ul><li><bdi> <span id=\"Comboios_de_Portugal\"><a href=\"https://www.cp.pt/\">Comboios de Portugal</a></span> (<span>CP <span><span></span></span>, Trains of Portugal</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351707210220\">+351 707 210 220</a></span></span>. <span><a href=\"https://www.cp.pt/StaticFiles/horarios/regional/comboios-regionais-lisboa-figueira-da-foz-oeste.pdf\">PDF timetable</a></span>. <bdi>Multiple daily Regional and InterRegional trains connect Alcobaça municipality with other locations along Portugal's west coast on the <i>Linha do Oeste</i> (Western Line), including Lisbon, Caldas da Rainha, Torres Vedras, Leiria, Coimbra, and points in between. Old infrastructure and meandering around hills mean that the train is usually slower than the bus. Four stations serve the municipality.</bdi><span> (<span><span>updated Jul 2020</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Valado–Nazaré–Alcobaça_train_station\">Valado–Nazaré–Alcobaça train station</span>, <span>Valado dos Frades</span>. <bdi>The train station nearest Alcobaça is in an outlying village in an adjacent municipality.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"São_Martinho_do_Porto_train_station\">São Martinho do Porto train station</span> (<span>just E of the beach</span>). <bdi></bdi><span> (<span><span>updated Jun 2020</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Pataias_train_station\">Pataias train station</span>. <bdi></bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Martingança_train_station\">Martingança train station</span>. <bdi></bdi><span> (<span><span>updated Mar 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Alcobaça_bus_terminal\">Alcobaça bus terminal</span>, <span>Av. Manuel da Silva Carolino 1</span>. <bdi></bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"São_Martinho_do_Porto_long-distance_bus_stop\">São Martinho do Porto long-distance bus stop</span>, <span>Rua Marechal Carmona 58, São Martinho do Porto</span> (<span>adjacent to the Intermarché supermarket</span>). <bdi></bdi><span> (<span><span>updated Jun 2020</span></span>)</span></bdi></li>\n<li><bdi> <span id=\"Rede_Expressos\"><a href=\"https://www.rede-expressos.pt/en\">Rede Expressos</a></span> (<span>Rede Nacional de Expressos</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351707223344\">+351 707 223 344</a></span></span>, <span><a href=\"mailto:geral@rne.pt\">geral@rne.pt</a></span>. <bdi>This national coach company offers express service from several cities.</bdi><span> (<span><span>updated Dec 2020</span></span>)</span></bdi></li>\n<li><bdi> <span id=\"Rodoviária_do_Oeste\"><a href=\"http://www.rodoviariadooeste.pt/\">Rodoviária do Oeste</a></span> (<span>RDO</span>), <abbr>☏</abbr> <span><span><a href=\"tel:+351262767676\">+351 262 767 676</a></span></span>, <span><a href=\"mailto:rdo@rodoviariadooeste.pt\">rdo@rodoviariadooeste.pt</a></span>. <bdi>This regional coach company provides service to nearby cities, towns, villages, and beaches in the Oeste region. It also offers some special \"rapid\" services.</bdi><span> (<span><span>updated Jun 2020</span></span>)</span></bdi>\n<ul><li><bdi> <span id=\"Rápida_Rosa\"><a href=\"http://rodoviariadooeste.pt/wp-content/uploads/rapida_rosa.pdf\">Rápida Rosa</a></span>. <bdi>RDO offers <i>Rápida Rosa</i> (Pink Rapid) service between São Martinho do Porto and Caldas da Rainha, Nazaré, Leiria, and select stops in between.</bdi><span> (<span><span>updated May 2020</span></span>)</span></bdi></li></ul></li></ul>"
+    },
+    {
+      "id": "By_train_2",
+      "title": "By train",
+      "level": 3,
+      "html": ""
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Monastery_of_Alcobaça\">Monastery of Alcobaça</span> (<span>Mosteiro de Alcobaça, Mosteiro de Santa Maria de Alcobaça</span>). <bdi>A 12th-century Cistercian Gothic monastery, listed as a <span><a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\"></a></span> <a href=\"https://en.wikivoyage.org/wiki/UNESCO_World_Heritage_List\" title=\"Read on Wikivoyage (external source)\">UNESCO World Heritage Site</a>. It was founded by Afonso Henriques, the first king of Portugal. The monastery holds the tombs of  King Pedro I and his mistress, Inês de Castro. Inês was killed on orders from King Afonso IV, Pedro's father. After Pedro became king, he had Inês's body dug up and crowned as queen. He took revenge on her killers.</bdi><span> (<span><span>updated Apr 2018</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Wine_Museum\"><a href=\"https://www.facebook.com/MuseudoVinhodeAlcobaca\">Wine Museum</a></span>, <span>Rua do Olival Fechado</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351968497832\">+351 968 497 832</a></span></span>. <span>Tue-Sun, 11AM-3PM</span>. <bdi></bdi><span> <span></span></span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Baía_de_São_Martinho_do_Porto\">Baía de São Martinho do Porto</span> (<span>Bay of São Martinho do Porto</span>), <span>Avenida Marginal, São Martinho do Porto</span>. <bdi>The calm waters of the bay are favored by families with small children and others who just want to relax in the sea. If sand and saltwater are not your speed, you can walk along the cobbled sidewalk and take in the nearby cafés.</bdi><span> (<span><span>updated Jun 2020</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Events",
+      "title": "Events",
+      "level": 3,
+      "html": "<p>In November, the Monastery hosts the International Exhibition of Conventual Sweets &amp; Spirits (Mostra Internacional de Doces &amp; Licores Conventuais). Producers of sweets, pastries, and liqueurs from Portugal and elsewhere sell their goods inside. Some of the exhibitors are monks and nuns from convents. There is a light projection (at night) on the walls of the cloister inside the monastery, demonstration cooking, and some performances. In 2024, the dates will be November 14-17, and the daily entrance fee is likely to be €1. Entrance to the event is through the usual monastery entrance, near the north-west corner, facing the square.\n</p>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Restaurante_António_Padeiro\">Restaurante António Padeiro</span>, <span>R. Dr. Maur Cocheril 27</span> (<span>near the main square</span>). <span>12:00–15:30 &amp; 19:00–22:00 daily</span>. <bdi></bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Nova_Caravela\"><a href=\"https://www.facebook.com/novacaravela/\">Nova Caravela</a></span>, <span>Rua Cândido dos Reis 25D, São Martinho do Porto</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351916159976\">+351 916 159 976</a></span></span>, <span><a href=\"mailto:anovacaravela@outlook.pt\">anovacaravela@outlook.pt</a></span>. <span>12:30–15:30 &amp; 19:00–22:00 (closed Thu)</span>. <bdi>Fresh fish and seafood right on the seashore.</bdi> <span>€15–€60</span>.<span> (<span><span>updated Jun 2020</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Challet_Fonte_Nova\"><a href=\"http://www.challetfontenova.pt\">Challet Fonte Nova</a></span>, <span>Rua da Fonte Nova, n.8</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262598300\">+351 262 598 300</a></span></span>, <span><a href=\"mailto:mail@challetfontenova.pt\">mail@challetfontenova.pt</a></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Concha\"><a href=\"https://www.hotelconcha.com/en\">Hotel Concha</a></span>, <span>Largo Vitorino Fróis 21 &amp; 23, São Martinho do Porto</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262098348\">+351 262 098 348</a></span></span>, <span><a href=\"mailto:reservas@hotelconcha.com\">reservas@hotelconcha.com</a></span>. <bdi>This three-star, 30-room hotel is a short walk from the beach.</bdi> <span>€58–€98</span>.<span> (<span><span>updated Jun 2020</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Santo_António_da_Baía\"><a href=\"https://hotelstoantonio.com\">Hotel Santo António da Baía</a></span>, <span>Rua dos Bombeiros Voluntários, São Martinho do Porto</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262185573\">+351 262 185 573</a></span></span>, <span><a href=\"mailto:geral@hotelstoantonio.com\">geral@hotelstoantonio.com</a></span>. <bdi>Hotel Santo António da Baía is a 22-room, three-star establishment. Although the bay (<i>baía</i>) is in the name, the hotel is about 600 m (2,000 ft) from the beach.</bdi> <span>$54–$135</span>.<span> (<span><span>updated Jun 2020</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Santa_Maria\"><a href=\"http://www.hotelsantamaria.com.pt\">Hotel Santa Maria</a></span>, <span>R. Dr. Francisco Zagalo, 20/22</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351262590160\">+351 262 590 160</a></span></span>, <span><a href=\"mailto:geral.alcobaca@hotelsantamaria.com.pt\">geral.alcobaca@hotelsantamaria.com.pt</a></span>. <bdi>A three star hotel.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Villa_Vida_Nova_Silver_Coast\"><a href=\"https://www.staysilvercoast.com/\">Villa Vida Nova Silver Coast</a></span>, <span>Rua Bartolomeu Dias 30B</span>, <span><a href=\"mailto:nige@sapo.pt\">nige@sapo.pt</a></span>. <span>Check-in: <span>16.00</span>, check-out: <span>10.00</span></span>. <bdi>Villa Vida Nova Silver Coast<br/>\"Beautiful 3 bedroom, 3 bathroom villa with pool for your family vacation. The villa, constructed in 2020 and furnished in 2022 has every modern convenience you could wish for. Close to Salgado beach and just a few minutes drive to the quaint fishing village of Sao Martinho do Porto with its calm waters and abundant restaurants. Just a short drive to the Hustle and Bustle of Nazare and its world record waves! Just an hours easy drive from Lisbon Airport. An Ideal location for beach lovers, hikers and those just wanting to chill out.\".</bdi> <span>From 995</span>.<span> (<span><span>updated Dec 2022</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><a href=\"/guides/fatima/\" title=\"Fátima\">Fátima</a> (Sanctuary of Our Lady) – Place of the worldwide famous Marian apparitions.</li>\n<li><a href=\"/guides/batalha/\" title=\"Batalha\">Batalha</a> – has a nice monastery.</li>\n<li><a href=\"/guides/caldas-da-rainha/\" title=\"Caldas da Rainha\">Caldas da Rainha</a> – charming, unassuming city to experience authentic daily Portuguese life</li>\n<li><a href=\"/guides/leiria/\" title=\"Leiria\">Leiria</a> – with its famous castle.</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Nazar%C3%A9\" title=\"Read on Wikivoyage (external source)\">Nazaré</a> – a picture-postcard beach town, lately noted for its surfing</li>\n<li><a href=\"/guides/obidos/\" title=\"Óbidos\">Óbidos</a> – walled hilltop medieval town</li>\n<li><a href=\"/guides/peniche/\" title=\"Peniche\">Peniche</a> – beaches and water sports, access to the Berlengas archipelago</li>\n<li>Pinhal de Leiria, pinewood forest.</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Tomar\" title=\"Read on Wikivoyage (external source)\">Tomar</a> – Convento de Cristo, UNESCO World Heritage Site</li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Posto de Turismo",
+      "address": "Rua 16 de Outubro 39-5",
+      "phone": "+351 262 580 810",
+      "description": ""
+    },
+    {
+      "name": "Comboios de Portugal",
+      "phone": "+351 707 210 220",
+      "hours": "PDF timetable",
+      "description": "Multiple daily Regional and InterRegional trains connect Alcobaça municipality with other locations along Portugal's west coast on the Linha do Oeste (Western Line), including Lisbon, Caldas da Rainha, Torres Vedras, Leiria, Coimbra, and points in between. Old infrastructure and meandering around hills mean that the train is usually slower than the bus. Four stations serve the municipality."
+    },
+    {
+      "name": "Valado–Nazaré–Alcobaça train station",
+      "address": "Valado dos Frades",
+      "description": "The train station nearest Alcobaça is in an outlying village in an adjacent municipality."
+    },
+    {
+      "name": "São Martinho do Porto train station",
+      "description": ""
+    },
+    {
+      "name": "Pataias train station",
+      "description": ""
+    },
+    {
+      "name": "Martingança train station",
+      "description": ""
+    },
+    {
+      "name": "Alcobaça bus terminal",
+      "address": "Av. Manuel da Silva Carolino 1",
+      "description": ""
+    },
+    {
+      "name": "São Martinho do Porto long-distance bus stop",
+      "address": "Rua Marechal Carmona 58, São Martinho do Porto",
+      "description": ""
+    },
+    {
+      "name": "Rede Expressos",
+      "phone": "+351 707 223 344",
+      "description": "This national coach company offers express service from several cities."
+    },
+    {
+      "name": "Rodoviária do Oeste",
+      "phone": "+351 262 767 676",
+      "description": "This regional coach company provides service to nearby cities, towns, villages, and beaches in the Oeste region. It also offers some special \"rapid\" services."
+    },
+    {
+      "name": "Rápida Rosa",
+      "description": "RDO offers Rápida Rosa (Pink Rapid) service between São Martinho do Porto and Caldas da Rainha, Nazaré, Leiria, and select stops in between."
+    },
+    {
+      "name": "Monastery of Alcobaça",
+      "description": "A 12th-century Cistercian Gothic monastery, listed as a UNESCO World Heritage Site . It was founded by Afonso Henriques, the first king of Portugal. The monastery holds the tombs of  King Pedro I and his mistress, Inês de Castro. Inês was killed on orders from King Afonso IV, Pedro's father. After Pedro became king, he had Inês's body dug up and crowned as queen. He took revenge on her killers."
+    },
+    {
+      "name": "Wine Museum",
+      "address": "Rua do Olival Fechado",
+      "phone": "+351 968 497 832",
+      "hours": "Tue-Sun, 11AM-3PM",
+      "description": ""
+    },
+    {
+      "name": "Baía de São Martinho do Porto",
+      "address": "Avenida Marginal, São Martinho do Porto",
+      "description": "The calm waters of the bay are favored by families with small children and others who just want to relax in the sea. If sand and saltwater are not your speed, you can walk along the cobbled sidewalk and take in the nearby cafés."
+    },
+    {
+      "name": "Restaurante António Padeiro",
+      "address": "R. Dr. Maur Cocheril 27",
+      "hours": "12:00–15:30 & 19:00–22:00 daily",
+      "description": ""
+    },
+    {
+      "name": "Nova Caravela",
+      "address": "Rua Cândido dos Reis 25D, São Martinho do Porto",
+      "phone": "+351 916 159 976",
+      "hours": "12:30–15:30 & 19:00–22:00 (closed Thu)",
+      "price": "€15–€60",
+      "description": "Fresh fish and seafood right on the seashore."
+    },
+    {
+      "name": "Challet Fonte Nova",
+      "address": "Rua da Fonte Nova, n.8",
+      "phone": "+351 262 598 300",
+      "description": ""
+    },
+    {
+      "name": "Hotel Concha",
+      "address": "Largo Vitorino Fróis 21 & 23, São Martinho do Porto",
+      "phone": "+351 262 098 348",
+      "price": "€58–€98",
+      "description": "This three-star, 30-room hotel is a short walk from the beach."
+    },
+    {
+      "name": "Hotel Santo António da Baía",
+      "address": "Rua dos Bombeiros Voluntários, São Martinho do Porto",
+      "phone": "+351 262 185 573",
+      "price": "$54–$135",
+      "description": "Hotel Santo António da Baía is a 22-room, three-star establishment. Although the bay ( baía ) is in the name, the hotel is about 600 m (2,000 ft) from the beach."
+    },
+    {
+      "name": "Hotel Santa Maria",
+      "address": "R. Dr. Francisco Zagalo, 20/22",
+      "phone": "+351 262 590 160",
+      "description": "A three star hotel."
+    },
+    {
+      "name": "Villa Vida Nova Silver Coast",
+      "address": "Rua Bartolomeu Dias 30B",
+      "price": "From 995",
+      "description": "Villa Vida Nova Silver Coast \"Beautiful 3 bedroom, 3 bathroom villa with pool for your family vacation. The villa, constructed in 2020 and furnished in 2022 has every modern convenience you could wish for. Close to Salgado beach and just a few minutes drive to the quaint fishing village of Sao Martinho do Porto with its calm waters and abundant restaurants. Just a short drive to the Hustle and Bustle of Nazare and its world record waves! Just an hours easy drive from Lisbon Airport. An Ideal location for beach lovers, hikers and those just wanting to chill out.\"."
+    }
+  ],
+  "words": 1105,
+  "searchText": "Alcobaça is a small city in Portugal 's Oeste region. The popular bayside beach town of São Martinho do Porto is located in the municipality. Alcobaça ( ahl-koo-BAH-suh , /aɫ.ku.ˈba.sɐ/), on the banks of the rivers Alcoa and Baça, dates back to the 12th century. The municipality has 54,981 residents (2021 preliminary), with about 7,000 living in the city. The municipality includes seven towns: Alfeizerão , Aljubarrota , Benedita , Cela , Pataias , São Martinho do Porto , and Turquel . Posto de Turismo , Rua 16 de Outubro 39-5 , ☏ +351 262 580 810 , cultura@cm-alcobaca.pt . ( updated Jun 2021 )  The main Lisbon – Porto route is the A1 motorway, but the A8 comes closer to Alcobaça. Comboios de Portugal ( CP , Trains of Portugal ), ☏ +351 707 210 220 . PDF timetable . Multiple daily Regional and InterRegional trains connect Alcobaça municipality with other locations along Portugal's west coast on the Linha do Oeste (Western Line), including Lisbon, Caldas da Rainha, Torres Vedras, Leiria, Coimbra, and points in between. Old infrastructure and meandering around hills mean that the train is usually slower than the bus. Four stations serve the municipality. ( updated Jul 2020 ) Valado–Nazaré–Alcobaça train station , Valado dos Frades . The train station nearest Alcobaça is in an outlying village in an adjacent municipality. ( updated Jan 2021 ) São Martinho do Porto train station ( just E of the beach ). ( updated Jun 2020 ) Pataias train station . ( updated Mar 2021 ) Martingança train station . ( updated Mar 2021 ) Alcobaça bus terminal , Av. Manuel da Silva Carolino 1 . ( updated Jan 2021 ) São Martinho do Porto long-distance bus stop , Rua Marechal Carmona 58, São Martinho do Porto ( adjacent to the Intermarché supermarket ). ( updated Jun 2020 ) Rede Expressos ( Rede Nacional de Expressos ), ☏ +351 707 223 344 , geral@rne.pt . This national coach company offers express service from several cities. ( updated Dec 2020 ) Rodoviária do Oeste ( RDO ), ☏ +351 262 767 676 , rdo@rodoviariadooeste.pt . This regional coach company provides service to nearby cities, towns, villages, and beaches in the Oeste region. It also offers some special \"rapid\" services. ( updated Jun 2020 ) Rápida Rosa . RDO offers Rápida Rosa (Pink Rapid) service between São Martinho do Porto and Caldas da Rainha, Nazaré, Leiria, and select stops in between. ( updated May 2020 )   Monastery of Alcobaça ( Mosteiro de Alcobaça, Mosteiro de Santa Maria de Alcobaça ). A 12th-century Cistercian Gothic monastery, listed as a UNESCO World Heritage Site . It was founded by Afonso Henriques, the first king of Portugal. The monastery holds the tombs of  King Pedro I and his mistress, Inês de Castro. Inês was killed on orders from King Afonso IV, Pedro's father. After Pedro became king, he had Inês's body dug up and crowned as queen. He took revenge on her killers. ( updated Apr 2018 ) Wine Museum , Rua do Olival Fechado , ☏ +351 968 497 832 . Tue-Sun, 11AM-3PM . Baía de São Martinho do Porto ( Bay of São Martinho do Porto ), Avenida Marginal, São Martinho do Porto . The calm waters of the bay are favored by families with small children and others who just want to relax in the sea. If sand and saltwater are not your speed, you can walk along the cobbled sidewalk and take in the nearby cafés. ( updated Jun 2020 ) In November, the Monastery hosts the International Exhibition of Conventual Sweets & Spirits (Mostra Internacional de Doces & Licores Conventuais). Producers of sweets, pastries, and liqueurs from Portugal and elsewhere sell their goods inside. Some of the exhibitors are monks and nuns from convents. There is a light projection (at night) on the walls of the cloister inside the monastery, demonstration cooking, and some performances. In 2024, the dates will be November 14-17, and the daily entrance fee is likely to be €1. Entrance to the event is through the usual monastery entrance, near the north-west corner, facing the square.  Restaurante António Padeiro , R. Dr. Maur Cocheril 27 ( near the main square ). 12:00–15:30 & 19:00–22:00 daily . ( updated Jan 2021 ) Nova Caravela , Rua Cândido dos Reis 25D, São Martinho do Porto , ☏ +351 916 159 976 , anovacaravela@outlook.pt . 12:30–15:30 & 19:00–22:00 (closed Thu) . Fresh fish and seafood right on the seashore. €15–€60 . ( updated Jun 2020 )  Challet Fonte Nova , Rua da Fonte Nova, n.8 , ☏ +351 262 598 300 , mail@challetfontenova.pt . Hotel Concha , Largo Vitorino Fróis 21 & 23, São Martinho do Porto , ☏ +351 262 098 348 , reservas@hotelconcha.com . This three-star, 30-room hotel is a short walk from the beach. €58–€98 . ( updated Jun 2020 ) Hotel Santo António da Baía , Rua dos Bombeiros Voluntários, São Martinho do Porto , ☏ +351 262 185 573 , geral@hotelstoantonio.com . Hotel Santo António da Baía is a 22-room, three-star establishment. Although the bay ( baía ) is in the name, the hotel is about 600 m (2,000 ft) from the beach. $54–$135 . ( updated Jun 2020 ) Hotel Santa Maria , R. Dr. Francisco Zagalo, 20/22 , ☏ +351 262 590 160 , geral.alcobaca@hotelsantamaria.com.pt . A three star hotel. Villa Vida Nova Silver Coast , Rua Bartolomeu Dias 30B , nige@sapo.pt . Check-in: 16.00 , check-out: 10.00 . Villa Vida Nova Silver Coast \"Beautiful 3 bedroom, 3 bathroom villa with pool for your family vacation. The villa, constructed in 2020 and furnished in 2022 has every modern convenience you could wish for. Close to Salgado beach and just a few minutes drive to the quaint fishing village of Sao Martinho do Porto with its calm waters and abundant restaurants. Just a short drive to the Hustle and Bustle of Nazare and its world record waves! Just an hours easy drive from Lisbon Airport. An Ideal location for beach lovers, hikers and those just wanting to chill out.\". From 995 . ( updated Dec 2022 ) Fátima (Sanctuary of Our Lady) – Place of the worldwide famous Marian apparitions. Batalha – has a nice monastery. Caldas da Rainha – charming, unassuming city to experience authentic daily Portuguese life Leiria – with its famous castle. Nazaré – a picture-postcard beach town, lately noted for its surfing Óbidos – walled hilltop medieval town Peniche – beaches and water sports, access to the Berlengas archipelago Pinhal de Leiria, pinewood forest. Tomar – Convento de Cristo, UNESCO World Heritage Site",
+  "related": [
+    "portugal",
+    "oeste",
+    "lisbon",
+    "porto",
+    "fatima",
+    "batalha",
+    "caldas-da-rainha",
+    "leiria",
+    "obidos",
+    "peniche"
+  ],
+  "image": {
+    "file": "/images/alcobaca-wikivoyage-banner.webp",
+    "title": "Alcobaça Wikivoyage banner.jpg",
+    "artist": "Original author: Luca Boldrini",
+    "credit": "cropped from https://www.flickr.com/photos/lucaboldrini69/14741386781/",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Alcoba%C3%A7a_Wikivoyage_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Alcoba%C3%A7a_Wikivoyage_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Alcoba%C3%A7a",
+    "revision": 5390177,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5390177",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Alcoba%C3%A7a&action=history",
+    "retrieved": "2026-10-17T13:11:29.314453+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Oeste",
+  "excerpt": "Alcobaça is a small city in Portugal's Oeste region. The popular bayside beach town of São Martinho do Porto is located in the municipality."
+}

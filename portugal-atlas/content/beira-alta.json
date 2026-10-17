@@ -1,0 +1,156 @@
+{
+  "title": "Beira Alta",
+  "slug": "beira-alta",
+  "displayTitle": "Beira Alta",
+  "region": "central",
+  "kind": "destination",
+  "parent": "beiras",
+  "intro": "Beira Alta is a historic province of the Central region of Portugal. The chief cities/district capitals are Guarda and Viseu.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><span></span>\n<b>Beira Alta</b> is a historic province of the <a href=\"https://en.wikivoyage.org/wiki/Central_Portugal\" title=\"Read on Wikivoyage (external source)\">Central</a> region of <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>. The chief cities/district capitals are Guarda and Viseu.\n</p>"
+    },
+    {
+      "id": "Cities",
+      "title": "Cities",
+      "level": 2,
+      "html": "<ul><li><span><span></span> <span id=\"Almeida\"><a href=\"https://en.wikivoyage.org/wiki/Almeida\" title=\"Read on Wikivoyage (external source)\">Almeida</a></span></span> — municipality containing the important border town of <b>Vilar Formoso</b></li>\n<li><span><span></span> <span id=\"Gouveia\"><a href=\"https://en.wikivoyage.org/wiki/Gouveia\" title=\"Read on Wikivoyage (external source)\">Gouveia</a></span></span> — take the path to the highest geographical point of continental Portugal, with astonishing views over the valley</li>\n<li><span><span></span> <span id=\"Guarda\"><a href=\"/guides/guarda/\" title=\"Guarda\">Guarda</a></span></span> — its medieval cathedral was built in the Gothic and Manueline styles</li>\n<li><span><span></span> <span id=\"Mangualde\"><a href=\"https://en.wikivoyage.org/wiki/Mangualde\" title=\"Read on Wikivoyage (external source)\">Mangualde</a></span></span> — inland city with an artificial sandy beach</li>\n<li><span><span></span> <span id=\"Moimenta_da_Beira\"><a href=\"https://en.wikivoyage.org/wiki/Moimenta_da_Beira\" title=\"Read on Wikivoyage (external source)\">Moimenta da Beira</a></span></span> — famous for the production of wine and apples</li>\n<li><span><span></span> <span id=\"Oliveira_do_Hospital\"><a href=\"https://en.wikivoyage.org/wiki/Oliveira_do_Hospital\" title=\"Read on Wikivoyage (external source)\">Oliveira do Hospital</a></span></span> — city with ancient civilization sights</li>\n<li><span><span></span> <span id=\"Pinhel\"><a href=\"https://en.wikivoyage.org/wiki/Pinhel\" title=\"Read on Wikivoyage (external source)\">Pinhel</a></span></span> — it has one of the more important castles along the Côa River Valley</li>\n<li><span><span></span> <span id=\"Sabugal\"><a href=\"https://en.wikivoyage.org/wiki/Sabugal\" title=\"Read on Wikivoyage (external source)\">Sabugal</a></span></span> — city along the River Côa with a Gothic castle</li>\n<li><span><span></span> <span id=\"Santa_Comba_Dão\"><a href=\"https://en.wikivoyage.org/wiki/Santa_Comba_D%C3%A3o\" title=\"Read on Wikivoyage (external source)\">Santa Comba Dão</a></span></span> — riverside city</li>\n<li><span><span></span> <span id=\"Sernancelhe\"><a href=\"https://en.wikivoyage.org/wiki/Sernancelhe\" title=\"Read on Wikivoyage (external source)\">Sernancelhe</a></span></span> — with a 12th-century church</li>\n<li><span><span></span> <span id=\"Viseu\"><a href=\"/guides/viseu/\" title=\"Viseu\">Viseu</a></span></span> — a charming hilltop city with a fine historic quarter, its Romanesque and Gothic cathedral is one of the finest in Portugal</li></ul>"
+    },
+    {
+      "id": "Other_destinations",
+      "title": "Other destinations",
+      "level": 2,
+      "html": "<ul><li><span> <span id=\"Côa_Valley\"><a href=\"https://en.wikivoyage.org/wiki/Vila_Nova_de_Foz_C%C3%B4a\" title=\"Read on Wikivoyage (external source)\">Côa Valley</a></span></span> — an open-air Paleolithic archaeological site with thousands of engraved rock drawings of horses, bovines and other animals, human and abstract figures, dated from 22,000 to 10,000 years BCE</li></ul>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Beira Alta (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">BAY-ruh AHL-tuh</a>, /ˈbɐj.ɾɐ ˈaɫ.tɐ/)\n</p><p>Mostly rural, except for Guarda &amp; Viseu.\nBeautiful mountains (<a href=\"https://en.wikivoyage.org/wiki/Serra_da_Estrela\" title=\"Read on Wikivoyage (external source)\">Serra da Estrela</a>, Caramulo, Marofa).\nTranquil rivers of (Mondego, Coa, Vouga, Paiva, Dao), gorgeous meadows, pinewood forest and castles along Terras de Riba-Coa (Pinhel, Almeida, Figueira de Castelo Rodrigo (cattle and almond trees) and Sabugal area).\n</p>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": "<p>Train from <a href=\"https://en.wikivoyage.org/wiki/Vilar_Formoso\" title=\"Read on Wikivoyage (external source)\">Vilar Formoso</a>- <a href=\"/guides/guarda/\" title=\"Guarda\">Guarda</a>-Pampilhosa-<a href=\"/guides/coimbra/\" title=\"Coimbra\">Coimbra</a>.\nMotorway A25 (Viseu-Aveiro-Guarda).\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<p>Cathedral and museums in Viseu: Museu Gao Vasco.\n</p><ul><li>Guarda (Se/cathedral), castle of Pinhel &amp; Sabugal Castle.</li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li>São Pedro do Sul (spa/town)/Vouga valley.</li>\n<li>Parque arqueologico do vale do Coa rupestre - pre-historic art</li>\n<li>Ski during winter in Estrela Mountain, Loriga, Seia, Torre.</li></ul>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>Queijo da Serra (hard cheese).\n</p>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": "<p>Wines, Dao &amp; Pinhel.\n</p>"
+    },
+    {
+      "id": "Stay_safe",
+      "title": "Stay safe",
+      "level": 2,
+      "html": "<p>Considered one of the safest in Portugal.\n</p>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><b><a href=\"/guides/coimbra/\" title=\"Coimbra\">Coimbra</a></b></li>\n<li><b><a href=\"/guides/aveiro/\" title=\"Aveiro\">Aveiro</a></b></li>\n<li><b><a href=\"/guides/porto/\" title=\"Porto\">Porto</a></b></li>\n<li><b><a href=\"/guides/lamego/\" title=\"Lamego\">Lamego</a></b> — historic city, near Douro river</li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Monsanto\" title=\"Read on Wikivoyage (external source)\">Monsanto</a></b> — in <a href=\"https://en.wikivoyage.org/wiki/Beira_Baixa\" title=\"Read on Wikivoyage (external source)\">Beira Baixa</a></li>\n<li><b><a href=\"https://en.wikivoyage.org/wiki/Salamanca\" title=\"Read on Wikivoyage (external source)\">Salamanca</a></b>, Spain</li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Almeida"
+    },
+    {
+      "name": "Gouveia"
+    },
+    {
+      "name": "Guarda"
+    },
+    {
+      "name": "Mangualde"
+    },
+    {
+      "name": "Moimenta da Beira"
+    },
+    {
+      "name": "Oliveira do Hospital"
+    },
+    {
+      "name": "Pinhel"
+    },
+    {
+      "name": "Sabugal"
+    },
+    {
+      "name": "Santa Comba Dão"
+    },
+    {
+      "name": "Sernancelhe"
+    },
+    {
+      "name": "Viseu"
+    },
+    {
+      "name": "Côa Valley"
+    }
+  ],
+  "words": 328,
+  "searchText": "Beira Alta is a historic province of the Central region of Portugal . The chief cities/district capitals are Guarda and Viseu. Almeida — municipality containing the important border town of Vilar Formoso Gouveia — take the path to the highest geographical point of continental Portugal, with astonishing views over the valley Guarda — its medieval cathedral was built in the Gothic and Manueline styles Mangualde — inland city with an artificial sandy beach Moimenta da Beira — famous for the production of wine and apples Oliveira do Hospital — city with ancient civilization sights Pinhel — it has one of the more important castles along the Côa River Valley Sabugal — city along the River Côa with a Gothic castle Santa Comba Dão — riverside city Sernancelhe — with a 12th-century church Viseu — a charming hilltop city with a fine historic quarter, its Romanesque and Gothic cathedral is one of the finest in Portugal Côa Valley — an open-air Paleolithic archaeological site with thousands of engraved rock drawings of horses, bovines and other animals, human and abstract figures, dated from 22,000 to 10,000 years BCE Beira Alta ( BAY-ruh AHL-tuh , /ˈbɐj.ɾɐ ˈaɫ.tɐ/) Mostly rural, except for Guarda & Viseu.\nBeautiful mountains ( Serra da Estrela , Caramulo, Marofa).\nTranquil rivers of (Mondego, Coa, Vouga, Paiva, Dao), gorgeous meadows, pinewood forest and castles along Terras de Riba-Coa (Pinhel, Almeida, Figueira de Castelo Rodrigo (cattle and almond trees) and Sabugal area). Train from Vilar Formoso - Guarda -Pampilhosa- Coimbra .\nMotorway A25 (Viseu-Aveiro-Guarda).  Cathedral and museums in Viseu: Museu Gao Vasco. Guarda (Se/cathedral), castle of Pinhel & Sabugal Castle. São Pedro do Sul (spa/town)/Vouga valley. Parque arqueologico do vale do Coa rupestre - pre-historic art Ski during winter in Estrela Mountain, Loriga, Seia, Torre. Queijo da Serra (hard cheese). Wines, Dao & Pinhel. Considered one of the safest in Portugal. Coimbra Aveiro Porto Lamego — historic city, near Douro river Monsanto — in Beira Baixa Salamanca , Spain",
+  "related": [
+    "portugal",
+    "guarda",
+    "viseu",
+    "coimbra",
+    "aveiro",
+    "porto",
+    "lamego"
+  ],
+  "image": {
+    "file": "/images/wv-banner-beira-alta-view-from-castro-da-carcoda.webp",
+    "title": "WV banner Beira Alta View from Castro da Cárcoda.jpg",
+    "artist": "João Carvalho",
+    "credit": "https://commons.wikimedia.org/wiki/File%3ACastro_de_Carcoda_ou_Carcola_11.JPG",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:WV_banner_Beira_Alta_View_from_Castro_da_C%C3%A1rcoda.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/2/2e/WV_banner_Beira_Alta_View_from_Castro_da_C%C3%A1rcoda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Beira_Alta",
+    "revision": 4448809,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=4448809",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Beira_Alta&action=history",
+    "retrieved": "2026-10-17T13:11:27.306039+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Beiras",
+  "excerpt": "Beira Alta is a historic province of the Central region of Portugal. The chief cities/district capitals are Guarda and Viseu."
+}

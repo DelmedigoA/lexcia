@@ -1,0 +1,232 @@
+{
+  "title": "Tavira",
+  "slug": "tavira",
+  "displayTitle": "Tavira",
+  "region": "algarve",
+  "kind": "destination",
+  "parent": "algarve",
+  "intro": "Tavira is a city in the Algarve region of Portugal. Crossed by the Gilão River, it is one of the most monumental cities in Portugal, with its 37 churches.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><span></span>\n<b>Tavira</b> is a city in the <a href=\"/guides/algarve/\" title=\"Algarve\">Algarve</a> region of <a href=\"/guides/portugal/\" title=\"Portugal\">Portugal</a>. Crossed by the Gilão River, it is one of the most monumental cities in Portugal, with its 37 churches.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>Tavira (<a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">tuh-VEE-ruh</a>, /tɐ.ˈvi.ɾɐ/) municipality has 26,167 residents (2011), with about 13,400 living in the city proper. Fishing settlements Cabanas de Tavira and Santa Luzia lie about 6 km to the east, resp. 3 km to the west of Tavira, with apartment resort Pedras de El-Rei further 1.5 km west from Santa Luzia. Tavira and all there settlements provide access to the Ria Formosa National Park islands Ilha de Tavira and Ilha de Cabanas and their beaches.\n</p>"
+    },
+    {
+      "id": "History",
+      "title": "History",
+      "level": 3,
+      "html": "<p>The city was founded in 1890 BC under the name Talábriga. During the Arab occupation, it became, together with Faro and Silves, one of the most important cities in the Algarve. It was conquered by the Christian army in 1242.\n</p><p>During the 17th century it was considered one of the main cities in the Algarve, although signs of decay were beginning to appear. The activity of its port reduced and the city lost importance as a strategic and economic point. Today the city is thriving thanks to the economic boost that the tourism sector has received since the 1960s across the Algarve.\n</p>"
+    },
+    {
+      "id": "Climate",
+      "title": "Climate",
+      "level": 3,
+      "html": "<p>Tavira has a mild climate, with hot summers and humid winters, with more rain in the months of November and December.\n</p>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Posto_de_Turismo_de_Tavira\"><a href=\"https://cm-tavira.pt/site/descobrir/\">Posto de Turismo de Tavira</a></span> (<span>Tourist Office of Tavira</span>), <span>Praça da República 5</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351281322511\">+351 281 322 511</a></span></span>, <span><a href=\"mailto:camara@cm-tavira.pt\">camara@cm-tavira.pt</a></span>. <span>Mon–Fri 09:00–17:00, Sat 09:00–13:00 &amp; 14:00–17:00, Sun 09:30–13:00 &amp; 14:00–17:00</span>. <bdi></bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_plane",
+      "title": "By plane",
+      "level": 3,
+      "html": "<p>The nearest airport is in Faro (<b><a href=\"https://en.wikivoyage.org/wiki/FAO#By_plane\" title=\"Read on Wikivoyage (external source)\">FAO</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>), a 45-min drive, with flights from many European cities. \n</p><p>Seville Airport (<b><a href=\"https://en.wikivoyage.org/wiki/Seville#By_plane\" title=\"Read on Wikivoyage (external source)\">SVQ</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>) is a 2-hour drive, and Lisbon Airport (<b><a href=\"https://en.wikivoyage.org/wiki/Lisbon_Airport#By_plane\" title=\"Read on Wikivoyage (external source)\">LIS</a></b><sup><a href=\"https://en.wikivoyage.org/wiki/IATA\" title=\"Read on Wikivoyage (external source)\"> IATA</a></sup>) is a 3-hour drive.\n</p>"
+    },
+    {
+      "id": "By_train",
+      "title": "By train",
+      "level": 3,
+      "html": "<p>Tavira has trains roughly hourly from Faro taking 45 min; these make three stops then continue to <a href=\"https://en.wikivoyage.org/wiki/Vila_Real_de_Santo_Ant%C3%B3nio\" title=\"Read on Wikivoyage (external source)\">Vila Real de Santo António</a> on the Spanish border. Change in Faro for Lisbon or Lagos. Eastbound from Faro the stops are: \n</p><ul><li><span><span></span> <span id=\"Tavira_Station\">Tavira Station</span></span> is the main town stop, on Largo de Santo Amaro. It has ticket counters and a waiting room.</li>\n<li><span><span></span> <span id=\"Porta_Nova_Station\">Porta Nova Station</span></span> is northeast of town centre on Rua do Apeadeiro. It's just a platform halt with no facilities.</li>\n<li><span><span></span> <span id=\"Conceição_Station\">Conceição Station</span></span> is the platform halt for Conceição and Cabanas de Tavira.</li></ul>"
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<p>There are daily buses by <a href=\"https://vamusalgarve.pt/#/pt/vamus%20algarve/routes\">Vamus Algarve</a> and <a href=\"https://www.rede-expressos.pt/\">Rede Nacional de Expressos</a>. ALSA runs buses from Faro to Sevilla in Spain.\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": "<p>Tavira is a small city and perfectly walkable. On the main square (Praça da República) you can find the Tourism Information Center which can provide you with maps, leaflets and tips.\n</p><p>It's possible to catch a small tour train which goes around the city most interesting landmarks. There are also electric tuk-tuks available which can be a quiet and comfortable way to visit the natural park area.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Over_2000-year-old_olive_tree\"><a href=\"http://portugalresident.com/oldest-olive-tree-in-the-country\">Over 2000-year-old olive tree</a></span>, <span>Aldeamento Pedras d’El Rey, C</span>. <bdi>One of the oldest olive trees in Portugal can be visited within the Aldeamento Pedras d’El Rey lodging complex.</bdi><span> (<span><span>updated Nov 2018</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Tuna_fishing_museum\">Tuna fishing museum</span>, <span>Hotel Vila Galé Albacora, Quatro Águas, 8800-901 Tavira</span> (<span>ask for directions at the hotel reception</span>). <bdi>This hotel usually closes during low season.</bdi> <span>Entrance is free</span>.<span> (<span><span>updated Nov 2018</span></span>)</span></bdi></li></ul><ul>\n<li><bdi><span></span> <span id=\"Castelo_de_Tavira\">Castelo de Tavira</span>. <bdi>Of Muslim origin and rebuilt after the Reconquista, there are only a few sections of the wall left in the castle. From the top of the walls you have the best views of the city.</bdi><span> (<span><span>updated May 2025</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Igreja_da_Misericórdia\">Igreja da Misericórdia</span>, <span>Rua da Galeri</span>. <bdi>Considered the best example of Renaissance architecture in the Algarve, it has an interior of three naves, separated by arches based on columns. The altarpiece is of gilded wood carved from the 18th century.</bdi><span> (<span><span>updated May 2025</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Church_of_Santa_Maria_do_Castelo\">Church of Santa Maria do Castelo</span>, <span>Alto de Santa Maria</span>. <bdi>It is located inside the castle. Built after the Reconquista and rebuilt after the 1775 earthquake, only the portico and the twin window remain of the primitive Gothic church.</bdi><span> (<span><span>updated May 2025</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Roman_Bridge\">Roman Bridge</span>, <span>Avenida 5 de Outubro</span>. <bdi>It is the best known bridge in Tavira. It dates from around the 16th or 17th century. Rebuilt in 1992, after a flood in 1989.</bdi><span> (<span><span>updated May 2025</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Praça_da_República\">Praça da República</span>. <bdi>The most central area of ​​the city, where the City Hall is located.</bdi><span> (<span><span>updated May 2025</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<ul><li><b>Tavira Horse Carriage Tours</b> See Tavira from a different perspective. Feel its history and discover the beautiful architecture which typifies Tavira.</li>\n<li><bdi> <span id=\"Tavira_Boat_Tours\">Tavira Boat Tours</span>. <bdi>Boat tours in Ria Formosa Tavira Ria Formosa as a nesting ground and as a stopping point in migrating routes: Flamingos, Milherango), Storks), King Fisher and so on. Spend some time in close contact with the nature, the wonderful world of birds in its more natural state, and let yourself be fascinated for the enchantment of its sounds, its forms and its colours. Discover the lagoon and his birds.</bdi><span> (<span><span>updated Nov 2018</span></span>)</span></bdi></li>\n<li><b>Praia do Barril</b> - Beach near Tavira, next to the village of Pedras de El-Rei. It can be reached by a small train that takes you to the beach in a few minutes. On the beach you can see Boca Cava-Terra and Long-legged crabs.</li>\n<li><b>Tavira Island</b> - It's Tavira beach, you have to go by boat where you can catch in the center next to the Ribeira market, or in the area of ​​4 Águas.</li></ul>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p><b>Folhado de Tavira</b> - It is a puff cake wrapped in sugar, not to be missed.\n</p><ul><li><bdi><span></span> <span id=\"Artefact\"><a href=\"https://www.facebook.com/Artefactavira/\">Artefact</a></span>, <span>Rua das Capacheiras 1,3,7</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351925572178\">+351 925 572 178</a></span></span>, <span><a href=\"mailto:jerem.monteil@gmail.com\">jerem.monteil@gmail.com</a></span>. <bdi>They use only fruits and vegetables from their own production.</bdi> <span><abbr>€5-19</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Pousada_Convento_Tavira\"><a href=\"https://www.pousadas.pt/en/hotel/pousada-tavira\">Pousada Convento Tavira</a></span> (<span>Pousada do Convento da Graça</span>), <span>Rua D. Paio Peres Correia</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351210407680\">+351 210 407 680</a></span></span>, <span><a href=\"mailto:recepcao.conventograca@pousadas.pt\">recepcao.conventograca@pousadas.pt</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi>A historic luxury hotel.</bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Vilacampina_Guesthouse\"><a href=\"http://www.vilacampina.pt/en/\">Vilacampina Guesthouse</a></span>, <span>Sítio da Campina, Luz de Tavira</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351919232163\">+351 919 232 163</a></span></span>. <bdi></bdi><span> <span></span></span></bdi></li>\n<li><bdi><span></span> <span id=\"Vila_Galé_Tavira\"><a href=\"https://www.vilagale.com/pt/hoteis/algarve/vila-gale-tavira\">Vila Galé Tavira</a></span>, <span>Rua 4 de Outubro</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351281329900\">+351 281 329 900</a></span></span>, <span><a href=\"mailto:tavira@vilagale.com\">tavira@vilagale.com</a></span>. <bdi>Lovely 4-star hotel.</bdi><span> (<span><span>updated Aug 2015</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Connect",
+      "title": "Connect",
+      "level": 2,
+      "html": "<p>As of Jan 2025, Tavira and its approach roads have 4G from Digi, and 5G from MEO, NOS and Vodafone.\n</p>"
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<table>\n<tbody><tr>\n<td><b>Routes through Tavira</b>\n</td></tr>\n</tbody></table><table>\n<tbody><tr>\n<td><b><a href=\"/guides/lisbon/\" title=\"Lisbon\">Lisbon</a></b> ← <a href=\"/guides/faro/\" title=\"Faro\">Faro</a> ←\n</td>\n<td> <b>W</b> <span><span></span></span> <b>E</b> \n</td>\n<td>→ <a href=\"https://en.wikivoyage.org/wiki/Castro_Marim\" title=\"Read on Wikivoyage (external source)\">Castro Marim</a> → <b><a href=\"https://en.wikivoyage.org/wiki/Huelva\" title=\"Read on Wikivoyage (external source)\">Huelva</a></b>\n</td></tr></tbody></table>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Posto de Turismo de Tavira",
+      "address": "Praça da República 5",
+      "phone": "+351 281 322 511",
+      "hours": "Mon–Fri 09:00–17:00, Sat 09:00–13:00 & 14:00–17:00, Sun 09:30–13:00 & 14:00–17:00",
+      "description": ""
+    },
+    {
+      "name": "Tavira Station"
+    },
+    {
+      "name": "Porta Nova Station"
+    },
+    {
+      "name": "Conceição Station"
+    },
+    {
+      "name": "Over 2000-year-old olive tree",
+      "address": "Aldeamento Pedras d’El Rey, C",
+      "description": "One of the oldest olive trees in Portugal can be visited within the Aldeamento Pedras d’El Rey lodging complex."
+    },
+    {
+      "name": "Tuna fishing museum",
+      "address": "Hotel Vila Galé Albacora, Quatro Águas, 8800-901 Tavira",
+      "price": "Entrance is free",
+      "description": "This hotel usually closes during low season."
+    },
+    {
+      "name": "Castelo de Tavira",
+      "description": "Of Muslim origin and rebuilt after the Reconquista, there are only a few sections of the wall left in the castle. From the top of the walls you have the best views of the city."
+    },
+    {
+      "name": "Igreja da Misericórdia",
+      "address": "Rua da Galeri",
+      "description": "Considered the best example of Renaissance architecture in the Algarve, it has an interior of three naves, separated by arches based on columns. The altarpiece is of gilded wood carved from the 18th century."
+    },
+    {
+      "name": "Church of Santa Maria do Castelo",
+      "address": "Alto de Santa Maria",
+      "description": "It is located inside the castle. Built after the Reconquista and rebuilt after the 1775 earthquake, only the portico and the twin window remain of the primitive Gothic church."
+    },
+    {
+      "name": "Roman Bridge",
+      "address": "Avenida 5 de Outubro",
+      "description": "It is the best known bridge in Tavira. It dates from around the 16th or 17th century. Rebuilt in 1992, after a flood in 1989."
+    },
+    {
+      "name": "Praça da República",
+      "description": "The most central area of ​​the city, where the City Hall is located."
+    },
+    {
+      "name": "Tavira Boat Tours",
+      "description": "Boat tours in Ria Formosa Tavira Ria Formosa as a nesting ground and as a stopping point in migrating routes: Flamingos, Milherango), Storks), King Fisher and so on. Spend some time in close contact with the nature, the wonderful world of birds in its more natural state, and let yourself be fascinated for the enchantment of its sounds, its forms and its colours. Discover the lagoon and his birds."
+    },
+    {
+      "name": "Artefact",
+      "address": "Rua das Capacheiras 1,3,7",
+      "phone": "+351 925 572 178",
+      "price": "€5-19",
+      "description": "They use only fruits and vegetables from their own production."
+    },
+    {
+      "name": "Pousada Convento Tavira",
+      "address": "Rua D. Paio Peres Correia",
+      "phone": "+351 210 407 680",
+      "description": "A historic luxury hotel."
+    },
+    {
+      "name": "Vilacampina Guesthouse",
+      "address": "Sítio da Campina, Luz de Tavira",
+      "phone": "+351 919 232 163",
+      "description": ""
+    },
+    {
+      "name": "Vila Galé Tavira",
+      "address": "Rua 4 de Outubro",
+      "phone": "+351 281 329 900",
+      "description": "Lovely 4-star hotel."
+    }
+  ],
+  "words": 1091,
+  "searchText": "Tavira is a city in the Algarve region of Portugal . Crossed by the Gilão River, it is one of the most monumental cities in Portugal, with its 37 churches. Tavira ( tuh-VEE-ruh , /tɐ.ˈvi.ɾɐ/) municipality has 26,167 residents (2011), with about 13,400 living in the city proper. Fishing settlements Cabanas de Tavira and Santa Luzia lie about 6 km to the east, resp. 3 km to the west of Tavira, with apartment resort Pedras de El-Rei further 1.5 km west from Santa Luzia. Tavira and all there settlements provide access to the Ria Formosa National Park islands Ilha de Tavira and Ilha de Cabanas and their beaches. The city was founded in 1890 BC under the name Talábriga. During the Arab occupation, it became, together with Faro and Silves, one of the most important cities in the Algarve. It was conquered by the Christian army in 1242. During the 17th century it was considered one of the main cities in the Algarve, although signs of decay were beginning to appear. The activity of its port reduced and the city lost importance as a strategic and economic point. Today the city is thriving thanks to the economic boost that the tourism sector has received since the 1960s across the Algarve. Tavira has a mild climate, with hot summers and humid winters, with more rain in the months of November and December. Posto de Turismo de Tavira ( Tourist Office of Tavira ), Praça da República 5 , ☏ +351 281 322 511 , camara@cm-tavira.pt . Mon–Fri 09:00–17:00, Sat 09:00–13:00 & 14:00–17:00, Sun 09:30–13:00 & 14:00–17:00 . ( updated Jun 2021 )  The nearest airport is in Faro ( FAO IATA ), a 45-min drive, with flights from many European cities. Seville Airport ( SVQ IATA ) is a 2-hour drive, and Lisbon Airport ( LIS IATA ) is a 3-hour drive. Tavira has trains roughly hourly from Faro taking 45 min; these make three stops then continue to Vila Real de Santo António on the Spanish border. Change in Faro for Lisbon or Lagos. Eastbound from Faro the stops are: Tavira Station is the main town stop, on Largo de Santo Amaro. It has ticket counters and a waiting room. Porta Nova Station is northeast of town centre on Rua do Apeadeiro. It's just a platform halt with no facilities. Conceição Station is the platform halt for Conceição and Cabanas de Tavira. There are daily buses by Vamus Algarve and Rede Nacional de Expressos . ALSA runs buses from Faro to Sevilla in Spain. Tavira is a small city and perfectly walkable. On the main square (Praça da República) you can find the Tourism Information Center which can provide you with maps, leaflets and tips. It's possible to catch a small tour train which goes around the city most interesting landmarks. There are also electric tuk-tuks available which can be a quiet and comfortable way to visit the natural park area. Over 2000-year-old olive tree , Aldeamento Pedras d’El Rey, C . One of the oldest olive trees in Portugal can be visited within the Aldeamento Pedras d’El Rey lodging complex. ( updated Nov 2018 ) Tuna fishing museum , Hotel Vila Galé Albacora, Quatro Águas, 8800-901 Tavira ( ask for directions at the hotel reception ). This hotel usually closes during low season. Entrance is free . ( updated Nov 2018 ) Castelo de Tavira . Of Muslim origin and rebuilt after the Reconquista, there are only a few sections of the wall left in the castle. From the top of the walls you have the best views of the city. ( updated May 2025 ) Igreja da Misericórdia , Rua da Galeri . Considered the best example of Renaissance architecture in the Algarve, it has an interior of three naves, separated by arches based on columns. The altarpiece is of gilded wood carved from the 18th century. ( updated May 2025 ) Church of Santa Maria do Castelo , Alto de Santa Maria . It is located inside the castle. Built after the Reconquista and rebuilt after the 1775 earthquake, only the portico and the twin window remain of the primitive Gothic church. ( updated May 2025 ) Roman Bridge , Avenida 5 de Outubro . It is the best known bridge in Tavira. It dates from around the 16th or 17th century. Rebuilt in 1992, after a flood in 1989. ( updated May 2025 ) Praça da República . The most central area of ​​the city, where the City Hall is located. ( updated May 2025 ) Tavira Horse Carriage Tours See Tavira from a different perspective. Feel its history and discover the beautiful architecture which typifies Tavira. Tavira Boat Tours . Boat tours in Ria Formosa Tavira Ria Formosa as a nesting ground and as a stopping point in migrating routes: Flamingos, Milherango), Storks), King Fisher and so on. Spend some time in close contact with the nature, the wonderful world of birds in its more natural state, and let yourself be fascinated for the enchantment of its sounds, its forms and its colours. Discover the lagoon and his birds. ( updated Nov 2018 ) Praia do Barril - Beach near Tavira, next to the village of Pedras de El-Rei. It can be reached by a small train that takes you to the beach in a few minutes. On the beach you can see Boca Cava-Terra and Long-legged crabs. Tavira Island - It's Tavira beach, you have to go by boat where you can catch in the center next to the Ribeira market, or in the area of ​​4 Águas.  Folhado de Tavira - It is a puff cake wrapped in sugar, not to be missed. Artefact , Rua das Capacheiras 1,3,7 , ☏ +351 925 572 178 , jerem.monteil@gmail.com . They use only fruits and vegetables from their own production. €5-19 . ( updated Jun 2021 )  Pousada Convento Tavira ( Pousada do Convento da Graça ), Rua D. Paio Peres Correia , ☏ +351 210 407 680 , recepcao.conventograca@pousadas.pt . Check-in: 15:00 , check-out: 12:00 . A historic luxury hotel. Vilacampina Guesthouse , Sítio da Campina, Luz de Tavira , ☏ +351 919 232 163 . Vila Galé Tavira , Rua 4 de Outubro , ☏ +351 281 329 900 , tavira@vilagale.com . Lovely 4-star hotel. ( updated Aug 2015 ) As of Jan 2025, Tavira and its approach roads have 4G from Digi, and 5G from MEO, NOS and Vodafone. Routes through Tavira Lisbon ← Faro ← W E → Castro Marim → Huelva",
+  "related": [
+    "algarve",
+    "portugal",
+    "lisbon",
+    "faro"
+  ],
+  "image": {
+    "file": "/images/wv-tavira-banner.webp",
+    "title": "Wv Tavira banner.jpg",
+    "artist": "Pedro Rosa 7",
+    "credit": "Own work",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Wv_Tavira_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/3/31/Wv_Tavira_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Tavira",
+    "revision": 5357108,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5357108",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Tavira&action=history",
+    "retrieved": "2026-10-17T13:11:27.133821+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Algarve",
+  "excerpt": "Tavira is a city in the Algarve region of Portugal. Crossed by the Gilão River, it is one of the most monumental cities in Portugal, with its 37 churches."
+}

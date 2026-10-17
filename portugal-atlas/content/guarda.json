@@ -1,0 +1,206 @@
+{
+  "title": "Guarda",
+  "slug": "guarda",
+  "displayTitle": "Guarda",
+  "region": "central",
+  "kind": "destination",
+  "parent": "beiras",
+  "intro": "Guarda is a city of 43,000 people (2011) in Beira Alta, a region of Central Portugal. Guarda is the highest city in continental Portugal (altitude 1,056 m), located to the northeast of Serra da Estrela (the largest mountain in mainland Portugal). The main attraction in Guarda is its cathedral, known as the Sé da Guarda.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><span></span>\n<b>Guarda</b> is a city of 43,000 people (2011) in <a href=\"/guides/beira-alta/\" title=\"Beira Alta\">Beira Alta</a>, a region of <a href=\"https://en.wikivoyage.org/wiki/Central_Portugal\" title=\"Read on Wikivoyage (external source)\">Central Portugal</a>. Guarda is the highest city in continental Portugal (altitude 1,056 m), located to the northeast of <a href=\"https://en.wikivoyage.org/wiki/Serra_da_Estrela\" title=\"Read on Wikivoyage (external source)\">Serra da Estrela</a> (the largest mountain in mainland Portugal). The main attraction in Guarda is its cathedral, known as the Sé da Guarda.\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": "<p>The main economic sectors of Guarda (/ˈɡwaɾdɐ/, <a href=\"https://en.wikivoyage.org/wiki/Portuguese_phrasebook#Wikivoyage_pseudo-phoneticization\" title=\"Read on Wikivoyage (external source)\">GWAHR-duh</a>) are: tourism, textiles, electric wire and cable industry for automobile manufacturing and for energy industries, wood, glass, marble and granite processing, metallurgy, aluminum manufacturing, chemical products, blinds, cold cuts, bakery and pastry, dairy industry, as well as construction companies. There are also handicraft activities and agricultural and agro-livestock activities in the rural environment of the municipality.\n</p>"
+    },
+    {
+      "id": "Visitor_information",
+      "title": "Visitor information",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Guarda_Welcome_Center\"><a href=\"https://www.mun-guarda.pt/municipio/governacao/turismo/\">Guarda Welcome Center</a></span>, <span>Praça Luís de Camões 21</span>. <bdi></bdi><span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "By_train",
+      "title": "By train",
+      "level": 3,
+      "html": "<p>The train station is served by Linhas da <a href=\"/guides/beira-alta/\" title=\"Beira Alta\">Beira Alta</a>. There are trains to Lisbon via Coimbra 3-5 times a day and to Oporto via Viseu. Schedules are available online at the Portuguese railway company's <a href=\"https://www.cp.pt\">website</a>. The overnight train from Irun (France) to Lisbon stops at Guarda around 06:00.\n</p><p>The train station is about 3.2 km from the city centre. There is a local bus running from the main bus station (top of the mountain) to the modern train station (one-way ticket €0.95).\n</p>"
+    },
+    {
+      "id": "By_bus",
+      "title": "By bus",
+      "level": 3,
+      "html": "<p>There are buses from Spain (Madrid, Salamanca) to Oporto which stop in Guarda. A one-way ticket from Salamanca to Guarda costs about €25. The bus station is in the centre of town, near the top of the mountain. It is connected by a local bus line to the train station.\n</p>"
+    },
+    {
+      "id": "By_car",
+      "title": "By car",
+      "level": 3,
+      "html": "<p>The principal road connecting Guarda to the rest of Portugal and to Spain is the A25 [Aveiro-Vilar Formoso).\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Guarda_Cathedral\">Guarda Cathedral</span> (<span>Catedral da Guarda, Sé da Guarda</span>). <bdi>A medieval temple built in Gothic and Manueline styles. Its restoration, carried out by the architect Rosendo Carvalheira, took place between 1899 and 1921.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li></ul><ul><li><bdi><span></span> <span id=\"Castle_of_Guarda\">Castle of Guarda</span>. <bdi>A National Monument whose construction, supposedly on a Roman-Lusitanian fort from the 1st century, took place between the 12th and 14th centuries.</bdi><span> (<span><span>updated Jan 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Museu_da_Guarda\"><a href=\"https://www.museudaguarda.pt/\">Museu da Guarda</a></span> (<span>Museu Regional da Guarda</span>), <span>Rua Alves Roçadas 30</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351271213460\">+351 271 213 460</a></span></span>, <span><a href=\"mailto:museu.guarda@mun-guarda.pt\">museu.guarda@mun-guarda.pt</a></span>. <span>Daily 09:00–12:30 &amp; 14:00–17:30</span>. <bdi>A museum of art, archeology, ethnology, and history situated in a 17th-century seminary that was part of the bishop's palace.</bdi> <span><abbr>€2</abbr>, but there are numerous <a href=\"https://www.museudaguarda.pt/preco/\">half-price and free concessions</a></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": "<p>Ski in the <a href=\"https://en.wikivoyage.org/wiki/Serra_da_Estrela\" title=\"Read on Wikivoyage (external source)\">Serra da Estrela</a> Natural Park.\n</p>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": "<p>Tapestry; ceramics\n</p>"
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": "<p>The gastronomy of Guarda is associated with the gastronomy of the Serra da Estrela. Some of the most outstanding typical dishes are the following: roast lamb, rice with duck in the Guarda way, and Lagareiro cod, which can be easily found in regional cuisine restaurants. The gastronomy of the city includes a wide range of meat-based dishes, given the geographical location of the city, as well as the surrounding lands, which are conducive to grazing. There is also a wide variety of fish dishes from freshwater streams. Cod is the exception, since its conservation process (by drying) has always allowed its consumption in lands far from the sea. The pig occupies an important place in the local gastronomy, with countless dishes made with this type of meat. The ham cured in sea salt can be highlighted, as well as the typical local cured meats (black pudding, farinheira and chouriço), such as tripe with vegetables. Other common meats are lamb, goat, beef, and white meat. Carquesa (Genista tridentata) rice is also a very typical dish in the city and the region.\n</p><p>At the time of the hunting season, unique dishes, such as hare rice \"malandrinho\", or wild boar with beans are eaten.\n</p><p>In the fall, Trancoso's edible mushroom stew (champignons) and chestnut soup are popular (it can also be eaten cooked, boiled, or sweet).\n</p><ul><li><bdi><span></span> <span id=\"Nobre_Vinhos_e_Tal\"><a href=\"https://nobrevinhosetal.com/\">Nobre Vinhos e Tal</a></span> (<span>Noble Wines and Such</span>), <span>Largo Dr. Amândio Paúl 5</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351961765480\">+351 961 765 480</a></span></span>, <span><a href=\"mailto:geral@nobrevinhosetal.com\">geral@nobrevinhosetal.com</a></span>. <span>Mon 18:00–23:30, Tue–Sat 04:00–00:00, closed Sun</span>. <bdi>Traditional Portuguese and local cuisine served by the fireplace in winter or on the outdoor terrace with great views in summer. Offerings include artisanal local meats, sausages, and cheeses.</bdi> <span><abbr>€10-25</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Simple.Guarda\"><a href=\"https://www.facebook.com/simple.guarda/\">Simple.Guarda</a></span>, <span>Rua Vasco Borges 20</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351271212149\">+351 271 212 149</a></span></span>. <span>Mon–Sat 12:00–14:30, &amp; 19:00–22:00, closed Sun</span>. <bdi>Italian restaurant and pizzeria.</bdi> <span><abbr>€5-14</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Vallecula\"><a href=\"https://www.facebook.com/pages/Restaurante%20Vallecula/194346121046034/\">Vallecula</a></span>, <span>Praça Dr. José de Castro 1, Valhelhas</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351275487123\">+351 275 487 123</a></span></span>. <span>Tue–Sun 12:30–14:30 &amp; 19:30–22:00, closed Mon</span>. <bdi>Family-style restaurant.</bdi> <span>Mid-range</span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Hotel_Lusitânia\"><a href=\"https://www.hotellusitania.pt/\">Hotel Lusitânia</a></span>, <span>Urbanização Quinta das Covas 34</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351707919533\">+351 707 919 533</a></span></span>, <span><a href=\"mailto:centraldereservas@naturaimbhotels.com\">centraldereservas@naturaimbhotels.com</a></span>. <span>Check-in: <span>16:00</span>, check-out: <span>12:00</span></span>. <bdi>Four-star, 63-room hotel with two swimming pools, a spa, a gym, a tennis court, a bar, an in-room minibar, room service, and free Wi-Fi.</bdi> <span><abbr>€56-92</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Santos\"><a href=\"http://www.hotelsantos.pt/\">Hotel Santos</a></span>, <span>Rua Tenente Valadim 14</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351271205400\">+351 271 205 400</a></span></span>, <span><a href=\"mailto:reservas@hotelsantos.pt\">reservas@hotelsantos.pt</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi>Three-star, 23-room hotel. Each room is air conditioned and there is a seating area with sofa. There's free breakfast, free Wi-Fi, and paid street parking nearby.</bdi> <span><abbr>€50</abbr></span>.<span> (<span><span>updated Nov 2021</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Hotel_Vanguarda\"><a href=\"https://www.hotelvanguarda.pt/\">Hotel Vanguarda</a></span>, <span>Avenida Monsenhor Mendes do Carmo</span>, <abbr>☏</abbr> <span><span><a href=\"tel:+351707919533\">+351 707 919 533</a></span></span>, <span><a href=\"mailto:centraldereservas@naturaimbhotels.com\">centraldereservas@naturaimbhotels.com</a></span>. <span>Check-in: <span>15:00</span>, check-out: <span>12:00</span></span>. <bdi>Three-star, 82-room hotel with onsite restaurant, bar, free breakfast, free Wi-Fi, and free parking.</bdi> <span><abbr>€45-70</abbr></span>.<span> (<span><span>updated Jun 2021</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Connect",
+      "title": "Connect",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><a href=\"https://en.wikivoyage.org/wiki/Serra_da_Estrela\" title=\"Read on Wikivoyage (external source)\">Serra da Estrela</a> Mountain</li>\n<li>Castles in Terras de <a href=\"https://en.wikivoyage.org/w/index.php?title=Riba-Coa&amp;action=edit&amp;redlink=1\" title=\"Riba-Coa (page does not exist)\">Riba-Coa</a> (<a href=\"https://en.wikivoyage.org/wiki/Pinhel\" title=\"Read on Wikivoyage (external source)\">Pinhel</a>, <a href=\"https://en.wikivoyage.org/wiki/Sabugal\" title=\"Read on Wikivoyage (external source)\">Sabugal</a>, <a href=\"https://en.wikivoyage.org/w/index.php?title=Marialva&amp;action=edit&amp;redlink=1\" title=\"Marialva (page does not exist)\">Marialva</a>, <a href=\"https://en.wikivoyage.org/w/index.php?title=Castelo_Mendo&amp;action=edit&amp;redlink=1\" title=\"Castelo Mendo (page does not exist)\">Castelo Mendo</a>, etc.)</li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Douro\" title=\"Read on Wikivoyage (external source)\">Douro</a> Valley / <a href=\"https://en.wikivoyage.org/wiki/Vila_Nova_de_Foz_C%C3%B4a\" title=\"Read on Wikivoyage (external source)\">Vila Nova de Foz Côa</a> / Côa Valley, <a href=\"https://en.wikivoyage.org/w/index.php?title=Marialva&amp;action=edit&amp;redlink=1\" title=\"Marialva (page does not exist)\">Marialva</a>, <a href=\"https://en.wikivoyage.org/w/index.php?title=Sortelha&amp;action=edit&amp;redlink=1\" title=\"Sortelha (page does not exist)\">Sortelha</a></li>\n<li><a href=\"/guides/viseu/\" title=\"Viseu\">Viseu</a></li>\n<li><a href=\"/guides/lamego/\" title=\"Lamego\">Lamego</a></li>\n<li><a href=\"https://en.wikivoyage.org/wiki/Salamanca\" title=\"Read on Wikivoyage (external source)\">Salamanca</a>, Spain</li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Guarda Welcome Center",
+      "address": "Praça Luís de Camões 21",
+      "description": ""
+    },
+    {
+      "name": "Guarda Cathedral",
+      "description": "A medieval temple built in Gothic and Manueline styles. Its restoration, carried out by the architect Rosendo Carvalheira, took place between 1899 and 1921."
+    },
+    {
+      "name": "Castle of Guarda",
+      "description": "A National Monument whose construction, supposedly on a Roman-Lusitanian fort from the 1st century, took place between the 12th and 14th centuries."
+    },
+    {
+      "name": "Museu da Guarda",
+      "address": "Rua Alves Roçadas 30",
+      "phone": "+351 271 213 460",
+      "hours": "Daily 09:00–12:30 & 14:00–17:30",
+      "price": "€2 , but there are numerous half-price and free concessions",
+      "description": "A museum of art, archeology, ethnology, and history situated in a 17th-century seminary that was part of the bishop's palace."
+    },
+    {
+      "name": "Nobre Vinhos e Tal",
+      "address": "Largo Dr. Amândio Paúl 5",
+      "phone": "+351 961 765 480",
+      "hours": "Mon 18:00–23:30, Tue–Sat 04:00–00:00, closed Sun",
+      "price": "€10-25",
+      "description": "Traditional Portuguese and local cuisine served by the fireplace in winter or on the outdoor terrace with great views in summer. Offerings include artisanal local meats, sausages, and cheeses."
+    },
+    {
+      "name": "Simple.Guarda",
+      "address": "Rua Vasco Borges 20",
+      "phone": "+351 271 212 149",
+      "hours": "Mon–Sat 12:00–14:30, & 19:00–22:00, closed Sun",
+      "price": "€5-14",
+      "description": "Italian restaurant and pizzeria."
+    },
+    {
+      "name": "Vallecula",
+      "address": "Praça Dr. José de Castro 1, Valhelhas",
+      "phone": "+351 275 487 123",
+      "hours": "Tue–Sun 12:30–14:30 & 19:30–22:00, closed Mon",
+      "price": "Mid-range",
+      "description": "Family-style restaurant."
+    },
+    {
+      "name": "Hotel Lusitânia",
+      "address": "Urbanização Quinta das Covas 34",
+      "phone": "+351 707 919 533",
+      "price": "€56-92",
+      "description": "Four-star, 63-room hotel with two swimming pools, a spa, a gym, a tennis court, a bar, an in-room minibar, room service, and free Wi-Fi."
+    },
+    {
+      "name": "Hotel Santos",
+      "address": "Rua Tenente Valadim 14",
+      "phone": "+351 271 205 400",
+      "price": "€50",
+      "description": "Three-star, 23-room hotel. Each room is air conditioned and there is a seating area with sofa. There's free breakfast, free Wi-Fi, and paid street parking nearby."
+    },
+    {
+      "name": "Hotel Vanguarda",
+      "address": "Avenida Monsenhor Mendes do Carmo",
+      "phone": "+351 707 919 533",
+      "price": "€45-70",
+      "description": "Three-star, 82-room hotel with onsite restaurant, bar, free breakfast, free Wi-Fi, and free parking."
+    }
+  ],
+  "words": 978,
+  "searchText": "Guarda is a city of 43,000 people (2011) in Beira Alta , a region of Central Portugal . Guarda is the highest city in continental Portugal (altitude 1,056 m), located to the northeast of Serra da Estrela (the largest mountain in mainland Portugal). The main attraction in Guarda is its cathedral, known as the Sé da Guarda. The main economic sectors of Guarda (/ˈɡwaɾdɐ/, GWAHR-duh ) are: tourism, textiles, electric wire and cable industry for automobile manufacturing and for energy industries, wood, glass, marble and granite processing, metallurgy, aluminum manufacturing, chemical products, blinds, cold cuts, bakery and pastry, dairy industry, as well as construction companies. There are also handicraft activities and agricultural and agro-livestock activities in the rural environment of the municipality. Guarda Welcome Center , Praça Luís de Camões 21 . ( updated Jun 2021 )  The train station is served by Linhas da Beira Alta . There are trains to Lisbon via Coimbra 3-5 times a day and to Oporto via Viseu. Schedules are available online at the Portuguese railway company's website . The overnight train from Irun (France) to Lisbon stops at Guarda around 06:00. The train station is about 3.2 km from the city centre. There is a local bus running from the main bus station (top of the mountain) to the modern train station (one-way ticket €0.95). There are buses from Spain (Madrid, Salamanca) to Oporto which stop in Guarda. A one-way ticket from Salamanca to Guarda costs about €25. The bus station is in the centre of town, near the top of the mountain. It is connected by a local bus line to the train station. The principal road connecting Guarda to the rest of Portugal and to Spain is the A25 [Aveiro-Vilar Formoso).  Guarda Cathedral ( Catedral da Guarda, Sé da Guarda ). A medieval temple built in Gothic and Manueline styles. Its restoration, carried out by the architect Rosendo Carvalheira, took place between 1899 and 1921. ( updated Jan 2021 ) Castle of Guarda . A National Monument whose construction, supposedly on a Roman-Lusitanian fort from the 1st century, took place between the 12th and 14th centuries. ( updated Jan 2021 ) Museu da Guarda ( Museu Regional da Guarda ), Rua Alves Roçadas 30 , ☏ +351 271 213 460 , museu.guarda@mun-guarda.pt . Daily 09:00–12:30 & 14:00–17:30 . A museum of art, archeology, ethnology, and history situated in a 17th-century seminary that was part of the bishop's palace. €2 , but there are numerous half-price and free concessions . ( updated Jun 2021 ) Ski in the Serra da Estrela Natural Park. Tapestry; ceramics The gastronomy of Guarda is associated with the gastronomy of the Serra da Estrela. Some of the most outstanding typical dishes are the following: roast lamb, rice with duck in the Guarda way, and Lagareiro cod, which can be easily found in regional cuisine restaurants. The gastronomy of the city includes a wide range of meat-based dishes, given the geographical location of the city, as well as the surrounding lands, which are conducive to grazing. There is also a wide variety of fish dishes from freshwater streams. Cod is the exception, since its conservation process (by drying) has always allowed its consumption in lands far from the sea. The pig occupies an important place in the local gastronomy, with countless dishes made with this type of meat. The ham cured in sea salt can be highlighted, as well as the typical local cured meats (black pudding, farinheira and chouriço), such as tripe with vegetables. Other common meats are lamb, goat, beef, and white meat. Carquesa (Genista tridentata) rice is also a very typical dish in the city and the region. At the time of the hunting season, unique dishes, such as hare rice \"malandrinho\", or wild boar with beans are eaten. In the fall, Trancoso's edible mushroom stew (champignons) and chestnut soup are popular (it can also be eaten cooked, boiled, or sweet). Nobre Vinhos e Tal ( Noble Wines and Such ), Largo Dr. Amândio Paúl 5 , ☏ +351 961 765 480 , geral@nobrevinhosetal.com . Mon 18:00–23:30, Tue–Sat 04:00–00:00, closed Sun . Traditional Portuguese and local cuisine served by the fireplace in winter or on the outdoor terrace with great views in summer. Offerings include artisanal local meats, sausages, and cheeses. €10-25 . ( updated Jun 2021 ) Simple.Guarda , Rua Vasco Borges 20 , ☏ +351 271 212 149 . Mon–Sat 12:00–14:30, & 19:00–22:00, closed Sun . Italian restaurant and pizzeria. €5-14 . ( updated Jun 2021 ) Vallecula , Praça Dr. José de Castro 1, Valhelhas , ☏ +351 275 487 123 . Tue–Sun 12:30–14:30 & 19:30–22:00, closed Mon . Family-style restaurant. Mid-range . ( updated Jun 2021 )  Hotel Lusitânia , Urbanização Quinta das Covas 34 , ☏ +351 707 919 533 , centraldereservas@naturaimbhotels.com . Check-in: 16:00 , check-out: 12:00 . Four-star, 63-room hotel with two swimming pools, a spa, a gym, a tennis court, a bar, an in-room minibar, room service, and free Wi-Fi. €56-92 . ( updated Jun 2021 ) Hotel Santos , Rua Tenente Valadim 14 , ☏ +351 271 205 400 , reservas@hotelsantos.pt . Check-in: 15:00 , check-out: 12:00 . Three-star, 23-room hotel. Each room is air conditioned and there is a seating area with sofa. There's free breakfast, free Wi-Fi, and paid street parking nearby. €50 . ( updated Nov 2021 ) Hotel Vanguarda , Avenida Monsenhor Mendes do Carmo , ☏ +351 707 919 533 , centraldereservas@naturaimbhotels.com . Check-in: 15:00 , check-out: 12:00 . Three-star, 82-room hotel with onsite restaurant, bar, free breakfast, free Wi-Fi, and free parking. €45-70 . ( updated Jun 2021 )  Serra da Estrela Mountain Castles in Terras de Riba-Coa ( Pinhel , Sabugal , Marialva , Castelo Mendo , etc.) Douro Valley / Vila Nova de Foz Côa / Côa Valley, Marialva , Sortelha Viseu Lamego Salamanca , Spain",
+  "related": [
+    "beira-alta",
+    "viseu",
+    "lamego"
+  ],
+  "image": {
+    "file": "/images/guarda-banner.webp",
+    "title": "Guarda banner.jpg",
+    "artist": "Sé_da_Guarda_31.jpg : Alexa Pinto derivative work: Jjtkk",
+    "credit": "This file was derived from: Sé da Guarda 31.jpg :",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Guarda_banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/d/de/Guarda_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Guarda",
+    "revision": 5351438,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=5351438",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Guarda&action=history",
+    "retrieved": "2026-10-17T13:11:29.047972+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "Beira Alta",
+  "excerpt": "Guarda is a city of 43,000 people (2011) in Beira Alta, a region of Central Portugal. Guarda is the highest city in continental Portugal (altitude 1,056 m), located to the northeast of Serra da Estrela (the largest mountain in mainland Portugal).…"
+}

@@ -1,0 +1,172 @@
+{
+  "title": "Sete Cidades",
+  "slug": "sete-cidades",
+  "displayTitle": "Sete Cidades",
+  "region": "azores",
+  "kind": "destination",
+  "parent": "azores",
+  "intro": "Sete Cidades is a village on the Azores. It is on the island of São Miguel, and is home to 800 people as of 2011. It has the famous twin crater lakes, Lagoa Azul (Blue Lake) and Lagoa Verde (Green Lake).",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "level": 2,
+      "html": "<p><span></span>\n<b>Sete Cidades</b> is a village on the <a href=\"/guides/azores/\" title=\"Azores\">Azores</a>. It is on the island of <a href=\"/guides/sao-miguel/\" title=\"São Miguel\">São Miguel</a>, and is home to 800 people as of 2011. It has the famous twin crater lakes, Lagoa Azul (Blue Lake) and Lagoa Verde (Green Lake).\n</p>"
+    },
+    {
+      "id": "Understand",
+      "title": "Understand",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Get_in",
+      "title": "Get in",
+      "level": 2,
+      "html": "<p>From Ponta Delgada take bus C205 (1 hour) or C208 (1:30h). There are also bus connections where you need to change in Várzea. There are multiple bus stops in the village.\n</p>"
+    },
+    {
+      "id": "Get_around",
+      "title": "Get around",
+      "level": 2,
+      "html": "<p>The village can be easily explored on foot.\n</p>"
+    },
+    {
+      "id": "See",
+      "title": "See",
+      "level": 2,
+      "html": "<ul><li><bdi><span></span> <span id=\"Lagoa_Verde\">Lagoa Verde</span>. <bdi></bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Lagoa_Azul\">Lagoa Azul</span>. <bdi></bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Miradouro_da_Vista_do_Rei\">Miradouro da Vista do Rei</span>, <span>EN9-1A</span>. <bdi>Here you get the scenic view that is on many photos of this island.</bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Miradouro_do_Cerrado_das_Freiras\">Miradouro do Cerrado das Freiras</span>, <span>R. Ilha de São Miguel</span>. <bdi>A scenic viewpoint.</bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Do",
+      "title": "Do",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Hiking",
+      "title": "Hiking",
+      "level": 3,
+      "html": "<p>From the carpark at the bridge, you can hike up to the Vista do Rei Miradour (viewpoint). It's about 4 km up to the top of the caldera along a track that is somewhat maintained, and offers beautiful views of the lakes on the way up. (At  the far end of the carpark, past the ducks, there are three trails — take the middle one.)  At the <i>miradour</i>, there is a hotel that was abandoned during construction in the 1980s, but it is not accessible. \n</p><p>From Vista do Rei, there is a dirt road along the lip of the caldera, with beautiful views and many cows, an easy 4.5 km to the Lomba do Vasco Miradour. \n</p><p>From there, you can continue another 2.2 km down into the village of Sete Cidades. It's about 3.5 hours in total.\n</p>"
+    },
+    {
+      "id": "Buy",
+      "title": "Buy",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Eat",
+      "title": "Eat",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Budget",
+      "title": "Budget",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Casa_Do_Povo_Bar\">Casa Do Povo Bar</span>, <span>Caminho das ruas</span>. <bdi></bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Seite_Cidades_sorveteria\">Seite Cidades sorveteria</span>, <span>Rua do Queiro 31</span>. <bdi>Good hamburgers.</bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li>\n<li><bdi><span></span> <span id=\"Padaria_Tavares\">Padaria Tavares</span>, <span>R. da Caridade 28</span>. <bdi>A big piece of bread for €0.35 fresh out of the traditional oven.</bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Mid-range",
+      "title": "Mid-range",
+      "level": 3,
+      "html": "<ul><li><bdi><span></span> <span id=\"Lagoa_Azul_Restaurant\">Lagoa Azul Restaurant</span>, <span>R. da Caridade 18</span>. <bdi></bdi><span> (<span><span>updated Jan 2024</span></span>)</span></bdi></li></ul>"
+    },
+    {
+      "id": "Splurge",
+      "title": "Splurge",
+      "level": 3,
+      "html": ""
+    },
+    {
+      "id": "Drink",
+      "title": "Drink",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Sleep",
+      "title": "Sleep",
+      "level": 2,
+      "html": ""
+    },
+    {
+      "id": "Go_next",
+      "title": "Go next",
+      "level": 2,
+      "html": "<ul><li><a href=\"/guides/ponta-delgada/\" title=\"Ponta Delgada\">Ponta Delgada</a>, <a href=\"https://en.wikivoyage.org/wiki/Furnas\" title=\"Read on Wikivoyage (external source)\">Furnas</a> and the other towns of <a href=\"/guides/sao-miguel/\" title=\"São Miguel\">São Miguel</a></li></ul>"
+    }
+  ],
+  "listings": [
+    {
+      "name": "Lagoa Verde",
+      "description": ""
+    },
+    {
+      "name": "Lagoa Azul",
+      "description": ""
+    },
+    {
+      "name": "Miradouro da Vista do Rei",
+      "address": "EN9-1A",
+      "description": "Here you get the scenic view that is on many photos of this island."
+    },
+    {
+      "name": "Miradouro do Cerrado das Freiras",
+      "address": "R. Ilha de São Miguel",
+      "description": "A scenic viewpoint."
+    },
+    {
+      "name": "Casa Do Povo Bar",
+      "address": "Caminho das ruas",
+      "description": ""
+    },
+    {
+      "name": "Seite Cidades sorveteria",
+      "address": "Rua do Queiro 31",
+      "description": "Good hamburgers."
+    },
+    {
+      "name": "Padaria Tavares",
+      "address": "R. da Caridade 28",
+      "description": "A big piece of bread for €0.35 fresh out of the traditional oven."
+    },
+    {
+      "name": "Lagoa Azul Restaurant",
+      "address": "R. da Caridade 18",
+      "description": ""
+    }
+  ],
+  "words": 364,
+  "searchText": "Sete Cidades is a village on the Azores . It is on the island of São Miguel , and is home to 800 people as of 2011. It has the famous twin crater lakes, Lagoa Azul (Blue Lake) and Lagoa Verde (Green Lake).  From Ponta Delgada take bus C205 (1 hour) or C208 (1:30h). There are also bus connections where you need to change in Várzea. There are multiple bus stops in the village. The village can be easily explored on foot. Lagoa Verde . ( updated Jan 2024 ) Lagoa Azul . ( updated Jan 2024 ) Miradouro da Vista do Rei , EN9-1A . Here you get the scenic view that is on many photos of this island. ( updated Jan 2024 ) Miradouro do Cerrado das Freiras , R. Ilha de São Miguel . A scenic viewpoint. ( updated Jan 2024 )  From the carpark at the bridge, you can hike up to the Vista do Rei Miradour (viewpoint). It's about 4 km up to the top of the caldera along a track that is somewhat maintained, and offers beautiful views of the lakes on the way up. (At  the far end of the carpark, past the ducks, there are three trails — take the middle one.)  At the miradour , there is a hotel that was abandoned during construction in the 1980s, but it is not accessible. From Vista do Rei, there is a dirt road along the lip of the caldera, with beautiful views and many cows, an easy 4.5 km to the Lomba do Vasco Miradour. From there, you can continue another 2.2 km down into the village of Sete Cidades. It's about 3.5 hours in total.   Casa Do Povo Bar , Caminho das ruas . ( updated Jan 2024 ) Seite Cidades sorveteria , Rua do Queiro 31 . Good hamburgers. ( updated Jan 2024 ) Padaria Tavares , R. da Caridade 28 . A big piece of bread for €0.35 fresh out of the traditional oven. ( updated Jan 2024 ) Lagoa Azul Restaurant , R. da Caridade 18 . ( updated Jan 2024 )    Ponta Delgada , Furnas and the other towns of São Miguel",
+  "related": [
+    "azores",
+    "sao-miguel",
+    "ponta-delgada"
+  ],
+  "image": {
+    "file": "/images/sete-cidades-banner.webp",
+    "title": "Sete Cidades Banner.jpg",
+    "artist": "Ymblanter",
+    "credit": "Own work",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sete_Cidades_Banner.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Sete_Cidades_Banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "changes": "Resized and converted to WebP; displayed with layout cropping."
+  },
+  "provenance": {
+    "source": "https://en.wikivoyage.org/wiki/Sete_Cidades",
+    "revision": 4816178,
+    "permalink": "https://en.wikivoyage.org/w/index.php?oldid=4816178",
+    "history": "https://en.wikivoyage.org/w/index.php?title=Sete_Cidades&action=history",
+    "retrieved": "2026-10-17T13:11:30.627434+00:00",
+    "attribution": "Wikivoyage contributors",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Navigation and presentation reformatted; non-content widgets and inline imagery removed; internal links localized. Text retained from source."
+  },
+  "sourceParent": "São Miguel",
+  "excerpt": "Sete Cidades is a village on the Azores. It is on the island of São Miguel, and is home to 800 people as of 2011. It has the famous twin crater lakes, Lagoa Azul (Blue Lake) and Lagoa Verde (Green Lake)."
+}

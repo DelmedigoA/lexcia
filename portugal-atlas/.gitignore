@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+.venv/
+pipeline/cache/
+__pycache__/
+*.tsbuildinfo
+.vercel/
+.env*
