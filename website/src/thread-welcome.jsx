@@ -10,9 +10,9 @@ const GREETING_WORDS=['Welcome','to','Lexcia!'];
 const convertMessage=message=>message;
 const SUGGESTIONS=[
   ['What is Lexcia?','What is Lexcia?'],
-  ['Which websites is Lexcia designed for?','Which websites is it for?'],
+  ['Which websites is it for?','Which websites is it for?'],
   ['What can Lexcia customize?','What can Lexcia customize?'],
-  ['How does Lexcia pricing work?','How does pricing work?'],
+  ['How does pricing work?','How does pricing work?'],
 ];
 
 function AssistantWelcome(){
@@ -21,7 +21,7 @@ function AssistantWelcome(){
       <h3>{GREETING_WORDS.map((word,index)=><Fragment key={word}>
         <span className="welcome-word" style={{animationDelay:`${index*90}ms`}}>{word}</span>{' '}
       </Fragment>)}<span className="welcome-caret" aria-hidden="true" /></h3>
-      <p className="welcome-rise" style={{animationDelay:'500ms'}}>Ask Lexcia about the product, pricing, or your next idea.</p>
+      <p className="welcome-rise" style={{animationDelay:'500ms'}}>Ask Lexcia about the product, pricing, or this website.</p>
     </div>
     <nav className="welcome-suggestions" aria-label="Suggested questions">
       {SUGGESTIONS.map(([prompt,label],index)=><ThreadPrimitive.Suggestion

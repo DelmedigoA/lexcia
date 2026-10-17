@@ -33,16 +33,20 @@ def test_sourced_stream_validation_and_session_isolation():
             assert (await client.post('/api/chat/reset',json={'session_id':first})).status_code==200
             await client.post('/api/chat/stream',json={'question':'What is Lexcia?','session_id':first})
             assert histories[-1]==[]
-            assert 'Websites know a lot.' in (await client.get('/api/knowledge/overview')).text
+            assert 'conversational layer' in (await client.get('/api/knowledge/overview')).text
             assert (await client.get('/api/knowledge/unknown')).status_code==404
     asyncio.run(scenario())
-def test_reviewed_pricing_and_remaining_unknowns_are_preserved_in_context():
+def test_landing_knowledge_links_resolve_and_old_corpus_is_removed():
+    import re
     knowledge=Knowledge(ROOT/'knowledge/lexcia.json')
-    records=knowledge.search('How much does Lexcia cost?')
-    status=next(r for r in records if r.id=='status')
-    pricing=next(r for r in records if r.id=='pricing')
-    assert '₪2,500–₪7,500' in pricing.content and '₪250–₪750' in pricing.content
-    assert '₪10,000–₪25,000' in pricing.content and '₪1,000–₪2,500' in pricing.content
-    assert 'API usage fees billed separately' in pricing.content
-    assert 'future stage' in pricing.content
-    assert 'public launch date' in status.content and 'Do not claim these exist' in status.content
+    html=(ROOT/'website/index.html').read_text()
+    anchors=set(re.findall(r'<section[^>]* id="([^"]+)"',html.split('</main>')[0]))
+    links=[]
+    for record in knowledge.records:
+        links.extend(re.findall(r'\]\(#([^)]*)\)',record.content))
+    assert set(links)==anchors
+    assert len(links)==len(knowledge.records)==7
+    assert not {'architecture','design','experience','status','answers'} & {r.id for r in knowledge.records}
+    pricing=next(r for r in knowledge.records if r.id=='pricing')
+    assert 'API usage billed separately' in pricing.content
+    assert '₪' not in pricing.content

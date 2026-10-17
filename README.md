@@ -56,7 +56,7 @@ npm run build
 
 ## Content and demo status
 
-The knowledge base covers Lexcia’s branding, purpose, target websites, customization offering, pricing, demo controls and implementation limits. Product positioning and pricing come from [Target Market, Problem Definition, Pricing](https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit), reviewed October 7, 2026. Early-customer and future standard pricing remain separate; API fees are billed separately. Launch dates, customers, guarantees and specific commercial integrations remain unestablished. Add reviewed product details to `knowledge/lexcia.json` as they become established.
+The knowledge base contains seven short records, one per landing-page section. Answers briefly explain the relevant box and offer a visible section link. Starter questions cover what Lexcia is, who it is for, customization, and pricing. Pricing is limited to a planned setup fee plus monthly subscription, separate API usage and discounted early-organization terms; no numerical price ranges are included. Its link points to the early-organizations box at `#contact`, which has no price list or booking link. The former technical, visual-design and demo-control knowledge has been removed from the active corpus.
 
 The Vercel deployment serves the Vite site from its CDN and runs the Python ASGI chatbot in a Vercel Function. `VERCEL_API_KEY` is only used by the local Vercel CLI; `OPENAI_API_KEY` is stored as a server-side Vercel secret for Production, Preview, and Development. `.env` files are excluded from deployments.
 
@@ -66,7 +66,7 @@ The design references Nouva by Kadir Calik (https://nouva-template.framer.websit
 
 Environment overrides use `LEXCIA_MODEL` and `LEXCIA_API_URL`; legacy `RABOTA_MODEL` and `RABOTA_API_URL` remain supported. Each page load clears former `lexcia:` and `rabota:` assistant storage keys, creates a new chat session, and restores default layout settings. The website writes no cookies or persistent browser state.
 
-Chat answers hide internal citation markers and show source links directly below the answer. Sources open the raw reviewed records at `/api/knowledge/<record-id>`. Saved website source-page links are mapped back to these raw records; no separate source pages are published.
+Chat answers hide internal citation markers and the separate Sources footer. Visible Markdown links point to landing-page sections. Following one closes the floating modal and focuses the destination heading; pinned chat stays open. Source metadata and `/api/knowledge/<record-id>` remain available for provenance.
 
 ## Rabota workspace organization
 

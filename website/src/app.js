@@ -106,11 +106,26 @@ function openPanel(){
   positionFloatingPanel();animatePanelEntrance();launcher.setAttribute('aria-expanded','true');
   requestAnimationFrame(()=>{resizeComposer();$('prompt').focus({preventScroll:true});});
 }
-function closePanel(){
+function closePanel(afterClose){
   if(!panel.open||closing)return;
   closing=true;panel.classList.remove('is-entering');panel.classList.add('is-exiting');launcher.setAttribute('aria-expanded','false');
-  closingTimer=setTimeout(()=>{panel.close();setPinned(false);panel.classList.remove('is-exiting');closing=false;launcher.focus({preventScroll:true});},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);
+  closingTimer=setTimeout(()=>{panel.close();setPinned(false);panel.classList.remove('is-exiting');closing=false;launcher.focus({preventScroll:true});if(typeof afterClose==='function')afterClose();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);
 }
+// Reveal the landing-page box linked from an answer, preserving the conversation.
+$('messages').addEventListener('click',event=>{
+  const link=event.target.closest('a[href^="#"]');
+  if(!link||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  const target=document.getElementById(link.getAttribute('href').slice(1));
+  if(!target||!target.matches('main>section[id]'))return;
+  event.preventDefault();
+  const jump=()=>{
+    history.replaceState(null,'',link.getAttribute('href'));
+    target.scrollIntoView({block:'start'});
+    const heading=target.querySelector('h1,h2,h3')||target;
+    heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});
+  };
+  if(pinned)jump();else closePanel(jump);
+});
 launcher.onclick=()=>panel.open?closePanel():openPanel();$('close').onclick=closePanel;
 document.querySelectorAll('[data-open-assistant]').forEach(button=>button.addEventListener('click',openPanel));
 panel.addEventListener('cancel',event=>{event.preventDefault();closePanel();});
