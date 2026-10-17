@@ -40,7 +40,7 @@ function DemoScheduling({turn}){
       <div className="demo-scheduler-row"><label htmlFor={`${id}-date`}>Preferred date<input id={`${id}-date`} name="date" type="date" min={localDateValue()} required value={draft.date} onChange={e=>update({date:e.target.value})}/></label><label htmlFor={`${id}-time`}>Time<input id={`${id}-time`} name="time" type="time" required value={draft.time} onChange={e=>update({time:e.target.value})}/></label></div>
       <p className="demo-timezone">Times in {timezone}. Availability is not checked.</p>
       <label htmlFor={`${id}-attendees`}>Attendees<select id={`${id}-attendees`} name="attendees" value={draft.attendees} onChange={e=>update({attendees:e.target.value})}>{['1 person','2 people','3 people','4+ people'].map(value=><option key={value}>{value}</option>)}</select></label>
-      <label htmlFor={`${id}-notes`}>What would you like to explore? <span>(optional)</span><textarea id={`${id}-notes`} name="notes" rows={2} maxLength={1000} value={draft.notes} onChange={e=>update({notes:e.target.value})}/></label>
+      <label htmlFor={`${id}-notes`}>Any other notes? <span>(optional)</span><textarea id={`${id}-notes`} name="notes" rows={2} maxLength={1000} value={draft.notes} onChange={e=>update({notes:e.target.value})}/></label>
       {error?<p role="alert" className="demo-scheduler-error">{error}</p>:null}
       <div className="demo-scheduler-actions"><button className="demo-primary" type="submit">Review demo</button><button type="button" onClick={discard}>Cancel</button></div>
     </form>}
