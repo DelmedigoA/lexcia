@@ -3,7 +3,7 @@ import {renderAnswer,isHebrewDominant} from './formatting.js';
 import {askLexcia} from './chat-client.js';
 import {makeLauncherDraggable} from './draggable-launcher.js';
 import {positionNearLauncher,heightNearLauncher} from './panel-position.js';
-import {addMessageActions,appendStoppedNotice} from './message-ui.js';
+import {appendStoppedNotice} from './message-ui.js';
 import {continuationQuestion,appendContinuation} from './conversation-state.js';
 import {mountWelcome,mountThinking} from './thread-welcome.jsx';
 import {mountDemoScheduling,clearSchedulingRoots} from './demo-scheduling.jsx';
@@ -179,7 +179,6 @@ function message(role,text=''){const node=document.createElement('article');node
 function bottom(){const thread=$('thread');thread.scrollTop=thread.scrollHeight;updateLatestButton();}
 function nearBottom(){const el=$('thread');return el.scrollHeight-el.scrollTop-el.clientHeight<90;}
 function updateLatestButton(){$('latest').hidden=!$('messages').children.length||$('thread').hidden||nearBottom();}
-function announceMessageAction(text){$('message-action-status').textContent=text;}
 $('latest').onclick=bottom;
 $('thread').addEventListener('scroll',updateLatestButton,{passive:true});
 new ResizeObserver(updateLatestButton).observe($('messages'));
@@ -193,7 +192,6 @@ new ResizeObserver(updateLatestButton).observe($('thread'));
 function finishTurnView(answer,thread,turn){
   if(turn.scheduling){const surface=document.createElement('div');answer.append(surface);mountDemoScheduling(surface,turn);}
   if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui);}
-  addMessageActions(answer,turn,{onFeedback:updateConversations,announce:announceMessageAction});
   if(turn.status==='stopped')appendStoppedNotice(answer,{
     canContinue:()=>thread.id===currentThreadId&&thread.turns.at(-1)===turn,
     onContinue:()=>{if(!busy&&thread.turns.at(-1)===turn)runTurn(thread,turn,answer,true);},
