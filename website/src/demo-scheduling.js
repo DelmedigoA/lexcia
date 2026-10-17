@@ -8,6 +8,20 @@ export function isDemoSchedulingQuestion(question){
 export function localDateValue(date=new Date()){
   return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
 }
+export function createDemoSlots(now=new Date(),random=Math.random){
+  const slots=[];
+  for(let offset=1;slots.length<6;offset++){
+    const day=new Date(now.getFullYear(),now.getMonth(),now.getDate()+offset);
+    if(day.getDay()===0||day.getDay()===6)continue;
+    const hours=[9,10,11,13,14,15,16];
+    for(let count=0;count<2;count++){
+      const hour=hours.splice(Math.floor(random()*hours.length),1)[0];
+      const time=`${String(hour).padStart(2,'0')}:${random()<0.5?'00':'30'}`;
+      slots.push({date:localDateValue(day),time});
+    }
+  }
+  return slots.sort((a,b)=>`${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
+}
 export function validateDemoDraft(draft,now=new Date()){
   if(!draft.name?.trim()||!draft.email?.trim())return 'Please enter your name and email.';
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(draft.email))return 'Please enter a valid email address.';

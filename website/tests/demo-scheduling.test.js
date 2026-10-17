@@ -1,6 +1,19 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {isDemoSchedulingQuestion,localDateValue,validateDemoDraft} from '../src/demo-scheduling.js';
+import {createDemoSlots,isDemoSchedulingQuestion,localDateValue,validateDemoDraft} from '../src/demo-scheduling.js';
+test('sample slots stay distinct, ordered and on future weekdays across a month boundary',()=>{
+  const now=new Date(2026,9,30,23,59);
+  const slots=createDemoSlots(now,()=>0.5);
+  assert.equal(slots.length,6);
+  assert.equal(new Set(slots.map(slot=>`${slot.date}T${slot.time}`)).size,6);
+  for(const slot of slots){
+    const date=new Date(`${slot.date}T${slot.time}`);
+    assert.ok(date>now);
+    assert.ok(date.getDay()>0&&date.getDay()<6);
+    assert.equal(validateDemoDraft({name:'Visitor',email:'visitor@example.com',...slot},now),'');
+  }
+  assert.deepEqual(slots,[...slots].sort((a,b)=>`${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`)));
+});
 test('explicit scheduling requests work without intercepting general product questions',()=>{
   for(const text of ['Schedule a demo','Can I book a demo?','I want to arrange a demonstration','אפשר לתאם דמו?'])assert.equal(isDemoSchedulingQuestion(text),true,text);
   for(const text of ['What is Lexcia?','How does pricing work?','Can I try the demo?',"Please don’t schedule a demo",'לא רוצה לתאם דמו'])assert.equal(isDemoSchedulingQuestion(text),false,text);
