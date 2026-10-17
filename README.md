@@ -66,7 +66,7 @@ The design references Nouva by Kadir Calik (https://nouva-template.framer.websit
 
 Environment overrides use `LEXCIA_MODEL` and `LEXCIA_API_URL`; legacy `RABOTA_MODEL` and `RABOTA_API_URL` remain supported. Each page load clears former `lexcia:` and `rabota:` assistant storage keys, creates a new chat session, and restores default layout settings. The website writes no cookies or persistent browser state.
 
-Chat answers hide internal citation markers and the separate Sources footer. Visible Markdown links point to landing-page sections and render as assistant-ui Sources-style outlined favicon chips, using the local Lexcia monogram with an initial fallback. Following one closes the floating modal and focuses the destination heading; pinned chat stays open. Source metadata and `/api/knowledge/<record-id>` remain available for provenance.
+Chat answers hide internal citation markers and the separate Sources footer. Visible Markdown links point to landing-page sections and render as assistant-ui Sources-style outlined favicon chips, using the local Lexcia monogram with an initial fallback. On desktop, following one pins the assistant to the right at 25% of the viewport, reflows the page alongside it, and focuses the destination heading. Mobile keeps the full-width floating layout and closes it before jumping. The Schedule a demo favicon action opens the local preview. Model scope lives in `knowledge/system.md`; `knowledge/instructions.md` requires an explicit click invitation and a useful next step toward demo scheduling. Both are loaded into the system context. Source metadata and `/api/knowledge/<record-id>` remain available for provenance.
 
 ## Rabota workspace organization
 

@@ -13,6 +13,6 @@ def main():
     if not os.getenv("OPENAI_API_KEY"): raise SystemExit(f"Set OPENAI_API_KEY in {ROOT / '.env'}")
     knowledge=Knowledge(ROOT/config["knowledge"])
     model=ChatOpenAI(model=os.getenv("LEXCIA_MODEL") or os.getenv("RABOTA_MODEL") or config["model"],reasoning_effort=config["reasoning_effort"],verbosity=config["verbosity"],use_responses_api=True,streaming=True,timeout=60,max_retries=1)
-    graph=build_agent(knowledge,model,(ROOT/config["prompt"]).read_text())
+    graph=build_agent(knowledge,model,(ROOT/config["prompt"]).read_text(),(ROOT/config["system_prompt"]).read_text())
     uvicorn.run(create_app(graph,knowledge),host=config["host"],port=config["port"])
 if __name__=="__main__":main()

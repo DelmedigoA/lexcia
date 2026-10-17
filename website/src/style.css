@@ -234,3 +234,15 @@ body.assistant-pinned .sec h2{font-size:clamp(32px,4.6cqw,64px)}
 @container(max-width:270px){.demo-scheduler-row{grid-template-columns:1fr;gap:0}.demo-event-summary{flex-wrap:wrap}.demo-event-tag{margin-inline-start:13px}}
 
 .demo-scheduler :is(input,select,textarea):focus-visible{outline:2px solid var(--slate);outline-offset:2px}
+
+@media(min-width:701px) and (max-width:1100px){
+  dialog.pinned .panel-header{gap:4px;padding-inline:8px}
+  dialog.pinned .panel-header h2{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:16px}
+  dialog.pinned .tools{gap:0;flex-shrink:0}
+  dialog.pinned .tools .icon-btn{width:24px;height:28px}
+  dialog.pinned .composer-area{padding-inline:8px}
+  dialog.pinned .thread{padding-inline:12px}
+}
+
+/* Finish sidebar reflow before scrolling to a section so its position stays correct. */
+body.assistant-pinned.navigating-section main{transition:none}

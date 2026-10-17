@@ -11,7 +11,7 @@ def test_sourced_stream_validation_and_session_isolation():
     async def scenario():
         knowledge=Knowledge(ROOT/'knowledge/lexcia.json')
         model=FakeListChatModel(responses=['Lexcia helps visitors find content. [[SOURCE id=overview]]'])
-        graph=build_agent(knowledge,model,(ROOT/'knowledge/instructions.md').read_text())
+        graph=build_agent(knowledge,model,(ROOT/'knowledge/instructions.md').read_text(),(ROOT/'knowledge/system.md').read_text())
         app=create_app(graph,knowledge)
         histories=[]
         class RecordingGraph:
@@ -50,3 +50,24 @@ def test_landing_knowledge_links_resolve_and_old_corpus_is_removed():
     pricing=next(r for r in knowledge.records if r.id=='pricing')
     assert 'API usage billed separately' in pricing.content
     assert '₪' not in pricing.content
+
+
+def test_scope_and_progression_instructions_reach_model_with_reviewed_knowledge():
+    captured=[]
+    class RecordingModel:
+        async def ainvoke(self,messages):
+            from langchain_core.messages import AIMessage
+            captured.extend(messages)
+            return AIMessage(content='Answer')
+    async def scenario():
+        knowledge=Knowledge(ROOT/'knowledge/lexcia.json')
+        system=(ROOT/'knowledge/system.md').read_text()
+        instructions=(ROOT/'knowledge/instructions.md').read_text()
+        graph=build_agent(knowledge,RecordingModel(),instructions,system)
+        await graph.ainvoke({'question':'What is Lexcia?','history':[]})
+        assert captured[0].type=='system'
+        assert system in captured[0].content
+        assert instructions in captured[0].content
+        assert 'Reviewed knowledge records:' in captured[0].content
+        assert captured[-1].content=='What is Lexcia?'
+    asyncio.run(scenario())

@@ -3,7 +3,7 @@ const markdown=new MarkdownIt({html:false,linkify:false,breaks:true});
 // Favicon source-chip anatomy adapted from assistant-ui's Sources element:
 // packages/ui/src/components/react/assistant-ui/elements/sources.aui.tsx
 // Copyright (c) 2026 AgentbaseAI Inc. MIT; see public/licenses/assistant-ui.txt.
-const sectionLinks=new Set(['#home','#about','#offer','#how','#for','#demo','#contact']);
+const sectionLinks=new Set(['#home','#about','#offer','#how','#for','#demo','#contact','#schedule-demo']);
 markdown.renderer.rules.link_open=(tokens,index,options,env,renderer)=>{
   const token=tokens[index];
   if(!sectionLinks.has(token.attrGet('href')))return renderer.renderToken(tokens,index,options);

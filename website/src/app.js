@@ -8,6 +8,7 @@ import {continuationQuestion,appendContinuation} from './conversation-state.js';
 import {mountWelcome,mountThinking} from './thread-welcome.jsx';
 import {mountDemoScheduling,clearSchedulingRoots} from './demo-scheduling.jsx';
 import {isDemoSchedulingQuestion} from './demo-scheduling.js';
+import {clampSidebarWidth,defaultSidebarRatio} from './sidebar-layout.js';
 const $=id=>document.getElementById(id);
 const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('assistant-divider');
 makeLauncherDraggable(launcher);
@@ -18,7 +19,7 @@ for(const prefix of ['lexcia:','rabota:'])for(const name of ['assistant-width','
   try{localStorage.removeItem(prefix+name);}catch{}
 }
 let pinned=false,closing=false;
-let floatingSize={width:420,height:620},sidebarWidth=420;
+let floatingSize={width:420,height:620},sidebarRatio=defaultSidebarRatio;
 let currentThreadId=crypto.randomUUID();
 let conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
 let renderedThreadId=null;
@@ -44,15 +45,16 @@ function updateConversations(){conversations=conversations.slice(0,20);}
 function floatSize(){return floatingSize;}
 function setFloatSize(width,height,{remember=true}={}){const size={width:Math.round(Math.max(340,Math.min(window.innerWidth-24,width))),height:Math.round(Math.max(360,Math.min(window.innerHeight-108,height)))};document.documentElement.style.setProperty('--floating-width',`${size.width}px`);document.documentElement.style.setProperty('--floating-height',`${size.height}px`);if(remember)floatingSize=size;}
 setFloatSize(floatSize().width,floatSize().height,{remember:false});
-function clampPinnedWidth(width){return Math.round(Math.max(360,Math.min(720,document.documentElement.clientWidth-400,width)));}
-function pinnedWidth(){return clampPinnedWidth(sidebarWidth);}
+function clampPinnedWidth(width){return clampSidebarWidth(width,document.documentElement.clientWidth);}
+function pinnedWidth(){return clampPinnedWidth(document.documentElement.clientWidth*sidebarRatio);}
 function setPinnedWidth(width){
   const next=clampPinnedWidth(width);
   document.documentElement.style.setProperty('--assistant-width',`${next}px`);
   document.documentElement.style.setProperty('--assistant-divider-right',`${next-4}px`);
   divider.setAttribute('aria-valuenow',String(next));
-  divider.setAttribute('aria-valuemax',String(clampPinnedWidth(720)));
-  sidebarWidth=next;
+  divider.setAttribute('aria-valuemin',String(clampPinnedWidth(0)));
+  divider.setAttribute('aria-valuemax',String(clampPinnedWidth(Infinity)));
+  sidebarRatio=next/document.documentElement.clientWidth;
 }
 function showPanelDialog(){
   if(pinned)panel.show();else panel.showModal();
@@ -121,6 +123,7 @@ $('messages').addEventListener('error',event=>{
 $('messages').addEventListener('click',event=>{
   const link=event.target.closest('a[href^="#"]');
   if(!link||event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  if(link.getAttribute('href')==='#schedule-demo'){event.preventDefault();submitQuestion('Schedule a demo');return;}
   const target=document.getElementById(link.getAttribute('href').slice(1));
   if(!target||!target.matches('main>section[id]'))return;
   event.preventDefault();
@@ -130,7 +133,10 @@ $('messages').addEventListener('click',event=>{
     const heading=target.querySelector('h1,h2,h3')||target;
     heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});
   };
-  if(pinned)jump();else closePanel(jump);
+  if(matchMedia('(max-width: 700px)').matches){closePanel(jump);return;}
+  document.body.classList.add('navigating-section');
+  sidebarRatio=defaultSidebarRatio;setPinned(true);setPinnedWidth(pinnedWidth());
+  requestAnimationFrame(()=>{jump();requestAnimationFrame(()=>document.body.classList.remove('navigating-section'));});
 });
 launcher.onclick=()=>panel.open?closePanel():openPanel();$('close').onclick=closePanel;
 document.querySelectorAll('[data-open-assistant]').forEach(button=>button.addEventListener('click',openPanel));
@@ -151,8 +157,8 @@ divider.addEventListener('keydown',event=>{
   if(!pinned||!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
   event.preventDefault();
   const current=pinnedWidth();
-  if(event.key==='Home')setPinnedWidth(360);
-  else if(event.key==='End')setPinnedWidth(720);
+  if(event.key==='Home')setPinnedWidth(0);
+  else if(event.key==='End')setPinnedWidth(Infinity);
   else setPinnedWidth(current+(event.key==='ArrowLeft'?24:-24));
 });
 addEventListener('resize',()=>{if(pinned){if(matchMedia('(max-width: 700px)').matches)setPinned(false);else setPinnedWidth(pinnedWidth());}});
@@ -232,7 +238,7 @@ function submitQuestion(question){
   const turn={question,answer:'',items:[],ui:null,createdAt:Date.now(),status:'running'};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();updateConversations();
   message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');
   if(isDemoSchedulingQuestion(question)){
-    turn.answer='Let’s put together your demo preferences.';turn.status='complete';turn.scheduling={step:'form',name:'',email:'',website:'',date:'',time:'',attendees:'1 person',notes:''};
+    turn.answer='Choose your preferred details below, then click **Review demo**.';turn.status='complete';turn.scheduling={step:'form',name:'',email:'',website:'',date:'',time:'',attendees:'1 person',notes:''};
     answer.innerHTML=renderAnswer(turn.answer);finishTurnView(answer,thread,turn);syncWelcome();$('send').disabled=true;requestAnimationFrame(()=>{answer.scrollIntoView({block:'start'});answer.querySelector('h3')?.focus({preventScroll:true});});return;
   }
   return runTurn(thread,turn,answer);

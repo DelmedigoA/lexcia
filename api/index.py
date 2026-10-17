@@ -33,7 +33,7 @@ model = ChatOpenAI(
     max_retries=1,
 )
 starlette_api = create_app(
-    build_agent(knowledge, model, (ROOT / config["prompt"]).read_text()), knowledge
+    build_agent(knowledge, model, (ROOT / config["prompt"]).read_text(), (ROOT / config["system_prompt"]).read_text()), knowledge
 )
 
 

@@ -5,3 +5,4 @@ host: 127.0.0.1
 port: 8767
 knowledge: knowledge/lexcia.json
 prompt: knowledge/instructions.md
+system_prompt: knowledge/system.md

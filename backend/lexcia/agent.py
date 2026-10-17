@@ -8,12 +8,12 @@ class State(TypedDict, total=False):
     records: list
     answer: str
 
-def build_agent(knowledge, model, instructions):
+def build_agent(knowledge, model, instructions, system=""):
     def retrieve(state):
         return {"records": knowledge.search(state["question"])}
     async def answer(state):
         context = json.dumps([r.model_dump() for r in state["records"]], ensure_ascii=False)
-        messages = [SystemMessage(content=instructions + "\n\nReviewed knowledge records:\n" + context)]
+        messages = [SystemMessage(content=system + "\n\nConversation instructions:\n" + instructions + "\n\nReviewed knowledge records:\n" + context)]
         for turn in state.get("history", [])[-10:]:
             messages.extend([HumanMessage(content=turn["question"]), AIMessage(content=turn["answer"])])
         result = await model.ainvoke([*messages, HumanMessage(content=state["question"])])

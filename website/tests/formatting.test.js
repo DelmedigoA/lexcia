@@ -34,4 +34,5 @@ test('landing section links use favicon source chips and retain same-page anchor
   assert.doesNotMatch(html,/target="_blank"|duckduckgo/);
   const ordinary=renderAnswer('[Other](#unknown) [External](https://example.com)');
   assert.doesNotMatch(ordinary,/data-slot="source"|<img/);
+  assert.match(renderAnswer('[Schedule a demo](#schedule-demo)'),/href="#schedule-demo" data-slot="source"/);
 });
