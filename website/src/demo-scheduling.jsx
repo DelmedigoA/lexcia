@@ -40,7 +40,7 @@ function DemoScheduling({turn}){
       <fieldset className="demo-slots"><legend>Choose a time</legend>{slots.map(slot=><label key={`${slot.date}T${slot.time}`} className="demo-slot"><input type="radio" name={`${id}-slot`} required checked={draft.date===slot.date&&draft.time===slot.time} onChange={()=>update(slot)}/><span>{new Intl.DateTimeFormat('en',{weekday:'short',month:'short',day:'numeric'}).format(new Date(`${slot.date}T${slot.time}`))}<b>{slot.time}</b></span></label>)}</fieldset>
       <p className="demo-timezone">Sample availability · Times in {timezone}.</p>
       <label htmlFor={`${id}-attendees`}>Attendees<select id={`${id}-attendees`} name="attendees" value={draft.attendees} onChange={e=>update({attendees:e.target.value})}>{['1 person','2 people','3 people','4+ people'].map(value=><option key={value}>{value}</option>)}</select></label>
-      <label htmlFor={`${id}-notes`}>Any other notes? <span>(optional)</span><textarea id={`${id}-notes`} name="notes" rows={2} maxLength={1000} value={draft.notes} onChange={e=>update({notes:e.target.value})}/></label>
+      <label htmlFor={`${id}-notes`}>Anything else you want us to know? <span>(optional)</span><textarea id={`${id}-notes`} name="notes" rows={2} maxLength={1000} value={draft.notes} onChange={e=>update({notes:e.target.value})}/></label>
       {error?<p role="alert" className="demo-scheduler-error">{error}</p>:null}
       <div className="demo-scheduler-actions"><button className="demo-primary" type="submit">Review demo</button><button type="button" onClick={discard}>Cancel</button></div>
     </form>}
