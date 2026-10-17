@@ -201,3 +201,36 @@ body.assistant-pinned .sec h2{font-size:clamp(32px,4.6cqw,64px)}
 .message--assistant [data-slot="source-icon-fallback"]{display:none;width:12px;height:12px;flex-shrink:0;align-items:center;justify-content:center;border-radius:2px;background:color-mix(in srgb,var(--ink) 7%,transparent);font-size:10px}
 .message--assistant [data-slot="source-icon"][hidden]+[data-slot="source-icon-fallback"]{display:inline-flex}
 .message--assistant [data-slot="source-title"]{max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Table reservation form + Create event summary, adapted from assistant-ui Elements. */
+.demo-scheduler{container-type:inline-size;margin:14px 0;border:1px solid var(--rule);border-radius:12px;padding:16px;background:color-mix(in srgb,var(--paper) 65%,white);font:13px/1.5 var(--sans);color:var(--ink)}
+.demo-scheduler-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.message--assistant .demo-scheduler h3{margin:0;font:600 15px/1.4 var(--sans)}
+.demo-preview-badge,.demo-event-tag{flex-shrink:0;padding:2px 6px;border-radius:5px;background:color-mix(in srgb,var(--ochre) 12%,transparent);color:var(--ink-2);font-size:10px}
+.message--assistant .demo-scheduler-note{margin:8px 0 16px;color:var(--ink-3);font-size:12px}
+.demo-scheduler form{padding:0;border:0;border-radius:0;background:none}
+.demo-scheduler label{display:flex;flex-direction:column;gap:5px;min-width:0;margin-bottom:12px;font-size:12px;font-weight:500}
+.demo-scheduler label>span{color:var(--ink-3);font-weight:400}
+.demo-scheduler input,.demo-scheduler select,.demo-scheduler textarea{width:100%;min-width:0;min-height:36px;padding:7px 9px;border:1px solid var(--rule);border-radius:6px;outline-offset:2px;background:transparent;color:var(--ink);font:13px/1.5 var(--sans);color-scheme:light}
+.demo-scheduler textarea{min-height:64px;resize:vertical}
+.demo-scheduler-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:10px}
+.message--assistant .demo-timezone{margin:-4px 0 12px;color:var(--ink-3);font-size:11px}
+.demo-scheduler-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.demo-scheduler button{padding:7px 12px;border:1px solid var(--rule);border-radius:7px;background:transparent;color:var(--ink-2);font:500 12px/1.5 var(--sans)}
+.demo-scheduler button:hover{background:color-mix(in srgb,var(--ink) 5%,transparent);color:var(--ink)}
+.demo-scheduler button.demo-primary{border-color:var(--ink);background:var(--ink);color:var(--paper)}
+.demo-scheduler button.demo-primary:hover{border-color:var(--slate);background:var(--slate)}
+.message--assistant .demo-scheduler-error{color:#9b3440;font-size:12px}
+.demo-event-date{display:flex;align-items:center;gap:12px;padding:4px 0 16px;border-bottom:1px solid var(--rule)}
+.demo-event-date>strong{font-size:36px;line-height:1;font-weight:600;letter-spacing:-.04em}
+.demo-event-date>div,.demo-event-summary>div{display:flex;flex-direction:column;gap:2px}
+.demo-event-date span,.demo-event-summary div>span{color:var(--ink-3);font-size:11px}
+.demo-event-summary{display:flex;align-items:center;gap:10px;padding:16px 0}
+.demo-event-summary>div{flex:1}
+.demo-event-accent{height:32px;width:3px;flex-shrink:0;border-radius:9px;background:var(--ochre)}
+.message .demo-detail-table{display:table;width:100%;margin:0;font-size:12px}
+.message .demo-detail-table th,.message .demo-detail-table td{padding:7px 0;border-bottom:0;vertical-align:top;overflow-wrap:anywhere}
+.message .demo-detail-table th{width:32%;padding-inline-end:12px;color:var(--ink-3);font-weight:400}
+@container(max-width:270px){.demo-scheduler-row{grid-template-columns:1fr;gap:0}.demo-event-summary{flex-wrap:wrap}.demo-event-tag{margin-inline-start:13px}}
+
+.demo-scheduler :is(input,select,textarea):focus-visible{outline:2px solid var(--slate);outline-offset:2px}

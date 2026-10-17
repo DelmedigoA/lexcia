@@ -6,6 +6,8 @@ import {positionNearLauncher,heightNearLauncher} from './panel-position.js';
 import {addMessageActions,appendStoppedNotice} from './message-ui.js';
 import {continuationQuestion,appendContinuation} from './conversation-state.js';
 import {mountWelcome,mountThinking} from './thread-welcome.jsx';
+import {mountDemoScheduling,clearSchedulingRoots} from './demo-scheduling.jsx';
+import {isDemoSchedulingQuestion} from './demo-scheduling.js';
 const $=id=>document.getElementById(id);
 const panel=$('research-panel'),launcher=$('launcher'),pin=$('pin'),divider=$('assistant-divider');
 makeLauncherDraggable(launcher);
@@ -76,7 +78,7 @@ function setPinned(value){
 function renderConversation(thread){
   syncWelcome();
   if(thread&&thread.id===renderedThreadId)return;
-  clearAnswerRoots();$('messages').replaceChildren();items.clear();
+  clearAnswerRoots();clearSchedulingRoots();$('messages').replaceChildren();items.clear();
   for(const turn of thread?.turns||[]){
     message('user',turn.question||'');const answer=message('assistant');
     answer.dir=isHebrewDominant(turn.answer||'')?'rtl':'ltr';answer.innerHTML=renderAnswer(turn.answer||'',turn.items||[]);
@@ -132,6 +134,7 @@ $('messages').addEventListener('click',event=>{
 });
 launcher.onclick=()=>panel.open?closePanel():openPanel();$('close').onclick=closePanel;
 document.querySelectorAll('[data-open-assistant]').forEach(button=>button.addEventListener('click',openPanel));
+document.querySelectorAll('[data-schedule-demo]').forEach(button=>button.addEventListener('click',event=>{event.preventDefault();openPanel();submitQuestion('Schedule a demo');}));
 panel.addEventListener('cancel',event=>{event.preventDefault();closePanel();});
 panel.addEventListener('click',event=>{if(!pinned&&event.target===panel)closePanel();});
 panel.addEventListener('keydown',event=>{if(pinned&&event.key==='Escape'&&!event.defaultPrevented){event.preventDefault();closePanel();}});
@@ -180,6 +183,7 @@ $('thread').addEventListener('scroll',updateLatestButton,{passive:true});
 new ResizeObserver(updateLatestButton).observe($('messages'));
 new ResizeObserver(updateLatestButton).observe($('thread'));
 function finishTurnView(answer,thread,turn){
+  if(turn.scheduling){const surface=document.createElement('div');answer.append(surface);mountDemoScheduling(surface,turn);}
   if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui);}
   addMessageActions(answer,turn,{onFeedback:updateConversations,announce:announceMessageAction});
   if(turn.status==='stopped')appendStoppedNotice(answer,{
@@ -226,7 +230,12 @@ function submitQuestion(question){
   question=question.trim();if(!question||busy)return;
   const thread=currentConversation();
   const turn={question,answer:'',items:[],ui:null,createdAt:Date.now(),status:'running'};thread.turns.push(turn);if(thread.title==='New inquiry')thread.title=question.length>52?`${question.slice(0,49)}…`:question;thread.updatedAt=Date.now();updateConversations();
-  message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');return runTurn(thread,turn,answer);
+  message('user',question);$('prompt').value='';resizeComposer();const answer=message('assistant');
+  if(isDemoSchedulingQuestion(question)){
+    turn.answer='Let’s put together your demo preferences.';turn.status='complete';turn.scheduling={step:'form',name:'',email:'',website:'',date:'',time:'',attendees:'1 person',notes:''};
+    answer.innerHTML=renderAnswer(turn.answer);finishTurnView(answer,thread,turn);syncWelcome();$('send').disabled=true;requestAnimationFrame(()=>{answer.scrollIntoView({block:'start'});answer.querySelector('h3')?.focus({preventScroll:true});});return;
+  }
+  return runTurn(thread,turn,answer);
 }
 $('composer').onsubmit=event=>{event.preventDefault();submitQuestion($('prompt').value);};
 async function startNewConversation(){if(busy)return;const thread={id:crypto.randomUUID(),title:'New inquiry',updatedAt:Date.now(),turns:[]};conversations.unshift(thread);currentThreadId=thread.id;updateConversations();setConversationView(thread);$('prompt').value='';resizeComposer();$('send').disabled=true;$('status').textContent='';$('prompt').focus();}

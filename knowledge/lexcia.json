@@ -38,7 +38,7 @@
   {
     "id": "pricing",
     "title": "How does pricing work?",
-    "content": "The planned model is a one-time setup fee plus a monthly subscription, with API usage billed separately. Lexcia is working with an initial group of organizations on discounted terms. The landing page does not list prices or provide a booking link.\n\n[Early organizations and demo](#contact)",
+    "content": "The planned model is a one-time setup fee plus a monthly subscription, with API usage billed separately. Lexcia is working with an initial group of organizations on discounted terms. The landing page does not list prices. Schedule a demo opens a local scheduling preview for preferred details and an event-summary draft; it does not book a meeting or send a request.\n\n[Early organizations and demo](#contact)",
     "provenance": "Lexcia landing page, website/index.html, section #contact; reviewed October 18, 2026. Setup, subscription and separate API fees: Target Market, Problem Definition, Pricing, reviewed October 7, 2026: https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit"
   }
 ]
