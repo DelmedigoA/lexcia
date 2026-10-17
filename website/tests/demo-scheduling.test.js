@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {isDemoSchedulingQuestion,localDateValue,validateDemoDraft} from '../src/demo-scheduling.js';
 test('explicit scheduling requests work without intercepting general product questions',()=>{
   for(const text of ['Schedule a demo','Can I book a demo?','I want to arrange a demonstration','אפשר לתאם דמו?'])assert.equal(isDemoSchedulingQuestion(text),true,text);
-  for(const text of ['What is Lexcia?','How does pricing work?','Can I try the demo?'])assert.equal(isDemoSchedulingQuestion(text),false,text);
+  for(const text of ['What is Lexcia?','How does pricing work?','Can I try the demo?',"Please don’t schedule a demo",'לא רוצה לתאם דמו'])assert.equal(isDemoSchedulingQuestion(text),false,text);
 });
 test('demo preferences reject past and impossible dates and accept a future local time',()=>{
   const now=new Date(2026,9,18,10,0);

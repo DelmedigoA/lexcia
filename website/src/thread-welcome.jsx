@@ -3,6 +3,9 @@
 // Copyright (c) 2026 AgentbaseAI Inc. MIT; see public/licenses/assistant-ui.txt.
 import React, {Fragment} from 'react';
 import {createRoot} from 'react-dom/client';
+import {createPortal} from 'react-dom';
+import {ThreadFollowupSuggestions} from './followup-suggestions.jsx';
+import {followupSuggestions} from './followup-suggestions.js';
 import {AssistantRuntimeProvider, AuiIf, ThreadPrimitive, useExternalStoreRuntime} from '@assistant-ui/react';
 
 const GREETING_WORDS=['Welcome','to','Lexcia!'];
@@ -32,26 +35,27 @@ function AssistantWelcome(){
   </div>;
 }
 
-function WelcomeThread({turns,isRunning,isDisabled,onSend}){
+function WelcomeThread({turns,isRunning,isDisabled,onSend,followupContainer}){
   // Keep the existing transcript/SSE controller as the source of truth while
   // the welcome screen uses assistant-ui's real thread state and send action.
   const messages=turns.flatMap((turn,index)=>[
     {id:`${index}-user`,role:'user',content:[{type:'text',text:turn.question||''}]},
     ...(turn.answer?[{id:`${index}-assistant`,role:'assistant',content:[{type:'text',text:turn.answer}]}]:[]),
   ]);
-  const runtime=useExternalStoreRuntime({messages,convertMessage,isRunning,isDisabled,
+  const runtime=useExternalStoreRuntime({messages,convertMessage,isRunning,isDisabled,suggestions:followupSuggestions(turns),
     onNew:async message=>onSend(message.content.filter(part=>part.type==='text').map(part=>part.text).join('\n')),
   });
   return <AssistantRuntimeProvider runtime={runtime}>
     <ThreadPrimitive.Root className="welcome-thread" data-slot="assistant-ui-welcome-thread">
       <AuiIf condition={s=>s.thread.isEmpty}><AssistantWelcome /></AuiIf>
+      {createPortal(<ThreadFollowupSuggestions key={turns.length}/>,followupContainer)}
     </ThreadPrimitive.Root>
   </AssistantRuntimeProvider>;
 }
 
-export function mountWelcome(container,{onSend}){
+export function mountWelcome(container,{onSend,followupContainer}){
   const root=createRoot(container);
-  return {update:({threadId,...state})=>root.render(<WelcomeThread key={threadId} {...state} onSend={onSend} />)};
+  return {update:({threadId,...state})=>root.render(<WelcomeThread key={threadId} {...state} onSend={onSend} followupContainer={followupContainer} />)};
 }
 
 // Adapted from the website's TraceLine and ShimmerLabel (same MIT notice above):

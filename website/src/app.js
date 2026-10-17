@@ -24,7 +24,7 @@ let currentThreadId=crypto.randomUUID();
 let conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
 let renderedThreadId=null;
 let closingTimer,autoOpenTimer,entranceTimer;
-const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question)});
+const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question),followupContainer:$('followup-suggestions')});
 function syncWelcome(){const thread=currentConversation();welcomeThread.update({threadId:thread.id,turns:thread.turns,isRunning:busy,isDisabled:false});}
 function positionFloatingPanel(){
   if(!panel.open||pinned)return;
@@ -183,6 +183,12 @@ function announceMessageAction(text){$('message-action-status').textContent=text
 $('latest').onclick=bottom;
 $('thread').addEventListener('scroll',updateLatestButton,{passive:true});
 new ResizeObserver(updateLatestButton).observe($('messages'));
+let followupHeight=0;
+new ResizeObserver(([entry])=>{
+  const growth=Math.max(0,entry.contentRect.height-followupHeight);followupHeight=entry.contentRect.height;
+  const thread=$('thread');
+  if(thread.scrollHeight-thread.scrollTop-thread.clientHeight<90+growth)bottom();else updateLatestButton();
+}).observe($('followup-suggestions'));
 new ResizeObserver(updateLatestButton).observe($('thread'));
 function finishTurnView(answer,thread,turn){
   if(turn.scheduling){const surface=document.createElement('div');answer.append(surface);mountDemoScheduling(surface,turn);}

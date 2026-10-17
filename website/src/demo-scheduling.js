@@ -1,4 +1,8 @@
+export function declinesDemo(question){
+  return /\b(?:no thanks|no demo|don[’']?t (?:want|schedule|book)|not (?:ready|interested)|without (?:a )?demo)\b|(?:לא רוצה|לא מעוניי[נ]?ן|לא עכשיו|בלי דמו)/iu.test(question);
+}
 export function isDemoSchedulingQuestion(question){
+  if(declinesDemo(question))return false;
   return /\b(?:schedule|book|arrange|reserve|request)\b.{0,35}\b(?:demo|demonstration)\b|\b(?:demo|demonstration)\b.{0,25}\b(?:booking|appointment)\b|(?:לקבוע|לתאם|להזמין).{0,25}(?:דמו|הדגמה)/iu.test(question);
 }
 export function localDateValue(date=new Date()){

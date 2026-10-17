@@ -242,3 +242,9 @@ body.assistant-pinned .sec h2{font-size:clamp(32px,4.6cqw,64px)}
 
 /* Finish sidebar reflow before scrolling to a section so its position stays correct. */
 body.assistant-pinned.navigating-section main{transition:none}
+
+/* assistant-ui follow-up suggestions, using runtime prompt buttons in paper pills. */
+.followup-suggestions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:0 1px 12px}
+.followup-suggestion{max-width:100%;padding:7px 12px;border:1px solid var(--rule);border-radius:999px;background:transparent;color:var(--ink-2);font:500 12px/1.5 var(--sans);text-align:start;overflow-wrap:anywhere;transition:background .15s,border-color .15s,color .15s;animation:followup-enter .2s ease both}
+.followup-suggestion:hover{border-color:color-mix(in srgb,var(--ink) 30%,transparent);background:color-mix(in srgb,var(--ink) 5%,transparent);color:var(--ink)}
+@keyframes followup-enter{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
