@@ -177,6 +177,20 @@ $('prompt').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.i
 function message(role,text=''){const node=document.createElement('article');node.className=`message message--${role}`;node.dir='auto';node.setAttribute('aria-label',role==='user'?'You':'Lexcia');node.textContent=text;$('messages').append(node);$('welcome').hidden=true;return node;}
 function bottom(){const thread=$('thread');thread.scrollTop=thread.scrollHeight;updateLatestButton();}
 function nearBottom(){const el=$('thread');return el.scrollHeight-el.scrollTop-el.clientHeight<90;}
+const anchoredReplies=new WeakSet();
+function scrollReply(answer,follow){
+  if(anchoredReplies.has(answer)||!follow){updateLatestButton();return;}
+  const question=answer.previousElementSibling,viewport=$('thread');
+  const style=getComputedStyle(viewport);
+  const available=viewport.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom);
+  const height=question?answer.getBoundingClientRect().bottom-question.getBoundingClientRect().top:0;
+  if(question&&height>available){
+    anchoredReplies.add(answer);
+    viewport.scrollTop+=question.getBoundingClientRect().top-viewport.getBoundingClientRect().top-parseFloat(style.paddingTop);
+    updateLatestButton();
+  }else bottom();
+}
+
 function updateLatestButton(){$('latest').hidden=!$('messages').children.length||$('thread').hidden||nearBottom();}
 $('latest').onclick=bottom;
 $('thread').addEventListener('scroll',updateLatestButton,{passive:true});
@@ -185,7 +199,8 @@ let followupHeight=0;
 new ResizeObserver(([entry])=>{
   const growth=Math.max(0,entry.contentRect.height-followupHeight);followupHeight=entry.contentRect.height;
   const thread=$('thread');
-  if(thread.scrollHeight-thread.scrollTop-thread.clientHeight<90+growth)bottom();else updateLatestButton();
+  const answer=$('messages').lastElementChild;
+  if(answer)scrollReply(answer,thread.scrollHeight-thread.scrollTop-thread.clientHeight<90+growth);else updateLatestButton();
 }).observe($('followup-suggestions'));
 new ResizeObserver(updateLatestButton).observe($('thread'));
 function finishTurnView(answer,thread,turn){
@@ -195,7 +210,7 @@ function finishTurnView(answer,thread,turn){
     return;
   }
   if(turn.scheduling){const surface=document.createElement('div');answer.append(surface);mountDemoScheduling(surface,turn);}
-  if(turn.ui){const follow=nearBottom();const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui,{turn,onRendered:()=>{if(follow)bottom();else updateLatestButton();}});}
+  if(turn.ui){const follow=nearBottom();const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui,{turn,onRendered:()=>{scrollReply(answer,follow);}});}
   if(turn.status==='stopped')appendStoppedNotice(answer,{
     canContinue:()=>thread.id===currentThreadId&&thread.turns.at(-1)===turn,
     onContinue:()=>{if(!busy&&thread.turns.at(-1)===turn)runTurn(thread,turn,answer,true);},
@@ -214,7 +229,7 @@ async function runTurn(thread,turn,answer,resume=false){
   answer.innerHTML=renderAnswer(base);const pending=document.createElement('div');answer.append(pending);const stopThinking=mountThinking(pending,resume?'continuing…':'thinking…');
   let text='',readItems=resume?[...(turn.items||[])]:[],finalReceived=false;
   const fullText=()=>appendContinuation(base,text);
-  const update=()=>{stopThinking();const follow=nearBottom();answer.dir=isHebrewDominant(fullText())?'rtl':'ltr';answer.innerHTML=renderAnswer(fullText(),readItems);if(follow)bottom();else updateLatestButton();};
+  const update=()=>{stopThinking();const follow=nearBottom();answer.dir=isHebrewDominant(fullText())?'rtl':'ltr';answer.innerHTML=renderAnswer(fullText(),readItems);scrollReply(answer,follow);};
   bottom();
   try{
     await askLexcia(requestQuestion,event=>{
@@ -225,7 +240,7 @@ async function runTurn(thread,turn,answer,resume=false){
         finalReceived=true;const follow=nearBottom();
         text=event.data.answer||text;const finalItems=event.data.items||readItems;readItems=resume?[...new Map([...(turn.items||[]),...finalItems].map(item=>[item.item_id||item.url,item])).values()]:finalItems;for(const item of readItems)items.set(item.item_id,item);update();
         turn.answer=fullText();turn.items=readItems;turn.suggestions=event.data.suggestions||[];turn.suggestionsStreaming=false;turn.guardrail=event.data.guardrail||null;turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();updateConversations();finishTurnView(answer,thread,turn);
-        if(follow)bottom();else updateLatestButton();
+        scrollReply(answer,follow);
       }
     },controller.signal,currentThreadId);
   }catch(error){
@@ -235,7 +250,7 @@ async function runTurn(thread,turn,answer,resume=false){
       if(!stopped)turn.error=error.message;
       thread.updatedAt=Date.now();updateConversations();update();finishTurnView(answer,thread,turn);
     }
-  }finally{stopThinking();answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus();updateLatestButton();}
+  }finally{stopThinking();answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus({preventScroll:true});updateLatestButton();}
 }
 function submitQuestion(question){
   question=question.trim();if(!question||busy)return;
