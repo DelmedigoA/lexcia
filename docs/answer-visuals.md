@@ -10,7 +10,7 @@ was added. An invalid/missing footer keeps the prose without a graphic.
 | Choice | Visitor question | Renderer |
 | --- | --- | --- |
 | `integration_diagram` | How easy is integration? | Drawn process with zoom, reset and full-screen view |
-| `integration_flow` | What are the onboarding steps? | Branches for knowledge and interface preparation, joining at testing |
+| `integration_flow` | What are the onboarding steps? | Mapping, source connections and UI/brand/name work, testing, embedding and readiness |
 | `pricing_table` | What does Lexcia cost? | Sortable table; cards and sorting selector in narrow panels |
 | `api_cost_chart` | What are the additional API costs? | Two estimate series, style controls, replay and exact values |
 | `contact_form` | I want to contact/email the Lexcia team | Compact Email/Subject/Content form with a fictional Send button |
@@ -81,3 +81,16 @@ chat and there is no mail-provider integration.
 Typed fields are retained in page memory only and never included in answer-model
 messages. No follow-up suggestions are shown on the contact-form turn. Retain the
 MIT notice for the original assistant-ui form styling.
+
+## Integration wording and welcome pinning
+
+Asaf revised the integration story on October 18: the diagram is titled
+“Bringing Lexcia to your website” and shows mapping/connections, building the
+UI around customer needs and branding (including choosing a name), embedding
+the snippet, and “You're ready to go.” Testing/refinement belongs within
+preparation. The detailed graph ends in readiness after embedding. Knowledge
+records and model instructions use this same sequence.
+
+The first welcome suggestion pins the chat on desktop through its click callback
+before submission. Other welcome choices keep their existing behavior. Mobile
+retains its floating layout.

@@ -18,7 +18,7 @@ const SUGGESTIONS=[
   ['Schedule a demo','Schedule a demo'],
 ];
 
-function AssistantWelcome(){
+function AssistantWelcome({onFirstSuggestion}){
   return <div className="thread-welcome">
     <div className="thread-welcome-greeting">
       <h3>{GREETING_WORDS.map((word,index)=><Fragment key={word}>
@@ -29,13 +29,14 @@ function AssistantWelcome(){
     <nav className="welcome-suggestions" aria-label="Suggested questions">
       {SUGGESTIONS.map(([prompt,label],index)=><ThreadPrimitive.Suggestion
         key={prompt} prompt={prompt} send className="welcome-rise"
+        onClick={index===0?onFirstSuggestion:undefined}
         style={{animationDelay:`${660+index*60}ms`}}
       ><span className="welcome-arrow" aria-hidden="true">{'>'}</span><span>{label}</span></ThreadPrimitive.Suggestion>)}
     </nav>
   </div>;
 }
 
-function WelcomeThread({turns,isRunning,isDisabled,onSend,followupContainer}){
+function WelcomeThread({turns,isRunning,isDisabled,onSend,onFirstSuggestion,followupContainer}){
   // Keep the existing transcript/SSE controller as the source of truth while
   // the welcome screen uses assistant-ui's real thread state and send action.
   const messages=turns.flatMap((turn,index)=>[
@@ -47,15 +48,15 @@ function WelcomeThread({turns,isRunning,isDisabled,onSend,followupContainer}){
   });
   return <AssistantRuntimeProvider runtime={runtime}>
     <ThreadPrimitive.Root className="welcome-thread" data-slot="assistant-ui-welcome-thread">
-      <AuiIf condition={s=>s.thread.isEmpty}><AssistantWelcome /></AuiIf>
+      <AuiIf condition={s=>s.thread.isEmpty}><AssistantWelcome onFirstSuggestion={onFirstSuggestion}/></AuiIf>
       {createPortal(<ThreadFollowupSuggestions key={turns.length}/>,followupContainer)}
     </ThreadPrimitive.Root>
   </AssistantRuntimeProvider>;
 }
 
-export function mountWelcome(container,{onSend,followupContainer}){
+export function mountWelcome(container,{onSend,onFirstSuggestion,followupContainer}){
   const root=createRoot(container);
-  return {update:({threadId,...state})=>root.render(<WelcomeThread key={threadId} {...state} onSend={onSend} followupContainer={followupContainer} />)};
+  return {update:({threadId,...state})=>root.render(<WelcomeThread key={threadId} {...state} onSend={onSend} onFirstSuggestion={onFirstSuggestion} followupContainer={followupContainer} />)};
 }
 
 // Adapted from the website's TraceLine and ShimmerLabel (same MIT notice above):

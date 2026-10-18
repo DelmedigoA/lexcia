@@ -25,7 +25,7 @@ let currentThreadId=crypto.randomUUID();
 let conversations=[{id:currentThreadId,title:'New inquiry',updatedAt:Date.now(),turns:[]}];
 let renderedThreadId=null;
 let closingTimer,autoOpenTimer,entranceTimer;
-const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question),followupContainer:$('followup-suggestions')});
+const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question),onFirstSuggestion:()=>{sidebarRatio=Math.max(sidebarRatio,defaultSidebarRatio);setPinned(true);},followupContainer:$('followup-suggestions')});
 function syncWelcome(){const thread=currentConversation();welcomeThread.update({threadId:thread.id,turns:thread.turns,isRunning:busy,isDisabled:false});}
 function positionFloatingPanel(){
   if(!panel.open||pinned)return;

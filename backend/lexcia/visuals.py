@@ -50,16 +50,16 @@ def reviewed_visual(name, hebrew=False):
                 'data':[{'label':f'{n:,}','value':api_cost(n,COST_PER_THOUSAND[0]),'highValue':api_cost(n,COST_PER_THOUSAND[1])} for n in [0,250,750,1000,5000]],
                 'source':label('X: answered questions/month. Historical sample: $1.82–$3.05 per 1,000 questions; at 750: $1.37–$2.29. GPT-6 Luna repricing of a small development sample (Oct 11, 2026), not a live tariff or benchmark. No cache savings. Search, indexing, hosting, paid tools, added protection and support are extra.','ציר X: שאלות שנענו בחודש. מדגם היסטורי: $1.82–$3.05 לכל 1,000 שאלות; ב-750: $1.37–$2.29. תמחור מחדש לפי GPT-6 Luna למדגם פיתוח קטן (11.10.2026), לא מחירון חי או מבחן ביצועים. ללא חיסכון ממטמון. חיפוש, אינדוקס, אחסון, כלים בתשלום, הגנה נוספת ותמיכה הם עלויות נוספות.')}
     if name == 'integration_diagram':
-        return {'$type':'Diagram','title':label('Simple proposed integration','שילוב פשוט — הגישה המוצעת'),
-                'steps':[{'title':label('Your existing website','האתר הקיים שלכם'),'detail':label('Pages, documents and knowledge','עמודים, מסמכים וידע')},
-                         {'title':label('Lexcia prepares the assistant','Lexcia מכינה את העוזר'),'detail':label('Knowledge setup, design and testing','הכנת הידע, עיצוב ובדיקות')},
-                         {'title':label('Add the embed snippet','מוסיפים קטע קוד להטמעה'),'detail':label('The typical customer step','השלב הטיפוסי מצד הלקוח')},
-                         {'title':label('Try it together and refine','מנסים יחד ומשפרים'),'detail':label('Agree the experience before launch','מסכימים על החוויה לפני ההשקה')}],
-                'source':label('Proposed onboarding approach. Lexcia handles preparation and operation; the customer typically adds a lightweight JavaScript snippet.','גישת ההטמעה המוצעת. Lexcia מטפלת בהכנה ובהפעלה; הלקוח בדרך כלל מוסיף קטע JavaScript קצר.')}
+        return {'$type':'Diagram','title':label('Bringing Lexcia to your website','משלבים את Lexcia באתר שלכם'),
+                'steps':[{'title':label('Mapping & connections','מיפוי וחיבורים'),'detail':label('We map your content and connect the sources.','אנחנו ממפים את התוכן ומחברים את מקורות הידע.')},
+                         {'title':label('Made for your organization','מותאם לארגון שלכם'),'detail':label('UI, branding and a name chosen together.','ממשק, מיתוג ושם שבוחרים יחד.')},
+                         {'title':label('Embed on your website','הטמעה באתר שלכם'),'detail':label('Add the lightweight JavaScript snippet.','מוסיפים את קטע ה-JavaScript הקצר.')},
+                         {'title':label("You're ready to go",'מוכנים לצאת לדרך'),'detail':label('Your tailored assistant is ready for visitors.','העוזר המותאם שלכם מוכן למבקרים.')}],
+                'source':label('Our team maps and connects your knowledge, builds the experience with you, and prepares it for embedding and launch.','הצוות שלנו ממפה ומחבר את הידע, בונה איתכם את החוויה ומכין אותה להטמעה ולהשקה.')}
     if name == 'integration_flow':
-        nodes=[('scope','Agree scope','הגדרת ההיקף',0,1),('knowledge','Prepare knowledge','הכנת הידע',1,0),('design','Tailor interface','התאמת הממשק',1,2),('test','Test together','בדיקה משותפת',2,1),('embed','Add snippet','הוספת קטע הקוד',3,1),('refine','Operate & refine','הפעלה ושיפור',4,1)]
-        return {'$type':'FlowGraph','title':label('Proposed onboarding workflow','תהליך ההטמעה המוצע'),
+        nodes=[('mapping','Map the content','מיפוי התוכן',0,1),('connections','Connect sources','חיבור מקורות',1,0),('design','UI, brand & name','ממשק, מיתוג ושם',1,2),('test','Test together','בדיקה משותפת',2,1),('embed','Embed on site','הטמעה באתר',3,1),('ready','Ready to go','מוכנים לצאת לדרך',4,1)]
+        return {'$type':'FlowGraph','title':label('Your path to launch','הדרך שלכם להשקה'),
                 'nodes':[{'id':key,'label':label(en,he),'column':col,'row':row,'state':'pending'} for key,en,he,col,row in nodes],
-                'edges':[{'from':a,'to':b} for a,b in [('scope','knowledge'),('scope','design'),('knowledge','test'),('design','test'),('test','embed'),('embed','refine')]],
-                'source':label('Illustrative workflow, not live progress. Lexcia prepares knowledge and interface; the customer typically adds the snippet. Exact sequencing is agreed together.','תהליך להמחשה, לא התקדמות בפועל. Lexcia מכינה את הידע והממשק; הלקוח בדרך כלל מוסיף את קטע הקוד. סדר השלבים המדויק נקבע יחד.')}
+                'edges':[{'from':a,'to':b} for a,b in [('mapping','connections'),('mapping','design'),('connections','test'),('design','test'),('test','embed'),('embed','ready')]],
+                'source':label('An onboarding overview, not live progress. We connect the knowledge and build the UI with you, test together, embed, and get you ready to go.','סקירה של תהליך ההטמעה, לא התקדמות בפועל. מחברים את הידע ובונים איתכם את הממשק, בודקים יחד, מטמיעים ומוכנים לצאת לדרך.')}
     return None
