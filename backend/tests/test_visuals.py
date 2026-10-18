@@ -11,7 +11,7 @@ from lexcia.agent import build_agent
 from lexcia.app import create_app
 from lexcia.followups import AnswerStream, split_reply
 from lexcia.knowledge import Knowledge
-from lexcia.visuals import reviewed_visual, usd_range, api_cost
+from lexcia.visuals import reviewed_visual, api_cost
 
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -36,11 +36,15 @@ def test_model_choice_reaches_final_sse_as_reviewed_data_without_leaking_metadat
             assert stream.feed(raw[:boundary])+stream.feed(raw[boundary:])=='A short answer. [[SOURCE id=pricing]]'
     asyncio.run(scenario())
 
-def test_usd_conversion_and_api_sample_math_remain_distinct():
-    assert usd_range((2500,7500))==(810,2430)
-    assert usd_range((250,750))==(80,240)
-    assert usd_range((10000,25000))==(3240,8090)
-    assert usd_range((1000,2500))==(320,810)
+def test_usd_only_prices_and_api_sample_math_remain_distinct():
+    table=reviewed_visual('pricing_table')
+    assert table['rows']==[
+        {'plan':'Early customers','setup':'$810–$2,430','monthly':'$80–$240'},
+        {'plan':'Future standard pricing','setup':'$3,240–$8,090','monthly':'$320–$810'},
+    ]
+    for hebrew in [False,True]:
+        visible=json.dumps(reviewed_visual('pricing_table',hebrew=hebrew),ensure_ascii=False)
+        assert not any(term in visible for term in ['₪','ILS','3.089'])
     assert api_cost(750,Decimal('1.82'))==1.37
     assert api_cost(750,Decimal('3.05'))==2.29
     chart=reviewed_visual('api_cost_chart')

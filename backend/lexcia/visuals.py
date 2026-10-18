@@ -1,8 +1,8 @@
 """Reviewed answer visuals: the model selects a preset, never invents its figures."""
 from decimal import Decimal, ROUND_HALF_UP
 
-ILS_PER_USD = Decimal('3.089')  # Bank of Israel, 2026-10-16.
-PRICE_RANGES_ILS = {'early': ((2500,7500),(250,750)), 'standard': ((10000,25000),(1000,2500))}
+# Fixed USD planning ranges; conversion provenance is kept in docs/answer-visuals.md.
+PRICE_RANGES_USD = {'early': ((810,2430),(80,240)), 'standard': ((3240,8090),(320,810))}
 COST_PER_THOUSAND = (Decimal('1.82'), Decimal('3.05'))
 VISUAL_FORMAT = '''You can attach one reviewed visual to an answer by adding "visual" to the
 [[FOLLOWUPS]] JSON object. Choose "integration_diagram" for ease-of-integration questions;
@@ -15,10 +15,6 @@ Keep the normal answer to one or two sentences; do not repeat every visual row i
 API estimates count answered visitor questions, not individual provider calls. Explain that
 these are sample-based model-token estimates and other paid operations can add costs.'''
 
-def usd_range(values):
-    # Round to the nearest $10: a planning range rather than a false-precision quote.
-    return tuple(int((Decimal(value)/ILS_PER_USD/10).quantize(Decimal('1'), rounding=ROUND_HALF_UP)*10) for value in values)
-
 def api_cost(questions, rate):
     return float((Decimal(questions)*rate/1000).quantize(Decimal('.01'), rounding=ROUND_HALF_UP))
 
@@ -27,12 +23,12 @@ def reviewed_visual(name, hebrew=False):
     if name == 'pricing_table':
         rows=[]
         for key,title in [('early',label('Early customers','לקוחות ראשונים')),('standard',label('Future standard pricing','תמחור רגיל עתידי'))]:
-            setup,monthly=map(usd_range,PRICE_RANGES_ILS[key])
+            setup,monthly=PRICE_RANGES_USD[key]
             money=lambda values:f'${values[0]:,}–${values[1]:,}'
             rows.append({'plan':title,'setup':money(setup),'monthly':money(monthly)})
         return {'$type':'DataTable','title':label('Planned pricing · approximate USD','תמחור מתוכנן · דולר ארה״ב בקירוב'),
                 'columns':[{'key':'plan','label':label('Terms','מסלול')},{'key':'setup','label':label('One-time setup','הקמה חד-פעמית')},{'key':'monthly','label':label('Per month','לחודש')}], 'rows':rows,
-                'source':label('Planning ranges, not a quote. API usage is separate. Converted at ₪3.089/USD (Bank of Israel, Oct 16, 2026), rounded to $10. Scope affects pricing.','טווחי תכנון, לא הצעת מחיר. שימוש ב-API מחויב בנפרד. המרה לפי ₪3.089 לדולר (בנק ישראל, 16.10.2026), בעיגול ל-$10. המחיר תלוי בהיקף.')}
+                'source':label('Planning ranges, not a quote. API usage is separate. All amounts are in US dollars. Scope affects pricing.','טווחי תכנון, לא הצעת מחיר. שימוש ב-API מחויב בנפרד. כל הסכומים בדולר ארה״ב. המחיר תלוי בהיקף.')}
     if name == 'api_cost_chart':
         return {'$type':'Chart','title':label('Estimated additional API model-token cost','אומדן עלות נוספת לטוקנים של מודל ה-API'),
                 'unit':'USD / month','variant':'line', 'seriesLabels':[label('Answered questions','שאלות שנענו'),label('Tool-using questions','שאלות עם שימוש בכלים')],

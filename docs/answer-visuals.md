@@ -38,6 +38,9 @@ of ILS 3.089 per USD and rounded to $10:
 
 These are approximate planning ranges, not quotes. Scope affects pricing and API
 usage is billed separately. This fixed conversion is dated; it does not track FX.
+Asaf requested dollars only: the runtime presets now store fixed USD ranges, and
+public answers, knowledge context and graphic footnotes omit shekel figures and
+conversion details. The conversion provenance above is retained internally.
 
 The October 11 [architecture brief](https://docs.google.com/document/d/1PvhcdWcqXxwvZjKGQxj3qyZrDg7Awb3LEoofBGgbzhw/edit)
 provides the API model-token baseline: $1.82 per 1,000 answered questions and $3.05
