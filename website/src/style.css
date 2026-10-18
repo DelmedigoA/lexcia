@@ -40,20 +40,9 @@ body.on-dark .dots a{border-color:color-mix(in srgb,var(--paper) 70%,transparent
 
 .intro-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px 7%;align-items:center}
 .intro-grid h1{font-size:clamp(44px,5.4vw,82px)}.intro-grid .intro-lede{max-width:48ch}
-.live{margin:0}
+.intro-grid{grid-template-columns:1fr}
+.intro-grid .intro-copy{max-width:850px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-/* The latest Lexcia UI is the only live chat surface. */
-.hero-bot,.hero-bot-note{display:none}
-.live.is-docked .hero-bot{display:block;height:min(560px,calc(100svh - 230px));min-height:440px}
-.live.is-docked .hero-bot-note{display:block;margin:12px 0 0;color:var(--ink-3);font:italic 400 14px var(--serif);text-align:center}
-.hero-ask{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:14px 18px;border:1px solid var(--rule);border-radius:14px;background:var(--paper);color:var(--ink-3);font:400 15px var(--sans);text-align:left}
-.hero-ask i{display:grid;width:32px;height:32px;place-items:center;border-radius:8px;background:var(--ink);color:var(--paper);font-style:normal}
-.live.is-docked .hero-ask{display:none}
-dialog.embedded #pin,dialog.embedded #close,dialog.embedded .resize-grip{display:none}
-.intro-grid:has(.live--bot){grid-template-columns:minmax(0,1fr) clamp(290px,29vw,370px);gap:48px 6%}
-.intro-grid:has(.live--bot) .next{display:none}
-@media(max-width:960px) and (min-width:701px){.intro-grid:has(.live--bot){grid-template-columns:minmax(0,1fr) 280px;gap:28px}.intro-grid:has(.live--bot) h1{font-size:clamp(36px,5.4vw,52px)}.intro-grid:has(.live--bot) .intro-lede{font-size:17px}}
-@media(max-width:700px){.intro-grid:has(.live--bot){grid-template-columns:1fr;gap:24px}}
 
 /* 2. Why Lexcia */
 .why{background:color-mix(in srgb,var(--sage) 7%,var(--paper))}
@@ -86,7 +75,7 @@ dialog.embedded #pin,dialog.embedded #close,dialog.embedded .resize-grip{display
 
 /* Option A Why visual: buried pages surfacing. Each version shows only its own visual. */
 main:has(.live--card) .journey,main:has(.live--card) .journey-switch{display:none}
-main:has(.live--bot) .surface{display:none}
+.surface{display:none}
 .surface{margin:0}
 .surface-q{display:inline-block;min-height:2.9em;margin:0 0 18px;padding:10px 14px;border:1px solid color-mix(in srgb,var(--sage) 35%,transparent);border-radius:14px 14px 14px 3px;background:#fff;color:var(--ink);font:400 15px/1.45 var(--sans);transition:opacity .35s ease}
 .surface-q.is-swapping{opacity:0}
@@ -387,15 +376,12 @@ body.assistant-pinned.navigating-section main{transition:none}
 
 .flow-node{gap:6px}.flow-node>svg{flex-shrink:0;width:15px;height:15px;color:var(--ochre)}.flow-node>span{min-width:0}
 
-/* Keep the integrated hero independent of the floating panel's placement and height. */
-dialog.embedded{position:relative;inset:auto;width:100%;height:100%;max-width:none;max-height:none;margin:0;z-index:1;transform:none;transform-origin:center;animation:none!important}
+/* Reflow the new website beside the established pinned assistant. */
 body.assistant-pinned .dots{right:calc(var(--assistant-width,420px) + 14px)}
 @container site (max-width:960px){
-  body.assistant-pinned .intro-grid:has(.live--bot),body.assistant-pinned .why-grid,body.assistant-pinned .demo-grid{grid-template-columns:1fr}
+  body.assistant-pinned .why-grid,body.assistant-pinned .demo-grid{grid-template-columns:1fr}
   body.assistant-pinned .site-nav{gap:14px;font-size:12px}
   body.assistant-pinned .intro h1{font-size:clamp(36px,6cqw,64px)}
-  body.assistant-pinned .hero-bot-note{display:none}
-  body.assistant-pinned .live--bot .hero-ask{display:flex;justify-content:space-between;width:100%;padding:16px;border:1px solid var(--rule);border-radius:14px;background:var(--paper);color:var(--ink);font:14px var(--sans)}
 }
 body.assistant-pinned .site-header .btn{display:none}
 html:has(body.assistant-pinned){scroll-snap-type:y proximity}

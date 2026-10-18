@@ -28,7 +28,7 @@ let closingTimer,autoOpenTimer,entranceTimer;
 const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question),onWelcomeSuggestion:()=>{sidebarRatio=Math.max(sidebarRatio,defaultSidebarRatio);setPinned(true);},followupContainer:$('followup-suggestions')});
 function syncWelcome(){const thread=currentConversation();welcomeThread.update({threadId:thread.id,turns:thread.turns,isRunning:busy,isDisabled:false});}
 function positionFloatingPanel(){
-  if(!panel.open||pinned||panel.classList.contains('embedded'))return;
+  if(!panel.open||pinned)return;
   const anchor=launcher.getBoundingClientRect(),viewport={width:window.innerWidth,height:window.innerHeight};
   panel.style.setProperty('--floating-height',`${heightNearLauncher(anchor,floatSize().height,viewport)}px`);
   const position=positionNearLauncher(anchor,{width:panel.offsetWidth,height:panel.offsetHeight},viewport);
@@ -63,10 +63,8 @@ function showPanelDialog(){
 }
 function setPinned(value){
   const next=value&&!matchMedia('(max-width: 700px)').matches;
-  const wasEmbedded=next&&panel.classList.contains('embedded');
-  if(wasEmbedded)undockPanel();
   if(next===pinned)return;
-  const wasOpen=panel.open||wasEmbedded,focused=panel.contains(document.activeElement)?document.activeElement:null;
+  const wasOpen=panel.open,focused=panel.contains(document.activeElement)?document.activeElement:null;
   pinned=next;launcher.hidden=pinned;
   panel.classList.toggle('pinned',pinned);
   document.body.classList.toggle('assistant-pinned',pinned);
@@ -106,10 +104,6 @@ function animatePanelEntrance(){
 }
 function openPanel(){
   clearTimeout(autoOpenTimer);
-  if(panel.classList.contains('embedded')){
-    if(heroBotInView()){$('prompt').focus({preventScroll:true});return;}
-    undockPanel();
-  }
   if(closing){clearTimeout(closingTimer);closing=false;}
   const thread=currentConversation();if(thread)setConversationView(thread);
   if(!panel.open)showPanelDialog();
@@ -117,9 +111,9 @@ function openPanel(){
   requestAnimationFrame(()=>{resizeComposer();$('prompt').focus({preventScroll:true});});
 }
 function closePanel(afterClose){
-  if(!panel.open||closing||panel.classList.contains('embedded'))return;
+  if(!panel.open||closing)return;
   closing=true;panel.classList.remove('is-entering');panel.classList.add('is-exiting');launcher.setAttribute('aria-expanded','false');
-  closingTimer=setTimeout(()=>{panel.close();setPinned(false);panel.classList.remove('is-exiting');closing=false;dockPanel();launcher.focus({preventScroll:true});if(typeof afterClose==='function')afterClose();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);
+  closingTimer=setTimeout(()=>{panel.close();setPinned(false);panel.classList.remove('is-exiting');closing=false;launcher.focus({preventScroll:true});if(typeof afterClose==='function')afterClose();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);
 }
 // Reveal the landing-page box linked from an answer, preserving the conversation.
 $('messages').addEventListener('click',event=>{
@@ -140,7 +134,7 @@ $('messages').addEventListener('click',event=>{
   sidebarRatio=defaultSidebarRatio;setPinned(true);setPinnedWidth(pinnedWidth());
   requestAnimationFrame(()=>{jump();requestAnimationFrame(()=>document.body.classList.remove('navigating-section'));});
 });
-launcher.onclick=()=>panel.open&&!panel.classList.contains('embedded')?closePanel():openPanel();$('close').onclick=closePanel;
+launcher.onclick=()=>panel.open?closePanel():openPanel();$('close').onclick=closePanel;
 document.querySelectorAll('[data-open-assistant]').forEach(button=>button.addEventListener('click',openPanel));
 document.querySelectorAll('[data-schedule-demo]').forEach(button=>button.addEventListener('click',event=>{event.preventDefault();openPanel();submitQuestion('Schedule a demo');}));
 panel.addEventListener('cancel',event=>{if(event.target!==panel)return;event.preventDefault();closePanel();});
@@ -334,33 +328,5 @@ const stop=()=>{clearInterval(timer);timer=null;};
 showMatch(0);
 if('IntersectionObserver' in window)new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))start();else stop();},{threshold:.3}).observe(surface);else start();}
 
-// Option B: on wider screens the real assistant sits inside the hero box. It undocks into the usual
-// floating window when opened from elsewhere on the page, and returns to the hero when closed.
-const live=$('live'),heroBot=$('hero-bot');
-function canDock(){return Boolean(heroBot)&&live?.classList.contains('live--bot')&&matchMedia('(min-width: 701px)').matches;}
-function heroBotInView(){if(!heroBot)return false;const r=heroBot.getBoundingClientRect();return r.bottom>innerHeight*.25&&r.top<innerHeight*.75;}
-function dockPanel(){
-  if(!canDock()||panel.open||closing)return;
-  setPinned(false);
-  clearTimeout(entranceTimer);
-  panel.classList.remove('is-entering','is-exiting');panel.classList.add('embedded');
-  heroBot.append(panel);live.classList.add('is-docked');
-  const focused=document.activeElement,y=scrollY;
-  panel.show();panel.setAttribute('aria-modal','false');
-  if(focused instanceof HTMLElement)focused.focus({preventScroll:true});
-  if(panel.contains(document.activeElement))document.activeElement.blur();
-  scrollTo({top:y,behavior:'instant'});launcher.setAttribute('aria-expanded','false');syncLauncherVisibility();
-}
-function undockPanel(){
-  if(!panel.classList.contains('embedded'))return;
-  panel.close();panel.classList.remove('embedded');document.body.append(panel);live?.classList.remove('is-docked');syncLauncherVisibility();
-}
-function syncLauncherVisibility(){launcher.hidden=pinned||(panel.classList.contains('embedded')&&heroBotInView());}
-addEventListener('scroll',syncLauncherVisibility,{passive:true});
-dockPanel();
-// The hero already exposes the assistant on desktop; mobile keeps the floating welcome.
-if(!panel.open)autoOpenTimer=setTimeout(openPanel,500);
-addEventListener('resize',()=>{
-  if(panel.classList.contains('embedded')&&!canDock()){undockPanel();openPanel();}
-  else if(!panel.open)dockPanel();
-});
+// Restore the established floating opening on every page load.
+autoOpenTimer=setTimeout(openPanel,500);
