@@ -4,6 +4,7 @@ from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langgraph.graph import START, END, StateGraph
 from .followups import RESPONSE_FORMAT, split_reply
 from .guard import guard_notice
+from .visuals import VISUAL_FORMAT, reviewed_visual
 class State(TypedDict, total=False):
     question: str
     history: list
@@ -11,6 +12,7 @@ class State(TypedDict, total=False):
     answer: str
     suggestions: list
     guardrail: dict | None
+    ui: dict | None
 
 def build_agent(knowledge, model, instructions, system="", guard=None):
     async def check_relevance(state):
@@ -23,12 +25,15 @@ def build_agent(knowledge, model, instructions, system="", guard=None):
         return {"records": knowledge.search(state["question"])}
     async def answer(state):
         context = json.dumps([r.model_dump() for r in state["records"]], ensure_ascii=False)
-        messages = [SystemMessage(content=system + "\n\nConversation instructions:\n" + instructions + "\n\nResponse format:\n" + RESPONSE_FORMAT + "\n\nReviewed knowledge records:\n" + context)]
+        messages = [SystemMessage(content=system + "\n\nConversation instructions:\n" + instructions + "\n\nResponse format:\n" + RESPONSE_FORMAT + "\n" + VISUAL_FORMAT + "\n\nReviewed knowledge records:\n" + context)]
         for turn in state.get("history", [])[-10:]:
             messages.extend([HumanMessage(content=turn["question"]), AIMessage(content=turn["answer"])])
         result = await model.ainvoke([*messages, HumanMessage(content=state["question"])])
         content=result.content if isinstance(result.content,str) else "".join(part.get("text", "") for part in result.content if isinstance(part,dict))
-        return split_reply(content)
+        reply=split_reply(content)
+        visual=reply.pop('visual',None)
+        reply['ui']=reviewed_visual(visual,hebrew=any('\u0590'<=c<='\u05ff' for c in state['question']))
+        return reply
     graph = StateGraph(State)
     graph.add_node("retrieve", retrieve); graph.add_node("answer", answer)
     if guard is not None:

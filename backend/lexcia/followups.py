@@ -14,7 +14,8 @@ The example is a format illustration, not a fixed list to copy. Use action "ask"
 questions and "schedule_demo" only to open the local scheduling form. Respect a visitor
 who declines or is not ready for a demo. Do not use links or Markdown in prompts.
 The suggestions are internal metadata, so never explain this format in the answer.
-No code fences, extra keys or text after the JSON. If no useful suggestion fits, use
+The optional "visual" key selects a reviewed visual as described separately.
+No code fences, other extra keys or text after the JSON. If no useful suggestion fits, use
 {"suggestions":[]} rather than inventing one.'''
 
 class Followup(BaseModel):
@@ -24,13 +25,16 @@ class Followup(BaseModel):
 class FollowupPayload(BaseModel):
     model_config = ConfigDict(extra='forbid')
     suggestions: list[Followup] = Field(max_length=3)
+    visual: Literal['integration_diagram','integration_flow','pricing_table','api_cost_chart'] | None = None
 
 def split_reply(content):
     answer,separator,metadata=content.partition(FOLLOWUP_MARKER)
     suggestions=[]
+    visual=None
     if separator:
         try:
             payload=FollowupPayload.model_validate(json.loads(metadata.strip()))
+            visual=payload.visual
             seen=set()
             for suggestion in payload.suggestions:
                 key=suggestion.prompt.casefold()
@@ -38,7 +42,9 @@ def split_reply(content):
                     suggestions.append(suggestion.model_dump());seen.add(key)
         except (ValidationError,ValueError,TypeError):
             pass  # Keep the answer; never substitute a fixed suggestion list.
-    return {'answer':answer.rstrip(),'suggestions':suggestions}
+    result={'answer':answer.rstrip(),'suggestions':suggestions}
+    if visual: result['visual']=visual
+    return result
 
 class AnswerStream:
     """Hide even a marker split across individual model-token chunks."""

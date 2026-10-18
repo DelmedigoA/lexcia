@@ -17,7 +17,7 @@ All five installed `@assistant-ui/*` packages declare MIT and include the MIT te
 | @assistant-ui/tap | 0.9.20 |
 
 The adapted welcome/thread, TraceLine/ShimmerLabel, follow-up suggestions,
-GuardrailNotice, table-reservation form and create-event summary come from the
+GuardrailNotice, Diagram, FlowGraph, Chart, DataTable, table-reservation form and create-event summary come from the
 same MIT-licensed project. Their source references and shared copyright/permission
 notice are retained in `website/public/licenses/assistant-ui.txt`, which Vite
 copies into the deployed site's `/licenses/assistant-ui.txt`.

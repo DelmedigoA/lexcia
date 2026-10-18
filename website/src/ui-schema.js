@@ -6,7 +6,9 @@ export const schemas = {
   Row: z.object({}),
   Text: z.object({ text }),
   Fact: z.object({ label: text, value: text, detail: text.optional() }),
-  Chart: z.object({ title: text, unit: text, variant: z.enum(['area','line','bars']).default('area'), data: z.array(z.object({label: text, value: z.number().finite()})).max(100), source: text }),
+  Chart: z.object({ title: text, unit: text, variant: z.enum(['area','line','bars']).default('area'), data: z.array(z.object({label: text, value: z.number().finite(), highValue: z.number().finite().optional()})).max(100), source: text, seriesLabels: z.tuple([text,text]).optional() }),
+  Diagram: z.object({title:text,steps:z.array(z.object({title:text,detail:text}).strict()).min(1).max(8),source:text}),
+  FlowGraph: z.object({title:text,nodes:z.array(z.object({id:z.string().regex(/^[a-z][a-z0-9-]*$/).max(60),label:text,column:z.number().int().min(0).max(8),row:z.number().int().min(0).max(8),state:z.enum(['done','active','pending'])}).strict()).min(1).max(24),edges:z.array(z.object({from:text,to:text}).strict()).max(48),source:text}).superRefine((graph,ctx)=>{const ids=new Set(graph.nodes.map(n=>n.id));if(ids.size!==graph.nodes.length||graph.edges.some(e=>!ids.has(e.from)||!ids.has(e.to)))ctx.addIssue({code:'custom',message:'Flow nodes must be unique and edges must reference existing nodes.'});}),
   DataTable: z.object({ title: text, columns: z.array(z.object({key: z.string().regex(/^[a-zA-Z][\w]*$/).max(60), label: text, format: z.enum(['text','number','currency','percent']).default('text')})).min(1).max(12), rows: z.array(z.record(z.string(), cell)).max(200), source: text }),
   Source: z.object({ title: text, url: z.url().refine(url => new URL(url).protocol === 'https:', 'Only HTTPS sources are supported') }),
 };

@@ -137,9 +137,9 @@ $('messages').addEventListener('click',event=>{
 launcher.onclick=()=>panel.open?closePanel():openPanel();$('close').onclick=closePanel;
 document.querySelectorAll('[data-open-assistant]').forEach(button=>button.addEventListener('click',openPanel));
 document.querySelectorAll('[data-schedule-demo]').forEach(button=>button.addEventListener('click',event=>{event.preventDefault();openPanel();submitQuestion('Schedule a demo');}));
-panel.addEventListener('cancel',event=>{event.preventDefault();closePanel();});
+panel.addEventListener('cancel',event=>{if(event.target!==panel)return;event.preventDefault();closePanel();});
 panel.addEventListener('click',event=>{if(!pinned&&event.target===panel)closePanel();});
-panel.addEventListener('keydown',event=>{if(pinned&&event.key==='Escape'&&!event.defaultPrevented){event.preventDefault();closePanel();}});
+panel.addEventListener('keydown',event=>{if(pinned&&event.target.closest('dialog')===panel&&event.key==='Escape'&&!event.defaultPrevented){event.preventDefault();closePanel();}});
 pin.onclick=()=>setPinned(!pinned);
 divider.addEventListener('pointerdown',event=>{
   if(!pinned)return;
@@ -195,7 +195,7 @@ function finishTurnView(answer,thread,turn){
     return;
   }
   if(turn.scheduling){const surface=document.createElement('div');answer.append(surface);mountDemoScheduling(surface,turn);}
-  if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui);}
+  if(turn.ui){const follow=nearBottom();const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui,{onRendered:()=>{if(follow)bottom();else updateLatestButton();}});}
   if(turn.status==='stopped')appendStoppedNotice(answer,{
     canContinue:()=>thread.id===currentThreadId&&thread.turns.at(-1)===turn,
     onContinue:()=>{if(!busy&&thread.turns.at(-1)===turn)runTurn(thread,turn,answer,true);},
