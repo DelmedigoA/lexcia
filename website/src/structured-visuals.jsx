@@ -1,7 +1,7 @@
 // Adapted from assistant-ui Elements Diagram and FlowGraph (MIT).
 // https://github.com/assistant-ui/assistant-ui/tree/main/packages/ui/src/components/react/assistant-ui/elements
 // Copyright (c) 2026 AgentbaseAI Inc.; see public/licenses/assistant-ui.txt.
-import React, {useRef, useState} from 'react';
+import React from 'react';
 import {IntegrationIcon} from './integration-icons.jsx';
 
 function IntegrationSteps({steps}) {
@@ -9,23 +9,20 @@ function IntegrationSteps({steps}) {
   return <svg className="integration-graphic" viewBox={`0 0 420 ${steps.length*104}`} role="img" aria-label={steps.map((s,i)=>`${i+1}. ${s.title}: ${s.detail}`).join('; ')}>{steps.map((step,index)=><g key={index}>
     {index>0&&<path d={`M210,${index*104-18} v18 m-4,-5 4,5 4,-5`} fill="none" stroke="var(--ochre)" strokeWidth="1.5"/>}
     <rect x="10" y={index*104+4} width="400" height="82" rx="12" fill="var(--paper)" stroke="var(--rule)"/>
-    <circle cx="35" cy={index*104+29} r="16" fill="var(--ochre)" fillOpacity=".14"/>
-    <g data-integration-icon={step.icon}>{step.icon?<IntegrationIcon kind={step.icon} x="24" y={index*104+18} width="22" height="22" style={{color:'var(--ochre)'}}/>:<text x="35" y={index*104+33} textAnchor="middle" fill="var(--ink-2)" fontSize="12">{index+1}</text>}</g>
+    <circle cx="35" cy={index*104+29} r="12" fill="var(--ochre)" fillOpacity=".09"/>
+    <g data-integration-icon={step.icon}>{step.icon?<IntegrationIcon kind={step.icon} x="27" y={index*104+21} width="16" height="16" style={{color:'var(--ochre)'}}/>:<text x="35" y={index*104+33} textAnchor="middle" fill="var(--ink-2)" fontSize="12">{index+1}</text>}</g>
     <text x="58" y={index*104+33} fill="var(--ink)" fontSize="14" fontWeight="500">{step.title}</text>
     <text x="58" y={index*104+54} fill="var(--ink-2)" fontSize="12">{wrap(step.detail).map((line,i)=><tspan key={i} x="58" dy={i?16:0}>{line}</tspan>)}</text>
   </g>)}</svg>;
 }
 export function Diagram({title,steps,source}) {
-  const [zoom,setZoom]=useState(1);
-  const dialog=useRef(null);
-  const graphic=()=> <div className="diagram-canvas" style={{width:`${zoom*100}%`}}><IntegrationSteps steps={steps}/></div>;
   return <section className="answer-diagram" data-slot="diagram" aria-label={title}>
-    <div className="answer-block-header"><h4>{title}</h4><div className="diagram-controls"><span aria-live="polite">{Math.round(zoom*100)}%</span><button type="button" aria-label="Zoom out" disabled={zoom<=.6} onClick={()=>setZoom(z=>Math.max(.6,z-.2))}>−</button><button type="button" aria-label="Zoom in" disabled={zoom>=2} onClick={()=>setZoom(z=>Math.min(2,z+.2))}>+</button><button type="button" aria-label="Reset the view" onClick={()=>setZoom(1)}>↺</button><button type="button" aria-label="Open diagram full screen" onClick={()=>dialog.current.showModal()}>⛶</button></div></div>
-    <div className="diagram-viewport" tabIndex="0" role="region" aria-label={`${title} · scroll to explore`}>{graphic()}</div>
+    <div className="answer-block-header"><h4>{title}</h4></div>
+    <div className="diagram-canvas"><IntegrationSteps steps={steps}/></div>
     <p className="data-provenance">{source}</p>
-    <dialog ref={dialog} className="diagram-dialog" aria-label={title}><div className="answer-block-header"><h4>{title}</h4><button type="button" aria-label="Close diagram full screen" onClick={()=>dialog.current.close()}>Close ×</button></div>{graphic()}<p className="data-provenance">{source}</p></dialog>
   </section>;
 }
+
 export function FlowGraph({title,nodes,edges,source}) {
   const colWidth=126,rowHeight=66,nodeWidth=108,nodeHeight=42;
   const width=Math.max(...nodes.map(n=>n.column))*colWidth+nodeWidth;
