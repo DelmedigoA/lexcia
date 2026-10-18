@@ -74,9 +74,9 @@ function toggleThreadList(){
   if(show){renderThreadList();$('thread-list').hidden=false;$('thread').hidden=true;$('composer').parentElement.hidden=true;$('panel-title').textContent='Conversations';$('threads-toggle').setAttribute('aria-pressed','true');$('threads-toggle').setAttribute('aria-label','Return to inquiry');$('thread-list').querySelector('button')?.focus();}
   else{const thread=conversations.find(item=>item.id===currentThreadId);if(thread)setConversationView(thread);else setConversationView(conversations[0]);$('prompt').focus();}
 }
-function openPanel(){if(closing){clearTimeout(closingTimer);closing=false;}const thread=conversations.find(item=>item.id===selectedThreadId)||currentConversation();if(thread)setConversationView(thread);if(!panel.open)panel.showModal();panel.classList.remove('is-exiting');panel.classList.add('is-entering');launcher.setAttribute('aria-expanded','true');requestAnimationFrame(()=>readOnly?$('panel-title').focus():$('prompt').focus());setTimeout(()=>panel.classList.remove('is-entering'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);}
-function closePanel(){if(!panel.open||closing)return;closing=true;setPinned(false);panel.classList.remove('is-entering');panel.classList.add('is-exiting');launcher.setAttribute('aria-expanded','false');closingTimer=setTimeout(()=>{panel.close();panel.classList.remove('is-exiting');closing=false;launcher.focus();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);}
-launcher.onclick=()=>panel.open?closePanel():openPanel();$('close').onclick=closePanel;
+function openPanel(){if(panel.classList.contains('embedded')){if(heroBotInView()){$('prompt').focus();return;}undockPanel();}if(closing){clearTimeout(closingTimer);closing=false;}const thread=conversations.find(item=>item.id===selectedThreadId)||currentConversation();if(thread)setConversationView(thread);if(!panel.open)panel.showModal();panel.classList.remove('is-exiting');panel.classList.add('is-entering');launcher.setAttribute('aria-expanded','true');requestAnimationFrame(()=>readOnly?$('panel-title').focus():$('prompt').focus());setTimeout(()=>panel.classList.remove('is-entering'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:360);}
+function closePanel(){if(!panel.open||closing||panel.classList.contains('embedded'))return;closing=true;setPinned(false);panel.classList.remove('is-entering');panel.classList.add('is-exiting');launcher.setAttribute('aria-expanded','false');closingTimer=setTimeout(()=>{panel.close();setTimeout(dockPanel,0);panel.classList.remove('is-exiting');closing=false;launcher.focus();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);}
+launcher.onclick=()=>panel.open&&!panel.classList.contains('embedded')?closePanel():openPanel();$('close').onclick=closePanel;
 document.querySelectorAll('[data-open-assistant]').forEach(button=>button.addEventListener('click',openPanel));
 panel.addEventListener('cancel',event=>{event.preventDefault();closePanel();});
 panel.addEventListener('click',event=>{if(event.target===panel)closePanel();});
@@ -241,3 +241,15 @@ const start=()=>{if(timer||still)return;showMatch(k);timer=setInterval(()=>{k=(k
 const stop=()=>{clearInterval(timer);timer=null;};
 showMatch(0);
 if('IntersectionObserver' in window)new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))start();else stop();},{threshold:.3}).observe(surface);else start();}
+
+// Option B: on wider screens the real assistant sits inside the hero box. It undocks into the usual
+// floating window when opened from elsewhere on the page, and returns to the hero when closed.
+const heroBot=$('hero-bot');
+function canDock(){return Boolean(heroBot)&&live?.classList.contains('live--bot')&&matchMedia('(min-width: 701px)').matches;}
+function heroBotInView(){if(!heroBot)return false;const r=heroBot.getBoundingClientRect();return r.bottom>innerHeight*.25&&r.top<innerHeight*.75;}
+function dockPanel(){if(!canDock()||panel.classList.contains('embedded')||closing)return;if(panel.open)panel.close();setPinned(false);
+  panel.classList.remove('expanded','is-entering','is-exiting');panel.classList.add('embedded');heroBot.append(panel);live.classList.add('is-docked');
+  const thread=currentConversation();if(thread)setConversationView(thread);const y=scrollY;panel.show();if(panel.contains(document.activeElement))document.activeElement.blur();scrollTo(0,y);launcher.setAttribute('aria-expanded','false');}
+function undockPanel(){if(!panel.classList.contains('embedded'))return;panel.close();panel.classList.remove('embedded');document.body.append(panel);live?.classList.remove('is-docked');}
+dockPanel();
+addEventListener('resize',()=>{if(panel.classList.contains('embedded')&&!canDock())undockPanel();else if(!panel.open)dockPanel();});

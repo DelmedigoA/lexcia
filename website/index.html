@@ -36,7 +36,7 @@
         <div class="intro-cta"><button class="btn" id="hero-cta" type="button" data-open-assistant>Try Lexcia<span aria-hidden="true">↗</span></button><a class="text-link" href="#demo">Request a free demo</a></div>
       </div>
       <!-- Hero demo card. Two looks: "live--card" (option A, simple card) and "live--bot" (option B, styled like the real Lexcia assistant). -->
-      <figure class="live live--card" id="live">
+      <figure class="live live--bot" id="live">
         <div class="live-card" aria-hidden="true">
           <div class="live-bar"><b>Lexcia</b><span class="live-sub">on an example website</span>
             <span class="live-tools"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 10h16M4 15h10M4 20h7M18 15v6m-3-3h6"/></svg><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><svg viewBox="0 0 24 24"><path d="m8 3 8 8M14 3l7 7-3 1-3 3-1 3-7-7M11 16l-6 5"/></svg><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg><svg viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></svg></span></div>
@@ -50,6 +50,10 @@
           <div class="live-composer"><span>Ask about this website…</span><i class="live-send"><svg viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></i></div>
           <p class="live-credit">powered by <b>Lexcia</b></p>
         </div>
+        <!-- Option B on wider screens: the real Lexcia assistant is placed here by app.js. -->
+        <div class="hero-bot" id="hero-bot"></div>
+        <p class="hero-bot-note">This is Lexcia, live. Ask it anything about Lexcia.</p>
+        <button class="hero-ask" type="button" data-open-assistant><span>Ask about this website…</span><i aria-hidden="true">↑</i></button>
         <div class="live-topics" role="group" aria-label="Example conversations">
           <button type="button" data-live="0" aria-pressed="true">Sales</button>
           <button type="button" data-live="1" aria-pressed="false">Courses</button>
