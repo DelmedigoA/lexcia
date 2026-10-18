@@ -91,9 +91,9 @@ the snippet, and “You're ready to go.” Testing/refinement belongs within
 preparation. The detailed graph ends in readiness after embedding. Knowledge
 records and model instructions use this same sequence.
 
-The first welcome suggestion pins the chat on desktop through its click callback
-before submission. Other welcome choices keep their existing behavior. Mobile
-retains its floating layout.
+All four welcome suggestions pin the chat on desktop through a shared click
+callback. This applies each time a new welcome is shown. Mobile retains its
+floating layout.
 
 Integration icons follow the outline style in the visual-reference figure of
 [Website Integration & Client Onboarding](https://docs.google.com/document/d/1NhgfU4uTeF1W7WlT6mng80LXYGMigmqtfHcLEAIx-o8/edit):

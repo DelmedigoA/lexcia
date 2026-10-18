@@ -18,25 +18,25 @@ const SUGGESTIONS=[
   ['Schedule a demo','Schedule a demo'],
 ];
 
-function AssistantWelcome({onFirstSuggestion}){
+function AssistantWelcome({onWelcomeSuggestion}){
   return <div className="thread-welcome">
     <div className="thread-welcome-greeting">
       <h3>{GREETING_WORDS.map((word,index)=><Fragment key={word}>
-        <span className="welcome-word" style={{animationDelay:`${index*110}ms`}}>{word}</span>{' '}
+        <span className="welcome-word" style={{animationDelay:`${index*160}ms`}}>{word}</span>{' '}
       </Fragment>)}<span className="welcome-caret" aria-hidden="true" /></h3>
-      <p className="welcome-rise" style={{animationDelay:'610ms'}}>Let’s help visitors find it. Explore what Lexcia could do with your content.</p>
+      <p className="welcome-rise" style={{animationDelay:'890ms'}}>Let’s help visitors find it. Explore what Lexcia could do with your content.</p>
     </div>
     <nav className="welcome-suggestions" aria-label="Suggested questions">
       {SUGGESTIONS.map(([prompt,label],index)=><ThreadPrimitive.Suggestion
         key={prompt} prompt={prompt} send className="welcome-rise"
-        onClick={index===0?onFirstSuggestion:undefined}
-        style={{animationDelay:`${800+index*70}ms`}}
+        onClick={onWelcomeSuggestion}
+        style={{animationDelay:`${1160+index*90}ms`}}
       ><span className="welcome-arrow" aria-hidden="true">{'>'}</span><span>{label}</span></ThreadPrimitive.Suggestion>)}
     </nav>
   </div>;
 }
 
-function WelcomeThread({turns,isRunning,isDisabled,onSend,onFirstSuggestion,followupContainer}){
+function WelcomeThread({turns,isRunning,isDisabled,onSend,onWelcomeSuggestion,followupContainer}){
   // Keep the existing transcript/SSE controller as the source of truth while
   // the welcome screen uses assistant-ui's real thread state and send action.
   const messages=turns.flatMap((turn,index)=>[
@@ -48,15 +48,15 @@ function WelcomeThread({turns,isRunning,isDisabled,onSend,onFirstSuggestion,foll
   });
   return <AssistantRuntimeProvider runtime={runtime}>
     <ThreadPrimitive.Root className="welcome-thread" data-slot="assistant-ui-welcome-thread">
-      <AuiIf condition={s=>s.thread.isEmpty}><AssistantWelcome onFirstSuggestion={onFirstSuggestion}/></AuiIf>
+      <AuiIf condition={s=>s.thread.isEmpty}><AssistantWelcome onWelcomeSuggestion={onWelcomeSuggestion}/></AuiIf>
       {createPortal(<ThreadFollowupSuggestions key={turns.length}/>,followupContainer)}
     </ThreadPrimitive.Root>
   </AssistantRuntimeProvider>;
 }
 
-export function mountWelcome(container,{onSend,onFirstSuggestion,followupContainer}){
+export function mountWelcome(container,{onSend,onWelcomeSuggestion,followupContainer}){
   const root=createRoot(container);
-  return {update:({threadId,...state})=>root.render(<WelcomeThread key={threadId} {...state} onSend={onSend} onFirstSuggestion={onFirstSuggestion} followupContainer={followupContainer} />)};
+  return {update:({threadId,...state})=>root.render(<WelcomeThread key={threadId} {...state} onSend={onSend} onWelcomeSuggestion={onWelcomeSuggestion} followupContainer={followupContainer} />)};
 }
 
 // Adapted from the website's TraceLine and ShimmerLabel (same MIT notice above):
