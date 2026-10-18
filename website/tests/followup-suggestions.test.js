@@ -26,3 +26,10 @@ test('model action routes differently worded demo buttons and preserves learning
   assert.equal(isSchedulingRequest([{...reply,suggestions:[learning]}],learning.prompt),false);
   assert.equal(isSchedulingRequest([],'Schedule a demo'),true);
 });
+
+test('only explicitly streamed suggestions appear during the active reply',()=>{
+  assert.deepEqual(followupSuggestions([{...reply,status:'running',suggestionsStreaming:true}]),suggestions);
+  assert.deepEqual(followupSuggestions([{...reply,status:'running',suggestionsStreaming:false}]),[]);
+  assert.deepEqual(followupSuggestions([{...reply,status:'error',suggestionsStreaming:true}]),[]);
+  assert.deepEqual(followupSuggestions([{...reply,status:'running',suggestionsStreaming:true,ui:{$type:'ContactForm'}}]),[]);
+});

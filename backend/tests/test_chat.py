@@ -79,3 +79,22 @@ def test_scope_and_progression_instructions_reach_model_with_reviewed_knowledge(
         assert 'Reviewed knowledge records:' in captured[0].content
         assert captured[-1].content=='What is Lexcia?'
     asyncio.run(scenario())
+
+
+def test_suggestion_sse_arrives_before_final_and_contains_only_complete_objects():
+    async def scenario():
+        expected=[{'prompt':'How does this fit our archive?','action':'ask'},{'prompt':'Schedule a demo','action':'schedule_demo'}]
+        raw='An answer. [[SOURCE id=overview]][[FOLLOWUPS]]'+json.dumps({'visual':None,'suggestions':expected})
+        knowledge=Knowledge(ROOT/'knowledge/lexcia.json')
+        graph=build_agent(knowledge,FakeListChatModel(responses=[raw]),'Use reviewed facts.')
+        async with httpx.AsyncClient(transport=httpx.ASGITransport(create_app(graph,knowledge)),base_url='http://test') as client:
+            response=await client.post('/api/chat/stream',json={'question':'What is Lexcia?','session_id':str(uuid4())})
+        blocks=[b for b in response.text.split('\n\n') if b]
+        streamed=[json.loads(b.split('\ndata: ',1)[1])['suggestion'] for b in blocks if b.startswith('event: suggestion\n')]
+        assert streamed==expected
+        final_index=next(i for i,b in enumerate(blocks) if b.startswith('event: final\n'))
+        assert all(i<final_index for i,b in enumerate(blocks) if b.startswith('event: suggestion\n'))
+        final=json.loads(blocks[final_index].split('\ndata: ',1)[1])
+        assert final['suggestions']==expected
+        assert '[[FOLLOWUPS]]' not in response.text
+    asyncio.run(scenario())

@@ -209,7 +209,7 @@ function finishTurnView(answer,thread,turn){
 async function runTurn(thread,turn,answer,resume=false){
   const requestQuestion=resume?continuationQuestion(turn):turn.question;
   const base=resume?turn.answer||'':'';
-  turn.status='running';delete turn.error;updateConversations();
+  turn.status='running';turn.suggestions=[];turn.suggestionsStreaming=false;delete turn.error;updateConversations();
   setBusy(true);$('status').textContent='';controller=new AbortController();answer.setAttribute('aria-busy','true');
   answer.innerHTML=renderAnswer(base);const pending=document.createElement('div');answer.append(pending);const stopThinking=mountThinking(pending,resume?'continuing…':'thinking…');
   let text='',readItems=resume?[...(turn.items||[])]:[],finalReceived=false;
@@ -220,10 +220,11 @@ async function runTurn(thread,turn,answer,resume=false){
     await askLexcia(requestQuestion,event=>{
       if(event.event==='item'&&event.data.item){const item=event.data.item;items.set(item.item_id,item);if(!readItems.some(i=>i.item_id===item.item_id))readItems.push(item);}
       if(event.event==='delta'){if(!turn.repliedAt)turn.repliedAt=Date.now();text+=event.data.text||'';update();}
+      if(event.event==='suggestion'&&event.data.suggestion){turn.suggestionsStreaming=true;turn.suggestions.push(event.data.suggestion);syncWelcome();}
       if(event.event==='final'){
         finalReceived=true;const follow=nearBottom();
         text=event.data.answer||text;const finalItems=event.data.items||readItems;readItems=resume?[...new Map([...(turn.items||[]),...finalItems].map(item=>[item.item_id||item.url,item])).values()]:finalItems;for(const item of readItems)items.set(item.item_id,item);update();
-        turn.answer=fullText();turn.items=readItems;turn.suggestions=event.data.suggestions||[];turn.guardrail=event.data.guardrail||null;turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();updateConversations();finishTurnView(answer,thread,turn);
+        turn.answer=fullText();turn.items=readItems;turn.suggestions=event.data.suggestions||[];turn.suggestionsStreaming=false;turn.guardrail=event.data.guardrail||null;turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();updateConversations();finishTurnView(answer,thread,turn);
         if(follow)bottom();else updateLatestButton();
       }
     },controller.signal,currentThreadId);

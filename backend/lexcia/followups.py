@@ -6,7 +6,7 @@ from pydantic import BaseModel, ConfigDict, Field, ValidationError
 FOLLOWUP_MARKER = '[[FOLLOWUPS]]'
 RESPONSE_FORMAT = '''Reply with the normal Markdown answer first, including its source markers.
 After the answer, append exactly [[FOLLOWUPS]] followed by one raw JSON object:
-{"suggestions":[{"prompt":"A short next question","action":"ask"},{"prompt":"Schedule a demo","action":"schedule_demo"}]}
+{"visual":null,"suggestions":[{"prompt":"A short next question","action":"ask"},{"prompt":"Schedule a demo","action":"schedule_demo"}]}
 Generate the suggestions yourself from the current question, answer and conversation.
 Use 2 or 3 concise, relevant suggestions (each prompt at most 200 characters) in the visitor's language, normally a useful
 learning question plus a demo action when appropriate. Avoid topics already answered.
@@ -14,9 +14,10 @@ The example is a format illustration, not a fixed list to copy. Use action "ask"
 questions and "schedule_demo" only to open the local scheduling form. Respect a visitor
 who declines or is not ready for a demo. Do not use links or Markdown in prompts.
 The suggestions are internal metadata, so never explain this format in the answer.
-The optional "visual" key selects a reviewed visual as described separately.
+Write "visual" FIRST (null or a reviewed visual name), then "suggestions".
+This order lets each completed suggestion appear immediately while you finish the rest.
 No code fences, other extra keys or text after the JSON. If no useful suggestion fits, use
-{"suggestions":[]} rather than inventing one.'''
+{"visual":null,"suggestions":[]} rather than inventing one.'''
 
 class Followup(BaseModel):
     model_config = ConfigDict(extra='forbid',str_strip_whitespace=True)
@@ -46,17 +47,70 @@ def split_reply(content):
     if visual: result['visual']=visual
     return result
 
+class StreamingFollowups:
+    """Decode complete suggestion objects from the ordered JSON footer only."""
+    def __init__(self):
+        self.buffer=''
+        self.sent=set()
+        self.ready=[]
+
+    def feed(self,text):
+        if len(self.buffer)+len(text)>8192:return
+        self.buffer+=text
+        decoder=json.JSONDecoder()
+        data=self.buffer
+        def whitespace(index):
+            while index<len(data) and data[index].isspace():index+=1
+            return index
+        def token(index,expected):
+            index=whitespace(index)
+            if not data.startswith(expected,index):raise ValueError('Incomplete footer')
+            return index+len(expected)
+        try:
+            index=token(0,'{')
+            key,index=decoder.raw_decode(data,whitespace(index))
+            if key!='visual':return  # Legacy/unordered footers still work in final.
+            index=token(index,':')
+            visual,index=decoder.raw_decode(data,whitespace(index))
+            if visual=='contact_form':return
+            if visual not in (None,'integration_diagram','integration_flow','pricing_table','api_cost_chart'):return
+            index=token(index,',')
+            key,index=decoder.raw_decode(data,whitespace(index))
+            if key!='suggestions':return
+            index=token(token(index,':'),'[')
+            for _ in range(3):
+                index=whitespace(index)
+                if data[index:index+1]==']':return
+                item,index=decoder.raw_decode(data,index)
+                suggestion=Followup.model_validate(item).model_dump()
+                key=suggestion['prompt'].casefold()
+                if key not in self.sent:
+                    self.sent.add(key);self.ready.append(suggestion)
+                index=whitespace(index)
+                if data[index:index+1]!=',':return
+                index+=1
+        except (ValueError,TypeError,ValidationError):
+            return  # Incomplete JSON is retried after the next chunk.
+
+    def drain(self):
+        ready,self.ready=self.ready,[]
+        return ready
+
 class AnswerStream:
-    """Hide even a marker split across individual model-token chunks."""
+    """Hide the footer and publish its validated suggestions incrementally."""
     def __init__(self):
         self.pending=''
         self.metadata=False
+        self.followups=StreamingFollowups()
     def feed(self,text):
-        if self.metadata:return ''
+        if self.metadata:
+            self.followups.feed(text)
+            return ''
         self.pending+=text
         if FOLLOWUP_MARKER in self.pending:
-            visible=self.pending.split(FOLLOWUP_MARKER,1)[0]
+            visible,metadata=self.pending.split(FOLLOWUP_MARKER,1)
             self.pending='';self.metadata=True
+            self.followups.feed(metadata)
             return visible
         keep=0
         for length in range(1,len(FOLLOWUP_MARKER)):

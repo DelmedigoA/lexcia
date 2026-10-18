@@ -52,6 +52,8 @@ def create_app(graph, knowledge):
                         text=chunk if isinstance(chunk,str) else "".join(p.get("text","") for p in chunk if isinstance(p,dict))
                         visible=visible_stream.feed(text)
                         if visible: yield sse("delta", {"text":visible})
+                        for suggestion in visible_stream.followups.drain():
+                            yield sse("suggestion", {"suggestion":suggestion})
                     if event["event"] == "on_chain_end" and event["name"] == "retrieve":
                         records=event["data"]["output"]["records"]
                         for record in records: yield sse("item", {"item":knowledge.source(record)})

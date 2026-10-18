@@ -102,3 +102,17 @@ and circled check (ready). The detailed graph also uses a database for sources.
 These are local SVG primitives, with allowed icon names checked by the component
 schema. No external icon package, remote asset or image-generation dependency is
 used. Icons are decorative; the graphics retain their accessible text labels.
+
+## Incremental follow-up suggestions
+
+The footer now places `visual` first (including explicit null) and `suggestions`
+second. Complete suggestion objects are parsed and validated as chunks arrive,
+deduplicated, and published as individual `suggestion` SSE events before `final`.
+Contact-form or unknown visual prefixes never stream follow-ups. Legacy/unordered
+footers retain final-only rendering, and final validation remains authoritative.
+
+The browser displays streamed suggestions while the reply is finishing, keeping
+them disabled until completion. New buttons fade in over 0.55 seconds with opacity
+only; there is no translation or stagger delay. Stable prompt keys avoid replaying
+the animation when later buttons arrive or the final list is reconciled. Reduced
+motion disables the fade. Failed turns hide partial suggestions.
