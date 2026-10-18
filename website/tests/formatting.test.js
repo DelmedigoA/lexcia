@@ -26,10 +26,10 @@ test('answer markdown supports code and lists without accepting HTML or javascri
 });
 
 test('section links preserve natural inline wording and styling without favicon chips',()=>{
-  const html=renderAnswer('You can read more [about us](#about).\n\nSee [who it’s for](#for) and our [customization options](#offer).');
+  const html=renderAnswer('You can read more [about us](#about).\n\nSee [why Lexcia helps](#why) and our [interface examples](#look).');
   assert.match(html,/<a href="#about" class="section-link">about us<\/a>/);
-  assert.match(html,/<a href="#for" class="section-link">who it’s for<\/a>/);
-  assert.match(html,/<a href="#offer" class="section-link">customization options<\/a>/);
+  assert.match(html,/<a href="#why" class="section-link">why Lexcia helps<\/a>/);
+  assert.match(html,/<a href="#look" class="section-link">interface examples<\/a>/);
   assert.doesNotMatch(html,/<img|data-slot|target="_blank"/);
   assert.match(renderAnswer('[Book a call](#schedule-demo)'),/>Book a call<\/a>/);
   assert.match(renderAnswer('[עלינו](#about)'),/class="section-link">עלינו<\/a>/);

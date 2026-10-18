@@ -2,8 +2,9 @@ import MarkdownIt from 'markdown-it';
 const markdown=new MarkdownIt({html:false,linkify:false,breaks:true});
 // Style landing-page destinations while preserving natural inline link text.
 const sectionLabels={
+  '#why':'Why Lexcia','#look':'How it looks',
   '#home':'Lexcia','#about':'About Lexcia','#offer':'What we offer',
-  '#how':'How it works','#for':'Who it’s for','#demo':'Live demo',
+  '#how':'How it works','#for':'Who it’s for','#demo':'Free demo',
   '#contact':'Schedule a demo','#schedule-demo':'Schedule a demo',
 };
 markdown.core.ruler.after('inline','section-link-labels',state=>{

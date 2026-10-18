@@ -28,7 +28,7 @@ let closingTimer,autoOpenTimer,entranceTimer;
 const welcomeThread=mountWelcome($('welcome'),{onSend:question=>submitQuestion(question),onWelcomeSuggestion:()=>{sidebarRatio=Math.max(sidebarRatio,defaultSidebarRatio);setPinned(true);},followupContainer:$('followup-suggestions')});
 function syncWelcome(){const thread=currentConversation();welcomeThread.update({threadId:thread.id,turns:thread.turns,isRunning:busy,isDisabled:false});}
 function positionFloatingPanel(){
-  if(!panel.open||pinned)return;
+  if(!panel.open||pinned||panel.classList.contains('embedded'))return;
   const anchor=launcher.getBoundingClientRect(),viewport={width:window.innerWidth,height:window.innerHeight};
   panel.style.setProperty('--floating-height',`${heightNearLauncher(anchor,floatSize().height,viewport)}px`);
   const position=positionNearLauncher(anchor,{width:panel.offsetWidth,height:panel.offsetHeight},viewport);
@@ -63,8 +63,10 @@ function showPanelDialog(){
 }
 function setPinned(value){
   const next=value&&!matchMedia('(max-width: 700px)').matches;
+  const wasEmbedded=next&&panel.classList.contains('embedded');
+  if(wasEmbedded)undockPanel();
   if(next===pinned)return;
-  const wasOpen=panel.open,focused=panel.contains(document.activeElement)?document.activeElement:null;
+  const wasOpen=panel.open||wasEmbedded,focused=panel.contains(document.activeElement)?document.activeElement:null;
   pinned=next;launcher.hidden=pinned;
   panel.classList.toggle('pinned',pinned);
   document.body.classList.toggle('assistant-pinned',pinned);
@@ -104,6 +106,10 @@ function animatePanelEntrance(){
 }
 function openPanel(){
   clearTimeout(autoOpenTimer);
+  if(panel.classList.contains('embedded')){
+    if(heroBotInView()){$('prompt').focus({preventScroll:true});return;}
+    undockPanel();
+  }
   if(closing){clearTimeout(closingTimer);closing=false;}
   const thread=currentConversation();if(thread)setConversationView(thread);
   if(!panel.open)showPanelDialog();
@@ -111,9 +117,9 @@ function openPanel(){
   requestAnimationFrame(()=>{resizeComposer();$('prompt').focus({preventScroll:true});});
 }
 function closePanel(afterClose){
-  if(!panel.open||closing)return;
+  if(!panel.open||closing||panel.classList.contains('embedded'))return;
   closing=true;panel.classList.remove('is-entering');panel.classList.add('is-exiting');launcher.setAttribute('aria-expanded','false');
-  closingTimer=setTimeout(()=>{panel.close();setPinned(false);panel.classList.remove('is-exiting');closing=false;launcher.focus({preventScroll:true});if(typeof afterClose==='function')afterClose();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);
+  closingTimer=setTimeout(()=>{panel.close();setPinned(false);panel.classList.remove('is-exiting');closing=false;dockPanel();launcher.focus({preventScroll:true});if(typeof afterClose==='function')afterClose();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:200);
 }
 // Reveal the landing-page box linked from an answer, preserving the conversation.
 $('messages').addEventListener('click',event=>{
@@ -134,7 +140,7 @@ $('messages').addEventListener('click',event=>{
   sidebarRatio=defaultSidebarRatio;setPinned(true);setPinnedWidth(pinnedWidth());
   requestAnimationFrame(()=>{jump();requestAnimationFrame(()=>document.body.classList.remove('navigating-section'));});
 });
-launcher.onclick=()=>panel.open?closePanel():openPanel();$('close').onclick=closePanel;
+launcher.onclick=()=>panel.open&&!panel.classList.contains('embedded')?closePanel():openPanel();$('close').onclick=closePanel;
 document.querySelectorAll('[data-open-assistant]').forEach(button=>button.addEventListener('click',openPanel));
 document.querySelectorAll('[data-schedule-demo]').forEach(button=>button.addEventListener('click',event=>{event.preventDefault();openPanel();submitQuestion('Schedule a demo');}));
 panel.addEventListener('cancel',event=>{if(event.target!==panel)return;event.preventDefault();closePanel();});
@@ -275,8 +281,86 @@ document.querySelectorAll('[data-ask]').forEach(button=>button.addEventListener(
 const siteHeader=document.querySelector('.site-header');
 const updateHeader=()=>siteHeader?.classList.toggle('is-scrolled',scrollY>24);
 addEventListener('scroll',updateHeader,{passive:true});updateHeader();
-const navLinks=[...document.querySelectorAll('.site-nav a[href^="#"]')];
-if('IntersectionObserver' in window&&navLinks.length){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;for(const link of navLinks){if(link.hash===`#${entry.target.id}`)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');}}},{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('main>section[id]').forEach(section=>observer.observe(section));}
+const navLinks=[...document.querySelectorAll('.site-nav a[href^="#"], .dots a[href^="#"]')];
+if('IntersectionObserver' in window&&navLinks.length){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;for(const link of navLinks){if(link.hash===`#${entry.target.id}`)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');}document.body.classList.toggle('on-dark',entry.target.id==='demo');}},{rootMargin:'-45% 0px -50% 0px'});document.querySelectorAll('main>section[id]').forEach(section=>observer.observe(section));}
 
-// Once per page load, follow the same floating opening path as a launcher click.
-autoOpenTimer=setTimeout(openPanel,500);
+// How it looks: accessible tabs (click, arrow keys, Home/End).
+const tabs=[...document.querySelectorAll('.tabs [role=tab]')];
+const selectTab=(tab,focus)=>{for(const t of tabs){const on=t===tab;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;$(t.getAttribute('aria-controls')).hidden=!on;}if(focus)tab.focus();};
+for(const tab of tabs){tab.addEventListener('click',()=>selectTab(tab));tab.addEventListener('keydown',e=>{const i=tabs.indexOf(tab);const next={ArrowRight:i+1,ArrowLeft:i-1,Home:0,End:tabs.length-1}[e.key];if(next===undefined)return;e.preventDefault();selectTab(tabs[(next+tabs.length)%tabs.length],true);});}
+
+// Free demo form: validates input, then opens an email to Lexcia with the details filled in.
+const DEMO_EMAIL='lexcia.bots@gmail.com';
+const demoForm=$('demo-form');
+if(demoForm){const email=$('demo-email'),site=$('demo-site'),status=$('demo-status');
+const validEmail=v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+const validSite=v=>{try{const u=new URL(/^https?:\/\//i.test(v)?v:`https://${v}`);return /\./.test(u.hostname);}catch{return false;}};
+demoForm.addEventListener('submit',event=>{event.preventDefault();const okEmail=validEmail(email.value.trim()),okSite=validSite(site.value.trim());
+email.setAttribute('aria-invalid',String(!okEmail));site.setAttribute('aria-invalid',String(!okSite));status.classList.toggle('is-error',!(okEmail&&okSite));
+if(!okEmail){status.textContent='Please enter a valid email address.';email.focus();return;}
+if(!okSite){status.textContent='Please enter your website address, for example www.yourwebsite.com.';site.focus();return;}
+const body=`Hello Lexcia,\n\nI'd like a free demo of Lexcia on my website.\n\nEmail: ${email.value.trim()}\nWebsite: ${site.value.trim()}\n`;
+location.href=`mailto:${DEMO_EMAIL}?subject=${encodeURIComponent('Free demo request')}&body=${encodeURIComponent(body)}`;
+status.textContent=`Your email app should open with the request ready to send. If it doesn't, write to ${DEMO_EMAIL}.`;});}
+
+// Why Lexcia: an example visitor journey without and with Lexcia, played when the section comes into view.
+const JOURNEYS=[
+  {path:['Home','About us','Programs','Archive','Events 2023','Gave up'],q:'Which course is right for a beginner?',dest:'Courses › Foundations'},
+  {path:['Home','Products','Compare','Pricing (PDF)','Contact sales','Gave up'],q:'Which plan fits a small team?',dest:'Pricing › Team plan'}
+];
+const journey=$('journey');
+if(journey){const path=$('journey-path'),clicks=$('journey-clicks'),jq=$('journey-q'),dest=$('journey-dest'),cap=$('journey-caption'),switches=[...document.querySelectorAll('[data-journey]')];
+const replay=()=>{journey.classList.remove('is-playing');void journey.offsetWidth;journey.classList.add('is-playing');};
+const show=(i,play)=>{const j=JOURNEYS[i];path.replaceChildren(...j.path.map((step,n)=>{const li=document.createElement('li');li.textContent=step;li.style.setProperty('--i',n);if(n===j.path.length-1)li.className='is-lost';return li;}));
+journey.style.setProperty('--n',j.path.length);clicks.textContent=j.path.length-1;jq.textContent=`“${j.q}”`;dest.textContent=j.dest;
+cap.textContent=`Example. Without Lexcia, a visitor clicks through ${j.path.slice(0,-1).join(', ')} and gives up. With Lexcia, they ask “${j.q}” and go straight to ${j.dest}.`;
+for(const b of switches)b.setAttribute('aria-pressed',String(Number(b.dataset.journey)===i));if(play)replay();};
+for(const b of switches)b.addEventListener('click',()=>show(Number(b.dataset.journey),true));
+show(0,false);journey.classList.add('is-ready');
+if('IntersectionObserver' in window){new IntersectionObserver((entries,obs)=>{if(entries.some(e=>e.isIntersecting)){replay();obs.disconnect();}},{threshold:.45}).observe(journey);}else journey.classList.add('is-playing');}
+
+// Why Lexcia, option A: a question appears and the matching page lights up among many example pages.
+const SURFACE=[
+  {q:'Which course is right for a beginner?',page:7},
+  {q:'Which plan fits a small team?',page:13},
+  {q:'Where is last year’s annual report?',page:20},
+  {q:'Can I return an order?',page:15}
+];
+const surface=$('surface');
+if(surface){const sq=$('surface-q'),items=[...surface.querySelectorAll('[data-page]')];const still=matchMedia('(prefers-reduced-motion: reduce)').matches;let k=0,timer=null;
+const showMatch=i=>{const m=SURFACE[i];sq.classList.add('is-swapping');setTimeout(()=>{sq.textContent=`“${m.q}”`;sq.classList.remove('is-swapping');for(const li of items)li.classList.toggle('is-match',Number(li.dataset.page)===m.page);surface.classList.add('is-found');},still?0:350);};
+const start=()=>{if(timer||still)return;showMatch(k);timer=setInterval(()=>{k=(k+1)%SURFACE.length;showMatch(k);},3200);};
+const stop=()=>{clearInterval(timer);timer=null;};
+showMatch(0);
+if('IntersectionObserver' in window)new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))start();else stop();},{threshold:.3}).observe(surface);else start();}
+
+// Option B: on wider screens the real assistant sits inside the hero box. It undocks into the usual
+// floating window when opened from elsewhere on the page, and returns to the hero when closed.
+const live=$('live'),heroBot=$('hero-bot');
+function canDock(){return Boolean(heroBot)&&live?.classList.contains('live--bot')&&matchMedia('(min-width: 701px)').matches;}
+function heroBotInView(){if(!heroBot)return false;const r=heroBot.getBoundingClientRect();return r.bottom>innerHeight*.25&&r.top<innerHeight*.75;}
+function dockPanel(){
+  if(!canDock()||panel.open||closing)return;
+  setPinned(false);
+  clearTimeout(entranceTimer);
+  panel.classList.remove('is-entering','is-exiting');panel.classList.add('embedded');
+  heroBot.append(panel);live.classList.add('is-docked');
+  const focused=document.activeElement,y=scrollY;
+  panel.show();panel.setAttribute('aria-modal','false');
+  if(focused instanceof HTMLElement)focused.focus({preventScroll:true});
+  if(panel.contains(document.activeElement))document.activeElement.blur();
+  scrollTo({top:y,behavior:'instant'});launcher.setAttribute('aria-expanded','false');syncLauncherVisibility();
+}
+function undockPanel(){
+  if(!panel.classList.contains('embedded'))return;
+  panel.close();panel.classList.remove('embedded');document.body.append(panel);live?.classList.remove('is-docked');syncLauncherVisibility();
+}
+function syncLauncherVisibility(){launcher.hidden=pinned||(panel.classList.contains('embedded')&&heroBotInView());}
+addEventListener('scroll',syncLauncherVisibility,{passive:true});
+dockPanel();
+// The hero already exposes the assistant on desktop; mobile keeps the floating welcome.
+if(!panel.open)autoOpenTimer=setTimeout(openPanel,500);
+addEventListener('resize',()=>{
+  if(panel.classList.contains('embedded')&&!canDock()){undockPanel();openPanel();}
+  else if(!panel.open)dockPanel();
+});

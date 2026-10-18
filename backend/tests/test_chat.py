@@ -49,7 +49,7 @@ def test_landing_knowledge_links_resolve_and_old_corpus_is_removed():
     links=[]
     for record in knowledge.records:
         links.extend(re.findall(r'\]\(#([^)]*)\)',record.content))
-    assert set(links)==anchors-{'home'}
+    assert set(links)==anchors=={'home','why','look','demo'}
     assert len(links)==len(knowledge.records)==7
     assert not {'architecture','design','experience','status','answers'} & {r.id for r in knowledge.records}
     pricing=next(r for r in knowledge.records if r.id=='pricing')
