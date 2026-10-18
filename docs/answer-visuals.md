@@ -94,3 +94,11 @@ records and model instructions use this same sequence.
 The first welcome suggestion pins the chat on desktop through its click callback
 before submission. Other welcome choices keep their existing behavior. Mobile
 retains its floating layout.
+
+Integration icons follow the outline style in the visual-reference figure of
+[Website Integration & Client Onboarding](https://docs.google.com/document/d/1NhgfU4uTeF1W7WlT6mng80LXYGMigmqtfHcLEAIx-o8/edit):
+network (mapping/connections), palette (UI/branding), code brackets (embedding),
+and circled check (ready). The detailed graph also uses a database for sources.
+These are local SVG primitives, with allowed icon names checked by the component
+schema. No external icon package, remote asset or image-generation dependency is
+used. Icons are decorative; the graphics retain their accessible text labels.

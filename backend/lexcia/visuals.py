@@ -51,15 +51,15 @@ def reviewed_visual(name, hebrew=False):
                 'source':label('X: answered questions/month. Historical sample: $1.82–$3.05 per 1,000 questions; at 750: $1.37–$2.29. GPT-6 Luna repricing of a small development sample (Oct 11, 2026), not a live tariff or benchmark. No cache savings. Search, indexing, hosting, paid tools, added protection and support are extra.','ציר X: שאלות שנענו בחודש. מדגם היסטורי: $1.82–$3.05 לכל 1,000 שאלות; ב-750: $1.37–$2.29. תמחור מחדש לפי GPT-6 Luna למדגם פיתוח קטן (11.10.2026), לא מחירון חי או מבחן ביצועים. ללא חיסכון ממטמון. חיפוש, אינדוקס, אחסון, כלים בתשלום, הגנה נוספת ותמיכה הם עלויות נוספות.')}
     if name == 'integration_diagram':
         return {'$type':'Diagram','title':label('Bringing Lexcia to your website','משלבים את Lexcia באתר שלכם'),
-                'steps':[{'title':label('Mapping & connections','מיפוי וחיבורים'),'detail':label('We map your content and connect the sources.','אנחנו ממפים את התוכן ומחברים את מקורות הידע.')},
-                         {'title':label('Made for your organization','מותאם לארגון שלכם'),'detail':label('UI, branding and a name chosen together.','ממשק, מיתוג ושם שבוחרים יחד.')},
-                         {'title':label('Embed on your website','הטמעה באתר שלכם'),'detail':label('Add the lightweight JavaScript snippet.','מוסיפים את קטע ה-JavaScript הקצר.')},
-                         {'title':label("You're ready to go",'מוכנים לצאת לדרך'),'detail':label('Your tailored assistant is ready for visitors.','העוזר המותאם שלכם מוכן למבקרים.')}],
+                'steps':[{'icon':'network','title':label('Mapping & connections','מיפוי וחיבורים'),'detail':label('We map your content and connect the sources.','אנחנו ממפים את התוכן ומחברים את מקורות הידע.')},
+                         {'icon':'palette','title':label('Made for your organization','מותאם לארגון שלכם'),'detail':label('UI, branding and a name chosen together.','ממשק, מיתוג ושם שבוחרים יחד.')},
+                         {'icon':'code','title':label('Embed on your website','הטמעה באתר שלכם'),'detail':label('Add the lightweight JavaScript snippet.','מוסיפים את קטע ה-JavaScript הקצר.')},
+                         {'icon':'check','title':label("You're ready to go",'מוכנים לצאת לדרך'),'detail':label('Your tailored assistant is ready for visitors.','העוזר המותאם שלכם מוכן למבקרים.')}],
                 'source':label('Our team maps and connects your knowledge, builds the experience with you, and prepares it for embedding and launch.','הצוות שלנו ממפה ומחבר את הידע, בונה איתכם את החוויה ומכין אותה להטמעה ולהשקה.')}
     if name == 'integration_flow':
         nodes=[('mapping','Map the content','מיפוי התוכן',0,1),('connections','Connect sources','חיבור מקורות',1,0),('design','UI, brand & name','ממשק, מיתוג ושם',1,2),('test','Test together','בדיקה משותפת',2,1),('embed','Embed on site','הטמעה באתר',3,1),('ready','Ready to go','מוכנים לצאת לדרך',4,1)]
         return {'$type':'FlowGraph','title':label('Your path to launch','הדרך שלכם להשקה'),
-                'nodes':[{'id':key,'label':label(en,he),'column':col,'row':row,'state':'pending'} for key,en,he,col,row in nodes],
+                'nodes':[{'id':key,'label':label(en,he),'column':col,'row':row,'state':'pending','icon':{'mapping':'network','connections':'database','design':'palette','test':'check','embed':'code','ready':'check'}[key]} for key,en,he,col,row in nodes],
                 'edges':[{'from':a,'to':b} for a,b in [('mapping','connections'),('mapping','design'),('connections','test'),('design','test'),('test','embed'),('embed','ready')]],
                 'source':label('An onboarding overview, not live progress. We connect the knowledge and build the UI with you, test together, embed, and get you ready to go.','סקירה של תהליך ההטמעה, לא התקדמות בפועל. מחברים את הידע ובונים איתכם את הממשק, בודקים יחד, מטמיעים ומוכנים לצאת לדרך.')}
     return None
