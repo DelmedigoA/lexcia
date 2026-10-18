@@ -226,7 +226,7 @@ textarea{color:var(--ink);font-family:var(--sans)}textarea::placeholder{color:va
 .conversation-navigation{position:relative;z-index:2;flex-shrink:0;height:0}
 .latest-message{position:absolute;bottom:12px;left:50%;display:grid;place-items:center;width:32px;height:32px;padding:7px;transform:translateX(-50%);border:1px solid var(--rule);border-radius:50%;background:var(--paper);color:var(--ink-2);box-shadow:0 3px 10px rgba(21,32,45,.1)}
 .latest-message:hover{color:var(--ink);background:#fff}
-#prompt{min-height:24px;max-height:160px;font-size:14px}
+#prompt{min-height:24px;max-height:160px;font-size:14px;outline:none}
 @media(pointer:coarse){.message-action{width:44px;height:44px;padding:13px}.latest-message{width:44px;height:44px}#prompt{font-size:16px}}
 
 /* AssistantWelcome from assistant-ui's website, adapted to Lexcia's palette. */
