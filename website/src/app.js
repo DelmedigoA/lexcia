@@ -195,7 +195,7 @@ function finishTurnView(answer,thread,turn){
     return;
   }
   if(turn.scheduling){const surface=document.createElement('div');answer.append(surface);mountDemoScheduling(surface,turn);}
-  if(turn.ui){const follow=nearBottom();const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui,{onRendered:()=>{if(follow)bottom();else updateLatestButton();}});}
+  if(turn.ui){const follow=nearBottom();const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui,{turn,onRendered:()=>{if(follow)bottom();else updateLatestButton();}});}
   if(turn.status==='stopped')appendStoppedNotice(answer,{
     canContinue:()=>thread.id===currentThreadId&&thread.turns.at(-1)===turn,
     onContinue:()=>{if(!busy&&thread.turns.at(-1)===turn)runTurn(thread,turn,answer,true);},

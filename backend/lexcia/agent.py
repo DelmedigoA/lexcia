@@ -32,6 +32,7 @@ def build_agent(knowledge, model, instructions, system="", guard=None):
         content=result.content if isinstance(result.content,str) else "".join(part.get("text", "") for part in result.content if isinstance(part,dict))
         reply=split_reply(content)
         visual=reply.pop('visual',None)
+        if visual=='contact_email':reply['suggestions']=[]
         reply['ui']=reviewed_visual(visual,hebrew=any('\u0590'<=c<='\u05ff' for c in state['question']))
         return reply
     graph = StateGraph(State)

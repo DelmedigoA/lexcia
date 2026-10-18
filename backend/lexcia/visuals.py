@@ -3,12 +3,22 @@ from decimal import Decimal, ROUND_HALF_UP
 
 # Fixed USD planning ranges; conversion provenance is kept in docs/answer-visuals.md.
 PRICE_RANGES_USD = {'early': ((810,2430),(80,240)), 'standard': ((3240,8090),(320,810))}
+CONTACT_EMAIL = 'delmedigo.asaf@gmail.com'
 COST_PER_THOUSAND = (Decimal('1.82'), Decimal('3.05'))
 VISUAL_FORMAT = '''You can attach one reviewed visual to an answer by adding "visual" to the
 [[FOLLOWUPS]] JSON object. Choose "integration_diagram" for ease-of-integration questions;
 "integration_flow" for detailed onboarding steps, workflow or parallel work questions;
 "pricing_table" for setup/subscription pricing; "api_cost_chart" specifically for additional
-API-request costs or usage estimates. Use null for other answers. Select from the actual
+API-request costs or usage estimates. Choose "contact_email" ONLY when the latest
+visitor message explicitly asks to contact/email/write to the Lexcia team or requests
+this contact draft. This is an opt-in exception, never a proactive lead form. Do not
+show it for general product/pricing/API/integration questions, demo scheduling,
+incidental email mentions, requests to write to someone else, negated or hypothetical
+contact requests, or quoted examples. A demo request stays in the scheduling flow.
+The draft opens the visitor's email app; this chat never sends an email. Do not say
+that an email was sent, received or submitted, and do not invent draft content from
+the visitor's organization. For contact_email, return no follow-up suggestions.
+Use null for other answers. Select from the actual
 question and conversation, including contextual follow-ups, not keywords alone. The server
 supplies the reviewed data, so never output a UI tree, SVG, HTML or invented chart figures.
 Keep the normal answer to one or two sentences; do not repeat every visual row in prose.
@@ -20,6 +30,9 @@ def api_cost(questions, rate):
 
 def reviewed_visual(name, hebrew=False):
     def label(en,he): return he if hebrew else en
+    if name == 'contact_email':
+        return {'$type':'DraftEmail','title':label('Contact Lexcia','יצירת קשר עם Lexcia'),'to':CONTACT_EMAIL,
+                'subject':label('Contacting Lexcia','יצירת קשר עם Lexcia'),'body':'','language':'he' if hebrew else 'en'}
     if name == 'pricing_table':
         rows=[]
         for key,title in [('early',label('Early customers','לקוחות ראשונים')),('standard',label('Future standard pricing','תמחור רגיל עתידי'))]:

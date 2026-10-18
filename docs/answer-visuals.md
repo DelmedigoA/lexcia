@@ -13,6 +13,7 @@ was added. An invalid/missing footer keeps the prose without a graphic.
 | `integration_flow` | What are the onboarding steps? | Branches for knowledge and interface preparation, joining at testing |
 | `pricing_table` | What does Lexcia cost? | Sortable table; cards and sorting selector in narrow panels |
 | `api_cost_chart` | What are the additional API costs? | Two estimate series, style controls, replay and exact values |
+| `contact_email` | I want to contact/email the Lexcia team | Local From/To/Subject/Message composer with review and mail-app handoff |
 
 These adapt the MIT-licensed assistant-ui Elements [Diagram](https://www.assistant-ui.com/elements/diagram),
 [Flow graph](https://www.assistant-ui.com/elements/flow-graph),
@@ -61,3 +62,20 @@ models, context, output length, calls and paid operations.
 Source content and provenance are in the `pricing` record in
 `knowledge/lexcia.json`. Preset figures live in `backend/lexcia/visuals.py`; keep
 these in sync with any revised commercial decision or estimate.
+
+## Explicit contact requests
+
+The [Draft email](https://www.assistant-ui.com/elements/generative-draft-email)
+form is an opt-in contact surface, not a proactive lead form. The model selects it
+only when the visitor explicitly asks to contact Lexcia. Product, pricing,
+integration, incidental email mentions, negated/hypothetical requests and email
+to third parties must not trigger it. Demo scheduling remains separate.
+
+The recipient is fixed to `delmedigo.asaf@gmail.com`, explicitly supplied by Asaf
+on October 18. The backend supplies this address and the frontend schema rejects
+other recipients. Visitors fill the draft, review it, and choose Open email app.
+The resulting mailto URI encodes subject/body and includes their reply-to address
+in the message; the email app chooses the actual sending account. Nothing is sent
+by the chat and there is no mail-provider integration. Typed fields are retained
+in page memory only and never included in answer-model messages. No follow-up
+suggestions are shown on the contact-draft turn.

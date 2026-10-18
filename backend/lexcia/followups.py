@@ -25,7 +25,7 @@ class Followup(BaseModel):
 class FollowupPayload(BaseModel):
     model_config = ConfigDict(extra='forbid')
     suggestions: list[Followup] = Field(max_length=3)
-    visual: Literal['integration_diagram','integration_flow','pricing_table','api_cost_chart'] | None = None
+    visual: Literal['integration_diagram','integration_flow','pricing_table','api_cost_chart','contact_email'] | None = None
 
 def split_reply(content):
     answer,separator,metadata=content.partition(FOLLOWUP_MARKER)

@@ -15,7 +15,7 @@ from lexcia.visuals import reviewed_visual, api_cost
 
 ROOT=Path(__file__).resolve().parents[2]
 
-@pytest.mark.parametrize('name,component',[('integration_diagram','Diagram'),('integration_flow','FlowGraph'),('pricing_table','DataTable'),('api_cost_chart','Chart')])
+@pytest.mark.parametrize('name,component',[('integration_diagram','Diagram'),('integration_flow','FlowGraph'),('pricing_table','DataTable'),('api_cost_chart','Chart'),('contact_email','DraftEmail')])
 def test_model_choice_reaches_final_sse_as_reviewed_data_without_leaking_metadata(name,component):
     async def scenario():
         metadata=json.dumps({'suggestions':[],'visual':name})

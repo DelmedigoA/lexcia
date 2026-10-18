@@ -15,7 +15,7 @@ class GuardDecision(BaseModel):
 GUARD_PROMPT = """Classify the latest question's relevance to Lexcia. Do not answer it.
 Lexcia is a conversational layer for content-rich websites. In scope: the project,
 its benefits, audience, customization, design, behavior, knowledge integration,
-onboarding, pricing, customer collaboration, demos and landing-page navigation.
+onboarding, pricing, customer collaboration, contacting the Lexcia team, demos and landing-page navigation.
 Allow a visitor to describe their own organization, website or knowledge base and
 ask how Lexcia could help, integrate, be customized, or demonstrate that content.
 Allow greetings, thanks, questions about this assistant, and contextual follow-ups.

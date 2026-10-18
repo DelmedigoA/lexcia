@@ -2,8 +2,8 @@
   {
     "id": "overview",
     "title": "What is Lexcia?",
-    "content": "Lexcia is a new project building a conversational layer for content-rich websites. It helps visitors find and use the valuable knowledge an organization already has, through an assistant tailored to its website, brand and visitors. The exciting idea is to make that existing investment in knowledge easier to discover and use, without asking visitors to work through the website alone.\n\n[About Lexcia](#about)",
-    "provenance": "Product positioning: https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit; project stage and value clarified by Asaf, October 18, 2026."
+    "content": "Lexcia is a new project building a conversational layer for content-rich websites. It helps visitors find and use the valuable knowledge an organization already has, through an assistant tailored to its website, brand and visitors. The exciting idea is to make that existing investment in knowledge easier to discover and use, without asking visitors to work through the website alone.\n\nOnly visitors who explicitly ask to contact the Lexcia team can open a local email draft addressed to delmedigo.asaf@gmail.com. They fill in their email, subject and message, review it, and choose Open email app to send themselves. The chat does not send email or submit a contact request. This contact draft is separate from the demo scheduling preview.\n\n[About Lexcia](#about)",
+    "provenance": "Product positioning: https://docs.google.com/document/d/1__zDd0ZhdbDSQjDmCZIFABKPeqHIL2tu1kb3rxN7dhM/edit; project stage and value clarified by Asaf, October 18, 2026. Contact recipient and explicit-request-only draft behavior confirmed by Asaf, October 18, 2026."
   },
   {
     "id": "problem",

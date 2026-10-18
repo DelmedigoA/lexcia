@@ -3,6 +3,7 @@ import {createRoot} from 'react-dom/client';
 import {JSONGenerativeUI, renderGenerativeUI} from '@assistant-ui/react-generative-ui';
 import {schemas, validateUI} from './ui-schema.js';
 import {Diagram, FlowGraph} from './structured-visuals.jsx';
+import {AnswerTurnContext, DraftEmail} from './contact-email.jsx';
 
 // Chart and DataTable adapt assistant-ui Elements (MIT; public/licenses/assistant-ui.txt).
 function Chart({title, unit, data, variant: initial, source, seriesLabels}) {
@@ -61,6 +62,7 @@ const renderers = {
   Diagram: props=><Diagram {...props}/>,
   FlowGraph: props=><FlowGraph {...props}/>,
   DataTable: props=><DataTable {...props}/>,
+  DraftEmail: props=><DraftEmail {...props}/>,
   Source: ({title,url})=><a className="answer-source" href={url} target="_blank" rel="noopener noreferrer"><span>Source</span>{title} ↗</a>,
 };
 export const library = Object.fromEntries(Object.entries(schemas).map(([name,properties])=>[name,{description:`Render the reviewed ${name} component. Use factual source-grounded data only.`,properties,render:renderers[name]}]));
@@ -68,11 +70,11 @@ export const library = Object.fromEntries(Object.entries(schemas).map(([name,pro
 export function createResearchPresentTool() { return new JSONGenerativeUI({library}).present(); }
 const roots = new Set();
 export function clearAnswerRoots() { for (const root of roots) root.unmount(); roots.clear(); }
-function AnswerSurface({valid,onRendered}) {
+function AnswerSurface({valid,onRendered,turn}) {
   useEffect(()=>{onRendered?.();},[onRendered]);
-  return <div className="answer-ui">{renderGenerativeUI(valid,library)}</div>;
+  return <AnswerTurnContext.Provider value={turn}><div className="answer-ui">{renderGenerativeUI(valid,library)}</div></AnswerTurnContext.Provider>;
 }
-export function mountAnswer(container, tree, {onRendered}={}) {
-  try { const valid=validateUI(tree); const root=createRoot(container);roots.add(root);root.render(<AnswerSurface valid={valid} onRendered={onRendered}/>); }
+export function mountAnswer(container, tree, {onRendered,turn}={}) {
+  try { const valid=validateUI(tree); const root=createRoot(container);roots.add(root);root.render(<AnswerSurface valid={valid} onRendered={onRendered} turn={turn}/>); }
   catch { container.textContent='This structured answer could not be displayed. Its data did not match the supported component schema.';container.setAttribute('role','alert'); }
 }
