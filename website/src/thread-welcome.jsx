@@ -22,15 +22,15 @@ function AssistantWelcome({onFirstSuggestion}){
   return <div className="thread-welcome">
     <div className="thread-welcome-greeting">
       <h3>{GREETING_WORDS.map((word,index)=><Fragment key={word}>
-        <span className="welcome-word" style={{animationDelay:`${index*90}ms`}}>{word}</span>{' '}
+        <span className="welcome-word" style={{animationDelay:`${index*110}ms`}}>{word}</span>{' '}
       </Fragment>)}<span className="welcome-caret" aria-hidden="true" /></h3>
-      <p className="welcome-rise" style={{animationDelay:'500ms'}}>Let’s help visitors find it. Explore what Lexcia could do with your content.</p>
+      <p className="welcome-rise" style={{animationDelay:'610ms'}}>Let’s help visitors find it. Explore what Lexcia could do with your content.</p>
     </div>
     <nav className="welcome-suggestions" aria-label="Suggested questions">
       {SUGGESTIONS.map(([prompt,label],index)=><ThreadPrimitive.Suggestion
         key={prompt} prompt={prompt} send className="welcome-rise"
         onClick={index===0?onFirstSuggestion:undefined}
-        style={{animationDelay:`${660+index*60}ms`}}
+        style={{animationDelay:`${800+index*70}ms`}}
       ><span className="welcome-arrow" aria-hidden="true">{'>'}</span><span>{label}</span></ThreadPrimitive.Suggestion>)}
     </nav>
   </div>;
