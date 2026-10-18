@@ -6,8 +6,3 @@ export function validateContactForm(draft){
   if(typeof draft.content!=='string'||!draft.content.trim()||draft.content.length>4000)return 'content';
   return null;
 }
-export function contactMailto(draft){
-  if(validateContactForm(draft))throw Error('Please complete the contact form.');
-  const body=`Reply-to: ${draft.email.trim()}\n\n${draft.content.trim()}`;
-  return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(draft.subject.trim())}&body=${encodeURIComponent(body)}`;
-}

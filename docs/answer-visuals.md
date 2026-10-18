@@ -13,7 +13,7 @@ was added. An invalid/missing footer keeps the prose without a graphic.
 | `integration_flow` | What are the onboarding steps? | Branches for knowledge and interface preparation, joining at testing |
 | `pricing_table` | What does Lexcia cost? | Sortable table; cards and sorting selector in narrow panels |
 | `api_cost_chart` | What are the additional API costs? | Two estimate series, style controls, replay and exact values |
-| `contact_form` | I want to contact/email the Lexcia team | Compact Email/Subject/Content form with mail-app handoff |
+| `contact_form` | I want to contact/email the Lexcia team | Compact Email/Subject/Content form with a fictional Send button |
 
 These adapt the MIT-licensed assistant-ui Elements [Diagram](https://www.assistant-ui.com/elements/diagram),
 [Flow graph](https://www.assistant-ui.com/elements/flow-graph),
@@ -74,9 +74,10 @@ must not trigger it. Demo scheduling remains separate.
 
 The recipient is fixed to `delmedigo.asaf@gmail.com`, explicitly supplied by Asaf
 on October 18. The backend supplies this address and the frontend schema rejects
-other recipients. The form's single action opens the visitor's email app with an
-encoded subject, content and reply-to address. The email app chooses the sending
-account. Nothing is sent by the chat and there is no mail-provider integration.
+other recipients. The form's Send button is fictional: it only records a local preview-complete
+state and shows ‘Preview only — no message was sent.’ It opens no email app and
+makes no network request. Editing re-enables the button. Nothing is sent by the
+chat and there is no mail-provider integration.
 Typed fields are retained in page memory only and never included in answer-model
 messages. No follow-up suggestions are shown on the contact-form turn. Retain the
 MIT notice for the original assistant-ui form styling.
