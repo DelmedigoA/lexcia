@@ -89,7 +89,7 @@ function renderConversation(thread){
     finishTurnView(answer,thread,turn);
   }
   renderedThreadId=thread?.id||null;
-  $('welcome').hidden=Boolean(thread?.turns?.length);if(thread?.turns?.length)bottom();else $('thread').scrollTop=0;
+  $('welcome').hidden=Boolean(thread?.turns?.length);if(thread?.turns?.length)alignLatestQuestion();else{$('thread').style.setProperty('--turn-space','0px');$('thread').scrollTop=0;}
 }
 function setConversationView(thread){
   renderConversation(thread);
@@ -180,14 +180,26 @@ function nearBottom(){const el=$('thread');return el.scrollHeight-el.scrollTop-e
 function updateLatestButton(){$('latest').hidden=!$('messages').children.length||$('thread').hidden||nearBottom();}
 $('latest').onclick=bottom;
 $('thread').addEventListener('scroll',updateLatestButton,{passive:true});
-new ResizeObserver(updateLatestButton).observe($('messages'));
-let followupHeight=0;
-new ResizeObserver(([entry])=>{
-  const growth=Math.max(0,entry.contentRect.height-followupHeight);followupHeight=entry.contentRect.height;
-  const thread=$('thread');
-  if(thread.scrollHeight-thread.scrollTop-thread.clientHeight<90+growth)bottom();else updateLatestButton();
-}).observe($('followup-suggestions'));
-new ResizeObserver(updateLatestButton).observe($('thread'));
+// Keep enough space below short replies to place their question at the top.
+function sizeLatestTurn(){
+  const messages=$('messages'),question=[...messages.querySelectorAll('.message--user')].at(-1);
+  const answer=messages.lastElementChild;
+  if(!question||!answer){$('thread').style.setProperty('--turn-space','0px');return;}
+  const viewport=$('thread'),style=getComputedStyle(viewport);
+  const available=viewport.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom);
+  const content=$('followup-suggestions').getBoundingClientRect().bottom-question.getBoundingClientRect().top;
+  const padding=`${Math.max(0,Math.ceil(available-content))}px`;
+  if(viewport.style.getPropertyValue('--turn-space')!==padding)viewport.style.setProperty('--turn-space',padding);
+}
+function alignLatestQuestion(){
+  sizeLatestTurn();
+  const question=[...$('messages').querySelectorAll('.message--user')].at(-1);
+  if(question){const viewport=$('thread');viewport.scrollTop+=question.getBoundingClientRect().top-viewport.getBoundingClientRect().top-parseFloat(getComputedStyle(viewport).paddingTop);}
+  updateLatestButton();
+}
+new ResizeObserver(()=>{sizeLatestTurn();updateLatestButton();}).observe($('messages'));
+new ResizeObserver(()=>{sizeLatestTurn();updateLatestButton();}).observe($('thread'));
+new ResizeObserver(()=>{sizeLatestTurn();updateLatestButton();}).observe($('followup-suggestions'));
 function finishTurnView(answer,thread,turn){
   if(turn.guardrail){
     answer.replaceChildren();
@@ -195,7 +207,7 @@ function finishTurnView(answer,thread,turn){
     return;
   }
   if(turn.scheduling){const surface=document.createElement('div');answer.append(surface);mountDemoScheduling(surface,turn);}
-  if(turn.ui){const follow=nearBottom();const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui,{turn,onRendered:()=>{if(follow)bottom();else updateLatestButton();}});}
+  if(turn.ui){const surface=document.createElement('div');answer.append(surface);mountAnswer(surface,turn.ui,{turn,onRendered:()=>{sizeLatestTurn();updateLatestButton();}});}
   if(turn.status==='stopped')appendStoppedNotice(answer,{
     canContinue:()=>thread.id===currentThreadId&&thread.turns.at(-1)===turn,
     onContinue:()=>{if(!busy&&thread.turns.at(-1)===turn)runTurn(thread,turn,answer,true);},
@@ -214,18 +226,18 @@ async function runTurn(thread,turn,answer,resume=false){
   answer.innerHTML=renderAnswer(base);const pending=document.createElement('div');answer.append(pending);const stopThinking=mountThinking(pending,resume?'continuing…':'thinking…');
   let text='',readItems=resume?[...(turn.items||[])]:[],finalReceived=false;
   const fullText=()=>appendContinuation(base,text);
-  const update=()=>{stopThinking();const follow=nearBottom();answer.dir=isHebrewDominant(fullText())?'rtl':'ltr';answer.innerHTML=renderAnswer(fullText(),readItems);if(follow)bottom();else updateLatestButton();};
-  bottom();
+  const update=()=>{stopThinking();answer.dir=isHebrewDominant(fullText())?'rtl':'ltr';answer.innerHTML=renderAnswer(fullText(),readItems);sizeLatestTurn();updateLatestButton();};
+  alignLatestQuestion();
   try{
     await askLexcia(requestQuestion,event=>{
       if(event.event==='item'&&event.data.item){const item=event.data.item;items.set(item.item_id,item);if(!readItems.some(i=>i.item_id===item.item_id))readItems.push(item);}
       if(event.event==='delta'){if(!turn.repliedAt)turn.repliedAt=Date.now();text+=event.data.text||'';update();}
       if(event.event==='suggestion'&&event.data.suggestion){turn.suggestionsStreaming=true;turn.suggestions.push(event.data.suggestion);syncWelcome();}
       if(event.event==='final'){
-        finalReceived=true;const follow=nearBottom();
+        finalReceived=true;
         text=event.data.answer||text;const finalItems=event.data.items||readItems;readItems=resume?[...new Map([...(turn.items||[]),...finalItems].map(item=>[item.item_id||item.url,item])).values()]:finalItems;for(const item of readItems)items.set(item.item_id,item);update();
         turn.answer=fullText();turn.items=readItems;turn.suggestions=event.data.suggestions||[];turn.suggestionsStreaming=false;turn.guardrail=event.data.guardrail||null;turn.ui=event.data.ui||null;turn.status='complete';turn.repliedAt??=Date.now();thread.updatedAt=Date.now();updateConversations();finishTurnView(answer,thread,turn);
-        if(follow)bottom();else updateLatestButton();
+        sizeLatestTurn();updateLatestButton();
       }
     },controller.signal,currentThreadId);
   }catch(error){
@@ -235,7 +247,7 @@ async function runTurn(thread,turn,answer,resume=false){
       if(!stopped)turn.error=error.message;
       thread.updatedAt=Date.now();updateConversations();update();finishTurnView(answer,thread,turn);
     }
-  }finally{stopThinking();answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus();updateLatestButton();}
+  }finally{stopThinking();answer.setAttribute('aria-busy','false');setBusy(false);controller=null;$('prompt').focus({preventScroll:true});sizeLatestTurn();updateLatestButton();}
 }
 function submitQuestion(question){
   question=question.trim();if(!question||busy)return;
@@ -246,7 +258,7 @@ function submitQuestion(question){
   if(scheduleDemo){
     if(!matchMedia('(max-width: 700px)').matches){sidebarRatio=Math.max(sidebarRatio,defaultSidebarRatio);setPinned(true);setPinnedWidth(pinnedWidth());}
     turn.answer='We’re excited to explore how Lexcia could work on your website!\n\nChoose your preferred details below, then click **Review demo**.';turn.status='complete';turn.scheduling={step:'form',name:'',email:'',website:'',date:'',time:'',attendees:'1 person',notes:''};
-    answer.innerHTML=renderAnswer(turn.answer);finishTurnView(answer,thread,turn);syncWelcome();$('send').disabled=true;requestAnimationFrame(()=>{answer.scrollIntoView({block:'start'});answer.querySelector('h3')?.focus({preventScroll:true});});return;
+    answer.innerHTML=renderAnswer(turn.answer);finishTurnView(answer,thread,turn);syncWelcome();$('send').disabled=true;requestAnimationFrame(alignLatestQuestion);return;
   }
   return runTurn(thread,turn,answer);
 }
