@@ -93,7 +93,6 @@ function renderConversation(thread){
 }
 function setConversationView(thread){
   renderConversation(thread);
-  $('panel-title').textContent=thread.title==='New inquiry'?'Lexcia':thread.title||'Lexcia';
   $('status').textContent='';updateLatestButton();
 }
 function animatePanelEntrance(){
@@ -141,7 +140,6 @@ document.querySelectorAll('[data-schedule-demo]').forEach(button=>button.addEven
 panel.addEventListener('cancel',event=>{event.preventDefault();closePanel();});
 panel.addEventListener('click',event=>{if(!pinned&&event.target===panel)closePanel();});
 panel.addEventListener('keydown',event=>{if(pinned&&event.key==='Escape'&&!event.defaultPrevented){event.preventDefault();closePanel();}});
-$('expand').onclick=()=>{const expanded=panel.classList.toggle('expanded');$('expand').setAttribute('aria-pressed',String(expanded));$('expand').setAttribute('aria-label',expanded?'Restore panel size':'Expand panel');$('expand').title=expanded?'Restore panel size':'Expand panel';positionFloatingPanel();};
 pin.onclick=()=>setPinned(!pinned);
 divider.addEventListener('pointerdown',event=>{
   if(!pinned)return;
@@ -160,11 +158,11 @@ divider.addEventListener('keydown',event=>{
 });
 addEventListener('resize',()=>{if(pinned){if(matchMedia('(max-width: 700px)').matches)setPinned(false);else setPinnedWidth(pinnedWidth());}});
 const grip=$('resize-grip');
-function resetFloatSize(){setFloatSize(420,620);panel.classList.remove('expanded');$('expand').setAttribute('aria-pressed','false');$('expand').setAttribute('aria-label','Expand panel');$('expand').title='Expand panel';positionFloatingPanel();}
+function resetFloatSize(){setFloatSize(420,620);positionFloatingPanel();}
 grip.addEventListener('pointerdown',event=>{
   if(pinned)return;event.preventDefault();grip.setPointerCapture(event.pointerId);
   const start={x:event.clientX,y:event.clientY,width:panel.offsetWidth,height:panel.offsetHeight};
-  const resize=move=>{panel.classList.remove('expanded');$('expand').setAttribute('aria-pressed','false');$('expand').setAttribute('aria-label','Expand panel');$('expand').title='Expand panel';setFloatSize(start.width+move.clientX-start.x,start.height-(move.clientY-start.y));positionFloatingPanel();};
+  const resize=move=>{setFloatSize(start.width+move.clientX-start.x,start.height-(move.clientY-start.y));positionFloatingPanel();};
   const finish=()=>{grip.removeEventListener('pointermove',resize);grip.removeEventListener('pointerup',finish);grip.removeEventListener('pointercancel',finish);};
   grip.addEventListener('pointermove',resize);grip.addEventListener('pointerup',finish);grip.addEventListener('pointercancel',finish);
 });
