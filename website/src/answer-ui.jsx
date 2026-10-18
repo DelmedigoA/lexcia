@@ -3,7 +3,7 @@ import {createRoot} from 'react-dom/client';
 import {JSONGenerativeUI, renderGenerativeUI} from '@assistant-ui/react-generative-ui';
 import {schemas, validateUI} from './ui-schema.js';
 import {Diagram, FlowGraph} from './structured-visuals.jsx';
-import {AnswerTurnContext, DraftEmail} from './contact-email.jsx';
+import {AnswerTurnContext, ContactForm} from './contact-form.jsx';
 
 // Chart and DataTable adapt assistant-ui Elements (MIT; public/licenses/assistant-ui.txt).
 function Chart({title, unit, data, variant: initial, source, seriesLabels}) {
@@ -62,7 +62,7 @@ const renderers = {
   Diagram: props=><Diagram {...props}/>,
   FlowGraph: props=><FlowGraph {...props}/>,
   DataTable: props=><DataTable {...props}/>,
-  DraftEmail: props=><DraftEmail {...props}/>,
+  ContactForm: props=><ContactForm {...props}/>,
   Source: ({title,url})=><a className="answer-source" href={url} target="_blank" rel="noopener noreferrer"><span>Source</span>{title} ↗</a>,
 };
 export const library = Object.fromEntries(Object.entries(schemas).map(([name,properties])=>[name,{description:`Render the reviewed ${name} component. Use factual source-grounded data only.`,properties,render:renderers[name]}]));

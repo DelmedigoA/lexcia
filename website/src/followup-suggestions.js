@@ -3,7 +3,7 @@ import {declinesDemo,isDemoSchedulingQuestion} from './demo-scheduling.js';
 // The model supplies the content and actions; local code only validates/filter them.
 export function followupSuggestions(turns){
   const last=turns.at(-1);
-  if(!last||last.status!=='complete'||last.scheduling||last.ui?.$type==='DraftEmail'||last.guardrail||!Array.isArray(last.suggestions))return [];
+  if(!last||last.status!=='complete'||last.scheduling||last.ui?.$type==='ContactForm'||last.guardrail||!Array.isArray(last.suggestions))return [];
   const hasDraft=turns.some(turn=>turn.scheduling&&turn.scheduling.step!=='cancelled');
   const declined=turns.some(turn=>declinesDemo(turn.question));
   const seen=new Set();
