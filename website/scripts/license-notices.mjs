@@ -10,7 +10,7 @@ for(const [path,pkg] of Object.entries(lock.packages).sort(([a],[b])=>a.localeCo
   if(!path||pkg.dev)continue;
   const name=path.replace(/^node_modules\//,'');
   const files=readdirSync(join(root,path)).filter(name=>/^(licen[cs]e|copying|notice)([.\-]|$)/i.test(name)).sort();
-  let notice=files.map(file=>`${file}\n\n${readFileSync(join(root,path,file),'utf8').trim()}`).join('\n\n');
+  let notice=files.map(file=>`${file}\n\n${readFileSync(join(root,path,file),'utf8').replace(/\r\n/g,'\n').trim()}`).join('\n\n');
   if(!notice){
     missing.push(`${name}@${pkg.version}`);
     const metadata=JSON.parse(readFileSync(join(root,path,'package.json'),'utf8'));
