@@ -45,6 +45,24 @@ Open http://127.0.0.1:5173. The website proxies `/api` to Lexcia on port 8767. C
 
 After dependency setup, `./scripts/dev.sh` starts both services from any directory. Stop it with Ctrl+C.
 
+## Crawl4AI experiment
+
+From the repository root:
+
+```sh
+uv run scripts/crawl4ai_test.py
+```
+
+The script prints Hacker News as Markdown and saves it to `output/crawl4ai.md`
+(overwritten on each successful run). Change `URL` in the script to try another page.
+It uses Crawl4AI's [simple crawling API](https://docs.crawl4ai.com/core/simple-crawling/).
+Dependencies run in an isolated Python 3.12 environment managed by `uv`.
+On another machine, install the browsers once before running:
+
+```sh
+uv run --no-project --python 3.12 --with crawl4ai crawl4ai-setup
+```
+
 ## Verify
 
 ```sh
