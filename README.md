@@ -53,7 +53,7 @@ From the repository root:
 uv run scripts/crawl4ai_test.py
 ```
 
-The script prints Hacker News as Markdown and saves it to `output/crawl4ai.md`
+The script prints the Lexcia website as Markdown and saves it to `output/crawl4ai.md`
 (overwritten on each successful run). Change `URL` in the script to try another page.
 It uses Crawl4AI's [simple crawling API](https://docs.crawl4ai.com/core/simple-crawling/).
 Dependencies run in an isolated Python 3.12 environment managed by `uv`.

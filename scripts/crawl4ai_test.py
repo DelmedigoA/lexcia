@@ -9,7 +9,7 @@ from pathlib import Path
 
 from crawl4ai import AsyncWebCrawler
 
-URL = "https://news.ycombinator.com"
+URL = "https://lexcia.vercel.app"
 OUTPUT = Path(__file__).resolve().parents[1] / "output" / "crawl4ai.md"
 
 
