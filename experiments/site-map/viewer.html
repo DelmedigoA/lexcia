@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crawl4AI · Native domain map</title>
+<style>body{font:16px system-ui;max-width:1000px;margin:40px auto;padding:0 20px;color:#20333e;background:#f6f8fa}h1{font-size:28px}input{font:inherit;padding:12px;width:100%;box-sizing:border-box}li{padding:12px 0;border-bottom:1px solid #d4dde2;overflow-wrap:anywhere}a{color:#086d75}small{display:block;color:#526773;margin-top:5px}</style>
+<h1>Crawl4AI · Native domain map</h1><p>Direct DomainMapper results. Searchable URL inventory with discovery provenance; the native API does not supply a hierarchy or link graph.</p>
+<input id="search" placeholder="Search Hebrew URL or discovery source…" aria-label="Search results"><p id="count"></p><ul id="results"></ul>
+<script type="application/json" id="data">__DATA__</script><script>
+const data=JSON.parse(document.getElementById('data').textContent);
+function render(){const q=document.getElementById('search').value.toLocaleLowerCase(),rows=data.filter(r=>decodeURI(r.url).toLocaleLowerCase().includes(q)||r.source.includes(q)),list=document.getElementById('results');list.replaceChildren();document.getElementById('count').textContent=`${rows.length} of ${data.length} discovered URLs`;
+for(const row of rows){const li=document.createElement('li'),a=document.createElement('a'),s=document.createElement('small');a.textContent=decodeURI(row.url);a.href=row.url;a.target='_blank';a.rel='noopener noreferrer';a.dir='auto';s.textContent=`Source: ${row.source} · Status: ${row.status}`;li.append(a,s);list.append(li)}}
+document.getElementById('search').addEventListener('input',render);render();
+</script></html>
