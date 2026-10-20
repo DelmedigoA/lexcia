@@ -187,3 +187,7 @@ Keep lockfiles and relevant MIT/license notices. Never print, commit or upload `
 5. For conflicts, inspect both versions, their common ancestor and commit history. Resolve automatically only when both changes can safely coexist.
 6. If changes contradict each other or intended behavior is unclear, stop and ask the developer. Never arbitrarily select one version or discard work.
 7. Run relevant tests before pushing, review the staged diff, and never commit secrets or local `.env` files.
+
+## Licensing maintenance
+
+See `THIRD_PARTY_NOTICES.md` and the split repositories’ notice files. Preserve upstream texts when copying code/assets and regenerate dependency notices for releases. Keep licensing of experiments/content separate; do not grant a project-wide license without an explicit owner decision. Customer embed snippets remain unchanged; distribution notices belong in the hosted widget.
