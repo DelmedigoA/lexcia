@@ -78,6 +78,27 @@ Validation checks coverage, source revisions, licenses, local photographs, searc
 consistency, sanitized content, guide relationships and, after a build, every local
 link, image and anchor in the exported HTML.
 
+## Deploy on GitHub Pages
+
+The public demo is built from this directory by the repository-level workflow at
+`../.github/workflows/portugal-atlas-pages.yml`. It publishes to
+`https://delmedigoa.github.io/lexcia/` when changes reach the `codex/portugal-travel-atlas`
+branch. GitHub Pages is set up as a separate static site; it does not replace the
+Lexcia production website or use its Vercel project. The build is exported to `out/`
+with `/lexcia` as its base path, including guide photos, fonts, search, and internal
+links.
+
+To place the complete atlas inside another website, add a mount element and the
+hosted loader:
+
+```html
+<div id="terra-mar-atlas"></div>
+<script defer src="https://delmedigoa.github.io/lexcia/terra-mar.js"></script>
+```
+
+The loader creates a responsive, titled iframe at the script's location. Change the
+mount ID with `data-target` if the host page already uses `terra-mar-atlas`.
+
 ## Deploy on Vercel
 
 Create a **separate Vercel project** with this folder (`portugal-atlas`) as its Root

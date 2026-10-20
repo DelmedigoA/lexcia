@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { catalog, regions, entry, photoFor } from "@/lib/content";
+import { publicAsset } from "@/lib/paths";
 import {
   Card,
   Breadcrumbs,
@@ -51,7 +52,7 @@ export default async function Region({
       {photo ? (
         <>
           <div className="wide-photo">
-            <img src={photo.file} alt={r.title} width="1600" height="600" />
+            <img src={publicAsset(photo.file)} alt={r.title} width="1600" height="600" />
           </div>
           <PhotoCredit photo={photo} />
         </>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { type Entry, type Photo, photoFor, regionName } from "@/lib/content";
+import { publicAsset } from "@/lib/paths";
 export function PhotoCredit({ photo }: { photo: Photo | null }) {
   return photo ? (
     <span className="photo-credit">
@@ -15,7 +16,7 @@ export function Card({ article, number }: { article: Entry; number?: string }) {
       <Link className="card-photo" href={`/guides/${article.slug}/`}>
         {photo ? (
           <img
-            src={photo.file}
+            src={publicAsset(photo.file)}
             alt={photo.title.replace(/\.[^.]+$/, "")}
             loading="lazy"
             width="800"

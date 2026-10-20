@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { catalog, getGuide } from "@/lib/content";
+import { publicAsset } from "@/lib/paths";
 import { Breadcrumbs } from "@/components/editorial";
 export const metadata: Metadata = { title: "Sources & licenses" };
 export default function Credits() {
@@ -33,8 +34,8 @@ export default function Credits() {
           To reuse the adapted text, credit Wikivoyage contributors and Terra &
           Mar, link to the source and the license, indicate changes, and share
           adaptations under the same license. Download the{" "}
-          <a href="/guide-content.json">adapted guide content</a> and{" "}
-          <a href="/provenance.json">
+          <a href={publicAsset("/guide-content.json")}>adapted guide content</a> and{" "}
+          <a href={publicAsset("/provenance.json")}>
             machine-readable source and image credits
           </a>
           .
@@ -49,8 +50,8 @@ export default function Credits() {
         <p>
           Cormorant Garamond and DM Sans are distributed under the SIL Open Font
           License; see the{" "}
-          <a href="/fonts/cormorant-OFL.txt">Cormorant license</a> and{" "}
-          <a href="/fonts/dm-sans-OFL.txt">DM Sans license</a>. Original website
+          <a href={publicAsset("/fonts/cormorant-OFL.txt")}>Cormorant license</a> and{" "}
+          <a href={publicAsset("/fonts/dm-sans-OFL.txt")}>DM Sans license</a>. Original website
           software is separately licensed under MIT. The fictional publication
           is independent of Wikivoyage, Wikimedia and official tourism
           organizations.

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { catalog, regions, entry, photoFor, collections } from "@/lib/content";
+import { publicAsset } from "@/lib/paths";
 import { Card, PhotoCredit, SectionHeading } from "@/components/editorial";
 export default function Home() {
   const hero = entry("lisbon") ?? entry("portugal")!;
@@ -35,7 +36,7 @@ export default function Home() {
           <Link className="hero-image" href={`/guides/${hero.slug}/`}>
             {photo ? (
               <img
-                src={photo.file}
+                src={publicAsset(photo.file)}
                 alt="Lisbon, Portugal"
                 width="1600"
                 height="900"
@@ -120,7 +121,7 @@ export default function Home() {
               >
                 {p ? (
                   <img
-                    src={p.file}
+                    src={publicAsset(p.file)}
                     alt={r.title}
                     loading="lazy"
                     width="800"

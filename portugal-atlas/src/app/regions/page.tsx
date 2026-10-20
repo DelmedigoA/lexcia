@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { regions, entry, photoFor, catalog } from "@/lib/content";
+import { publicAsset } from "@/lib/paths";
 import { Breadcrumbs, PhotoCredit } from "@/components/editorial";
 export const metadata: Metadata = { title: "The regions" };
 export default function Regions() {
@@ -28,7 +29,7 @@ export default function Regions() {
               <Link className="region-index-photo" href={`/regions/${r.id}/`}>
                 {p ? (
                   <img
-                    src={p.file}
+                    src={publicAsset(p.file)}
                     alt={r.title}
                     width="900"
                     height="500"

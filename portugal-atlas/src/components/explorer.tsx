@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect, useDeferredValue, useMemo } from "react";
 import type { Entry } from "@/lib/content";
+import { basePath, publicAsset } from "@/lib/paths";
 type Result = {
   title: string;
   displayTitle: string;
@@ -31,7 +32,7 @@ export default function Explorer({
   const deferred = useDeferredValue(query);
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/search-index.json", { signal: controller.signal })
+    fetch(`${basePath}/search-index.json`, { signal: controller.signal })
       .then((r) => {
         if (!r.ok) throw Error("index");
         return r.json();
@@ -158,7 +159,7 @@ export default function Explorer({
                     href={`/guides/${a.slug}/`}
                   >
                     <img
-                      src={e.image.file}
+                      src={publicAsset(e.image.file)}
                       alt=""
                       width="340"
                       height="200"

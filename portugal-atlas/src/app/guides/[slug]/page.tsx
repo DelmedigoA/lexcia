@@ -9,6 +9,7 @@ import {
   photoFor,
   type Entry,
 } from "@/lib/content";
+import { basePath, publicAsset } from "@/lib/paths";
 import {
   Breadcrumbs,
   PhotoCredit,
@@ -84,7 +85,7 @@ export default async function Article({
         <>
           <div className="wide-photo article-photo">
             <img
-              src={photo.file}
+              src={publicAsset(photo.file)}
               alt={photo.title.replace(/\.[^.]+$/, "")}
               width="1600"
               height="600"
@@ -123,7 +124,7 @@ export default async function Article({
                   <h3>{s.title}</h3>
                 )
               ) : null}
-              <div dangerouslySetInnerHTML={{ __html: s.html }} />
+              <div dangerouslySetInnerHTML={{ __html: s.html.replace(/href="\/(?!\/)/g, `href="${basePath}/`) }} />
             </section>
           ))}
           <div className="article-attribution">

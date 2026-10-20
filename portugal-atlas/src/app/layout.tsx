@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/header";
 import "./globals.css";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 export const metadata: Metadata = {
   title: {
     default: "Terra & Mar — An independent atlas of Portugal",
@@ -15,6 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <style>{`@font-face{font-family:Cormorant;src:url("${basePath}/fonts/cormorant-garamond.ttf") format("truetype");font-weight:300 700;font-display:swap}@font-face{font-family:DM;src:url("${basePath}/fonts/dm-sans.ttf") format("truetype");font-weight:100 900;font-display:swap}`}</style>
         <a className="skip-link" href="#main">
           Skip to content
         </a>
@@ -39,7 +41,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="footer-bottom">
               <span>Portugal, from the mainland to the islands.</span>
               <span>
-                A fictional demonstration publication · Text: Wikivoyage
+                A fictional demonstration publication by Lexcia · Text: Wikivoyage
                 contributors, CC BY-SA 4.0
               </span>
             </div>

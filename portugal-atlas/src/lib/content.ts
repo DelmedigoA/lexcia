@@ -50,12 +50,15 @@ export const getGuide = (slug: string): Guide =>
 export const entry = (slug: string) => catalog.find((a) => a.slug === slug);
 export const regionName = (id: string) =>
   regions.find((r) => r.id === id)?.title ?? "Portugal";
-export const photoFor = (a: Entry): Photo | null =>
-  a.image ??
-  catalog.find((r) => r.kind === "region" && r.region === a.region && r.image)
-    ?.image ??
-  entry("portugal")?.image ??
-  null;
+export const photoFor = (a: Entry): Photo | null => {
+  const photo =
+    a.image ??
+    catalog.find((r) => r.kind === "region" && r.region === a.region && r.image)
+      ?.image ??
+    entry("portugal")?.image ??
+    null;
+  return photo;
+};
 export const collections = [
   {
     slug: "city-notebook",
