@@ -49,7 +49,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </footer>
         </div>
         <Script
-          src="https://lexcia-widget.vercel.app/lexcia.js"
+          src="https://lexcia-widget-lexcia.vercel.app/lexcia.js"
           strategy="afterInteractive"
         />
       </body>
