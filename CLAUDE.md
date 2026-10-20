@@ -11,7 +11,19 @@ For Codex (Asaf) and Claude Code (Nadav). Verified 2026-10-08; update this file 
 
 ## Repository and application layout
 
-The single shared repository is [DelmedigoA/lexcia](https://github.com/DelmedigoA/lexcia), under Asaf's personal account. **We are not using a GitHub organization.** Both developers collaborate in this repository.
+### Repository split — October 20, 2026
+
+Asaf requested three separate repositories and deployments to reproduce customer installation boundaries. The GitHub organization is **[Lexcia-AI](https://github.com/Lexcia-AI)**, display name **Lexcia**, with three private repositories:
+
+- [site](https://github.com/Lexcia-AI/site): real four-section sales website, loading the independently hosted widget through a public snippet.
+- [widget](https://github.com/Lexcia-AI/widget): real extracted assistant UI and external streaming API client, with shadow-DOM styling isolation.
+- [engine](https://github.com/Lexcia-AI/engine): architecture skeleton following the October 12 Proposed Code Organization (core, ingestion/connectors, customer mapping/configuration, API). Health works; chat/reset/admin explicitly return 501. No model, storage, ingestion, shared sessions or operational controls are implemented.
+
+Local checkouts are `/Users/delmedigo/Dev/Lexcia-AI/site`, `/Users/delmedigo/Dev/Lexcia-AI/widget` and `/Users/delmedigo/Dev/Lexcia-AI/engine`. Each has its own `CLAUDE.md`, setup instructions and verification commands. Local defaults: site 5173, widget assets 5175, engine shell 8768. Pinning uses the documented host-page layout hooks. Chat contact/scheduling remain local previews.
+
+Nadav's verified existing collaborator account is `NaZaji`; Asaf explicitly deferred inviting him to the new organization. No organization or new-repository invitation was sent. The new repositories do not automatically deploy, and this split does not replace the current production application.
+
+The original [DelmedigoA/lexcia](https://github.com/DelmedigoA/lexcia) remains the source/history and current application/deployment repository under Asaf's personal account. Keep its existing deployment setup until a developer requests migration. Do not copy its private credentials or unrelated subprojects into the new repositories.
 
 The application code, tests and source assets are tracked here. Asaf's shared-repository checkout is `/Users/delmedigo/Dev/lexcia`; `/Users/delmedigo/Dev/rabota` remains the original local application/deployment workspace and is not a Git checkout. Develop in a clone of this repository and do not upload the surrounding `Dev` directory. Credentials, generated output and local Drive readbacks are excluded.
 
