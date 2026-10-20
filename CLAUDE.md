@@ -1,6 +1,6 @@
 # Lexcia shared reference
 
-For Codex (Asaf) and Claude Code (Nadav). Verified 2026-10-08; update this file when project facts change. `AGENTS.md` delegates here.
+For Codex (Asaf) and Claude Code (Nadav). Verified 2026-10-20; update this file when project facts change. `AGENTS.md` delegates here.
 
 ## Decisions and shared documents
 
@@ -9,25 +9,47 @@ For Codex (Asaf) and Claude Code (Nadav). Verified 2026-10-08; update this file 
 - [Meetings](https://drive.google.com/drive/folders/18oHx2GGFm-vUj4zwvNi1h_n8tRgWP-ry): dated decisions and action items. Read the latest relevant notes, including **2026-10-07 - Customer Outreach**, **2026-09-29 - Product Design.md**, and **2026-09-04 - Project Definition.md**. Record new shared product decisions here; ask the developer when sources conflict.
 - [Prospects](https://docs.google.com/spreadsheets/d/1tL1fJkNHJ4QJGseAcQFvREClAaHdLddW4KC6oDjrWOw/edit?usp=drivesdk): outreach tracking. [Outreach Emails](https://drive.google.com/drive/folders/1CnMzfuI7-whvkCkOF_-cnxi7T5j2-gM1): email drafts. These materials are shared working documents; do not copy private prospect data into Git.
 
-## Repository and application layout
+## Current production architecture — October 20, 2026
 
-### Repository split — October 20, 2026
+Production runs from three private repositories in the **Lexcia-AI** GitHub organization. They build and deploy independently; no runtime/build imports or copied artifacts from sibling checkouts are required.
 
-Asaf requested three separate repositories and deployments to reproduce customer installation boundaries. The GitHub organization is **[Lexcia-AI](https://github.com/Lexcia-AI)**, display name **Lexcia**, with three private repositories:
+| GitHub repository | Local checkout | Vercel project | Project ID | Public address |
+| --- | --- | --- | --- | --- |
+| [Lexcia-AI/site](https://github.com/Lexcia-AI/site) | `/Users/delmedigo/Dev/Lexcia-AI/site` | `lexcia` | `prj_4QuZOx4QghpXfYPFoHLHgzwVrTkY` | https://lexcia.vercel.app |
+| [Lexcia-AI/widget](https://github.com/Lexcia-AI/widget) | `/Users/delmedigo/Dev/Lexcia-AI/widget` | `lexcia-widget` | `prj_MKg4GBFNcTD3eCswp39GobpijFpm` | https://lexcia-widget.vercel.app |
+| [Lexcia-AI/engine](https://github.com/Lexcia-AI/engine) | `/Users/delmedigo/Dev/Lexcia-AI/engine` | `lexcia-engine` | `prj_CpRAVHzR7TDHap58T6FjyZYNtbg1` | https://lexcia-engine.vercel.app |
 
-- [site](https://github.com/Lexcia-AI/site): real four-section sales website, loading the independently hosted widget through a public snippet.
-- [widget](https://github.com/Lexcia-AI/widget): real extracted assistant UI and external streaming API client, with shadow-DOM styling isolation.
-- [engine](https://github.com/Lexcia-AI/engine): architecture skeleton following the October 12 Proposed Code Organization (core, ingestion/connectors, customer mapping/configuration, API). Health works; chat/reset/admin explicitly return 501. No model, storage, ingestion, shared sessions or operational controls are implemented.
+- `site`: real sales website and ordinary page behavior; installs the hosted widget with one script tag.
+- `widget`: real assistant UI, shadow-DOM CSS isolation, page layout integration and direct streaming API client. No model or store credentials.
+- `engine`: working Python/FastAPI/LangGraph assistant, reviewed customer knowledge, relevance checks, streamed answers, signed context, shared answer admission and protected admin dashboard. Ingestion, object/vector storage and editable admin/billing interfaces remain future work; the engine is no longer a 501-only skeleton.
 
-Local checkouts are `/Users/delmedigo/Dev/Lexcia-AI/site`, `/Users/delmedigo/Dev/Lexcia-AI/widget` and `/Users/delmedigo/Dev/Lexcia-AI/engine`. Each has its own `CLAUDE.md`, setup instructions and verification commands. Local defaults: site 5173, widget assets 5175, engine shell 8768. Pinning uses the documented host-page layout hooks. Chat contact/scheduling remain local previews.
+The original `/Users/delmedigo/Dev/lexcia` / [DelmedigoA/lexcia](https://github.com/DelmedigoA/lexcia) is the historical monolith and a home for separate experiments. It is not the production deployment source. Its `scripts/deploy.py`, old root `vercel.json`, `website/` and `backend/` are legacy deployment instructions; use the split repositories for current Lexcia releases. The old personal-repository Vercel Git connection was disconnected. Never restore it as a workaround.
 
-Nadav's verified existing collaborator account is `NaZaji`; Asaf explicitly deferred inviting him to the new organization. No organization or new-repository invitation was sent. The new repositories do not automatically deploy, and this split does not replace the current production application.
+Nadav's verified GitHub account is `NaZaji`; Asaf deferred the organization invitation. Do not send invitations unless newly requested.
 
-The original [DelmedigoA/lexcia](https://github.com/DelmedigoA/lexcia) remains the source/history and current application/deployment repository under Asaf's personal account. Keep its existing deployment setup until a developer requests migration. Do not copy its private credentials or unrelated subprojects into the new repositories.
+## Universal customer installation and runtime
 
-The application code, tests and source assets are tracked here. Asaf's shared-repository checkout is `/Users/delmedigo/Dev/lexcia`; `/Users/delmedigo/Dev/rabota` remains the original local application/deployment workspace and is not a Git checkout. Develop in a clone of this repository and do not upload the surrounding `Dev` directory. Credentials, generated output and local Drive readbacks are excluded.
+Every registered customer uses exactly:
 
-### Directory guide
+```html
+<script defer src="https://lexcia-widget.vercel.app/lexcia.js"></script>
+```
+
+The universal loader requests `GET /api/widget-config` from the engine. Its exact browser `Origin` selects one enabled site in `customers/<customer>/config.yaml`; unknown/missing origins are rejected. Public configuration supplies the site ID and engine URL, then the loader loads `/widget.js` from the widget host. Never hardcode a Lexcia customer ID in the universal loader or add customer loader files, widget CSS, dependencies or endpoint build variables to the site. Optional page-button attributes and the older attribute-based `/widget.js` installation remain supported. Pinning/reflow and restoration belong to the hosted widget.
+
+Site IDs and Origin/CORS checks select/restrict normal browser use; they are not strong API authentication. Private data/actions would need real authentication/authorization. Rate limits, spend budgets and broader abuse protection remain separate future work. Do not call the whole service production-hardened merely because it is deployed.
+
+The widget calls the engine directly using `X-Lexcia-Site`, a session UUID and optional signed conversation token. Signed history is bounded, site/session-bound and held only in page memory, supporting instance changes without durable conversation storage. Preserve the signing secret across releases. Only the engine receives model keys, Redis credentials, signing secrets and admin passwords. Local scheduling/contact cards remain previews. Full generalization of Lexcia's welcome, branding, demo actions and visual content is deferred; domain routing is generic, not yet every UI behavior.
+
+Lexcia allows **three simultaneous processing sessions**. A slot covers relevance checking/retrieval/answer generation, not visitor reading/typing time. Additional questions wait FIFO for at most **15 seconds**, then receive a retry message without a model call. Shared Redis/Valkey coordinates all Vercel instances; never fall back to a per-process queue for the global limit. Same-session duplicate requests are rejected. Processing timeout: 150 seconds; active leases: 180 seconds; up to 128 waiting requests per site. Missing/unavailable shared storage fails closed.
+
+The managed Upstash `lexcia-queue` store (`store_hXK9Z5h0VLVJ1EXv`) uses the **Free** plan in iad1, connected only to engine Production, with automatic upgrades and eviction disabled. Queue logic and the Redis client are open source; the store is managed infrastructure. Runtime connection: `LEXCIA_REDIS_URL` Secret; production namespace: `lexcia:queue:production:v1`. Development must use a separate store/namespace; open-source local Valkey is available via the engine's `compose.yaml`. Do not silently upgrade the plan or enable paid options.
+
+Admin: https://lexcia-engine.vercel.app/admin; data: `/api/admin/sites`. The read-only website list is based on Gentelella (MIT attribution retained) and shows configured/enabled sites and actual queue availability/counts. Enabled is configuration state, not an uptime probe. All admin HTML, scripts, styles and data require server-side HTTP Basic credentials over HTTPS and no-store responses. `LEXCIA_ADMIN_USER` / `LEXCIA_ADMIN_PASSWORD` stay server-side; local access details are in ignored engine `.admin-access.txt` (0600), never in docs, Git, URLs, logs or browser bundles.
+
+## Historical monolith directory guide
+
+The following paths describe retained code and working-history experiments in the original repository. Some experiments exist only on their feature branches; inspect the actual checkout. They do not define the live split repositories or authorize their deployment.
 
 - `website/`: Vite + React landing page and assistant; `backend/lexcia/`: Python 3.14+, Starlette/Uvicorn, Pydantic and LangGraph/LangChain/OpenAI.
 - `knowledge/lexcia.json` and `knowledge/instructions.md`: reviewed product facts, provenance and answer boundaries; `config/demo.yaml`: model/backend settings.
@@ -40,7 +62,7 @@ The application code, tests and source assets are tracked here. Asaf's shared-re
 - `portugal-atlas/`: standalone fictional Terra & Mar Portugal travel publication (Next.js + TypeScript static export), with an independent Wikivoyage/Commons ingestion pipeline and locally stored licensed content. Run `npm ci && npm run dev` there (port 5180); verify with `npm run build` and `.venv/bin/python pipeline/validate.py`. Deploy only as a separate project with that root directory; excluded from the Lexcia deployment. It has no assistant or parent-application integration. See its own `README.md` for content updates and licenses.
 - `bolt-project/`: Nadav's website, made in Bolt (Vite, React, TypeScript and Tailwind), separate from the deployed `website/`. **Inspect, reference, reuse or modify its code only when Asaf or Nadav explicitly asks.** Do not use it as a default reference or integrate it into the main website without that request. When requested, use `npm ci`, `npm run dev` from that directory; verify with `npm run lint`, `npm run typecheck` and `npm run build`.
 
-## Local development
+## Legacy local development
 
 ### Setup and development servers
 
@@ -50,7 +72,9 @@ From the application root: `uv sync`; create `.env` from `.env.example` only if 
 
 Keep changes focused, follow surrounding Python/JavaScript/JSX conventions, and retain dependency lockfiles. Ground assistant answers in reviewed knowledge; preserve source links, input validation, session isolation and keyboard accessibility. Server conversation state is in memory; the website keeps conversation, feedback and layout state only for the current page visit. Every page load creates a fresh session and welcome screen, clears the former lexcia:/rabota: assistant storage keys, and writes no cookies or persistent browser state. No durable account/history system exists. Update the relevant knowledge records and docs when behavior or product facts change; never invent capabilities or commercial claims.
 
-## Assistant knowledge and product messaging
+## Historical assistant knowledge and product messaging
+
+The retained product decisions and implementation notes below predate the split. Their source paths refer to the monolith; current production code lives in the split repositories. The October 20 architecture, installation and deployment sections above/below supersede older runtime and release statements. Preserve reviewed product decisions when changing the current customer configuration.
 
 ### Knowledge scope and navigation
 
@@ -62,9 +86,9 @@ Asaf confirmed October 18, 2026 that Lexcia supports all media types and connect
 
 ### Messaging and customer demo offering
 
-Current messaging and demo offering (October 18, 2026): Lexcia should sound warmly enthusiastic about the new project while remaining plain, concise and grounded. Explain the value of unlocking existing organizational knowledge. The reviewed Website Integration & Client Onboarding proposal (https://docs.google.com/document/d/1NhgfU4uTeF1W7WlT6mng80LXYGMigmqtfHcLEAIx-o8/edit) assigns mapping, indexing, testing and operation to Lexcia, with the client typically adding a lightweight JavaScript snippet; the combined one-copy-paste embed remains a proposed approach, not a universal shipped installer. Asaf confirmed the service approach: work carefully with customers and iterate on the agreed design, answers and knowledge setup until they are happy. The website’s primary current goal is invitations to free, tailored working demos showing the assistant as if on the prospect’s website, with appropriate initial design and basic integration with their knowledge base. This offered customer demo is distinct from the on-page Lexcia assistant and the local scheduling preview. Never imply an automatic demo build, live booking, universal compatibility, zero-effort setup, or unspecified timelines. Use plain inline links for relevant landing-page sections and let follow-up suggestions continue the conversation or invite demo scheduling.
+Current messaging and demo offering (October 18, 2026): Lexcia should sound warmly enthusiastic about the new project while remaining plain, concise and grounded. Explain the value of unlocking existing organizational knowledge. The reviewed Website Integration & Client Onboarding proposal (https://docs.google.com/document/d/1NhgfU4uTeF1W7WlT6mng80LXYGMigmqtfHcLEAIx-o8/edit) assigns mapping, indexing, testing and operation to Lexcia, with the client typically adding a lightweight JavaScript snippet; the universal one-copy-paste loader is now shipped for registered origins; customer knowledge/UI onboarding remains service work. Asaf confirmed the service approach: work carefully with customers and iterate on the agreed design, answers and knowledge setup until they are happy. The website’s primary current goal is invitations to free, tailored working demos showing the assistant as if on the prospect’s website, with appropriate initial design and basic integration with their knowledge base. This offered customer demo is distinct from the on-page Lexcia assistant and the local scheduling preview. Never imply an automatic demo build, live booking, universal compatibility, zero-effort setup, or unspecified timelines. Use plain inline links for relevant landing-page sections and let follow-up suggestions continue the conversation or invite demo scheduling.
 
-## Assistant behavior and interface
+## Historical assistant behavior and interface
 
 ### New website integration — October 18, 2026
 
@@ -128,30 +152,31 @@ Saved UI alternative: **symmetric option** is the welcome layout from commit `fe
 
 ## Verification
 
-Before pushing relevant application changes, run `uv run pytest` and `(cd website && npm test && npm run build)`; for demo changes also run its `npm test` and `npm run build`. For documentation-only changes, verify links/paths and run `git diff --check`. Run commands in the actual application checkout, not an unrelated parent repository.
+Use checks in the actual repository being changed: site/widget application changes use their `npm test` and `npm run build`; engine application changes use `uv run pytest`. Legacy application/experiment work uses its own applicable checks. For these instruction files, check links/paths and run `git diff --check`; do not run unrelated application suites or add a broad browser test matrix.
 
-## Vercel deployment
+## Git and manual deployment policy — October 20, 2026
 
-### Project and production status
+**GitHub is the code/history/collaboration source. Pushing or merging Git does not currently deploy any of the three Vercel projects.** Manual Vercel CLI deployment remains the agreed workflow until Pro/Git integration is deliberately set up. Git integration would add automatic deployment of commits, pull-request previews and commit/deployment status; it is optional for continued development and manual releases.
 
-- Current Vercel name: **Lexcia**. Asaf clarified October 18, 2026 that Rabota is no longer the current name; do not call the account/team Rabota or infer its current name or dashboard slug from old deployment URLs. Verified account/team ID: `team_C8ZP7SV429G0XwwcF7duTzzQ`; project **lexcia**, ID `prj_4QuZOx4QghpXfYPFoHLHgzwVrTkY`. The legacy `rabota2` identifier remains in existing deployment URLs and local deployment configuration; verify current metadata before using a slug for new operations. A Vercel team is separate from a GitHub organization.
-- Vercel plugin lookup behavior (verified October 18, 2026): `get_auth_user` confirms the connected account is `delmedigo.asaf@gmail.com`, username `lexcia`, with the default team ID above and an active Hobby plan. `list_teams` returns an empty list, but `list_projects` and `get_project` succeed when called without an explicit team scope. They return the project and account IDs above; deployment URLs and a project domain include `rabota2`, and the local `.vercel/project.json` has the same IDs. Direct `get_team` and explicitly team-scoped `get_project` returned 403 with scope `lexcia`. Treat this as a lookup/scoping limitation, not evidence of a wrong account or missing project. For future read-only checks, start with the known project ID without `teamId`/`slug`, then verify its returned `accountId`. An empty team list or a scoped 403 alone does not justify reconnecting, relinking, or changing credentials. If project access also fails or the returned IDs differ, investigate the specific error before drawing an account-mismatch conclusion. This read-only workaround does not authorize changing deployment targets or omitting required scope on mutations.
-- Production: [lexcia.vercel.app](https://lexcia.vercel.app); retained alias: [rabota-drab.vercel.app](https://rabota-drab.vercel.app). Both domains are verified; no custom domain was listed.
-- Latest verified production deployment (2026-10-18): [lexcia-2jsm9akbf-rabota2.vercel.app](https://lexcia-2jsm9akbf-rabota2.vercel.app), deployment `dpl_8PvJiisJ75ZsSZHifrK2473GLAN4`, status `READY`, source `cli`, code revision `b2d78f4`. Public [lexcia.vercel.app](https://lexcia.vercel.app) responds successfully; production JavaScript and CSS exactly match the tested local build, and API health reports seven knowledge records. This release keeps the new four-section website while restoring our pre-merge floating/pinned assistant, removing the hero chat and animated mockup. The composer text field suppresses the rectangular inner focus outline while keeping its rounded outer border; verified on the live focused field. All 43 backend tests, 49 frontend tests and the production build passed. Deployment-specific URLs retain Vercel authentication. There is **no Git integration**; pushing GitHub does not currently deploy. Check live project metadata before relying on this dated snapshot.
+Verified Vercel team/account: **Lexcia**, scope `lexcia`, ID `team_C8ZP7SV429G0XwwcF7duTzzQ`, active **Hobby** plan. All three projects currently have no connected Git repository. The attempted connection could not access the private organization repository; GitHub's organization installation listing also showed no Vercel app installation. Vercel's [Git deployment documentation](https://vercel.com/docs/git) requires Pro for private organization repositories. Before a future connection, recheck the current plan and install/authorize the Vercel GitHub app for `Lexcia-AI/site`, `widget` and `engine`; verify one-to-one mappings, `main` production branches and Git deployment settings. Do not repeat failed connections, change repository visibility, move repositories or upgrade billing without the user's request.
 
-### Deployment workflow
+For an authorized manual release:
 
-- Deployment is manual via `uv run python scripts/deploy.py` from the application root; it currently uses the legacy `rabota2` scope for the Lexcia production target. Do not deploy or change infrastructure without a developer request. Vercel serves the Vite build and Python API; the demo is excluded.
+1. Work from the relevant split repository, inspect/fetch the Git state and record the exact source revision. Verify the existing `.vercel/project.json` team/project IDs against the table; do not deploy from the legacy root or upload the parent `Dev` directory.
+2. Run checks relevant to the changed application. A docs-only task needs paths/links and `git diff --check`, not the whole application suite. Keep checks minimal and meaningful; browser checks are appropriate for a requested UI bug, not a mandatory layout test matrix for every infrastructure/docs change.
+3. Use the existing authenticated CLI or `VERCEL_TOKEN` from an ignored local credential file. Never print credentials, pass `--token`, or put secrets into process arguments. `.vercel/project.json` contains linkage metadata, not authentication. If linkage is absent, link to the existing named project in scope `lexcia`; verify IDs before any mutation.
+4. Deploy from that repository with the pinned CLI: `npx --yes vercel@63.1.0 deploy --prod --scope lexcia --non-interactive`. To stage first, add `--skip-domain`, inspect the exact deployment with authenticated `vercel curl`, then `vercel promote <verified-deployment> --scope lexcia --non-interactive`. Keep Deployment Protection enabled. When changing the API contract, release/verify a backward-compatible engine before its widget consumer; deploy the site only when site files change.
+5. Verify the intended public aliases and record the deployed revision/status. Current branch, Git `main` and production may differ; never call a pushed-only change live. Previous release authorization is historical context, not standing permission for future deployments, infrastructure changes or paid plans.
 
-### Deployment credentials
+No app release, Git integration or billing change is authorized merely by a documentation update. Manual deployments continue to work on Hobby despite the private-organization Git integration restriction.
 
-- Each developer uses a local root `vercel.env` with `VERCEL_TOKEN` or `VERCEL_API_KEY`; Asaf's is `/Users/delmedigo/Dev/lexcia/vercel.env`. It is excluded from Git and Vercel uploads; never print, commit or upload its contents. The deployment script reads process environment credentials first, then `vercel.env`, then legacy `.env`, and passes the token only through `VERCEL_TOKEN` in the CLI environment.
-- Follow [docs/deployment.md](docs/deployment.md) to deploy from a shared-repository clone. The script verifies the existing `rabota2/lexcia` target and creates ignored local linkage when absent; it stops on a different link. `.vercel/project.json` stores metadata, not credentials. Asaf's older `/Users/delmedigo/Dev/rabota/.env` and deployment workspace remain local. Neither the demo nor Nadav's Bolt website is uploaded by this workflow.
+## Shared development and credential safety
 
-### API keys and secret safety
+For Codex (Asaf) and Claude Code (Nadav), keep shared project instructions in `CLAUDE.md`; `AGENTS.md` is the entrypoint, not a second policy copy. Read the target repository's instructions before working.
 
-- `OPENAI_API_KEY` is local in `.env` and managed as a sensitive server-side Vercel environment variable for Production, Preview and Development. Never expose it to the frontend. No shared credential vault or Nadav-specific credential location was verified; ask the developer for access rather than guessing.
-- Never print, document, commit or upload secret values or local `.env` files. Before staging, confirm secrets and generated files are ignored; stage explicit paths only. Only a value-free `.env.example` belongs in Git.
+Inspect status/remotes and fetch/pull with `--ff-only` before work. Use `codex/` branches, stage explicit paths, review diffs and commit/push completed changes. Never force-push, rewrite shared history or overwrite another developer's work. Use an isolated checkout when the shared checkout has unrelated work or another active task. On rejection/conflicts, fetch and compare both histories; reconcile compatible changes, and ask only if intended behavior is contradictory or unclear. Preserve concurrent branch notes, including implemented-but-not-deployed changes.
+
+Keep lockfiles and relevant MIT/license notices. Never print, commit or upload `.env*`, `vercel.env`, `.admin-access.txt`, pulled `.vercel` environment files, API keys, passwords or tokens; only value-free `.env.example` belongs in Git. Use secrets solely through the appropriate server environment. Preserve separate Development/Production values and namespaces. The historical ignored `/Users/delmedigo/Dev/lexcia/vercel.env` is an existing local deployment credential source; it is not an application source or a file to copy into the new repositories. Verify team/project identity rather than relinking credentials because a connector returns an empty list or scope error.
 
 ## Git collaboration rules
 
