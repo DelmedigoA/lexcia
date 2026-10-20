@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,">
+<title>Firecrawl · Website map</title>
+<style>body{font:16px system-ui;max-width:1000px;margin:40px auto;padding:0 20px;color:#20333e;background:#f6f8fa}h1{font-size:28px}input{font:inherit;padding:12px;width:100%;box-sizing:border-box}li{padding:16px 0;border-bottom:1px solid #d4dde2;overflow-wrap:anywhere}a{color:#086d75}small{display:block;color:#526773;margin-top:6px}p{line-height:1.5}</style>
+<h1>Firecrawl · Website map</h1><p>Native map results: URLs, titles and descriptions where available. Maximum 100 results.</p>
+<input id="search" placeholder="Search Hebrew title, description or URL…" aria-label="Search results"><p id="count"></p><ul id="results"></ul>
+<script type="application/json" id="data">__DATA__</script><script>
+const data=JSON.parse(document.getElementById('data').textContent);
+function render(){const q=document.getElementById('search').value.toLocaleLowerCase(),rows=data.filter(r=>[r.title,r.description,decodeURI(r.url)].join(' ').toLocaleLowerCase().includes(q)),list=document.getElementById('results');list.replaceChildren();document.getElementById('count').textContent=`${rows.length} of ${data.length} returned URLs`;
+for(const row of rows){const li=document.createElement('li'),a=document.createElement('a'),url=document.createElement('small');a.textContent=row.title||decodeURI(row.url);a.href=row.url;a.target='_blank';a.rel='noopener noreferrer';a.dir='auto';url.textContent=row.url;li.append(a,url);if(row.description){const p=document.createElement('p');p.dir='auto';p.textContent=row.description;li.append(p)}list.append(li)}}
+document.getElementById('search').addEventListener('input',render);render();
+</script></html>
