@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import Header from "@/components/header";
 import "./globals.css";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -47,6 +48,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </footer>
         </div>
+        <Script
+          src="https://lexcia-widget.vercel.app/lexcia.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
