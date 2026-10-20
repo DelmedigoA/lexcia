@@ -1,5 +1,7 @@
 # Deploy Lexcia to Vercel
 
+> **Production migration — October 20, 2026:** The active application is now split into [Lexcia-AI/site](https://github.com/Lexcia-AI/site), [Lexcia-AI/widget](https://github.com/Lexcia-AI/widget) and [Lexcia-AI/engine](https://github.com/Lexcia-AI/engine), each with its own Vercel deployment. The website remains https://lexcia.vercel.app. Read the new repositories' README/CLAUDE.md for active setup and deployment. The monolithic instructions below are historical; do not run this checkout's legacy deployment script against the migrated production site.
+
 Asaf and Nadav use the same repository and existing `rabota2/lexcia` production project. This deploys `website/` and the Python API. Nadav's `bolt-project/` and the Bearing Witness demo are excluded. GitHub pushes do not currently trigger deployment.
 
 Prerequisites: Python 3.14+, `uv`, Node.js/npm, and an authorized Vercel token with access to the Rabota team. In your clone, create a local `vercel.env` containing a `VERCEL_TOKEN` or `VERCEL_API_KEY` assignment. Obtain credentials privately; never put the value in chat, Git, command arguments or frontend code. This file is excluded from Git and Vercel uploads. The server's `OPENAI_API_KEY` is already configured on Vercel.

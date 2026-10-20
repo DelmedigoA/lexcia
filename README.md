@@ -1,5 +1,7 @@
 # Lexcia
 
+> **Production migration — October 20, 2026:** The active application is now split into [Lexcia-AI/site](https://github.com/Lexcia-AI/site), [Lexcia-AI/widget](https://github.com/Lexcia-AI/widget) and [Lexcia-AI/engine](https://github.com/Lexcia-AI/engine), each with its own Vercel deployment. The website remains https://lexcia.vercel.app. Read the new repositories' README/CLAUDE.md for active setup and deployment. The monolithic instructions below are historical; do not run this checkout's legacy deployment script against the migrated production site.
+
 Independent Lexcia website and embedded assistant demo. ArchiveLens is an architectural reference only.
 
 Production site: https://lexcia.vercel.app
